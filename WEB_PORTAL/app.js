@@ -18,7 +18,25 @@ const state = {
   seriesViewMode: 'all', // 'all' (todos os capítulos) | 'grouped' (agrupado por série)
   groupedSeriesList: [],
   activeSeriesContext: null, // { seriesName, episodes: [], currentIndex: 0 }
-  activeSeriesGroup: null
+  activeSeriesGroup: null,
+  // Estado de Animes
+  activeAnimeAudio: 'legendado', // 'legendado' | 'dublado'
+  activeAnimeContext: null,
+  userFavorites: new Set(),
+  // Paginação e Cache no Frontend de Animes (Substituição de página com max 24 cards no DOM)
+  animePagination: {
+    page: 1,
+    limit: 24,
+    hasMore: false,
+    totalCount: 0,
+    totalPages: 1,
+    searchQuery: '',
+    genre: '',
+    sort: 'latest',
+    abortController: null,
+    requestId: 0,
+    isLoading: false
+  }
 };
 
 // Elementos DOM
@@ -64,12 +82,19 @@ const dom = {
   loadMoreContainer: document.getElementById('loadMoreContainer'),
   btnLoadMore: document.getElementById('btnLoadMore'),
 
+  // Paginação por substituição
+  catalogPaginationContainer: document.getElementById('catalogPaginationContainer'),
+  paginationPages: document.getElementById('paginationPages'),
+  btnPagePrev: document.getElementById('btnPagePrev'),
+  btnPageNext: document.getElementById('btnPageNext'),
+
   searchInput: document.getElementById('searchInput'),
   clearSearchBtn: document.getElementById('clearSearchBtn'),
 
   btnTypeTodos: document.getElementById('btnTypeTodos'),
   btnTypeFilmes: document.getElementById('btnTypeFilmes'),
   btnTypeSeries: document.getElementById('btnTypeSeries'),
+  btnTypeAnimes: document.getElementById('btnTypeAnimes'),
 
   // Alternador de Visualização de Séries
   seriesViewControls: document.getElementById('seriesViewControls'),
@@ -79,10 +104,20 @@ const dom = {
   // Player Modal & Navegação de Capítulos
   playerModal: document.getElementById('playerModal'),
   htmlVideoPlayer: document.getElementById('htmlVideoPlayer'),
+  iframeVideoPlayer: document.getElementById('iframeVideoPlayer'),
   modalVideoTitle: document.getElementById('modalVideoTitle'),
   modalCategoryBadge: document.getElementById('modalCategoryBadge'),
   modalEpisodeBadge: document.getElementById('modalEpisodeBadge'),
   playerEpisodeNav: document.getElementById('playerEpisodeNav'),
+  playerAnimeControls: document.getElementById('playerAnimeControls'),
+  btnAudioLeg: document.getElementById('btnAudioLeg'),
+  btnAudioDub: document.getElementById('btnAudioDub'),
+  playerProviderSelect: document.getElementById('playerProviderSelect'),
+  playerQualitySelect: document.getElementById('playerQualitySelect'),
+  playerProviderWrap: document.getElementById('playerProviderWrap'),
+  playerQualityWrap: document.getElementById('playerQualityWrap'),
+  playerSourceBadge: document.getElementById('playerSourceBadge'),
+  btnPlayerFavorite: document.getElementById('btnPlayerFavorite'),
   btnPrevEp: document.getElementById('btnPrevEp'),
   btnNextEp: document.getElementById('btnNextEp'),
   playerSeriesStrip: document.getElementById('playerSeriesStrip'),
@@ -103,6 +138,10 @@ const dom = {
   seriesModalTitle: document.getElementById('seriesModalTitle'),
   seriesModalTotalEpisodes: document.getElementById('seriesModalTotalEpisodes'),
   seriesModalTotalSeasons: document.getElementById('seriesModalTotalSeasons'),
+  modalAudioSwitchGroup: document.getElementById('modalAudioSwitchGroup'),
+  btnModalAudioLeg: document.getElementById('btnModalAudioLeg'),
+  btnModalAudioDub: document.getElementById('btnModalAudioDub'),
+  btnSeriesModalFavorite: document.getElementById('btnSeriesModalFavorite'),
   seriesSeasonsBar: document.getElementById('seriesSeasonsBar'),
   seriesEpisodesGrid: document.getElementById('seriesEpisodesGrid'),
   btnCloseSeriesModal: document.getElementById('btnCloseSeriesModal'),
@@ -437,17 +476,75 @@ function setupEventListeners() {
     dom.btnLogoutHeader.addEventListener('click', handleLogout);
   }
 
-  // Filtros de Tipo (Todos / Filmes / Séries)
-  dom.btnTypeTodos.addEventListener('click', () => switchType('todos'));
-  dom.btnTypeFilmes.addEventListener('click', () => switchType('filmes'));
-  dom.btnTypeSeries.addEventListener('click', () => switchType('series'));
+  // Filtros de Tipo (Todos / Filmes / Séries / Animes)
+  dom.btnTypeTodos?.addEventListener('click', () => switchType('todos'));
+  dom.btnTypeFilmes?.addEventListener('click', () => switchType('filmes'));
+  dom.btnTypeSeries?.addEventListener('click', () => switchType('series'));
+  dom.btnTypeAnimes?.addEventListener('click', () => switchType('animes'));
 
-  // Busca Inteligente
+  // Alternadores de Áudio para Animes (Dublado / Legendado)
+  const handleAudioSwitch = (audio) => {
+    state.activeAnimeAudio = audio;
+    [dom.btnAudioLeg, dom.btnModalAudioLeg].forEach(b => b?.classList.toggle('active', audio === 'legendado'));
+    [dom.btnAudioDub, dom.btnModalAudioDub].forEach(b => b?.classList.toggle('active', audio === 'dublado'));
+
+    if (state.activeAnimeContext) {
+      const { currentEpisode, details } = state.activeAnimeContext;
+      if (currentEpisode && details) {
+        const savedProgress = dom.htmlVideoPlayer ? dom.htmlVideoPlayer.currentTime : 0;
+        playAnimeEpisode(currentEpisode, details, audio, state.activeAnimeProvider, state.activeAnimeQuality, savedProgress);
+      }
+    }
+  };
+
+  dom.btnAudioLeg?.addEventListener('click', () => handleAudioSwitch('legendado'));
+  dom.btnAudioDub?.addEventListener('click', () => handleAudioSwitch('dublado'));
+  dom.btnModalAudioLeg?.addEventListener('click', () => handleAudioSwitch('legendado'));
+  dom.btnModalAudioDub?.addEventListener('click', () => handleAudioSwitch('dublado'));
+
+  // Botões de Favoritos
+  const handleFavoriteToggle = async () => {
+    const ctx = state.activeAnimeContext;
+    if (!ctx || !ctx.details) return;
+    const animeId = ctx.details.id;
+    const username = state.currentUser ? state.currentUser.username : 'Kaynã';
+
+    try {
+      const resp = await fetch('/api/animes/favorites', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          user_id: username,
+          content_id: animeId,
+          title: ctx.details.canonical_title,
+          poster: ctx.details.poster
+        })
+      });
+      const data = await resp.json();
+      if (data.success) {
+        if (data.is_favorite) {
+          state.userFavorites.add(animeId);
+          showToast(`"${ctx.details.canonical_title}" adicionado aos favoritos! ⭐`);
+        } else {
+          state.userFavorites.delete(animeId);
+          showToast(`Removido dos favoritos.`);
+        }
+        updateFavoriteButtons(animeId);
+      }
+    } catch (e) {
+      console.error('Erro ao alternar favorito:', e);
+    }
+  };
+
+  dom.btnPlayerFavorite?.addEventListener('click', handleFavoriteToggle);
+  dom.btnSeriesModalFavorite?.addEventListener('click', handleFavoriteToggle);
+
+  // Busca Inteligente com debounce de 400ms
   dom.searchInput.addEventListener('input', (e) => {
     const val = e.target.value.trim();
     dom.clearSearchBtn.style.display = val ? 'block' : 'none';
     clearTimeout(state.searchTimeout);
-    state.searchTimeout = setTimeout(() => handleSearch(val), 350);
+    state.searchTimeout = setTimeout(() => handleSearch(val), 400);
   });
 
   dom.clearSearchBtn.addEventListener('click', () => {
@@ -468,7 +565,13 @@ function setupEventListeners() {
   });
 
   // Botão Carregar Mais
-  dom.btnLoadMore.addEventListener('click', renderNextBatch);
+  dom.btnLoadMore.addEventListener('click', () => {
+    if (state.activeType === 'animes' || state.activeCategoryId === 'animes') {
+      loadAnimesPage(state.animePagination.page + 1, true, state.animePagination.searchQuery, state.animePagination.genre, state.animePagination.sort);
+    } else {
+      renderNextBatch();
+    }
+  });
 
   // Filtro Dropdown de Categoria
   if (dom.categorySelect) {
@@ -487,7 +590,14 @@ function setupEventListeners() {
   // Filtro de Ordenação A-Z
   if (dom.sortSelect) {
     dom.sortSelect.addEventListener('change', (e) => {
-      applySorting(e.target.value);
+      const val = e.target.value;
+      if (state.activeType === 'animes' || state.activeCategoryId === 'animes') {
+        const sortMap = { 'az': 'title_asc', 'za': 'title_desc', 'padrao': 'latest' };
+        const mappedSort = sortMap[val] || 'latest';
+        loadAnimesPage(1, state.animePagination.searchQuery, state.animePagination.genre, mappedSort);
+      } else {
+        applySorting(val);
+      }
     });
   }
 
@@ -547,7 +657,13 @@ function setupEventListeners() {
     });
   }
   if (dom.btnCloseAdmin && dom.adminModal) {
-    dom.btnCloseAdmin.addEventListener('click', () => closeModal(dom.adminModal));
+    dom.btnCloseAdmin.addEventListener('click', () => {
+      closeModal(dom.adminModal);
+      if (adminSyncPollInterval) {
+        clearInterval(adminSyncPollInterval);
+        adminSyncPollInterval = null;
+      }
+    });
   }
 
   // Abas do Painel Admin
@@ -562,6 +678,15 @@ function setupEventListeners() {
 
       if (tabId === 'central-clientes') {
         renderClientsList();
+      }
+      if (tabId === 'sincronizacao-animes') {
+        renderAdminSyncStatus();
+        if (!adminSyncPollInterval) {
+          adminSyncPollInterval = setInterval(renderAdminSyncStatus, 2500);
+        }
+      } else if (adminSyncPollInterval) {
+        clearInterval(adminSyncPollInterval);
+        adminSyncPollInterval = null;
       }
     });
   });
@@ -903,6 +1028,93 @@ function updateSupabasePill() {
   }
 }
 
+let adminSyncPollInterval = null;
+
+async function renderAdminSyncStatus() {
+  try {
+    const res = await fetch('/api/animes/sync-status');
+    if (!res.ok) return;
+    const data = await res.json();
+    
+    const elStatus = document.getElementById('adminSyncStatus');
+    const elPauseReason = document.getElementById('adminSyncPauseReason');
+    const elPage = document.getElementById('adminSyncPage');
+    const elBatch = document.getElementById('adminSyncBatch');
+    const elCounts = document.getElementById('adminSyncCounts');
+    const elRemaining = document.getElementById('adminSyncRemaining');
+    const elErrors = document.getElementById('adminSyncErrors');
+    const elLastError = document.getElementById('adminSyncLastError');
+    const btnResume = document.getElementById('btnResumeSync');
+    const btnPause = document.getElementById('btnPauseSync');
+
+    if (elStatus) {
+      const curStatus = data.status || (data.is_running ? 'RUNNING' : 'IDLE');
+      elStatus.textContent = curStatus;
+      elStatus.style.color = curStatus === 'RUNNING' ? '#34d399' : (curStatus === 'PAUSED' ? '#f59e0b' : '#a78bfa');
+    }
+    if (elPauseReason) {
+      elPauseReason.textContent = data.pause_reason || (data.is_running ? 'Sincronizando lotes...' : 'Aguardando comando');
+    }
+    if (elPage) {
+      const tot = data.total_pages_estimated ? data.total_pages_estimated : 'Desconhecido';
+      elPage.textContent = `Pág. ${data.current_page || data.last_page || 0} / ${tot}`;
+    }
+    if (elBatch) {
+      elBatch.textContent = `Lote: ${data.current_batch || 0} (${data.pages_completed || 0} págs concluídas)`;
+    }
+    if (elCounts) {
+      elCounts.textContent = `+${data.new_titles || 0} novos / ${data.updated_titles || 0} atualiz.`;
+    }
+    if (elRemaining) {
+      elRemaining.textContent = data.remaining_pages !== null && data.remaining_pages !== undefined
+        ? `${data.remaining_pages} páginas restantes na fonte`
+        : 'Estimativa de páginas restantes a confirmar';
+    }
+    if (elErrors) {
+      elErrors.textContent = `${data.errors_count || 0}`;
+    }
+    if (elLastError) {
+      elLastError.textContent = data.last_error ? `Último aviso: ${data.last_error}` : 'Sem falhas pendentes';
+    }
+
+    if (btnResume) btnResume.disabled = data.is_running === 1;
+    if (btnPause) btnPause.disabled = data.is_running === 0;
+  } catch (err) {
+    console.warn('Erro ao atualizar status de sincronização:', err);
+  }
+}
+
+// Inicializa botões de controle de sincronização no painel
+document.addEventListener('DOMContentLoaded', () => {
+  const btnResume = document.getElementById('btnResumeSync');
+  if (btnResume) {
+    btnResume.addEventListener('click', async () => {
+      btnResume.disabled = true;
+      try {
+        await fetch('/api/animes/sync-resume');
+        showToast('Sincronização em segundo plano retomada.');
+        setTimeout(renderAdminSyncStatus, 500);
+      } catch (e) {
+        showToast('Erro ao retomar sincronização: ' + e.message);
+      }
+    });
+  }
+
+  const btnPause = document.getElementById('btnPauseSync');
+  if (btnPause) {
+    btnPause.addEventListener('click', async () => {
+      btnPause.disabled = true;
+      try {
+        await fetch('/api/animes/sync-pause?reason=' + encodeURIComponent('Pausado pelo usuário'));
+        showToast('Pausa solicitada à sincronização.');
+        setTimeout(renderAdminSyncStatus, 500);
+      } catch (e) {
+        showToast('Erro ao pausar sincronização: ' + e.message);
+      }
+    });
+  }
+});
+
 // =====================================================================
 // CARREGAMENTO DO CATÁLOGO DE VÍDEOS
 // =====================================================================
@@ -923,10 +1135,15 @@ async function loadManifesto() {
 
 function switchType(type) {
   state.activeType = type;
-  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries].forEach(b => b.classList.remove('active'));
-  if (type === 'todos') dom.btnTypeTodos.classList.add('active');
-  if (type === 'filmes') dom.btnTypeFilmes.classList.add('active');
-  if (type === 'series') dom.btnTypeSeries.classList.add('active');
+  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries, dom.btnTypeAnimes].filter(Boolean).forEach(b => b.classList.remove('active'));
+  if (type === 'todos') dom.btnTypeTodos?.classList.add('active');
+  if (type === 'filmes') dom.btnTypeFilmes?.classList.add('active');
+  if (type === 'series') dom.btnTypeSeries?.classList.add('active');
+  if (type === 'animes') {
+    dom.btnTypeAnimes?.classList.add('active');
+    selectCategory('animes', '🌸 Animes');
+    return;
+  }
 
   buildCategoryChips();
   loadDestaques();
@@ -979,6 +1196,7 @@ function buildCategoryChips() {
   dom.categoriesChips.appendChild(chipDestaques);
 
   const popularKeywords = [
+    { key: 'animes', label: '🌸 Animes' },
     { key: '01_lancamentos', label: '🔥 Lançamentos' },
     { key: '02_4k_uhd', label: '💎 4K Ultra HD' },
     { key: '03_acao', label: '💥 Ação' },
@@ -1003,10 +1221,7 @@ function buildCategoryChips() {
 
       const btn = document.createElement('button');
       btn.className = `category-chip ${state.activeCategoryId === cat.id ? 'active' : ''}`;
-      btn.innerHTML = `
-        <span>${pk.label}</span>
-        <span class="chip-count">${cat.total.toLocaleString()}</span>
-      `;
+      btn.innerHTML = `<span>${pk.label}</span>`;
       btn.onclick = () => selectCategory(cat.id, cat.nome);
       dom.categoriesChips.appendChild(btn);
     }
@@ -1079,6 +1294,7 @@ function loadDestaques() {
   });
 
   state.rawItems = pool;
+  if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
   refreshCatalogDisplay();
 }
 
@@ -1095,6 +1311,15 @@ async function selectCategory(catId, catName) {
   dom.activeCategoryTitle.textContent = `Categoria: ${catName}`;
   dom.cardsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #94a3b8;">Carregando títulos da categoria...</div>';
   dom.loadMoreContainer.style.display = 'none';
+  if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
+
+  if (catId === 'animes') {
+    updateSeriesControlsVisibility();
+    state.animePagination.page = 1;
+    state.animePagination.searchQuery = '';
+    loadAnimesPage(1, '');
+    return;
+  }
 
   try {
     const resp = await fetch(`data/${catId}.json`);
@@ -1114,6 +1339,168 @@ async function selectCategory(catId, catName) {
 }
 
 // =====================================================================
+// PAGINAÇÃO LEVE E CONSUMO SOB DEMANDA DE ANIMES (SUBSTITUIÇÃO DE PÁGINA)
+// =====================================================================
+async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest') {
+  if (state.animePagination.abortController) {
+    try {
+      state.animePagination.abortController.abort();
+    } catch (e) {}
+  }
+  const controller = new AbortController();
+  state.animePagination.abortController = controller;
+  state.animePagination.isLoading = true;
+  const currentRequestId = ++state.animePagination.requestId;
+
+  // Substituição de página: Limpa o grid e exibe skeletons leves (máximo 6 placeholders)
+  dom.cardsGrid.innerHTML = `
+    <div class="card-skeleton"></div>
+    <div class="card-skeleton"></div>
+    <div class="card-skeleton"></div>
+    <div class="card-skeleton"></div>
+    <div class="card-skeleton"></div>
+    <div class="card-skeleton"></div>
+  `;
+  if (dom.loadMoreContainer) dom.loadMoreContainer.style.display = 'none';
+  if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
+
+  try {
+    const params = new URLSearchParams({
+      page: String(page),
+      limit: '24',
+      search: search || '',
+      genre: genre || '',
+      sort: sort || 'latest'
+    });
+
+    const resp = await fetch(`/api/animes?${params.toString()}`, { signal: controller.signal });
+    if (!resp.ok) throw new Error('Falha ao obter animes do servidor');
+    const data = await resp.json();
+
+    // Previne condição de corrida: se uma busca mais recente já foi disparada, descarta
+    if (currentRequestId !== state.animePagination.requestId) {
+      return;
+    }
+
+    state.animePagination.page = data.page || page;
+    state.animePagination.hasMore = !!data.has_more;
+    state.animePagination.totalCount = data.total_count || 0;
+    state.animePagination.totalPages = data.total_pages || 1;
+    state.animePagination.searchQuery = search;
+    state.animePagination.genre = genre;
+    state.animePagination.sort = sort;
+
+    dom.cardsGrid.innerHTML = '';
+    const animesList = data.animes || data.items || [];
+
+    if (!animesList.length) {
+      dom.cardsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #94a3b8;">Nenhum anime encontrado no catálogo.</div>';
+      dom.itemsFoundText.textContent = '0 animes encontrados';
+      if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
+      state.animePagination.isLoading = false;
+      return;
+    }
+
+    // Injeta exatamente os 24 cards da página ativa no DOM (memória constante)
+    const fragment = document.createDocumentFragment();
+    animesList.forEach((anime, idx) => {
+      const cardItem = {
+        id: anime.id,
+        t: anime.canonical_title || anime.t || anime.title,
+        p: anime.poster || anime.p,
+        catNome: '🌸 Animes',
+        is_anime: true,
+        total_episodios: anime.total_episodios || anime.total_episodes,
+        total_temporadas: anime.total_temporadas || anime.total_seasons || anime.temporadas || 1,
+        ano: anime.ano || anime.year,
+        sinopse: anime.sinopse || anime.synopsis,
+        generos: anime.generos || anime.genres
+      };
+      const card = createVideoCard(cardItem, (page - 1) * 24 + idx);
+      fragment.appendChild(card);
+    });
+    dom.cardsGrid.appendChild(fragment);
+
+    const totalCount = data.total_count || data.total_items || animesList.length;
+    dom.itemsFoundText.textContent = `${totalCount} animes no catálogo (Página ${state.animePagination.page} de ${state.animePagination.totalPages} • ${animesList.length} cards no DOM)`;
+
+    // Renderiza a barra de navegação de páginas sem acumular cards no DOM
+    renderCatalogPagination(state.animePagination.page, state.animePagination.totalPages);
+
+  } catch (err) {
+    if (err.name === 'AbortError') return; // Cancelamento intencional por nova busca
+    console.error('Erro na paginação de animes:', err);
+    dom.cardsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #ef4444;">Erro ao carregar catálogo de animes. Tente recarregar.</div>';
+  } finally {
+    state.animePagination.isLoading = false;
+  }
+}
+
+function renderCatalogPagination(currentPage, totalPages) {
+  if (!dom.catalogPaginationContainer || !dom.paginationPages) return;
+  if (!totalPages || totalPages <= 1) {
+    dom.catalogPaginationContainer.style.display = 'none';
+    return;
+  }
+
+  dom.catalogPaginationContainer.style.display = 'flex';
+  if (dom.btnPagePrev) dom.btnPagePrev.disabled = (currentPage <= 1);
+  if (dom.btnPageNext) dom.btnPageNext.disabled = (currentPage >= totalPages);
+
+  if (dom.btnPagePrev) {
+    dom.btnPagePrev.onclick = () => {
+      if (currentPage > 1) {
+        loadAnimesPage(currentPage - 1, state.animePagination.searchQuery, state.animePagination.genre, state.animePagination.sort);
+        dom.cardsGrid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+  }
+
+  if (dom.btnPageNext) {
+    dom.btnPageNext.onclick = () => {
+      if (currentPage < totalPages) {
+        loadAnimesPage(currentPage + 1, state.animePagination.searchQuery, state.animePagination.genre, state.animePagination.sort);
+        dom.cardsGrid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+  }
+
+  dom.paginationPages.innerHTML = '';
+
+  const pages = [];
+  const delta = 2;
+  const left = Math.max(1, currentPage - delta);
+  const right = Math.min(totalPages, currentPage + delta);
+
+  for (let p = 1; p <= totalPages; p++) {
+    if (p === 1 || p === totalPages || (p >= left && p <= right)) {
+      pages.push(p);
+    }
+  }
+
+  let prevPage = 0;
+  pages.forEach(p => {
+    if (prevPage && p - prevPage > 1) {
+      const ellipsis = document.createElement('span');
+      ellipsis.className = 'pagination-ellipsis';
+      ellipsis.textContent = '...';
+      dom.paginationPages.appendChild(ellipsis);
+    }
+    const btn = document.createElement('button');
+    btn.className = `btn-page-num ${p === currentPage ? 'active' : ''}`;
+    btn.textContent = p;
+    btn.onclick = () => {
+      if (p !== currentPage) {
+        loadAnimesPage(p, state.animePagination.searchQuery, state.animePagination.genre, state.animePagination.sort);
+        dom.cardsGrid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+    dom.paginationPages.appendChild(btn);
+    prevPage = p;
+  });
+}
+
+// =====================================================================
 // ORGANIZAÇÃO E AGRUPAMENTO DE SÉRIES
 // =====================================================================
 function setSeriesViewMode(mode) {
@@ -1125,6 +1512,11 @@ function setSeriesViewMode(mode) {
 
 function updateSeriesControlsVisibility() {
   if (!dom.seriesViewControls) return;
+  // Animes são obras canônicas estruturadas com temporadas e episódios próprios no modal
+  if (state.activeType === 'animes' || state.activeCategoryId === 'animes') {
+    dom.seriesViewControls.style.display = 'none';
+    return;
+  }
   const isSeriesCat = (state.activeType === 'series') ||
     (state.activeCategoryId && (
       state.activeCategoryId.includes('series') ||
@@ -1150,7 +1542,11 @@ function refreshCatalogDisplay() {
   if (!state.rawItems) state.rawItems = [];
   updateSeriesControlsVisibility();
 
-  if (state.seriesViewMode === 'grouped') {
+  const isAnimesMode = (state.activeType === 'animes' || state.activeCategoryId === 'animes');
+
+  if (isAnimesMode) {
+    state.currentItems = [...state.rawItems];
+  } else if (state.seriesViewMode === 'grouped') {
     const { groups, nonSeries } = groupItemsBySeries(state.rawItems);
     state.currentItems = [...groups, ...nonSeries];
   } else {
@@ -1165,7 +1561,10 @@ function refreshCatalogDisplay() {
   dom.cardsGrid.innerHTML = '';
   renderNextBatch();
 
-  if (state.seriesViewMode === 'grouped') {
+  if (isAnimesMode) {
+    const totalEps = state.rawItems.reduce((acc, it) => acc + (it.total_episodios || it.episodes_count || 0), 0);
+    dom.itemsFoundText.textContent = `${state.rawItems.length} animes disponíveis (${totalEps.toLocaleString()} episódios no catálogo)`;
+  } else if (state.seriesViewMode === 'grouped') {
     const groupCount = state.currentItems.filter(it => it.isGroup).length;
     dom.itemsFoundText.textContent = `${groupCount} séries agrupadas (${state.rawItems.length.toLocaleString()} episódios no total)`;
   } else {
@@ -1459,20 +1858,29 @@ function createVideoCard(item, index) {
     </button>
   ` : '';
 
-  // Se for episódio, exibe badge com o episódio exato (ex: T04 • EP 01) e pílula no corpo
-  const badgeHtml = epInfo.isEpisode
-    ? `<span class="card-badge series-badge">${epInfo.badge}</span>`
-    : `<span class="card-badge">HD / 4K</span>`;
+  const isAnime = item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
 
-  const chapterPillHtml = epInfo.isEpisode
-    ? `<div class="card-chapter-pill"><span class="pill-dot"></span><span>${escapeHtml(epInfo.seasonLabel || epInfo.label)}</span></div>`
-    : '';
+  // Se for anime, série ou episódio, exibe badge contextual
+  let badgeHtml;
+  if (isAnime) {
+    badgeHtml = `<span class="card-badge anime-badge">🌸 ANIME</span>`;
+  } else if (epInfo.isEpisode) {
+    badgeHtml = `<span class="card-badge series-badge">${epInfo.badge}</span>`;
+  } else {
+    badgeHtml = `<span class="card-badge">HD / 4K</span>`;
+  }
+
+  const chapterPillHtml = isAnime
+    ? `<div class="card-chapter-pill"><span class="pill-dot"></span><span>${item.total_episodios ? item.total_episodios + ' Episódios' : 'Temporada Completa'}</span></div>`
+    : (epInfo.isEpisode
+      ? `<div class="card-chapter-pill"><span class="pill-dot"></span><span>${escapeHtml(epInfo.seasonLabel || epInfo.label)}</span></div>`
+      : '');
 
   const displayTitle = epInfo.isEpisode ? epInfo.seriesName : item.t;
 
   card.innerHTML = `
     <div class="card-poster">
-      <img src="${posterUrl}" alt="${escapeHtml(item.t)}" loading="lazy" onerror="this.src='${FALLBACK_POSTER}'">
+      <img src="${posterUrl}" alt="${escapeHtml(item.t)}" loading="lazy" decoding="async" onerror="this.src='${FALLBACK_POSTER}'">
       ${badgeHtml}
       <div class="card-play-overlay">
         <div class="play-circle">
@@ -1498,9 +1906,14 @@ function createVideoCard(item, index) {
     </div>
   `;
 
-  // Eventos de Reprodução
-  card.querySelector('.card-play-overlay').onclick = () => openPlayer(item.t, categoryName, item.u, item);
-  card.querySelector('.btn-play').onclick = () => openPlayer(item.t, categoryName, item.u, item);
+  // Eventos de Reprodução (Animes abrem o modal completo de episódios/áudios)
+  if (isAnime) {
+    card.querySelector('.card-play-overlay').onclick = () => openAnimeModal(item);
+    card.querySelector('.btn-play').onclick = () => openAnimeModal(item);
+  } else {
+    card.querySelector('.card-play-overlay').onclick = () => openPlayer(item.t, categoryName, item.u, item);
+    card.querySelector('.btn-play').onclick = () => openPlayer(item.t, categoryName, item.u, item);
+  }
 
   const btnCopy = card.querySelector('.btn-copy');
   if (btnCopy) {
@@ -1524,11 +1937,20 @@ function createVideoCard(item, index) {
 async function handleSearch(query) {
   state.searchQuery = query;
   if (!query) {
-    if (state.activeCategoryId === 'destaques') {
+    if (state.activeType === 'animes' || state.activeCategoryId === 'animes') {
+      loadAnimesPage(1, '', '', state.animePagination.sort);
+    } else if (state.activeCategoryId === 'destaques') {
       loadDestaques();
     } else {
       selectCategory(state.activeCategoryId, dom.currentViewTitle.textContent);
     }
+    return;
+  }
+
+  // Busca rápida e leve na engine de animes se estiver na aba de animes
+  if (state.activeType === 'animes' || state.activeCategoryId === 'animes') {
+    dom.currentViewTitle.textContent = `Resultados em Animes para: "${query}"`;
+    loadAnimesPage(1, query, '', state.animePagination.sort);
     return;
   }
 
@@ -1879,6 +2301,16 @@ function getPlayableUrl(rawUrl, forceProxy = false) {
 }
 
 function stopVideoPlayback() {
+  if (dom.iframeVideoPlayer) {
+    dom.iframeVideoPlayer.src = 'about:blank';
+    dom.iframeVideoPlayer.style.display = 'none';
+  }
+  if (dom.htmlVideoPlayer) {
+    dom.htmlVideoPlayer.style.display = 'block';
+  }
+  if (dom.playerAnimeControls) {
+    dom.playerAnimeControls.style.display = 'none';
+  }
   const video = dom.htmlVideoPlayer;
   if (video) {
     // Remove callbacks para evitar loops ou re-ativação acidental
@@ -1967,5 +2399,390 @@ function escapeHtml(str) {
       '"': '&quot;',
       "'": '&#39;'
     }[m];
+  });
+}
+
+// =====================================================================
+// INTEGRAÇÃO DE ANIMES: MODAL, EPISÓDIOS, ÁUDIO & STREAM RESOLUTION
+// =====================================================================
+async function openAnimeModal(animeItem) {
+  const animeId = animeItem.id || animeItem.t;
+  dom.seriesModalPoster.src = animeItem.p || FALLBACK_POSTER;
+  dom.seriesModalTitle.textContent = animeItem.t;
+  dom.seriesModalCategory.textContent = '🌸 ANIME OFICIAL';
+  dom.seriesModalTotalEpisodes.textContent = 'Carregando episódios...';
+  dom.seriesModalTotalSeasons.textContent = 'Carregando...';
+  dom.seriesSeasonsBar.innerHTML = '';
+  dom.seriesEpisodesGrid.innerHTML = '<div style="color: #94a3b8; padding: 25px;">Carregando catálogo de episódios...</div>';
+
+  if (dom.modalAudioSwitchGroup) {
+    dom.modalAudioSwitchGroup.style.display = 'inline-flex';
+    [dom.btnModalAudioLeg, dom.btnAudioLeg].forEach(b => b?.classList.toggle('active', state.activeAnimeAudio === 'legendado'));
+    [dom.btnModalAudioDub, dom.btnAudioDub].forEach(b => b?.classList.toggle('active', state.activeAnimeAudio === 'dublado'));
+  }
+
+  updateFavoriteButtons(animeId);
+  openModal(dom.seriesModal);
+
+  try {
+    const resp = await fetch(`/api/animes/details?id=${encodeURIComponent(animeId)}`);
+    if (!resp.ok) throw new Error('Falha ao carregar detalhes do anime');
+    const details = await resp.json();
+
+    state.activeAnimeContext = {
+      animeId: details.id,
+      details: details,
+      seasons: details.seasons || [],
+      activeSeasonNumber: details.seasons && details.seasons[0] ? details.seasons[0].season_number : 1,
+      currentEpisode: null
+    };
+
+    dom.seriesModalPoster.src = details.poster || animeItem.p || FALLBACK_POSTER;
+    dom.seriesModalTitle.textContent = details.canonical_title;
+    dom.seriesModalTotalEpisodes.textContent = `${details.total_episodes} episódios`;
+    dom.seriesModalTotalSeasons.textContent = `${details.total_seasons} temporada${details.total_seasons > 1 ? 's' : ''}`;
+
+    renderAnimeSeasons(details);
+  } catch (err) {
+    console.error('Erro ao abrir modal do anime:', err);
+    dom.seriesEpisodesGrid.innerHTML = '<div style="color: #ef4444; padding: 25px;">Erro ao carregar episódios deste anime. Tente novamente mais tarde.</div>';
+  }
+}
+
+function renderAnimeSeasons(details) {
+  dom.seriesSeasonsBar.innerHTML = '';
+  const seasons = details.seasons || [];
+
+  if (!seasons.length) {
+    dom.seriesEpisodesGrid.innerHTML = '<div style="color: #64748b; padding: 20px;">Nenhum episódio cadastrado para este anime.</div>';
+    return;
+  }
+
+  seasons.forEach((season) => {
+    const tab = document.createElement('button');
+    const isActive = season.season_number === state.activeAnimeContext.activeSeasonNumber;
+    tab.className = `season-tab-btn ${isActive ? 'active' : ''}`;
+    const epCount = season.episodes ? season.episodes.length : (season.episodes_count || 0);
+    tab.textContent = `Temporada ${season.season_number} (${epCount})`;
+    tab.onclick = () => {
+      document.querySelectorAll('.season-tab-btn').forEach(b => b.classList.remove('active'));
+      tab.classList.add('active');
+      state.activeAnimeContext.activeSeasonNumber = season.season_number;
+      loadAnimeSeasonEpisodes(details.id, season.season_number, details);
+    };
+    dom.seriesSeasonsBar.appendChild(tab);
+  });
+
+  const firstSeason = seasons.find(s => s.season_number === state.activeAnimeContext.activeSeasonNumber) || seasons[0];
+  loadAnimeSeasonEpisodes(details.id, firstSeason.season_number, details);
+}
+
+async function loadAnimeSeasonEpisodes(animeId, seasonNumber, details) {
+  dom.seriesEpisodesGrid.innerHTML = '<div style="color: #94a3b8; padding: 25px;">Carregando episódios da Temporada ' + seasonNumber + '...</div>';
+  try {
+    const resp = await fetch(`/api/animes/episodes?anime_id=${encodeURIComponent(animeId)}&season=${seasonNumber}`);
+    if (!resp.ok) throw new Error('Falha ao carregar episódios da temporada');
+    const episodes = await resp.json();
+    renderAnimeSeasonEpisodes(episodes, details);
+  } catch (err) {
+    console.error('Erro ao buscar episódios da temporada:', err);
+    const season = details.seasons ? details.seasons.find(s => s.season_number === seasonNumber) : null;
+    if (season && season.episodes && season.episodes.length) {
+      renderAnimeSeasonEpisodes(season.episodes, details);
+    } else {
+      dom.seriesEpisodesGrid.innerHTML = '<div style="color: #ef4444; padding: 25px;">Erro ao carregar episódios desta temporada. Tente novamente.</div>';
+    }
+  }
+}
+
+function renderAnimeSeasonEpisodes(episodes, details) {
+  dom.seriesEpisodesGrid.innerHTML = '';
+  if (!episodes || !episodes.length) {
+    dom.seriesEpisodesGrid.innerHTML = '<div style="color: #64748b; padding: 20px;">Nenhum episódio encontrado nesta temporada.</div>';
+    return;
+  }
+
+  episodes.forEach(ep => {
+    const itemEl = document.createElement('div');
+    itemEl.className = 'series-ep-item';
+
+    const hasDub = ep.audios && ep.audios.includes('dublado');
+    const hasLeg = ep.audios && ep.audios.includes('legendado');
+    let audioTag = '';
+    if (hasDub && hasLeg) audioTag = '<span style="font-size:0.65rem; color:#a5b4fc; margin-left:6px;">[Dub/Leg]</span>';
+    else if (hasDub) audioTag = '<span style="font-size:0.65rem; color:#f472b6; margin-left:6px;">[Dub]</span>';
+    else audioTag = '<span style="font-size:0.65rem; color:#38bdf8; margin-left:6px;">[Leg]</span>';
+
+    const epNumLabel = ep.episode_number % 1 === 0 ? ep.episode_number : ep.episode_number.toFixed(1);
+
+    itemEl.innerHTML = `
+      <div class="series-ep-info">
+        <span class="series-ep-badge">EP ${epNumLabel}</span>
+        <span class="series-ep-title" title="${escapeHtml(ep.title || details.canonical_title)}">
+          ${escapeHtml(ep.title || 'Episódio ' + epNumLabel)} ${audioTag}
+        </span>
+      </div>
+      <button class="series-ep-play-btn" title="Assistir Episódio ${epNumLabel}">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
+    `;
+
+    itemEl.onclick = () => {
+      closeModal(dom.seriesModal);
+      playAnimeEpisode(ep, details, state.activeAnimeAudio);
+    };
+
+    dom.seriesEpisodesGrid.appendChild(itemEl);
+  });
+}
+
+async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', preferredProvider = null, preferredQuality = null, resumePosition = null) {
+  if (!state.activeAnimeContext) {
+    state.activeAnimeContext = { details, currentEpisode: ep };
+  } else {
+    state.activeAnimeContext.currentEpisode = ep;
+  }
+  const animeId = details.id;
+  const username = state.currentUser ? state.currentUser.username : 'Kaynã';
+
+  // Salva posição anterior do vídeo se estiver trocando de fonte/resolução
+  const targetResumeTime = (resumePosition !== null)
+    ? resumePosition
+    : ((dom.htmlVideoPlayer && !isNaN(dom.htmlVideoPlayer.currentTime) && dom.htmlVideoPlayer.currentTime > 1)
+        ? dom.htmlVideoPlayer.currentTime
+        : 0);
+
+  if (preferredProvider) state.activeAnimeProvider = preferredProvider;
+  if (preferredQuality) state.activeAnimeQuality = preferredQuality;
+  state.activeAnimeAudio = preferredAudio;
+
+  // Configura títulos e badges do player
+  const epNumLabel = ep.episode_number % 1 === 0 ? ep.episode_number : ep.episode_number.toFixed(1);
+  dom.modalVideoTitle.textContent = `${details.canonical_title} - EP ${epNumLabel}`;
+  dom.modalCategoryBadge.textContent = '🌸 ANIME';
+  dom.modalEpisodeBadge.textContent = `T0${ep.season_number || 1} • EP ${epNumLabel}`;
+  dom.modalEpisodeBadge.style.display = 'inline-block';
+
+  // Controles de áudio e fonte no header do player
+  if (dom.playerAnimeControls) {
+    dom.playerAnimeControls.style.display = 'inline-flex';
+    [dom.btnAudioLeg].forEach(b => b?.classList.toggle('active', preferredAudio === 'legendado'));
+    [dom.btnAudioDub].forEach(b => b?.classList.toggle('active', preferredAudio === 'dublado'));
+  }
+
+  updateFavoriteButtons(animeId);
+  openModal(dom.playerModal);
+  dom.playerLoading.classList.add('active');
+
+  // Limpa players anteriores
+  stopVideoPlayback();
+
+  try {
+    let resolveUrl = `/api/animes/resolve?episode_id=${encodeURIComponent(ep.id)}&audio=${encodeURIComponent(preferredAudio)}`;
+    if (state.activeAnimeProvider) resolveUrl += `&provider=${encodeURIComponent(state.activeAnimeProvider)}`;
+    if (state.activeAnimeQuality) resolveUrl += `&quality=${encodeURIComponent(state.activeAnimeQuality)}`;
+
+    const resp = await fetch(resolveUrl);
+    const data = await resp.json();
+
+    if (!data.success || !data.stream_url) {
+      throw new Error(data.error || 'Nenhum stream de vídeo retornado pelo provedor.');
+    }
+
+    // Configura o Seletor de Servidor / Provedor
+    if (dom.playerProviderSelect && data.available_sources) {
+      const uniqueProvMap = new Map();
+      data.available_sources.forEach(s => {
+        if (!uniqueProvMap.has(s.provider)) {
+          uniqueProvMap.set(s.provider, s);
+        }
+      });
+
+      dom.playerProviderSelect.innerHTML = Array.from(uniqueProvMap.values()).map(p => `
+        <option value="${p.provider}" ${p.provider === data.provider ? 'selected' : ''}>
+          ${p.provider === 'animesdigital' ? '🌸 AnimesDigital' : (p.provider === 'animesonlinecc' ? '🎬 AnimesOnlineCC' : '⚡ ' + p.provider_label)}
+        </option>
+      `).join('');
+
+      dom.playerProviderSelect.onchange = (e) => {
+        const newProv = e.target.value;
+        state.activeAnimeProvider = newProv;
+        const savedTime = dom.htmlVideoPlayer ? dom.htmlVideoPlayer.currentTime : 0;
+        playAnimeEpisode(ep, details, state.activeAnimeAudio, newProv, state.activeAnimeQuality, savedTime);
+      };
+    }
+
+    // Configura o Seletor de Qualidade / Resolução
+    if (dom.playerQualitySelect && data.available_sources) {
+      const curProvSources = data.available_sources.filter(s => s.provider === data.provider);
+      const uniqueQualMap = new Map();
+      curProvSources.forEach(s => {
+        if (!uniqueQualMap.has(s.quality)) {
+          uniqueQualMap.set(s.quality, s);
+        }
+      });
+
+      if (uniqueQualMap.size === 0) {
+        uniqueQualMap.set(data.quality || '720p HD', {
+          quality: data.quality || '720p HD',
+          quality_label: `${data.quality || '720p HD'} (Verificado)`
+        });
+      }
+
+      dom.playerQualitySelect.innerHTML = Array.from(uniqueQualMap.values()).map(q => `
+        <option value="${q.quality}" ${q.quality === data.quality ? 'selected' : ''}>
+          ${q.quality_label || q.quality}
+        </option>
+      `).join('');
+
+      dom.playerQualitySelect.onchange = (e) => {
+        const newQual = e.target.value;
+        state.activeAnimeQuality = newQual;
+        const savedTime = dom.htmlVideoPlayer ? dom.htmlVideoPlayer.currentTime : 0;
+        playAnimeEpisode(ep, details, state.activeAnimeAudio, data.provider, newQual, savedTime);
+      };
+    }
+
+    if (data.player_type === 'embed') {
+      // Player iframe embed
+      if (dom.htmlVideoPlayer) dom.htmlVideoPlayer.style.display = 'none';
+      if (dom.iframeVideoPlayer) {
+        dom.iframeVideoPlayer.style.display = 'block';
+        dom.iframeVideoPlayer.src = data.stream_url;
+      }
+      dom.playerLoading.classList.remove('active');
+    } else {
+      // Player nativo HTML5 / HLS
+      if (dom.iframeVideoPlayer) {
+        dom.iframeVideoPlayer.style.display = 'none';
+        dom.iframeVideoPlayer.src = 'about:blank';
+      }
+      if (dom.htmlVideoPlayer) {
+        dom.htmlVideoPlayer.style.display = 'block';
+
+        // CDNs externas necessitam de proxy CORS seguro
+        const isRemote = (data.stream_url.startsWith('http://') || data.stream_url.startsWith('https://')) &&
+          !data.stream_url.startsWith(window.location.origin);
+        const playableUrl = isRemote
+          ? `/api/stream?url=${encodeURIComponent(data.stream_url)}`
+          : getPlayableUrl(data.stream_url);
+
+        const isHls = data.stream_url.includes('.m3u8') ||
+          data.stream_url.includes('/h.jpg') ||
+          data.stream_url.includes('/p.jpg') ||
+          data.stream_url.includes('maximaimg.online') ||
+          data.stream_url.includes('akumast.net') ||
+          data.player_type === 'hls' ||
+          data.format === 'hls';
+
+        if (isHls) {
+          if (Hls.isSupported()) {
+            state.hlsPlayer = new Hls({ debug: false, enableWorker: true });
+            state.hlsPlayer.loadSource(playableUrl);
+            state.hlsPlayer.attachMedia(dom.htmlVideoPlayer);
+            state.hlsPlayer.on(Hls.Events.MANIFEST_PARSED, () => {
+              dom.playerLoading.classList.remove('active');
+              if (targetResumeTime > 0) {
+                dom.htmlVideoPlayer.currentTime = targetResumeTime;
+              }
+              dom.htmlVideoPlayer.play().catch(() => {});
+            });
+            state.hlsPlayer.on(Hls.Events.ERROR, (event, errData) => {
+              if (errData.fatal) {
+                dom.playerLoading.classList.remove('active');
+                console.error('Erro fatal no player HLS:', errData);
+              }
+            });
+          } else if (dom.htmlVideoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
+            dom.htmlVideoPlayer.src = playableUrl;
+            dom.htmlVideoPlayer.onloadedmetadata = () => {
+              if (targetResumeTime > 0) dom.htmlVideoPlayer.currentTime = targetResumeTime;
+            };
+            dom.htmlVideoPlayer.play().catch(() => {});
+            dom.playerLoading.classList.remove('active');
+          } else {
+            dom.htmlVideoPlayer.src = playableUrl;
+            dom.htmlVideoPlayer.onloadedmetadata = () => {
+              if (targetResumeTime > 0) dom.htmlVideoPlayer.currentTime = targetResumeTime;
+            };
+            dom.htmlVideoPlayer.play().catch(() => {});
+            dom.playerLoading.classList.remove('active');
+          }
+        } else {
+          dom.htmlVideoPlayer.src = playableUrl;
+          dom.htmlVideoPlayer.onloadedmetadata = () => {
+            if (targetResumeTime > 0) dom.htmlVideoPlayer.currentTime = targetResumeTime;
+          };
+          dom.htmlVideoPlayer.load();
+          dom.htmlVideoPlayer.play().then(() => {
+            dom.playerLoading.classList.remove('active');
+          }).catch(() => {
+            dom.playerLoading.classList.remove('active');
+          });
+        }
+      }
+    }
+
+    // Salva progresso de reprodução no backend
+    fetch('/api/animes/watch-progress', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        user_id: username,
+        content_id: animeId,
+        episode_id: ep.id,
+        season_number: ep.season_number || 1,
+        episode_number: ep.episode_number || 1,
+        episode_title: ep.title || `Episódio ${epNumLabel}`,
+        position_seconds: 1,
+        duration_seconds: 1400
+      })
+    }).catch(() => {});
+
+  } catch (err) {
+    console.error('Erro na reprodução do anime:', err);
+    dom.playerLoading.classList.remove('active');
+    showToast(`Erro na reprodução: ${err.message || 'Provedor temporariamente indisponível'}`);
+  }
+
+  // Preenche a barra de capítulos inferior
+  setupAnimePlayerStrip(ep, details);
+}
+
+function setupAnimePlayerStrip(currentEp, details) {
+  if (!dom.playerSeriesStrip || !dom.playerStripScroll) return;
+  dom.playerSeriesStrip.style.display = 'flex';
+  if (dom.stripSeriesName) dom.stripSeriesName.textContent = details.canonical_title;
+
+  const currentSeason = (details.seasons || []).find(s => s.season_number === (currentEp.season_number || 1)) || details.seasons[0];
+  const seasonEpisodes = currentSeason ? currentSeason.episodes : [];
+  if (dom.stripEpCount) dom.stripEpCount.textContent = `${seasonEpisodes.length} episódios`;
+
+  dom.playerStripScroll.innerHTML = '';
+  seasonEpisodes.forEach((ep) => {
+    const isCurrent = ep.id === currentEp.id;
+    const epNumLabel = ep.episode_number % 1 === 0 ? ep.episode_number : ep.episode_number.toFixed(1);
+    const btn = document.createElement('button');
+    btn.className = `btn-strip-ep ${isCurrent ? 'active' : ''}`;
+    btn.textContent = `EP ${epNumLabel}`;
+    btn.title = ep.title || `Episódio ${epNumLabel}`;
+    btn.onclick = () => playAnimeEpisode(ep, details, state.activeAnimeAudio);
+    dom.playerStripScroll.appendChild(btn);
+
+    if (isCurrent) {
+      setTimeout(() => btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' }), 100);
+    }
+  });
+}
+
+function updateFavoriteButtons(animeId) {
+  const isFav = state.userFavorites.has(animeId);
+  [dom.btnPlayerFavorite, dom.btnSeriesModalFavorite].forEach(btn => {
+    if (btn) {
+      btn.classList.toggle('active', isFav);
+      btn.title = isFav ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos';
+    }
   });
 }

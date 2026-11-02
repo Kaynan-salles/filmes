@@ -1,0 +1,262 @@
+import base64
+import json
+import re
+import urllib.parse
+
+import httpx
+from bs4 import BeautifulSoup
+
+from models.models import AnimeMetadata, ScrapedEpisodes
+from scrapers.plugins.utils import (
+    DEFAULT_HEADERS,
+    http_get_with_retry,
+    http_request_with_retry,
+    load_plugin,
+    log_scraper_http_failure,
+    store_player_source,
+)
+from utils.logging import get_logger
+
+logger = get_logger(__name__)
+
+BASE_URL = "https://animesonline.io"
+HEADERS = DEFAULT_HEADERS
+REQUEST_TIMEOUT = 20
+
+_IFRAME_SRC_RE = re.compile(r'<iframe[^>]+src=["\']((?:https?:)?//[^"\']+)["\']', re.I)
+_URL_RE = re.compile(r"^(?:https?:)?//", re.I)
+# juicycodes-style loader call: _fn([<b64 pieces>], [<indices>], "<b64 xor key>")
+_JUICY_CALL_RE = re.compile(r'\}\w+\((\[.*?\]),(\[[\d,\s]*\]),"([^"]+)"\)', re.S)
+_JW_SOURCES_RE = re.compile(r"sources:\s*(\[.*?\])\s*,?\n")
+# AniDrivePlayerConfig embeds sources as JSON: "sources":[{...}],"tracks"
+_ANIDRIVE_SOURCES_RE = re.compile(r'"sources":(\[.*?\]),"tracks"', re.S)
+
+
+class AnimesOnlineIO:
+    name = "animesonlineio"
+    base_url = BASE_URL
+
+    def search_anime(self, query: str) -> list[AnimeMetadata]:
+        results = []
+        try:
+            url = f"{BASE_URL}/search/{urllib.parse.quote(query)}"
+            r = http_get_with_retry(
+                url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+            )
+            soup = BeautifulSoup(r.text, "html.parser")
+            for article in soup.select("article.bs"):
+                a = article.select_one("a[href*='/anime/']")
+                if not a:
+                    continue
+                title = str(a.get("title", "")) or a.get_text(strip=True)
+                link = str(a.get("href", ""))
+                if title and link:
+                    results.append(AnimeMetadata(title=title, url=link, source=self.name))
+        except httpx.HTTPError as e:
+            log_scraper_http_failure(logger, "AnimesOnlineIO", "search_anime", e)
+        return results
+
+    def search_episodes(self, anime: str, url: str, params: dict | None) -> list[ScrapedEpisodes]:
+        _ = params
+        try:
+            r = http_get_with_retry(
+                url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+            )
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            episodes = []
+            seen = set()
+            for li in soup.select(".eplister ul li"):
+                a = li.find("a")
+                if not a:
+                    continue
+                ep_url = str(a.get("href", ""))
+                if not ep_url.startswith("http") or ep_url in seen:
+                    continue
+                seen.add(ep_url)
+                num_el = li.select_one(".epl-num")
+                title_el = li.select_one(".epl-title")
+                num_text = num_el.get_text(strip=True) if num_el else ""
+                try:
+                    num = float(num_text)
+                except ValueError:
+                    num = 0.0
+                title = (
+                    title_el.get_text(strip=True) if title_el else f"Episódio {num_text}".strip()
+                )
+                episodes.append((num, title, ep_url))
+
+            # The site lists episodes newest-first; playback expects ascending order
+            episodes.sort(key=lambda ep: ep[0])
+            if episodes:
+                titles = [ep[1] for ep in episodes]
+                urls = [ep[2] for ep in episodes]
+                return [ScrapedEpisodes(titles=titles, urls=urls, source=self.name)]
+            return []
+        except httpx.HTTPError as e:
+            log_scraper_http_failure(logger, "AnimesOnlineIO", "search_episodes", e)
+            return []
+
+    def search_player_src(self, url: str, container: list, event) -> None:
+        try:
+            r = http_get_with_retry(
+                url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+            )
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            found = False
+            for embed_url in self._extract_embed_urls(soup):
+                # AniDrive gates the token embed on the episode-page Referer;
+                # the site root alone answers 403.
+                for video_url in self._resolve_embed_streams(embed_url, referer=url):
+                    if store_player_source(container, event, video_url):
+                        found = True
+
+            if not found:
+                raise ValueError("No playable source in AnimesOnlineIO episode page")
+        except Exception as e:
+            raise type(e)(f"AnimesOnlineIO: {e}") from e
+
+    def _extract_embed_urls(self, soup: BeautifulSoup) -> list[str]:
+        urls = []
+
+        # Player tabs carry the embed as base64 (iframe HTML or bare URL)
+        for li in soup.select(".tabs_videos li"):
+            raw = ""
+            for attr in ("value", "data-value", "data-embed", "data-src"):
+                raw = str(li.get(attr, "") or "")
+                if raw:
+                    break
+            if not raw:
+                continue
+            if embed_url := self._decode_embed(raw):
+                urls.append(embed_url)
+
+        # Fallback: lazy-loaded iframe in the player area
+        for iframe in soup.select("iframe[data-src]"):
+            src = self._normalize_url(str(iframe.get("data-src", "")))
+            if src and "a-ads.com" not in src:
+                urls.append(src)
+
+        # Preserve order, drop duplicates
+        return list(dict.fromkeys(urls))
+
+    def _decode_embed(self, raw: str) -> str | None:
+        value = raw
+        try:
+            decoded = base64.b64decode(raw).decode("utf-8")
+            if "<" in decoded or _URL_RE.match(decoded):
+                value = decoded
+        except (ValueError, UnicodeDecodeError):
+            pass
+
+        if m := _IFRAME_SRC_RE.search(value):
+            return self._normalize_url(m.group(1))
+        if _URL_RE.match(value):
+            return self._normalize_url(value)
+        return None
+
+    def _resolve_embed_streams(self, embed_url: str, referer: str | None = None) -> list[str]:
+        """Resolve an anidrive-style embed to playable stream URLs.
+
+        The ``?prime`` embed serves AniDrive HLS (``static.anidrive.click``);
+        the plain token serves blogger ``redirector.googlevideo.com`` MP4s.
+        """
+        try:
+            r = http_get_with_retry(
+                embed_url,
+                headers={**HEADERS, "Referer": referer or f"{BASE_URL}/"},
+                timeout=REQUEST_TIMEOUT,
+                follow_redirects=True,
+            )
+            streams = []
+            for payload in self._decode_all_juicy_payloads(r.text):
+                for source in self._extract_sources_from_payload(payload):
+                    file_url = source.get("file", "")
+                    if file_url.startswith("http"):
+                        streams.append(self._follow_redirector(file_url))
+            if not streams:
+                raise ValueError("No jwplayer sources in embed payload")
+            return streams
+        except Exception as e:
+            logger.debug(f"AnimesOnlineIO embed resolve failed for '{embed_url}': {e}")
+            return []
+
+    @staticmethod
+    def _extract_sources_from_payload(payload: str) -> list[dict]:
+        """Extract ``[{file, ...}]`` source dicts from a decoded payload.
+
+        Supports the legacy ``sources: [...]`` jwplayer setup and the current
+        ``AniDrivePlayerConfig`` JSON (``"sources":[...],"tracks"``).
+        """
+        for pattern in (_ANIDRIVE_SOURCES_RE, _JW_SOURCES_RE):
+            match = pattern.search(payload)
+            if not match:
+                continue
+            try:
+                sources = json.loads(match.group(1))
+            except (json.JSONDecodeError, ValueError):
+                continue
+            if isinstance(sources, list):
+                return [s for s in sources if isinstance(s, dict)]
+        return []
+
+    @staticmethod
+    def _decode_all_juicy_payloads(html: str) -> list[str]:
+        """Decode every XOR+base64 obfuscated script block in *html*."""
+        payloads = []
+        for m in _JUICY_CALL_RE.finditer(html):
+            try:
+                pieces = json.loads(m.group(1))
+                indices = json.loads(m.group(2))
+                data = base64.b64decode("".join(pieces[i] for i in indices))
+                key = base64.b64decode(m.group(3))
+                payloads.append(
+                    bytes(b ^ key[i % len(key)] for i, b in enumerate(data)).decode("utf-8")
+                )
+            except (ValueError, UnicodeDecodeError, IndexError, KeyError):
+                continue
+        return payloads
+
+    @staticmethod
+    def _decode_juicy_payload(html: str) -> str:
+        """Decode the XOR+base64 obfuscated jwplayer setup script.
+
+        The embed page now ships several obfuscated blocks (segment worker +
+        player config). Returns the first block holding video sources so legacy
+        callers keep working; raises when no block decodes.
+        """
+        payloads = AnimesOnlineIO._decode_all_juicy_payloads(html)
+        if not payloads:
+            raise ValueError("No obfuscated payload in embed page")
+        for payload in payloads:
+            if AnimesOnlineIO._extract_sources_from_payload(payload):
+                return payload
+        return payloads[0]
+
+    @staticmethod
+    def _follow_redirector(url: str) -> str:
+        """Resolve redirector.googlevideo.com hops; mpv/ffmpeg fail on the redirect."""
+        if "redirector.googlevideo.com" not in url:
+            return url
+        try:
+            r = http_request_with_retry(
+                "GET",
+                url,
+                headers=HEADERS,
+                timeout=REQUEST_TIMEOUT,
+                follow_redirects=False,
+                expected_status_codes={301, 302, 303, 307, 308},
+            )
+            location = r.headers.get("location", "")
+            return location if location.startswith("http") else url
+        except (httpx.HTTPError, Exception):
+            return url
+
+    @staticmethod
+    def _normalize_url(url: str) -> str:
+        return f"https:{url}" if url.startswith("//") else url
+
+
+def load(register) -> None:
+    load_plugin(AnimesOnlineIO, register)

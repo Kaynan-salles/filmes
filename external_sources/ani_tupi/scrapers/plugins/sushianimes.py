@@ -1,0 +1,300 @@
+import html
+from utils.logging import get_logger
+import re
+import urllib.parse
+from concurrent.futures import ThreadPoolExecutor
+
+import httpx
+from bs4 import BeautifulSoup
+
+from scrapers.plugins.utils import (
+    DEFAULT_HEADERS,
+    http_get_with_retry,
+    http_request_with_retry,
+    load_plugin,
+    store_player_source,
+)
+from models.models import AnimeMetadata, ScrapedEpisodes
+
+logger = get_logger(__name__)
+
+
+BASE_URL = "https://sushianimes.com.br"
+HEADERS = {
+    **DEFAULT_HEADERS,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.7,en;q=0.3",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
+# Keep this lower than the generic provider timeout so a stalled source
+# does not block fallback for too long.
+REQUEST_TIMEOUT = 10
+
+_PLAYER_PATTERNS = [
+    re.compile(r'var\s+playerEmbed\s*=\s*["\']([^"\']+)["\']', re.IGNORECASE),
+    re.compile(r'"file"\s*:\s*"([^"\\]+(?:\\.[^"\\]*)*)"', re.IGNORECASE),
+    re.compile(r'https?:\\/\\/[^"\'\s]+\.(?:m3u8|mp4)(?:[^"\'\s]*)', re.IGNORECASE),
+    re.compile(r'https?://[^"\'\s]+\.(?:m3u8|mp4)(?:[^"\'\s]*)', re.IGNORECASE),
+]
+_SEASON_RE = re.compile(r"(?:temporada|season)\s*(\d+)")
+_SEASON_ALT_RE = re.compile(r"(?:^|\D)(\d+)(?:º|ª)?\s*(?:temporada|season)")
+_SEASON_NUM_RE = re.compile(r"(?:^|\D)([1-9]\d?)(?:º|ª)?")
+_DUBBED_RE = re.compile(r"\bdublado\b", re.IGNORECASE)
+_SUBBED_RE = re.compile(r"\blegendado\b", re.IGNORECASE)
+_AUDIO_MARKER_RE = re.compile(r"\s*[(-]?\s*(dublado|legendado)\s*[)]?\s*", re.IGNORECASE)
+_WHITESPACE_RE = re.compile(r"\s+")
+# Clean media URL: extension plus optional query string, dropping trailing
+# JS/HTML junk such as '";var' left after entity decoding. m3u8 first: HLS
+# URLs embed ".mp4" in the path (".../07.mp4/index.m3u8").
+_CLEAN_M3U8_URL_RE = re.compile(r"https?://\S+?\.m3u8(?:\?[^\s\"'<>;]*)?", re.IGNORECASE)
+_CLEAN_MP4_URL_RE = re.compile(r"https?://\S+?\.mp4(?:\?[^\s\"'<>;]*)?", re.IGNORECASE)
+
+
+def _extract_embed_ids(soup: BeautifulSoup) -> list[str]:
+    """Extract all embed IDs from player controls, selected first."""
+    seen: set[str] = set()
+    ids: list[str] = []
+
+    for selector in (
+        ".btn-service.selected[data-embed]",
+        "[data-embed]",
+        ".play-btn[data-id]",
+    ):
+        for el in soup.select(selector):
+            raw = el.get("data-embed") or el.get("data-id")
+            if raw:
+                val = str(raw).strip()
+                if val not in seen:
+                    seen.add(val)
+                    ids.append(val)
+
+    return ids
+
+
+def _extract_player_url(embed_html: str) -> str | None:
+    """Extract direct player URL from AJAX embed response."""
+    # srcdoc payloads arrive HTML-escaped (&quot;, &lt;...); matching before
+    # decoding lets "&quot;;var" slip into the URL (see Hell Mode ep 11).
+    text = html.unescape(embed_html)
+    for pattern in _PLAYER_PATTERNS:
+        match = pattern.search(text)
+        if not match:
+            continue
+
+        player_url = match.group(1) if match.lastindex else match.group(0)
+        player_url = html.unescape(player_url)
+        player_url = player_url.replace("\\/", "/")
+        if player_url.startswith("//"):
+            player_url = f"https:{player_url}"
+
+        if player_url.startswith("http://") or player_url.startswith("https://"):
+            clean = _CLEAN_M3U8_URL_RE.search(player_url) or _CLEAN_MP4_URL_RE.search(player_url)
+            return clean.group(0) if clean else player_url
+
+    return None
+
+
+def _normalize_url(href: str) -> str:
+    if href.startswith("http://") or href.startswith("https://"):
+        return href
+    return f"{BASE_URL}{href}"
+
+
+def _extract_season_number(text: str) -> int:
+    lowered = text.lower()
+
+    match = _SEASON_RE.search(lowered)
+    if match:
+        return int(match.group(1))
+
+    match = _SEASON_ALT_RE.search(lowered)
+    if match:
+        return int(match.group(1))
+
+    match = _SEASON_NUM_RE.search(lowered)
+    if match:
+        return int(match.group(1))
+    return 1
+
+
+def _build_result_title(title: str, season: int) -> str:
+    normalized = title.strip()
+    audio_suffix = ""
+
+    if _DUBBED_RE.search(normalized):
+        audio_suffix = " - Dublado"
+    elif _SUBBED_RE.search(normalized):
+        audio_suffix = " - Legendado"
+
+    base_title = _AUDIO_MARKER_RE.sub(" ", normalized)
+    base_title = _WHITESPACE_RE.sub(" ", base_title).strip()
+
+    if season > 1:
+        return f"{base_title} {season}{audio_suffix}"
+    return f"{base_title}{audio_suffix}"
+
+
+class SushiAnimes:
+    name = "sushianimes"
+    base_url = BASE_URL
+
+    def _search_page(self, query: str) -> BeautifulSoup:
+        url = f"{BASE_URL}/search/{urllib.parse.quote(query)}"
+        response = http_get_with_retry(
+            url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+        )
+        return BeautifulSoup(response.text, "html.parser")
+
+    def _fetch_anime_page(self, url: str) -> BeautifulSoup:
+        response = http_get_with_retry(
+            url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+        )
+        return BeautifulSoup(response.text, "html.parser")
+
+    def search_anime(self, query: str) -> list[AnimeMetadata]:
+        try:
+            soup = self._search_page(query)
+            anime_items = soup.select("#animes .list-movie")
+            if not anime_items:
+                return []
+
+            # Fetch card details concurrently, while preserving search result order.
+            # A failed details page degrades to one season-1 result instead of
+            # discarding every result after it.
+            with ThreadPoolExecutor(max_workers=min(4, len(anime_items))) as executor:
+                result_groups = list(executor.map(self._parse_anime_item, anime_items))
+            return [result for group in result_groups for result in group]
+        except httpx.HTTPError as e:
+            logger.debug("sushianimes search_anime falhou: %s", e)
+            return []
+
+    def _parse_anime_item(self, item) -> list[AnimeMetadata]:
+        anchor = item.select_one("a.list-title") or item.select_one("a.list-media")
+        if not anchor:
+            return []
+
+        title = anchor.get_text(strip=True)
+        href = anchor.get("href")
+        if not title or not href:
+            return []
+
+        anime_url = _normalize_url(href)
+        try:
+            anime_page = self._fetch_anime_page(anime_url)
+            season_panes = anime_page.select(".episodes.tab-content .tab-pane[id^='season-']")
+        except httpx.HTTPError as e:
+            logger.debug("sushianimes anime page failed for %s: %s", anime_url, e)
+            season_panes = []
+
+        if len(season_panes) <= 1:
+            return [
+                AnimeMetadata(
+                    title=_build_result_title(title, 1),
+                    url=anime_url,
+                    source=self.name,
+                    params={"season": 1},
+                )
+            ]
+
+        results = []
+        for pane in season_panes:
+            season_id = pane.get("id", "season-1")
+            season = _extract_season_number(season_id)
+            results.append(
+                AnimeMetadata(
+                    title=_build_result_title(title, season),
+                    url=anime_url,
+                    source=self.name,
+                    params={"season": season},
+                )
+            )
+        return results
+
+    def search_episodes(self, anime: str, url: str, params: dict | None) -> list[ScrapedEpisodes]:
+        try:
+            response = http_get_with_retry(
+                url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+            )
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            season = None
+            if isinstance(params, dict):
+                season = params.get("season")
+            if not season:
+                season = _extract_season_number(anime)
+
+            season_pane = soup.select_one(f".episodes.tab-content .tab-pane#season-{season}")
+            if season_pane is None:
+                return []
+
+            titles: list[str] = []
+            urls: list[str] = []
+            for episode in season_pane.select("a[href*='/anime/']"):
+                href = episode.get("href")
+                if not href:
+                    continue
+
+                episode_title = episode.get("title", "").strip()
+                name_el = episode.select_one(".name")
+                episode_name = name_el.get_text(" ", strip=True) if name_el else ""
+                full_title = f"{episode_title} {episode_name}".strip()
+
+                titles.append(full_title)
+                urls.append(_normalize_url(href))
+
+            if titles and urls:
+                return [ScrapedEpisodes(titles=titles, urls=urls, source=self.name, season=season)]
+            return []
+        except httpx.HTTPError as e:
+            logger.debug("sushianimes search_episodes falhou: %s", e)
+            return []
+
+    def search_player_src(self, url: str, container: list, event) -> None:
+        try:
+            response = http_get_with_retry(
+                url, headers=HEADERS, timeout=REQUEST_TIMEOUT, follow_redirects=True
+            )
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            embed_ids = _extract_embed_ids(soup)
+            if not embed_ids:
+                raise ValueError(f"No embed ID found in SushiAnimes episode page: {url}")
+
+            ajax_headers = {
+                **HEADERS,
+                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                "X-Requested-With": "XMLHttpRequest",
+                "Referer": url,
+            }
+
+            found = False
+            for embed_id in embed_ids:
+                try:
+                    embed_response = http_request_with_retry(
+                        "POST",
+                        f"{BASE_URL}/ajax/embed",
+                        data={"id": embed_id},
+                        headers=ajax_headers,
+                        timeout=REQUEST_TIMEOUT,
+                        follow_redirects=True,
+                    )
+                    player_url = _extract_player_url(embed_response.text)
+                    if player_url:
+                        store_player_source(container, event, player_url)
+                        found = True
+                except httpx.HTTPError as e:
+                    logger.debug("sushianimes embed %s falhou: %s", embed_id, e)
+
+            if not found:
+                raise ValueError(f"No player URL found in any SushiAnimes embed for: {url}")
+        except httpx.HTTPError as e:
+            logger.debug("sushianimes search_player_src falhou: %s", e)
+
+
+def load(register) -> None:
+    load_plugin(SushiAnimes, register)

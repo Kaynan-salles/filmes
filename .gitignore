@@ -16,3 +16,10 @@ ENV/
 .idea/
 Thumbs.db
 .DS_Store
+
+# Temporary & Scratch
+scratch/
+*.db-wal
+*.db-shm
+tests/test_catalog.db
+

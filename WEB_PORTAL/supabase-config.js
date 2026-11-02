@@ -1,6 +1,6 @@
-// K-Cine - Configuração do Supabase (Opcional / Pronta para Conectar)
-// Para conectar ao Supabase, basta colar sua URL e Chave Anon abaixo:
+// K-Cine - Configuração do Supabase
 window.SUPABASE_CONFIG = {
-  url: '',      // Ex: 'https://exemplo.supabase.co'
-  anonKey: ''  // Ex: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+  projectId: 'nkemtquunrmavtnzyyli',
+  url: 'https://nkemtquunrmavtnzyyli.supabase.co',
+  anonKey: 'sb_publishable_t8_odSP-sK_7iEWuyjExhA_0pH6FSPv'
 };

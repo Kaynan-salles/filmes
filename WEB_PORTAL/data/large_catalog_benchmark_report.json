@@ -1,0 +1,11 @@
+{
+  "isolated_catalog_size": 1200,
+  "episodes_size": 24000,
+  "p1_cold_ms": 3.35,
+  "p1_warm_ms": 0.009,
+  "p25_ms": 2.3,
+  "p50_ms": 2.02,
+  "search_ms": 3.64,
+  "payload_kb": 12.95,
+  "dom_nodes_constant": 24
+}

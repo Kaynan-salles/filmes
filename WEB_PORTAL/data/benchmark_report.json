@@ -1,0 +1,81 @@
+{
+  "benchmarks": [
+    {
+      "name": "Página 1 (Fria - Consulta SQLite + Índices)",
+      "status": 200,
+      "elapsed_ms": 28.23,
+      "size_bytes": 24248,
+      "size_kb": 23.68,
+      "item_count": 24
+    },
+    {
+      "name": "Página 1 (Quente - Cache em Memória TTL)",
+      "status": 200,
+      "elapsed_ms": 1.26,
+      "size_bytes": 24248,
+      "size_kb": 23.68,
+      "item_count": 24
+    },
+    {
+      "name": "Busca Backend 'jujutsu'",
+      "status": 200,
+      "elapsed_ms": 3.16,
+      "size_bytes": 713,
+      "size_kb": 0.7,
+      "item_count": 1
+    },
+    {
+      "name": "Episódios Temporada 1 (Kanata kara)",
+      "status": 200,
+      "elapsed_ms": 2.92,
+      "size_bytes": 792,
+      "size_kb": 0.77,
+      "item_count": 2
+    }
+  ],
+  "ssrf_safe": true,
+  "ssrf_details": [
+    {
+      "target": "Localhost Loopback",
+      "blocked": true,
+      "status": 403,
+      "msg": "HTTP Error 403: Forbidden"
+    },
+    {
+      "target": "Rede Privada 192.168.x",
+      "blocked": true,
+      "status": 403,
+      "msg": "HTTP Error 403: Forbidden"
+    },
+    {
+      "target": "Rede Privada 10.x",
+      "blocked": true,
+      "status": 403,
+      "msg": "HTTP Error 403: Forbidden"
+    },
+    {
+      "target": "Link-Local Cloud Metadata",
+      "blocked": true,
+      "status": 403,
+      "msg": "HTTP Error 403: Forbidden"
+    },
+    {
+      "target": "Domínio fora da Whitelist",
+      "blocked": true,
+      "status": 403,
+      "msg": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "sync_status": {
+    "is_running": 0,
+    "providers": [
+      {
+        "provider": "animesonlinecc",
+        "last_page": 1,
+        "total_synced": 20,
+        "is_running": 0,
+        "last_synced_at": "2026-11-01 17:45:21"
+      }
+    ]
+  }
+}

@@ -130,6 +130,7 @@
         <button class="type-btn active" data-type="todos" id="btnTypeTodos">Todos</button>
         <button class="type-btn" data-type="filmes" id="btnTypeFilmes">🎬 Filmes</button>
         <button class="type-btn" data-type="series" id="btnTypeSeries">📺 Séries</button>
+        <button class="type-btn" data-type="animes" id="btnTypeAnimes">🌸 Animes</button>
       </nav>
 
       <!-- Barra de Busca -->
@@ -191,68 +192,6 @@
           </svg>
           Assistir no Navegador
         </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Barra de Estatísticas do Canal -->
-  <section class="stats-bar">
-    <div class="stats-container">
-      <div class="stat-card">
-        <div class="stat-icon purple">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-            <line x1="7" y1="2" x2="7" y2="22"></line>
-            <line x1="17" y1="2" x2="17" y2="22"></line>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <line x1="2" y1="7" x2="7" y2="7"></line>
-            <line x1="2" y1="17" x2="7" y2="17"></line>
-            <line x1="17" y1="17" x2="22" y2="17"></line>
-            <line x1="17" y1="7" x2="22" y2="7"></line>
-          </svg>
-        </div>
-        <div class="stat-info">
-          <span class="stat-number">316.354</span>
-          <span class="stat-label">Títulos Organizados</span>
-        </div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-icon pink">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
-          </svg>
-        </div>
-        <div class="stat-info">
-          <span class="stat-number">30.203</span>
-          <span class="stat-label">Filmes em Catálogo</span>
-        </div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-icon cyan">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
-            <polyline points="17 2 12 7 7 2"></polyline>
-          </svg>
-        </div>
-        <div class="stat-info">
-          <span class="stat-number">286.151</span>
-          <span class="stat-label">Séries & Episódios</span>
-        </div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-icon amber">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-          </svg>
-        </div>
-        <div class="stat-info">
-          <span class="stat-number">50 Gêneros</span>
-          <span class="stat-label">Categorias & Coleções HD</span>
-        </div>
       </div>
     </div>
   </section>
@@ -345,10 +284,25 @@
       <!-- Cards injetados via app.js -->
     </div>
 
-    <!-- Paginação / Botão Carregar Mais -->
+    <!-- Paginação / Botão Carregar Mais Legado (Filmes/Séries) -->
     <div class="load-more-container" id="loadMoreContainer" style="display: none;">
       <button class="btn-load-more" id="btnLoadMore">
         Carregar Mais Títulos
+      </button>
+    </div>
+
+    <!-- Paginação Otimizada por Substituição (Mantém DOM leve com máximo de 24 cards) -->
+    <div class="catalog-pagination-container" id="catalogPaginationContainer" style="display: none;">
+      <button class="btn-page-nav" id="btnPagePrev" title="Página Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        Anterior
+      </button>
+      <div class="pagination-pages" id="paginationPages">
+        <!-- Botões de páginas gerados dinamicamente via app.js -->
+      </div>
+      <button class="btn-page-nav" id="btnPageNext" title="Próxima Página">
+        Próxima
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </button>
     </div>
   </main>
@@ -366,6 +320,34 @@
           <h3 id="modalVideoTitle">Título do Vídeo</h3>
         </div>
         <div class="player-header-actions">
+          <!-- Seletor de Áudio, Fonte e Qualidade para Animes -->
+          <div class="player-anime-controls" id="playerAnimeControls" style="display: none; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <div class="audio-switch-group">
+              <button class="btn-audio-toggle active" id="btnAudioLeg" data-audio="legendado">Legendado</button>
+              <button class="btn-audio-toggle" id="btnAudioDub" data-audio="dublado">Dublado</button>
+            </div>
+            <!-- Seletor de Fonte / Provedor -->
+            <div class="player-select-wrap" id="playerProviderWrap" style="display: inline-flex; align-items: center;">
+              <select class="player-control-select" id="playerProviderSelect" title="Selecionar Servidor / Fonte">
+                <option value="animesdigital">🌸 AnimesDigital</option>
+                <option value="animesonlinecc">🎬 AnimesOnlineCC</option>
+              </select>
+            </div>
+            <!-- Seletor de Qualidade / Resolução -->
+            <div class="player-select-wrap" id="playerQualityWrap" style="display: inline-flex; align-items: center;">
+              <select class="player-control-select" id="playerQualitySelect" title="Selecionar Resolução de Vídeo">
+                <option value="720p HD">720p HD (Verificado)</option>
+                <option value="360p SD">360p SD</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn-action-icon" id="btnPlayerFavorite" title="Adicionar aos Favoritos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+
           <div class="player-episode-nav" id="playerEpisodeNav" style="display: none;">
             <button class="btn-ep-nav" id="btnPrevEp" title="Episódio Anterior">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -386,6 +368,7 @@
 
       <div class="video-wrapper">
         <video id="htmlVideoPlayer" controls playsinline controlsList="nodownload noplaybackrate" disablePictureInPicture oncontextmenu="return false;"></video>
+        <iframe id="iframeVideoPlayer" class="iframe-video-player" style="display: none; width: 100%; height: 100%; border: none;" allowfullscreen allow="autoplay; encrypted-media"></iframe>
         <div class="player-loading" id="playerLoading">
           <div class="spinner"></div>
           <span>Carregando transmissão...</span>
@@ -437,11 +420,22 @@
             <img id="seriesModalPoster" src="" alt="Poster da Série">
           </div>
           <div class="series-modal-info">
-            <span class="badge" id="seriesModalCategory">SÉRIE COMPLETA</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+              <span class="badge" id="seriesModalCategory">SÉRIE COMPLETA</span>
+              <button class="btn-action-icon" id="btnSeriesModalFavorite" title="Favoritar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </button>
+            </div>
             <h3 id="seriesModalTitle">Nome da Série</h3>
             <div class="series-modal-meta">
               <span class="meta-tag" id="seriesModalTotalEpisodes">0 episódios</span>
               <span class="meta-tag" id="seriesModalTotalSeasons">0 temporadas</span>
+              <div class="audio-switch-group" id="modalAudioSwitchGroup" style="display: none; margin-left: auto;">
+                <button class="btn-audio-toggle active" id="btnModalAudioLeg" data-audio="legendado">Legendado</button>
+                <button class="btn-audio-toggle" id="btnModalAudioDub" data-audio="dublado">Dublado</button>
+              </div>
             </div>
           </div>
         </div>
@@ -490,6 +484,7 @@
           <button class="admin-tab-btn active" data-tab="visao-geral">📊 Visão Geral</button>
           <button class="admin-tab-btn" data-tab="central-clientes">👥 Central de Clientes</button>
           <button class="admin-tab-btn" data-tab="cadastrar-link">➕ Adicionar Título</button>
+          <button class="admin-tab-btn" data-tab="sincronizacao-animes">🌸 Sincronização de Animes</button>
           <button class="admin-tab-btn" data-tab="dados-conta">⚙️ Dados da Conta</button>
         </div>
 
@@ -657,6 +652,49 @@
             <div class="account-row">
               <span class="acc-label">Diretório Raiz:</span>
               <code style="color: var(--text-muted); font-size: 0.8rem;">d:\PROJETOS PRE-PRONTOS\FILMES</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aba 5: Sincronização de Animes -->
+        <div class="admin-tab-content" id="tab-sincronizacao-animes">
+          <div class="admin-section-box">
+            <div class="section-box-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div class="section-box-title">
+                <h4>🌸 Sincronização em Segundo Plano (Animes)</h4>
+                <p>Processamento contínuo em lotes encadeados com rate-limiting, deduplicação e checkpoint persistente</p>
+              </div>
+              <div class="sync-actions" style="display: flex; gap: 8px;">
+                <button type="button" class="btn-primary" id="btnResumeSync" style="padding: 7px 14px; font-size: 0.85rem; cursor: pointer;">▶ Retomar / Iniciar Lotes</button>
+                <button type="button" class="btn-secondary" id="btnPauseSync" style="padding: 7px 14px; font-size: 0.85rem; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.4); cursor: pointer;">⏸ Pausar Sincronização</button>
+              </div>
+            </div>
+
+            <div class="admin-stats-grid" style="margin-top: 15px;">
+              <div class="admin-stat-box">
+                <span class="box-label">Estado da Rotina</span>
+                <span class="box-val" id="adminSyncStatus" style="font-size: 1.15rem; color: #a78bfa;">IDLE</span>
+                <span class="box-desc" id="adminSyncPauseReason">Aguardando comando</span>
+              </div>
+              <div class="admin-stat-box">
+                <span class="box-label">Página & Lote Atual</span>
+                <span class="box-val" id="adminSyncPage">Pág. 3 / 101</span>
+                <span class="box-desc" id="adminSyncBatch">Lote: 0</span>
+              </div>
+              <div class="admin-stat-box">
+                <span class="box-label">Novos Animes / Atualizados</span>
+                <span class="box-val" id="adminSyncCounts" style="color: #34d399;">+43 novos / 7</span>
+                <span class="box-desc" id="adminSyncRemaining">98 páginas pendentes</span>
+              </div>
+              <div class="admin-stat-box">
+                <span class="box-label">Erros / Resiliência</span>
+                <span class="box-val" id="adminSyncErrors" style="color: #60a5fa;">0</span>
+                <span class="box-desc" id="adminSyncLastError">Sem falhas pendentes</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 15px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px; font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+              <strong>ℹ️ Nota de Arquitetura:</strong> A estimativa de 101 páginas da fonte AnimesOnlineCC representa ~2.525 registros na origem, processados sem sobrecarregar a memória nem o DOM (fixado em 24 cards). A marca de conclusão total só é aplicada quando o fim verificável da paginação for atingido.
             </div>
           </div>
         </div>
