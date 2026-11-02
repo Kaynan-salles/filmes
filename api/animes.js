@@ -49,7 +49,8 @@ module.exports = function handler(req, res) {
     if (search) {
       filtered = filtered.filter(a => {
         const title = (a.canonical_title || a.t || '').toLowerCase();
-        return title.includes(search);
+        const aliases = (a.aliases || []).map(al => String(al).toLowerCase());
+        return title.includes(search) || aliases.some(al => al.includes(search));
       });
     }
 

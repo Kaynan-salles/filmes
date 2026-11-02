@@ -1431,7 +1431,8 @@ async function getStaticAnimesPage(page = 1, limit = 24, search = '', genre = ''
   if (sNorm) {
     filtered = filtered.filter(a => {
       const title = (a.canonical_title || a.t || '').toLowerCase();
-      return title.includes(sNorm);
+      const aliases = (a.aliases || []).map(al => String(al).toLowerCase());
+      return title.includes(sNorm) || aliases.some(al => al.includes(sNorm));
     });
   }
 
@@ -2105,13 +2106,37 @@ async function handleSearch(query) {
       return;
     }
   } catch (e) {
-    // API backend local indisponível, fallback em memória
+    // API indisponível, fallback resiliente em memória
   }
 
   const lowerQ = query.toLowerCase();
   const pool = state.rawItems || state.currentItems || [];
   const matched = pool.filter(item => item.t && item.t.toLowerCase().includes(lowerQ));
-  displaySearchResults(matched, query);
+
+  // Inclui animes do catálogo estático no fallback
+  if (!state.staticAnimesList) {
+    try {
+      const aResp = await fetch('/data/animes.json');
+      if (aResp.ok) state.staticAnimesList = await aResp.json();
+    } catch (err) {}
+  }
+
+  const animeMatches = (state.staticAnimesList || []).filter(a => {
+    const t = (a.canonical_title || a.t || '').toLowerCase();
+    const aliases = (a.aliases || []).map(al => String(al).toLowerCase());
+    return t.includes(lowerQ) || aliases.some(al => al.includes(lowerQ));
+  }).map(a => ({
+    id: a.id,
+    t: a.canonical_title || a.t,
+    p: a.poster || a.p,
+    catNome: '🌸 ANIMES | Catálogo Oficial',
+    u: a.u || `/api/animes/resolve?anime_id=${a.id}&ep=1&s=1`,
+    is_anime: true,
+    total_episodios: a.total_episodios || 1,
+    sinopse: a.sinopse || ''
+  }));
+
+  displaySearchResults([...animeMatches, ...matched], query);
 }
 
 function displaySearchResults(results, query) {
