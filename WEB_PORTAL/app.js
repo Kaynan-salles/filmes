@@ -1412,6 +1412,63 @@ async function selectCategory(catId, catName) {
 // =====================================================================
 // PAGINAÇÃO LEVE E CONSUMO SOB DEMANDA DE ANIMES (SUBSTITUIÇÃO DE PÁGINA)
 // =====================================================================
+async function getStaticAnimesPage(page = 1, limit = 24, search = '', genre = '', sort = 'latest') {
+  if (!state.staticAnimesList) {
+    try {
+      const resp = await fetch('/data/animes.json');
+      if (resp.ok) {
+        state.staticAnimesList = await resp.json();
+      }
+    } catch (e) {
+      console.warn('Falha ao carregar catálogo estático /data/animes.json:', e);
+    }
+  }
+
+  const all = state.staticAnimesList || [];
+  let filtered = all;
+
+  const sNorm = (search || '').trim().toLowerCase();
+  if (sNorm) {
+    filtered = filtered.filter(a => {
+      const title = (a.canonical_title || a.t || '').toLowerCase();
+      return title.includes(sNorm);
+    });
+  }
+
+  const gNorm = (genre || '').trim().toLowerCase();
+  if (gNorm) {
+    filtered = filtered.filter(a => {
+      const genres = a.generos || a.genres || [];
+      return genres.some(g => String(g).toLowerCase().includes(gNorm));
+    });
+  }
+
+  if (sort === 'az') {
+    filtered.sort((a, b) => (a.canonical_title || a.t || '').localeCompare(b.canonical_title || b.t || ''));
+  } else if (sort === 'za') {
+    filtered.sort((a, b) => (b.canonical_title || b.t || '').localeCompare(a.canonical_title || a.t || ''));
+  } else if (sort === 'ano') {
+    filtered.sort((a, b) => (b.ano || b.year || 0) - (a.ano || a.year || 0));
+  } else if (sort === 'episodios') {
+    filtered.sort((a, b) => (b.total_episodios || 0) - (a.total_episodios || 0));
+  }
+
+  const totalCount = filtered.length;
+  const totalPages = Math.ceil(totalCount / limit) || 1;
+  const offset = (page - 1) * limit;
+  const items = filtered.slice(offset, offset + limit);
+
+  return {
+    page: page,
+    limit: limit,
+    total_count: totalCount,
+    total_items: totalCount,
+    total_pages: totalPages,
+    has_more: page < totalPages,
+    animes: items
+  };
+}
+
 async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest') {
   if (state.animePagination.abortController) {
     try {
@@ -1444,9 +1501,20 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
       sort: sort || 'latest'
     });
 
-    const resp = await fetch(`/api/animes?${params.toString()}`, { signal: controller.signal });
-    if (!resp.ok) throw new Error('Falha ao obter animes do servidor');
-    const data = await resp.json();
+    let data = null;
+    try {
+      const resp = await fetch(`/api/animes?${params.toString()}`, { signal: controller.signal });
+      if (resp.ok) {
+        data = await resp.json();
+      }
+    } catch (apiErr) {
+      if (apiErr.name === 'AbortError') return;
+      console.warn('API /api/animes indisponível, usando fallback estático CDN...', apiErr);
+    }
+
+    if (!data || !data.animes || !Array.isArray(data.animes)) {
+      data = await getStaticAnimesPage(page, 24, search, genre, sort);
+    }
 
     // Previne condição de corrida: se uma busca mais recente já foi disparada, descarta
     if (currentRequestId !== state.animePagination.requestId) {
@@ -2496,9 +2564,35 @@ async function openAnimeModal(animeItem) {
   openModal(dom.seriesModal);
 
   try {
-    const resp = await fetch(`/api/animes/details?id=${encodeURIComponent(animeId)}`);
-    if (!resp.ok) throw new Error('Falha ao carregar detalhes do anime');
-    const details = await resp.json();
+    let details = null;
+    try {
+      const resp = await fetch(`/api/animes/details?id=${encodeURIComponent(animeId)}`);
+      if (resp.ok) {
+        details = await resp.json();
+      }
+    } catch (apiErr) {
+      console.warn('API /api/animes/details indisponível, buscando no fallback estático...', apiErr);
+    }
+
+    if (!details || !details.id) {
+      if (!state.staticAnimeDetailsMap) {
+        try {
+          const resp = await fetch('/data/animes_details.json');
+          if (resp.ok) {
+            state.staticAnimeDetailsMap = await resp.json();
+          }
+        } catch (e) {
+          console.warn('Falha ao carregar /data/animes_details.json', e);
+        }
+      }
+      if (state.staticAnimeDetailsMap && state.staticAnimeDetailsMap[animeId]) {
+        details = state.staticAnimeDetailsMap[animeId];
+      }
+    }
+
+    if (!details || !details.id) {
+      throw new Error('Falha ao carregar detalhes do anime');
+    }
 
     state.activeAnimeContext = {
       animeId: details.id,
@@ -2510,8 +2604,10 @@ async function openAnimeModal(animeItem) {
 
     dom.seriesModalPoster.src = details.poster || animeItem.p || FALLBACK_POSTER;
     dom.seriesModalTitle.textContent = details.canonical_title;
-    dom.seriesModalTotalEpisodes.textContent = `${details.total_episodes} episódios`;
-    dom.seriesModalTotalSeasons.textContent = `${details.total_seasons} temporada${details.total_seasons > 1 ? 's' : ''}`;
+    const totEps = details.total_episodes || (details.seasons ? details.seasons.reduce((acc, s) => acc + (s.episodes ? s.episodes.length : 0), 0) : 0);
+    const totSeas = details.total_seasons || (details.seasons ? details.seasons.length : 1);
+    dom.seriesModalTotalEpisodes.textContent = `${totEps} episódios`;
+    dom.seriesModalTotalSeasons.textContent = `${totSeas} temporada${totSeas > 1 ? 's' : ''}`;
 
     renderAnimeSeasons(details);
   } catch (err) {
@@ -2655,11 +2751,52 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
     if (state.activeAnimeProvider) resolveUrl += `&provider=${encodeURIComponent(state.activeAnimeProvider)}`;
     if (state.activeAnimeQuality) resolveUrl += `&quality=${encodeURIComponent(state.activeAnimeQuality)}`;
 
-    const resp = await fetch(resolveUrl);
-    const data = await resp.json();
+    let data = null;
+    try {
+      const resp = await fetch(resolveUrl);
+      if (resp.ok) {
+        data = await resp.json();
+      }
+    } catch (apiErr) {
+      console.warn('API /api/animes/resolve falhou ou indisponível:', apiErr);
+    }
 
-    if (!data.success || !data.stream_url) {
-      throw new Error(data.error || 'Nenhum stream de vídeo retornado pelo provedor.');
+    if (!data || !data.success || !data.stream_url) {
+      // Fallback estático a partir dos sources do episódio
+      const epSources = (ep.sources || []).filter(s => s.provider !== 'animefire');
+      if (epSources.length > 0) {
+        const matchingSrc = epSources.find(s => s.audio_type === preferredAudio) || epSources[0];
+        let pLoad = {};
+        try {
+          pLoad = typeof matchingSrc.extra_payload === 'string' ? JSON.parse(matchingSrc.extra_payload) : (matchingSrc.extra_payload || {});
+        } catch (e) {}
+
+        const streamUrlCandidate = matchingSrc.stream_url || pLoad.episode_url;
+        if (streamUrlCandidate) {
+          data = {
+            success: true,
+            stream_url: streamUrlCandidate,
+            player_type: matchingSrc.player_type || 'direct',
+            audio_type: matchingSrc.audio_type || preferredAudio,
+            provider: matchingSrc.provider,
+            provider_label: matchingSrc.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
+            quality: matchingSrc.quality || '720p HD',
+            available_sources: epSources.map(s => ({
+              provider: s.provider,
+              provider_label: s.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
+              quality: s.quality || '720p HD',
+              quality_label: `${s.quality || '720p HD'} (Verificado)`,
+              audio_type: s.audio_type,
+              player_type: s.player_type || 'direct',
+              selected: s.id === matchingSrc.id
+            }))
+          };
+        }
+      }
+    }
+
+    if (!data || !data.success || !data.stream_url) {
+      throw new Error((data && data.error) || 'Vídeo temporariamente indisponível no servidor. Tente outro episódio ou servidor.');
     }
 
     // Configura o Seletor de Servidor / Provedor

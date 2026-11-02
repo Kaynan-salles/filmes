@@ -397,6 +397,16 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                     suffix = ep_slug[len(provider_anime_id) + 1:]
                     if suffix.isdigit():
                         season = int(suffix)
+                    elif "seiya-kessen" in suffix:
+                        season = 2
+                    elif "tenjiku" in suffix:
+                        season = 3
+                    elif re.search(r'\b(2|2nd|segunda)\b', suffix):
+                        season = 2
+                    elif re.search(r'\b(3|3rd|terceira)\b', suffix):
+                        season = 3
+                    elif re.search(r'\b(4|4th|quarta)\b', suffix):
+                        season = 4
                 
                 ep_title = f"Episódio {int(ep_num) if ep_num.is_integer() else ep_num}"
                 audio = detect_audio_type(a.get_text(strip=True) or ep_slug)

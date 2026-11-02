@@ -276,7 +276,7 @@ def resolve_episode_stream(
         if preferred_audio and cand["audio_type"].lower() == preferred_audio.lower():
             score += 200
         if cand["provider"] == "animefire":
-            score -= 500
+            score -= 5000
         return score
 
     unique_candidates.sort(key=calc_score, reverse=True)
@@ -354,7 +354,7 @@ def resolve_episode_stream(
                             probe_resp = probe_client.get(resolution.stream_url, headers=probe_headers, follow_redirects=True)
                             if probe_resp.status_code == 404:
                                 is_playable = False
-                                last_error = f"Stream do provedor {cand['provider']} retornou 404. Tentando alternativa..."
+                                last_error = f"Stream do servidor {cand['provider_label']} indisponível (HTTP 404)"
                     except Exception:
                         pass
 
@@ -396,9 +396,20 @@ def resolve_episode_stream(
             last_error = str(e)
             continue
 
+    # Se todas as opções falharam e ainda não houve auto-enrich nesta chamada, tenta enriquecer e re-executar
+    if not has_working_provider:
+        _auto_enrich_episode_sources(episode_id)
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM episode_sources WHERE episode_id = ? AND provider IN ('animesonlinecc', 'animesdigital')", (episode_id,))
+        fresh_sources = cur.fetchall()
+        conn.close()
+        if fresh_sources:
+            return resolve_episode_stream(episode_id, preferred_audio, preferred_provider, preferred_quality)
+
     return {
         "success": False,
-        "error": f"Não foi possível iniciar a reprodução: {last_error or 'Fontes temporariamente indisponíveis'}",
+        "error": f"Não foi possível iniciar a reprodução. Fontes do episódio temporariamente indisponíveis ({last_error or 'Servidor de vídeo sem resposta'}).",
         "episode_id": episode_id
     }
 
