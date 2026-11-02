@@ -96,3 +96,4 @@ module.exports = function handler(req, res) {
     res.end(JSON.stringify({ error: err.message, animes: [] }));
   }
 };
+

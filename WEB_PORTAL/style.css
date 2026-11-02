@@ -141,6 +141,15 @@ img, video, iframe, canvas, svg {
   flex-shrink: 0;
 }
 
+.brand-logo .brand-app-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
