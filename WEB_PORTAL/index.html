@@ -5,10 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-Cine | Catálogo de Filmes & Séries</title>
   <meta name="description" content="K-Cine - Portal e Catálogo Organizado de Filmes e Séries com mais de 316.000 títulos organizados por categoria.">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#11131c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="K-Cine">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css?v=21">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -27,15 +35,21 @@
 
       <div class="login-logo-container">
         <div class="login-logo-glow"></div>
-        <div class="login-logo-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3" fill="url(#loginBrandGrad)" stroke="none"></polygon>
+        <div class="login-logo-circle" title="K-Cine Streaming">
+          <svg viewBox="0 0 32 32" fill="none" class="login-app-icon-svg">
             <defs>
               <linearGradient id="loginBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#ec4899" />
+                <stop offset="50%" stop-color="#a855f7" />
                 <stop offset="100%" stop-color="#6366f1" />
               </linearGradient>
+              <filter id="loginGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="1.5" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
             </defs>
+            <path d="M 11.5 7.8 C 10.4 7.15 9 7.95 9 9.25 L 9 22.75 C 9 24.05 10.4 24.85 11.5 24.2 L 23.2 17.45 C 24.25 16.85 24.25 15.15 23.2 14.55 Z" 
+                  fill="url(#loginBrandGrad)" filter="url(#loginGlowFilter)"></path>
           </svg>
         </div>
       </div>
@@ -90,6 +104,34 @@
           </svg>
         </button>
       </form>
+
+      <!-- Divisor com opção alternativa -->
+      <div class="login-divider">
+        <span>OU</span>
+      </div>
+
+      <!-- Botão para Baixar/Instalar Aplicativo via Atalho -->
+      <div class="login-app-download-wrap">
+        <button type="button" class="btn-download-app" id="btnDownloadApp">
+          <div class="btn-download-app-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </div>
+          <div class="btn-download-app-content">
+            <span class="btn-download-app-title">Baixar Aplicativo (Atalho)</span>
+            <span class="btn-download-app-desc">Instalar no Celular, PC ou TV</span>
+          </div>
+          <div class="btn-download-app-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Atalho</span>
+          </div>
+        </button>
+      </div>
 
       <div class="login-security-notice">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -698,6 +740,125 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL DE INSTALAÇÃO DO APLICATIVO / ATALHO -->
+  <!-- ========================================== -->
+  <div class="modal-overlay install-app-modal-overlay" id="installAppModal">
+    <div class="install-modal-container">
+      <div class="install-modal-header">
+        <div class="install-modal-title-group">
+          <div class="install-modal-icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 class="install-modal-title">Baixar Aplicativo K-Cine</h3>
+            <p class="install-modal-sub">Instale ou crie um atalho rápido no seu dispositivo</p>
+          </div>
+        </div>
+        <button type="button" class="btn-close" id="btnCloseInstallModal" title="Fechar">&times;</button>
+      </div>
+
+      <div class="install-modal-body">
+        <!-- Card Destaque: PWA / Instalação Direta -->
+        <div class="install-option-card install-option-primary" id="installOptionPwa">
+          <div class="install-option-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="install-option-text">
+            <h4>Instalar como Aplicativo (PWA)</h4>
+            <p>Abre em janela própria, sem barras do navegador, com máxima fluidez.</p>
+          </div>
+          <button type="button" class="btn-install-trigger" id="btnModalPwaInstall">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Instalar App</span>
+          </button>
+        </div>
+
+        <!-- Card Opção: Atalho Direto Windows Desktop (.URL) -->
+        <div class="install-option-card">
+          <div class="install-option-icon windows-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4h-13.051M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.849"/>
+            </svg>
+          </div>
+          <div class="install-option-text">
+            <h4>Atalho Área de Trabalho (Windows)</h4>
+            <p>Baixe o atalho oficial para abrir o K-Cine com 1 clique direto na Área de Trabalho.</p>
+          </div>
+          <button type="button" class="btn-install-trigger btn-secondary-action" id="btnDownloadWindowsShortcut">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Baixar .URL</span>
+          </button>
+        </div>
+
+        <!-- Instruções Celular: Android & iPhone -->
+        <div class="install-instructions-grid">
+          <div class="install-guide-box">
+            <div class="install-guide-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+              <span>Android (Google Chrome)</span>
+            </div>
+            <ol class="install-steps-list">
+              <li>Toque nos 3 pontos <strong>(⋮)</strong> no topo do Chrome.</li>
+              <li>Selecione <strong>"Instalar aplicativo"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</li>
+              <li>Pronto! O app aparecerá nos seus aplicativos.</li>
+            </ol>
+          </div>
+
+          <div class="install-guide-box">
+            <div class="install-guide-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+              <span>iPhone / iPad (Safari)</span>
+            </div>
+            <ol class="install-steps-list">
+              <li>Toque no botão <strong>Compartilhar</strong> (quadrado com seta para cima).</li>
+              <li>Selecione <strong>"Adicionar à Tela de Início"</strong>.</li>
+              <li>Toque em <strong>"Adicionar"</strong> no topo direito.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Copiar link direto -->
+        <div class="install-copy-link-box">
+          <div class="install-link-display" id="installAppLinkDisplay">https://...</div>
+          <button type="button" class="btn-copy-install-link" id="btnCopyInstallLink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copiar Link</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="install-modal-footer">
+        <button type="button" class="btn-modal-dismiss" id="btnDismissInstallModal">Entendido / Fechar</button>
       </div>
     </div>
   </div>

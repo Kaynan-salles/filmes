@@ -1644,8 +1644,9 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  overflow: hidden !important;
+  padding: 1.25rem 1rem;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
   animation: loginFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1718,9 +1719,9 @@ body.modal-open {
 
 .login-logo-container {
   position: relative;
-  width: 3.75rem;
-  height: 3.75rem;
-  margin: 0 auto 0.875rem auto;
+  width: 5.25rem;
+  height: 5.25rem;
+  margin: 0 auto 1.125rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1728,27 +1729,40 @@ body.modal-open {
 
 .login-logo-glow {
   position: absolute;
-  inset: -0.375rem;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.5) 0%, rgba(99, 102, 241, 0.3) 70%, transparent 100%);
-  filter: blur(0.75rem);
-  border-radius: 50%;
+  inset: -0.625rem;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.5) 0%, rgba(168, 85, 247, 0.35) 50%, rgba(99, 102, 241, 0.2) 75%, transparent 100%);
+  filter: blur(1.125rem);
+  border-radius: 1.5rem;
+  pointer-events: none;
 }
 
 .login-logo-circle {
   position: relative;
-  width: 3.375rem;
-  height: 3.375rem;
-  border-radius: 50%;
-  background: #151922;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 4.75rem;
+  height: 4.75rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(145deg, #1f2334 0%, #111420 50%, #0a0b12 100%);
+  border: 1.5px solid rgba(236, 72, 153, 0.45);
+  box-shadow: 0 0.625rem 1.75rem -0.25rem rgba(0, 0, 0, 0.75), 
+              0 0 1.25rem rgba(236, 72, 153, 0.3), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.login-logo-circle:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0.875rem 2.25rem -0.25rem rgba(0, 0, 0, 0.85), 
+              0 0 1.75rem rgba(236, 72, 153, 0.45), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .login-logo-circle svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: block;
 }
 
 .login-title {
@@ -1928,6 +1942,442 @@ body.modal-open {
   flex-shrink: 0;
   color: #475569;
   margin-top: 1px;
+}
+
+/* Divisor e Botão de Download / Atalho de Aplicativo na Tela de Login */
+.login-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.125rem 0 0.875rem 0;
+  position: relative;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+}
+
+.login-divider span {
+  padding: 0 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.login-app-download-wrap {
+  width: 100%;
+  margin-bottom: 0.875rem;
+}
+
+.btn-download-app {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.75rem 1rem;
+  background: rgba(30, 34, 48, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: var(--radius-md);
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-download-app::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(236, 72, 153, 0.12) 0%, rgba(99, 102, 241, 0.12) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.btn-download-app:hover {
+  background: rgba(36, 41, 58, 0.85);
+  border-color: rgba(236, 72, 153, 0.6);
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1.25rem -0.25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(168, 85, 247, 0.25);
+}
+
+.btn-download-app:hover::before {
+  opacity: 1;
+}
+
+.btn-download-app-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.25), rgba(99, 102, 241, 0.25));
+  border: 1px solid rgba(236, 72, 153, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent-pink);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.btn-download-app:hover .btn-download-app-icon {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.4), rgba(99, 102, 241, 0.4));
+  color: #fff;
+}
+
+.btn-download-app-icon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.btn-download-app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-download-app-title {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.btn-download-app-desc {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
+
+.btn-download-app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #6ee7b7;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-download-app-badge svg {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+/* Modal de Instalação e Atalhos K-Cine */
+.install-app-modal-overlay {
+  z-index: 10000000 !important;
+}
+
+.install-modal-container {
+  background: #111420;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 34rem;
+  max-height: 92vh;
+  max-height: 92dvh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1.875rem 3.75rem -0.75rem rgba(0, 0, 0, 0.9), 0 0 2rem rgba(236, 72, 153, 0.2);
+  transform: translateY(20px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.modal-overlay.active .install-modal-container {
+  transform: translateY(0);
+}
+
+.install-modal-header {
+  padding: 1.125rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.install-modal-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.install-modal-icon-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(99, 102, 241, 0.3));
+  border: 1px solid rgba(236, 72, 153, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-pink);
+  flex-shrink: 0;
+}
+
+.install-modal-icon-badge svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.install-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.install-modal-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.125rem;
+}
+
+.install-modal-body {
+  padding: 1.25rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.install-option-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(21, 25, 36, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  transition: all 0.25s ease;
+}
+
+.install-option-card:hover {
+  background: rgba(27, 32, 47, 0.9);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.install-option-primary {
+  border-color: rgba(236, 72, 153, 0.45);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%);
+}
+
+.install-option-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.install-option-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.install-option-icon.windows-icon {
+  color: #00adef;
+}
+
+.install-option-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.install-option-text h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.install-option-text p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.btn-install-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  background: linear-gradient(135deg, var(--accent-pink), var(--accent-primary));
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 0.25rem 0.75rem rgba(236, 72, 153, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-install-trigger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.375rem 1rem rgba(236, 72, 153, 0.5);
+}
+
+.btn-install-trigger.btn-secondary-action {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+  color: #e2e8f0;
+}
+
+.btn-install-trigger.btn-secondary-action:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.install-instructions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .install-instructions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.install-guide-box {
+  background: rgba(14, 17, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+  padding: 0.875rem;
+}
+
+.install-guide-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-pink);
+  margin-bottom: 0.5rem;
+}
+
+.install-guide-header svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.install-steps-list {
+  padding-left: 1.125rem;
+  margin: 0;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.install-steps-list li {
+  margin-bottom: 0.25rem;
+}
+
+.install-steps-list strong {
+  color: #e2e8f0;
+}
+
+.install-copy-link-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+}
+
+.install-link-display {
+  flex: 1;
+  font-family: monospace;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-copy-install-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  color: #cbd5e1;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-copy-install-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.btn-copy-install-link svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.install-modal-footer {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.btn-modal-dismiss {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-modal-dismiss:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
 
 /* =====================================================================

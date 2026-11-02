@@ -783,6 +783,142 @@ function setupEventListeners() {
       closeAllModals();
     }
   });
+
+  // Configurar atalho e instalação do aplicativo
+  setupInstallAppListeners();
+}
+
+// =====================================================================
+// ATALHO E INSTALAÇÃO DO APLICATIVO (PWA / DESKTOP SHORTCUT / MOBILE)
+// =====================================================================
+let deferredInstallPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  const pwaBtn = document.getElementById('btnModalPwaInstall');
+  if (pwaBtn) {
+    pwaBtn.style.display = 'inline-flex';
+  }
+});
+
+// Registrar Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch((err) => {
+      console.log('SW Registration Note:', err);
+    });
+  });
+}
+
+function openInstallAppModal() {
+  const modal = document.getElementById('installAppModal');
+  if (!modal) return;
+  
+  const linkDisplay = document.getElementById('installAppLinkDisplay');
+  if (linkDisplay) {
+    linkDisplay.textContent = window.location.origin + window.location.pathname;
+  }
+  
+  modal.classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeInstallAppModal() {
+  const modal = document.getElementById('installAppModal');
+  if (!modal) return;
+  modal.classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+async function triggerPwaInstall() {
+  if (deferredInstallPrompt) {
+    deferredInstallPrompt.prompt();
+    const choiceResult = await deferredInstallPrompt.userChoice;
+    if (choiceResult.outcome === 'accepted') {
+      showToast('Aplicativo instalado com sucesso!');
+      closeInstallAppModal();
+    }
+    deferredInstallPrompt = null;
+  } else {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isMobile) {
+      showToast('Siga o passo a passo abaixo para adicionar à tela inicial!');
+    } else {
+      showToast('No Chrome/Edge, clique no ícone de instalar na barra de endereços.');
+    }
+  }
+}
+
+function downloadWindowsShortcut() {
+  const currentUrl = window.location.origin + window.location.pathname;
+  const iconUrl = window.location.origin + '/favicon.ico';
+  const shortcutContent = `[InternetShortcut]\r\nURL=${currentUrl}\r\nIconIndex=0\r\nIconFile=${iconUrl}\r\nHotKey=0\r\n`;
+  const blob = new Blob([shortcutContent], { type: 'application/internet-shortcut' });
+  const downloadUrl = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = downloadUrl;
+  a.download = 'K-Cine.url';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(downloadUrl);
+  showToast('Atalho K-Cine baixado! Arraste para sua Área de Trabalho.');
+}
+
+function copyInstallLink() {
+  const url = window.location.origin + window.location.pathname;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('Link do K-Cine copiado com sucesso!');
+    }).catch(() => {
+      prompt('Copie o link abaixo:', url);
+    });
+  } else {
+    prompt('Copie o link abaixo:', url);
+  }
+}
+
+function setupInstallAppListeners() {
+  const btnDownloadApp = document.getElementById('btnDownloadApp');
+  if (btnDownloadApp) {
+    btnDownloadApp.addEventListener('click', openInstallAppModal);
+  }
+
+  const btnCloseModal = document.getElementById('btnCloseInstallModal');
+  if (btnCloseModal) {
+    btnCloseModal.addEventListener('click', closeInstallAppModal);
+  }
+
+  const btnDismissModal = document.getElementById('btnDismissInstallModal');
+  if (btnDismissModal) {
+    btnDismissModal.addEventListener('click', closeInstallAppModal);
+  }
+
+  const btnPwa = document.getElementById('btnModalPwaInstall');
+  if (btnPwa) {
+    btnPwa.addEventListener('click', triggerPwaInstall);
+  }
+
+  const btnWindows = document.getElementById('btnDownloadWindowsShortcut');
+  if (btnWindows) {
+    btnWindows.addEventListener('click', downloadWindowsShortcut);
+  }
+
+  const btnCopy = document.getElementById('btnCopyInstallLink');
+  if (btnCopy) {
+    btnCopy.addEventListener('click', copyInstallLink);
+  }
+
+  // Fechar ao clicar no fundo escuro
+  const modal = document.getElementById('installAppModal');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeInstallAppModal();
+      }
+    });
+  }
 }
 
 // =====================================================================
