@@ -1,5 +1,5 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v2';
+const CACHE_NAME = 'kcine-shell-v3';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

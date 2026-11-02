@@ -1,7 +1,7 @@
 {
-  "name": "K-Cine - Filmes, Séries & Animes",
-  "short_name": "K-Cine",
-  "description": "Catálogo Completo de Filmes, Séries e Animes em Alta Definição",
+  "name": "K-CINE",
+  "short_name": "K-CINE",
+  "description": "K-CINE - Catálogo em Alta Definição",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0f",

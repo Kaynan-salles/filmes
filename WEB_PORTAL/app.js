@@ -841,12 +841,12 @@ function downloadWindowsShortcut() {
   const downloadUrl = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = downloadUrl;
-  a.download = 'K-Cine.url';
+  a.download = 'K-CINE.url';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(downloadUrl);
-  showToast('Download concluído! Atalho K-Cine baixado.');
+  showToast('Download concluído! Atalho K-CINE baixado.');
 }
 
 function setupInstallAppListeners() {
