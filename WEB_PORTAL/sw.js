@@ -1,13 +1,15 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v1';
+const CACHE_NAME = 'kcine-shell-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/style.css',
   '/app.js',
-  '/icons/icon.svg',
+  '/icons/favicon.png',
+  '/icons/icon-128.png',
   '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/icons/icon-512.png',
+  '/img/kcine-logo-transparent.png'
 ];
 
 self.addEventListener('install', (e) => {
@@ -41,3 +43,4 @@ self.addEventListener('fetch', (e) => {
     fetch(e.request).catch(() => caches.match(e.request))
   );
 });
+
