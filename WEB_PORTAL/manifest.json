@@ -1,39 +1,47 @@
 {
   "name": "K-CINE",
   "short_name": "K-CINE",
-  "description": "K-CINE - Catálogo em Alta Definição",
+  "description": "K-CINE - Filmes, Séries & Animes em Alta Definição",
+  "id": "kcine-app-v6",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#11131c",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "any",
   "icons": [
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icons/kcine-app-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icons/kcine-app-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/icons/icon-192.png",
+      "src": "/icons/kcine-app-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-192.png",
+      "src": "/icons/kcine-app-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/icons/icon-128.png",
+      "src": "/icons/kcine-app-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/kcine-app-128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
@@ -43,8 +51,7 @@
     {
       "name": "Catálogo",
       "url": "/",
-      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/icons/kcine-app-192.png", "sizes": "192x192" }]
     }
   ]
 }
-

@@ -1,14 +1,19 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v5';
+const CACHE_NAME = 'kcine-shell-v6';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/style.css',
   '/app.js',
-  '/icons/favicon.png',
-  '/icons/icon-128.png',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  '/icons/kcine-favicon.png',
+  '/icons/kcine-app-128.png',
+  '/icons/kcine-app-180.png',
+  '/icons/kcine-app-192.png',
+  '/icons/kcine-app-512.png',
+  '/apple-touch-icon.png',
+  '/apple-touch-icon-precomposed.png',
+  '/manifest.json',
+  '/manifest.webmanifest',
   '/img/kcine-logo-transparent.png'
 ];
 
@@ -43,4 +48,3 @@ self.addEventListener('fetch', (e) => {
     fetch(e.request).catch(() => caches.match(e.request))
   );
 });
-

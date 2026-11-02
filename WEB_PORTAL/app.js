@@ -805,7 +805,9 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // Registrar Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch((err) => {
+    navigator.serviceWorker.register('/sw.js?v=6').then((reg) => {
+      reg.update().catch(() => {});
+    }).catch((err) => {
       console.log('SW Registration Note:', err);
     });
   });

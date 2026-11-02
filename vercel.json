@@ -25,9 +25,16 @@
       ]
     },
     {
+      "source": "/(manifest\\.json|manifest\\.webmanifest|sw\\.js|apple-touch-icon.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
       "source": "/(.*)\\.(js|css|html|png|jpg|svg|json)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
