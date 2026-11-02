@@ -1979,14 +1979,17 @@ body.modal-open {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 0.875rem;
-  padding: 0.75rem 1rem;
-  background: rgba(30, 34, 48, 0.6);
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.8125rem 1.25rem;
+  background: rgba(30, 34, 48, 0.65);
   border: 1px solid rgba(168, 85, 247, 0.35);
   border-radius: var(--radius-md);
   color: #fff;
   cursor: pointer;
-  text-align: left;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
@@ -2002,7 +2005,7 @@ body.modal-open {
 }
 
 .btn-download-app:hover {
-  background: rgba(36, 41, 58, 0.85);
+  background: rgba(36, 41, 58, 0.9);
   border-color: rgba(236, 72, 153, 0.6);
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1.25rem -0.25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(168, 85, 247, 0.25);
@@ -2012,75 +2015,22 @@ body.modal-open {
   opacity: 1;
 }
 
-.btn-download-app-icon {
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 0.625rem;
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.25), rgba(99, 102, 241, 0.25));
-  border: 1px solid rgba(236, 72, 153, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--accent-pink);
-  transition: transform 0.25s ease, background 0.25s ease;
-}
-
-.btn-download-app:hover .btn-download-app-icon {
-  transform: scale(1.08);
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.4), rgba(99, 102, 241, 0.4));
-  color: #fff;
-}
-
-.btn-download-app-icon svg {
+.btn-download-app svg {
   width: 1.125rem;
   height: 1.125rem;
-}
-
-.btn-download-app-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-  min-width: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.btn-download-app-title {
-  font-family: var(--font-display);
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.01em;
-}
-
-.btn-download-app-desc {
-  font-size: 0.6875rem;
-  color: var(--text-muted);
-}
-
-.btn-download-app-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: var(--radius-full);
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: #6ee7b7;
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  color: var(--accent-pink);
+  transition: transform 0.2s ease, color 0.2s ease;
   flex-shrink: 0;
-  position: relative;
-  z-index: 1;
 }
 
-.btn-download-app-badge svg {
-  width: 0.625rem;
-  height: 0.625rem;
+.btn-download-app:hover svg {
+  color: #fff;
+  transform: translateY(1px);
+}
+
+.btn-download-app span {
+  position: relative;
+  z-index: 1;
 }
 
 /* Modal de Instalação e Atalhos K-Cine */
