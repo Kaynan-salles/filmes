@@ -811,43 +811,26 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-function openInstallAppModal() {
-  const modal = document.getElementById('installAppModal');
-  if (!modal) return;
-  
-  const linkDisplay = document.getElementById('installAppLinkDisplay');
-  if (linkDisplay) {
-    linkDisplay.textContent = window.location.origin + window.location.pathname;
-  }
-  
-  modal.classList.add('active');
-  document.body.classList.add('modal-open');
-}
+async function downloadDirectApp() {
+  showToast('Iniciando instalação / download do aplicativo K-Cine...');
 
-function closeInstallAppModal() {
-  const modal = document.getElementById('installAppModal');
-  if (!modal) return;
-  modal.classList.remove('active');
-  document.body.classList.remove('modal-open');
-}
-
-async function triggerPwaInstall() {
+  // 1. Se o navegador suporta instalação PWA nativa direta (Chrome / Edge / Android / Brave)
   if (deferredInstallPrompt) {
-    deferredInstallPrompt.prompt();
-    const choiceResult = await deferredInstallPrompt.userChoice;
-    if (choiceResult.outcome === 'accepted') {
-      showToast('Aplicativo instalado com sucesso!');
-      closeInstallAppModal();
-    }
-    deferredInstallPrompt = null;
-  } else {
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    if (isMobile) {
-      showToast('Siga o passo a passo abaixo para adicionar à tela inicial!');
-    } else {
-      showToast('No Chrome/Edge, clique no ícone de instalar na barra de endereços.');
+    try {
+      deferredInstallPrompt.prompt();
+      const choiceResult = await deferredInstallPrompt.userChoice;
+      if (choiceResult && choiceResult.outcome === 'accepted') {
+        showToast('Aplicativo K-Cine instalado com sucesso!');
+        deferredInstallPrompt = null;
+        return;
+      }
+    } catch (e) {
+      console.log('PWA Prompt:', e);
     }
   }
+
+  // 2. Dispara o download direto do atalho oficial do aplicativo para Área de Trabalho / PC
+  downloadWindowsShortcut();
 }
 
 function downloadWindowsShortcut() {
@@ -863,61 +846,13 @@ function downloadWindowsShortcut() {
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(downloadUrl);
-  showToast('Atalho K-Cine baixado! Arraste para sua Área de Trabalho.');
-}
-
-function copyInstallLink() {
-  const url = window.location.origin + window.location.pathname;
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(url).then(() => {
-      showToast('Link do K-Cine copiado com sucesso!');
-    }).catch(() => {
-      prompt('Copie o link abaixo:', url);
-    });
-  } else {
-    prompt('Copie o link abaixo:', url);
-  }
+  showToast('Download concluído! Atalho K-Cine baixado.');
 }
 
 function setupInstallAppListeners() {
   const btnDownloadApp = document.getElementById('btnDownloadApp');
   if (btnDownloadApp) {
-    btnDownloadApp.addEventListener('click', openInstallAppModal);
-  }
-
-  const btnCloseModal = document.getElementById('btnCloseInstallModal');
-  if (btnCloseModal) {
-    btnCloseModal.addEventListener('click', closeInstallAppModal);
-  }
-
-  const btnDismissModal = document.getElementById('btnDismissInstallModal');
-  if (btnDismissModal) {
-    btnDismissModal.addEventListener('click', closeInstallAppModal);
-  }
-
-  const btnPwa = document.getElementById('btnModalPwaInstall');
-  if (btnPwa) {
-    btnPwa.addEventListener('click', triggerPwaInstall);
-  }
-
-  const btnWindows = document.getElementById('btnDownloadWindowsShortcut');
-  if (btnWindows) {
-    btnWindows.addEventListener('click', downloadWindowsShortcut);
-  }
-
-  const btnCopy = document.getElementById('btnCopyInstallLink');
-  if (btnCopy) {
-    btnCopy.addEventListener('click', copyInstallLink);
-  }
-
-  // Fechar ao clicar no fundo escuro
-  const modal = document.getElementById('installAppModal');
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeInstallAppModal();
-      }
-    });
+    btnDownloadApp.addEventListener('click', downloadDirectApp);
   }
 }
 

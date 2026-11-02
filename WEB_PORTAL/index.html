@@ -28,22 +28,9 @@
   <!-- ========================================== -->
   <div class="login-screen-overlay" id="loginScreen">
     <div class="login-card">
-      <div class="login-badge-top">
-        <span class="status-pulse-dot"></span>
-        <span>ACESSO EXCLUSIVO • AUTORIZADO</span>
-      </div>
-
-      <div class="login-logo-container">
-        <div class="login-logo-glow"></div>
-        <div class="login-logo-circle" title="K-Cine Streaming">
-          <img src="icons/icon-192.png" alt="K-Cine" class="login-app-icon-img">
-        </div>
-      </div>
-
       <div class="login-title-wrap">
         <img src="img/kcine-logo-transparent.png" alt="K-Cine" class="login-title-logo">
       </div>
-      <p class="login-subtitle">Catálogo Completo de Filmes & Séries em Alta Definição • K-Cine</p>
 
       <!-- Caixa de Alerta de Erro -->
       <div class="login-alert-box" id="loginAlertBox" style="display: none;">
@@ -717,121 +704,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================== -->
-  <!-- MODAL DE INSTALAÇÃO DO APLICATIVO / ATALHO -->
-  <!-- ========================================== -->
-  <div class="modal-overlay install-app-modal-overlay" id="installAppModal">
-    <div class="install-modal-container">
-      <div class="install-modal-header">
-        <div class="install-modal-title-group">
-          <div class="install-modal-icon-badge">
-            <img src="icons/icon-128.png" alt="K-Cine Ícone" class="install-modal-badge-img">
-          </div>
-          <div>
-            <h3 class="install-modal-title">Baixar Aplicativo K-Cine</h3>
-            <p class="install-modal-sub">Instale ou crie um atalho rápido no seu dispositivo</p>
-          </div>
-        </div>
-        <button type="button" class="btn-close" id="btnCloseInstallModal" title="Fechar">&times;</button>
-      </div>
-
-      <div class="install-modal-body">
-        <!-- Card Destaque: PWA / Instalação Direta -->
-        <div class="install-option-card install-option-primary" id="installOptionPwa">
-          <div class="install-option-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
-          </div>
-          <div class="install-option-text">
-            <h4>Instalar como Aplicativo (PWA)</h4>
-            <p>Abre em janela própria, sem barras do navegador, com máxima fluidez.</p>
-          </div>
-          <button type="button" class="btn-install-trigger" id="btnModalPwaInstall">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Instalar App</span>
-          </button>
-        </div>
-
-        <!-- Card Opção: Atalho Direto Windows Desktop (.URL) -->
-        <div class="install-option-card">
-          <div class="install-option-icon windows-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4h-13.051M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.849"/>
-            </svg>
-          </div>
-          <div class="install-option-text">
-            <h4>Atalho Área de Trabalho (Windows)</h4>
-            <p>Baixe o atalho oficial para abrir o K-Cine com 1 clique direto na Área de Trabalho.</p>
-          </div>
-          <button type="button" class="btn-install-trigger btn-secondary-action" id="btnDownloadWindowsShortcut">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Baixar .URL</span>
-          </button>
-        </div>
-
-        <!-- Instruções Celular: Android & iPhone -->
-        <div class="install-instructions-grid">
-          <div class="install-guide-box">
-            <div class="install-guide-header">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
-              <span>Android (Google Chrome)</span>
-            </div>
-            <ol class="install-steps-list">
-              <li>Toque nos 3 pontos <strong>(⋮)</strong> no topo do Chrome.</li>
-              <li>Selecione <strong>"Instalar aplicativo"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</li>
-              <li>Pronto! O app aparecerá nos seus aplicativos.</li>
-            </ol>
-          </div>
-
-          <div class="install-guide-box">
-            <div class="install-guide-header">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
-              <span>iPhone / iPad (Safari)</span>
-            </div>
-            <ol class="install-steps-list">
-              <li>Toque no botão <strong>Compartilhar</strong> (quadrado com seta para cima).</li>
-              <li>Selecione <strong>"Adicionar à Tela de Início"</strong>.</li>
-              <li>Toque em <strong>"Adicionar"</strong> no topo direito.</li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- Copiar link direto -->
-        <div class="install-copy-link-box">
-          <div class="install-link-display" id="installAppLinkDisplay">https://...</div>
-          <button type="button" class="btn-copy-install-link" id="btnCopyInstallLink">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copiar Link</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="install-modal-footer">
-        <button type="button" class="btn-modal-dismiss" id="btnDismissInstallModal">Entendido / Fechar</button>
       </div>
     </div>
   </div>
