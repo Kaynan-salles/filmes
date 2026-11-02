@@ -2400,11 +2400,13 @@ function openSeriesModal(seriesGroup) {
   dom.seriesSeasonsBar.innerHTML = '';
   seasonNumbers.forEach((sNum) => {
     const tab = document.createElement('button');
+    tab.type = 'button';
     tab.className = `season-tab-btn ${sNum === activeSeason ? 'active' : ''}`;
     tab.textContent = `Temporada ${sNum} (${seasonsMap.get(sNum).length})`;
     tab.onclick = () => {
       document.querySelectorAll('.season-tab-btn').forEach(b => b.classList.remove('active'));
       tab.classList.add('active');
+      tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
       renderSeasonEpisodes(seasonsMap.get(sNum), seriesGroup);
     };
     dom.seriesSeasonsBar.appendChild(tab);
@@ -2652,6 +2654,7 @@ function renderAnimeSeasons(details) {
 
   seasons.forEach((season) => {
     const tab = document.createElement('button');
+    tab.type = 'button';
     const isActive = season.season_number === state.activeAnimeContext.activeSeasonNumber;
     tab.className = `season-tab-btn ${isActive ? 'active' : ''}`;
     const epCount = season.episodes ? season.episodes.length : (season.episodes_count || 0);
@@ -2659,6 +2662,7 @@ function renderAnimeSeasons(details) {
     tab.onclick = () => {
       document.querySelectorAll('.season-tab-btn').forEach(b => b.classList.remove('active'));
       tab.classList.add('active');
+      tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
       state.activeAnimeContext.activeSeasonNumber = season.season_number;
       loadAnimeSeasonEpisodes(details.id, season.season_number, details);
     };
