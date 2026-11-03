@@ -13,3 +13,4 @@ module.exports = async function handler(req, res) {
   res.statusCode = 200;
   res.end(JSON.stringify({ success: true }));
 };
+
