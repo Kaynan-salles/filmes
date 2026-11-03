@@ -1120,7 +1120,11 @@ def save_user_watch_progress(
     episode_number: float = 1.0,
     episode_title: str = "",
     position_seconds: float = 0.0,
-    duration_seconds: float = 0.0
+    duration_seconds: float = 0.0,
+    content_type: str = "anime",
+    content_title: str = "",
+    poster: str = "",
+    stream_url: str = ""
 ) -> Dict[str, Any]:
     """Save or update watch progress for continuation."""
     with db_transaction() as conn:
@@ -1128,11 +1132,15 @@ def save_user_watch_progress(
         cur.execute(
             """
             INSERT INTO user_watch_progress (
-                user_id, content_id, content_type, episode_id,
-                season_number, episode_number, episode_title,
+                user_id, content_id, content_type, content_title, poster, stream_url,
+                episode_id, season_number, episode_number, episode_title,
                 position_seconds, duration_seconds, updated_at
-            ) VALUES (?, ?, 'anime', ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             ON CONFLICT(user_id, content_id) DO UPDATE SET
+                content_type = excluded.content_type,
+                content_title = CASE WHEN excluded.content_title != '' THEN excluded.content_title ELSE user_watch_progress.content_title END,
+                poster = CASE WHEN excluded.poster != '' THEN excluded.poster ELSE user_watch_progress.poster END,
+                stream_url = CASE WHEN excluded.stream_url != '' THEN excluded.stream_url ELSE user_watch_progress.stream_url END,
                 episode_id = excluded.episode_id,
                 season_number = excluded.season_number,
                 episode_number = excluded.episode_number,
@@ -1142,10 +1150,28 @@ def save_user_watch_progress(
                 updated_at = CURRENT_TIMESTAMP
             """,
             (
-                user_id, content_id, episode_id, season_number,
-                episode_number, episode_title, position_seconds, duration_seconds
+                user_id, content_id, content_type, content_title, poster, stream_url,
+                episode_id, season_number, episode_number, episode_title,
+                position_seconds, duration_seconds
             )
         )
+    return {"success": True}
+
+
+def delete_user_watch_progress(user_id: str, content_id: Optional[str] = None) -> Dict[str, Any]:
+    """Delete single item or clear all watch progress for a user."""
+    with db_transaction() as conn:
+        cur = conn.cursor()
+        if content_id:
+            cur.execute(
+                "DELETE FROM user_watch_progress WHERE user_id = ? AND content_id = ?",
+                (user_id, content_id)
+            )
+        else:
+            cur.execute(
+                "DELETE FROM user_watch_progress WHERE user_id = ?",
+                (user_id,)
+            )
     return {"success": True}
 
 
@@ -1168,12 +1194,14 @@ def get_user_activity(user_id: str) -> Dict[str, Any]:
 
     cur.execute(
         """
-        SELECT wp.*, a.canonical_title, a.poster as anime_poster
+        SELECT wp.*, 
+               COALESCE(NULLIF(wp.content_title, ''), a.canonical_title, '') as canonical_title,
+               COALESCE(NULLIF(wp.poster, ''), a.poster, '') as anime_poster
         FROM user_watch_progress wp
         LEFT JOIN animes a ON wp.content_id = a.id
         WHERE wp.user_id = ?
         ORDER BY wp.updated_at DESC
-        LIMIT 20
+        LIMIT 50
         """,
         (user_id,)
     )

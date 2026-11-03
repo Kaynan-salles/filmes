@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>K-Cine | Catálogo de Filmes & Séries</title>
-  <meta name="description" content="K-Cine - Portal e Catálogo Organizado de Filmes e Séries com mais de 316.000 títulos organizados por categoria.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=6">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=6">
-  <link rel="alternate icon" href="favicon.ico?v=6">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=6">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=6">
-  <link rel="manifest" href="manifest.json?v=6">
+  <title>K-CINE</title>
+  <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=26">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=26">
+  <link rel="alternate icon" href="favicon.ico?v=26">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=26">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=26">
+  <link rel="manifest" href="manifest.json?v=26">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=24">
+  <link rel="stylesheet" href="style.css?v=26">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -117,7 +117,7 @@
     <div class="nav-container">
       <div class="brand">
         <div class="brand-logo">
-          <img src="icons/kcine-app-128.png?v=6" alt="K-CINE" class="brand-app-icon">
+          <img src="icons/kcine-app-128.png?v=26" alt="K-CINE" class="brand-app-icon">
         </div>
         <div class="brand-text">
           <span class="brand-title">K-CINE</span>
@@ -131,6 +131,7 @@
         <button class="type-btn" data-type="filmes" id="btnTypeFilmes">🎬 Filmes</button>
         <button class="type-btn" data-type="series" id="btnTypeSeries">📺 Séries</button>
         <button class="type-btn" data-type="animes" id="btnTypeAnimes">🌸 Animes</button>
+        <button class="type-btn" data-type="historico" id="btnTypeHistorico">🕒 Histórico</button>
       </nav>
 
       <!-- Barra de Busca -->
@@ -193,6 +194,26 @@
           Assistir no Navegador
         </button>
       </div>
+    </div>
+  </section>
+
+  <!-- Seção Continuar Assistindo (Histórico Ativo) -->
+  <section class="continue-watching-section" id="continueWatchingSection" style="display: none;">
+    <div class="continue-header">
+      <div class="continue-title-wrap">
+        <span class="continue-pulse"></span>
+        <h3 class="continue-section-title">Continuar Assistindo</h3>
+      </div>
+      <button class="btn-clear-history" id="btnClearContinueHistory" title="Limpar Histórico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+        <span>Limpar</span>
+      </button>
+    </div>
+    <div class="continue-grid" id="continueGrid">
+      <!-- Cards de progresso injetados via app.js -->
     </div>
   </section>
 
@@ -705,8 +726,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=20"></script>
-  <script src="auth.js?v=20"></script>
-  <script src="app.js?v=23"></script>
+  <script src="supabase-config.js?v=26"></script>
+  <script src="auth.js?v=26"></script>
+  <script src="app.js?v=26"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@ from animes_engine.sync_service import (
     get_anime_full_details,
     toggle_user_favorite,
     save_user_watch_progress,
+    delete_user_watch_progress,
     get_user_activity,
     get_paginated_animes,
     get_season_episodes,
@@ -703,7 +704,35 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     episode_number=float(data.get("episode_number", 1)),
                     episode_title=data.get("episode_title", ""),
                     position_seconds=float(data.get("position_seconds", 0)),
-                    duration_seconds=float(data.get("duration_seconds", 0))
+                    duration_seconds=float(data.get("duration_seconds", 0)),
+                    content_type=data.get("content_type", "anime"),
+                    content_title=data.get("content_title", ""),
+                    poster=data.get("poster", ""),
+                    stream_url=data.get("stream_url", "")
+                )
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                return
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                return
+
+        # POST /api/animes/watch-progress/delete: remover item ou limpar histórico
+        if path == "/api/animes/watch-progress/delete":
+            content_length = int(self.headers.get("Content-Length", 0))
+            post_body = self.rfile.read(content_length)
+            try:
+                data = json.loads(post_body.decode("utf-8")) if content_length > 0 else {}
+                res = delete_user_watch_progress(
+                    user_id=data.get("user_id", "guest"),
+                    content_id=data.get("content_id", None)
                 )
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
