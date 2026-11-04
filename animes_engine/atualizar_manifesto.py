@@ -73,3 +73,4 @@ with open(MANIFESTO_FILE, "w", encoding="utf-8") as f:
     json.dump(manifesto, f, ensure_ascii=False, indent=2)
 
 print(f"Manifesto atualizado com sucesso! Animes ativos: {active_animes_count}")
+

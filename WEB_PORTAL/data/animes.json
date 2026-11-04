@@ -34022,27 +34022,6 @@
     "is_anime": true
   },
   {
-    "id": "ani_jojo_s_bizarre_adventure_s1",
-    "t": "JoJo's Bizarre Adventure",
-    "catNome": "ANIMES | Catálogo Oficial",
-    "p": "https://image.tmdb.org/t/p/original/5scPVhF58v56cKDsPrQAoRzpVpS.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/l2gc2dPRUPe3bAfYCRTjc6uAMmB.jpg",
-    "u": "/api/animes/resolve?anime_id=ani_jojo_s_bizarre_adventure_s1&ep=1&s=1",
-    "sinopse": "A saga que se inicia na Inglaterra do século XIX, contando a rivalidade entre Jonathan Joestar, um jovem aristocrata, e Dio Brando, um garoto plebeu que foi acolhido pelo pai de Jonathan quando tornou-se órfão. Insatisfeito com sua posição social, a ambição insaciável e o desejo de dominação de Dio o levam a estudar os poderes sobrenaturais de uma antiga máscara asteca de pedra presente na mansão dos Joestar - um artefato que mudará para sempre o destino de Dio e das futuras gerações dos Joestar.",
-    "ano": 2012,
-    "temporadas": 1,
-    "total_episodios": 211,
-    "generos": [
-      "Ação",
-      "Aventura",
-      "Fantasia",
-      "Ficção científica",
-      "Shounen",
-      "Sobrenatural"
-    ],
-    "is_anime": true
-  },
-  {
     "id": "ani_joker_game_s1",
     "t": "Joker Game",
     "catNome": "ANIMES | Catálogo Oficial",
