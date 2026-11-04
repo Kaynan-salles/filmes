@@ -275,6 +275,8 @@ def resolve_episode_stream(
             score += 500
         if preferred_audio and cand["audio_type"].lower() == preferred_audio.lower():
             score += 200
+        if cand["provider"] == "animesdigital":
+            score += 250
         if cand["provider"] == "animefire":
             score -= 5000
         return score
@@ -286,39 +288,53 @@ def resolve_episode_stream(
         source_id = cand["source_id"]
         cache_key = f"{source_id}:{cand['quality']}"
 
-        # 1. Check in-memory cache
+        # 1. Check in-memory cache (only accept verified valid cached streams)
         cached = get_cached_stream(cache_key)
-        if cached and cached.success:
-            for c in unique_candidates:
-                c["selected"] = (c is cand)
-            return {
-                "success": True,
-                "stream_url": cached.stream_url,
-                "player_type": cached.player_type,
-                "headers": cached.headers,
-                "audio_type": cand["audio_type"],
-                "provider": cand["provider"],
-                "provider_label": cand["provider_label"],
-                "quality": cached.quality or cand["quality"],
-                "quality_verified": cand["verified"],
-                "notes": cand["notes"],
-                "available_sources": [
-                    {
-                        "provider": c["provider"],
-                        "provider_label": c["provider_label"],
-                        "quality": c["quality"],
-                        "quality_label": c["quality_label"],
-                        "audio_type": c["audio_type"],
-                        "player_type": c["player_type"],
-                        "notes": c["notes"],
-                        "selected": c.get("selected", False)
-                    }
-                    for c in unique_candidates
-                ],
-                "episode_id": episode_id,
-                "source_id": source_id,
-                "cached": True
-            }
+        if cached and cached.success and cached.stream_url:
+            # If cached stream is direct GoogleVideo, verify it is still accessible
+            is_valid_cache = True
+            if "googlevideo.com" in cached.stream_url:
+                try:
+                    with httpx.Client(timeout=2.0) as check_client:
+                        check_resp = check_client.get(cached.stream_url, headers={"User-Agent": "Mozilla/5.0"})
+                        if check_resp.status_code >= 400:
+                            is_valid_cache = False
+                            if cache_key in _STREAM_CACHE:
+                                del _STREAM_CACHE[cache_key]
+                except Exception:
+                    is_valid_cache = False
+
+            if is_valid_cache:
+                for c in unique_candidates:
+                    c["selected"] = (c is cand)
+                return {
+                    "success": True,
+                    "stream_url": cached.stream_url,
+                    "player_type": cached.player_type,
+                    "headers": cached.headers,
+                    "audio_type": cand["audio_type"],
+                    "provider": cand["provider"],
+                    "provider_label": cand["provider_label"],
+                    "quality": cached.quality or cand["quality"],
+                    "quality_verified": cand["verified"],
+                    "notes": cand["notes"],
+                    "available_sources": [
+                        {
+                            "provider": c["provider"],
+                            "provider_label": c["provider_label"],
+                            "quality": c["quality"],
+                            "quality_label": c["quality_label"],
+                            "audio_type": c["audio_type"],
+                            "player_type": c["player_type"],
+                            "notes": c["notes"],
+                            "selected": c.get("selected", False)
+                        }
+                        for c in unique_candidates
+                    ],
+                    "episode_id": episode_id,
+                    "source_id": source_id,
+                    "cached": True
+                }
 
         # 2. Resolution: static stream vs dynamic resolution via provider
         try:
@@ -350,11 +366,11 @@ def resolve_episode_stream(
                             probe_headers["Referer"] = resolution.headers["Referer"]
                         if resolution.headers and "Origin" in resolution.headers:
                             probe_headers["Origin"] = resolution.headers["Origin"]
-                        with httpx.Client(timeout=3.5) as probe_client:
+                        with httpx.Client(timeout=1.5) as probe_client:
                             probe_resp = probe_client.get(resolution.stream_url, headers=probe_headers, follow_redirects=True)
-                            if probe_resp.status_code == 404:
+                            if probe_resp.status_code >= 400 or probe_resp.status_code in (401, 403, 404, 410, 500, 502, 503):
                                 is_playable = False
-                                last_error = f"Stream do servidor {cand['provider_label']} indisponível (HTTP 404)"
+                                last_error = f"Stream do servidor {cand['provider_label']} indisponível (HTTP {probe_resp.status_code})"
                     except Exception:
                         pass
 

@@ -207,6 +207,25 @@ module.exports = async function handler(req, res) {
         } catch (e) {
           console.error('Erro ao resolver AnimesOnlineCC no Vercel:', e.message);
         }
+      } else if (src.provider === 'animesdigital') {
+        const epUrl = payload.episode_url || `https://animesdigital.org/video/a/${src.provider_ep_id}/`;
+        try {
+          const epHtml = await fetchText(epUrl, 6000);
+          const mHls = epHtml.match(/https:\/\/api\.anivideo\.net\/videohls\.php\?d=([^"'\s&]+)/);
+          if (mHls) {
+            streamUrl = mHls[1];
+            quality = '720p HD';
+            break;
+          }
+          const mIfr = epHtml.match(/<iframe[^>]+src=["']([^"']+)["']/);
+          if (mIfr) {
+            streamUrl = mIfr[1];
+            quality = '720p HD';
+            break;
+          }
+        } catch (e) {
+          console.error('Erro ao resolver AnimesDigital no Vercel:', e.message);
+        }
       }
     }
 

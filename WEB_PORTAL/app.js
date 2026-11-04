@@ -2176,10 +2176,26 @@ function parseEpisodeInfo(rawTitle) {
 function groupItemsBySeries(items) {
   const groups = new Map();
   const nonSeries = [];
+  const animeNormalizedTitles = new Set();
+
+  // 1. Mapeia animes oficiais presentes na lista para evitar duplicação com listas de IPTV
+  items.forEach(item => {
+    const isAnime = item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
+    if (isAnime) {
+      const norm = (item.t || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (norm) animeNormalizedTitles.add(norm);
+    }
+  });
 
   items.forEach((item, originalIndex) => {
     const parsed = parseEpisodeInfo(item.t);
     if (parsed.isEpisode) {
+      const normSeries = parsed.seriesName.toLowerCase().replace(/[^a-z0-9]/g, '');
+      // Se já existe uma versão completa oficial deste anime no catálogo, não duplica criando card secundário de IPTV
+      if (animeNormalizedTitles.has(normSeries)) {
+        return;
+      }
+
       const key = parsed.seriesName.toLowerCase();
       if (!groups.has(key)) {
         groups.set(key, {
@@ -2206,6 +2222,17 @@ function groupItemsBySeries(items) {
     }
   });
 
+  // Deduplica nonSeries caso venham registros duplicados
+  const seenNonSeries = new Set();
+  const dedupedNonSeries = [];
+  nonSeries.forEach(item => {
+    const dedupKey = (item.id || `${item.t}_${item.catNome}`).toLowerCase();
+    if (!seenNonSeries.has(dedupKey)) {
+      seenNonSeries.add(dedupKey);
+      dedupedNonSeries.push(item);
+    }
+  });
+
   // Ordena episódios de cada série cronologicamente (Temporada crescente, Episódio crescente)
   const groupList = Array.from(groups.values());
   groupList.forEach(g => {
@@ -2226,7 +2253,7 @@ function groupItemsBySeries(items) {
 
   return {
     groups: groupList,
-    nonSeries
+    nonSeries: dedupedNonSeries
   };
 }
 
@@ -2311,6 +2338,7 @@ function createVideoCard(item, index) {
   ` : '';
 
   const isAnime = item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
+  const isAnimeSeries = isAnime && (item.total_episodios > 1 || !item.u || item.u.includes('/api/animes/resolve'));
 
   // Se for anime, série ou episódio, exibe badge contextual
   let badgeHtml;
@@ -2336,13 +2364,34 @@ function createVideoCard(item, index) {
     </div>
   ` : '';
 
+  const mainActionBtnHtml = isAnimeSeries ? `
+    <button class="btn-card-action btn-view-series btn-anime-episodes" title="Ver todos os episódios">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+      </svg>
+      Ver Capítulos
+    </button>
+  ` : `
+    <button class="btn-card-action btn-play" title="Assistir Agora">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+      </svg>
+      Assistir
+    </button>
+  `;
+
   card.innerHTML = `
     <div class="card-poster">
       <img src="${posterUrl}" alt="${escapeHtml(item.t)}" loading="lazy" decoding="async" onerror="this.src='${FALLBACK_POSTER}'">
       ${badgeHtml}
       ${progressBarHtml}
       <div class="card-play-overlay">
-        <div class="play-circle">
+        <div class="play-circle" title="${isAnimeSeries ? 'Ver Episódios' : 'Assistir'}">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg>
@@ -2354,13 +2403,8 @@ function createVideoCard(item, index) {
       <h4 class="card-title" title="${escapeHtml(item.t)}">${escapeHtml(displayTitle)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
       <div class="card-actions">
-        <button class="btn-card-action btn-play" title="Assistir Agora">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          Assistir
-        </button>
-        ${copyBtnHtml}
+        ${mainActionBtnHtml}
+        ${isAnimeSeries ? '' : copyBtnHtml}
       </div>
     </div>
   `;
@@ -2370,13 +2414,22 @@ function createVideoCard(item, index) {
     return card;
   }
 
+  // Permite clicar em todo o card para navegar ou assistir
+  card.style.cursor = 'pointer';
+
   // Eventos de Reprodução (Animes abrem o modal completo de episódios/áudios)
   if (isAnime) {
-    card.querySelector('.card-play-overlay').onclick = () => openAnimeModal(item);
-    card.querySelector('.btn-play').onclick = () => openAnimeModal(item);
+    card.onclick = () => openAnimeModal(item);
+    const playOverlay = card.querySelector('.card-play-overlay');
+    if (playOverlay) playOverlay.onclick = (e) => { e.stopPropagation(); openAnimeModal(item); };
+    const btnAction = card.querySelector('.btn-view-series, .btn-play');
+    if (btnAction) btnAction.onclick = (e) => { e.stopPropagation(); openAnimeModal(item); };
   } else {
-    card.querySelector('.card-play-overlay').onclick = () => openPlayer(item.t, categoryName, item.u, item);
-    card.querySelector('.btn-play').onclick = () => openPlayer(item.t, categoryName, item.u, item);
+    card.onclick = () => openPlayer(item.t, categoryName, item.u, item);
+    const playOverlay = card.querySelector('.card-play-overlay');
+    if (playOverlay) playOverlay.onclick = (e) => { e.stopPropagation(); openPlayer(item.t, categoryName, item.u, item); };
+    const btnAction = card.querySelector('.btn-play');
+    if (btnAction) btnAction.onclick = (e) => { e.stopPropagation(); openPlayer(item.t, categoryName, item.u, item); };
   }
 
   const btnCopy = card.querySelector('.btn-copy');
@@ -3302,6 +3355,28 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
       if (dom.htmlVideoPlayer) {
         dom.htmlVideoPlayer.style.display = 'block';
 
+        const hideLoading = () => {
+          if (dom.playerLoading) dom.playerLoading.classList.remove('active');
+        };
+        dom.htmlVideoPlayer.oncanplay = hideLoading;
+        dom.htmlVideoPlayer.onplaying = hideLoading;
+        dom.htmlVideoPlayer.onloadeddata = hideLoading;
+
+        // Auto fallback se houver falha de rede ou link bloqueado pela CDN
+        let hasFallenBack = false;
+        dom.htmlVideoPlayer.onerror = () => {
+          hideLoading();
+          if (!hasFallenBack && data.available_sources && data.available_sources.length > 1) {
+            hasFallenBack = true;
+            const alt = data.available_sources.find(s => s.provider !== data.provider || s.audio_type !== data.audio_type);
+            if (alt) {
+              showToast(`Servidor atual instável. Alternando para ${alt.provider_label} (${alt.audio_type})...`);
+              playAnimeEpisode(ep, details, alt.audio_type, alt.provider, alt.quality, targetResumeTime);
+              return;
+            }
+          }
+        };
+
         // CDNs externas necessitam de proxy CORS seguro
         const isRemote = (data.stream_url.startsWith('http://') || data.stream_url.startsWith('https://')) &&
           !data.stream_url.startsWith(window.location.origin);
@@ -3333,6 +3408,14 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
               if (errData.fatal) {
                 dom.playerLoading.classList.remove('active');
                 console.error('Erro fatal no player HLS:', errData);
+                if (!hasFallenBack && data.available_sources && data.available_sources.length > 1) {
+                  hasFallenBack = true;
+                  const alt = data.available_sources.find(s => s.provider !== data.provider || s.audio_type !== data.audio_type);
+                  if (alt) {
+                    showToast(`Alternando para fonte secundária: ${alt.provider_label}...`);
+                    playAnimeEpisode(ep, details, alt.audio_type, alt.provider, alt.quality, targetResumeTime);
+                  }
+                }
               }
             });
           } else if (dom.htmlVideoPlayer.canPlayType('application/vnd.apple.mpegurl')) {

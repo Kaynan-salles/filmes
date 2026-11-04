@@ -117,7 +117,7 @@ def _resolve_blogger_to_mp4(token: str, timeout: int = 12) -> Optional[str]:
 class AnimesOnlineCCProvider(BaseAnimeProvider):
     name = "animesonlinecc"
     display_name = "Animes Online CC"
-    request_timeout = 15
+    request_timeout = 4
 
     def _http_get(self, url: str) -> httpx.Response:
         with httpx.Client(headers=HEADERS, timeout=self.request_timeout, follow_redirects=True) as client:
@@ -462,7 +462,7 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
             # Try resolving direct streams in prioritized order (720p HD > 360p SD)
             req_qual = (extra_payload or {}).get("quality", "").lower()
             for token in candidate_tokens:
-                streams = resolve_blogger_streams(token, timeout=self.request_timeout)
+                streams = resolve_blogger_streams(token, timeout=3)
                 if streams:
                     chosen_label, chosen_url = streams[0]
                     if req_qual:
@@ -470,24 +470,39 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                             if req_qual in lbl.lower() or ("720" in req_qual and "720" in lbl) or ("360" in req_qual and "360" in lbl):
                                 chosen_label, chosen_url = lbl, u
                                 break
-                    qualities_list = [{"quality": lbl, "stream_url": u} for lbl, u in streams]
+                    # Probe to ensure the direct GoogleVideo stream is not 403 Forbidden
+                    probe_ok = True
+                    try:
+                        with httpx.Client(timeout=1.5) as probe_c:
+                            pr = probe_c.get(chosen_url, headers={"User-Agent": HEADERS["User-Agent"]})
+                            if pr.status_code >= 400:
+                                probe_ok = False
+                    except Exception:
+                        probe_ok = False
+
+                    if probe_ok:
+                        qualities_list = [{"quality": lbl, "stream_url": u} for lbl, u in streams]
+                        return StreamResolution(
+                            success=True,
+                            stream_url=chosen_url,
+                            player_type="direct",
+                            headers={"User-Agent": HEADERS["User-Agent"]},
+                            quality=chosen_label,
+                            qualities=qualities_list
+                        )
+            
+            # Blogger.com iframe não permite embed em sites externos (X-Frame-Options: SAMEORIGIN)
+            # Se não conseguiu resolver stream direto MP4 jogável, falha para permitir failover imediato para AnimesDigital
+            for ifr in iframes:
+                if "blogger.com" not in ifr and "google.com" not in ifr:
                     return StreamResolution(
                         success=True,
-                        stream_url=chosen_url,
-                        player_type="direct",
-                        headers={"User-Agent": HEADERS["User-Agent"]},
-                        quality=chosen_label,
-                        qualities=qualities_list
+                        stream_url=ifr,
+                        player_type="embed",
+                        headers={"Referer": BASE_URL},
+                        quality="SD"
                     )
-            
-            # Fallback to embed iframe
-            return StreamResolution(
-                success=True,
-                stream_url=iframes[0],
-                player_type="embed",
-                headers={"Referer": BASE_URL},
-                quality="SD"
-            )
+            return StreamResolution(success=False, stream_url="", error_message="Stream direto indisponível no provedor")
         except Exception as e:
             return StreamResolution(success=False, stream_url="", error_message=str(e))
 

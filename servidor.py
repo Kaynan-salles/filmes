@@ -154,6 +154,7 @@ class SafeRedirectHandler(urllib.request.HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 class KCineHandler(http.server.SimpleHTTPRequestHandler):
+    protocol_version = "HTTP/1.1"
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=WEB_DIR, **kwargs)
 
@@ -268,6 +269,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             else:
                 terms = q.split()
                 results = []
+                anime_titles_normalized = set()
 
                 # Include matching animes first
                 try:
@@ -287,13 +289,31 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                                 "total_episodios": a_row["total_episodes"],
                                 "sinopse": a_row["synopsis"]
                             })
+                            norm_t = re.sub(r'[^a-z0-9]', '', t_lower)
+                            if norm_t:
+                                anime_titles_normalized.add(norm_t)
                     conn.close()
                 except Exception:
                     pass
 
+                def _extract_series_key(title_str):
+                    m = re.match(r'^(.*?)\s*[\(\[\{]?(?:S|TEMP|TEMPORADA|T)\s*(\d{1,2})\s*[\s\.\-_]*\s*(?:E|EP|CAP|CAPITULO|EPS)\s*(\d{1,3})', title_str, re.IGNORECASE)
+                    if m:
+                        return m.group(1).rstrip(' .-_').strip()
+                    m2 = re.match(r'^(.*?)\s*[\(\[\{]?(\d{1,2})x(\d{1,3})', title_str, re.IGNORECASE)
+                    if m2:
+                        return m2.group(1).rstrip(' .-_').strip()
+                    return title_str.strip()
+
                 for item in search_index:
                     title_lower = item["s"]
                     if all(t in title_lower for t in terms):
+                        # Evita duplicar animes oficiais com versões secundárias/incompletas de listas IPTV
+                        s_key = _extract_series_key(item["t"]).lower()
+                        s_norm = re.sub(r'[^a-z0-9]', '', s_key)
+                        if s_norm in anime_titles_normalized:
+                            continue
+
                         results.append({
                             "t": item["t"],
                             "catNome": item["catNome"],

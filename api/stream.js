@@ -53,6 +53,16 @@ module.exports = function handler(req, res) {
       'Accept': '*/*'
     };
 
+    if (targetUrl.includes('akumast.net') || targetUrl.includes('animefire')) {
+      headers['Referer'] = 'https://animefire.one/';
+      headers['Origin'] = 'https://animefire.one';
+    } else if (targetUrl.includes('maximaimg.online') || targetUrl.includes('animesdigital') || targetUrl.includes('anivideo')) {
+      headers['Referer'] = 'https://api.anivideo.net/';
+      headers['Origin'] = 'https://api.anivideo.net';
+    } else if (targetUrl.includes('anidrive') || targetUrl.includes('animesonline')) {
+      headers['Referer'] = 'https://animesonline.io/';
+    }
+
     if (req.headers.range) {
       headers['Range'] = req.headers.range;
     }

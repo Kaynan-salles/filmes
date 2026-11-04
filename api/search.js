@@ -100,21 +100,38 @@ module.exports = function handler(req, res) {
     const index = loadSearchIndex();
     const results = [];
 
-    // Primeiro os animes
+    const matchedAnimeKeys = new Set();
+
+    // Primeiro os animes oficiais
     for (const item of index) {
       if (item.is_anime) {
         if (terms.every(t => item.s.includes(t))) {
           results.push(item);
+          const normKey = (item.t || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+          if (normKey) matchedAnimeKeys.add(normKey);
           if (results.length >= limit) break;
         }
       }
     }
 
-    // Depois filmes e séries
+    function extractSeriesName(rawTitle) {
+      if (!rawTitle) return '';
+      const m1 = rawTitle.match(/^(.*?)\s*[\(\[\{]?(?:S|TEMP|TEMPORADA|T)\s*(\d{1,2})\s*[\s\.\-_]*\s*(?:E|EP|CAP|CAPITULO|EPS)\s*(\d{1,3})/i);
+      if (m1) return m1[1].replace(/[\s\.\-_]+$/, '').trim();
+      const m2 = rawTitle.match(/^(.*?)\s*[\(\[\{]?(\d{1,2})x(\d{1,3})/i);
+      if (m2) return m2[1].replace(/[\s\.\-_]+$/, '').trim();
+      return rawTitle.trim();
+    }
+
+    // Depois filmes e séries (filtrando duplicatas que já existem no catálogo oficial de animes)
     if (results.length < limit) {
       for (const item of index) {
         if (!item.is_anime) {
           if (terms.every(t => item.s.includes(t))) {
+            const sName = extractSeriesName(item.t).toLowerCase().replace(/[^a-z0-9]/g, '');
+            if (sName && matchedAnimeKeys.has(sName)) {
+              continue; // Evita duplicar anime oficial
+            }
             results.push(item);
             if (results.length >= limit) break;
           }
