@@ -136,6 +136,10 @@ const dom = {
   btnClosePlayer: document.getElementById('btnClosePlayer'),
   btnModalDismiss: document.getElementById('btnModalDismiss'),
   playerLoading: document.getElementById('playerLoading'),
+  playerErrorOverlay: document.getElementById('playerErrorOverlay'),
+  playerErrorDesc: document.getElementById('playerErrorDesc'),
+  btnPlayerRetry: document.getElementById('btnPlayerRetry'),
+  btnPlayerClose: document.getElementById('btnPlayerClose'),
 
   // Modal de Detalhes da Série (Temporadas e Episódios)
   seriesModal: document.getElementById('seriesModal'),
@@ -2540,6 +2544,20 @@ function displaySearchResults(results, query) {
 // PLAYER DE VÍDEO & NAVEGAÇÃO DE SÉRIES
 // =====================================================================
 function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 0) {
+  // Se for um anime oficial ou rota de resolução de anime, delega para o modal de episódios oficial
+  if (url && (url.includes('/api/animes/resolve') || (itemObj && itemObj.is_anime))) {
+    const animeObj = itemObj || {
+      id: (itemObj && itemObj.id) || '',
+      t: title,
+      catNome: category || '🌸 ANIMES | Catálogo Oficial',
+      p: (itemObj && itemObj.p) || '',
+      u: url,
+      is_anime: true
+    };
+    openAnimeModal(animeObj);
+    return;
+  }
+
   dom.modalVideoTitle.textContent = title;
   dom.modalCategoryBadge.textContent = category;
 
@@ -2646,17 +2664,32 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
         applyResumeTime();
         video.play().catch(() => console.log('Autoplay com som restrito pelo navegador'));
       });
-      state.hlsPlayer.on(Hls.Events.ERROR, () => {
+      state.hlsPlayer.on(Hls.Events.ERROR, (event, errData) => {
         dom.playerLoading.classList.remove('active');
+        if (errData && errData.fatal) {
+          showPlayerError('Instabilidade na conexão com o servidor de vídeo. Clique abaixo para tentar novamente.', () => {
+            openPlayer(title, category, url, itemObj, customResumeSeconds);
+          });
+        }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = playableUrl;
       video.onloadedmetadata = applyResumeTime;
+      video.onerror = () => {
+        showPlayerError('Não foi possível carregar a transmissão deste vídeo. O arquivo pode estar temporariamente fora do ar.', () => {
+          openPlayer(title, category, url, itemObj, customResumeSeconds);
+        });
+      };
       video.play().catch(() => console.log('Autoplay bloqueado'));
     }
   } else {
     video.src = playableUrl;
     video.onloadedmetadata = applyResumeTime;
+    video.onerror = () => {
+      showPlayerError('Não foi possível carregar a transmissão deste vídeo. O arquivo pode estar temporariamente fora do ar.', () => {
+        openPlayer(title, category, url, itemObj, customResumeSeconds);
+      });
+    };
     video.load();
     video.play().then(() => {
       dom.playerLoading.classList.remove('active');
@@ -2883,6 +2916,9 @@ function getPlayableUrl(rawUrl, forceProxy = false) {
 
 function stopVideoPlayback() {
   WatchHistory.flushCurrent();
+  if (dom.playerErrorOverlay) {
+    dom.playerErrorOverlay.style.display = 'none';
+  }
   if (dom.iframeVideoPlayer) {
     dom.iframeVideoPlayer.src = 'about:blank';
     dom.iframeVideoPlayer.style.display = 'none';
@@ -2927,6 +2963,27 @@ function stopVideoPlayback() {
       state.hlsPlayer.destroy();
     } catch (e) { }
     state.hlsPlayer = null;
+  }
+}
+
+function showPlayerError(message, retryCallback = null) {
+  if (dom.playerLoading) dom.playerLoading.classList.remove('active');
+  if (dom.playerErrorOverlay) {
+    if (dom.playerErrorDesc) {
+      dom.playerErrorDesc.textContent = message || 'O servidor de origem deste vídeo está passando por manutenção ou instabilidade temporária.';
+    }
+    dom.playerErrorOverlay.style.display = 'flex';
+    if (dom.btnPlayerRetry) {
+      dom.btnPlayerRetry.onclick = () => {
+        dom.playerErrorOverlay.style.display = 'none';
+        if (retryCallback) retryCallback();
+      };
+    }
+    if (dom.btnPlayerClose) {
+      dom.btnPlayerClose.onclick = () => {
+        closePlayerModal();
+      };
+    }
   }
 }
 
@@ -3467,7 +3524,9 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
   } catch (err) {
     console.error('Erro na reprodução do anime:', err);
     dom.playerLoading.classList.remove('active');
-    showToast(`Erro na reprodução: ${err.message || 'Provedor temporariamente indisponível'}`);
+    showPlayerError(err.message || 'Servidor deste episódio indisponível no momento. Tente outro episódio ou servidor.', () => {
+      playAnimeEpisode(ep, details, preferredAudio, preferredProvider, preferredQuality, resumePosition);
+    });
   }
 
   // Preenche a barra de capítulos inferior

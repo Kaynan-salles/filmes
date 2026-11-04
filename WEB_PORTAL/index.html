@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=27">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=27">
-  <link rel="alternate icon" href="favicon.ico?v=27">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=27">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=27">
-  <link rel="manifest" href="manifest.json?v=27">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=28">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=28">
+  <link rel="alternate icon" href="favicon.ico?v=28">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=28">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=28">
+  <link rel="manifest" href="manifest.json?v=28">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=28">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -117,7 +117,7 @@
     <div class="nav-container">
       <div class="brand">
         <div class="brand-logo">
-          <img src="icons/kcine-app-128.png?v=27" alt="K-CINE" class="brand-app-icon">
+          <img src="icons/kcine-app-128.png?v=28" alt="K-CINE" class="brand-app-icon">
         </div>
         <div class="brand-text">
           <span class="brand-title">K-CINE</span>
@@ -393,6 +393,22 @@
         <div class="player-loading" id="playerLoading">
           <div class="spinner"></div>
           <span>Carregando transmissão...</span>
+        </div>
+        <!-- Overlay amigável para instabilidades e erros de provedor -->
+        <div class="player-error-overlay" id="playerErrorOverlay" style="display: none;">
+          <div class="player-error-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 2.75rem; height: 2.75rem; color: #f43f5e;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <h4 class="player-error-title" style="margin: 0.75rem 0 0.35rem; color: #fff; font-size: 1.15rem; font-weight: 700;">Transmissão Temporariamente Indisponível</h4>
+          <p class="player-error-desc" id="playerErrorDesc" style="color: #94a3b8; font-size: 0.875rem; max-width: 26rem; margin: 0 auto 1.25rem; line-height: 1.45;">O servidor de origem deste vídeo está passando por manutenção ou instabilidade temporária.</p>
+          <div class="player-error-actions" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+            <button class="btn-error-retry" id="btnPlayerRetry" style="background: linear-gradient(135deg, var(--accent-pink), var(--accent-primary)); color: #fff; border: none; border-radius: 6px; padding: 0.55rem 1.25rem; font-weight: 700; cursor: pointer; font-size: 0.85rem;">Tentar Novamente</button>
+            <button class="btn-error-close" id="btnPlayerClose" style="background: rgba(255,255,255,0.08); color: #cbd5e1; border: 1px solid var(--border-color); border-radius: 6px; padding: 0.55rem 1.25rem; font-weight: 600; cursor: pointer; font-size: 0.85rem;">Voltar ao Catálogo</button>
+          </div>
         </div>
       </div>
 
@@ -726,8 +742,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=27"></script>
-  <script src="auth.js?v=27"></script>
-  <script src="app.js?v=27"></script>
+  <script src="supabase-config.js?v=28"></script>
+  <script src="auth.js?v=28"></script>
+  <script src="app.js?v=28"></script>
 </body>
 </html>

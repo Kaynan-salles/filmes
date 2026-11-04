@@ -1266,6 +1266,35 @@ body.modal-open {
   to { transform: rotate(360deg); }
 }
 
+.player-error-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 11, 14, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  z-index: 20;
+}
+
+.player-error-icon svg {
+  filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.4));
+}
+
+.btn-error-retry:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-error-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
 .player-footer {
   padding: 0.5rem 1rem;
   display: flex;

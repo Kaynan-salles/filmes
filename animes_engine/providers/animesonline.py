@@ -491,18 +491,16 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                             qualities=qualities_list
                         )
             
-            # Blogger.com iframe não permite embed em sites externos (X-Frame-Options: SAMEORIGIN)
-            # Se não conseguiu resolver stream direto MP4 jogável, falha para permitir failover imediato para AnimesDigital
-            for ifr in iframes:
-                if "blogger.com" not in ifr and "google.com" not in ifr:
-                    return StreamResolution(
-                        success=True,
-                        stream_url=ifr,
-                        player_type="embed",
-                        headers={"Referer": BASE_URL},
-                        quality="SD"
-                    )
-            return StreamResolution(success=False, stream_url="", error_message="Stream direto indisponível no provedor")
+            # Fallback para o player iframe original (ex: Blogger embed), executado diretamente no navegador do cliente
+            if iframes:
+                return StreamResolution(
+                    success=True,
+                    stream_url=iframes[0],
+                    player_type="embed",
+                    headers={"Referer": BASE_URL},
+                    quality="SD"
+                )
+            return StreamResolution(success=False, stream_url="", error_message="Nenhum player disponível no provedor")
         except Exception as e:
             return StreamResolution(success=False, stream_url="", error_message=str(e))
 

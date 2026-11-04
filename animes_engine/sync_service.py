@@ -240,6 +240,22 @@ def resolve_episode_stream(
                     "is_dynamic": is_dyn,
                     "stream_url": ""
                 })
+        elif prov == "youtube":
+            candidates.append({
+                "source_id": s["id"],
+                "provider": "youtube",
+                "provider_label": "YouTube (Full HD)",
+                "audio_type": audio,
+                "quality": s.get("quality", "1080p HD"),
+                "quality_label": "1080p Full HD (Verificado)",
+                "verified": True,
+                "notes": "YouTube Player Oficial Integrado",
+                "player_type": s.get("player_type", "embed"),
+                "provider_ep_id": s["provider_ep_id"],
+                "extra_payload": s["extra_payload"],
+                "is_dynamic": is_dyn,
+                "stream_url": stream_u
+            })
         elif prov == "animefire":
             candidates.append({
                 "source_id": s["id"],
@@ -253,6 +269,22 @@ def resolve_episode_stream(
                 "player_type": s["player_type"],
                 "provider_ep_id": s["provider_ep_id"],
                 "extra_payload": s["extra_payload"],
+                "is_dynamic": is_dyn,
+                "stream_url": stream_u
+            })
+        else:
+            candidates.append({
+                "source_id": s["id"],
+                "provider": prov,
+                "provider_label": prov.capitalize(),
+                "audio_type": audio,
+                "quality": s.get("quality", "720p HD"),
+                "quality_label": s.get("quality", "720p HD"),
+                "verified": True,
+                "notes": "Fonte alternativa",
+                "player_type": s.get("player_type", "direct"),
+                "provider_ep_id": s.get("provider_ep_id", ""),
+                "extra_payload": s.get("extra_payload", "{}"),
                 "is_dynamic": is_dyn,
                 "stream_url": stream_u
             })
@@ -277,6 +309,8 @@ def resolve_episode_stream(
             score += 200
         if cand["provider"] == "animesdigital":
             score += 250
+        if cand["provider"] == "youtube":
+            score += 280
         if cand["provider"] == "animefire":
             score -= 5000
         return score
