@@ -993,6 +993,9 @@ function setupEventListeners() {
       if (tabId === 'central-clientes') {
         renderClientsList();
       }
+      if (tabId === 'links-invalidos') {
+        renderQuarantineList();
+      }
       if (tabId === 'sincronizacao-animes') {
         renderAdminSyncStatus();
         if (!adminSyncPollInterval) {
@@ -1004,6 +1007,10 @@ function setupEventListeners() {
       }
     });
   });
+
+  // Filtro e Recarregamento da Quarentena de Links Inválidos
+  document.getElementById('filterQuarantineInput')?.addEventListener('input', filterAndRenderQuarantine);
+  document.getElementById('btnReloadQuarantine')?.addEventListener('click', renderQuarantineList);
 
   // Cadastro de Novo Título pelo Admin
   if (dom.formAddMovie) {
@@ -1501,6 +1508,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// =====================================================================
+// GESTÃO DE LINKS INVÁLIDOS & QUARENTENA
+// =====================================================================
+let quarantineItems = [];
+
+async function renderQuarantineList() {
+  const tbody = document.getElementById('quarantineTableBody');
+  const countTab = document.getElementById('countInvalidosTab');
+  const totalCountEl = document.getElementById('quarantineTotalCount');
+  const bloggerCountEl = document.getElementById('quarantineBloggerCount');
+  const otherCountEl = document.getElementById('quarantineOtherCount');
+
+  if (tbody) tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; padding: 30px; color: #94a3b8;">Carregando quarentena...</td></tr>';
+
+  try {
+    const res = await fetch('/api/links/invalidos');
+    if (!res.ok) throw new Error('Falha ao carregar quarentena');
+    const data = await res.json();
+    quarantineItems = data.items || [];
+
+    const total = quarantineItems.length;
+    let bloggerCount = 0;
+    quarantineItems.forEach(i => {
+      if ((i.error_reason || '').toLowerCase().includes('blogger')) bloggerCount++;
+    });
+
+    if (countTab) countTab.textContent = total.toLocaleString('pt-BR');
+    if (totalCountEl) totalCountEl.textContent = total.toLocaleString('pt-BR');
+    if (bloggerCountEl) bloggerCountEl.textContent = bloggerCount.toLocaleString('pt-BR');
+    if (otherCountEl) otherCountEl.textContent = (total - bloggerCount).toLocaleString('pt-BR');
+
+    filterAndRenderQuarantine();
+  } catch (err) {
+    if (tbody) tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; padding: 30px; color: #f87171;">Erro ao carregar lista de quarentena: ${err.message}</td></tr>`;
+  }
+}
+
+function filterAndRenderQuarantine() {
+  const tbody = document.getElementById('quarantineTableBody');
+  const filterInput = document.getElementById('filterQuarantineInput');
+  const query = (filterInput ? filterInput.value.trim().toLowerCase() : '');
+
+  if (!tbody) return;
+  const filtered = query ? quarantineItems.filter(i => (i.title || '').toLowerCase().includes(query)) : quarantineItems;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; padding: 30px; color: #94a3b8;">Nenhum link inválido encontrado com este filtro.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = filtered.slice(0, 150).map(item => `
+    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+      <td style="padding: 10px 14px; font-weight: 500; color: #fff;">${item.title || item.content_id}</td>
+      <td style="padding: 10px 14px;"><span style="padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; background: rgba(255,255,255,0.08);">${item.provider || 'animesonlinecc'}</span></td>
+      <td style="padding: 10px 14px; color: #f87171; font-size: 0.82rem;">${item.error_reason || 'Vídeo offline'}</td>
+      <td style="padding: 10px 14px;"><span style="color: #fbbf24; font-size: 0.8rem; background: rgba(251,191,36,0.1); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(251,191,36,0.2);">🔒 Ocultado</span></td>
+    </tr>
+  `).join('');
+}
 
 // =====================================================================
 // CARREGAMENTO DO CATÁLOGO DE VÍDEOS
@@ -2978,6 +3045,13 @@ function stopVideoPlayback() {
 
 function showPlayerError(message, retryCallback = null) {
   if (dom.playerLoading) dom.playerLoading.classList.remove('active');
+  if (dom.iframeVideoPlayer) {
+    dom.iframeVideoPlayer.style.display = 'none';
+    dom.iframeVideoPlayer.src = 'about:blank';
+  }
+  if (dom.htmlVideoPlayer) {
+    dom.htmlVideoPlayer.style.display = 'none';
+  }
   if (dom.playerErrorOverlay) {
     if (dom.playerErrorDesc) {
       dom.playerErrorDesc.textContent = message || 'O servidor de origem deste vídeo está passando por manutenção ou instabilidade temporária.';
@@ -3313,21 +3387,22 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
       console.warn('API /api/animes/resolve falhou ou indisponível:', apiErr);
     }
 
+    // Se a API respondeu explicitamente que o vídeo é inválido/inexistente, não tente injetar iframes mortos
+    if (data && data.success === false) {
+      throw new Error(data.error || 'Vídeo não disponível ou removido pelo servidor de origem.');
+    }
+
+    // Fallback apenas se a API estiver fora do ar E existir um stream direto já resolvido (m3u8 / mp4)
     if (!data || !data.success || !data.stream_url) {
-      // Fallback estático a partir dos sources do episódio
       const epSources = (ep.sources || []).filter(s => s.provider !== 'animefire');
       if (epSources.length > 0) {
-        const matchingSrc = epSources.find(s => s.audio_type === preferredAudio) || epSources[0];
-        let pLoad = {};
-        try {
-          pLoad = typeof matchingSrc.extra_payload === 'string' ? JSON.parse(matchingSrc.extra_payload) : (matchingSrc.extra_payload || {});
-        } catch (e) {}
+        const matchingSrc = epSources.find(s => s.audio_type === preferredAudio && s.stream_url && (s.stream_url.includes('.m3u8') || s.stream_url.includes('googlevideo.com') || s.stream_url.includes('.mp4'))) 
+          || epSources.find(s => s.stream_url && (s.stream_url.includes('.m3u8') || s.stream_url.includes('googlevideo.com') || s.stream_url.includes('.mp4')));
 
-        const streamUrlCandidate = matchingSrc.stream_url || pLoad.episode_url;
-        if (streamUrlCandidate) {
+        if (matchingSrc && matchingSrc.stream_url) {
           data = {
             success: true,
-            stream_url: streamUrlCandidate,
+            stream_url: matchingSrc.stream_url,
             player_type: matchingSrc.player_type || 'direct',
             audio_type: matchingSrc.audio_type || preferredAudio,
             provider: matchingSrc.provider,

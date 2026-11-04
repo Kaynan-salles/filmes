@@ -473,10 +473,12 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                     # Probe to ensure the direct GoogleVideo stream is not 403 Forbidden
                     probe_ok = True
                     try:
-                        with httpx.Client(timeout=1.5) as probe_c:
-                            pr = probe_c.get(chosen_url, headers={"User-Agent": HEADERS["User-Agent"]})
-                            if pr.status_code >= 400:
-                                probe_ok = False
+                        with httpx.Client(timeout=2.0) as probe_c:
+                            pr = probe_c.head(chosen_url, headers={"User-Agent": HEADERS["User-Agent"]})
+                            if pr.status_code >= 400 and pr.status_code != 405:
+                                pr2 = probe_c.get(chosen_url, headers={"User-Agent": HEADERS["User-Agent"], "Range": "bytes=0-10"})
+                                if pr2.status_code >= 400:
+                                    probe_ok = False
                     except Exception:
                         probe_ok = False
 
@@ -491,16 +493,21 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                             qualities=qualities_list
                         )
             
-            # Fallback para o player iframe original (ex: Blogger embed), executado diretamente no navegador do cliente
-            if iframes:
+            # Fallback apenas para outros players iframe (não Blogger com erro)
+            for ifr in iframes:
+                if "blogger.com" in ifr:
+                    # Blogger já falhou no resolve_blogger_streams acima; se tentasse o iframe mostraria tela preta com (!)
+                    continue
+                # Se for outro player (ex: streamtape, mixdrop, etc.)
                 return StreamResolution(
                     success=True,
-                    stream_url=iframes[0],
+                    stream_url=ifr,
                     player_type="embed",
                     headers={"Referer": BASE_URL},
                     quality="SD"
                 )
-            return StreamResolution(success=False, stream_url="", error_message="Nenhum player disponível no provedor")
+
+            return StreamResolution(success=False, stream_url="", error_message="Blogger: Vídeo não disponível ou removido pelo host")
         except Exception as e:
             return StreamResolution(success=False, stream_url="", error_message=str(e))
 

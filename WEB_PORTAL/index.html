@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=29">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=29">
-  <link rel="alternate icon" href="favicon.ico?v=29">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=29">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=29">
-  <link rel="manifest" href="manifest.json?v=29">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=30">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=30">
+  <link rel="alternate icon" href="favicon.ico?v=30">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=30">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=30">
+  <link rel="manifest" href="manifest.json?v=30">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=29">
+  <link rel="stylesheet" href="style.css?v=30">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -117,7 +117,7 @@
     <div class="nav-container">
       <div class="brand">
         <div class="brand-logo">
-          <img src="icons/kcine-app-128.png?v=29" alt="K-CINE" class="brand-app-icon">
+          <img src="icons/kcine-app-128.png?v=30" alt="K-CINE" class="brand-app-icon">
         </div>
         <div class="brand-text">
           <span class="brand-title">K-CINE</span>
@@ -522,6 +522,7 @@
           <button class="admin-tab-btn" data-tab="central-clientes">👥 Central de Clientes</button>
           <button class="admin-tab-btn" data-tab="cadastrar-link">➕ Adicionar Título</button>
           <button class="admin-tab-btn" data-tab="sincronizacao-animes">🌸 Sincronização de Animes</button>
+          <button class="admin-tab-btn" data-tab="links-invalidos">🛡️ Links Inválidos (<span id="countInvalidosTab">2.009</span>)</button>
           <button class="admin-tab-btn" data-tab="dados-conta">⚙️ Dados da Conta</button>
         </div>
 
@@ -735,6 +736,56 @@
             </div>
           </div>
         </div>
+
+        <!-- Aba 6: Links Inválidos & Quarentena -->
+        <div class="admin-tab-content" id="tab-links-invalidos">
+          <div class="admin-section-box">
+            <div class="section-box-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div class="section-box-title">
+                <h4>🛡️ Quarentena de Links Inválidos</h4>
+                <p>Estes títulos foram automaticamente ocultados do catálogo para que os clientes nunca vejam telas pretas ou erros de vídeo.</p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" id="filterQuarantineInput" placeholder="Filtrar por título..." style="padding: 7px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #fff; font-size: 0.85rem;">
+                <button type="button" class="btn-primary" id="btnReloadQuarantine" style="padding: 7px 14px; font-size: 0.85rem; cursor: pointer;">🔄 Atualizar</button>
+              </div>
+            </div>
+
+            <div class="admin-stats-grid" style="margin-top: 15px;">
+              <div class="admin-stat-box">
+                <span class="box-label">Total Ocultados</span>
+                <span class="box-val" id="quarantineTotalCount" style="color: #f87171;">0</span>
+                <span class="box-desc">Links fora do ar / sem vídeo</span>
+              </div>
+              <div class="admin-stat-box">
+                <span class="box-label">Blogger Indisponível</span>
+                <span class="box-val" id="quarantineBloggerCount" style="color: #fbbf24;">0</span>
+                <span class="box-desc">Vídeos banidos pelo Google</span>
+              </div>
+              <div class="admin-stat-box">
+                <span class="box-label">Outras Falhas</span>
+                <span class="box-val" id="quarantineOtherCount" style="color: #94a3b8;">0</span>
+                <span class="box-desc">HTTP 404 / Sem player</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 15px; max-height: 450px; overflow-y: auto; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                <thead>
+                  <tr style="background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                    <th style="padding: 10px 14px;">Título</th>
+                    <th style="padding: 10px 14px;">Provedor</th>
+                    <th style="padding: 10px 14px;">Motivo da Ocultação</th>
+                    <th style="padding: 10px 14px;">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="quarantineTableBody">
+                  <tr><td colspan="4" style="text-align: center; padding: 30px; color: #94a3b8;">Carregando quarentena...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -742,8 +793,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=29"></script>
-  <script src="auth.js?v=29"></script>
-  <script src="app.js?v=29"></script>
+  <script src="supabase-config.js?v=30"></script>
+  <script src="auth.js?v=30"></script>
+  <script src="app.js?v=30"></script>
 </body>
 </html>

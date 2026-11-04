@@ -1,0 +1,3003 @@
+{
+  "timestamp": "2026-11-04 01:51:32",
+  "total_analisados": 2011,
+  "total_validos": 1657,
+  "total_invalidos": 354,
+  "duracao_segundos": 285.89,
+  "links_invalidos": [
+    {
+      "anime_id": "ani_a_returner_s_magic_should_be_special_s1",
+      "title": "A Returner’s Magic Should Be Special",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_18if_s1",
+      "title": "18if",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/18if-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_91_days_s1",
+      "title": "91 Days",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/91-days-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hack_liminality_s1",
+      "title": ".hack//Liminality",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hack-liminality-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hack_sign_s1",
+      "title": ".hack//Sign",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hack-roots-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_absolute_duo_s1",
+      "title": "Absolute Duo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/absolute-duo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_accel_world_s1",
+      "title": "Accel World",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/accel-world-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_abarenbou_rikishi_matsutarou_s1",
+      "title": "Abarenbou Rikishi!! Matsutarou",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/abarenbou-rikishi-matsutarou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_abenobashi_mahou_shouten_gai_s1",
+      "title": "Abenobashi Mahou Shouten Gai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/abenobashi-mahou-shouten-gai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_air_tv_s1",
+      "title": "Air Tv",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/air-tv-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_akahori_gedou_hour_rabuge_s1",
+      "title": "Akahori Gedou Hour Rabuge",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/akahori-gedou-hour-rabuge-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_akaneiro_ni_somaru_saka_s1",
+      "title": "Akaneiro Ni Somaru Saka",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/akaneiro-ni-somaru-saka-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_akatsuki_no_yona_s1",
+      "title": "Akatsuki no Yona",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/akatsuki-no-yona-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_aki_sora_s1",
+      "title": "Aki Sora",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/aki-sora-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_alexander_senki_s1",
+      "title": "Alexander Senki",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/alexander-senki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_amai_choubatsu_watashi_wa_kanshu_senyou_pet_s1",
+      "title": "Amai Choubatsu: Watashi wa Kanshu Senyou Pet",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/amai-choubatsu-watashi-wa-kanshu-senyou-pet-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_amatsuki_s1",
+      "title": "Amatsuki",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/amatsuki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_android_wa_keiken_ninzuu_ni_hairimasu_ka_s1",
+      "title": "Android wa Keiken Ninzuu ni Hairimasu ka??",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/android-wa-keiken-ninzuu-ni-hairimasu-ka-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_angel_beats_s1",
+      "title": "Angel Beats!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/angel-beats-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_animatrix_dublado_s1",
+      "title": "Animatrix Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/animatrix-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ao_no_exorcist_s1",
+      "title": "Ao no Exorcist",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ao-no-exorcist-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_as_a_reincarnated_aristocrat_i_ll_use_my_appraisal_skill",
+      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_ao_haru_ride_s1",
+      "title": "Ao Haru Ride",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ao-haru-ride-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_appare_ranman_s1",
+      "title": "Appare-Ranman!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/appare-ranman-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_aoki_hagane_no_arpeggio_ars_nova_s1",
+      "title": "Aoki Hagane no Arpeggio: Ars Nova",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/aoki-hagane-no-arpeggio-ars-nova-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_arad_senki_slap_up_party_s1",
+      "title": "Arad Senki: Slap Up Party",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/arad-senki-slap-up-party-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_aquarion_evol_s1",
+      "title": "Aquarion Evol",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/aquarion-evol-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_aoi_sekai_no_chuushin_de_s1",
+      "title": "Aoi Sekai no Chuushin de",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/aoi-sekai-no-chuushin-de-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_arcana_famiglia_s1",
+      "title": "Arcana Famiglia",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/arcana-famiglia-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_arte_s1",
+      "title": "Arte",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/arte-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ars_no_kyojuu_s1",
+      "title": "Ars no Kyojuu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ars-no-kyojuu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_asu_no_yoichi_s1",
+      "title": "Asu no yoichi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/asu-no-yoichi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bakumatsu_gijinden_roman_s1",
+      "title": "Bakumatsu Gijinden Roman",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bakumatsu-gijinden-roman-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bakugan_guerreiros_da_batalha_dublado_s1",
+      "title": "Bakugan: Guerreiros da Batalha Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bakugan-nova-vestroia-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_basquash_s1",
+      "title": "Basquash",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/basquash-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bamboo_blade_s1",
+      "title": "Bamboo Blade",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bamboo-blade-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bastard_s1",
+      "title": "Bastard",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bastard-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ben_to_s1",
+      "title": "Ben-To",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ben-to-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_beyblade_dublado_s1",
+      "title": "Beyblade Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/beyblade-g-revolution-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_berserk_s1",
+      "title": "Berserk",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/berserk-2016-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bikini_warriors_s1",
+      "title": "Bikini Warriors",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bikini-warriors-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_blazblue_alter_memory_s1",
+      "title": "BlazBlue Alter Memory",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/blazblue-alter-memory-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_black_lagoon_s1",
+      "title": "Black Lagoon",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/black-lagoon-3-robertas-blood-trail-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_black_blood_brothers_s1",
+      "title": "Black Blood Brothers",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/black-blood-brothers-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_binbougami_ga_s1",
+      "title": "Binbougami ga!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/binbougami-ga-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_blue_dragon_dublado_s1",
+      "title": "Blue Dragon Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/blue-dragon-tenkai-no-shichi-ryuu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_blood_dublado_s1",
+      "title": "Blood+ Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/blood-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_blood_lad_s1",
+      "title": "Blood Lad",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/blood-lad-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_blue_seed_s1",
+      "title": "Blue Seed",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/blue-seed-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_boku_wa_tomodachi_ga_sukunai_s1",
+      "title": "Boku wa Tomodachi ga Sukunai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/boku-wa-tomodachi-ga-sukunai-next-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_bottle_fairy_s1",
+      "title": "Bottle Fairy",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/bottle-fairy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_brothers_conflict_s1",
+      "title": "Brothers Conflict",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/brothers-conflict-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_btoom_s1",
+      "title": "Btoom!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/btoom-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_burn_up_scramble_s1",
+      "title": "Burn Up! Scramble",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/burn-up-scramble-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_candy_boy_s1",
+      "title": "Candy Boy",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/candy-boy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_campione_s1",
+      "title": "Campione",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/campione-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_chaotic_dublado_s1",
+      "title": "Chaotic Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/chaotic-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_chocolate_underground_s1",
+      "title": "Chocolate Underground",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/chocolate-underground-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_choujin_koukousei_tachi_wa_isekai_demo_yoyuu_de_ikinuku_",
+      "title": "Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/choujin-koukousei-tachi-wa-isekai-demo-yoyuu-de-ikinuku-you-desu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_choujuushin_gravion_s1",
+      "title": "Choujuushin Gravion",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/choujuushin-gravion-zwei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_cinderella_boy_dublado_s1",
+      "title": "Cinderella Boy Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/cinderella-boy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_chuunibyou_demo_koi_ga_shitai_s1",
+      "title": "Chuunibyou Demo Koi Ga Shitai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/chuunibyou-demo-koi-ga-shitai-ren-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_code_e_s1",
+      "title": "Code-E",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/code-e-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_da_capo_s1",
+      "title": "Da Capo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/da-capo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_cuticle_tantei_inaba_s1",
+      "title": "Cuticle Tantei Inaba",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/cuticle-tantei-inaba-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_d_frag_s1",
+      "title": "D-Frag!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/d-frag-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dagashi_kashi_s1",
+      "title": "Dagashi Kashi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dagashi-kashi-2-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_daitoshokan_no_hitsujikai_s1",
+      "title": "Daitoshokan no Hitsujikai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/daitoshokan-no-hitsujikai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dai_mahou_touge_s1",
+      "title": "Dai Mahou Touge",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dai-mahou-touge-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_danny_phantom_dublado_s1",
+      "title": "Danny Phantom Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/danny-phantom-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_demon_slayer_kimetsu_no_yaiba_s1",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_danshi_koukousei_no_nichijou_s1",
+      "title": "Danshi Koukousei no Nichijou",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/danshi-koukousei-no-nichijou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_days_s1",
+      "title": "Days",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/days-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_death_parade_s1",
+      "title": "Death Parade",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/death-parade-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_deca_dence_s1",
+      "title": "Deca-Dence",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/deca-dence-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_diarios_de_uma_apotecaria_s1",
+      "title": "Diários de uma Apotecária",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_deltora_quest_s1",
+      "title": "Deltora Quest",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/deltora-quest-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_detroit_metal_city_s1",
+      "title": "Detroit Metal City",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/detroit-metal-city-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_densetsu_no_yuusha_no_densetsu_s1",
+      "title": "Densetsu no Yuusha no Densetsu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/densetsu-no-yuusha-no-densetsu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_devilman_lady_s1",
+      "title": "Devilman Lady",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/devilman-lady-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_devilman_crybaby_s1",
+      "title": "Devilman: Crybaby",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/devilman-crybaby-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_diabolik_lovers_s1",
+      "title": "Diabolik Lovers",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/diabolik-lovers-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_divergence_eve_s1",
+      "title": "Divergence Eve",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/divergence-eve-2-misaki-chronicles-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dinossauro_rei_dublado_s1",
+      "title": "Dinossauro Rei Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dinossauro-rei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_do_it_yourself_s1",
+      "title": "Do It Yourself!!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/do-it-yourself-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dolls_frontline_s1",
+      "title": "Dolls’ Frontline",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dolls-frontline-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dog_days_s1",
+      "title": "Dog Days",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dog-days-3-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_double_j_s1",
+      "title": "Double-j",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/double-j-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_donten_ni_warau_s1",
+      "title": "Donten ni Warau",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/donten-ni-warau-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_dragon_ball_dublado_s1",
+      "title": "Dragon Ball Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/dragon-ball-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_drowning_sorrows_in_raging_fire_s1",
+      "title": "Drowning Sorrows in Raging Fire",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/drowning-sorrows-in-raging-fire-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_eden_s_bowy_s1",
+      "title": "Eden’s Bowy",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/edens-bowy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_el_hazard_dublado_s1",
+      "title": "El Hazard Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/el-hazard-the-wanderers-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_erementar_gerad_s1",
+      "title": "Erementar Gerad",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/erementar-gerad-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_elsword_el_lady_s1",
+      "title": "Elsword: El Lady",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/elsword-el-lady-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_eromanga_sensei_s1",
+      "title": "Eromanga Sensei",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/eromanga-sensei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_excel_saga_dublado_s1",
+      "title": "Excel Saga Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/excel-saga-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_full_clearing_another_world_under_a_goddess_with_zero_be",
+      "title": "Full Clearing Another World under a Goddess with Zero Believers",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_final_approach_s1",
+      "title": "Final Approach",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/final-approach-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_fly_o_pequeno_guerreiro_dublado_s1",
+      "title": "Fly O pequeno guerreiro Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/fly-o-pequeno-guerreiro-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_fukumenkei_noise_s1",
+      "title": "Fukumenkei Noise",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/fukumenkei-noise-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_futakoi_s1",
+      "title": "Futakoi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/futakoi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gangsta_s1",
+      "title": "Gangsta.",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gangsta-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_galilei_donna_s1",
+      "title": "Galilei Donna",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/galilei-donna-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gal_to_kyouryuu_s1",
+      "title": "Gal to Kyouryuu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gal-to-kyouryuu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gate_keepers_21_s1",
+      "title": "Gate Keepers 21",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gate-keepers-21-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_generator_gawl_s1",
+      "title": "Generator Gawl",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/generator-gawl-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_geneshaft_s1",
+      "title": "Geneshaft",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/geneshaft-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_genshiken_s1",
+      "title": "Genshiken",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/genshiken-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ghost_hunt_s1",
+      "title": "Ghost Hunt",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ghost-hunt-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gin_no_saji_s1",
+      "title": "Gin no Saji",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gin-no-saji-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gin_no_guardian_s1",
+      "title": "Gin no Guardian",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gin-no-guardian-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gokusen_s1",
+      "title": "Gokusen",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gokusen-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_golden_time_s1",
+      "title": "Golden Time",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/golden-time-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_golden_boy_s1",
+      "title": "Golden Boy",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/golden-boy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_grappler_baki_s1",
+      "title": "Grappler Baki",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/grappler-baki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gravitation_s1",
+      "title": "Gravitation",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gravitation-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_grenadier_hohoemi_no_senshi_s1",
+      "title": "Grenadier: Hohoemi No Senshi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/grenadier-hohoemi-no-senshi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_great_pretender_s1",
+      "title": "Great Pretender",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/great-pretender-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_green_green_s1",
+      "title": "Green Green",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/green-green-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gun_frontier_dublado_s1",
+      "title": "Gun Frontier Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gun-frontier-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gunslinger_girl_s1",
+      "title": "Gunslinger Girl",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gunslinger-girl-2-il-teatrino-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_gungrave_s1",
+      "title": "Gungrave",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/gungrave-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_haibane_renmei_s1",
+      "title": "Haibane Renmei",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/haibane-renmei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hakata_tonkotsu_ramens_s1",
+      "title": "Hakata Tonkotsu Ramens",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hakata-tonkotsu-ramens-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hakkenden_touhou_hakken_ibun_s1",
+      "title": "Hakkenden: Touhou Hakken Ibun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hakkenden-touhou-hakken-ibun-2nd-season-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hajime_no_ippo_s1",
+      "title": "Hajime no Ippo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hajime-no-ippo-rising-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hanaukyo_maid_tai_s1",
+      "title": "Hanaukyo Maid Tai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hanaukyo-maid-tai-la-verite-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hand_maid_may_s1",
+      "title": "Hand Maid May",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hand-maid-may-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_happy_sugar_life_s1",
+      "title": "Happy Sugar Life",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/happy-sugar-life-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_harem_camp_s1",
+      "title": "Harem Camp!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/harem-camp-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hataage_kemono_michi_s1",
+      "title": "Hataage! Kemono Michi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hataage-kemono-michi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hataraku_maou_sama_s1",
+      "title": "Hataraku Maou-sama!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hataraku-maou-sama-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hatsukoi_limited_s1",
+      "title": "Hatsukoi Limited",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hatsukoi-limited-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_healin_good_precure_s1",
+      "title": "Healin’ Good Precure",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/healin-good-precure-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hensemi_s1",
+      "title": "HenSemi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hensemi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_heya_camp_s1",
+      "title": "Heya Camp△",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/heya-camp-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_high_school_dxd_s1",
+      "title": "High School DxD",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/high-school-dxd-hero-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_himiko_den_s1",
+      "title": "Himiko-Den",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/himiko-den-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hunter_x_hunter_dublado_s1",
+      "title": "Hunter x Hunter Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hunter-x-hunter-episodio-1/",
+      "reason": "Nenhum iframe de vídeo encontrado na página"
+    },
+    {
+      "anime_id": "ani_holy_knight_s1",
+      "title": "Holy Knight",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/holy-knight-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hoshi_no_samidare_s1",
+      "title": "Hoshi no Samidare",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hoshi-no-samidare-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_houkago_teibou_nisshi_s1",
+      "title": "Houkago Teibou Nisshi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/houkago-teibou-nisshi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hunter_x_hunter_2011_s1",
+      "title": "Hunter x Hunter 2011",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hunter-x-hunter-2011-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hyakuren_no_haou_to_seiyaku_no_valkyria_s1",
+      "title": "Hyakuren no Haou to Seiyaku no Valkyria",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hyakuren-no-haou-to-seiyaku-no-valkyria-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_hyouken_no_majutsushi_ga_sekai_wo_suberu_s1",
+      "title": "Hyouken no Majutsushi ga Sekai wo Suberu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/hyouken-no-majutsushi-ga-sekai-wo-suberu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_inu_to_hasami_wa_tsukaiyou_s1",
+      "title": "Inu To Hasami Wa Tsukaiyou",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/inu-to-hasami-wa-tsukaiyou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_initial_d_fifth_stage_s1",
+      "title": "Initial D Fifth Stage",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/initial-d-fifth-stage-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_isekai_no_sata_wa_shachiku_shidai_s1",
+      "title": "Isekai no Sata wa Shachiku Shidai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/isekai-no-sata-wa-shachiku-shidai-episodio-1/",
+      "reason": "Nenhum iframe de vídeo encontrado na página"
+    },
+    {
+      "anime_id": "ani_isekai_yakkyoku_s1",
+      "title": "Isekai Yakkyoku",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/isekai-yakkyoku-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_itsuka_tenma_no_kuro_usagi_s1",
+      "title": "Itsuka Tenma no Kuro Usagi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/itsuka-tenma-no-kuro-usagi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_isekai_no_seikishi_monogatari_s1",
+      "title": "Isekai no Seikishi Monogatari",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/isekai-no-seikishi-monogatari-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jinrui_wa_suitai_shimashita_s1",
+      "title": "Jinrui wa Suitai Shimashita",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jinrui-wa-suitai-shimashita-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jinki_extend_s1",
+      "title": "Jinki Extend",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jinki-extend-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jitsu_wa_ore_saikyou_deshita_s1",
+      "title": "Jitsu wa Ore, Saikyou deshita?",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jitsu-wa-ore-saikyou-deshita-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_joshikousei_girls_high_s1",
+      "title": "Joshikousei Girls High",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/joshikousei-girls-high-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jormungand_s1",
+      "title": "Jormungand",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jormungand-2-perfect-order-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jubei_chan_the_ninja_girl_s1",
+      "title": "Jubei-chan: The Ninja Girl",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jubei-chan-the-ninja-girl-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_jyu_oh_sei_s1",
+      "title": "Jyu Oh Sei",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/jyu-oh-sei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kai_byoui_ramune_s1",
+      "title": "Kai Byoui Ramune",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kai-byoui-ramune-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kakushigoto_s1",
+      "title": "Kakushigoto",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kakushigoto-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kakkou_no_iinazuke_s1",
+      "title": "Kakkou no Iinazuke",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kakkou-no-iinazuke-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kannagi_s1",
+      "title": "Kannagi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kannagi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kannazuki_no_miko_s1",
+      "title": "Kannazuki No Miko",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kannazuki-no-miko-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kanojo_ga_flag_o_oraretara_s1",
+      "title": "Kanojo ga Flag o Oraretara",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kanojo-ga-flag-o-oraretara-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_karen_senki_s1",
+      "title": "Karen Senki",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/karen-senki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_katanagatari_s1",
+      "title": "Katanagatari",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/katanagatari-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_keishichou_tokumubu_tokushu_kyouakuhan_taisakushitsu_dai",
+      "title": "Keishichou Tokumubu Tokushu Kyouakuhan Taisakushitsu Dainanaka: Tokunana",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/keishichou-tokumubu-tokushu-kyouakuhan-taisakushitsu-dainanaka-tokunana-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kenko_zenrakei_suieibu_umisho_s1",
+      "title": "Kenko Zenrakei Suieibu Umisho",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kenko-zenrakei-suieibu-umisho-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kenzen_robo_daimidaler_s1",
+      "title": "Kenzen Robo Daimidaler",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kenzen-robo-daimidaler-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kenka_banchou_otome_girl_beats_boys_s1",
+      "title": "Kenka Banchou Otome: Girl Beats Boys",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kenka-banchou-otome-girl-beats-boys-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kiddy_girl_and_s1",
+      "title": "Kiddy Girl And",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kiddy-girl-and-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_keppeki_danshi_aoyama_kun_s1",
+      "title": "Keppeki Danshi! Aoyama-kun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/keppeki-danshi-aoyama-kun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kidou_senshi_gundam_the_origin_s1",
+      "title": "Kidou Senshi Gundam – The Origin",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kidou-senshi-gundam-the-origin-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kill_me_baby_s1",
+      "title": "Kill Me Baby",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kill-me-baby-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kishin_houkou_demonbane_s1",
+      "title": "Kishin Houkou Demonbane",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kishin-houkou-demonbane-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_koi_to_producer_evol_love_s1",
+      "title": "Koi to Producer: EVOL×LOVE",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/koi-to-producer-evolxlove-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kokoro_connect_s1",
+      "title": "Kokoro Connect",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kokoro-connect-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kokkoku_s1",
+      "title": "Kokkoku",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kokkoku-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_koisuru_asteroid_s1",
+      "title": "Koisuru Asteroid",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/koisuru-asteroid-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kono_minikuku_mo_utsukushii_sekai_s1",
+      "title": "Kono Minikuku Mo Utsukushii Sekai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kono-minikuku-mo-utsukushii-sekai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kono_oto_tomare_s1",
+      "title": "Kono Oto Tomare!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kono-oto-tomare-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kore_wa_zombie_desu_ka_s1",
+      "title": "Kore wa Zombie Desu ka?",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kore-wa-zombie-desuka-of-the-dead-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_koukaku_no_regios_s1",
+      "title": "Koukaku no Regios",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/koukaku-no-regios-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kurozuka_s1",
+      "title": "Kurozuka",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kurozuka-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kuroko_no_basket_s1",
+      "title": "Kuroko No Basket",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kuroko-no-3-basket-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kuusen_madoushi_kouhosei_no_kyoukan_s1",
+      "title": "Kuusen Madoushi Kouhosei no Kyoukan",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kuusen-madoushi-kouhosei-no-kyoukan-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_kyokou_suiri_s1",
+      "title": "Kyokou Suiri",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/kyokou-suiri-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_lapis_re_lights_s1",
+      "title": "Lapis Re:LiGHTs",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/lapis-relights-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_listeners_s1",
+      "title": "Listeners",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/listeners-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_lord_of_vermilion_guren_no_ou_s1",
+      "title": "Lord of Vermilion: Guren no Ou",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/lord-of-vermilion-guren-no-ou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_magic_repo_man_dumped_by_my_party_i_ll_cash_in_with_a_cu",
+      "title": "Magic Repo Man: Dumped by My Party, I'll Cash In With a Cute Support Fairy to Become the Strongest!",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_lost_universe_s1",
+      "title": "Lost Universe",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/lost-universe-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_love_lab_s1",
+      "title": "Love Lab",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/love-lab-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mm_s1",
+      "title": "MM!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mm-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_macademi_wasshoi_s1",
+      "title": "Macademi Wasshoi!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/macademi-wasshoi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_machine_doll_wa_kizutsukanai_s1",
+      "title": "Machine-Doll wa Kizutsukanai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/machine-doll-wa-kizutsukanai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_made_in_abyss_s1",
+      "title": "Made In Abyss",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/made-in-abyss-retsujitsu-no-ougonkyou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_magic_kaito_1412_s1",
+      "title": "Magic Kaito 1412",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/magic-kaito-1412-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mahou_senshi_louie_s1",
+      "title": "Mahou Senshi Louie",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mahou-senshi-louie-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mahoromatic_s1",
+      "title": "Mahoromatic",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mahoromatic-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mahoutsukai_no_yome_s1",
+      "title": "Mahoutsukai No Yome",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mahoutsukai-no-yome-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mahouka_koukou_no_yuutousei_s1",
+      "title": "Mahouka Koukou no Yuutousei",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mahouka-koukou-no-yuutousei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_maji_de_watashi_ni_koi_shinasai_s1",
+      "title": "Maji de Watashi ni Koi Shinasai!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/maji-de-watashi-ni-koi-shinasai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_marginal_4_kiss_kara_tsukuru_big_bang_s1",
+      "title": "Marginal#4: Kiss Kara Tsukuru Big Bang",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/marginal4-kiss-kara-tsukuru-big-bang-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mayoiga_s1",
+      "title": "Mayoiga",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mayoiga-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mayo_chiki_s1",
+      "title": "Mayo Chiki",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mayo-chiki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_medabots_dublado_s1",
+      "title": "Medabots Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/medabots-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_medaka_box_s1",
+      "title": "Medaka Box",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/medaka-box-abnormal-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mezzo_dsa_s1",
+      "title": "Mezzo DSA",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mezzo-dsa-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mobile_suit_gundam_the_witch_from_mercury_s1",
+      "title": "Mobile Suit Gundam: The Witch from Mercury",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mobile-suit-gundam-the-witch-from-mercury-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mondaiji_tachi_ga_isekai_kara_kuru_sou_desu_yo_s1",
+      "title": "Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo?",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mondaiji-tachi-ga-isekai-kara-kuru-sou-desu-yo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mobile_suit_gundam_wing_dublado_s1",
+      "title": "Mobile Suit Gundam Wing Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mobile-suit-gundam-wing-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_muhyo_to_rouji_no_mahouritsu_soudan_jimusho_s1",
+      "title": "Muhyo to Rouji no Mahouritsu Soudan Jimusho",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/muhyo-to-rouji-no-mahouritsu-soudan-jimusho-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mob_psycho_100_s1",
+      "title": "Mob Psycho 100",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mob-psycho-100-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_mortal_kombat_defensores_da_terra_dublado_s1",
+      "title": "Mortal Kombat: Defensores Da Terra Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/mortal-kombat-defenders-of-the-realm-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_myself_yourself_s1",
+      "title": "Myself;Yourself",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/myselfyourself-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nagi_no_asukara_s1",
+      "title": "Nagi No Asukara",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nagi-no-asukara-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nami_yo_kiitekure_s1",
+      "title": "Nami yo Kiitekure",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nami-yo-kiitekure-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_najica_blitz_tactics_s1",
+      "title": "Najica Blitz Tactics",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/najica-blitz-tactics-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nazo_no_kanojo_x_s1",
+      "title": "Nazo No Kanojo X",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nazo-no-kanojo-x-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_needless_s1",
+      "title": "Needless",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/needless-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_natsuyuki_rendezvous_s1",
+      "title": "Natsuyuki Rendezvous",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/natsuyuki-rendezvous-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_neon_genesis_evangelion_dublado_s1",
+      "title": "Neon Genesis Evangelion Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/neon-genesis-evangelion-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_night_wizard_s1",
+      "title": "Night Wizard",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/night-wizard-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ningen_fushin_no_boukensha_tachi_ga_sekai_wo_sukuu_you_d",
+      "title": "Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ningen-fushin-no-boukensha-tachi-ga-sekai-wo-sukuu-you-desu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_no_game_no_life_s1",
+      "title": "No Game No Life",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/no-game-no-life-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nobunagun_s1",
+      "title": "Nobunagun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nobunagun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nogizaka_haruka_no_himitsu_s1",
+      "title": "Nogizaka Haruka no Himitsu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nogizaka-haruka-no-himitsu-purezza-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_one_piece_s1",
+      "title": "One Piece",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_noragami_s1",
+      "title": "Noragami",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/noragami-aragoto-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_noumin_kanren_no_skill_bakka_agetetara_naze_ka_tsuyoku_n",
+      "title": "Noumin Kanren no Skill Bakka Agetetara Naze ka Tsuyoku Natta.",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/noumin-kanren-no-skill-bakka-agetetara-naze-ka-tsuyoku-natta-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_nurarihyon_no_mago_s1",
+      "title": "Nurarihyon No Mago",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/nurarihyon-no-mago-sennen-makyou-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_okashi_na_tensei_s1",
+      "title": "Okashi na Tensei",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/okashi-na-tensei-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_okusama_wa_mahou_shoujo_s1",
+      "title": "Okusama wa Mahou Shoujo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/okusama-wa-mahou-shoujo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_omamori_himari_s1",
+      "title": "Omamori Himari",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/omamori-himari-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_omiai_aite_wa_oshiego_tsuyokina_mondaiji_s1",
+      "title": "Omiai Aite wa Oshiego, Tsuyokina, Mondaiji",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/omiai-aite-wa-oshiego-tsuyokina-mondaiji-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_oniichan_wa_oshimai_s1",
+      "title": "Oniichan wa Oshimai!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/oniichan-wa-oshimai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ookami_san_wa_taberaretai_s1",
+      "title": "Ookami-san wa Taberaretai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ookami-san-wa-taberaretai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ookami_san_to_shichinin_no_nakama_tachi_s1",
+      "title": "Ookami-san to Shichinin no Nakama-tachi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ookami-san-to-shichinin-no-nakama-tachi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ore_no_imouto_ga_konna_ni_kawaii_wake_ga_nai_s1",
+      "title": "Ore No Imouto Ga Konna Ni Kawaii Wake Ga Nai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ore-no-imouto-ga-konna-ni-kawaii-wake-ga-nai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ore_ga_suki_nano_wa_imouto_dakedo_imouto_ja_nai_s1",
+      "title": "Ore ga Suki nano wa Imouto dakedo Imouto ja Nai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ore-ga-suki-nano-wa-imouto-dakedo-imouto-ja-nai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ore_no_nounai_sentakushi_ga_gakuen_love_comedy_s1",
+      "title": "Ore No Nounai Sentakushi Ga, Gakuen Love Comedy",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ore-no-nounai-sentakushi-ga-gakuen-love-comedy-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ore_wo_suki_nano_wa_omae_dake_ka_yo_s1",
+      "title": "Ore wo Suki nano wa Omae dake ka yo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ore-wo-suki-nano-wa-omae-dake-ka-yo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_overgeared_s1",
+      "title": "Overgeared",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_ore_twin_tail_ni_narimasu_s1",
+      "title": "Ore, Twin Tail Ni Narimasu.",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ore-twin-tail-ni-narimasu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_owari_no_seraph_s1",
+      "title": "Owari no Seraph",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/owari-no-seraph-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_popotan_s1",
+      "title": "Popotan",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_overlord_s1",
+      "title": "Overlord",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/overlord-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_peace_maker_kurogane_s1",
+      "title": "Peace Maker Kurogane",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/peace-maker-kurogane-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_planet_with_s1",
+      "title": "Planet With",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/planet-with-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_plunderer_s1",
+      "title": "Plunderer",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/plunderer-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_projeto_zeta_dublado_s1",
+      "title": "Projeto Zeta Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/projeto-zeta-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_reborn_as_a_space_mercenary_i_woke_up_piloting_the_stron",
+      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_queens_blade_s1",
+      "title": "Queens Blade",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/queens-blade-gyokuza-o-tsugu-mono-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_reincarnated_as_a_sword_s1",
+      "title": "Reincarnated as a Sword",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_quanzhi_fashi_s1",
+      "title": "Quanzhi Fashi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/quanzhi-fashi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_qualidea_code_s1",
+      "title": "Qualidea Code",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/qualidea-code-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_rahxephon_s1",
+      "title": "RahXephon",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/rahxephon-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_re_kan_s1",
+      "title": "Re-Kan!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/re-kan-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_renai_boukun_s1",
+      "title": "Renai Boukun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/renai-boukun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_rideback_s1",
+      "title": "Rideback",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/rideback-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ristorante_paradiso_s1",
+      "title": "Ristorante Paradiso",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ristorante-paradiso-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ryza_no_atelier_tokoyami_no_joou_to_himitsu_no_kakurega_",
+      "title": "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ryza-no-atelier-tokoyami-no-joou-to-himitsu-no-kakurega-episodio-1/",
+      "reason": "Nenhum iframe de vídeo encontrado na página"
+    },
+    {
+      "anime_id": "ani_robotics_notes_s1",
+      "title": "Robotics;Notes",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/roboticsnotes-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_samurai_7_dublado_s1",
+      "title": "SAMURAI 7 Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/samurai-7-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sabagebu_s1",
+      "title": "Sabagebu!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sabagebu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ssss_gridman_s1",
+      "title": "SSSS.GRIDMAN",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ssss-gridman-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_saber_marionette_j_dublado_s1",
+      "title": "Saber Marionette J Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/saber-marionette-j-jp-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_saikin_imouto_no_yousu_ga_chotto_okashiinda_ga_s1",
+      "title": "Saikin, Imouto no Yousu ga Chotto Okashiinda ga",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/saikin-imouto-no-yousu-ga-chotto-okashiinda-ga-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_saikano_s1",
+      "title": "Saikano",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/saikano-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sailor_moon_dublado_s1",
+      "title": "Sailor Moon Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sailor-moon-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sakurasou_no_pet_na_kanojo_s1",
+      "title": "Sakurasou no Pet na Kanojo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sakurasou-no-pet-na-kanojo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sankarea_s1",
+      "title": "Sankarea",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sankarea-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_school_rumble_s1",
+      "title": "School Rumble",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/school-rumble-ni-gakki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_schoolgirl_strikers_animation_channel_s1",
+      "title": "Schoolgirl Strikers Animation Channel",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/schoolgirl-strikers-animation-channel-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_school_days_s1",
+      "title": "School Days",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/school-days-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_seiken_no_blacksmith_s1",
+      "title": "Seiken No Blacksmith",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/seiken-no-blacksmith-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_seiken_densetsu_legend_of_mana_the_teardrop_crystal_s1",
+      "title": "Seiken Densetsu: Legend of Mana – The Teardrop Crystal",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/seiken-densetsu-legend-of-mana-the-teardrop-crystal-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_seitokai_no_ichizon_s1",
+      "title": "Seitokai no Ichizon",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/seitokai-no-ichizon-lv-2-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_senjuushi_s1",
+      "title": "Senjuushi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/senjuushi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sekai_de_ichiban_tsuyoku_naritai_s1",
+      "title": "Sekai De Ichiban Tsuyoku Naritai",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sekai-de-ichiban-tsuyoku-naritai-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shachou_battle_no_jikan_desu_s1",
+      "title": "Shachou, Battle no Jikan Desu!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shachou-battle-no-jikan-desu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shaman_king_2021_s1",
+      "title": "Shaman King (2021)",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shaman-king-2021-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shinjiteita_nakamatachi_ni_dungeon_okuchi_de_korosarekak",
+      "title": "Shinjiteita Nakamatachi ni Dungeon Okuchi de Korosarekaketa ga Gift “Mugen Gacha” de Level 9999 no Nakamatachi wo Te ni Irete Moto Party Member to Sekai ni Fukushuu & “Zamaa!” Shimasu!",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_shigatsu_wa_kimi_no_uso_s1",
+      "title": "Shigatsu wa Kimi no Uso",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shigatsu-wa-kimi-no-uso-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shining_hearts_shiawase_no_pan_s1",
+      "title": "Shining Hearts: Shiawase No Pan",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shining-hearts-shiawase-no-pan-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shinsekai_yori_s1",
+      "title": "Shinsekai Yori",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shinsekai-yori-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shironeko_project_zero_chronicle_s1",
+      "title": "Shironeko Project: Zero Chronicle",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shironeko-project-zero-chronicle-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_shokugeki_no_souma_s1",
+      "title": "Shokugeki no Souma",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/shokugeki-no-souma-gou-no-sara-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_show_by_rock_mashumairesh_s1",
+      "title": "Show By Rock!! Mashumairesh!!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/show-by-rock-mashumairesh-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sidonia_no_kishi_s1",
+      "title": "Sidonia no Kishi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sidonia-no-kishi-daikyuu-wakusei-seneki-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_skirt_no_naka_wa_kedamono_deshita_s1",
+      "title": "Skirt No Naka Wa Kedamono Deshita",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/skirt-no-naka-wa-kedamono-deshita-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_somali_to_mori_no_kamisama_s1",
+      "title": "Somali to Mori no Kamisama",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/somali-to-mori-no-kamisama-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sora_no_otoshimono_s1",
+      "title": "Sora no Otoshimono",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sora-no-otoshimono-forte-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_souryo_to_majiwaru_shikiyoku_no_yoru_ni_s1",
+      "title": "Souryo to Majiwaru Shikiyoku no Yoru ni",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/souryo-to-majiwaru-shikiyoku-no-yoru-ni-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_soul_eater_s1",
+      "title": "Soul Eater",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/soul-eater-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_spiral_suiri_no_kizuna_s1",
+      "title": "Spiral Suiri No Kizuna",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/spiral-suiri-no-kizuna-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_steins_gate_s1",
+      "title": "Steins;Gate",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/steinsgate-0-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_spy_kyoushitsu_s1",
+      "title": "Spy Kyoushitsu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/spy-kyoushitsu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_sukitte_ii_na_yo_s1",
+      "title": "Sukitte Ii na yo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/sukitte-ii-na-yo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_suzumiya_haruhi_no_yuuutsu_s1",
+      "title": "Suzumiya Haruhi no Yuuutsu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/suzumiya-haruhi-no-yuuutsu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tari_tari_s1",
+      "title": "Tari Tari",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tari-tari-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tears_to_tiara_s1",
+      "title": "Tears To Tiara",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tears-to-tiara-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tamayomi_s1",
+      "title": "Tamayomi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tamayomi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_teekyuu_s1",
+      "title": "Teekyuu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/teekyuu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_the_exiled_heavy_knight_knows_how_to_game_the_system_s1",
+      "title": "The Exiled Heavy Knight Knows How to Game the System",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_the_iceblade_sorcerer_shall_rule_the_world_s1",
+      "title": "The Iceblade Sorcerer Shall Rule the World",
+      "provider": "none",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Nenhuma fonte ou ID de episódio cadastrado no catálogo"
+    },
+    {
+      "anime_id": "ani_tenchi_em_toquio_s1",
+      "title": "Tenchi em Tóquio",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tenchi-em-toquio-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tetsuwan_birdy_decode_s1",
+      "title": "Tetsuwan Birdy Decode",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tetsuwan-birdy-decode-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_the_god_of_high_school_s1",
+      "title": "The God of High School",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/the-god-of-high-school-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tokyo_revengers_s1",
+      "title": "Tokyo Revengers",
+      "provider": "animesdigital",
+      "valid": false,
+      "stream_url": "",
+      "reason": "Provedor não suportado: animesdigital"
+    },
+    {
+      "anime_id": "ani_tiger_bunny_s1",
+      "title": "Tiger & Bunny",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tiger-bunny-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tide_line_blue_s1",
+      "title": "Tide-Line Blue",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tide-line-blue-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_togainu_no_chi_s1",
+      "title": "Togainu No Chi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/togainu-no-chi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_toaru_kagaku_no_railgun_s1",
+      "title": "Toaru Kagaku No Railgun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/toaru-kagaku-no-railgun-t-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tokyo_magnitude_8_0_s1",
+      "title": "Tokyo Magnitude 8.0",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tokyo-magnitude-8-0-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tokyo_ravens_s1",
+      "title": "Tokyo Ravens",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tokyo-ravens-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tonari_no_kaibutsu_kun_s1",
+      "title": "Tonari no Kaibutsu-kun",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tonari-no-kaibutsu-kun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_toradora_s1",
+      "title": "Toradora",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/toradora-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_touken_ranbu_hanamaru_s1",
+      "title": "Touken Ranbu Hanamaru",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/zoku-touken-ranbu-hanamaru-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_touka_gettan_s1",
+      "title": "Touka Gettan",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/touka-gettan-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_trigun_dublado_s1",
+      "title": "Trigun Dublado",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/trigun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tsurune_kazemai_koukou_kyuudoubu_s1",
+      "title": "Tsurune: Kazemai Koukou Kyuudoubu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tsurune-kazemai-koukou-kyuudou-bu-2-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_tsuyokiss_cool_x_sweet_s1",
+      "title": "Tsuyokiss Cool x Sweet",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/tsuyokiss-cool-x-sweet-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_uchouten_kazoku_s1",
+      "title": "Uchouten Kazoku",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/uchouten-kazoku-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_ultraman_r_b_s1",
+      "title": "Ultraman R/B",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/ultraman-r-b-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_utawarerumono_futari_no_hakuoro_s1",
+      "title": "Utawarerumono: Futari no Hakuoro",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/utawarerumono-futari-no-hakuoro-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_vandread_s1",
+      "title": "Vandread",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/vandread-the-second-stage-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_vampire_holmes_s1",
+      "title": "Vampire Holmes",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/vampire-holmes-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_w_wish_s1",
+      "title": "W: Wish",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/w-wish-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_vision_of_escaflowne_s1",
+      "title": "Vision Of Escaflowne",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/vision-of-escaflowne-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_watamote_s1",
+      "title": "WataMote",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/watamote-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_vipers_creed_s1",
+      "title": "Vipers Creed",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/vipers-creed-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_warau_arsnotoria_sun_s1",
+      "title": "Warau Arsnotoria Sun!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/warau-arsnotoria-sun-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_watashi_ni_tenshi_ga_maiorita_s1",
+      "title": "Watashi ni Tenshi ga Maiorita!",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/watashi-ni-tenshi-ga-maiorita-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_witch_hunter_robin_s1",
+      "title": "Witch Hunter Robin",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/witch-hunter-robin-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_wild_arms_twilight_venom_s1",
+      "title": "Wild Arms: Twilight Venom",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/wild-arms-twilight-venom-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_witch_craft_works_s1",
+      "title": "Witch Craft Works",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/witch-craft-works-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_xenosaga_the_animation_s1",
+      "title": "Xenosaga: The Animation",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/xenosaga-the-animation-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_xl_joushi_s1",
+      "title": "XL Joushi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/xl-joushi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yamada_kun_to_7_nin_no_majo_s1",
+      "title": "Yamada-kun to 7-nin no Majo",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yamada-kun-to-7-nin-no-majo-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yama_no_susume_s1",
+      "title": "Yama no Susume",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yama-no-susume-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yao_jing_zhong_zhi_shou_ce_s1",
+      "title": "Yao Jing Zhong Zhi Shou Ce",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yao-jing-zhong-zhi-shou-ce-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yichang_shengwu_jianwenlu_s1",
+      "title": "Yichang Shengwu Jianwenlu",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yichang-shengwu-jianwenlu-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yesterday_wo_utatte_s1",
+      "title": "Yesterday wo Utatte",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yesterday-wo-utatte-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yoru_no_yatterman_s1",
+      "title": "Yoru no Yatterman",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yoru-no-yatterman-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yondemasu_yo_azazel_san_s1",
+      "title": "Yondemasu yo, Azazel-san",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yondemasu-yo-azazel-san-z-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yozakura_quartet_hana_no_uta_s1",
+      "title": "Yozakura Quartet: Hana no Uta",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yozakura-quartet-hana-no-uta-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yumeria_s1",
+      "title": "Yumeria",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yumeria-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_yurikuma_arashi_s1",
+      "title": "Yurikuma Arashi",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/yurikuma-arashi-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_zegapain_s1",
+      "title": "Zegapain",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/zegapain-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_zero_kara_hajimeru_mahou_no_sho_s1",
+      "title": "Zero kara Hajimeru Mahou no Sho",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/zero-kara-hajimeru-mahou-no-sho-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    },
+    {
+      "anime_id": "ani_zombie_loan_s1",
+      "title": "Zombie Loan",
+      "provider": "animesonlinecc",
+      "valid": false,
+      "stream_url": "https://animesonlinecc.to/episodio/zombie-loan-episodio-1/",
+      "reason": "Blogger: Vídeo não disponível ou removido pelo host (!)"
+    }
+  ],
+  "links_validos_amostra": [
+    {
+      "anime_id": "ani_30_sai_made_doutei_dato_mahoutsukai_ni_nareru_rashii_s1",
+      "title": "30-sai made Doutei dato Mahoutsukai ni Nareru Rashii",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr3---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqavyjD9_ey9YP3tbWmQg&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=c43637437e3eb5b4&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=Eb&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=3&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1420.132&lmt=1704928639044127&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIge51PCI7uKdYtJ2YCh-DcDYWc17cFbfWOQMOVChGNpSACIQCP7j3z3JNlJs-Phsoc1cTcF2Rj7IxT_5e5FehB5HcihA==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAMmArprLU-hRu28EUfpLqPhp5bKCL9LUKjM9ptY6rZCDAiABrF2VcUl0uIlyHUt2NX4lVmieZphgReystDILUJxIXA==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_07_ghost_s1",
+      "title": "07 Ghost",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr1---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqarGPEtGvy9YPz_ytyAM&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=a6e613bd74f2f983&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=ZL&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=1&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1430.372&lmt=1698068846869140&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAK7SfcFO1F4Oim-dKflk71u6hU8D1nOldpp-CpvqVlCgAiEA0xkl5PGeFKnXu7rM7rmbMwPLWiv8cmdZO3nURCfLkoY=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAKWOY-WI5xP9vF8kH0Nuw7e7bDRJcsZfK-YBVpbx9-XyAiAZe6_XnbpswsbGBGh-rgE2HLJGmSMJc-XnxBgOcy3QGw==",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_a3_season_spring_summer_s1",
+      "title": "A3! Season Spring & Summer",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqatW4GZ3By9YPgbCg2Qc&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=4b88ee41a8e8c8c6&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=RB&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1427.237&lmt=1698705878866286&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgFcxZ2jWwjNXoqRZx6eynVcdpvSVZ1EhflGOd3p1APzoCIQDBqdfNYHduXiFw_n9TLpSw1VE-zYdvrKNX4MgpHFPvJw==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgFkASBuivp4XuduzUSV9rm6ZCkjOxbkhvHoXffihjVfMCIQCeh-agHWMkbvjP3hpxjVJI6o-_x0gZMX22_HwsGJ_mIA==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_acca_13_ku_kansatsu_ka_s1",
+      "title": "ACCA: 13-ku Kansatsu-ka",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqatC3GtCay9YPruDu2AY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=78a45ade7eea5540&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=3n&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1450.295&lmt=1700626404573841&mt=1793770685&txp=0011224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAMr7V3bxbXSL6ii1XU_YzYFI15Gk_HwIWUxKkJuJNvoTAiEApxwnTMEcCT5CmKAJ6Ek7fuHXJgozgHaF2AXlvePLEEI=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgQnA5eTrteQUayGxFCYLn7eh9mbPJ66GFx5G3I4-7wo4CIDpvsgdhxHJwl1LR2pidp8qNa-wGOT-FeK4vGrTE7Lnn",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_86_s1",
+      "title": "86",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqaszLHcvBy9YP5M7dgAg&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=4ffa952b9ce99f3a&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&cps=189&met=1793771208,&mh=Vn&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1420.178&lmt=1624365852616650&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAMT3U15qtslFNGgRj-cBj35UVNZGla0UTklf29rW0pWtAiEAxLTwsEle25RHoyuhRpdxPJxuKSO5wlJGhtVEyGeSx5w=&lsparams=cps,met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgW35OBsZRBp0F-Ml_wuXdzLMZBxAM472mgTH-SBZ1FKICIHERa0g9-56DYO7ls272odXvive0t2YVKux_ocBBfdxu",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_009_1_s1",
+      "title": "009-1",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr8---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqatSgJ8--y9YPnKGw-AE&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=81e30a4f1cda5a7a&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=FU&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=8&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1450.875&lmt=1337443989742584&mt=1793770685&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgcHfM5p9mFKMpGrnJ-uKEDUSl_42BvZQzu7slHDK60UsCIQDA7dtZvec4ecTDzrN5nTUal3LJwJrqy4D-jn8aRYo5NQ==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhALGiU-Cn3zCN2DvwT_AtT9WzdvgC2mBaR73Y25a1-HGHAiBQCN3eSW_UBC_Ms8RdF6m09N6SjFqwTvwYLdp3mM7b2g==",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_a_rank_party_wo_ridatsu_shita_ore_wa_moto_oshiego_tachi_",
+      "title": "A-Rank Party wo Ridatsu shita Ore wa, Moto Oshiego-tachi to Meikyuu Shinbu wo Mezasu",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqasSyLffcy9YPvIXoiAg&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=ecbe1757e0c920ba&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=Cs&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1370.093&lmt=1736632983627004&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgDxOhkYFsvIF_lKEl_kMW8unnbFXdnD8uKH8U5UAcpckCIQDRyM0v-Iiqex3ANou2ieyxp3UmBekBq8SjmzInqn2WAA==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRgIhAKevpRExaLa168CAPxoMY8TIbc0-gcptdeh3RYNE3HtiAiEAsGjEaCgANV9TVIR7HlVajdfUNskoKma98cJ-rWgYUnA=",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_zombie_sagashitemasu_s1",
+      "title": "#Zombie Sagashitemasu",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr4---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqasfQNIq-y9YP6av08Ag&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=3f4bd293be1fe4bf&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&cps=227&met=1793771208,&mh=fm&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=4&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1417.020&lmt=1791051218118573&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgcHfpI9iXMUWlj1CltDPJDJ2cGSloLD4-XhvkqV7TBngCIQCIbaLJwIlsy7KoBHCiRZ-aT6fAvK9h3XfnPZhC9nGKQw==&lsparams=cps,met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRgIhAMUzCxdyszcEofkmdSgKQHaUlkcTQqbbHaf0SQzw7ku6AiEAjmFf8IrQH4l7nA99MFcyiCeqmefiUcbO7XU9pkNciLw=",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_a_channel_s1",
+      "title": "A Channel",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr5---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqavD8Naqvy9YPlMSAkAI&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=96e3a8479c627bf9&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=Eq&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=5&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1469.823&lmt=1590410328208174&mt=1793770685&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIhAO3TLt075zTOGBcasN8Cev7FDbWl-_ARC-4f1TOcwniEAiBh3xvjY5gfBBASsFwxv3nHNwBhfqb_f-fBUGH6WmuIZA==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAN_0OoadK0bjfdRC7wVggVQ22isQk3rZS1Wj4tx89MUeAiBDMbwIOgn8L3fr-1KAKIAiIDYNnYfh-bxTY8CP1ioXSg==",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_22_7_s1",
+      "title": "22/7",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr5---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800008&ei=yMbqarHOOrO-y9YP48e5qQY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=291f42fd1e95599a&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771208,&mh=vC&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=5&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1452.268&lmt=1578858218906201&mt=1793770944&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIhAIR_hgLB52u1L1zE3AbzPULPZzppX965SpyQlsvRRtJRAiAt2pmIhxdR9cAq0gk4M1xfz7d5FM20RHOwg7puka-A7A==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRgIhAKfKU2tV_p5uoC9DPlg6WmtW-tvTqn_G__XRNHxmFsmKAiEAzisCRrFX3r4LYjZuRALY0JbtPfVG-75tY2eJY1bwx-k=",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_4_nin_wa_sorezore_uso_wo_tsuku_s1",
+      "title": "4-nin wa Sorezore Uso wo Tsuku",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr3---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqao5W2pPL1g_jjMigDA&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=220bc64b09ea2150&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=0m&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=3&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1404.064&lmt=1665875084679417&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIhAJ1CXJh1xNj2kKxIsQkngZCew_CCQSMxNt8wggAhNuUNAiBfLPyG8vq-MMe3BU1H1d8obPUf5WGf1c32vtSdRJB8-g==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAIuxkMglmIDCNvX0lCpCWqYXrCjZcmwpPBwpQIY3fCn1AiB-B5hOCjvyLd6toCUe_ixVA3gf_wxkWlaeR7IoKqljEg==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_ai_no_idenshi_s1",
+      "title": "AI no Idenshi",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr4---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqau3KBs2_y9YPz5Ho8AY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=14f410be9920da4b&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&cps=180&met=1793771209,&mh=rA&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=4&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1467.292&lmt=1688921597581821&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRAIgGuN3i3HmPIGa27DmB0QCXqgeOn23jLplKCfOqlELQq8CIGIQU3pg-wJn64kEyZ105x_v5ibm2OBqO4JD3E35BVAz&lsparams=cps,met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRgIhAM3C2ZhCSxsPvyfRlDUzSs4Qte0-q3cYFW0Qme4dpe7xAiEAt1FZmdiyXuoGhGUilsF_eKMXFf1goghbBhcceF1s7Cc=",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_a_will_eternal_s1",
+      "title": "A Will Eternal",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqaubiCOi8y9YPmfWwmQI&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=10a4a2185b518a68&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=mq&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1152.313&lmt=1602072341028839&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgdMl9JhKwyx9gXL3tPgdVHH7otyo0rYMIbRx6kQlKmB0CIQDtQZAKEzJ2tNZPDw0VkNTulMQUIIxJ52l020YJ3m0uOw==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhALP20YaS4dlxEwKBo1lIOeMWK5Km6dgUiZvvWyeWoNwyAiBHUed2I_uOcGxx1_ZWQDZ2N4jua76hDYWyKtl7d5dXUA==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_a_i_c_o_incarnation_s1",
+      "title": "A.I.C.O. Incarnation",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr8---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqaoKeCc71y9YP98Xj6Ac&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=d59403716eeb76ef&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=fi&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=8&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1471.982&lmt=1522088069632272&mt=1793770685&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgIs-kgiM6uTIVEJd3ttYED7fHUZNpOevxz52vcKbD00MCIQC2IaInKzzkzgKjpaJoF5LtK_tq0cj8qdOwJY7jcpjcYw==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAJzR4T7wIMGPODcP8VjA2uXBlpSrYYKsTDu9tlAb0HzJAiBfAVSTIN61rC29m9NAyNI5XL5WV7cbUGxINg1XqHLpVw==",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_3d_kanojo_real_girl_s1",
+      "title": "3D Kanojo (Real Girl)",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vz.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqauj3CYq-y9YP6av08Ag&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=f63f490c13f420f9&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=NS&mm=31&mn=sn-oxunxg8pjvn-h5vz&ms=au&mv=m&mvi=2&pcm2cms=yes&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1384.582&lmt=1615897965037146&mt=1793770685&txp=1318224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAPAH9xRSFjx6jR_p8gluqR86RF55XllV7w-uUjq9A_nwAiEAwMBiY4FBp3u-yUO1EaHffBwFoGzMhvHZh41CFW_HcCM=&lsparams=met,mh,mm,mn,ms,mv,mvi,pcm2cms,pl,rms&lsig=APaTxxMwRQIhALQLC2QmGOB48NNmJGB-yJxU8z-IZ8nsKJP_wqKl90SvAiBYzyRDG6yOYLyvfoTpIOTx5Wv6vowwpv60_eVgngv_Jg==",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_11eyes_s1",
+      "title": "11eyes",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr1---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqauLVDu_yy9YPsI-moAg&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=ef87c872abba71fd&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=Y_&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=1&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1402.276&lmt=1590493841358928&mt=1793770685&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAPAAVQasEqkOweR327VEbmajAjVivsOes0BA2FQWCXKfAiEAl_Kr6uEICTNv0FJK-x13_qhRSUVbpkhoI50hcg87oF4=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgT2d_wgqgQnpUuFJuhVQMJjuM_T9ygG5xAYHBl-QHfIUCIE6ZgTaDvDMZZ0O_XKsUjCmRhvoYkSlPKrGlPj8m0Ceu",
+      "reason": "OK (360p SD direto ativo)"
+    },
+    {
+      "anime_id": "ani_100_man_no_inochi_no_ue_ni_ore_wa_tatte_iru_s1",
+      "title": "100-man no Inochi no Ue ni Ore wa Tatte Iru",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr1---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqasv1D92-y9YPkKTWuAY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=90e804b6379fd383&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=Of&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=1&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1420.085&lmt=1625849222817720&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAP89CMz-D-6mhZW3ZmGn4WigLCDTOEYvtCp-KFBlp2Q2AiEAngSEgrgBBTGAVnY23dgxmjFx9D47Dxo3apcjPETac5c=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgNgTeWr45qcMky2mB0tLrPLuXWn4HbMfB7e-wRQ4ua7cCIHIi474NgxilwTdlZsDVFmVANi4TxES3MUQaH6cvdktr",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_2_5_jigen_no_ririsa_s1",
+      "title": "2.5-jigen no Ririsa",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr2---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqapmlEfmXy9YPhoPA6QY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=055d5bde78c4dff4&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=KY&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=2&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1446.510&lmt=1720193557534989&mt=1793770685&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRAIgRKAB-JSqD8BoDKNK05KRVqMHlhJBh_k7PQi-k4_BslgCIBNG49iOtfYtfxErcL_8tibJlSIJNbOSLK6omWw8eVuJ&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgHYB18KaCk760IFIT0lW56ApUEuRfmYqdzOsRef3RADgCIQCTysgYsmRkVjuPWbODt0cpKsX-erpldscXgAIUgiSXhA==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_25_sai_no_joshikousei_s1",
+      "title": "25-sai no Joshikousei",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr7---sn-oxunxg8pjvn-h5vs.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqapTdE86-y9YPuam5gQI&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=e0acdaa5781d5198&itag=22&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=r1&mm=31&mn=sn-oxunxg8pjvn-h5vs&ms=au&mv=m&mvi=7&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=370.474&lmt=1584099780268912&mt=1793770675&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRQIgUlUBKQetTiigWYGNwaUlsOWs40Emv5z9pwL9bhx-NaMCIQCMqjwIbfQJSbnu5DuH5tOKLoR2ZF89MRndMWfO1FznGw==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgFaFT1_JawyVItx3Lpi5yJNku-pKPifgsyjyXhlV_JT4CIQConLwMPuNFretZFeekiSHH_mbAAzEi6AN4SmVTqVox5Q==",
+      "reason": "OK (720p HD direto ativo)"
+    },
+    {
+      "anime_id": "ani_12_sai_chicchana_mune_no_tokimeki_s1",
+      "title": "12-Sai. Chicchana Mune no Tokimeki",
+      "provider": "animesonlinecc",
+      "valid": true,
+      "stream_url": "https://rr1---sn-oxunxg8pjvn-h5vk.googlevideo.com/videoplayback?expire=1793800009&ei=ycbqap-IFrO-y9YP48e5qQY&ip=2804:14d:1482:420e:b05b:74a9:6212:10c7&id=0d8713b6605ef02f&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1793771209,&mh=Gm&mm=31&mn=sn-oxunxg8pjvn-h5vk&ms=au&mv=m&mvi=1&pl=48&rms=au,au&susc=bl&svpuc=1&eaua=WIug9EHVF8Q&mime=video/mp4&vprv=1&rqh=1&dur=1499.985&lmt=1460073957200233&mt=1793770685&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AE0s2JYwRgIhAMA1hvAGKsvLadqnbZ8StW621vExHQnVdbzKai1gV0bqAiEAl800ZGTy_shz5tF4YncWANN7t5Op_7Hz8RyHMT_ZNYA=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgEdgFDU_7DFsYfTaqqL_A3DIlhzT-0xLjgfGjzjs5LMMCIFRHs4eghOVsDFxPjfG7R4WPJlfHzDfwd-zn5LYjyjgD",
+      "reason": "OK (360p SD direto ativo)"
+    }
+  ]
+}

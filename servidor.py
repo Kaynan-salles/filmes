@@ -269,7 +269,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 try:
                     conn = get_connection()
                     cur = conn.cursor()
-                    cur.execute("SELECT id, canonical_title, poster, synopsis, total_episodes FROM animes")
+                    cur.execute("SELECT id, canonical_title, poster, synopsis, total_episodes FROM animes WHERE (is_hidden = 0 OR is_hidden IS NULL)")
                     for a_row in cur.fetchall():
                         t_lower = a_row["canonical_title"].lower()
                         if all(t in t_lower for t in terms):
@@ -395,6 +395,22 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             else:
                 clients_data = []
             self.send_json(clients_data, 200)
+            return
+
+        # Endpoint de Links Inválidos / Quarentena: /api/links/invalidos
+        if path == "/api/links/invalidos":
+            try:
+                conn = get_connection()
+                cur = conn.cursor()
+                cur.execute("SELECT * FROM invalid_links_quarantine ORDER BY detected_at DESC")
+                items = [dict(r) for r in cur.fetchall()]
+                conn.close()
+                self.send_json({
+                    "total_invalidos": len(items),
+                    "items": items
+                }, 200)
+            except Exception as e:
+                self.send_json({"total_invalidos": 0, "items": [], "error": str(e)}, 500)
             return
 
         # Endpoint de proxy de streaming seguro: /api/stream?url=...

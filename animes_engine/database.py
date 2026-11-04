@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS animes (
     total_episodes INTEGER DEFAULT 0,
     status TEXT DEFAULT 'COMPLETED',
     review_pending INTEGER DEFAULT 0,
+    is_hidden INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -93,6 +94,7 @@ CREATE TABLE IF NOT EXISTS episode_sources (
     stream_url TEXT DEFAULT '',
     quality TEXT DEFAULT 'HD',
     is_dynamic INTEGER DEFAULT 1,                 -- 1 = resolved dynamically on playback
+    is_valid INTEGER DEFAULT 1,                   -- 1 = stream verificado ativo, 0 = link inválido
     extra_payload TEXT DEFAULT '{}',              -- JSON for custom provider headers or params
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(episode_id, provider, audio_type, quality)
@@ -187,6 +189,23 @@ CREATE TABLE IF NOT EXISTS sync_progress (
     is_running INTEGER DEFAULT 0,
     last_synced_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- 10. Quarentena de Links Inválidos (Armazena histórico de links offline/indisponíveis)
+CREATE TABLE IF NOT EXISTS invalid_links_quarantine (
+    id TEXT PRIMARY KEY,
+    content_type TEXT NOT NULL DEFAULT 'anime',
+    content_id TEXT NOT NULL,
+    title TEXT DEFAULT '',
+    episode_id TEXT,
+    episode_number REAL,
+    provider TEXT NOT NULL,
+    stream_url TEXT DEFAULT '',
+    error_reason TEXT DEFAULT '',
+    detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_quarantine_content ON invalid_links_quarantine(content_id);
+CREATE INDEX IF NOT EXISTS idx_quarantine_provider ON invalid_links_quarantine(provider);
 """
 
 
@@ -239,6 +258,16 @@ def init_db() -> None:
         for col_name, col_def in columns_to_add:
             if col_name not in existing_cols:
                 cur.execute(f"ALTER TABLE sync_progress ADD COLUMN {col_name} {col_def}")
+
+        cur.execute("PRAGMA table_info(animes)")
+        anime_cols = {row[1] for row in cur.fetchall()}
+        if "is_hidden" not in anime_cols:
+            cur.execute("ALTER TABLE animes ADD COLUMN is_hidden INTEGER DEFAULT 0")
+
+        cur.execute("PRAGMA table_info(episode_sources)")
+        src_cols = {row[1] for row in cur.fetchall()}
+        if "is_valid" not in src_cols:
+            cur.execute("ALTER TABLE episode_sources ADD COLUMN is_valid INTEGER DEFAULT 1")
 
 
 if __name__ == "__main__":

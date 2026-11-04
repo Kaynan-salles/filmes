@@ -439,9 +439,37 @@ def resolve_episode_stream(
         if fresh_sources:
             return resolve_episode_stream(episode_id, preferred_audio, preferred_provider, preferred_quality)
 
+    # Se todas as fontes falharam, quarentena e oculta o título para não exibir ao usuário
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("SELECT anime_id, episode_number FROM episodes WHERE id = ?", (episode_id,))
+        ep_info = cur.fetchone()
+        if ep_info:
+            a_id = ep_info["anime_id"]
+            ep_num = ep_info["episode_number"]
+            cur.execute("SELECT canonical_title FROM animes WHERE id = ?", (a_id,))
+            a_row = cur.fetchone()
+            a_title = a_row["canonical_title"] if a_row else a_id
+
+            quar_id = f"quar_{episode_id}_{int(time.time())}"
+            cur.execute("""
+                INSERT OR REPLACE INTO invalid_links_quarantine 
+                (id, content_type, content_id, title, episode_id, episode_number, provider, stream_url, error_reason)
+                VALUES (?, 'anime', ?, ?, ?, ?, 'animesonlinecc', '', ?)
+            """, (quar_id, a_id, a_title, episode_id, ep_num, str(last_error or "Stream offline")))
+            cur.execute("UPDATE animes SET is_hidden = 1 WHERE id = ?", (a_id,))
+            conn.commit()
+            _ANIMES_PAGE_CACHE.clear()
+            export_catalog_to_json()
+        conn.close()
+    except Exception:
+        pass
+
     return {
         "success": False,
-        "error": f"Não foi possível iniciar a reprodução. Fontes do episódio temporariamente indisponíveis ({last_error or 'Servidor de vídeo sem resposta'}).",
+        "is_unavailable": True,
+        "error": f"Transmissão indisponível no momento. Este título foi temporariamente ocultado do catálogo ({last_error or 'Servidor de vídeo sem resposta'}).",
         "episode_id": episode_id
     }
 
@@ -511,7 +539,7 @@ def get_paginated_animes(
     conn = get_connection()
     cur = conn.cursor()
 
-    where_clauses = ["1=1"]
+    where_clauses = ["(a.is_hidden = 0 OR a.is_hidden IS NULL)"]
     params = []
 
     if search and search.strip():
@@ -537,7 +565,7 @@ def get_paginated_animes(
     total_items = cur.fetchone()[0]
 
     # 2. Total catalog episodes count
-    cur.execute("SELECT COALESCE(SUM(total_episodes), 0) FROM animes")
+    cur.execute("SELECT COALESCE(SUM(total_episodes), 0) FROM animes WHERE (is_hidden = 0 OR is_hidden IS NULL)")
     total_catalog_eps = cur.fetchone()[0]
 
     # 3. Sort order

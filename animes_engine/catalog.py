@@ -416,7 +416,7 @@ def export_catalog_to_json() -> str:
     conn = get_connection()
     cur = conn.cursor()
 
-    cur.execute("SELECT * FROM animes ORDER BY canonical_title ASC")
+    cur.execute("SELECT * FROM animes WHERE (is_hidden = 0 OR is_hidden IS NULL) ORDER BY canonical_title ASC")
     animes_rows = cur.fetchall()
 
     catalog_items = []
