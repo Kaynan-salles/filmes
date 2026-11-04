@@ -523,9 +523,20 @@ img, video, iframe, canvas, svg {
 .hero-desc {
   font-size: clamp(0.875rem, 1vw + 0.55rem, 1.05rem);
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   max-width: 38rem;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hero-desc:empty,
+.hero-category:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .hero-buttons {

@@ -1706,11 +1706,21 @@ function prepareHeroBanner() {
 function updateHeroItem(item) {
   if (!item) return;
   dom.heroTitle.textContent = item.t;
-  dom.heroCategory.textContent = "Filmes em Destaque";
+  if (dom.heroCategory) dom.heroCategory.textContent = "";
   dom.heroBackdrop.style.backgroundImage = `url('${item.p || FALLBACK_POSTER}')`;
 
+  if (dom.heroDesc) {
+    if (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora")) {
+      dom.heroDesc.textContent = item.sinopse;
+      dom.heroDesc.style.display = '-webkit-box';
+    } else {
+      dom.heroDesc.textContent = "";
+      dom.heroDesc.style.display = 'none';
+    }
+  }
+
   if (dom.btnHeroPlay) {
-    dom.btnHeroPlay.onclick = () => openPlayer(item.t, 'Filmes em Destaque', item.u);
+    dom.btnHeroPlay.onclick = () => openPlayer(item.t, item.catNome || 'Destaques', item.u);
   }
   if (dom.btnHeroCopy) {
     dom.btnHeroCopy.onclick = () => {
