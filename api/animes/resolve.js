@@ -252,15 +252,32 @@ module.exports = async function handler(req, res) {
       return;
     }
 
-    const availableSources = validSources.map(s => ({
-      provider: s.provider,
-      provider_label: s.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
-      quality: s.quality || '720p HD',
-      quality_label: `${s.quality || '720p HD'} (Verificado)`,
-      audio_type: s.audio_type,
-      player_type: 'direct',
-      selected: (selectedSource && s.id === selectedSource.id)
-    }));
+    const isEmbedUrl = (url) => {
+      if (!url) return false;
+      return url.includes('blogger.com') ||
+             url.includes('/video.g') ||
+             url.includes('animesonline') ||
+             url.includes('animesdigital') ||
+             url.includes('embed') ||
+             url.includes('iframe') ||
+             url.endsWith('.html') ||
+             url.endsWith('/');
+    };
+
+    const finalPlayerType = isEmbedUrl(streamUrl) ? 'embed' : 'direct';
+
+    const availableSources = validSources.map(s => {
+      const sUrl = s.stream_url || streamUrl;
+      return {
+        provider: s.provider,
+        provider_label: s.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
+        quality: s.quality || '720p HD',
+        quality_label: `${s.quality || '720p HD'} (Verificado)`,
+        audio_type: s.audio_type,
+        player_type: isEmbedUrl(sUrl) ? 'embed' : 'direct',
+        selected: (selectedSource && s.id === selectedSource.id)
+      };
+    });
 
     res.writeHead(200, {
       'Content-Type': 'application/json; charset=utf-8',
@@ -269,7 +286,7 @@ module.exports = async function handler(req, res) {
     res.end(JSON.stringify({
       success: true,
       stream_url: streamUrl,
-      player_type: 'direct',
+      player_type: finalPlayerType,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
       },

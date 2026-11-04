@@ -3509,9 +3509,25 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
       };
     }
 
-    if (data.player_type === 'embed') {
+    const isEmbed = data.player_type === 'embed' ||
+                    (data.stream_url && (
+                      data.stream_url.includes('blogger.com') ||
+                      data.stream_url.includes('/video.g') ||
+                      data.stream_url.includes('animesonline') ||
+                      data.stream_url.includes('animesdigital') ||
+                      data.stream_url.includes('embed') ||
+                      data.stream_url.includes('iframe') ||
+                      data.stream_url.includes('youtube.com') ||
+                      data.stream_url.endsWith('/') ||
+                      data.stream_url.endsWith('.html')
+                    ));
+
+    if (isEmbed) {
       // Player iframe embed
-      if (dom.htmlVideoPlayer) dom.htmlVideoPlayer.style.display = 'none';
+      if (dom.htmlVideoPlayer) {
+        try { dom.htmlVideoPlayer.pause(); } catch (e) {}
+        dom.htmlVideoPlayer.style.display = 'none';
+      }
       if (dom.iframeVideoPlayer) {
         dom.iframeVideoPlayer.style.display = 'block';
         dom.iframeVideoPlayer.src = data.stream_url;
