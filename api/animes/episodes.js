@@ -6,9 +6,11 @@ let cachedDetails = null;
 function loadDetails() {
   if (cachedDetails) return cachedDetails;
   const possiblePaths = [
+    path.join(__dirname, '..', 'data', 'animes_details.json'),
+    path.join(__dirname, 'data', 'animes_details.json'),
+    path.join(process.cwd(), 'api', 'data', 'animes_details.json'),
     path.join(process.cwd(), 'WEB_PORTAL', 'data', 'animes_details.json'),
-    path.join(__dirname, '..', '..', 'WEB_PORTAL', 'data', 'animes_details.json'),
-    path.join(__dirname, 'data', 'animes_details.json')
+    path.join(__dirname, '..', '..', 'WEB_PORTAL', 'data', 'animes_details.json')
   ];
 
   for (const p of possiblePaths) {

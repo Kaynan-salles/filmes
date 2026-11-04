@@ -6,9 +6,11 @@ let cachedDetails = null;
 function loadDetails() {
   if (cachedDetails) return cachedDetails;
   const possiblePaths = [
+    path.join(__dirname, '..', 'data', 'animes_details.json'),
+    path.join(__dirname, 'data', 'animes_details.json'),
+    path.join(process.cwd(), 'api', 'data', 'animes_details.json'),
     path.join(process.cwd(), 'WEB_PORTAL', 'data', 'animes_details.json'),
-    path.join(__dirname, '..', '..', 'WEB_PORTAL', 'data', 'animes_details.json'),
-    path.join(__dirname, 'data', 'animes_details.json')
+    path.join(__dirname, '..', '..', 'WEB_PORTAL', 'data', 'animes_details.json')
   ];
 
   for (const p of possiblePaths) {
@@ -49,7 +51,6 @@ module.exports = function handler(req, res) {
 
     let item = detailsMap[animeId];
     if (!item) {
-      // Tenta encontrar por busca de título ou slug
       const lowId = animeId.toLowerCase();
       for (const k of Object.keys(detailsMap)) {
         const val = detailsMap[k];
@@ -77,4 +78,3 @@ module.exports = function handler(req, res) {
     res.end(JSON.stringify({ error: err.message }));
   }
 };
-

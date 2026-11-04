@@ -1,19 +1,19 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v33';
+const CACHE_NAME = 'kcine-shell-v35';
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.html?v=33',
-  '/style.css?v=33',
-  '/app.js?v=33',
-  '/icons/kcine-favicon.png?v=33',
-  '/icons/kcine-app-128.png?v=33',
-  '/icons/kcine-app-180.png?v=33',
-  '/icons/kcine-app-192.png?v=33',
-  '/icons/kcine-app-512.png?v=33',
-  '/apple-touch-icon.png?v=33',
-  '/apple-touch-icon-precomposed.png?v=33',
-  '/manifest.json?v=33',
-  '/manifest.webmanifest?v=33'
+  '/index.html?v=35',
+  '/style.css?v=35',
+  '/app.js?v=35',
+  '/icons/kcine-favicon.png?v=35',
+  '/icons/kcine-app-128.png?v=35',
+  '/icons/kcine-app-180.png?v=35',
+  '/icons/kcine-app-192.png?v=35',
+  '/icons/kcine-app-512.png?v=35',
+  '/apple-touch-icon.png?v=35',
+  '/apple-touch-icon-precomposed.png?v=35',
+  '/manifest.json?v=35',
+  '/manifest.webmanifest?v=35'
 ];
 
 self.addEventListener('install', (e) => {
@@ -30,7 +30,9 @@ self.addEventListener('activate', (e) => {
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((k) => {
-          if (k !== CACHE_NAME) return caches.delete(k);
+          if (k !== CACHE_NAME) {
+            return caches.delete(k);
+          }
         })
       );
     })
@@ -39,8 +41,8 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
-  // Let network handle API/streaming requests normally
-  if (e.request.url.includes('/api/') || e.request.url.includes('/stream') || e.request.method !== 'GET') {
+  // Let network handle dynamic API/data streams directly to avoid caching stale streams
+  if (e.request.url.includes('/api/') || e.request.url.includes('/data/') || e.request.url.includes('worker')) {
     return;
   }
   e.respondWith(

@@ -6,9 +6,10 @@ let cachedAnimes = null;
 function loadAnimes() {
   if (cachedAnimes) return cachedAnimes;
   const possiblePaths = [
+    path.join(__dirname, 'data', 'animes.json'),
+    path.join(process.cwd(), 'api', 'data', 'animes.json'),
     path.join(process.cwd(), 'WEB_PORTAL', 'data', 'animes.json'),
-    path.join(__dirname, '..', 'WEB_PORTAL', 'data', 'animes.json'),
-    path.join(__dirname, 'data', 'animes.json')
+    path.join(__dirname, '..', 'WEB_PORTAL', 'data', 'animes.json')
   ];
 
   for (const p of possiblePaths) {
@@ -41,7 +42,7 @@ module.exports = function handler(req, res) {
     const query = req.query || {};
     const page = Math.max(1, parseInt(query.page || '1', 10));
     const limit = Math.max(1, Math.min(100, parseInt(query.limit || '24', 10)));
-    const search = (query.search || '').trim().toLowerCase();
+    const search = (query.search || query.q || '').trim().toLowerCase();
     const genre = (query.genre || '').trim().toLowerCase();
     const sort = (query.sort || 'latest').toLowerCase();
 
@@ -97,4 +98,3 @@ module.exports = function handler(req, res) {
     res.end(JSON.stringify({ error: err.message, animes: [] }));
   }
 };
-

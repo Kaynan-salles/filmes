@@ -3402,57 +3402,52 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
   stopVideoPlayback();
 
   try {
-    let resolveUrl = `/api/animes/resolve?episode_id=${encodeURIComponent(ep.id)}&audio=${encodeURIComponent(preferredAudio)}`;
-    if (state.activeAnimeProvider) resolveUrl += `&provider=${encodeURIComponent(state.activeAnimeProvider)}`;
-    if (state.activeAnimeQuality) resolveUrl += `&quality=${encodeURIComponent(state.activeAnimeQuality)}`;
-
+    // Prioriza fonte direta já embutida no episódio para eliminação total de latência
     let data = null;
-    try {
-      const resp = await fetch(resolveUrl);
-      if (resp.ok) {
-        data = await resp.json();
+    const epSources = (ep.sources || []).filter(s => s.provider !== 'animefire');
+    if (epSources.length > 0) {
+      const matchSrc = epSources.find(s => s.audio_type === preferredAudio && s.stream_url) ||
+                       epSources.find(s => s.stream_url);
+      if (matchSrc && matchSrc.stream_url) {
+        data = {
+          success: true,
+          stream_url: matchSrc.stream_url,
+          player_type: 'direct',
+          audio_type: matchSrc.audio_type || preferredAudio,
+          provider: matchSrc.provider || 'oficial',
+          provider_label: 'Oficial Direct CDN',
+          quality: matchSrc.quality || '1080p FHD',
+          available_sources: epSources.map(s => ({
+            provider: s.provider || 'oficial',
+            provider_label: 'Oficial Direct CDN',
+            quality: s.quality || '1080p FHD',
+            quality_label: `${s.quality || '1080p FHD'} (Verificado)`,
+            audio_type: s.audio_type || preferredAudio,
+            player_type: 'direct',
+            selected: s.id === matchSrc.id
+          }))
+        };
       }
-    } catch (apiErr) {
-      console.warn('API /api/animes/resolve falhou ou indisponível:', apiErr);
     }
 
-    // Se a API respondeu explicitamente que o vídeo é inválido/inexistente, não tente injetar iframes mortos
-    if (data && data.success === false) {
-      throw new Error(data.error || 'Vídeo não disponível ou removido pelo servidor de origem.');
-    }
+    // Se não tinha fonte direta embutida, consulta a API /api/animes/resolve
+    if (!data || !data.stream_url) {
+      try {
+        let resolveUrl = `/api/animes/resolve?episode_id=${encodeURIComponent(ep.id)}&audio=${encodeURIComponent(preferredAudio)}`;
+        if (state.activeAnimeProvider) resolveUrl += `&provider=${encodeURIComponent(state.activeAnimeProvider)}`;
+        if (state.activeAnimeQuality) resolveUrl += `&quality=${encodeURIComponent(state.activeAnimeQuality)}`;
 
-    // Fallback apenas se a API estiver fora do ar E existir um stream direto já resolvido (m3u8 / mp4)
-    if (!data || !data.success || !data.stream_url) {
-      const epSources = (ep.sources || []).filter(s => s.provider !== 'animefire');
-      if (epSources.length > 0) {
-        const matchingSrc = epSources.find(s => s.audio_type === preferredAudio && s.stream_url && (s.stream_url.includes('.m3u8') || s.stream_url.includes('googlevideo.com') || s.stream_url.includes('.mp4'))) 
-          || epSources.find(s => s.stream_url && (s.stream_url.includes('.m3u8') || s.stream_url.includes('googlevideo.com') || s.stream_url.includes('.mp4')));
-
-        if (matchingSrc && matchingSrc.stream_url) {
-          data = {
-            success: true,
-            stream_url: matchingSrc.stream_url,
-            player_type: matchingSrc.player_type || 'direct',
-            audio_type: matchingSrc.audio_type || preferredAudio,
-            provider: matchingSrc.provider,
-            provider_label: matchingSrc.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
-            quality: matchingSrc.quality || '720p HD',
-            available_sources: epSources.map(s => ({
-              provider: s.provider,
-              provider_label: s.provider === 'animesdigital' ? 'AnimesDigital' : 'AnimesOnlineCC',
-              quality: s.quality || '720p HD',
-              quality_label: `${s.quality || '720p HD'} (Verificado)`,
-              audio_type: s.audio_type,
-              player_type: s.player_type || 'direct',
-              selected: s.id === matchingSrc.id
-            }))
-          };
+        const resp = await fetch(resolveUrl);
+        if (resp.ok) {
+          data = await resp.json();
         }
+      } catch (apiErr) {
+        console.warn('API /api/animes/resolve falhou ou indisponível:', apiErr);
       }
     }
 
     if (!data || !data.success || !data.stream_url) {
-      throw new Error((data && data.error) || 'Vídeo temporariamente indisponível no servidor. Tente outro episódio ou servidor.');
+      throw new Error((data && data.error) || 'Vídeo temporariamente indisponível no servidor oficial.');
     }
 
     // Configura o Seletor de Servidor / Provedor
@@ -3466,7 +3461,7 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
 
       dom.playerProviderSelect.innerHTML = Array.from(uniqueProvMap.values()).map(p => `
         <option value="${p.provider}" ${p.provider === data.provider ? 'selected' : ''}>
-          ${p.provider === 'animesdigital' ? '🌸 AnimesDigital' : (p.provider === 'animesonlinecc' ? '🎬 AnimesOnlineCC' : '⚡ ' + p.provider_label)}
+          ⚡ Oficial Direct CDN
         </option>
       `).join('');
 
@@ -3489,9 +3484,9 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
       });
 
       if (uniqueQualMap.size === 0) {
-        uniqueQualMap.set(data.quality || '720p HD', {
-          quality: data.quality || '720p HD',
-          quality_label: `${data.quality || '720p HD'} (Verificado)`
+        uniqueQualMap.set(data.quality || '1080p FHD', {
+          quality: data.quality || '1080p FHD',
+          quality_label: `${data.quality || '1080p FHD'} (Verificado)`
         });
       }
 
@@ -3509,60 +3504,35 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
       };
     }
 
-    const isEmbed = data.player_type === 'embed' ||
-                    (data.stream_url && (
-                      data.stream_url.includes('blogger.com') ||
-                      data.stream_url.includes('/video.g') ||
-                      data.stream_url.includes('animesonline') ||
-                      data.stream_url.includes('animesdigital') ||
-                      data.stream_url.includes('embed') ||
-                      data.stream_url.includes('iframe') ||
-                      data.stream_url.includes('youtube.com') ||
-                      data.stream_url.endsWith('/') ||
-                      data.stream_url.endsWith('.html')
-                    ));
+    // 100% PLAYER NATIVO HTML5 - NUNCA UTILIZAR IFRAME OU YOUTUBE
+    if (dom.iframeVideoPlayer) {
+      dom.iframeVideoPlayer.style.display = 'none';
+      dom.iframeVideoPlayer.src = 'about:blank';
+    }
 
-    if (isEmbed) {
-      // Player iframe embed
-      if (dom.htmlVideoPlayer) {
-        try { dom.htmlVideoPlayer.pause(); } catch (e) {}
-        dom.htmlVideoPlayer.style.display = 'none';
-      }
-      if (dom.iframeVideoPlayer) {
-        dom.iframeVideoPlayer.style.display = 'block';
-        dom.iframeVideoPlayer.src = data.stream_url;
-      }
-      dom.playerLoading.classList.remove('active');
-    } else {
-      // Player nativo HTML5 / HLS
-      if (dom.iframeVideoPlayer) {
-        dom.iframeVideoPlayer.style.display = 'none';
-        dom.iframeVideoPlayer.src = 'about:blank';
-      }
-      if (dom.htmlVideoPlayer) {
-        dom.htmlVideoPlayer.style.display = 'block';
+    if (dom.htmlVideoPlayer) {
+      dom.htmlVideoPlayer.style.display = 'block';
 
-        const hideLoading = () => {
-          if (dom.playerLoading) dom.playerLoading.classList.remove('active');
-        };
-        dom.htmlVideoPlayer.oncanplay = hideLoading;
-        dom.htmlVideoPlayer.onplaying = hideLoading;
-        dom.htmlVideoPlayer.onloadeddata = hideLoading;
+      const hideLoading = () => {
+        if (dom.playerLoading) dom.playerLoading.classList.remove('active');
+      };
+      dom.htmlVideoPlayer.oncanplay = hideLoading;
+      dom.htmlVideoPlayer.onplaying = hideLoading;
+      dom.htmlVideoPlayer.onloadeddata = hideLoading;
 
-        // Auto fallback se houver falha de rede ou link bloqueado pela CDN
-        let hasFallenBack = false;
-        dom.htmlVideoPlayer.onerror = () => {
-          hideLoading();
-          if (!hasFallenBack && data.available_sources && data.available_sources.length > 1) {
-            hasFallenBack = true;
-            const alt = data.available_sources.find(s => s.provider !== data.provider || s.audio_type !== data.audio_type);
-            if (alt) {
-              showToast(`Servidor atual instável. Alternando para ${alt.provider_label} (${alt.audio_type})...`);
-              playAnimeEpisode(ep, details, alt.audio_type, alt.provider, alt.quality, targetResumeTime);
-              return;
-            }
+      let hasFallenBack = false;
+      dom.htmlVideoPlayer.onerror = () => {
+        hideLoading();
+        if (!hasFallenBack && data.available_sources && data.available_sources.length > 1) {
+          hasFallenBack = true;
+          const alt = data.available_sources.find(s => s.provider !== data.provider || s.audio_type !== data.audio_type);
+          if (alt) {
+            showToast(`Servidor atual instável. Alternando para ${alt.provider_label} (${alt.audio_type})...`);
+            playAnimeEpisode(ep, details, alt.audio_type, alt.provider, alt.quality, targetResumeTime);
+            return;
           }
-        };
+        }
+      };
 
         // CDNs externas necessitam de proxy CORS seguro
         const isRemote = (data.stream_url.startsWith('http://') || data.stream_url.startsWith('https://')) &&

@@ -1,0 +1,4942 @@
+[
+  {
+    "id": "ani_one_piece",
+    "t": "One Piece",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_one_piece&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 19,
+    "total_episodios": 940,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_naruto_shippuden",
+    "t": "Naruto Shippuden",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRJmByfK9XdtOY73VArcN8KpKVs.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRJmByfK9XdtOY73VArcN8KpKVs.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_naruto_shippuden&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 20,
+    "total_episodios": 556,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_boruto_naruto_next_generations",
+    "t": "Boruto Naruto Next Generations",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n4OLeeHqP4tpdvDxiloV65N6M5h.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n4OLeeHqP4tpdvDxiloV65N6M5h.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_boruto_naruto_next_generations&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 26,
+    "total_episodios": 327,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_naruto_clssico",
+    "t": "Naruto Clássico",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ptbVZpKNy5NY9D4zq4KGiYWRQY.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ptbVZpKNy5NY9D4zq4KGiYWRQY.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_naruto_clssico&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 7,
+    "total_episodios": 295,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_z",
+    "t": "Dragon Ball Z",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f2zhRLqwRLrKhEMeIM7Z5buJFo3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f2zhRLqwRLrKhEMeIM7Z5buJFo3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_z&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 9,
+    "total_episodios": 291,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_jojos_bizarre_adventure",
+    "t": "JoJos Bizarre Adventure",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KxfZTkwiuNRg5mpUOhXdiUB17E.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KxfZTkwiuNRg5mpUOhXdiUB17E.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_jojos_bizarre_adventure&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 190,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_yu_gi_oh_gx",
+    "t": "Yu Gi Oh GX",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_yu_gi_oh_gx&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 180,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_black_clover",
+    "t": "Black Clover",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p3rUhlE81nWxPqpPR8F2u7a01Tl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p3rUhlE81nWxPqpPR8F2u7a01Tl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_black_clover&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 170,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_boku_no_hero_academia",
+    "t": "Boku no Hero Academia",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_boku_no_hero_academia&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 8,
+    "total_episodios": 170,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hunter_x_hunter",
+    "t": "Hunter x Hunter",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9WxfAQquTun9ATkV6iAeFHMkqxv.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9WxfAQquTun9ATkV6iAeFHMkqxv.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hunter_x_hunter&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 6,
+    "total_episodios": 154,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_classico",
+    "t": "Dragon Ball Classico",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_classico&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 153,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_eyeshield_21",
+    "t": "Eyeshield 21",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rzOdJXyvzyLeRum8B7MXeKFiGY7.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rzOdJXyvzyLeRum8B7MXeKFiGY7.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_eyeshield_21&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 145,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_super",
+    "t": "Dragon Ball Super",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cQDCIp92rTzTnd8mjb1syLhrAqy.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cQDCIp92rTzTnd8mjb1syLhrAqy.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_super&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 131,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_yamishibai_japanese_ghost_stories",
+    "t": "Yamishibai Japanese Ghost Stories",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uQitV18SZsEaDxXuJNWClIOveKh.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uQitV18SZsEaDxXuJNWClIOveKh.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_yamishibai_japanese_ghost_stories&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 9,
+    "total_episodios": 117,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_bungo_stray_dogs",
+    "t": "Bungo Stray Dogs",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4WlY8Wflsa4ySLxwQzBSLORBQPy.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4WlY8Wflsa4ySLxwQzBSLORBQPy.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_bungo_stray_dogs&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 109,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_os_cavaleiros_do_zodaco_mega",
+    "t": "Os Cavaleiros do Zodíaco Ômega",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nMmq4AG9Vve3jA9wGHFhm9ezMHI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nMmq4AG9Vve3jA9wGHFhm9ezMHI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_os_cavaleiros_do_zodaco_mega&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 97,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sin_nanatsu_no_taizai",
+    "t": "Sin Nanatsu no Taizai",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sin_nanatsu_no_taizai&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 96,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dr_stone",
+    "t": "Dr. Stone",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dr_stone&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 94,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_that_time_i_got_reincarnated_as_a_slime",
+    "t": "That Time I Got Reincarnated as a Slime",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9YcNx1dnNkZ3PZzrMqc52WjCEcw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9YcNx1dnNkZ3PZzrMqc52WjCEcw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_that_time_i_got_reincarnated_as_a_slime&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 90,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ataque_dos_titas",
+    "t": "Ataque dos Titas",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8aMqmB5xSblsZc7bLMEhE28yHa2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8aMqmB5xSblsZc7bLMEhE28yHa2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ataque_dos_titas&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 89,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_welcome_to_demon_school_iruma_kun",
+    "t": "Welcome to Demon School Iruma kun",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5o1PjfSTASqjUH6giJXiskDbXpj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5o1PjfSTASqjUH6giJXiskDbXpj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_welcome_to_demon_school_iruma_kun&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 87,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rezero_starting_life_in_another_world",
+    "t": "Rezero Starting Life in Another World",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ccG0ZfXOQ0834bIus4SwZrXtkyM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ccG0ZfXOQ0834bIus4SwZrXtkyM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rezero_starting_life_in_another_world&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 80,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sket_dance",
+    "t": "Sket Dance",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wYMBMX3s6X3aCTifAIrLRxR5A3f.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wYMBMX3s6X3aCTifAIrLRxR5A3f.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sket_dance&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 77,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hikaru_no_go",
+    "t": "Hikaru no Go",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AcwUhnZ3WrEIetehut1zCGosHTB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AcwUhnZ3WrEIetehut1zCGosHTB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hikaru_no_go&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 75,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_fire_force",
+    "t": "Fire Force",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qDNgM4STqdzl4IBMyqCVMIr6uUV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qDNgM4STqdzl4IBMyqCVMIr6uUV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_fire_force&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 73,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_gt",
+    "t": "Dragon Ball GT",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/whMOujSNYXRQeeCWf39CfkqguFy.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/whMOujSNYXRQeeCWf39CfkqguFy.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_gt&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 64,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_fullmetal_alchemist_brotherhood",
+    "t": "Fullmetal Alchemist Brotherhood",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fn2Q1RmSGC7DDEN7YexqvAtuVjN.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fn2Q1RmSGC7DDEN7YexqvAtuVjN.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_fullmetal_alchemist_brotherhood&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 64,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_reborn",
+    "t": "Reborn",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6x7mx9f3ufHCC3pNgMoMnzVo3jw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6x7mx9f3ufHCC3pNgMoMnzVo3jw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_reborn&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 64,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_demon_slayer_kimetsu_no_yaiba",
+    "t": "Demon Slayer Kimetsu no Yaiba",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7Uj6vqmznWQ3w3hpQ1eIY9mMyMw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7Uj6vqmznWQ3w3hpQ1eIY9mMyMw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_demon_slayer_kimetsu_no_yaiba&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 63,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_to_your_eternity",
+    "t": "To Your Eternity",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bohMYRVSIG68md0zQobyWbV4S8e.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_to_your_eternity&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 62,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_blue_exorcist",
+    "t": "Blue Exorcist",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8TTa91UMjuH3TUqB7dblTZzxSrj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8TTa91UMjuH3TUqB7dblTZzxSrj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_blue_exorcist&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 61,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rentagirlfriend",
+    "t": "Rent-a-Girlfriend",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uwDDmfNQGzbAGtOgzdGO7UteNU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uwDDmfNQGzbAGtOgzdGO7UteNU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rentagirlfriend&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 60,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_jujutsu_kaisen",
+    "t": "Jujutsu Kaisen",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_jujutsu_kaisen&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 59,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mushoku_tensei_jobless_reincarnation",
+    "t": "Mushoku Tensei Jobless Reincarnation",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sviEqFIPJW5gFtuYy8XyE0Uscid.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sviEqFIPJW5gFtuYy8XyE0Uscid.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mushoku_tensei_jobless_reincarnation&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 57,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_classroom_of_the_elite",
+    "t": "Classroom of the Elite",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mmhx3dImdsfYpcFm3J1tlQt5IRN.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mmhx3dImdsfYpcFm3J1tlQt5IRN.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_classroom_of_the_elite&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 54,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_aria_the_animation",
+    "t": "Aria The Animation",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1XgXgWmsX1Un8eBHPjcBYpoae6M.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1XgXgWmsX1Un8eBHPjcBYpoae6M.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_aria_the_animation&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 53,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_overlord",
+    "t": "Overlord",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7kOBPcfhmmfJxIXwJXSeuKM9BID.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7kOBPcfhmmfJxIXwJXSeuKM9BID.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_overlord&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 52,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_soul_eater",
+    "t": "Soul Eater",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hI5AhxFTSFabTG7Fvhczyb5ZIh8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hI5AhxFTSFabTG7Fvhczyb5ZIh8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_soul_eater&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 51,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_frontier",
+    "t": "Digimon Frontier",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hzlqEyPhDURcCXi4snIOdlLdZjo.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hzlqEyPhDURcCXi4snIOdlLdZjo.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_frontier&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 50,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tegami_bachi",
+    "t": "Tegami Bachi",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8kgG2MmEgzqeI3buqrpxebOnc6e.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8kgG2MmEgzqeI3buqrpxebOnc6e.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tegami_bachi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 50,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sword_art_online",
+    "t": "Sword Art Online",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/htNohqrYEwuz4fCa9ATVF90s58S.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/htNohqrYEwuz4fCa9ATVF90s58S.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sword_art_online&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 49,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dirios_de_uma_apotecria",
+    "t": "Diários de uma Apotecária",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/t8fC3K3XnwE6Iso6b1bi5Fdo93n.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/t8fC3K3XnwE6Iso6b1bi5Fdo93n.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dirios_de_uma_apotecria&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 48,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_no_1_sentai_gozyuger_l",
+    "t": "No 1 Sentai Gozyuger [L]",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hw0EYA0lS6DRYjMq24xdluFIZsu.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hw0EYA0lS6DRYjMq24xdluFIZsu.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_no_1_sentai_gozyuger_l&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 48,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_vinland_saga",
+    "t": "Vinland Saga",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySPYLN1sHmgRdqdfLOE092JlNTp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySPYLN1sHmgRdqdfLOE092JlNTp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_vinland_saga&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 48,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tokyo_ghoul",
+    "t": "Tokyo Ghoul",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5XBk7T4NsGeN9RG39y2nU6gRWQl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5XBk7T4NsGeN9RG39y2nU6gRWQl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tokyo_ghoul&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 48,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_assassination_classroom",
+    "t": "Assassination Classroom",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fIOYLPOorKvP4wut9y0edpnWROz.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fIOYLPOorKvP4wut9y0edpnWROz.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_assassination_classroom&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 47,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rurouni_kenshin",
+    "t": "Rurouni Kenshin",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mCafSOuO3PqgoxaweNCo45KpctE.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mCafSOuO3PqgoxaweNCo45KpctE.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rurouni_kenshin&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 47,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_arifureta_shokugyou_de_sekai_saikyou",
+    "t": "Arifureta Shokugyou de Sekai Saikyou",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3vwcB2MtQA1VZMCljCRSrDzNzdj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_arifureta_shokugyou_de_sekai_saikyou&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 45,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_super_dragon_ball_heroes",
+    "t": "Super Dragon Ball Heroes",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/79C1S70I2nR4o0WpVETIezT3jyG.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/79C1S70I2nR4o0WpVETIezT3jyG.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_super_dragon_ball_heroes&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 6,
+    "total_episodios": 45,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_blue_lock",
+    "t": "Blue Lock",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9aICTTHECyRwB2pBHm3rAj1SgGg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_blue_lock&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 38,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_frieren_e_a_jornada_para_o_alem",
+    "t": "Frieren e a Jornada para o Alem",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qykTIEJQF8cunKD0CKOqab15wns.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qykTIEJQF8cunKD0CKOqab15wns.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_frieren_e_a_jornada_para_o_alem&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 38,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shurato",
+    "t": "Shurato",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7CrlgdCfOrZQRO1KdNBvnZWAzxq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7CrlgdCfOrZQRO1KdNBvnZWAzxq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shurato&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 38,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tower_of_god",
+    "t": "Tower of God",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h8Nx28MtC8LHtTXbaZ2HqpA3SUb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h8Nx28MtC8LHtTXbaZ2HqpA3SUb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tower_of_god&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 38,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_laid_back_camp",
+    "t": "Laid Back Camp",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rzU73SNffW8afzOhXtVv2qq5Eyi.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rzU73SNffW8afzOhXtVv2qq5Eyi.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_laid_back_camp&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mob_psycho_100",
+    "t": "Mob Psycho 100",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aFcv9zeJtSbJHSYUlQCOQYV3Gio.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aFcv9zeJtSbJHSYUlQCOQYV3Gio.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mob_psycho_100&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_spyfamily",
+    "t": "SPY×FAMILY",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vaIREdPGZOnW9Jrs86mheVVlIQQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_spyfamily&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_misfit_of_demon_king_academy",
+    "t": "The Misfit of Demon King Academy",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVJyT5RJ4xNsxs4y0SbrJa3LKif.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVJyT5RJ4xNsxs4y0SbrJa3LKif.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_misfit_of_demon_king_academy&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tsukimichi_moonlit_fantasy",
+    "t": "TSUKIMICHI Moonlit Fantasy",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/exhONC020D4DGvt7XB4nq9AOMDU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/exhONC020D4DGvt7XB4nq9AOMDU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tsukimichi_moonlit_fantasy&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_death_note",
+    "t": "Death Note",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/chnG4pYo89weaBjXHJWvW68E35B.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/chnG4pYo89weaBjXHJWvW68E35B.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_death_note&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tokyo_revengers",
+    "t": "Tokyo Revengers",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/XbjlgUJknGCv7cNuinxdaFUFNt.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/XbjlgUJknGCv7cNuinxdaFUFNt.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tokyo_revengers&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 37,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hanako_kun_e_os_misterios_do_colegio_kamome",
+    "t": "Hanako kun e os Misterios do Colegio Kamome",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sPXvmpUW4tFf7DuNeovSomcTWLF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sPXvmpUW4tFf7DuNeovSomcTWLF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hanako_kun_e_os_misterios_do_colegio_kamome&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 36,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_duke_of_death_and_his_maid",
+    "t": "The Duke of Death and His Maid",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l61yXOVHyGhhB8LIxwjawy5Zbxg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l61yXOVHyGhhB8LIxwjawy5Zbxg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_duke_of_death_and_his_maid&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 36,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_couple_of_cuckoos",
+    "t": "A Couple of Cuckoos",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_couple_of_cuckoos&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 35,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_agora_exploro_a_masmorra",
+    "t": "Agora Exploro a Masmorra",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1wn8oE5BuR6qlShPO3nevPIRlj3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1wn8oE5BuR6qlShPO3nevPIRlj3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_agora_exploro_a_masmorra&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 35,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_konosuba_as_bencaos_de_deus_neste_mundo_maravi",
+    "t": "Konosuba As Bencaos de Deus Neste Mundo Maravilhoso",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kvXF7ugmNHo2HyNLy7lhQQVbBBa.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kvXF7ugmNHo2HyNLy7lhQQVbBBa.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_konosuba_as_bencaos_de_deus_neste_mundo_maravi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 33,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_100_namoradas_que_te_amam_muuuuuito",
+    "t": "100 Namoradas Que Te Amam Muuuuuito",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uGLPOAWnrbHxf1m5SZsrmNVHvYg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uGLPOAWnrbHxf1m5SZsrmNVHvYg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_100_namoradas_que_te_amam_muuuuuito&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 32,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_link_click",
+    "t": "Link Click",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A9z3veK4kJhaPog9laE4eHNeI8D.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A9z3veK4kJhaPog9laE4eHNeI8D.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_link_click&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 29,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ousama_ranking",
+    "t": "Ousama Ranking",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gaK5RosxmhRAtE2sX757dyICLJM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gaK5RosxmhRAtE2sX757dyICLJM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ousama_ranking&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 27,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_my_hero_academia_vigilantes",
+    "t": "My Hero Academia Vigilantes",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_my_hero_academia_vigilantes&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_solo_camping_for_two",
+    "t": "Solo Camping for Two",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gP7rdhoejxIwZUzB6vpnlsQsdOB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gP7rdhoejxIwZUzB6vpnlsQsdOB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_solo_camping_for_two&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tenchi_muyo",
+    "t": "Tenchi Muyo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rfRVtVJtGzhg6v3mfR5qzspQdI7.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rfRVtVJtGzhg6v3mfR5qzspQdI7.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tenchi_muyo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_megalo_box",
+    "t": "Megalo Box",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jJNt35kX7Ovxm3zZqt0eaSzwFxO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jJNt35kX7Ovxm3zZqt0eaSzwFxO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_megalo_box&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_genjitsu_shugi_yuusha_no_oukoku_saikenki",
+    "t": "Genjitsu Shugi Yuusha no Oukoku Saikenki",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wwDOOqpgTJT9Sj4y57JgRfA3vio.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wwDOOqpgTJT9Sj4y57JgRfA3vio.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_genjitsu_shugi_yuusha_no_oukoku_saikenki&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_neon_genesis_evangelion",
+    "t": "Neon Genesis Evangelion",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7ngPPf8mdLANn267uuWK2iRAuTu.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7ngPPf8mdLANn267uuWK2iRAuTu.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_neon_genesis_evangelion&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 26,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_ilha_das_sombras",
+    "t": "A Ilha das Sombras",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/urusDr7Cfv2QZ6rNzzMB0rGJPci.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/urusDr7Cfv2QZ6rNzzMB0rGJPci.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_ilha_das_sombras&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_meu_casamento_feliz",
+    "t": "Meu Casamento Feliz",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aaxTlygMSwywNvJT9BaZ59yFNv2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aaxTlygMSwywNvJT9BaZ59yFNv2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_meu_casamento_feliz&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_saber_marionette_j",
+    "t": "Saber Marionette J",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n3LApkobOxCK7z1jjfTAWiHiTpz.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n3LApkobOxCK7z1jjfTAWiHiTpz.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_saber_marionette_j&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_skip_beat",
+    "t": "Skip Beat",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d9crmGhDGGJuXj1GKyqhPiFrUQr.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d9crmGhDGGJuXj1GKyqhPiFrUQr.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_skip_beat&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_solo_leveling",
+    "t": "Solo Leveling",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eCD7WS9h4lCT8N4Xavc9u8R1IGk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eCD7WS9h4lCT8N4Xavc9u8R1IGk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_solo_leveling&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tonikawa_over_the_moon_for_you",
+    "t": "TONIKAWA Over The Moon For You",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fy0mtGho6qwjcNZOkTGeQZe93NP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fy0mtGho6qwjcNZOkTGeQZe93NP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tonikawa_over_the_moon_for_you&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_wind_breaker",
+    "t": "Wind Breaker",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c2wfIKUPcQY0tiyiOmY7ItHtNO9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c2wfIKUPcQY0tiyiOmY7ItHtNO9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_wind_breaker&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hells_paradise",
+    "t": "Hells Paradise",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uIqbxVaPzy9kLzntnpEt2LBKTs0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uIqbxVaPzy9kLzntnpEt2LBKTs0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hells_paradise&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_henkyou_de_slow_life_suru_koto_ni_shimashita",
+    "t": "Henkyou de Slow Life suru Koto ni Shimashita",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mgYMsOsFrQ9Q5NjlQwKRWu0K3uM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mgYMsOsFrQ9Q5NjlQwKRWu0K3uM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_henkyou_de_slow_life_suru_koto_ni_shimashita&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shadows_house",
+    "t": "Shadows House",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2XUERaN99so7f6COy5aeJfrNVWc.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2XUERaN99so7f6COy5aeJfrNVWc.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shadows_house&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_uzakichan_wa_asobitai",
+    "t": "Uzaki-chan wa Asobitai",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uUU2BTMXaX5g09lDP6pAbsN8EG5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uUU2BTMXaX5g09lDP6pAbsN8EG5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_uzakichan_wa_asobitai&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_anne_shirley",
+    "t": "Anne Shirley",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rwgWe6wAgP7JDbXdPNdrQO2UQT5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rwgWe6wAgP7JDbXdPNdrQO2UQT5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_anne_shirley&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_aoashi",
+    "t": "Aoashi",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bR33xoasXnezj9UM0Murnjpyz9T.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bR33xoasXnezj9UM0Murnjpyz9T.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_aoashi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_campfire_cooking_in_another_world_with_my_absu",
+    "t": "Campfire Cooking in Another World with My Absurd Skill",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6IZkTbgZEkzeVPKqfe644mSxbfF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6IZkTbgZEkzeVPKqfe644mSxbfF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_campfire_cooking_in_another_world_with_my_absu&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_gachiakuta",
+    "t": "Gachiakuta",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/RxuL7KuFoOzHC0htjtLGxJEGGx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/RxuL7KuFoOzHC0htjtLGxJEGGx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_gachiakuta&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_girlfriend_girlfriend",
+    "t": "Girlfriend Girlfriend",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iaQQ7ClWmqOB6oF4dVYTTQR9T09.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iaQQ7ClWmqOB6oF4dVYTTQR9T09.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_girlfriend_girlfriend&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_goblin_slayer",
+    "t": "Goblin Slayer",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nUiT0whRDuUJKkk74L1pn8xUE2z.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nUiT0whRDuUJKkk74L1pn8xUE2z.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_goblin_slayer&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kaiju_no_8",
+    "t": "Kaiju No. 8",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A6JOsCdFFTxtbDnKAfE0iY6jOiE.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A6JOsCdFFTxtbDnKAfE0iY6jOiE.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kaiju_no_8&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kakkou_no_iinazuke",
+    "t": "Kakkou no Iinazuke",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kakkou_no_iinazuke&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_masamunekun_no_revenge",
+    "t": "Masamune-kun no Revenge",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oWbkaF8oZ8AqNbm61e3uXR35qxg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oWbkaF8oZ8AqNbm61e3uXR35qxg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_masamunekun_no_revenge&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mashle_magia_e_msculos",
+    "t": "Mashle Magia e Músculos",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9rvbqwoEis7SZjbfiIYjzE2uWz3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9rvbqwoEis7SZjbfiIYjzE2uWz3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mashle_magia_e_msculos&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_my_dress_up_darling",
+    "t": "My Dress Up Darling",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_my_dress_up_darling&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_nagatorosan",
+    "t": "Nagatoro-san",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kbJoQBdl9PONnLfjGQFSwn6ZGbB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kbJoQBdl9PONnLfjGQFSwn6ZGbB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_nagatorosan&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_nani_ka",
+    "t": "Nani ka",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qClqP52PXArev5ICorhRcBi4Ghd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qClqP52PXArev5ICorhRcBi4Ghd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_nani_ka&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_orient",
+    "t": "Orient",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bxTq9NmHnbcBGPLonj7c9Nidwqs.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bxTq9NmHnbcBGPLonj7c9Nidwqs.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_orient&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_our_last_crusade_or_the_rise_of_a_new_world",
+    "t": "Our Last Crusade or the Rise of a New World",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wCL3MkW9QNnBKpeFC9O3i0mpiIb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wCL3MkW9QNnBKpeFC9O3i0mpiIb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_our_last_crusade_or_the_rise_of_a_new_world&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ririsa_uma_garota_em_25d",
+    "t": "Ririsa Uma Garota em 2.5D",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/weal0UrYsys21fYpFFv3iGyPemq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/weal0UrYsys21fYpFFv3iGyPemq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ririsa_uma_garota_em_25d&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_squid_girl",
+    "t": "Squid Girl",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dZrxnMoeEn0VgNC0Cr8fMCA2cEe.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dZrxnMoeEn0VgNC0Cr8fMCA2cEe.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_squid_girl&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_to_be_hero_x",
+    "t": "TO BE HERO X",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3SHNexaAClQL3CjhCESIJnGQGwf.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3SHNexaAClQL3CjhCESIJnGQGwf.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_to_be_hero_x&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tojima_wants_to_be_a_kamen_rider",
+    "t": "Tojima Wants to Be a Kamen Rider",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wqczcoNCokVreXw4QA4nyDlxkal.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wqczcoNCokVreXw4QA4nyDlxkal.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tojima_wants_to_be_a_kamen_rider&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tying_the_knot_with_an_amagami_sister",
+    "t": "Tying the Knot with an Amagami Sister",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HxZTpWdhoMZwezZsWbD7iAIJdA.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HxZTpWdhoMZwezZsWbD7iAIJdA.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tying_the_knot_with_an_amagami_sister&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_undead_unluck",
+    "t": "Undead Unluck",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/62LKH8aho4EeZmcpYks9DvxyHxB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/62LKH8aho4EeZmcpYks9DvxyHxB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_undead_unluck&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dorohedoro",
+    "t": "Dorohedoro",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mmpGV6laOLyNeo21aOFM9oB9HYw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mmpGV6laOLyNeo21aOFM9oB9HYw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dorohedoro&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_darling_in_the_franxx",
+    "t": "DARLING in the FRANXX",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rR8HgnD9tqFaSiJ69FpruHo9Gm9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rR8HgnD9tqFaSiJ69FpruHo9Gm9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_darling_in_the_franxx&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_beginning_after_the_end",
+    "t": "The Beginning After the End",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2NogAa2FQmZJkwHJTwiuCHfxIFD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2NogAa2FQmZJkwHJTwiuCHfxIFD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_beginning_after_the_end&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_oshi_no_ko",
+    "t": "OSHI NO KO",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qoW507a8RoGbpILCxt2N87USn8H.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qoW507a8RoGbpILCxt2N87USn8H.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_oshi_no_ko&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_platinum_end",
+    "t": "Platinum End",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e2BG4cPMkgAI6maPutpZfQcl3X7.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e2BG4cPMkgAI6maPutpZfQcl3X7.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_platinum_end&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_muv_luv_alternative_total_eclipse",
+    "t": "Muv Luv Alternative Total Eclipse",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cNeaqzxwkHoo5fVlC709rv6dgDo.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cNeaqzxwkHoo5fVlC709rv6dgDo.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_muv_luv_alternative_total_eclipse&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 23,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_seirei_gensouki_spirit_chronicles",
+    "t": "Seirei Gensouki Spirit Chronicles",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zq07L28laGQpTRhaEDkb2deoSbf.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zq07L28laGQpTRhaEDkb2deoSbf.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_seirei_gensouki_spirit_chronicles&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 23,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_wistoria_wand_and_sword",
+    "t": "Wistoria Wand and Sword",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v8gkKx1BvD3AH0MjwgCPbHTwxPE.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v8gkKx1BvD3AH0MjwgCPbHTwxPE.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_wistoria_wand_and_sword&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 23,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_lupin_iii",
+    "t": "Lupin III",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2skqgT3iv8J5jnRyaghRxs7m6Td.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2skqgT3iv8J5jnRyaghRxs7m6Td.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_lupin_iii&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 23,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_trigun_stampede",
+    "t": "Trigun Stampede",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8mqvaj0a74JZkvCc4w1J2ePchl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8mqvaj0a74JZkvCc4w1J2ePchl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_trigun_stampede&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 22,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_clevatess",
+    "t": "Clevatess",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/avajalKjBP5QjwIEb5Xs8QXg1K.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/avajalKjBP5QjwIEb5Xs8QXg1K.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_clevatess&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 21,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_gnosia",
+    "t": "GNOSIA",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2D4j3VlE2ZzNroic5imNLBQXGi.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2D4j3VlE2ZzNroic5imNLBQXGi.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_gnosia&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 21,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_daima",
+    "t": "Dragon Ball DAIMA",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qlLJvJO8rsltmnWWbKgT13hP90I.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qlLJvJO8rsltmnWWbKgT13hP90I.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_daima&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 20,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_daemons_do_reino_das_sombras",
+    "t": "Daemons do Reino das Sombras",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mNqW2jnAogZa0nJ94q1LUum8Hos.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mNqW2jnAogZa0nJ94q1LUum8Hos.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_daemons_do_reino_das_sombras&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 20,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_bye_bye_earth",
+    "t": "Bye Bye Earth",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mPFow4Aw7Rq6n5qfpFUhZF3UKdl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mPFow4Aw7Rq6n5qfpFUhZF3UKdl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_bye_bye_earth&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 19,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_saga_of_tanya_the_evil",
+    "t": "Saga of Tanya the Evil",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y0NcqaEx6Md4MPcDWHAr8e5CQfF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y0NcqaEx6Md4MPcDWHAr8e5CQfF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_saga_of_tanya_the_evil&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 19,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_you_and_i_are_polar_opposites",
+    "t": "You and I Are Polar Opposites",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xsqaVf4dtMYM9kcEgmtdDiTlkQl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xsqaVf4dtMYM9kcEgmtdDiTlkQl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_you_and_i_are_polar_opposites&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 18,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_trapped_in_a_dating_sim_the_world_of_otome_gam",
+    "t": "Trapped in a Dating Sim The World of Otome Games is Tough for Mobs",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9fJYueAX0XTqFIPokQxFAoapGvr.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9fJYueAX0XTqFIPokQxFAoapGvr.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_trapped_in_a_dating_sim_the_world_of_otome_gam&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 18,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hana_kimi",
+    "t": "Hana Kimi",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4BoA0q0oh1FJiRe9PlZCxlqX26T.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4BoA0q0oh1FJiRe9PlZCxlqX26T.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hana_kimi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 17,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_love_all_play",
+    "t": "Love All Play",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AvkDDOD1dy4ZygO0Z433o42hxsd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AvkDDOD1dy4ZygO0Z433o42hxsd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_love_all_play&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 16,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_defective",
+    "t": "The Defective",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2pSdGI21DhBbq0ndGFde2kPs5WB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2pSdGI21DhBbq0ndGFde2kPs5WB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_defective&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 16,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_one_piece_a_srie",
+    "t": "ONE PIECE A Série",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_one_piece_a_srie&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 16,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_noiva_do_antigo_mago_o_menino_do_oeste_e_o_c",
+    "t": "A Noiva do Antigo Mago O Menino do Oeste e o Cavaleiro da Tempestade Azul",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_noiva_do_antigo_mago_o_menino_do_oeste_e_o_c&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 15,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hokuto_no_ken_legends_of_the_dark_king",
+    "t": "Hokuto no Ken Legends of the Dark King",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p4Jimz8z4d1RJwaHFfA8TtFWOMB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p4Jimz8z4d1RJwaHFfA8TtFWOMB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hokuto_no_ken_legends_of_the_dark_king&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 14,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shiranai_uchi_ni_level_max_ni_nattemashita",
+    "t": "Shiranai Uchi ni Level Max ni Nattemashita",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/olv9eCdn4m1p7PLZaMTn5zR1SEB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/olv9eCdn4m1p7PLZaMTn5zR1SEB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shiranai_uchi_ni_level_max_ni_nattemashita&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 14,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_agents_of_the_four_seasons_dance_of_spring",
+    "t": "Agents of the Four Seasons Dance of Spring",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/s8kMT6SmeAt7HovSJWbgIEvjmdm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/s8kMT6SmeAt7HovSJWbgIEvjmdm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_agents_of_the_four_seasons_dance_of_spring&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 14,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_danmachi_e_errado_tentar_pegar_garotas_em_uma_",
+    "t": "DanMachi E Errado Tentar Pegar Garotas em uma Masmorra",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eanhJgkvsqGPf5Bot77kjuuZVco.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eanhJgkvsqGPf5Bot77kjuuZVco.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_danmachi_e_errado_tentar_pegar_garotas_em_uma_&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ganhei_um_poder_apelo_em_outro_mundo_e_agora_s",
+    "t": "Ganhei um Poder Apelão em Outro Mundo e Agora Sou Imbatível no Mundo Real",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/50OsbGp6AWw4za2aAM82vKburcg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/50OsbGp6AWw4za2aAM82vKburcg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ganhei_um_poder_apelo_em_outro_mundo_e_agora_s&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_gleipnir",
+    "t": "Gleipnir",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hPI4AAM4hOMNV2ucOvsVg7LJsV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hPI4AAM4hOMNV2ucOvsVg7LJsV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_gleipnir&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_gods_game_we_play",
+    "t": "Gods Game We Play",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eYI68Qz9z9k2tF83I0omuvsSMDw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eYI68Qz9z9k2tF83I0omuvsSMDw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_gods_game_we_play&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_happy_tree_friends",
+    "t": "Happy Tree Friends",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rYqJg1OzaDlc5kiBK4IdgrELMf.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rYqJg1OzaDlc5kiBK4IdgrELMf.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_happy_tree_friends&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_horimiya_piece",
+    "t": "Horimiya Piece",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nnGb4NYOyRfCl5DKYPIK9A0Cgww.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nnGb4NYOyRfCl5DKYPIK9A0Cgww.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_horimiya_piece&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_jigokuraku",
+    "t": "Jigokuraku",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bbTgS7R6lor3j6YRAHnQj3dVlPa.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bbTgS7R6lor3j6YRAHnQj3dVlPa.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_jigokuraku&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_level_e",
+    "t": "Level E",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tdhOYnrkZhSr6wiLDWOKIozRhEI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tdhOYnrkZhSr6wiLDWOKIozRhEI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_level_e&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_lord_of_mysteries",
+    "t": "Lord of Mysteries",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kBRyCCZWipMO5Gu9Y02nE3iMgr0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kBRyCCZWipMO5Gu9Y02nE3iMgr0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_lord_of_mysteries&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_lycoris_recoil",
+    "t": "Lycoris Recoil",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1GJMVzfL7lRy4XqvS8UjsX2tzHt.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1GJMVzfL7lRy4XqvS8UjsX2tzHt.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_lycoris_recoil&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_may_i_ask_for_one_final_thing",
+    "t": "May I Ask for One Final Thing",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pN79CoV8ecaejbtk6sWlHbMQrCW.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pN79CoV8ecaejbtk6sWlHbMQrCW.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_may_i_ask_for_one_final_thing&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_metallic_rouge",
+    "t": "Metallic Rouge",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oLMLxZBmIFE6tWg5s8UwuYOWTVI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oLMLxZBmIFE6tWg5s8UwuYOWTVI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_metallic_rouge&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_o_tio_de_outro_mundo",
+    "t": "O Tio de Outro Mundo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5U2M2xRZ1TAMIvDXvJxU8MxLoaw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5U2M2xRZ1TAMIvDXvJxU8MxLoaw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_o_tio_de_outro_mundo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_os_cavaleiros_do_zodiaco_alma_de_ouro",
+    "t": "Os Cavaleiros do Zodiaco Alma de Ouro",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/39qqUS2EDpiYGfkshiUZ69K61Uq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/39qqUS2EDpiYGfkshiUZ69K61Uq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_os_cavaleiros_do_zodiaco_alma_de_ouro&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_saikyoushu_no_nekomimi_shoujo_to_deau",
+    "t": "Saikyoushu no Nekomimi Shoujo to Deau",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zR4to7glpmL6nTBW0ZkrrKGtk5K.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zR4to7glpmL6nTBW0ZkrrKGtk5K.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_saikyoushu_no_nekomimi_shoujo_to_deau&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shaman_king_flowers",
+    "t": "Shaman King Flowers",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rMViGZqSsj58BEWdGkYWvgKF9Mm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rMViGZqSsj58BEWdGkYWvgKF9Mm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shaman_king_flowers&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tengokudaimakyo_iluso_celestial",
+    "t": "Tengoku-Daimakyo Ilusão Celestial",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/isqCsJU5n91CbRkeU00CZUutfcY.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/isqCsJU5n91CbRkeU00CZUutfcY.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tengokudaimakyo_iluso_celestial&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_wrong_way_to_use_healing_magic",
+    "t": "The Wrong Way to Use Healing Magic",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cmnScbX505dKwpRGKoGhCsVBUw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cmnScbX505dKwpRGKoGhCsVBUw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_wrong_way_to_use_healing_magic&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_true_beauty",
+    "t": "True Beauty",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9gpc8kIhNEG7r0VTkyI9aVBxdO3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9gpc8kIhNEG7r0VTkyI9aVBxdO3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_true_beauty&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_go_for_it_nakamura_kun",
+    "t": "Go For It Nakamura kun",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCI8bgsqoq2ho04ZE0gUr36l8Pg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCI8bgsqoq2ho04ZE0gUr36l8Pg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_go_for_it_nakamura_kun&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_snowball_earth",
+    "t": "SNOWBALL EARTH",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pJ74xJ9ydynAewijm2vhgpwumSf.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pJ74xJ9ydynAewijm2vhgpwumSf.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_snowball_earth&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_witch_hat_atelier",
+    "t": "Witch Hat Atelier",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qGSBnrANHLX8C7KqGuPDCylns2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qGSBnrANHLX8C7KqGuPDCylns2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_witch_hat_atelier&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_odd_taxi",
+    "t": "Odd Taxi",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9zLfAyCGLBYbSK7lEQpAY5BRBrc.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9zLfAyCGLBYbSK7lEQpAY5BRBrc.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_odd_taxi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_orange",
+    "t": "Orange",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oxnWNFG4cSLBXJTDLOJU8ucMpmD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oxnWNFG4cSLBXJTDLOJU8ucMpmD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_orange&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tamons_bside",
+    "t": "Tamon's B-Side",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5X2Z4zEgMzKNLL3OrJccUjXKUUk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5X2Z4zEgMzKNLL3OrJccUjXKUUk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tamons_bside&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_magia_record_mahou_shoujo_madokamagica_gaiden",
+    "t": "Magia Record Mahou Shoujo Madoka☆Magica Gaiden",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/syBNkb4sSD1cqMJEnlwwcQGt4Qu.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/syBNkb4sSD1cqMJEnlwwcQGt4Qu.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_magia_record_mahou_shoujo_madokamagica_gaiden&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_vivy_fluorite_eyes_song",
+    "t": "Vivy Fluorite Eye’s Song",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mPFwA18HsqwvONVCi6ynjfy1TOZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mPFwA18HsqwvONVCi6ynjfy1TOZ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_vivy_fluorite_eyes_song&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_100_coisas_para_fazer_antes_de_virar_zumbi",
+    "t": "100 Coisas para Fazer Antes de Virar Zumbi",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUgE1ceORQzsZnGrASVKjEaGkzO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUgE1ceORQzsZnGrASVKjEaGkzO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_100_coisas_para_fazer_antes_de_virar_zumbi&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_365_days_to_the_wedding",
+    "t": "365 Days To The Wedding",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xNuXxVR4P3oWGUcJFVJzOBesxeB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xNuXxVR4P3oWGUcJFVJzOBesxeB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_365_days_to_the_wedding&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_akudama_drive",
+    "t": "Akudama Drive",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e0xNHFFiMJbU1eGu9d1fMKFecr7.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e0xNHFFiMJbU1eGu9d1fMKFecr7.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_akudama_drive&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_akuyaku_reijou_nanode_last_boss_wo_kattemimash",
+    "t": "Akuyaku Reijou nanode Last Boss wo Kattemimashita",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haGd2ClBvrYzUFAl8TH4AHGO15a.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haGd2ClBvrYzUFAl8TH4AHGO15a.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_akuyaku_reijou_nanode_last_boss_wo_kattemimash&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_blood_blockade_battlefront",
+    "t": "Blood Blockade Battlefront",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zg0YxHNIKG4AhbL5zLJSO45ehBM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zg0YxHNIKG4AhbL5zLJSO45ehBM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_blood_blockade_battlefront&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_brave_10",
+    "t": "Brave 10",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r2YEvFQfCOMlFteOiGMC3yTfDI5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r2YEvFQfCOMlFteOiGMC3yTfDI5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_brave_10&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_bucchigiri",
+    "t": "Bucchigiri",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WNDshG1wTRyqzDxw6HijqqBiWk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WNDshG1wTRyqzDxw6HijqqBiWk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_bucchigiri&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_chainsaw_man",
+    "t": "Chainsaw Man",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mIz0eKhzHuSPeRSePCyoCt9bKVp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mIz0eKhzHuSPeRSePCyoCt9bKVp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_chainsaw_man&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_chillin_in_another_world_with_level_2_super_ch",
+    "t": "Chillin in Another World with Level 2 Super Cheat Powers",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_chillin_in_another_world_with_level_2_super_ch&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_como_raeliana_foi_parar_na_manso_do_duque",
+    "t": "Como Raeliana Foi Parar na Mansão do Duque",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lwdIT4FlGs4CXHYG4WJmahWtjti.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lwdIT4FlGs4CXHYG4WJmahWtjti.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_como_raeliana_foi_parar_na_manso_do_duque&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_crnicas_de_um_aristocrata_em_outro_mundo",
+    "t": "Crônicas de um Aristocrata em Outro Mundo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_crnicas_de_um_aristocrata_em_outro_mundo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_demon_lord",
+    "t": "DEMON LORD",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mU7QgTm2WadwVoT7jDyMY9Czpsj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mU7QgTm2WadwVoT7jDyMY9Czpsj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_demon_lord&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_eizouken_ni_wa_te_wo_dasu_na",
+    "t": "Eizouken ni wa Te wo Dasu na",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_eizouken_ni_wa_te_wo_dasu_na&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_fuuto_tantei",
+    "t": "Fuuto Tantei",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41aC6J2oKla7YkIQ3fbj9VX1eUS.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41aC6J2oKla7YkIQ3fbj9VX1eUS.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_fuuto_tantei&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_isekai_kizoku_ni_tensei_suru",
+    "t": "Isekai Kizoku ni Tensei suru",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v2VA99oXvEEuZNeqXSYRhq4uY2j.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v2VA99oXvEEuZNeqXSYRhq4uY2j.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_isekai_kizoku_ni_tensei_suru&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kakushite_makina_san",
+    "t": "Kakushite Makina san",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3fmeu7yHmHHPixSdiFxaKslDW6j.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3fmeu7yHmHHPixSdiFxaKslDW6j.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kakushite_makina_san&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_keep_your_hands_off_eizouken",
+    "t": "Keep Your Hands Off Eizouken",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_keep_your_hands_off_eizouken&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_koibito_miman",
+    "t": "Koibito Miman",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/blGP300ByaQEtZ5r8V5bF75rxso.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/blGP300ByaQEtZ5r8V5bF75rxso.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_koibito_miman&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_konosuba_uma_explosao_neste_mundo_maravilhoso",
+    "t": "Konosuba Uma Explosao Neste Mundo Maravilhoso",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xcPT8KuiYAKvhCRaYa9SOtiEWSO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xcPT8KuiYAKvhCRaYa9SOtiEWSO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_konosuba_uma_explosao_neste_mundo_maravilhoso&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_leadale_no_daichi_nite",
+    "t": "Leadale no Daichi nite",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hIrHm8blexgdIFq4LUYuN3ZSc9T.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hIrHm8blexgdIFq4LUYuN3ZSc9T.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_leadale_no_daichi_nite&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_lets_play",
+    "t": "Lets Play",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ohEVj2YPIyIJxuT9uw6r4eDMD5Q.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ohEVj2YPIyIJxuT9uw6r4eDMD5Q.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_lets_play&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_magic_maker_how_to_make_magic_in_another_world",
+    "t": "Magic Maker How to Make Magic in Another World",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cCIfi6M0Y4OjQLAaikrUdcBiE3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cCIfi6M0Y4OjQLAaikrUdcBiE3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_magic_maker_how_to_make_magic_in_another_world&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mahoutsukai_reimeiki",
+    "t": "Mahoutsukai Reimeiki",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQw7WrP2iDFwxNz7t5gQd6hDk4q.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQw7WrP2iDFwxNz7t5gQd6hDk4q.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mahoutsukai_reimeiki&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_me_apaixonei_pela_vila",
+    "t": "Me Apaixonei pela Vila",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQNMsjH2YtRZfgb8zTXtA21vxud.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQNMsjH2YtRZfgb8zTXtA21vxud.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_me_apaixonei_pela_vila&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_minha_habilidade_nica_me_deixa_invencvel_no_nv",
+    "t": "Minha Habilidade Única Me Deixa Invencível no Nível 1",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rUzd55GHiOogGiFAgTlW4aWsC2O.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rUzd55GHiOogGiFAgTlW4aWsC2O.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_minha_habilidade_nica_me_deixa_invencvel_no_nv&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_minha_mana_apelona",
+    "t": "Minha Mana Apelona",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sysz1yNPpgwA7weihJ7lIgHnt1O.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sysz1yNPpgwA7weihJ7lIgHnt1O.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_minha_mana_apelona&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mobile_suit_gundam_the_witch_from_mercury",
+    "t": "Mobile Suit Gundam The Witch from Mercury",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h1qliYBRsnQdxCbFWQxcnBRW3pm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h1qliYBRsnQdxCbFWQxcnBRW3pm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mobile_suit_gundam_the_witch_from_mercury&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mono",
+    "t": "mono",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXsY3KHZptNv7MhMrUYXWjamh7m.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXsY3KHZptNv7MhMrUYXWjamh7m.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mono&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_murabito_a_ni_tensei_suru",
+    "t": "Murabito A ni Tensei Suru",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oDmhdUnR7tatB4s2NmmmwUrpv2e.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oDmhdUnR7tatB4s2NmmmwUrpv2e.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_murabito_a_ni_tensei_suru&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_my_home_hero",
+    "t": "My Home Hero",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e9waTrWlTq1XzoAXO4DuEPMdvM6.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e9waTrWlTq1XzoAXO4DuEPMdvM6.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_my_home_hero&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_new_saga",
+    "t": "New Saga",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7WAVcPVqdLK9whw75A7z6qeiuCg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7WAVcPVqdLK9whw75A7z6qeiuCg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_new_saga&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_nina_the_starry_bride",
+    "t": "Nina the Starry Bride",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dCO0ihJjo7y7ptzbdHuJ3UEA8MI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dCO0ihJjo7y7ptzbdHuJ3UEA8MI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_nina_the_starry_bride&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_nyaight_of_the_living_cat",
+    "t": "Nyaight of the Living Cat",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xLWJiLrdEU8r1yJhTV8ISULxVub.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xLWJiLrdEU8r1yJhTV8ISULxVub.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_nyaight_of_the_living_cat&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ore_dake_haireru_kakushi_dungeon",
+    "t": "Ore dake Haireru Kakushi Dungeon",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3VNinMIgdqOoldpd5MBmul74wN8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3VNinMIgdqOoldpd5MBmul74wN8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ore_dake_haireru_kakushi_dungeon&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_possibly_the_greatest_alchemist_of_all_time",
+    "t": "Possibly the Greatest Alchemist of All Time",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qfdzcGkQ0j1YEYBO7XZctlFz6FY.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qfdzcGkQ0j1YEYBO7XZctlFz6FY.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_possibly_the_greatest_alchemist_of_all_time&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_re_monster",
+    "t": "Re Monster",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hos9sChhPb8FWUJUGkDBlzgLdx1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hos9sChhPb8FWUJUGkDBlzgLdx1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_re_monster&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rikei_ga_koi_ni_ochita_no_de_shoumei_shitemita",
+    "t": "Rikei ga Koi ni Ochita no de Shoumei shitemita",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pokU2f5EgD5E6EJoK9jhfbkQNXe.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pokU2f5EgD5E6EJoK9jhfbkQNXe.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rikei_ga_koi_ni_ochita_no_de_shoumei_shitemita&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rougo_ni_sonaete_isekai_de_8manmai_no_kinka_wo",
+    "t": "Rougo ni Sonaete Isekai de 8-manmai no Kinka wo Tamemasu",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eW7WipQUnl4zFEqGyoZxDvhgMYK.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eW7WipQUnl4zFEqGyoZxDvhgMYK.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rougo_ni_sonaete_isekai_de_8manmai_no_kinka_wo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_saihate_no_paladin",
+    "t": "Saihate no Paladin",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7Dh4SnIwj016uyK9mkABtX9tgN1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7Dh4SnIwj016uyK9mkABtX9tgN1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_saihate_no_paladin&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sala_de_aula_dos_heris",
+    "t": "Sala de Aula dos Heróis",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7rBoa50RsUGE9v5VntUgQ7HAU1n.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7rBoa50RsUGE9v5VntUgQ7HAU1n.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sala_de_aula_dos_heris&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shikkakumon_no_saikyou_kenja",
+    "t": "Shikkakumon no Saikyou Kenja",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u6Uabzw8y7hHOygvR2JWnzHUzLX.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u6Uabzw8y7hHOygvR2JWnzHUzLX.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shikkakumon_no_saikyou_kenja&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shinobi_no_ittoki",
+    "t": "Shinobi no Ittoki",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xuqsm5RM9cJYloufbqxvPR4P3NX.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xuqsm5RM9cJYloufbqxvPR4P3NX.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shinobi_no_ittoki&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_shy",
+    "t": "SHY",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uEkeOsy9d6jTPxHIhLXuc19qACF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uEkeOsy9d6jTPxHIhLXuc19qACF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_shy&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sk8_the_infinity",
+    "t": "SK8 the Infinity",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xXSG9DwLefmmvyHyxpS8M2LJ0TU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xXSG9DwLefmmvyHyxpS8M2LJ0TU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sk8_the_infinity&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_skip_and_loafer",
+    "t": "Skip and Loafer",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTifA4f87D7JQeTFob2xB2QroD1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTifA4f87D7JQeTFob2xB2QroD1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_skip_and_loafer&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_super_cubo",
+    "t": "Super Cubo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/a5h9fMnVtQ28dOxZq799GGbSN61.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/a5h9fMnVtQ28dOxZq799GGbSN61.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_super_cubo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s",
+    "t": "Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_brilliant_healers_new_life_in_the_shadows",
+    "t": "The Brilliant Healers New Life in the Shadows",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r87Uv7ESFlB4do3Ze43u3il7cGG.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r87Uv7ESFlB4do3Ze43u3il7cGG.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_brilliant_healers_new_life_in_the_shadows&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_gorilla_gods_go_to_girl",
+    "t": "The Gorilla Gods Go To Girl",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJ7OuLn37BbXOC47mXWvKTgOudW.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJ7OuLn37BbXOC47mXWvKTgOudW.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_gorilla_gods_go_to_girl&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_iceblade_sorcerer_shall_rule_the_world",
+    "t": "The Iceblade Sorcerer Shall Rule the World",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aiJd0oGkBhf98uEH3F3yC7O48vr.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aiJd0oGkBhf98uEH3F3yC7O48vr.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_iceblade_sorcerer_shall_rule_the_world&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_shiunji_family_children",
+    "t": "The Shiunji Family Children",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iSSYooLNjjNvbGSqAxnL8LgtSMP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iSSYooLNjjNvbGSqAxnL8LgtSMP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_shiunji_family_children&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_slime_diaries",
+    "t": "The Slime Diaries",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tei5WNmvLkhMUkl4RiIibNLen01.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tei5WNmvLkhMUkl4RiIibNLen01.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_slime_diaries&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_unaware_atelier_meister",
+    "t": "The Unaware Atelier Meister",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6IxxJnQ7Lx5hsDoNsTChDGiVXVC.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6IxxJnQ7Lx5hsDoNsTChDGiVXVC.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_unaware_atelier_meister&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_weakest_tamer_began_a_journey_to_pick_up_t",
+    "t": "The Weakest Tamer Began a Journey to Pick Up Trash",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pWrBCMA1Z2OaUNRy8UNMjg3SjDv.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pWrBCMA1Z2OaUNRy8UNMjg3SjDv.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_weakest_tamer_began_a_journey_to_pick_up_t&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_uma_vizinha_de_outro_mundo",
+    "t": "Uma Vizinha de Outro Mundo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d4IrETiK33WQ77XwIt7Iz4KCxKw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d4IrETiK33WQ77XwIt7Iz4KCxKw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_uma_vizinha_de_outro_mundo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_watashi_no_yuri_wa_oshigoto_desu",
+    "t": "Watashi no Yuri wa Oshigoto desu",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_watashi_no_yuri_wa_oshigoto_desu&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_with_you_our_love_will_make_it_through",
+    "t": "With You Our Love Will Make It Through",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l8YQfVfTKtWnBS54cvHlCLeUidc.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l8YQfVfTKtWnBS54cvHlCLeUidc.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_with_you_our_love_will_make_it_through&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_you_are_ms_servant",
+    "t": "You are Ms Servant",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ncwR6gL58cf1Z6xNcnA8iTS4PyG.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ncwR6gL58cf1Z6xNcnA8iTS4PyG.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_you_are_ms_servant&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dark_moon_the_blood_altar",
+    "t": "Dark Moon The Blood Altar",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3xMrv5JDbgy1AUj6GURBaTv8sNt.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3xMrv5JDbgy1AUj6GURBaTv8sNt.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dark_moon_the_blood_altar&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sentenced_to_be_a_hero",
+    "t": "Sentenced to Be a Hero",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/juGNOhRx7MXg3i2NuZ9lR6arVQw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/juGNOhRx7MXg3i2NuZ9lR6arVQw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sentenced_to_be_a_hero&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_roll_over_and_die_i_will_fight_for_an_ordinary",
+    "t": "ROLL OVER AND DIE I Will Fight for an Ordinary Life with My Love and Cursed Sword",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nH6Ch1q5rwdRs56bYTA9wuOhfbL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nH6Ch1q5rwdRs56bYTA9wuOhfbL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_roll_over_and_die_i_will_fight_for_an_ordinary&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_world_ends_with_you_the_animation",
+    "t": "The World Ends With You The Animation",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/apHvxqMVuxIGDOL9lLOyA9q2a3z.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/apHvxqMVuxIGDOL9lLOyA9q2a3z.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_world_ends_with_you_the_animation&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rumble_garanndoll",
+    "t": "Rumble Garanndoll",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vhAjlkMNe5bEafBNOYe6xO6un7t.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vhAjlkMNe5bEafBNOYe6xO6un7t.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rumble_garanndoll&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_stand_my_heroes_piece_of_truth",
+    "t": "Stand My Heroes Piece of Truth",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v6t3OIRMdWJ1w26Cwkv2uJIRODE.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v6t3OIRMdWJ1w26Cwkv2uJIRODE.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_stand_my_heroes_piece_of_truth&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_yuri_on_ice",
+    "t": "Yuri on ICE",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/t5yMv3UoRjvdhVqN7gC1KOT5Nbw.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/t5yMv3UoRjvdhVqN7gC1KOT5Nbw.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_yuri_on_ice&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_needy_girl_overdose",
+    "t": "NEEDY GIRL OVERDOSE",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jl79CIc8yL0m5VKR2X1qkoAsre0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jl79CIc8yL0m5VKR2X1qkoAsre0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_needy_girl_overdose&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_muteking_the_dancing_hero_2021_l",
+    "t": "Muteking the Dancing Hero (2021) [L]",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6iKJnXWmCu1VjaYNRAPBRTqyIxN.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6iKJnXWmCu1VjaYNRAPBRTqyIxN.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_muteking_the_dancing_hero_2021_l&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kyuukyoku_shinka_shita_full_dive_rpg_ga_genjit",
+    "t": "Kyuukyoku Shinka Shita Full Dive RPG ga Genjitsu yori mo Kusogee Dattara",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kyuukyoku_shinka_shita_full_dive_rpg_ga_genjit&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_meikyuu_black_company",
+    "t": "Meikyuu Black Company",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oI8GUl7CPzlEXwjtPJfjnudbsp4.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oI8GUl7CPzlEXwjtPJfjnudbsp4.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_meikyuu_black_company&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_mierukochan",
+    "t": "Mieruko-chan",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oI3XhfpVoXRBdA7orxPsFkKcWKU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_mierukochan&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sabikui_bisco",
+    "t": "Sabikui Bisco",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hT9DTlUZxyq96Kuo0b9yEGYZrj9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hT9DTlUZxyq96Kuo0b9yEGYZrj9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sabikui_bisco&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sono_bisque_doll_wa_koi_wo_suru",
+    "t": "Sono Bisque Doll wa Koi wo Suru",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sono_bisque_doll_wa_koi_wo_suru&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tensai_ouji_no_akaji_kokka_saisei_jutsu",
+    "t": "Tensai Ouji no Akaji Kokka Saisei Jutsu",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vWpWbSdU4B82slSZPUJTLu8RygR.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vWpWbSdU4B82slSZPUJTLu8RygR.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tensai_ouji_no_akaji_kokka_saisei_jutsu&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_vanitas_no_carte",
+    "t": "Vanitas no Carte",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sja5f0YyKe7G6bVtSrpaXCvd9ia.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sja5f0YyKe7G6bVtSrpaXCvd9ia.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_vanitas_no_carte&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_86",
+    "t": "86",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/czVnqeZZVBoniOO3iYB3nSvuSWO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/czVnqeZZVBoniOO3iYB3nSvuSWO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_86&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_journey_through_another_world_raising_kids_w",
+    "t": "A Journey Through Another World Raising Kids While Adventuring",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_journey_through_another_world_raising_kids_w&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ningen_fushin_adventurers_who_dont_believe_in_",
+    "t": "Ningen Fushin Adventurers Who Don't Believe in Humanity Will Save the World",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3d8C2DEEBe70SIVZZWw1Q08oPvN.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3d8C2DEEBe70SIVZZWw1Q08oPvN.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ningen_fushin_adventurers_who_dont_believe_in_&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_pass_the_monster_meat_milady",
+    "t": "Pass the Monster Meat Milady",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6E1hsfFlwWr14yxfgmt9Lt7Gjw9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6E1hsfFlwWr14yxfgmt9Lt7Gjw9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_pass_the_monster_meat_milady&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_zenshu",
+    "t": "ZENSHU",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hiLf3JKUghjhCjDCv3hKKsWtA4S.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hiLf3JKUghjhCjDCv3hKKsWtA4S.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_zenshu&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_i_want_to_end_this_love_game",
+    "t": "I Want to End This Love Game",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ovS4qxFoBsXYj5homeXfMatdW82.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ovS4qxFoBsXYj5homeXfMatdW82.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_i_want_to_end_this_love_game&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_black_torch",
+    "t": "Black Torch",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qxPsSYAiNhFLETmFJZ0s5HWyYhr.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qxPsSYAiNhFLETmFJZ0s5HWyYhr.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_black_torch&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hakenshimasu",
+    "t": "Hakenshimasu",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/67H5NuJtldqNfb6VsfZBwS7AwzA.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/67H5NuJtldqNfb6VsfZBwS7AwzA.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hakenshimasu&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 11,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_alma_chan_wants_to_be_a_family",
+    "t": "Alma chan Wants to Be a Family",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gAYCa3b1nHkxb0FTtPRHkYmg6Ol.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gAYCa3b1nHkxb0FTtPRHkYmg6Ol.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_alma_chan_wants_to_be_a_family&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 10,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ousama_ranking_yuuki_no_takarabako",
+    "t": "Ousama Ranking Yuuki no Takarabako",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wAtODapry9fYXhvqYvSOdmExvDc.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wAtODapry9fYXhvqYvSOdmExvDc.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ousama_ranking_yuuki_no_takarabako&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 10,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_file_of_young_kindaichi_returns",
+    "t": "The File of Young Kindaichi Returns",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4pAtoEWIhL6hCAkMtv45RSzGso0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4pAtoEWIhL6hCAkMtv45RSzGso0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_file_of_young_kindaichi_returns&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 10,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_oku_por_dentro_do_castelo",
+    "t": "Ōoku Por Dentro do Castelo",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4G1xzjLfI9ZMNb3gSPm89fnEl3o.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4G1xzjLfI9ZMNb3gSPm89fnEl3o.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_oku_por_dentro_do_castelo&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 10,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hanaorisan_still_wants_to_fight_in_the_next_li",
+    "t": "Hanaori-san Still Wants to Fight in the Next Life",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/MtHcMTVjuIPta3pQJtCc9LqYdT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/MtHcMTVjuIPta3pQJtCc9LqYdT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hanaorisan_still_wants_to_fight_in_the_next_li&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 9,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kaiju_girl_caramelise",
+    "t": "KAIJU GIRL CARAMELISE",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tG2yE7HILQdH32RzYajSgXYSrRV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tG2yE7HILQdH32RzYajSgXYSrRV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kaiju_girl_caramelise&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 8,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_rilakkuma",
+    "t": "RILAKKUMA",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ye32KMcH245jAWOEfqjbCCYeAQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ye32KMcH245jAWOEfqjbCCYeAQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_rilakkuma&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 7,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_tomb_raider_king",
+    "t": "Tomb Raider King",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1VYDx4K8TYoEaKiBA0FY6UameFx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tomb_raider_king&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 7,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_though_i_am_an_inept_villainess",
+    "t": "Though I Am an Inept Villainess",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/42PzktVKixXyXlZcKWyESpeuXzL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/42PzktVKixXyXlZcKWyESpeuXzL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_though_i_am_an_inept_villainess&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 6,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_jaadugar_a_witch_in_mongolia",
+    "t": "Jaadugar A Witch in Mongolia",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A62nNZKHo1Ee8AjXHFAu6ykM66F.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A62nNZKHo1Ee8AjXHFAu6ykM66F.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_jaadugar_a_witch_in_mongolia&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 5,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_one_piece_a_serie_conteudo_extra",
+    "t": "ONE PIECE A Serie Conteudo Extra",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vsa5qAIgtSHPgXdf32RRjyyphkg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vsa5qAIgtSHPgXdf32RRjyyphkg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_one_piece_a_serie_conteudo_extra&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 5,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_condition_called_love",
+    "t": "A Condition Called Love",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4zdTYtknEf1egyPORghs9pPXNo5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4zdTYtknEf1egyPORghs9pPXNo5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_condition_called_love&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 4,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_brave_10_l",
+    "t": "Brave 10 [L]",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r2YEvFQfCOMlFteOiGMC3yTfDI5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r2YEvFQfCOMlFteOiGMC3yTfDI5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_brave_10_l&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 4,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta",
+    "t": "Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 4,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_marriagetoxin",
+    "t": "MARRIAGETOXIN",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bHCm3vz7Mg60wEO6HTm9g2g8IEH.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bHCm3vz7Mg60wEO6HTm9g2g8IEH.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_marriagetoxin&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 3,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_a_veterana_pitica_da_firma",
+    "t": "A Veterana Pitica da Firma",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2dA5Hhh2GIZPudcp4gRRV2RZl7o.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2dA5Hhh2GIZPudcp4gRRV2RZl7o.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_veterana_pitica_da_firma&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 2,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_meu_trabalho_no_caf_yuri",
+    "t": "Meu Trabalho no Café Yuri",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_meu_trabalho_no_caf_yuri&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sakugan",
+    "t": "Sakugan",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h4v0id7U9YL8se3kIviAqyMNiqe.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/h4v0id7U9YL8se3kIviAqyMNiqe.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sakugan&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_steel_ball_run_jojos_bizarre_adventure",
+    "t": "STEEL BALL RUN JoJos Bizarre Adventure",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nznX3fuGXUhQsbB1CZhRXzrV6S1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nznX3fuGXUhQsbB1CZhRXzrV6S1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_steel_ball_run_jojos_bizarre_adventure&ep=1&s=1",
+    "sinopse": "Anime oficial com transmissão de alta qualidade e episódios completos.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  }
+]

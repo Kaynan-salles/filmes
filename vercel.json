@@ -4,6 +4,11 @@
   "buildCommand": null,
   "outputDirectory": "WEB_PORTAL",
   "cleanUrls": true,
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "api/data/**"
+    }
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/WEB_PORTAL/(.*)", "destination": "/$1" }

@@ -135,6 +135,34 @@ def resolve_episode_stream(
     sources = [dict(r) for r in cur.fetchall()]
     conn.close()
 
+    # Fast-path instantâneo (<1ms): Se já possui fonte com stream_url direto (MP4/HLS oficial)
+    direct_sources = [s for s in sources if s.get("stream_url") and str(s.get("stream_url")).startswith("http")]
+    if direct_sources:
+        selected = next((s for s in direct_sources if s.get("audio_type") == preferred_audio), direct_sources[0])
+        return {
+            "success": True,
+            "stream_url": selected["stream_url"],
+            "player_type": "direct",
+            "provider": selected.get("provider", "oficial"),
+            "provider_label": "Oficial Direct CDN",
+            "audio_type": selected.get("audio_type", preferred_audio),
+            "quality": selected.get("quality", "1080p FHD"),
+            "quality_verified": True,
+            "available_sources": [
+                {
+                    "provider": s.get("provider", "oficial"),
+                    "provider_label": "Oficial Direct CDN",
+                    "quality": s.get("quality", "1080p FHD"),
+                    "quality_label": f"{s.get('quality', '1080p FHD')} (Verificado)",
+                    "audio_type": s.get("audio_type", preferred_audio),
+                    "player_type": "direct",
+                    "selected": (s["id"] == selected["id"])
+                }
+                for s in direct_sources
+            ],
+            "episode_id": episode_id
+        }
+
     # If only animefire or empty, auto-enrich with AnimesOnlineCC / AnimesDigital
     has_working_provider = any(s["provider"] in ("animesonlinecc", "animesdigital") for s in sources)
     if not has_working_provider:
