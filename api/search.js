@@ -129,7 +129,10 @@ module.exports = function handler(req, res) {
         if (!item.is_anime) {
           if (terms.every(t => item.s.includes(t))) {
             const sName = extractSeriesName(item.t).toLowerCase().replace(/[^a-z0-9]/g, '');
-            if (sName && matchedAnimeKeys.has(sName)) {
+            const isDup = sName && (matchedAnimeKeys.has(sName) || Array.from(matchedAnimeKeys).some(k =>
+              (k.length >= 5 && sName.includes(k)) || (sName.length >= 5 && k.includes(sName))
+            ));
+            if (isDup) {
               continue; // Evita duplicar anime oficial
             }
             results.push(item);

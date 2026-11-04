@@ -2819,6 +2819,10 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
       video.src = proxiedUrl;
       video.load();
       video.play().catch(() => { });
+    } else {
+      showPlayerError('Instabilidade temporária na transmissão. Clique abaixo para tentar novamente.', () => {
+        openPlayer(title, category, url, itemObj, customResumeSeconds);
+      });
     }
   };
 
@@ -3001,6 +3005,10 @@ function renderSeasonEpisodes(episodes, seriesGroup) {
 
 function getPlayableUrl(rawUrl, forceProxy = false) {
   if (!rawUrl) return '';
+  // Se for workers.dev, já possui HTTPS nativo com SSL Cloudflare e CORS liberado
+  if (rawUrl.includes('.workers.dev')) {
+    return rawUrl.replace(/^http:\/\//i, 'https://');
+  }
   // Se estiver rodando em HTTPS (ex: Vercel) ou forçado:
   // Navegadores bloqueiam streams HTTP (Mixed Content).
   // O proxy /api/stream resolve os redirecionamentos no backend e entrega via HTTPS.
