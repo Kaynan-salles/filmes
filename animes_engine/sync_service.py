@@ -312,8 +312,9 @@ def resolve_episode_stream(
             if "googlevideo.com" in cached.stream_url:
                 try:
                     with httpx.Client(timeout=2.0) as check_client:
-                        check_resp = check_client.get(cached.stream_url, headers={"User-Agent": "Mozilla/5.0"})
-                        if check_resp.status_code >= 400:
+                        ua = (cached.headers or {}).get("User-Agent") or "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        check_resp = check_client.get(cached.stream_url, headers={"User-Agent": ua, "Range": "bytes=0-10", "Referer": "https://www.blogger.com/"})
+                        if check_resp.status_code not in (200, 206, 302):
                             is_valid_cache = False
                             if cache_key in _STREAM_CACHE:
                                 del _STREAM_CACHE[cache_key]
@@ -377,14 +378,17 @@ def resolve_episode_stream(
                 is_playable = True
                 if resolution.player_type == "direct" and resolution.stream_url.startswith("http") and "example.com" not in resolution.stream_url:
                     try:
-                        probe_headers = {"User-Agent": "Mozilla/5.0"}
+                        ua = (resolution.headers or {}).get("User-Agent") or "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        probe_headers = {"User-Agent": ua, "Range": "bytes=0-100"}
                         if resolution.headers and "Referer" in resolution.headers:
                             probe_headers["Referer"] = resolution.headers["Referer"]
+                        elif "googlevideo.com" in resolution.stream_url:
+                            probe_headers["Referer"] = "https://www.blogger.com/"
                         if resolution.headers and "Origin" in resolution.headers:
                             probe_headers["Origin"] = resolution.headers["Origin"]
-                        with httpx.Client(timeout=1.5) as probe_client:
+                        with httpx.Client(timeout=2.5) as probe_client:
                             probe_resp = probe_client.get(resolution.stream_url, headers=probe_headers, follow_redirects=True)
-                            if probe_resp.status_code >= 400 or probe_resp.status_code in (401, 403, 404, 410, 500, 502, 503):
+                            if probe_resp.status_code not in (200, 206, 302):
                                 is_playable = False
                                 last_error = f"Stream do servidor {cand['provider_label']} indisponível (HTTP {probe_resp.status_code})"
                     except Exception:

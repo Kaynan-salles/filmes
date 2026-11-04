@@ -311,519 +311,150 @@
       "id": "animes",
       "nome": "🌸 Animes",
       "tipo": "animes",
-      "total": 1657,
+      "total": 1658,
       "destaques": [
         {
-          "id": "ani_zombie_sagashitemasu_s1",
-          "t": "#Zombie Sagashitemasu",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2026/10/c26lzZbNEJTX5zxhlLSYEZerS3V-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2026/10/c26lzZbNEJTX5zxhlLSYEZerS3V-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_zombie_sagashitemasu_s1&ep=1&s=1",
-          "sinopse": "Treze anos após o “Dia Vermelho”, quando 90% da humanidade foi infectada e morta por uma misteriosa doença infecciosa, os sobreviventes viviam em aldeias isoladas, longe das cidades. Aki, que faz parte de uma nova geração que não se lembra de nada do mundo antes de sua destruição, parte com seus amigos próximos Haru e Natsuki para deixar a vila em busca de seu pai desaparecido. O mundo exterior, infestado de zumbis, é vasto e belo! O que eles pretendem fazer nessa situação desesperadora?",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 5,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Aventura",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Aventura",
-            "Legendado",
-            "Letra Z",
-            "Shounen"
-          ],
+          "id": "ani_magical_explorer_s1",
+          "t": "Magical Explorer",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/1mcErCeGi77UmV50E81fwvftdp2.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/1mcErCeGi77UmV50E81fwvftdp2.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_magical_explorer_s1&ep=1&s=1",
+          "sinopse": "Um jogador apaixonado por conteúdo erótico decide se tornar o galã mais poderoso do jogo ao renascer em seu eroge favorito.",
+          "ano": 2026,
+          "total_episodios": 6,
           "is_anime": true
         },
         {
-          "id": "ani_009_1_s1",
-          "t": "009-1",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/rHRv679n9jCvhO2FvRlzbMayFdd-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/rHRv679n9jCvhO2FvRlzbMayFdd-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_009_1_s1&ep=1&s=1",
-          "sinopse": "009-1 Todos os Episodios Online, Assistir 009-1 Anime Completo.A história ocorre no meio de uma guerra fria num futuro distante, quando o mundo foi dividido em dois blocos, leste e oeste. No meio de guerras entre espiões, surge uma bela espiã de uma agência secreta de inteligência chamada Mylene Hoffmann, code name 009-1. Ela é uma das agentes do grupo feminino \\”Grupo Número 9\\”, um dos dez grupos na Organização Zero Zero (uma organização do Bloco Ocidental). Quase todo o seu corpo foi mecanizado e a maioria das partes são equipadas com funções especiais, necessárias para as atividades de um espião. Ela tem amnésia e é uma das agentes que mais se sobressai dentro da Organização Zero Zero.",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 12,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Ficção científica",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Ação",
-            "Aventura",
-            "Dublado",
-            "Ficção científica",
-            "Legendado",
-            "Mecha",
-            "Seinen"
-          ],
-          "is_anime": true
-        },
-        {
-          "id": "ani_07_ghost_s1",
-          "t": "07 Ghost",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/v4pW812Jpqpf3Ih5gYGCu51kdDl-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/v4pW812Jpqpf3Ih5gYGCu51kdDl-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_07_ghost_s1&ep=1&s=1",
-          "sinopse": "07 Ghost Todos os Episodios Online, Assistir 07 Ghost Anime Completo.Teito Klein, é um jovem aluno da academia militar que não possui grandes aspirações. Tratado como ralé pelos colegas por sua posição inferior na sociedade, Teito, depende apenas de seu amigo Mikage, com quem conta para os piores momentos.",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 25,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Sobrenatural",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Ação",
-            "Demônios",
-            "Fantasia",
-            "Legendado",
-            "Magia",
-            "Militar",
-            "Policial",
-            "Shoujo",
-            "Sobrenatural"
-          ],
-          "is_anime": true
-        },
-        {
-          "id": "ani_100_man_no_inochi_no_ue_ni_ore_wa_tatte_iru_s1",
-          "t": "100-man no Inochi no Ue ni Ore wa Tatte Iru",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/10/oEWlre1wLWCPRT9l5wQl7qpo70e-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/10/oEWlre1wLWCPRT9l5wQl7qpo70e-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_100_man_no_inochi_no_ue_ni_ore_wa_tatte_iru_s1&ep=1&s=1",
-          "sinopse": "100-man no Inochi no Ue ni Ore wa Tatte Iru Todos os Episodios Online, Assistir 100-man no Inochi no Ue ni Ore wa Tatte Iru Anime Completo.Obrigado a jogar um jogo estranho, Yotsuya Yusuke se vê em outro mundo junto com duas de suas colegas de classe. Um estranho ser aparece diante dele e lhe diz que deve passar por fases ou a morte lhe aguarda. O prêmio para a conclusão de cada fase é… Uma pergunta!?",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 12,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Shounen",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Ação",
-            "Drama",
-            "Fantasia",
-            "Legendado",
-            "Shounen"
-          ],
-          "is_anime": true
-        },
-        {
-          "id": "ani_11eyes_s1",
-          "t": "11eyes",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/upqQCMoGrOcxxDLkPjTuXqyM6Ur-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/upqQCMoGrOcxxDLkPjTuXqyM6Ur-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_11eyes_s1&ep=1&s=1",
-          "sinopse": "11eyes Todos os Episodios Online, Assistir 11eyes Anime Completo.A história é sobre um grupo de jovens que foram parar em um mundo desconhecido, chamado Akai Yoru. Para que os jovens possam sobreviver a este pesadelo, eles decidem enfrentar os cavaleiros negros, aqueles que planejam exterminá-los.",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 12,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Ecchi",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Ação",
-            "Aventura",
-            "Ecchi",
-            "Fantasia",
-            "Ficção científica",
-            "Legendado",
-            "Sobrenatural",
-            "Super Poderes"
-          ],
-          "is_anime": true
-        },
-        {
-          "id": "ani_12_sai_chicchana_mune_no_tokimeki_s1",
-          "t": "12-Sai. Chicchana Mune no Tokimeki",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/78391l-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/78391l-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_12_sai_chicchana_mune_no_tokimeki_s1&ep=1&s=1",
-          "sinopse": "12-Sai. Chicchana Mune no Tokimeki Todos os Episodios Online, Assistir 12-Sai. Chicchana Mune no Tokimeki Anime Completo.Hanabi, uma menina da sexta série que está na pré-adolescência. Ela acaba vendo acidentalmente um beijo entre professores na sala de aula que a fazem pensar sobre isso, e experimenta mudanças fisiológicas antes de seus amigos. A série retrata preocupações inocentes de garotas com 12 anos de idade e seu primeiro amor.",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 24,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Shoujo",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Drama",
-            "Escolar",
-            "Legendado",
-            "Romance",
-            "Shoujo"
-          ],
-          "is_anime": true
-        },
-        {
-          "id": "ani_16bit_sensation_another_layer_s1",
-          "t": "16bit Sensation: Another Layer",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2023/10/bvvaUQyG1IOYS3U9aIaUIZwrEmU-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2023/10/bvvaUQyG1IOYS3U9aIaUIZwrEmU-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_16bit_sensation_another_layer_s1&ep=1&s=1",
-          "sinopse": "O ano: 1992. A estudante universitária: Meiko Uehara. O trabalho de meio expediente: Caixa numa loja de computadores. Ou era o que ela pensava. Enquanto explorava o segundo andar da loja, Meiko encontra Alcohol Soft, um desenvolvedor de jogos adultos para PC. Ela substituiu um artista num acaso do destino. Fora do seu normal e chegando perto de um prazo, Meiko corre para completar o jogo e mostrar seu valor. O destino de sua carreira depende disso!",
-          "ano": 2024,
-          "temporadas": 1,
+          "id": "ani_dragon_ball_super_beerus_s1",
+          "t": "Dragon Ball Super: Beerus",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/w5ai45092PIlV1Vbt7kswry2C03.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/w5ai45092PIlV1Vbt7kswry2C03.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_dragon_ball_super_beerus_s1&ep=1&s=1",
+          "sinopse": "Quando Beerus, o Deus da Destruição, desperta em busca de um rival à altura, Goku e seus amigos enfrentam uma batalha épica para impedi-lo de destruir a Terra.",
+          "ano": 2026,
           "total_episodios": 4,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Comédia",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Comédia",
-            "Legendado"
-          ],
           "is_anime": true
         },
         {
-          "id": "ani_2_5_jigen_no_ririsa_s1",
-          "t": "2.5-jigen no Ririsa",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2024/07/o27VT52sXxnhI2iWBLLawKsSi3b-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2024/07/o27VT52sXxnhI2iWBLLawKsSi3b-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_2_5_jigen_no_ririsa_s1&ep=1&s=1",
-          "sinopse": "“Eu não tenho interesse em garotas de verdade!” Afirma Okumura, o presidente do clube de mangá da escola. Ele é o típico otaku, obcecado por uma personagem de mangá 2D sexy (fictícia) conhecido como Liliel. Então o novo ano escolar começa, e uma garota 3D (real!) chamada Lilysa cuja paixão é cosplay se junta ao clube. Lilysa convence Okumura a se tornar seu fotógrafo e adivinha quem é seu personagem de mangá favorito? Não só isso, mas Lilysa gosta de modelar poses fetichistas! Os limites entre 2D e 3D começam a se confundir à medida que esta comédia romântica de sangue quente se desenrola.",
-          "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 24,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Ecchi",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Comédia",
-            "Ecchi",
-            "Escolar",
-            "Harém",
-            "Legendado",
-            "Shounen"
-          ],
+          "id": "ani_the_laid_off_cheat_granting_mage_enjoys_a_second_lease_o",
+          "t": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/rncb111IIBmIIO9I9ENW0Xc8mca.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/rncb111IIBmIIO9I9ENW0Xc8mca.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_the_laid_off_cheat_granting_mage_enjoys_a_second_lease_o&ep=1&s=1",
+          "sinopse": "Rein, o Encantador, é um mago de suporte capaz de aprimorar armas e armaduras. Mas quando é demitido de sua guilda pelo simples motivo de já ter encantado tudo o que eles possuíam, ele decide retomar o poder para si mesmo... literalmente! Rein reverte todos os encantamentos que já aplicou nos equipamentos de seus companheiros de guilda, recuperando os pontos de bônus para si mesmo. Mas será que ele realmente não tem nada melhor para encantar com eles do que algumas roupas simples e uma espada de cobre?",
+          "ano": 2026,
+          "total_episodios": 4,
           "is_anime": true
         },
         {
-          "id": "ani_22_7_s1",
-          "t": "22/7",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/mLnAo4y8STzplbri7s28wofE5g6-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/mLnAo4y8STzplbri7s28wofE5g6-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_22_7_s1&ep=1&s=1",
-          "sinopse": "22/7 Todos os Episodios Online, Assistir 22/7 Anime Completo.Um belo dia, Miu Takigawa é informada de que foi escolhida para ser membro de um novo projeto. Descrente da situação, ela segue para o local indicado na carta. Lá, diante de um prédio gigante e envolto em segredos, ela encontra sete outras garotas, convocadas da mesma maneira.",
+          "id": "ani_solo_leveling_s1",
+          "t": "Solo Leveling",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/geCRueV3ElhRTr0xtJuPxJ8HGda.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/geCRueV3ElhRTr0xtJuPxJ8HGda.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_solo_leveling_s1&ep=1&s=1",
+          "sinopse": "Dez anos atrás, após a aparição do Portal que conectou o mundo real com o mundo dos monstros, pessoas comuns receberam poderes de caçadores. Sung Jinwoo, conhecido como o caçador mais fraco, acorda em uma masmorra dupla misteriosa.",
           "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 12,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Musical",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "Legendado",
-            "Musical"
-          ],
+          "total_episodios": 38,
           "is_anime": true
         },
         {
-          "id": "ani_25_sai_no_joshikousei_s1",
-          "t": "25-sai no Joshikousei",
-          "catNome": "ANIMES | Catálogo Oficial",
-          "p": "https://animesonlinecc.to/wp-content/uploads/2020/03/4tYjyKn8vKPeG02EvtGGh8vpggR-185x278.jpg",
-          "banner": "https://animesonlinecc.to/wp-content/uploads/2020/03/4tYjyKn8vKPeG02EvtGGh8vpggR-185x278.jpg",
-          "u": "/api/animes/resolve?anime_id=ani_25_sai_no_joshikousei_s1&ep=1&s=1",
-          "sinopse": "25-sai no Joshikousei Todos os Episodios Online, Assistir 25-sai no Joshikousei Anime Completo.O romance gira em torno de Hana Natori, uma mulher madura de 25 anos, cujo primo se recusa a ir ao ensino médio. Hana substitui seu primo e frequenta a escola tomando o lugar dele. No seu primeiro dia, porém, o plano de Hana é descoberto por seu ex-colega de escola Okito Kanie – que é professor de história na escola onde Hana vai.",
+          "id": "ani_tokyo_revengers_s1",
+          "t": "Tokyo Revengers",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/XbjlgUJknGCv7cNuinxdaFUFNt.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/XbjlgUJknGCv7cNuinxdaFUFNt.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_tokyo_revengers_s1&ep=1&s=1",
+          "sinopse": "Num momento difícil da sua vida, Takemichi fica ainda pior ao saber que a menina que ele amava desde a época da escola foi morta pela gangue Tokyo Manji. No dia seguinte, ao esperar o trem na estação, Takemichi é empurrado nos trilhos. Mas, em vez de morrer, ele percebe que viajou no tempo, voltando para seus anos de escola. É a chance para Takemichi reescrever sua história e tentar evitar a morte da amada.",
+          "ano": 2021,
+          "total_episodios": 59,
+          "is_anime": true
+        },
+        {
+          "id": "ani_jujutsu_kaisen_s1",
+          "t": "Jujutsu Kaisen",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_jujutsu_kaisen_s1&ep=1&s=1",
+          "sinopse": "Sofrimento, arrependimento, vergonha: os sentimentos negativos dos humanos tornam-se Maldições... Yuji Itadori engole o dedo de Ryomen-Sukuna para salvar seus amigos e ingressa no Colégio Técnico de Feitiçaria de Tóquio.",
+          "ano": 2020,
+          "total_episodios": 60,
+          "is_anime": true
+        },
+        {
+          "id": "ani_black_clover_s1",
+          "t": "Black Clover",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/jbrMpErsaPrzKjf96zpE452Un1o.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/jbrMpErsaPrzKjf96zpE452Un1o.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_black_clover_s1&ep=1&s=1",
+          "sinopse": "Num mundo onde magia é tudo, Asta e Yuno são abandonados em uma igreja no mesmo dia. Enquanto Yuno possui poderes mágicos excepcionais, Asta é a única pessoa do mundo todo desprovida desse dom. Aos quinze anos, ambos recebem grimórios - livros mágicos que amplificam os poderes do detentor. Asta recebe um raro grimório de anti-magia, capaz de negar e repelir os feitiços do oponente. Dois opostos que nutrem uma rivalidade amigável, Yuno e Asta estão prontos para encarar os mais difíceis desafios para conquistar seu sonho em comum: tornar-se o Rei dos Feiticeiros. Desistir não é opção!",
+          "ano": 2017,
+          "total_episodios": 175,
+          "is_anime": true
+        },
+        {
+          "id": "ani_jojo_s_bizarre_adventure_s1",
+          "t": "JoJo's Bizarre Adventure",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://image.tmdb.org/t/p/original/5scPVhF58v56cKDsPrQAoRzpVpS.jpg",
+          "banner": "https://image.tmdb.org/t/p/original/5scPVhF58v56cKDsPrQAoRzpVpS.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_jojo_s_bizarre_adventure_s1&ep=1&s=1",
+          "sinopse": "A saga que se inicia na Inglaterra do século XIX, contando a rivalidade entre Jonathan Joestar, um jovem aristocrata, e Dio Brando, um garoto plebeu que foi acolhido pelo pai de Jonathan quando tornou-se órfão. Insatisfeito com sua posição social, a ambição insaciável e o desejo de dominação de Dio o levam a estudar os poderes sobrenaturais de uma antiga máscara asteca de pedra presente na mansão dos Joestar - um artefato que mudará para sempre o destino de Dio e das futuras gerações dos Joestar.",
+          "ano": 2012,
+          "total_episodios": 211,
+          "is_anime": true
+        },
+        {
+          "id": "ani_naruto_shippuden_s1",
+          "t": "Naruto Shippuden",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://animesonlinecc.to/wp-content/uploads/2019/09/ic9Gb4Zz09ns3JPYHdax8u5kt0n-185x278.jpg",
+          "banner": "https://animesonlinecc.to/wp-content/uploads/2019/09/ic9Gb4Zz09ns3JPYHdax8u5kt0n-185x278.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_naruto_shippuden_s1&ep=1&s=1",
+          "sinopse": "Naruto Shippuden Todos os Episodios Online, Assistir Naruto Shippuden Anime Completo, Assistir Naruto Shippuden Dublado Online.Naruto Shippuuden ocorre 2 anos e meio após Naruto ter ficado para  treinar com Jiraiya. Após seu retorno, Naruto descobre que seus amigos  shinobi’s o superaram na classificação, e ele caiu para trás. No  entanto, com apenas 6 meses para resgatar Sasuke, Naruto tem de  enfrentar inimigos ainda mais perigosos. O plano da Akatsuki se revela  lentamente e os perigos surgem mais do que nunca!",
           "ano": 2024,
-          "temporadas": 1,
-          "total_episodios": 12,
-          "generos": [
-            "Legendado",
-            "Dublado",
-            "Legendado",
-            "Dublado",
-            "Ecchi",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            "+18",
-            "Ecchi",
-            "Escolar",
-            "Legendado",
-            "Romance"
-          ],
+          "total_episodios": 500,
+          "is_anime": true
+        },
+        {
+          "id": "ani_bleach_s1",
+          "t": "Bleach",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://animesonlinecc.to/wp-content/uploads/2019/06/2EewmxXe72ogD0EaWM8gqa0ccIw-185x278.jpg",
+          "banner": "https://animesonlinecc.to/wp-content/uploads/2019/06/2EewmxXe72ogD0EaWM8gqa0ccIw-185x278.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_bleach_s1&ep=1&s=1",
+          "sinopse": "Ichigo Kurosaki é um garoto de 15 anos que tem uma estranha capacidade de ver, tocar e falar com espíritos de pessoas mortas. Logo que a shinigami Rukia Kuchiki toma conhecimento dos poderes de Ichigo, vai atrás dele para investigar, e acaba em uma luta com um Hollow que foi atraído pelo forte poder espiritual de Ichigo. Antes de ser derrotada pela criatura, Rukia passa seus poderes a Ichigo, o qual se torna um shinigami, e após derrotar o Hollow ingressa em uma jornada para proteger os humanos e os espíritos da ameaça dos Hollows.",
+          "ano": 2024,
+          "total_episodios": 366,
+          "is_anime": true
+        },
+        {
+          "id": "ani_fairy_tail_s1",
+          "t": "Fairy Tail",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://animesonlinecc.to/wp-content/uploads/2019/08/703mVJP8UyP1b1hEJi6aTrf0MQ1-185x278.jpg",
+          "banner": "https://animesonlinecc.to/wp-content/uploads/2019/08/703mVJP8UyP1b1hEJi6aTrf0MQ1-185x278.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_fairy_tail_s1&ep=1&s=1",
+          "sinopse": "Fairy Tail Todos os Episodios Online, Assistir Fairy Tail Anime Completo, Assistir Fairy Tail Online.Lucy é uma garota de 16 anos que quer se tornar uma maga completa,  para isso, ela precisa entrar em uma guilda de magos. Um dia visitando a  cidade de Harujion, ela conhece Natsu, um jovem rapaz que fica  facilmente enjoado com qualquer tipo de transporte. Mas Natsu não é  apenas uma criança fraca, ele é um membro de uma das maiores e infames  guildas: FAIRY TAIL.",
+          "ano": 2024,
+          "total_episodios": 328,
+          "is_anime": true
+        },
+        {
+          "id": "ani_dragon_ball_z_dublado_s1",
+          "t": "Dragon Ball Z Dublado",
+          "catNome": "🌸 ANIMES | Catálogo Oficial",
+          "p": "https://animesonlinecc.to/wp-content/uploads/2019/07/at8qCUXBEbJCY0Hn9qDvzQ6EQ4H-185x278.jpg",
+          "banner": "https://animesonlinecc.to/wp-content/uploads/2019/07/at8qCUXBEbJCY0Hn9qDvzQ6EQ4H-185x278.jpg",
+          "u": "/api/animes/resolve?anime_id=ani_dragon_ball_z_dublado_s1&ep=1&s=1",
+          "sinopse": "Dragon Ball Z Dublado Todos os Episodios Online, Assistir Dragon Ball Z Dublado Anime Completo, Assistir Dragon Ball Z Online.Dragon Ball Z é a continuação de Dragon Ball, cinco anos após Goku ter derrotado Piccolo. Goku está mais velho e se casou com Chichi, como havia prometido no ultimo Tenkaichi Budokai de Dragon Ball. Em Dragon Ball Z as histórias não são mais tão humorísticas e começam a ter mais ação.",
+          "ano": 2024,
+          "total_episodios": 291,
           "is_anime": true
         }
       ]
@@ -833,37 +464,17 @@
       "tipo": "filmes",
       "nome": "Filmes Lançamentos",
       "pasta": "01_FILMES/01_Lancamentos",
-      "total": 1058,
+      "total": 405,
       "destaques": [
-        {
-          "t": "A Casa da Armadilha",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k1sUHYBO8heFYs0ni1bE8K3ioFq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/124.mp4"
-        },
-        {
-          "t": "A Carta de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kU9HRH9WLoFc6GQNyYsNzkaVns2.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/130.mp4"
-        },
-        {
-          "t": "A Casa dos Segredos Enterrados",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTSvLQrZb02MayBilIg5U8ltRE3.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/136.mp4"
-        },
-        {
-          "t": "10DANCE",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iQOIOz8BZ2QLMyFJ7Leo9izSyti.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/140.mp4"
-        },
-        {
-          "t": "31 Minutos Natal Escaldante",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lt0IpOhrvhPOzQkQOvg2xK25bZ1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/144.mp4"
-        },
         {
           "t": "A Casa do Engano",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f3bCGzvwk03UzuLpiKyAGKP7KqL.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/148.mp4"
+        },
+        {
+          "t": "A Convidada",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVb7aEM4W0jTHZjSV5iRlRToRCx.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/176.mp4"
         },
         {
           "t": "A Ascensão dos Mortos",
@@ -871,29 +482,39 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/152.mp4"
         },
         {
-          "t": "A Arte das Oito Armas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iFbaWOqD6f3wdNfSdHA22dru0kL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/156.mp4"
+          "t": "10DANCE",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iQOIOz8BZ2QLMyFJ7Leo9izSyti.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/140.mp4"
         },
         {
-          "t": "A Casa Mágica da Gabby O Filme",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/51drPz72PaeUGMQlu9QwwO2RvFP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/158.mp4"
+          "t": "A Família McMullen",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7DB9uAse9ST0u1opoU2ufDpYMSe.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/184.mp4"
         },
         {
-          "t": "A Armadilha do Diabo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3aSpIz1wwQ93lFNpX342bwEC1ZM.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/160.mp4"
+          "t": "A Garota no Banco de Trás",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nPKQtLpcHAcue4va52E50Aifde3.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/188.mp4"
         },
         {
-          "t": "A Cidade que Ainda Sonha",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jV56uStfbLJTZHtXXWATlFVd9dC.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/164.mp4"
+          "t": "31 Minutos Natal Escaldante",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lt0IpOhrvhPOzQkQOvg2xK25bZ1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/144.mp4"
         },
         {
-          "t": "A Corrida dos 100 Metros",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dkBRX077Px0l766Ydbf25VVB9GG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/168.mp4"
+          "t": "A Lista Perversa do Sr. Scrooge",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jJuOMEwjVe1Mzp6xgt23MDrjplM.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/196.mp4"
+        },
+        {
+          "t": "A Maldição da Primeira Colheita",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eOPXRsQjIZ4Fm6TWpG5V5VP4zJp.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/200.mp4"
+        },
+        {
+          "t": "A Leste de Wall",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/QdVvAZ7K8LLude9Oum94iVR0xO.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/208.mp4"
         }
       ]
     },
@@ -902,67 +523,57 @@
       "tipo": "filmes",
       "nome": "Filmes 4K Ultra HD",
       "pasta": "01_FILMES/02_4K_UHD",
-      "total": 1684,
+      "total": 427,
       "destaques": [
         {
-          "t": "22 de Julho 4K [Hybrid]",
-          "p": "https://image.tmdb.org/t/p/w500/vRTNX2KhxwSXynzxWQrJMW5kLFi.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53788.mp4"
+          "t": "A Arte de Amar 4K",
+          "p": "https://image.tmdb.org/t/p/w500/8B5kcNrZUocXZMG80NWhroz94mf.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53891.mp4"
         },
         {
-          "t": "1 - Harry Potter E A Pedra Filosofal 4K",
-          "p": "https://image.tmdb.org/t/p/w500/vRTNX2KhxwSXynzxWQrJMW5kLFi.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53795.mp4"
+          "t": "A Chamada 4K [Hybrid]",
+          "p": "https://image.tmdb.org/t/p/w500/wK3TtT1xoeaXjb0Rn2UA5Df0TU4.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53947.mp4"
         },
         {
-          "t": "10 Dias de um Homem Mau 4K",
-          "p": "https://image.tmdb.org/t/p/w500/fl0vUwiKyxEauecs9UCh8cGRzZH.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53796.mp4"
+          "t": "A Última Fonte 4K [HDR]",
+          "p": "https://image.tmdb.org/t/p/w500/q2SPbWtkYdB7k5YZlJ6J4vjr1yO.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54332.mp4"
         },
         {
-          "t": "1985 4K [HDR]",
-          "p": "https://image.tmdb.org/t/p/w500/mV7QRq3nI238vxlbyXRYFQKfbyL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53801.mp4"
+          "t": "A Vida Em Um Ano 4K [HDR]",
+          "p": "https://image.tmdb.org/t/p/w500/dfmbwqkalJRfYqFSwNhRn4QYK30.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54321.mp4"
         },
         {
-          "t": "15h17 - Trem Para Paris 4K",
-          "p": "https://image.tmdb.org/t/p/w500/bLfcN4pTbG78sxS4rQGciJCoNAb.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53805.mp4"
+          "t": "Air A História Por Trás do Logo 4K",
+          "p": "https://image.tmdb.org/t/p/w500/8OGQCOp6BxwvekhZBQCzVd77Y6l.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54391.mp4"
         },
         {
-          "t": "100 Coisas para Fazer Antes de Virar Zumbi 4K [Hybrid]",
-          "p": "https://image.tmdb.org/t/p/w500/lwyleO7PqNNkX66stvANWP01p9I.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53807.mp4"
+          "t": "Assassino por Acaso 4K",
+          "p": "https://image.tmdb.org/t/p/w500/q3aYbKPczQrae0N142XHYXbWbT5.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54715.mp4"
         },
         {
-          "t": "2 Corações 4K",
-          "p": "https://image.tmdb.org/t/p/w500/zpujQ6Wd4UuAykFpgoICJVJ9s1f.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53811.mp4"
+          "t": "Awake 4K [Hybrid]",
+          "p": "https://image.tmdb.org/t/p/w500/txABuWsMwUuhJ0lwkPxQroWsN7Z.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54788.mp4"
         },
         {
-          "t": "007 Sem Tempo para Morrer 4K [HDR]",
-          "p": "https://image.tmdb.org/t/p/w500/ymiLbqoSxGSkMeM2vW6JWpmnPjL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53815.mp4"
+          "t": "Back to Black 4K",
+          "p": "https://image.tmdb.org/t/p/w500/xHQEeUT3Ac4fTY72UeNrI75xLtE.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54796.mp4"
         },
         {
-          "t": "1917 4K",
-          "p": "https://image.tmdb.org/t/p/w500/m6VVgmwNdOWvLo8nlheLPQU5wr7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53818.mp4"
+          "t": "Barbie 4K",
+          "p": "https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54832.mp4"
         },
         {
-          "t": "27 Noites 4K",
-          "p": "https://image.tmdb.org/t/p/w500/fo2MUxHn8sTaNYldpBCd5Q4Nu1y.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53823.mp4"
-        },
-        {
-          "t": "2 - Harry Potter E A Camera Secreta 4K",
-          "p": "https://image.tmdb.org/t/p/w500/811j0Jf2D0mK1U6RxXJoZgOB29n.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53830.mp4"
-        },
-        {
-          "t": "3 - Harry Potter E O Prisioneiro De Azkaban 4K",
-          "p": "https://image.tmdb.org/t/p/w500/811j0Jf2D0mK1U6RxXJoZgOB29n.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53837.mp4"
+          "t": "Bela Vingança 4K [HDR]",
+          "p": "https://image.tmdb.org/t/p/w500/r7FwclLTWB8i6XfBNTtUsyONlgN.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/54894.mp4"
         }
       ]
     },
@@ -971,27 +582,22 @@
       "tipo": "filmes",
       "nome": "Filmes de Ação",
       "pasta": "01_FILMES/03_Acao",
-      "total": 2273,
+      "total": 727,
       "destaques": [
+        {
+          "t": "007 Contra Octopussy",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/orK0ZbPR6teSzBH2ZsWlVY4m5GL.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1381.mp4"
+        },
         {
           "t": "007 Contra GoldenEye",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l9ouf5HFQQWKLD2I8UkSzj7JqCS.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1338.mp4"
         },
         {
-          "t": "007 Contra Goldfinger",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fqVT4kCMNGnUODKe1qASGIPr6Ri.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1342.mp4"
-        },
-        {
-          "t": "007 - Um Novo Dia Para Morrer",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p5XYHwDfsOjItfYQAOlLwMZYb3d.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1346.mp4"
-        },
-        {
-          "t": "007 Contra o Foguete da Morte",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iEXmD5WF2YOnfblMn8ZBSzEY4uk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1350.mp4"
+          "t": "007 Contra o Satânico Dr. No",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hO3fOAHnmhMkB3NuBzxlsKesrCR.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1377.mp4"
         },
         {
           "t": "007 A Serviço Secreto de Sua Majestade",
@@ -999,9 +605,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1354.mp4"
         },
         {
-          "t": "007 Contra a Chantagem Atômica",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ot8pEGo9Mljwkz7Ak8hv4qjBmsu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1358.mp4"
+          "t": "007 - Um Novo Dia Para Morrer",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p5XYHwDfsOjItfYQAOlLwMZYb3d.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1346.mp4"
         },
         {
           "t": "007 - O Amanhã Nunca Morre",
@@ -1009,19 +615,14 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1362.mp4"
         },
         {
-          "t": "007 - Permissão para Matar",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vqGuzJmFGpquACrL89W8bhhbSn2.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1366.mp4"
-        },
-        {
           "t": "007 Cassino Royale",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7b3qmLlvm2lvJ2gxsKQ42S3RTKR.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1370.mp4"
         },
         {
-          "t": "+Velozes +Furiosos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wDWAA5QApz5L5BKfFaaj8HJCAQM.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1372.mp4"
+          "t": "007 Contra o Foguete da Morte",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iEXmD5WF2YOnfblMn8ZBSzEY4uk.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1350.mp4"
         },
         {
           "t": "007 Contra o Homem com a Pistola de Ouro",
@@ -1029,9 +630,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1373.mp4"
         },
         {
-          "t": "007 Contra o Satânico Dr. No",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hO3fOAHnmhMkB3NuBzxlsKesrCR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1377.mp4"
+          "t": "+Velozes +Furiosos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wDWAA5QApz5L5BKfFaaj8HJCAQM.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/1372.mp4"
         }
       ]
     },
@@ -1040,47 +641,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Animação",
       "pasta": "01_FILMES/04_Animacao",
-      "total": 1125,
+      "total": 241,
       "destaques": [
         {
-          "t": "101 Dálmatas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yvNjHSpg6uhwmrMXdJczMRsBKQn.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8303.mp4"
-        },
-        {
-          "t": "100% Lobo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n1oFUoYmj4JuJl5T417VQnZNCgB.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8308.mp4"
-        },
-        {
-          "t": "A Bela e a Fera (1991)",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8JkXzfzwpZNZV72vSbG5c3Vn6Tt.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8312.mp4"
-        },
-        {
-          "t": "A Abelha Maya O Filme",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/smg2Uf596BuwztwQmb8lt2wAzDk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8316.mp4"
-        },
-        {
-          "t": "A Abelhinha Maya O Filme",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/68ot38BwgfZjkIYRiuvXCtKDxCL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8320.mp4"
-        },
-        {
-          "t": "A Caminho da Lua",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3ufzsrhrIIdvkP1jz0t7ipppQil.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8325.mp4"
-        },
-        {
-          "t": "A Charlie Brown Celebration",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2FJLTvWErabgabH6Z7jibqMj5jq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8329.mp4"
-        },
-        {
-          "t": "A Casa Monstro",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9aGEF4J3ZYBs8sakzjJwTlH9b3g.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8333.mp4"
+          "t": "A Dama e o Vagabundo",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qKBA03V9LvfpvcNfUgAwdydRSA1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8350.mp4"
         },
         {
           "t": "a Cidade Sem Luz",
@@ -1088,19 +654,44 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8338.mp4"
         },
         {
+          "t": "A Casa Monstro",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9aGEF4J3ZYBs8sakzjJwTlH9b3g.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8333.mp4"
+        },
+        {
           "t": "a Concha de Sapatos",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8hIj0OJI6NDMqOQTt9miZlAVIQP.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8342.mp4"
         },
         {
-          "t": "A Dança dos Esqueletos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m1qjVAp4AeOQF79QwinIxZDbUAN.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8346.mp4"
+          "t": "A Caminho da Lua",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3ufzsrhrIIdvkP1jz0t7ipppQil.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8325.mp4"
         },
         {
-          "t": "A Dama e o Vagabundo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qKBA03V9LvfpvcNfUgAwdydRSA1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8350.mp4"
+          "t": "A Era do Gelo 3",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pffgkuNovOveWiKSKCOsCogWBPQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8362.mp4"
+        },
+        {
+          "t": "A Era do Gelo 4",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l14ogt8rD9Fv3OE2jyx1ZrNScEO.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8363.mp4"
+        },
+        {
+          "t": "A Charlie Brown Celebration",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2FJLTvWErabgabH6Z7jibqMj5jq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8329.mp4"
+        },
+        {
+          "t": "A Lenda da Serpente",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2bCeheMCFvpHf3KxxzfiqhJJSuh.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8437.mp4"
+        },
+        {
+          "t": "A Menina e o Dragão",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m6Hc2Ta5PiMaqMLeudG9dOIAAOp.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/8460.mp4"
         }
       ]
     },
@@ -1109,22 +700,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Aventura",
       "pasta": "01_FILMES/05_Aventura",
-      "total": 96,
+      "total": 60,
       "destaques": [
-        {
-          "t": "A Cidade Dourada",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fbcuQoaHYcapCnAKgHy8r9rZq7E.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11865.mp4"
-        },
         {
           "t": "9 A Salvação",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6fe0PbMkDSaGEM6kj5RM5ToMuAL.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11869.mp4"
-        },
-        {
-          "t": "A Bússola Mágica",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/29aWzjCPOTvhglqLtSVf3MdJ81d.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11871.mp4"
         },
         {
           "t": "A Fera",
@@ -1132,14 +713,19 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11874.mp4"
         },
         {
+          "t": "A Irmandade do Dragão",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tXn6VkbTmH7wuoqCuTrTxmBPemG.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11895.mp4"
+        },
+        {
           "t": "A Flauta Mágica",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kLmGDjivlcIbrQUS3NQ0xkjOqda.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11878.mp4"
         },
         {
-          "t": "A Maldição de Bridge Hollow",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f4hdxB3gErjNJtfWBU9rMdhiNbU.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11882.mp4"
+          "t": "A Bússola Mágica",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/29aWzjCPOTvhglqLtSVf3MdJ81d.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11871.mp4"
         },
         {
           "t": "a Menina Chamada Passarinha",
@@ -1147,19 +733,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11886.mp4"
         },
         {
-          "t": "A Lenda do Cavaleiro Negro",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q4lnEYzPdvgvxFWlPGsdnDdbxEn.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11891.mp4"
-        },
-        {
-          "t": "A Irmandade do Dragão",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tXn6VkbTmH7wuoqCuTrTxmBPemG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11895.mp4"
-        },
-        {
-          "t": "A Menina Invisível",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ki7rdw9z0RR131eNy67xvI2bl3Q.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11900.mp4"
+          "t": "A Maldição de Bridge Hollow",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f4hdxB3gErjNJtfWBU9rMdhiNbU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11882.mp4"
         },
         {
           "t": "Aladdin (2019)",
@@ -1167,9 +743,14 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11904.mp4"
         },
         {
-          "t": "Acampamento Intergaláctico",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bm77tBJy28DA1DzP7qExKOPWsEL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11909.mp4"
+          "t": "A Cidade Dourada",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fbcuQoaHYcapCnAKgHy8r9rZq7E.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11865.mp4"
+        },
+        {
+          "t": "As Aventuras de Tadeo e a Tábua de Esmeralda",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9KADuZT3KwmCYIrmarPuGyGTriw.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/11926.mp4"
         }
       ]
     },
@@ -1178,57 +759,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Comédia",
       "pasta": "01_FILMES/06_Comedia",
-      "total": 2580,
+      "total": 778,
       "destaques": [
-        {
-          "t": "#ComVocê Volume 1",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dEgBV4Tuo9jFZh7rFiQEbiY91sT.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12129.mp4"
-        },
-        {
-          "t": "#NUDES",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f463CTemzbWdAMYTYfkG5rnB2Wg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12134.mp4"
-        },
-        {
-          "t": "#PartiuFama Cancelado no Amor",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/24eEIEi7bgGmNDnsfkC6FAQTF8.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12138.mp4"
-        },
         {
           "t": "#REALITYHIGH",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iZliPeiiDta9KbONAhdFSXhTxrO.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12139.mp4"
-        },
-        {
-          "t": "#Sem_Filtro - Noite Sangrenta",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hlIXhMYMjxhppv2EagLNXXey5H5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12143.mp4"
-        },
-        {
-          "t": "10 Anos de Pura Amizade",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mxHwFDH0HlAZjVAnX0gd619Bahk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12148.mp4"
-        },
-        {
-          "t": "10 Coisas que Deveríamos Fazer Antes de nos Separar",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bS1rZqjcvk3WPCXVBgHeDY6FVRC.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12150.mp4"
-        },
-        {
-          "t": "100 Coisas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9PWSRATzT9Bu27BhqsIqMp7LcqS.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12152.mp4"
-        },
-        {
-          "t": "10 Coisas que Eu Odeio em Voce",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lRy6impzDHOqTX3A2T5dxI6Lwfu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12157.mp4"
-        },
-        {
-          "t": "100 Metros",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ftUHKZfXONnjuOGGpNeFCeAXbYF.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12161.mp4"
         },
         {
           "t": "100 Medos",
@@ -1236,9 +772,44 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12165.mp4"
         },
         {
+          "t": "#ComVocê Volume 1",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dEgBV4Tuo9jFZh7rFiQEbiY91sT.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12129.mp4"
+        },
+        {
+          "t": "10 Coisas que Eu Odeio em Voce",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lRy6impzDHOqTX3A2T5dxI6Lwfu.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12157.mp4"
+        },
+        {
+          "t": "#NUDES",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f463CTemzbWdAMYTYfkG5rnB2Wg.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12134.mp4"
+        },
+        {
           "t": "100 Garotas",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nUUbGnf0C0fPromULczpKXiAvPq.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12167.mp4"
+        },
+        {
+          "t": "20 Anos Mais Jovem",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p76zH1ie5ts1F5ePlMAw4zwuQoy.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12192.mp4"
+        },
+        {
+          "t": "100 Coisas",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9PWSRATzT9Bu27BhqsIqMp7LcqS.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12152.mp4"
+        },
+        {
+          "t": "50 Km Por Hora",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kor8kbvxCausosbGENtUUV5N4SG.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12210.mp4"
+        },
+        {
+          "t": "4 Latas",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hxtvnvWdeibiDc6mU5ftAUPGofe.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/12213.mp4"
         }
       ]
     },
@@ -1247,57 +818,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Crime e Policial",
       "pasta": "01_FILMES/07_Crime",
-      "total": 293,
+      "total": 199,
       "destaques": [
-        {
-          "t": "10 Dias de um Homem Curioso",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oYfKed3vI58cNN86OxDZ1Ryrgft.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21035.mp4"
-        },
-        {
-          "t": "10 Dias de um Homem Mau",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fl0vUwiKyxEauecs9UCh8cGRzZH.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21040.mp4"
-        },
-        {
-          "t": "A Hora do Silêncio",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vbfSnLfrh5yiIAs05eFANNJPKhj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21044.mp4"
-        },
-        {
-          "t": "A Fuga de Akilla",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7F3zWqksCUYErdDRugVQOQgY8NJ.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21049.mp4"
-        },
-        {
-          "t": "A Luta",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uvNt4ulnuhEFpQ63RSlsJfdLYmq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21054.mp4"
-        },
-        {
-          "t": "A Maldição (2022)",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6AWwDt0nUh68dISgAWU72SbjQGF.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21058.mp4"
-        },
-        {
-          "t": "A Mula",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kE9pO1utmOD5nQAcn7tyoUAldkX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21063.mp4"
-        },
         {
           "t": "1992",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/HV5hFJsqogckCfHiAwgKpP9R1j.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21068.mp4"
-        },
-        {
-          "t": "A Nova Geração da Máfia",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cZ3dqWWwjbMZHItNBOFrYbD7VQK.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21072.mp4"
-        },
-        {
-          "t": "A Ordem",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tIf9aUyNljda9MG1pjlOLHCZ3b0.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21077.mp4"
         },
         {
           "t": "A Rede do Tráfico",
@@ -1305,9 +831,44 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21082.mp4"
         },
         {
-          "t": "A Sombra de um Homem",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wLLUQU7AsieDH7R79HI9URBBsVf.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21085.mp4"
+          "t": "A Revanche Final",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cIh3dZxRFU9GgzkWjAyrfZRnWtp.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21087.mp4"
+        },
+        {
+          "t": "A Viúva Negra",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6u1ynJxGhqhKpFMvDmPk1OWQ5FW.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21105.mp4"
+        },
+        {
+          "t": "Amor & Vingança",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j7alJOEicKs0HX02JLDn4ht3PJJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21135.mp4"
+        },
+        {
+          "t": "Chamas da Fúria",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/utfhJGVMXNfFqzyPfCQDTBLYi19.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21228.mp4"
+        },
+        {
+          "t": "Cabo do Medo",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AfUtnysJQGFH5mZsoQNjle9Nibg.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21237.mp4"
+        },
+        {
+          "t": "Confissões",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1tMlCorBC5SRtQm5Nz6kakABH4.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21250.mp4"
+        },
+        {
+          "t": "Cop Land Zona Exclusiva",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wr7CqiTL8mIxu93jPkNNJELihHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21255.mp4"
+        },
+        {
+          "t": "Corações Roubados",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/56QAtyIhlCgNGZEFlJAKGwj0alM.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/21268.mp4"
         }
       ]
     },
@@ -1316,67 +877,57 @@
       "tipo": "filmes",
       "nome": "Filmes de Drama",
       "pasta": "01_FILMES/08_Drama",
-      "total": 3051,
+      "total": 832,
       "destaques": [
         {
-          "t": "#ComVocê Volume 2",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yiY4nI6HPAqnpGt5cPmszC6pTR7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22029.mp4"
+          "t": "2 Filhos de Francisco",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ub8vYfI1zgW4WItWDQ5mT6q5tzQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22098.mp4"
         },
         {
-          "t": "12 Anos de Escravidão",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o5t8fqcNDyfojYwwlECZEgyD96T.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22034.mp4"
+          "t": "75 días",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/50i8ibosATVWZFaQtm6s1xaUnF3.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22179.mp4"
         },
         {
-          "t": "12 Homens e Uma Sentença",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aiHIhV8c45FzIlbqYlswrrNyQD6.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22039.mp4"
+          "t": "A Casa de Vidro",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hpyIEd02R0UmxImwdFwDKaqa8ZZ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22289.mp4"
         },
         {
-          "t": "12 Herois",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mBgAJeIx1d5kxU8nR748o9qnAUK.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22043.mp4"
+          "t": "A Amizade Mora ao Lado",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zxxiT7WeMt4nI6ewCXzXePZixOs.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22214.mp4"
         },
         {
-          "t": "12 Noites",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uEZvNgiOPOO1S2vsnJ1mABr2SQj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22048.mp4"
+          "t": "A Contadora de Filmes",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tzCEvNVmVZVoCtVD2HnEQw6IEGn.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22334.mp4"
         },
         {
-          "t": "12 Horas Para o Fim do Mundo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gurQloozD4oBjjCBhqm3KPjxWxL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22053.mp4"
+          "t": "A Ilha da Boa Esperança",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6w2c7gdPucFCMDtX8REjrputVcb.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22671.mp4"
         },
         {
-          "t": "127 Horas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qxAzFpo0mDW3ZLvJEAKTz3Pc6Tv.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22057.mp4"
+          "t": "A Jovem Rainha Vitória",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2P2zx8zJp2Jcht0sHMyoIN7LFoU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22703.mp4"
         },
         {
-          "t": "12 Órfãos Poderosos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3N0nM4ouA500Xp5uSMpVazLNF0c.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22062.mp4"
+          "t": "A Pandemia da Água",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fPpr2Smzj8HzvgjJ2hvXZ7dvVFx.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22909.mp4"
         },
         {
-          "t": "13 O Jogador",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2sn3dMJYxhxCJ6cMCXAtBUjAeg1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22067.mp4"
+          "t": "A Tempestade do Século",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ufrrXI2BYCEcPuRf2MYhmOxGh73.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/23070.mp4"
         },
         {
-          "t": "14 Dias",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uEZvNgiOPOO1S2vsnJ1mABr2SQj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22071.mp4"
-        },
-        {
-          "t": "15 Anos em Silêncio",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cLS2Jo2hEJjV2mkyzpYpR8EEAOY.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22076.mp4"
-        },
-        {
-          "t": "16 Desejos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cl8nemnK7RZ9U9wxOTEGnzKiU4t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/22080.mp4"
+          "t": "A Última Coisa que Ele Queria",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wulTQYc4Ac970mwf5F5ewhNSBtE.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/23278.mp4"
         }
       ]
     },
@@ -1385,67 +936,57 @@
       "tipo": "filmes",
       "nome": "Dramas Curtos",
       "pasta": "01_FILMES/09_Dramas_Curtos",
-      "total": 2075,
+      "total": 539,
       "destaques": [
-        {
-          "t": "Casamento Obrigatório? Me Viro com Três Damas Perdidas! (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x1/41x0/410x0/41000120900/41000120900.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97765.mp4"
-        },
-        {
-          "t": "Sinto Tua Falta Depois do Adeus (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x1/41x0/410x0/41000121035/41000121035.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97773.mp4"
-        },
-        {
-          "t": "Escolta Mortal: Jornada de Sangue (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000000980/42000000980.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97781.mp4"
-        },
         {
           "t": "Vagabundo Imortal: Não Teste Meu Poder! (Dublado)",
           "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000000859/42000000859.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97789.mp4"
         },
         {
-          "t": "Se Eu Nunca Tivesse Vivido Você (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005118/42000005118.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97796.mp4"
+          "t": "CORACAO DE PEAO UMA FARSA OU DESTINO [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/eaa6fdfc728dd2f76697682d4c974ea4.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301425.mp4"
         },
         {
-          "t": "Do Portão ao Coração: Meu Papai É Um Abre-olhos (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x1/41x0/410x0/41000122680/41000122680.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97804.mp4"
+          "t": "TRONO DE VIDRO [L]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/0db6b5f33444c0ba53006511e80b81a9.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301428.mp4"
         },
         {
-          "t": "Marido em Casa? Melhor Supremo Imortal! (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000000495/42000000495.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97811.mp4"
+          "t": "FILHO DO ALFA SEGREDO DO AMOR [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/8c400897a9de3e9a7bf1907deed2fceb.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301430.mp4"
         },
         {
-          "t": "Era Tarde Demais para Pedir Perdão (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005124/42000005124.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/97819.mp4"
+          "t": "TODO DOMINGO CORRO PRA VOCE [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/ed63855401676f99d515761cccdbdf6d.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301444.mp4"
         },
         {
-          "t": "Renascer para Terminar os Três Casamentos (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x1/41x0/410x0/41000120897/41000120897.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/98114.mp4"
+          "t": "APAIXONANDO-SE PELO MARIDO DA OUTRA MULHER [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/dd08d7337e58e0cb23c30404a5eb8585.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301446.mp4"
         },
         {
-          "t": "Genro Não! Ele é Guardião dos Três Mundos (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000003656/42000003656.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/98122.mp4"
+          "t": "A RAINHA DA MAFIA SE APAIXONOU POR MIM - EU SOU A CHEFE DA MAFIA E ELE E MEU HOMEM [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/ece57797d55d896532ab4d246b244816.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301449.mp4"
         },
         {
-          "t": "O Homem por Trás do Uniforme (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x1/41x0/410x0/41000122352/41000122352.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/98131.mp4"
+          "t": "AMOR FALSO O PRECO DO ARREPENDIMENTO [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/eace644267bd4ae3e63a16163647163e.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301452.mp4"
         },
         {
-          "t": "Casamento Obrigatório? Me Viro com Três Damas Perdidas! II (Dublado)",
-          "p": "https://thwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005273/42000005273.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/98140.mp4"
+          "t": "O CARPINTEIRO SEM LOBO DOMINA O MUNDO",
+          "p": "http://cdn38246.radiogaucha.net:80/images/ff4fe84fb7d520fbdca886ed5ae74fe7.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301454.mp4"
+        },
+        {
+          "t": "A FURIA DO VINGADOR [DUB]",
+          "p": "http://cdn38246.radiogaucha.net:80/images/6dbef442753d9a6ff762027eb7fa32a6.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/301450.mp4"
         }
       ]
     },
@@ -1454,47 +995,17 @@
       "tipo": "filmes",
       "nome": "Filmes para Família",
       "pasta": "01_FILMES/10_Familia",
-      "total": 79,
+      "total": 58,
       "destaques": [
-        {
-          "t": "A Guerra dos Botões",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tsJdjVya5uDpQFdmfC2i5xHTabt.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53014.mp4"
-        },
-        {
-          "t": "A Jogada de Chang",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x4bsfG5GcGJLwvQEvUVugLUmyuw.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53019.mp4"
-        },
-        {
-          "t": "A Família Noel 2",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6EV8G1tESAjelFEvrdn1rEMz8Z0.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53020.mp4"
-        },
-        {
-          "t": "13 O Musical",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3ndpRWh8iOvckVtHptIsD4OtayN.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53025.mp4"
-        },
-        {
-          "t": "A Cozinheira Curiosa Receita Assassina",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/43PkvE2c5YQTPMpeHXemiZJbD3Q.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53030.mp4"
-        },
         {
           "t": "Aventura em Duas Rodas",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gVKYg7HseTtYFavutwC2mZJn8iO.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53031.mp4"
         },
         {
-          "t": "A Turma dos Geeks",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/g1tbXOXLMqqxIANtIapzwiJVDCS.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53036.mp4"
-        },
-        {
-          "t": "Amar é para Os Fortes",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6KC0t4zL0nsEIg4RpmEoeKTwI4J.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53037.mp4"
+          "t": "Escola de Magia",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1WXhpygouqZ0eOAUKhrlSVonyBi.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53067.mp4"
         },
         {
           "t": "Aprendiz de Espiã",
@@ -1502,19 +1013,39 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53040.mp4"
         },
         {
+          "t": "Eu e Meu Guarda Chuva",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gyfNyuKNIQeXreMSZ2Est6azY3w.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53071.mp4"
+        },
+        {
           "t": "Caminho Para a Liberdade",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4c9rgq7pDR7R4i1H9UrUD9lWcce.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53043.mp4"
         },
         {
-          "t": "A Grande Aventura de Blue na Cidade",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sAYBC3WhhiX25629HLpCvkpGk9q.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53046.mp4"
+          "t": "Feliz Ano Novo... de Novo",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1ECITzA9sQVbTjbcaFcYINN9Nkr.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53096.mp4"
         },
         {
-          "t": "Destino Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xF3IGXQHlnMUH4aoZYghtqRb8xd.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53051.mp4"
+          "t": "Amar é para Os Fortes",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6KC0t4zL0nsEIg4RpmEoeKTwI4J.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53037.mp4"
+        },
+        {
+          "t": "Dakota",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j3eUOPUoDwkupwTPTDk6ESqrzGt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53054.mp4"
+        },
+        {
+          "t": "Em Busca do Portal Mágico",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xskyvcKEvsGtv7FKavCIMEKw374.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53063.mp4"
+        },
+        {
+          "t": "Natal no Riacho",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ApQ9lA6QvJOiVmsa0P7L8xawQ4e.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/53149.mp4"
         }
       ]
     },
@@ -1523,22 +1054,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Fantasia",
       "pasta": "01_FILMES/11_Fantasia",
-      "total": 382,
+      "total": 148,
       "destaques": [
         {
-          "t": "A 5a Onda",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7plzDbtgpmUCQXVF4fyoW3u82qj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33329.mp4"
-        },
-        {
-          "t": "2036 Origem Desconhecida",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v3StJTYXbU3OZ26Vh1PbczqfyCD.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33334.mp4"
-        },
-        {
-          "t": "2019 O Ano da Extinção",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yWkkCjHaJaxEEbWTTNunYPNxqYo.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33338.mp4"
+          "t": "A Academia do Sr. Kleks",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ykZvwO1YvWCTV4XajuYBUXeubHA.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33348.mp4"
         },
         {
           "t": "9 Satra A Lenda do Muay Thai",
@@ -1546,9 +1067,14 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33343.mp4"
         },
         {
-          "t": "A Academia do Sr. Kleks",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ykZvwO1YvWCTV4XajuYBUXeubHA.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33348.mp4"
+          "t": "A 5a Onda",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7plzDbtgpmUCQXVF4fyoW3u82qj.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33329.mp4"
+        },
+        {
+          "t": "A Caverna",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xwQ9XAjHzRqjVtFI98XAsHwBNx3.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33378.mp4"
         },
         {
           "t": "20.000 Léguas Submarinas",
@@ -1561,9 +1087,14 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33357.mp4"
         },
         {
-          "t": "A Bela e a Fera (2009)",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8JkXzfzwpZNZV72vSbG5c3Vn6Tt.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33361.mp4"
+          "t": "A Bruxinha e o Dragão",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3nXP7x7vw3raOYwkUagwp3nShHP.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33374.mp4"
+        },
+        {
+          "t": "2019 O Ano da Extinção",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yWkkCjHaJaxEEbWTTNunYPNxqYo.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33338.mp4"
         },
         {
           "t": "A Ascensão da Rainha Guerreira",
@@ -1574,16 +1105,6 @@
           "t": "A Bela e a Fera (2017)",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8JkXzfzwpZNZV72vSbG5c3Vn6Tt.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33369.mp4"
-        },
-        {
-          "t": "A Bruxinha e o Dragão",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3nXP7x7vw3raOYwkUagwp3nShHP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33374.mp4"
-        },
-        {
-          "t": "A Caverna",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xwQ9XAjHzRqjVtFI98XAsHwBNx3.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/33378.mp4"
         }
       ]
     },
@@ -1592,67 +1113,47 @@
       "tipo": "filmes",
       "nome": "Filmes de Faroeste / Western",
       "pasta": "01_FILMES/12_Faroeste",
-      "total": 147,
+      "total": 8,
       "destaques": [
         {
-          "t": "A Balada do Pistoleiro",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nKY2FQm7GYtGPkxSDkN9lh6Mogm.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34856.mp4"
+          "t": "Assassino de Aluguel",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eYIkE5wwM2rQgMyKdAkrnhYZ5zQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34930.mp4"
         },
         {
-          "t": "A Fúria dos Peles Vermelhas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nKY2FQm7GYtGPkxSDkN9lh6Mogm.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34859.mp4"
+          "t": "Inferno no Faroeste",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wwpD6suBvsqIgSVm7xyqeVQ21LI.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35033.mp4"
         },
         {
-          "t": "A Marca da Forca",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/OrJr6yGNWhbOR00T2vyU0ipa8k.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34863.mp4"
+          "t": "Jonah Hex Caçador de Recompensas",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ageBP5EWpmdGKJmp0RhsNDIDRh5.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35045.mp4"
         },
         {
-          "t": "A Balada de Buster Scruggs",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nb4crpD43qLIlNj3k5mqC0izPCk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34867.mp4"
+          "t": "O Último Homem",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mPnU3yKuZpmLjkVXGplhkpX31LY.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35149.mp4"
         },
         {
-          "t": "A Floresta Do Escalpe",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2OG6YCYabCBNcmXv5w4AP9uTbsb.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34868.mp4"
+          "t": "Os Infratores",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xWSPROw6QXxNeP4pwyMGOiv4lq5.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35188.mp4"
         },
         {
-          "t": "A Noite Em Que Voltaram Para Casa",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bgvmGUwUH4Iyoz0LpihR1y8eqlQ.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34872.mp4"
+          "t": "Rust A Lei do Oeste",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxbfivItofaIek3iDtCcGtNu4Au.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35249.mp4"
         },
         {
-          "t": "A Qualquer Custo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fz3RPQPquiyb4xi0isCIf6lIx7F.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34874.mp4"
+          "t": "Trilha de Vingança",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/spddh0y6VMwMyDFFAe6NlDxZY3K.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35301.mp4"
         },
         {
-          "t": "A Pistola E Minha Biblia",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vf69o0Mrtu4OSByxTi83xUMn8AV.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34879.mp4"
-        },
-        {
-          "t": "A Sombra de um Revolver",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v0B331VlMnCmTrsLDQhtfEe8286.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34883.mp4"
-        },
-        {
-          "t": "A Vingança Está na Moda",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fXNobPTdS2sDUTFGd6j4A7bluog.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34888.mp4"
-        },
-        {
-          "t": "A Revolta dos Sete Homens",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lyIo9NT7eBGQjRmvtjdOzjwfNOY.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34893.mp4"
-        },
-        {
-          "t": "A Última Caçada",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5JQv2JqtN6dRs670yEn99FjNrKf.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/34897.mp4"
+          "t": "Um Clarim ao Longe",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7vU42hfJ6Ks38gzsX773OJDdizZ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/52950.mp4"
         }
       ]
     },
@@ -1661,27 +1162,12 @@
       "tipo": "filmes",
       "nome": "Filmes de Ficção Científica",
       "pasta": "01_FILMES/13_Ficcao_Cientifica",
-      "total": 382,
+      "total": 197,
       "destaques": [
         {
-          "t": "2001 Uma Odisséia no Espaço",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9jPHKChBVWfWxXYO1yN4FZF1U2S.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35359.mp4"
-        },
-        {
-          "t": "2067",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35362.mp4"
-        },
-        {
-          "t": "222 - Encontro Marcado",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/48ZnyZi3KGrn1YOOco7xKWa57Vb.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35365.mp4"
-        },
-        {
-          "t": "57 Segundos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kRLNtJ0dWUHhNt20NijeWhnLJ5E.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35368.mp4"
+          "t": "A Bruxa - Parte 1 A Subversão",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xcVlZR4T6pcJZvhrEfcLeUXA55r.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35385.mp4"
         },
         {
           "t": "65 Ameaça Pré-Histórica",
@@ -1689,14 +1175,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35370.mp4"
         },
         {
-          "t": "A Avaliação",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c1NQYiimXdMnSKPE5x8D1c7bSDr.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35375.mp4"
-        },
-        {
-          "t": "A Batalha do Planeta dos Macacos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rq6MQqiUR0hOMW9kpV1YLMbsq7E.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35380.mp4"
+          "t": "A Fortaleza 2",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7UtXZHXWerXvYhjQavR6DHFrcAI.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35401.mp4"
         },
         {
           "t": "A aventura de ARI meu amigo robô",
@@ -1704,9 +1185,24 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35384.mp4"
         },
         {
-          "t": "A Bruxa - Parte 1 A Subversão",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xcVlZR4T6pcJZvhrEfcLeUXA55r.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35385.mp4"
+          "t": "A Avaliação",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c1NQYiimXdMnSKPE5x8D1c7bSDr.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35375.mp4"
+        },
+        {
+          "t": "2001 Uma Odisséia no Espaço",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9jPHKChBVWfWxXYO1yN4FZF1U2S.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35359.mp4"
+        },
+        {
+          "t": "A Criatura do Deserto",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/efzcG7seLhy6AmoVEHjhgKIpBK5.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35404.mp4"
+        },
+        {
+          "t": "57 Segundos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kRLNtJ0dWUHhNt20NijeWhnLJ5E.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35368.mp4"
         },
         {
           "t": "A Caixa",
@@ -1714,14 +1210,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35389.mp4"
         },
         {
-          "t": "A Conquista do Planeta dos Macacos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oHMPLkcnQhvF50Wyq1fzDYcdlNy.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35394.mp4"
-        },
-        {
-          "t": "A Cratera",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/65CXDhp2Y0ro847Lzq9l1iQ9Hn6.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35399.mp4"
+          "t": "A Batalha do Planeta dos Macacos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rq6MQqiUR0hOMW9kpV1YLMbsq7E.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/35380.mp4"
         }
       ]
     },
@@ -1730,67 +1221,17 @@
       "tipo": "filmes",
       "nome": "Filmes de Guerra",
       "pasta": "01_FILMES/14_Guerra",
-      "total": 125,
+      "total": 2,
       "destaques": [
         {
-          "t": "A Batalha das Ardenas A Última Ofensiva de Hitler",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/brVPZyqIdTAScO8vg1Au8fbsd0b.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36762.mp4"
+          "t": "Heróis do Amanhecer",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/17BlmWEnUKoYq4tiNRh0T9EpcC0.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36933.mp4"
         },
         {
-          "t": "100 Dias de Resistência",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/naG6PCVZupvYaOf9kGgKd2MVZRZ.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36766.mp4"
-        },
-        {
-          "t": "A Conquista da Honra",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qk93n9lLFsb1dn3KEBLkuFIDGGm.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36771.mp4"
-        },
-        {
-          "t": "A Corte Marcial Da Nave Da Revolta",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jii0CWMcjFmCfrTXsRyMuwjlNY3.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36774.mp4"
-        },
-        {
-          "t": "A Face da Guerra",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/arlwPVSQg3fsBCDhwORpiHnZjYt.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36777.mp4"
-        },
-        {
-          "t": "A Era de Kasym",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eKDT8G4qWNqpe889WFOHTyuWusk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36781.mp4"
-        },
-        {
-          "t": "A Disputa",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xpxZoBZnAKFsXnXttYRujPT9zNV.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36786.mp4"
-        },
-        {
-          "t": "A Grande Fuga",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sfu2afy7tmPnNjYKg5WjLo5oSSD.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36790.mp4"
-        },
-        {
-          "t": "A Guerra Diante dos Meus Olhos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1neA1bs9KL9i8YkPMpigk0J5k53.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36792.mp4"
-        },
-        {
-          "t": "A Irmandade da Guerra",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gqGZehMFRo2fnrSxWUitCH8cLfi.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36796.mp4"
-        },
-        {
-          "t": "A Guerreira Chinesa",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qA9irK7Hog7VAn4CfjcYjtCzb7M.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36801.mp4"
-        },
-        {
-          "t": "A Redenção – A História Real de Bonhoeffer",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i4X0YFXLI1dvT6WOiIjLqVVpFoP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36806.mp4"
+          "t": "Perigo Iminente",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zkCljVHb1SdhuPTMftSFegju6q.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37136.mp4"
         }
       ]
     },
@@ -1799,67 +1240,12 @@
       "tipo": "filmes",
       "nome": "Filmes Infantis",
       "pasta": "01_FILMES/15_Infantis",
-      "total": 53,
+      "total": 1,
       "destaques": [
-        {
-          "t": "A Abelhinha Maya e O Ovo Dourado",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nA6Jg8fLhJtabQYozYOUM3GzXs7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37239.mp4"
-        },
-        {
-          "t": "A Bela Adormecida",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2MjuCYa6RkhNHmNDl4MqktxK8XH.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37244.mp4"
-        },
-        {
-          "t": "a Lenda de Lady Dragon",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qStibJTjjgriA7nqrA1LVCeNMIu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37249.mp4"
-        },
-        {
-          "t": "A Princesa Encantada - O Reino da Música",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WU5ORvayBF1Cep3FYyo17KYGDG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37254.mp4"
-        },
-        {
-          "t": "As Aventuras De Ichabod E Sr. Sapo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mK6JBRA9g7g4dzejndEp2j346Ap.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37258.mp4"
-        },
-        {
-          "t": "Amigos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mK6JBRA9g7g4dzejndEp2j346Ap.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37262.mp4"
-        },
-        {
-          "t": "As Peripécias de um Ratinho Detetive",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2V4c6xPivHkFp2n0U6Y6AGZz2WI.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37267.mp4"
-        },
         {
           "t": "Aventuras de Betty",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gMZRPm4tcwdzfx7xu3sVzdNPVYi.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37272.mp4"
-        },
-        {
-          "t": "Barbie & Chelsea O Aniversário Perdido",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i2pMxkhKpDjMHXxmgAYVKXfGVxP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37276.mp4"
-        },
-        {
-          "t": "Barbie e as Sapatilhas Magicas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/59FPQDQWyiPhDJH06mUeOxU0Oo5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37281.mp4"
-        },
-        {
-          "t": "Barbie e as Tres Mosqueteiras",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aulv0DUM41tmEM9BoDVaczBojsz.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37286.mp4"
-        },
-        {
-          "t": "Barbie e o Segredo das Fadas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u3OiN7HWxi9S8lcRqkmLVJ0BP1u.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37291.mp4"
         }
       ]
     },
@@ -1919,16 +1305,6 @@
           "t": "(In) Seguros [L]",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/geqLzzDs1w08qojyFOD8eqlXFwz.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/59484.mp4"
-        },
-        {
-          "t": "10 Dias de um Homem Bom [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ihMCcc0vBQQyphiaoyoTvpJlTPi.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/59488.mp4"
-        },
-        {
-          "t": "000 Espécies de Abelhas [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4Y0wjKCxkLargtpsTWAkloRUsjl.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/59493.mp4"
         }
       ]
     },
@@ -1937,47 +1313,12 @@
       "tipo": "filmes",
       "nome": "Filmes Nacionais",
       "pasta": "01_FILMES/17_Nacionais",
-      "total": 954,
+      "total": 399,
       "destaques": [
-        {
-          "t": "#eagoraoque",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxLHtMGnLf22iBmmwtCvVlHdjDR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37469.mp4"
-        },
-        {
-          "t": "5 Casas",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wjnwXm6Ypj0IhyugxJAHvuCUYfp.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37474.mp4"
-        },
-        {
-          "t": "A Cabeça de Gumercindo Saraiva",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kQd0KoqaRswX6fmw153Lnpbfx9.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37478.mp4"
-        },
-        {
-          "t": "1964 - O Brasil Entre Armas e Livros",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kERgnDxb4YXU0c6DDSWZiLmuHC1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37483.mp4"
-        },
-        {
-          "t": "A Esperanca E A Ultima Que Morre",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pkmYjmADOIn6knfYZUebn0zqqw1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37488.mp4"
-        },
         {
           "t": "A Casa da Árvore",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gG7OCpt6hwp8DA2cfYs2kFhtpcZ.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37493.mp4"
-        },
-        {
-          "t": "400 Contra 1 Uma História do Crime Organizado",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vYjpX0uLBCtjJBf42zJk4OxepPx.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37497.mp4"
-        },
-        {
-          "t": "A Cidade Imaginária",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e59TGPKe7MJsxF2B99SQqGKy8qS.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37502.mp4"
         },
         {
           "t": "A Familia Craft em O Impostor",
@@ -1985,19 +1326,44 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37506.mp4"
         },
         {
-          "t": "A Filha dos Trapalhões",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qgDl0lZlkvKfPFTuivnGtqi2AOc.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37511.mp4"
+          "t": "A Noite das Vampiras",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rfL90K38rs84C7CB89wM92hPv68.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37557.mp4"
         },
         {
-          "t": "A Herança",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2Sb0yG6f5CQYntAazEL2ELgmROV.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37516.mp4"
+          "t": "Adorável Trapalhão",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tKerxj67cPI2mcfkXRMfjKDz4aR.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37622.mp4"
         },
         {
-          "t": "A Lira do Delírio",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yAov71HrzIW4l3fpQrtDAdC5vUk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37520.mp4"
+          "t": "Aladim e a Lâmpada Maravilhosa",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qLSJZGAABk04NgdPzWWy8dm1Oj8.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37628.mp4"
+        },
+        {
+          "t": "Amazon Rasta",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b6AgZq0bSYV1UPqj2Fd3rmKPJ4d.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37657.mp4"
+        },
+        {
+          "t": "Algo de Errado Não Está Certo",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4VoGzg8N14K8ZafPFa1R4pXKgL6.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37643.mp4"
+        },
+        {
+          "t": "Alma Portuguesa",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fx17l5SyFb7004SWSI7HwAhpCrX.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37652.mp4"
+        },
+        {
+          "t": "Alice dos Anjos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1eaNYp8sgO0SUPoolQPIzICvvfM.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37655.mp4"
+        },
+        {
+          "t": "Ali Babá e os Quarenta Ladrões",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iWbNuwwsOfuvzMFeQW1tb6ATfey.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37647.mp4"
         }
       ]
     },
@@ -2006,67 +1372,47 @@
       "tipo": "filmes",
       "nome": "Filmes Natalinos",
       "pasta": "01_FILMES/18_Natalino",
-      "total": 192,
+      "total": 8,
       "destaques": [
         {
-          "t": "10 Horas Para o Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zQF84E6xXSPur1gEbyKJ2P1BECp.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39661.mp4"
+          "t": "Conhecendo o Sr. Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gpdksPQN8Zt6GSQtHS5Mp3GjQhJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39752.mp4"
         },
         {
-          "t": "#Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7W5PJWQghol2BTgOsffU52DgI9q.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39666.mp4"
+          "t": "Cronicas de Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5I4CIFCK1sqORlmM2xvkYmcucYN.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39762.mp4"
         },
         {
-          "t": "12 Vésperas de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/a4H5tXCqSs40GLjpmIxJn42Gwcb.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39671.mp4"
+          "t": "Natal Entre Irmãs Na Cidade",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j2RrxXEUbMTQHZsm3GN9otWdRaq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39999.mp4"
         },
         {
-          "t": "100 Dias para o Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/imU6zKtkhcH49Ph4Etx7Np2w7nv.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39676.mp4"
+          "t": "Nunca Beije um Homem em um Suéter de Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Pys1wA5QX4oUl6SuABl4en2Yhc.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40104.mp4"
         },
         {
-          "t": "A Batalha de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7xz7evAsp4wqwSBSZLnNd13wBZt.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39680.mp4"
+          "t": "O Melhor Presente de Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/znN0lRVxzALsLrrtgc4ehur1uFp.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40148.mp4"
         },
         {
-          "t": "A Bota de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qx6OHPTnO5yQNdmgn7BDHDDBGSy.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39685.mp4"
+          "t": "O Feitico do Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nK1HlQmh7876NPFXzHqVZQJgYFp.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40129.mp4"
         },
         {
-          "t": "A Cidade do Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e2IWFu8vNPxUUqJx0sC2k1TCcFH.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39690.mp4"
+          "t": "O Principe do Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3K0pmPNutVzuZ0gmy4din6kMKhw.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40208.mp4"
         },
         {
-          "t": "A Noite Antes do Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r8pITK3uJdfBgQGiHNwiLpBcB7R.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39695.mp4"
-        },
-        {
-          "t": "A Volta do Espirito de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/idzfcrP4USlCM8LSBZTP9qQtdEs.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39700.mp4"
-        },
-        {
-          "t": "Ajudante de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8M5ZpNI9LGUM25hqNKcu7Vq2eZV.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39705.mp4"
-        },
-        {
-          "t": "Aquela Canção de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/czbebgWqCJ7Nv0aHNGUCWh1caRq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39710.mp4"
-        },
-        {
-          "t": "Amor de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9UsHiG1nQnCFNnJeqCdrqMHpPsY.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/39714.mp4"
+          "t": "Sem Dormir Até o Natal",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5yl9YbCYqHBVm20Qd22g9cVrJmw.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40273.mp4"
         }
       ]
     },
@@ -2075,7 +1421,7 @@
       "tipo": "filmes",
       "nome": "Filmes Indicados ao Oscar 2024",
       "pasta": "01_FILMES/19_Oscar_2024",
-      "total": 6,
+      "total": 0,
       "destaques": [
         {
           "t": "20 Dias em Mauripol [L]",
@@ -2114,67 +1460,12 @@
       "tipo": "filmes",
       "nome": "Filmes Indicados ao Oscar 2025",
       "pasta": "01_FILMES/20_Oscar_2025",
-      "total": 22,
+      "total": 1,
       "destaques": [
-        {
-          "t": "A Substância [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pGn0yJFe1AoyWM33tWcPQ2TfMvL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40528.mp4"
-        },
-        {
-          "t": "A Substância",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pGn0yJFe1AoyWM33tWcPQ2TfMvL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40533.mp4"
-        },
-        {
-          "t": "A Única Mulher na Orquestra [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/swEozMPfk1sbIiSsw1JjIsY79E6.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40538.mp4"
-        },
-        {
-          "t": "A Verdadeira Dor [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/57trFzPPZsmroyBNNg7QZsD21JL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40542.mp4"
-        },
-        {
-          "t": "A Substância 4K",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/57trFzPPZsmroyBNNg7QZsD21JL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40547.mp4"
-        },
-        {
-          "t": "Ainda Estou Aqui",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yY0HDAGfu79cpOLQBgR3kgGZ7HS.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40552.mp4"
-        },
-        {
-          "t": "Ainda Estou Aqui 4K",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yY0HDAGfu79cpOLQBgR3kgGZ7HS.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40557.mp4"
-        },
-        {
-          "t": "Anora",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40562.mp4"
-        },
-        {
-          "t": "Anora 4K",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40569.mp4"
-        },
         {
           "t": "Anora [L]",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40573.mp4"
-        },
-        {
-          "t": "Conclave 4K",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40581.mp4"
-        },
-        {
-          "t": "Conclave [L]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wWn78TMMw8yOdr5sG0Yl9v4saoA.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40586.mp4"
         }
       ]
     },
@@ -2183,32 +1474,12 @@
       "tipo": "filmes",
       "nome": "Filmes Religiosos / Gospel",
       "pasta": "01_FILMES/21_Religiosos",
-      "total": 98,
+      "total": 94,
       "destaques": [
         {
-          "t": "A Colheita da Fé",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/koUqIe8qSZHaRGTyE6Jgfy1lSXX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40634.mp4"
-        },
-        {
-          "t": "90 Minutos no Paraíso",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zm349SVzNBxSi9MnEsHp0DS0XGd.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40639.mp4"
-        },
-        {
-          "t": "A Caminho da Fe",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dTsZEzkvQZ1keK7V2EgbOurIlL9.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40644.mp4"
-        },
-        {
-          "t": "A Cabana",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vjFQRohM0WhGGa8dzJDVBhb5sjk.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40649.mp4"
-        },
-        {
-          "t": "A Criação",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bk68yiDGr4saE6ICqdBWvt48CmG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40650.mp4"
+          "t": "A Filha do Pastor",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e1x2yVlPr8fYSUWYagCAjP8xXow.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40660.mp4"
         },
         {
           "t": "A Estrela de Belem",
@@ -2216,19 +1487,14 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40655.mp4"
         },
         {
-          "t": "A Filha do Pastor",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e1x2yVlPr8fYSUWYagCAjP8xXow.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40660.mp4"
-        },
-        {
           "t": "A Espera de um Milagre",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/14hEqW67IiHlKpzKMLUXyktzZIV.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40664.mp4"
         },
         {
-          "t": "A História de Esther",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1xdSvRt6QOoO9kJ3Cl6jkOeB6Kj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40669.mp4"
+          "t": "A Colheita da Fé",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/koUqIe8qSZHaRGTyE6Jgfy1lSXX.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40634.mp4"
         },
         {
           "t": "A História de Fátima",
@@ -2236,14 +1502,29 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40674.mp4"
         },
         {
-          "t": "A Luz Divina",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uhOvDIvkSrqkdFk8Bn6f8UNuntK.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40680.mp4"
-        },
-        {
           "t": "A Oração Não Falha",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pP4c1hBnWFbjEOLsHtzCdi1sCWW.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40685.mp4"
+        },
+        {
+          "t": "Amor Incondicional A História de Oseias",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cC07GVBXzNpMhgAASsXjgVYIwot.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40689.mp4"
+        },
+        {
+          "t": "A Caminho da Fe",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dTsZEzkvQZ1keK7V2EgbOurIlL9.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40644.mp4"
+        },
+        {
+          "t": "A Profecia Celestina",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rP9XSO6pXxcvymhV7FbKLTk6daV.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40694.mp4"
+        },
+        {
+          "t": "A História de Esther",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1xdSvRt6QOoO9kJ3Cl6jkOeB6Kj.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/40669.mp4"
         }
       ]
     },
@@ -2252,67 +1533,57 @@
       "tipo": "filmes",
       "nome": "Filmes de Romance",
       "pasta": "01_FILMES/22_Romance",
-      "total": 616,
+      "total": 211,
       "destaques": [
-        {
-          "t": "2 Corações",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zpujQ6Wd4UuAykFpgoICJVJ9s1f.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41058.mp4"
-        },
         {
           "t": "10 Regras Para Salvar um Casamento",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rcmoIeno4fh6QnNmg93TVNq8aj.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41063.mp4"
         },
         {
-          "t": "14 Cartas de Amor",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6JnnqQJdCoysMCumqfVKDQ0G7Yj.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41068.mp4"
+          "t": "A Casa dos Espíritos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bOL6qexGlUT5PLQhaPVgrhtp1kj.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41120.mp4"
         },
         {
-          "t": "365 Dias Finais",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2pxKwxMbd5l3BxK5fBgVCWYweH2.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41073.mp4"
+          "t": "A Culpa e das Estrelas",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bzI1Fmh5FakSB1MEf4OVwgILRvz.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41136.mp4"
         },
         {
-          "t": "365 Dias",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3104lH1U1XfUXo0ZLawnIjXS0NC.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41078.mp4"
+          "t": "A Garota dos Seus Sonhos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1iafCMS7cZ1mbZIMznPu3xqXeOI.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41165.mp4"
         },
         {
-          "t": "12 Presentes de Natal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i8IFun1rfdrQ3QXvJolU19TRTCG.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41082.mp4"
+          "t": "After Para Sempre",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2smZAv5ghBo1I7HnuLgekxxBP2n.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41301.mp4"
         },
         {
-          "t": "365 Dias Hoje",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3104lH1U1XfUXo0ZLawnIjXS0NC.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41087.mp4"
+          "t": "After Depois do Desencontro",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/us14PtA89IjtR1JOdDamamPth7e.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41306.mp4"
         },
         {
-          "t": "7 Dias com Você",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xgHvMAtkzHhLRmh1NWvzeCG4gvF.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41088.mp4"
+          "t": "Amor e Liberdade",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgooi8hpWZkQp0EyBVpw3F4ruyz.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41393.mp4"
         },
         {
-          "t": "A Arte de Amar",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8B5kcNrZUocXZMG80NWhroz94mf.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41093.mp4"
+          "t": "Amor Em Daisy Hills",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x9tPA9uacEihCj29uT6GoHzvS8J.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41398.mp4"
         },
         {
-          "t": "A Arte de Se Apaixonar",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/29mU4vCusj4txBZyK4kEwAK3Ev4.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41098.mp4"
+          "t": "Amor.com",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6i8TdiQQ9d8uvtPcYVkzSWZQ4fQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41491.mp4"
         },
         {
-          "t": "A Barraca do Beijo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n2P84bRyMhfabyPZ0nhBxHyngya.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41102.mp4"
-        },
-        {
-          "t": "A Caminho do Verão",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tqcSehEOf0mgaYRvyF9VHUPSZR0.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41104.mp4"
+          "t": "Antes da Meia-Noite",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mo5hzbw0xofhFsBpnDWlnniCbFl.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/41509.mp4"
         }
       ]
     },
@@ -2321,67 +1592,57 @@
       "tipo": "filmes",
       "nome": "Filmes de Suspense",
       "pasta": "01_FILMES/23_Suspense",
-      "total": 814,
+      "total": 210,
       "destaques": [
         {
-          "t": "13º Andar",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2Wv6a0yNxTl7NH1f0FbPYC2kZvg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43431.mp4"
+          "t": "A Inquilina",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3mP1QlSlDNaBcrwRIrI864hs0OB.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43566.mp4"
         },
         {
-          "t": "10 Dias de um Homem Bom",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ihMCcc0vBQQyphiaoyoTvpJlTPi.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43435.mp4"
+          "t": "Amor Sob Suspeita",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rstC3uJyTb5YBwleMeQeGpjGioV.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43884.mp4"
         },
         {
-          "t": "3 Pedidos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/74j6S3VZYKT7e74ViBDqU3YeWdg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43440.mp4"
+          "t": "Armadilhas do Passado",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7JBLxEMjzbfT9xj3A9OjychKRqP.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43942.mp4"
         },
         {
-          "t": "7 Dias em Entebbe",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/idhwFpYjSRuEK5fYpsIJFgqkMRD.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43441.mp4"
+          "t": "Assassinato no Grupo de Mães",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mEBnMT5tFk08q9jwSjdEUifUHHM.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43970.mp4"
         },
         {
-          "t": "8mm Oito Milímetros",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJZlYqCDlZ7WI2xFjKfO8AB13S4.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43444.mp4"
+          "t": "Bela Vingança",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/r7FwclLTWB8i6XfBNTtUsyONlgN.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44029.mp4"
         },
         {
-          "t": "90 Minutos",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sKAj8jKy3C32KUS6VOGBmpeThGE.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43449.mp4"
+          "t": "Beleza Avassaladora",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7sDFpjs3Ibnxb1IkQVMp0AIcTpH.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44024.mp4"
         },
         {
-          "t": "A Aranha Negra",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AkwflqboRNXvwwdY9d5fHijztjL.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43454.mp4"
+          "t": "Borrego - Saia Do Caminho",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iNSa1kwVsOsfAHwopMLM7PnrDhU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44063.mp4"
         },
         {
-          "t": "A Casa do Medo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dgsNNBD9fWwygW7M4JH2EZ9WVg1.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43459.mp4"
+          "t": "Bull Hora da Vingança",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mFxHsGp04g1X9oLGIF1MFM0vzOg.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44068.mp4"
         },
         {
-          "t": "A Caverna Perigo Subterrâneo",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4r5VRdSS84GesjVxvKR3JTk0W4x.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43464.mp4"
+          "t": "Calmaria",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8mV514dVhKaxwNJ5xWSxW8klHYg.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44078.mp4"
         },
         {
-          "t": "A Chave do Problema",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mJhiElpedkxCD2B3VEs1R1fDKIK.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43469.mp4"
-        },
-        {
-          "t": "A Chegada",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3rDwbFpn6z5HJUgDjpfhEePx8VI.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43474.mp4"
-        },
-        {
-          "t": "A Clínica",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lD7DQyw9AU3WKWcBLMQcb7SEWz6.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/43479.mp4"
+          "t": "Capítulos Mortais",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nusITuDvgLGonw13DK6p8OHUK2T.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/44101.mp4"
         }
       ]
     },
@@ -2390,22 +1651,32 @@
       "tipo": "filmes",
       "nome": "Filmes de Terror",
       "pasta": "01_FILMES/24_Terror",
-      "total": 1662,
+      "total": 515,
       "destaques": [
         {
-          "t": "(Re)Nascer",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2Au17UGDQMBr3nR93Gg4TR78X8j.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46490.mp4"
+          "t": "30 Dias de Noite 2",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b3B9y2KRlBCveMKuQERbajuJzRK.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46550.mp4"
         },
         {
-          "t": "(A) Fronteira",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ipfHmOhQjqYtbAXEudDxIUMkTby.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46495.mp4"
+          "t": "(In) Seguros",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/geqLzzDs1w08qojyFOD8eqlXFwz.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46545.mp4"
+        },
+        {
+          "t": "60 Minutos para Morrer",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i5pJ8IoOanVAPBzKi3GiVnGlOld.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46566.mp4"
         },
         {
           "t": "#SemSaída",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fUCIj47O9v5zktS81hRWktUVnSR.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46500.mp4"
+        },
+        {
+          "t": "7 Desejos",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hZIeMWNciyHyhIqrLiZXJ4VgXHb.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46571.mp4"
         },
         {
           "t": "13 exorcismos",
@@ -2418,21 +1689,6 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46509.mp4"
         },
         {
-          "t": "1303 - Apartamento do Mal",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/n3MlYZPW6erXCyDf2EHf269qUnu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46514.mp4"
-        },
-        {
-          "t": "15 Câmeras",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/w2aD11rXlALjQLMbj9FZlGeS7Vg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46519.mp4"
-        },
-        {
-          "t": "1978",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ndJYJc7ZKk87dAg81XYvegEUR8o.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46524.mp4"
-        },
-        {
           "t": "2035 Dimensão Proibida",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sMswNlvoCXK0wX14NRzSFRRIFs.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46529.mp4"
@@ -2443,14 +1699,9 @@
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46535.mp4"
         },
         {
-          "t": "[REC]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sMswNlvoCXK0wX14NRzSFRRIFs.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46540.mp4"
-        },
-        {
-          "t": "(In) Seguros",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/geqLzzDs1w08qojyFOD8eqlXFwz.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46545.mp4"
+          "t": "A Bruxa da Casa ao Lado",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7TmNhEKfTg9Yya0trhMou1V6gUf.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/46621.mp4"
         }
       ]
     },
@@ -2459,67 +1710,17 @@
       "tipo": "filmes",
       "nome": "Filmes em Cartaz / Cinema",
       "pasta": "01_FILMES/25_Cinema",
-      "total": 14,
+      "total": 2,
       "destaques": [
-        {
-          "t": "Michael [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2FYFBgdNVVaUgVfNSh9z5WVTZ9y.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290825.mp4"
-        },
-        {
-          "t": "Super Mario Galaxy O Filme [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b3WeTp42eJSRuE4UZfyPCOJW4c.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290826.mp4"
-        },
-        {
-          "t": "Maldição da Múmia [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ubN87iHY2DyWtwU2JHS0SQ1KqJu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290827.mp4"
-        },
-        {
-          "t": "O Diabo Veste Prada 2 [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/50yWyY981TyUHhoxxSEKwO70FmQ.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290828.mp4"
-        },
-        {
-          "t": "Mortal Kombat 2 [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cGnizm1lIZGvnbeE5BrM7C3a3pu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290829.mp4"
-        },
-        {
-          "t": "Dia D [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5e8BQ6RP3GRPz45yno1jjlXu56.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/306448.mp4"
-        },
         {
           "t": "Mestres do Universo (2026) [Cinema]",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uPuVEyoGrtoU9O2sLDhwtKPR78Z.jpg",
           "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/307701.mp4"
         },
         {
-          "t": "Supergirl [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qhXfLI1gDWaahzfHT0cb2CH61hO.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/307702.mp4"
-        },
-        {
-          "t": "Toy Story 5 [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iwEuq51BV59mm2LgZ42bWgPgagW.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/307703.mp4"
-        },
-        {
-          "t": "Homem-Aranha Um Novo Dia [L] [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x0nvYzQpyJc5pdT9lMnkMuYAg0O.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/310642.mp4"
-        },
-        {
-          "t": "A Odisseia [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/muMwJAiMtReEHLKpKMWt2rMkYF7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/310643.mp4"
-        },
-        {
-          "t": "Moana [Cinema]",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/e0ImfFh3aQ9P0PS81DudN9TZTmA.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/310644.mp4"
+          "t": "O Diabo Veste Prada 2 [Cinema]",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/50yWyY981TyUHhoxxSEKwO70FmQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/290828.mp4"
         }
       ]
     },
@@ -2579,16 +1780,6 @@
           "t": "(A)mar S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WwFZ5oOirY3JrfmRXlgnlYfanD.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/131196.mp4"
-        },
-        {
-          "t": "(A)mar S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WwFZ5oOirY3JrfmRXlgnlYfanD.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/131197.mp4"
-        },
-        {
-          "t": "(A)mar S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WwFZ5oOirY3JrfmRXlgnlYfanD.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/131198.mp4"
         }
       ]
     },
@@ -2597,67 +1788,57 @@
       "tipo": "series",
       "nome": "Séries Amazon Prime Video",
       "pasta": "02_SERIES/02_Amazon_Prime",
-      "total": 21465,
+      "total": 19053,
       "destaques": [
         {
-          "t": "90 Dias De Volta Pra Pista S04E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/83.mp4"
+          "t": "A Australia Mortal S01E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y61evcQuAroArFjXEQKgKOXW9Tq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/99.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/84.mp4"
+          "t": "A Australia Mortal S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y61evcQuAroArFjXEQKgKOXW9Tq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/100.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/85.mp4"
+          "t": "A Australia Mortal S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y61evcQuAroArFjXEQKgKOXW9Tq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/101.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/86.mp4"
+          "t": "A Australia Mortal S01E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y61evcQuAroArFjXEQKgKOXW9Tq.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/102.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/87.mp4"
+          "t": "1 Contra Todos S01E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/118.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/88.mp4"
+          "t": "1 Contra Todos S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/119.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/89.mp4"
+          "t": "1 Contra Todos S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/120.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/90.mp4"
+          "t": "1 Contra Todos S01E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/121.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E09",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/91.mp4"
+          "t": "1 Contra Todos S01E05",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/122.mp4"
         },
         {
-          "t": "90 Dias De Volta Pra Pista S04E10",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/92.mp4"
-        },
-        {
-          "t": "90 Dias De Volta Pra Pista S04E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93.mp4"
-        },
-        {
-          "t": "90 Dias De Volta Pra Pista S04E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cqJ8WdI7h2fQvChYovt6kTyJOar.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/94.mp4"
+          "t": "1 Contra Todos S01E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3o7f2Xjwl5hcoiioR9eGdD9ezHt.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/123.mp4"
         }
       ]
     },
@@ -2666,67 +1847,57 @@
       "tipo": "series",
       "nome": "Séries HBO / Max",
       "pasta": "02_SERIES/03_Max_HBO",
-      "total": 17611,
+      "total": 8696,
       "destaques": [
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114567.mp4"
+          "t": "A Unidade S01E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115698.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114568.mp4"
+          "t": "A Unidade S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115699.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114569.mp4"
+          "t": "A Unidade S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115700.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114570.mp4"
+          "t": "A Unidade S01E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115701.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114571.mp4"
+          "t": "A Unidade S01E05",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115702.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114572.mp4"
+          "t": "A Unidade S01E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115703.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114573.mp4"
+          "t": "A Unidade S02E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115704.mp4"
         },
         {
-          "t": "100 Dias para Morar Comecando do Zero S01E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f5Lxmf9ON5dRBBZe1cFl26FZ0Ad.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114574.mp4"
+          "t": "A Unidade S02E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115705.mp4"
         },
         {
-          "t": "18 Outra Vez S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2SBZY5MHUVtypBAnDV4Lj5ErCKg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114575.mp4"
+          "t": "A Unidade S02E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115706.mp4"
         },
         {
-          "t": "18 Outra Vez S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2SBZY5MHUVtypBAnDV4Lj5ErCKg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114576.mp4"
-        },
-        {
-          "t": "18 Outra Vez S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2SBZY5MHUVtypBAnDV4Lj5ErCKg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114577.mp4"
-        },
-        {
-          "t": "18 Outra Vez S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2SBZY5MHUVtypBAnDV4Lj5ErCKg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114578.mp4"
+          "t": "A Unidade S02E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nYkYmNFfKydgrcO45oNjOnW0FDJ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/115707.mp4"
         }
       ]
     },
@@ -2735,67 +1906,57 @@
       "tipo": "series",
       "nome": "Séries Disney+",
       "pasta": "02_SERIES/04_Disney_Plus",
-      "total": 17182,
+      "total": 12285,
       "destaques": [
         {
-          "t": "3Hz S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56364.mp4"
+          "t": "A Historia Delas S01E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57092.mp4"
         },
         {
-          "t": "3Hz S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56365.mp4"
+          "t": "A Historia Delas S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57093.mp4"
         },
         {
-          "t": "3Hz S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56366.mp4"
+          "t": "A Historia Delas S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57094.mp4"
         },
         {
-          "t": "3Hz S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56367.mp4"
+          "t": "A Historia Delas S01E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57095.mp4"
         },
         {
-          "t": "3Hz S01E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56369.mp4"
+          "t": "A Historia Delas S01E05",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57097.mp4"
         },
         {
-          "t": "3Hz S01E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56370.mp4"
+          "t": "A Historia Delas S01E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57098.mp4"
         },
         {
-          "t": "3Hz S01E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56371.mp4"
+          "t": "A Historia Delas S01E07",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57099.mp4"
         },
         {
-          "t": "3Hz S01E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56372.mp4"
+          "t": "A Historia Delas S01E08",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mXubDh3K8KCz0jodSJXuqL7pOo1.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57100.mp4"
         },
         {
-          "t": "3Hz S01E09",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56374.mp4"
+          "t": "Acampados S01E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lzJwJQA9ei5vtRk3Rzw7l4zX7lQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57477.mp4"
         },
         {
-          "t": "3Hz S01E10",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56375.mp4"
-        },
-        {
-          "t": "3Hz S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56376.mp4"
-        },
-        {
-          "t": "3Hz S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b9R1paAYG8HpzPs6JS7hxmKgO8t.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/56377.mp4"
+          "t": "Acampados S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lzJwJQA9ei5vtRk3Rzw7l4zX7lQ.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/57478.mp4"
         }
       ]
     },
@@ -2855,16 +2016,6 @@
           "t": "220 Volts S01E07",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kpEuk9sblTWlpZshKUvFm2t6HhP.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93571.mp4"
-        },
-        {
-          "t": "220 Volts S01E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kpEuk9sblTWlpZshKUvFm2t6HhP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93572.mp4"
-        },
-        {
-          "t": "220 Volts S01E09",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kpEuk9sblTWlpZshKUvFm2t6HhP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93573.mp4"
         }
       ]
     },
@@ -2924,16 +2075,6 @@
           "t": "12 Monkeys S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lnLlxi9GcPNyLcmvt6uVipI73m5.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/26469.mp4"
-        },
-        {
-          "t": "12 Monkeys S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lnLlxi9GcPNyLcmvt6uVipI73m5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/26471.mp4"
-        },
-        {
-          "t": "12 Monkeys S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lnLlxi9GcPNyLcmvt6uVipI73m5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/26472.mp4"
         }
       ]
     },
@@ -2993,16 +2134,6 @@
           "t": "100 Code S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tg9fpeSvD8QvPOjt1ZASz3GkqT.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/224803.mp4"
-        },
-        {
-          "t": "100 Code S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tg9fpeSvD8QvPOjt1ZASz3GkqT.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/224804.mp4"
-        },
-        {
-          "t": "100 Code S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tg9fpeSvD8QvPOjt1ZASz3GkqT.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/224805.mp4"
         }
       ]
     },
@@ -3062,16 +2193,6 @@
           "t": "100 Coisas para Fazer Antes de Virar Zumbi S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUgE1ceORQzsZnGrASVKjEaGkzO.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35381.mp4"
-        },
-        {
-          "t": "100 Coisas para Fazer Antes de Virar Zumbi S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUgE1ceORQzsZnGrASVKjEaGkzO.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35382.mp4"
-        },
-        {
-          "t": "100 Coisas para Fazer Antes de Virar Zumbi S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wUgE1ceORQzsZnGrASVKjEaGkzO.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35383.mp4"
         }
       ]
     },
@@ -3131,16 +2252,6 @@
           "t": "100 Memorias [L] S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3Op0AfmFB32friSOlmKChPsImZu.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/76817.mp4"
-        },
-        {
-          "t": "100 Memorias [L] S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3Op0AfmFB32friSOlmKChPsImZu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/76819.mp4"
-        },
-        {
-          "t": "100 Memorias [L] S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3Op0AfmFB32friSOlmKChPsImZu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/76820.mp4"
         }
       ]
     },
@@ -3200,16 +2311,6 @@
           "t": "A Candidata S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6PRMRP01jpnC7HcyA1Yj93GRE6a.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/161063.mp4"
-        },
-        {
-          "t": "A Candidata S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6PRMRP01jpnC7HcyA1Yj93GRE6a.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/161064.mp4"
-        },
-        {
-          "t": "A Candidata S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6PRMRP01jpnC7HcyA1Yj93GRE6a.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/161065.mp4"
         }
       ]
     },
@@ -3269,16 +2370,6 @@
           "t": "50M S01E02",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3m0aiNtGZo6URftj88zGIrsv0V2.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/238620.mp4"
-        },
-        {
-          "t": "50M S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3m0aiNtGZo6URftj88zGIrsv0V2.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/238621.mp4"
-        },
-        {
-          "t": "50M S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3m0aiNtGZo6URftj88zGIrsv0V2.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/238622.mp4"
         }
       ]
     },
@@ -3338,16 +2429,6 @@
           "t": "A Outra [MEX] S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/s22Mt9PDXXRDxEB3oiXPv83s9kq.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/290839.mp4"
-        },
-        {
-          "t": "A Outra [MEX] S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/s22Mt9PDXXRDxEB3oiXPv83s9kq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/290840.mp4"
-        },
-        {
-          "t": "A Outra [MEX] S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/s22Mt9PDXXRDxEB3oiXPv83s9kq.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/290841.mp4"
         }
       ]
     },
@@ -3407,16 +2488,6 @@
           "t": "100 Lobo A Lenda da Pedra da Lua S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ahVX2SGDT5jwIX0PTuevLLSAeLB.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/46806.mp4"
-        },
-        {
-          "t": "100 Lobo A Lenda da Pedra da Lua S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ahVX2SGDT5jwIX0PTuevLLSAeLB.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/46807.mp4"
-        },
-        {
-          "t": "100 Lobo A Lenda da Pedra da Lua S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ahVX2SGDT5jwIX0PTuevLLSAeLB.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/46809.mp4"
         }
       ]
     },
@@ -3476,16 +2547,6 @@
           "t": "9-1-1 Lone Star S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/BOTITv548LYGB4xRD3rHfbwkqm.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/234197.mp4"
-        },
-        {
-          "t": "9-1-1 Lone Star S02E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/BOTITv548LYGB4xRD3rHfbwkqm.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/234198.mp4"
-        },
-        {
-          "t": "9-1-1 Lone Star S02E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/BOTITv548LYGB4xRD3rHfbwkqm.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/234199.mp4"
         }
       ]
     },
@@ -3545,16 +2606,6 @@
           "t": "A Maldicao do Triangulo das Bermudas S02E04",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2HETFR0zTj13ASVM8Z9E2KHnHWR.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42984.mp4"
-        },
-        {
-          "t": "A Maldicao do Triangulo das Bermudas S02E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2HETFR0zTj13ASVM8Z9E2KHnHWR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42985.mp4"
-        },
-        {
-          "t": "A Maldicao do Triangulo das Bermudas S02E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2HETFR0zTj13ASVM8Z9E2KHnHWR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42986.mp4"
         }
       ]
     },
@@ -3614,16 +2665,6 @@
           "t": "Boku no Hero Academia S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/92262.mp4"
-        },
-        {
-          "t": "Boku no Hero Academia S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/92264.mp4"
-        },
-        {
-          "t": "Boku no Hero Academia S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/92265.mp4"
         }
       ]
     },
@@ -3683,16 +2724,6 @@
           "t": "A Caverna Encantada S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5GhlwbZ8ogQUf2Xuq8tE2lX7gk7.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233423.mp4"
-        },
-        {
-          "t": "A Caverna Encantada S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5GhlwbZ8ogQUf2Xuq8tE2lX7gk7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233424.mp4"
-        },
-        {
-          "t": "A Caverna Encantada S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5GhlwbZ8ogQUf2Xuq8tE2lX7gk7.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233425.mp4"
         }
       ]
     },
@@ -3752,16 +2783,6 @@
           "t": "A Primeira Arte S01E03",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uz4XCuKxN2o47NWoqy6Jn5JUoB7.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/34795.mp4"
-        },
-        {
-          "t": "A Queda Argentina S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kILCM0KarbX9F58kCYfsiADxmp5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/34798.mp4"
-        },
-        {
-          "t": "A Queda Argentina S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kILCM0KarbX9F58kCYfsiADxmp5.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/34799.mp4"
         }
       ]
     },
@@ -3821,16 +2842,6 @@
           "t": "Chana e nadini - Chana e nadini S01E10",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300426.mp4"
-        },
-        {
-          "t": "Chana e nadini - Chana e nadini S01E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300427.mp4"
-        },
-        {
-          "t": "Chana e nadini - Chana e nadini S01E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300428.mp4"
         }
       ]
     },
@@ -3890,16 +2901,6 @@
           "t": "Candice Renoir S01E02",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRMnzom4uxM2MOzO84LODaUrNUg.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35064.mp4"
-        },
-        {
-          "t": "Candice Renoir S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRMnzom4uxM2MOzO84LODaUrNUg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35065.mp4"
-        },
-        {
-          "t": "Candice Renoir S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRMnzom4uxM2MOzO84LODaUrNUg.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/35067.mp4"
         }
       ]
     },
@@ -3908,67 +2909,57 @@
       "tipo": "series",
       "nome": "Séries Lionsgate+",
       "pasta": "02_SERIES/21_Lionsgate",
-      "total": 171,
+      "total": 38,
       "destaques": [
         {
-          "t": "Da Vinci_s Demons S01E01",
+          "t": "Da Vinci_s Demons S03E07",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114396.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114419.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114397.mp4"
+          "t": "Da Vinci's Demons S01E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sR8m3EUxmRJi4S9u5sfBDRLce1Z.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114428.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114398.mp4"
+          "t": "Men in Kilts A Roadtrip with Sam and Graham S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6XxC7cnwRxBQ0wgb2oUdHb0XO23.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114456.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114399.mp4"
+          "t": "Nacho S01E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bcfpovydjIs6PnIPrc04A1SVCcx.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114473.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114400.mp4"
+          "t": "Men in Kilts_ A Roadtrip with Sam and Graham S01E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6XxC7cnwRxBQ0wgb2oUdHb0XO23.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114467.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114401.mp4"
+          "t": "Survivor's Remorse S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1kJwkzdsGKlmRrK8HIOCgGtw6oU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114480.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114402.mp4"
+          "t": "Survivor_s Remorse S03E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1kJwkzdsGKlmRrK8HIOCgGtw6oU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114531.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S01E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114403.mp4"
+          "t": "Survivor_s Remorse S02E07",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1kJwkzdsGKlmRrK8HIOCgGtw6oU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114526.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S02E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114404.mp4"
+          "t": "Survivor_s Remorse S03E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1kJwkzdsGKlmRrK8HIOCgGtw6oU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114530.mp4"
         },
         {
-          "t": "Da Vinci_s Demons S02E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114405.mp4"
-        },
-        {
-          "t": "Da Vinci_s Demons S02E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114406.mp4"
-        },
-        {
-          "t": "Da Vinci_s Demons S02E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lXPKh0zNxXvrKOyUZuUwl3wiGjX.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114407.mp4"
+          "t": "Survivor_s Remorse S03E06",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1kJwkzdsGKlmRrK8HIOCgGtw6oU.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/114535.mp4"
         }
       ]
     },
@@ -3977,47 +2968,17 @@
       "tipo": "series",
       "nome": "Séries Portuguesas",
       "pasta": "02_SERIES/22_Portuguesas",
-      "total": 152,
+      "total": 64,
       "destaques": [
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300266.mp4"
-        },
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300267.mp4"
-        },
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300268.mp4"
-        },
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300269.mp4"
-        },
         {
           "t": "Páginas da Vida - Páginas da Vida S01E05",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300270.mp4"
         },
         {
-          "t": "Páginas da Vida - Páginas da Vida S01E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300271.mp4"
-        },
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300272.mp4"
-        },
-        {
-          "t": "Páginas da Vida - Páginas da Vida S01E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300273.mp4"
+          "t": "Cacau - Cacau S01E02",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300277.mp4"
         },
         {
           "t": "Páginas da Vida - Páginas da Vida S01E09",
@@ -4025,9 +2986,9 @@
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300274.mp4"
         },
         {
-          "t": "Páginas da Vida - Páginas da Vida S01E10",
+          "t": "Páginas da Vida - Páginas da Vida S01E04",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300275.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300269.mp4"
         },
         {
           "t": "Cacau - Cacau S01E01",
@@ -4035,9 +2996,29 @@
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300276.mp4"
         },
         {
-          "t": "Cacau - Cacau S01E02",
+          "t": "Páginas da Vida - Páginas da Vida S01E03",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300268.mp4"
+        },
+        {
+          "t": "Páginas da Vida - Páginas da Vida S01E07",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300272.mp4"
+        },
+        {
+          "t": "Cacau - Cacau S01E07",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300277.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300282.mp4"
+        },
+        {
+          "t": "Páginas da Vida - Páginas da Vida S01E10",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sPlEV80z33xVjVbvu7BKPOkIQR.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300275.mp4"
+        },
+        {
+          "t": "Cacau - Cacau S01E08",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nNCFBKZ68fmr008moWSzLdu2mUP.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/300283.mp4"
         }
       ]
     },
@@ -4046,67 +3027,12 @@
       "tipo": "series",
       "nome": "Séries Pluto TV",
       "pasta": "02_SERIES/23_Pluto_TV",
-      "total": 122,
+      "total": 1,
       "destaques": [
-        {
-          "t": "Caillou S03E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233338.mp4"
-        },
-        {
-          "t": "Caillou S03E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233339.mp4"
-        },
-        {
-          "t": "Caillou S03E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233340.mp4"
-        },
-        {
-          "t": "Caillou S03E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233341.mp4"
-        },
-        {
-          "t": "Caillou S03E05",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233342.mp4"
-        },
-        {
-          "t": "Caillou S03E06",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233343.mp4"
-        },
-        {
-          "t": "Caillou S03E07",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233344.mp4"
-        },
-        {
-          "t": "Caillou S03E08",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233345.mp4"
-        },
         {
           "t": "Caillou S03E09",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233346.mp4"
-        },
-        {
-          "t": "Caillou S03E10",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233347.mp4"
-        },
-        {
-          "t": "Caillou S03E11",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233348.mp4"
-        },
-        {
-          "t": "Caillou S03E12",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/owEulie4od308GZd2jTVaX1Y0OP.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/233349.mp4"
         }
       ]
     },
@@ -4115,32 +3041,17 @@
       "tipo": "series",
       "nome": "Séries AMC+",
       "pasta": "02_SERIES/24_AMC_Plus",
-      "total": 82,
+      "total": 81,
       "destaques": [
-        {
-          "t": "Channel Zero S01E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/1.mp4"
-        },
-        {
-          "t": "Channel Zero S01E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/2.mp4"
-        },
-        {
-          "t": "Channel Zero S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/3.mp4"
-        },
         {
           "t": "Channel Zero S01E04",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/4.mp4"
         },
         {
-          "t": "Channel Zero S01E05",
+          "t": "Channel Zero S01E01",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/5.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/1.mp4"
         },
         {
           "t": "Channel Zero S01E06",
@@ -4148,24 +3059,14 @@
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/6.mp4"
         },
         {
-          "t": "Channel Zero S02E01",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/7.mp4"
-        },
-        {
-          "t": "Channel Zero S02E02",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/8.mp4"
-        },
-        {
           "t": "Channel Zero S02E03",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/9.mp4"
         },
         {
-          "t": "Channel Zero S02E04",
+          "t": "Channel Zero S01E02",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/10.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/2.mp4"
         },
         {
           "t": "Channel Zero S02E05",
@@ -4173,9 +3074,24 @@
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/11.mp4"
         },
         {
-          "t": "Channel Zero S02E06",
+          "t": "Channel Zero S01E03",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/12.mp4"
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/3.mp4"
+        },
+        {
+          "t": "Channel Zero S01E05",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/5.mp4"
+        },
+        {
+          "t": "Channel Zero S02E04",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/10.mp4"
+        },
+        {
+          "t": "Channel Zero S02E01",
+          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCutmhFznao1Pzy6wM1C32kxAEu.jpg",
+          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/7.mp4"
         }
       ]
     },
@@ -4235,16 +3151,6 @@
           "t": "100-man no Inochi no Ue ni Ore wa Tatte Iru S01E02",
           "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fbBY1UEW7Vx2alMrjg6xNNM3Pv9.jpg",
           "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/202243.mp4"
-        },
-        {
-          "t": "100-man no Inochi no Ue ni Ore wa Tatte Iru S01E03",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fbBY1UEW7Vx2alMrjg6xNNM3Pv9.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/202244.mp4"
-        },
-        {
-          "t": "100-man no Inochi no Ue ni Ore wa Tatte Iru S01E04",
-          "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fbBY1UEW7Vx2alMrjg6xNNM3Pv9.jpg",
-          "u": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/202245.mp4"
         }
       ]
     }

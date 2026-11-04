@@ -1776,6 +1776,7 @@ async function selectCategory(catId, catName) {
     updateSeriesControlsVisibility();
     state.animePagination.page = 1;
     state.animePagination.searchQuery = '';
+    dom.itemsFoundText.textContent = 'Carregando catálogo oficial de animes...';
     loadAnimesPage(1, '');
     return;
   }
@@ -1869,15 +1870,22 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
   state.animePagination.isLoading = true;
   const currentRequestId = ++state.animePagination.requestId;
 
-  // Substituição de página: Limpa o grid e exibe skeletons leves (máximo 6 placeholders)
-  dom.cardsGrid.innerHTML = `
-    <div class="card-skeleton"></div>
-    <div class="card-skeleton"></div>
-    <div class="card-skeleton"></div>
-    <div class="card-skeleton"></div>
-    <div class="card-skeleton"></div>
-    <div class="card-skeleton"></div>
-  `;
+  // Atualiza imediatamente o indicador de status para evitar textos desatualizados de outras abas
+  if (dom.itemsFoundText) {
+    dom.itemsFoundText.textContent = search ? `Buscando "${escapeHtml(search)}"...` : 'Carregando animes do catálogo oficial...';
+  }
+
+  // Se o grid estiver vazio, exibe skeletons leves (apenas na carga inicial sem cards prévios)
+  if (!dom.cardsGrid.children.length) {
+    dom.cardsGrid.innerHTML = `
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+    `;
+  }
   if (dom.loadMoreContainer) dom.loadMoreContainer.style.display = 'none';
   if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
 
@@ -1898,10 +1906,10 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
       }
     } catch (apiErr) {
       if (apiErr.name === 'AbortError') return;
-      console.warn('API /api/animes indisponível, usando fallback estático CDN...', apiErr);
+      console.warn('API /api/animes indisponível, usando fallback estático...', apiErr);
     }
 
-    if (!data || !data.animes || !Array.isArray(data.animes) || (data.animes.length === 0 && !search && !genre)) {
+    if (!data || !data.animes || !Array.isArray(data.animes)) {
       data = await getStaticAnimesPage(page, 24, search, genre, sort);
     }
 
@@ -2273,7 +2281,10 @@ function groupItemsBySeries(items) {
     if (parsed.isEpisode) {
       const normSeries = parsed.seriesName.toLowerCase().replace(/[^a-z0-9]/g, '');
       // Se já existe uma versão completa oficial deste anime no catálogo, não duplica criando card secundário de IPTV
-      if (animeNormalizedTitles.has(normSeries)) {
+      const isAnimeDuplicate = animeNormalizedTitles.has(normSeries) || Array.from(animeNormalizedTitles).some(aNorm => 
+        (normSeries.length >= 6 && aNorm.includes(normSeries)) || (aNorm.length >= 6 && normSeries.includes(aNorm))
+      );
+      if (isAnimeDuplicate) {
         return;
       }
 

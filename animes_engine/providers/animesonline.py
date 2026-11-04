@@ -470,15 +470,14 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                             if req_qual in lbl.lower() or ("720" in req_qual and "720" in lbl) or ("360" in req_qual and "360" in lbl):
                                 chosen_label, chosen_url = lbl, u
                                 break
-                    # Probe to ensure the direct GoogleVideo stream is not 403 Forbidden
+                    # Probe to ensure the direct GoogleVideo stream is accessible (requires Blogger referer and byte range)
                     probe_ok = True
+                    probe_hdrs = {"User-Agent": HEADERS["User-Agent"], "Referer": "https://www.blogger.com/", "Range": "bytes=0-100"}
                     try:
-                        with httpx.Client(timeout=2.0) as probe_c:
-                            pr = probe_c.head(chosen_url, headers={"User-Agent": HEADERS["User-Agent"]})
-                            if pr.status_code >= 400 and pr.status_code != 405:
-                                pr2 = probe_c.get(chosen_url, headers={"User-Agent": HEADERS["User-Agent"], "Range": "bytes=0-10"})
-                                if pr2.status_code >= 400:
-                                    probe_ok = False
+                        with httpx.Client(timeout=2.5) as probe_c:
+                            pr = probe_c.get(chosen_url, headers=probe_hdrs)
+                            if pr.status_code not in (200, 206, 302):
+                                probe_ok = False
                     except Exception:
                         probe_ok = False
 
@@ -488,7 +487,7 @@ class AnimesOnlineCCProvider(BaseAnimeProvider):
                             success=True,
                             stream_url=chosen_url,
                             player_type="direct",
-                            headers={"User-Agent": HEADERS["User-Agent"]},
+                            headers={"User-Agent": HEADERS["User-Agent"], "Referer": "https://www.blogger.com/"},
                             quality=chosen_label,
                             qualities=qualities_list
                         )

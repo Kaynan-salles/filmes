@@ -75773,6 +75773,26 @@
     "is_anime": true
   },
   {
+    "id": "ani_tokyo_revengers_s1",
+    "t": "Tokyo Revengers",
+    "catNome": "ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/original/XbjlgUJknGCv7cNuinxdaFUFNt.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/a4MW4DzvP2eRizrx4OzOoIHu7Eg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_tokyo_revengers_s1&ep=1&s=1",
+    "sinopse": "Num momento difícil da sua vida, Takemichi fica ainda pior ao saber que a menina que ele amava desde a época da escola foi morta pela gangue Tokyo Manji. No dia seguinte, ao esperar o trem na estação, Takemichi é empurrado nos trilhos. Mas, em vez de morrer, ele percebe que viajou no tempo, voltando para seus anos de escola. É a chance para Takemichi reescrever sua história e tentar evitar a morte da amada.",
+    "ano": 2021,
+    "temporadas": 1,
+    "total_episodios": 59,
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Drama",
+      "Romance",
+      "Sobrenatural"
+    ],
+    "is_anime": true
+  },
+  {
     "id": "ani_tokyo_underground_s1",
     "t": "Tokyo Underground",
     "catNome": "ANIMES | Catálogo Oficial",

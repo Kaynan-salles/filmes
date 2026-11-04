@@ -103,7 +103,9 @@ ALLOWED_PROXY_DOMAINS = [
     "betterstream.net",
     "cdn-anime.com",
     "playercdn.net",
-    "blogspot.com"
+    "blogspot.com",
+    "tech-cdn.top",
+    "workers.dev"
 ]
 
 def is_safe_proxy_url(url: str):
@@ -264,11 +266,32 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 terms = q.split()
                 results = []
                 anime_titles_normalized = set()
+                quarantine_urls = set()
+                quarantine_titles = set()
 
-                # Include matching animes first
+                # Carrega quarentena e animes do SQLite para deduplicação absoluta e exclusão de links mortos
                 try:
                     conn = get_connection()
                     cur = conn.cursor()
+                    
+                    # 1. Carrega todos os links e títulos em quarentena para nunca sugerir conteúdo quebrado
+                    cur.execute("SELECT stream_url, title FROM invalid_links_quarantine")
+                    for q_row in cur.fetchall():
+                        if q_row[0]:
+                            quarantine_urls.add(q_row[0])
+                        if q_row[1]:
+                            q_norm = re.sub(r'[^a-z0-9]', '', q_row[1].lower())
+                            if q_norm:
+                                quarantine_titles.add(q_norm)
+
+                    # 2. Carrega todos os animes do catálogo (para nunca duplicar com IPTV)
+                    cur.execute("SELECT canonical_title FROM animes")
+                    for a_all in cur.fetchall():
+                        t_norm = re.sub(r'[^a-z0-9]', '', (a_all[0] or "").lower())
+                        if t_norm:
+                            anime_titles_normalized.add(t_norm)
+
+                    # 3. Inclui animes oficiais 100% ativos que batem com os termos de busca
                     cur.execute("SELECT id, canonical_title, poster, synopsis, total_episodes FROM animes WHERE (is_hidden = 0 OR is_hidden IS NULL)")
                     for a_row in cur.fetchall():
                         t_lower = a_row["canonical_title"].lower()
@@ -283,9 +306,6 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                                 "total_episodios": a_row["total_episodes"],
                                 "sinopse": a_row["synopsis"]
                             })
-                            norm_t = re.sub(r'[^a-z0-9]', '', t_lower)
-                            if norm_t:
-                                anime_titles_normalized.add(norm_t)
                     conn.close()
                 except Exception:
                     pass
@@ -302,9 +322,17 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 for item in search_index:
                     title_lower = item["s"]
                     if all(t in title_lower for t in terms):
-                        # Evita duplicar animes oficiais com versões secundárias/incompletas de listas IPTV
+                        # Se a URL ou título estiver na quarentena, não exibe
+                        if item["u"] in quarantine_urls:
+                            continue
+
                         s_key = _extract_series_key(item["t"]).lower()
                         s_norm = re.sub(r'[^a-z0-9]', '', s_key)
+
+                        if s_norm in quarantine_titles:
+                            continue
+
+                        # Evita duplicar animes oficiais com versões secundárias/incompletas de listas IPTV
                         if s_norm in anime_titles_normalized:
                             continue
 
@@ -438,6 +466,9 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 elif "maximaimg.online" in target_url or "animesdigital" in target_url or "anivideo" in target_url:
                     headers["Referer"] = "https://api.anivideo.net/"
                     headers["Origin"] = "https://api.anivideo.net"
+                elif "googlevideo.com" in target_url or "blogger.com" in target_url:
+                    headers["Referer"] = "https://www.blogger.com/"
+                    headers["Origin"] = "https://www.blogger.com"
                 elif "anidrive" in target_url or "animesonline" in target_url:
                     headers["Referer"] = "https://animesonline.io/"
 
