@@ -169,6 +169,24 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Expires", "0")
         super().end_headers()
 
+    def send_json(self, data, status=200):
+        body = json.dumps(data, ensure_ascii=False).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        self.wfile.write(body)
+
+    def send_text(self, text, status=200, content_type="text/plain; charset=utf-8"):
+        body = text.encode("utf-8") if isinstance(text, str) else text
+        self.send_response(status)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        self.wfile.write(body)
+
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
@@ -189,11 +207,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             sort = query_params.get("sort", ["latest"])[0]
 
             data = get_paginated_animes(page=page, limit=limit, search=search, genre=genre, sort=sort)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+            self.send_json(data, 200)
             return
 
         # Endpoint de episódios sob demanda por temporada
@@ -206,19 +220,11 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 season = 1
 
             if not anime_id:
-                self.send_response(400)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"error": "Parâmetro anime_id é obrigatório"}).encode("utf-8"))
+                self.send_json({"error": "Parâmetro anime_id é obrigatório"}, 400)
                 return
 
             episodes = get_season_episodes(anime_id, season)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(episodes, ensure_ascii=False).encode("utf-8"))
+            self.send_json(episodes, 200)
             return
 
         # Endpoint de status de sincronização em segundo plano
@@ -226,11 +232,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             provider = query_params.get("provider", [None])[0]
             status = get_sync_status(provider)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(status, ensure_ascii=False).encode("utf-8"))
+            self.send_json(status, 200)
             return
 
         # Endpoint para pausar a sincronização em segundo plano
@@ -239,11 +241,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             reason = query_params.get("reason", ["Pausado pelo usuário"])[0]
             provider = query_params.get("provider", ["animesonlinecc"])[0]
             res = pause_background_sync(provider, reason=reason)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+            self.send_json(res, 200)
             return
 
         # Endpoint para retomar a sincronização em segundo plano
@@ -251,11 +249,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             provider = query_params.get("provider", ["animesonlinecc"])[0]
             res = resume_background_sync(provider)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+            self.send_json(res, 200)
             return
 
         # Endpoint de busca instantânea: /api/search?q=nome
@@ -323,11 +317,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                         if len(results) >= limit:
                             break
 
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(results, ensure_ascii=False).encode("utf-8"))
+            self.send_json(results, 200)
             return
 
         # Endpoint de animes: detalhes completos de um anime
@@ -335,11 +325,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             anime_id = query_params.get("id", [""])[0].strip()
             details = get_anime_full_details(anime_id)
-            self.send_response(200 if details else 404)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(details, ensure_ascii=False).encode("utf-8"))
+            self.send_json(details or {}, 200 if details else 404)
             return
 
         # Endpoint de animes: resolução dinâmica de stream para reprodução
@@ -368,29 +354,17 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     pass
 
             if not ep_id:
-                self.send_response(400)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": "Parâmetro episode_id ou anime_id obrigatório"}).encode("utf-8"))
+                self.send_json({"success": False, "error": "Parâmetro episode_id ou anime_id obrigatório"}, 400)
                 return
 
             res = resolve_episode_stream(ep_id, preferred_audio=audio, preferred_provider=provider, preferred_quality=quality)
-            self.send_response(200 if res.get("success") else 502)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+            self.send_json(res, 200 if res.get("success") else 502)
             return
 
         # Endpoint de diagnóstico do catálogo de animes
         if path == "/api/animes/diagnostics":
             diag = generate_diagnostic_report()
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(diag, ensure_ascii=False).encode("utf-8"))
+            self.send_json(diag, 200)
             return
 
         # Endpoint de favoritos do usuário
@@ -398,11 +372,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             user_id = query_params.get("user_id", ["guest"])[0].strip()
             activity = get_user_activity(user_id)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(activity["favorites"], ensure_ascii=False).encode("utf-8"))
+            self.send_json(activity.get("favorites", []), 200)
             return
 
         # Endpoint de continuar assistindo (watch progress)
@@ -410,26 +380,21 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             user_id = query_params.get("user_id", ["guest"])[0].strip()
             activity = get_user_activity(user_id)
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps(activity["continue_watching"], ensure_ascii=False).encode("utf-8"))
+            self.send_json(activity.get("continue_watching", []), 200)
             return
 
         # Endpoint de gerenciamento de clientes: /api/clients
         if path == "/api/clients":
             clients_file = os.path.join(WEB_DIR, "data", "clientes.json")
             if os.path.exists(clients_file):
-                with open(clients_file, "r", encoding="utf-8") as f:
-                    content = f.read()
+                try:
+                    with open(clients_file, "r", encoding="utf-8") as f:
+                        clients_data = json.load(f)
+                except Exception:
+                    clients_data = []
             else:
-                content = "[]"
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(content.encode("utf-8"))
+                clients_data = []
+            self.send_json(clients_data, 200)
             return
 
         # Endpoint de proxy de streaming seguro: /api/stream?url=...
@@ -437,20 +402,13 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             query_params = urllib.parse.parse_qs(parsed.query)
             target_url = query_params.get("url", [""])[0].strip()
             if not target_url:
-                self.send_response(400)
-                self.send_header("Content-Type", "text/plain; charset=utf-8")
-                self.end_headers()
-                self.wfile.write(b"Parametro url e obrigatorio")
+                self.send_text("Parametro url e obrigatorio", 400)
                 return
 
             # Validação rigorosa anti-SSRF e domínios permitidos
             safe, reason = is_safe_proxy_url(target_url)
             if not safe:
-                self.send_response(403)
-                self.send_header("Content-Type", "text/plain; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(f"Proxy seguro: Acesso negado ({reason})".encode("utf-8"))
+                self.send_text(f"Proxy seguro: Acesso negado ({reason})", 403)
                 return
 
             try:
@@ -549,11 +507,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 return
             except Exception as e:
                 try:
-                    self.send_response(502)
-                    self.send_header("Content-Type", "text/plain; charset=utf-8")
-                    self.send_header("Access-Control-Allow-Origin", "*")
-                    self.end_headers()
-                    self.wfile.write(f"Erro no streaming proxy: {str(e)}".encode("utf-8"))
+                    self.send_text(f"Erro no streaming proxy: {str(e)}", 502)
                 except Exception:
                     pass
                 return
@@ -563,6 +517,8 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
             rel_path = path[len("/CANAIS_ORGANIZADOS/"):]
             file_path = os.path.join(BASE_DIR, "CANAIS_ORGANIZADOS", urllib.parse.unquote(rel_path))
             if os.path.exists(file_path) and os.path.isfile(file_path):
+                with open(file_path, "rb") as f:
+                    file_bytes = f.read()
                 self.send_response(200)
                 if file_path.endswith(".m3u8"):
                     self.send_header("Content-Type", "application/vnd.apple.mpegurl; charset=utf-8")
@@ -573,10 +529,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     self.send_header("Content-Type", "text/csv; charset=utf-8")
                 else:
                     self.send_header("Content-Type", "text/plain; charset=utf-8")
+                self.send_header("Content-Length", str(len(file_bytes)))
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
-                with open(file_path, "rb") as f:
-                    self.wfile.write(f.read())
+                self.wfile.write(file_bytes)
                 return
 
         return super().do_GET()
@@ -586,6 +542,7 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Content-Length", "0")
         self.end_headers()
 
     def do_POST(self):
@@ -601,18 +558,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 os.makedirs(os.path.dirname(clients_file), exist_ok=True)
                 with open(clients_file, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": True}).encode("utf-8"))
+                self.send_json({"success": True}, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         # POST /api/animes/sync: sincroniza título por busca OU controla sincronização em segundo plano
@@ -636,30 +585,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     continuous = bool(data.get("continuous", True))
                     res = start_background_sync(provider_name=provider, batch_size=batch_size, continuous=continuous)
 
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                self.send_json(res, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
-                return
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
-                return
-            except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         # POST /api/animes/consolidate: consolida duplicatas exatas mantendo favoritos e histórico
@@ -671,18 +600,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 dry_run = bool(data.get("dry_run", False))
                 res = consolidate_duplicates(dry_run=dry_run)
                 export_catalog_to_json()
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                self.send_json(res, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         # POST /api/animes/favorites: alternar favorito
@@ -696,18 +617,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 title = data.get("title", "")
                 poster = data.get("poster", "")
                 res = toggle_user_favorite(user_id, content_id, title, poster)
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                self.send_json(res, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         # POST /api/animes/watch-progress: salvar progresso de reprodução
@@ -730,18 +643,10 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     poster=data.get("poster", ""),
                     stream_url=data.get("stream_url", "")
                 )
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                self.send_json(res, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         # POST /api/animes/watch-progress/delete: remover item ou limpar histórico
@@ -754,33 +659,36 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                     user_id=data.get("user_id", "guest"),
                     content_id=data.get("content_id", None)
                 )
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
+                self.send_json(res, 200)
                 return
             except Exception as e:
-                self.send_response(500)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+                self.send_json({"success": False, "error": str(e)}, 500)
                 return
 
         return super().do_POST()
 
+class DualStackServer(http.server.ThreadingHTTPServer):
+    address_family = socket.AF_INET6
+
+    def server_bind(self):
+        try:
+            self.socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+        except Exception:
+            pass
+        return super().server_bind()
+
 def main():
     carregar_indice()
-    server_class = getattr(http.server, "ThreadingHTTPServer", socketserver.ThreadingTCPServer)
+    server_class = DualStackServer
     server_class.allow_reuse_address = True
+    bind_addr = "::"
     try:
-        with server_class(("", PORT), KCineHandler) as httpd:
-            url = f"http://localhost:{PORT}"
+        with server_class((bind_addr, PORT), KCineHandler) as httpd:
+            url = f"http://127.0.0.1:{PORT}"
             print("=" * 65)
             print("            K-CINE - PORTAL DO CANAL DE FILMES E SÉRIES")
             print("=" * 65)
-            print(f"\n[+] Servidor ativo em: {url}")
+            print(f"\n[+] Servidor ativo em: {url} (e http://localhost:{PORT})")
             print(f"[+] Total de títulos no catálogo: {len(search_index):,}")
             print("\nPressione Ctrl+C para encerrar o servidor.\n")
             
@@ -792,8 +700,8 @@ def main():
             httpd.serve_forever()
     except OSError as e:
         print(f"Porta {PORT} ocupada, tentando porta {PORT + 1}...")
-        with server_class(("", PORT + 1), KCineHandler) as httpd:
-            url = f"http://localhost:{PORT + 1}"
+        with server_class((bind_addr, PORT + 1), KCineHandler) as httpd:
+            url = f"http://127.0.0.1:{PORT + 1}"
             print(f"[+] Servidor ativo em: {url}")
             try:
                 webbrowser.open(url)

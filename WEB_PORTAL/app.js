@@ -843,17 +843,27 @@ function setupEventListeners() {
   dom.btnPlayerFavorite?.addEventListener('click', handleFavoriteToggle);
   dom.btnSeriesModalFavorite?.addEventListener('click', handleFavoriteToggle);
 
-  // Busca Inteligente com debounce de 400ms
+  // Busca Inteligente com debounce ultra-rápido de 120ms e execução instantânea no Enter
   dom.searchInput.addEventListener('input', (e) => {
     const val = e.target.value.trim();
     dom.clearSearchBtn.style.display = val ? 'block' : 'none';
     clearTimeout(state.searchTimeout);
-    state.searchTimeout = setTimeout(() => handleSearch(val), 400);
+    state.searchTimeout = setTimeout(() => handleSearch(val), 120);
+  });
+
+  dom.searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      clearTimeout(state.searchTimeout);
+      const val = dom.searchInput.value.trim();
+      handleSearch(val);
+    }
   });
 
   dom.clearSearchBtn.addEventListener('click', () => {
     dom.searchInput.value = '';
     dom.clearSearchBtn.style.display = 'none';
+    clearTimeout(state.searchTimeout);
     handleSearch('');
   });
 
