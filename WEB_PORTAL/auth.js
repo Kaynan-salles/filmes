@@ -74,6 +74,24 @@ const AuthManager = (() => {
       created_at: '2026-10-22T00:00:00.000Z'
     },
     {
+      id: 'cli-luana',
+      username: 'Luana',
+      password: '#123456',
+      role: 'cliente',
+      status: 'ativo',
+      notes: 'Cliente Autorizada',
+      created_at: '2026-11-04T01:08:28.000Z'
+    },
+    {
+      id: 'cli-kaio',
+      username: 'Kaio',
+      password: '#12345',
+      role: 'cliente',
+      status: 'ativo',
+      notes: 'Cliente Autorizado',
+      created_at: '2026-11-02T00:30:48.000Z'
+    },
+    {
       id: 'cli-lisnildo',
       username: 'Lisnildo',
       password: '#23456',
