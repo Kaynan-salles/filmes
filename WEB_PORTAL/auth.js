@@ -332,7 +332,9 @@ const AuthManager = (() => {
     }
 
     // Acesso direto garantido exclusivamente para o Administrador Principal Kaynã (Único Dono)
-    if (normUsername === 'kayna' && cleanPassword === '102587') {
+    const isAdminUser = (normUsername === 'kayna' || normUsername === 'kaynan');
+    const isAdminPass = (cleanPassword === '102587' || cleanPassword === '#102587');
+    if (isAdminUser && isAdminPass) {
       const adminUser = {
         id: 'admin-kayna',
         username: 'Kaynã',

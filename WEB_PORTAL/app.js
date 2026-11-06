@@ -3603,7 +3603,6 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
           });
         }
       }
-    }
 
     // Salva progresso de reprodução no backend
     fetch('/api/animes/watch-progress', {
