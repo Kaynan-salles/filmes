@@ -1,6 +1,6 @@
-// K-Cine - Configuração do Supabase
+// K-Cine - Configuração Oficial do Supabase (Frontend / Client-Side)
 window.SUPABASE_CONFIG = {
-  projectId: 'nkemtquunrmavtnzyyli',
-  url: 'https://nkemtquunrmavtnzyyli.supabase.co',
-  anonKey: 'sb_publishable_t8_odSP-sK_7iEWuyjExhA_0pH6FSPv'
+  projectId: 'fedwfhileifzuogihdrn',
+  url: 'https://fedwfhileifzuogihdrn.supabase.co',
+  anonKey: 'sb_publishable_NuLCq0ZefzZLg3gNOzcRLA_mUHBm_S4'
 };

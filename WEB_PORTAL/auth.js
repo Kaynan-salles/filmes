@@ -243,6 +243,12 @@ const AuthManager = (() => {
       const url = window.SUPABASE_CONFIG.url.trim();
       const key = window.SUPABASE_CONFIG.anonKey.trim();
       if (url && key && !url.includes('exemplo.supabase.co')) {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEYS.CONFIG);
+          if (!stored || JSON.parse(stored).url !== url) {
+            localStorage.setItem(STORAGE_KEYS.CONFIG, JSON.stringify({ url, anonKey: key }));
+          }
+        } catch (e) {}
         return { url, anonKey: key };
       }
     }

@@ -1,9 +1,9 @@
 -- =====================================================================
--- K-CINE - ESQUEMA DO BANCO DE DADOS SUPABASE (PROJETO: nkemtquunrmavtnzyyli)
+-- K-CINE - ESQUEMA DO BANCO DE DADOS SUPABASE (PROJETO: fedwfhileifzuogihdrn)
 -- =====================================================================
 -- Instruções:
--- 1. Acesse o SQL Editor do seu projeto:
---    https://supabase.com/dashboard/project/nkemtquunrmavtnzyyli/sql/new
+-- 1. Acesse o SQL Editor do seu projeto Supabase:
+--    https://supabase.com/dashboard/project/fedwfhileifzuogihdrn/sql/new
 -- 2. Cole todo este código abaixo e clique em "Run" (Executar)
 -- 3. As tabelas 'clientes', 'animes', 'episodes', 'episode_sources', 
 --    'user_favorites' e 'user_watch_progress' serão criadas com RLS configurado!
@@ -28,7 +28,7 @@ CREATE INDEX IF NOT EXISTS idx_clientes_status ON public.clientes (status);
 -- 3. Habilitação de RLS (Row Level Security)
 ALTER TABLE public.clientes ENABLE ROW LEVEL SECURITY;
 
--- 4. Políticas de Acesso para a chave pública (anon)
+-- 4. Políticas de Acesso para a chave pública (anon) e autenticada
 -- Permite leitura para verificação de login e listagem pela central
 DROP POLICY IF EXISTS "Permitir leitura anonima de clientes" ON public.clientes;
 CREATE POLICY "Permitir leitura anonima de clientes"
@@ -57,14 +57,17 @@ ON public.clientes FOR DELETE
 TO anon, authenticated
 USING (true);
 
--- 5. Cadastro do Administrador Principal (Kaynã - Único Dono)
+-- 5. Cadastro do Administrador Principal e Clientes Autorizados
 INSERT INTO public.clientes (username, password, role, status, notes)
 VALUES 
-    ('Kaynã', '102587', 'admin', 'ativo', 'Kaynã - Único Dono & Administrador Geral do K-Cine')
+    ('Kaynã', '102587', 'admin', 'ativo', 'Kaynã - Único Dono & Administrador Geral do K-Cine'),
+    ('Luana', '#123456', 'cliente', 'ativo', 'Cliente Autorizada'),
+    ('Gleydson', '#123456', 'cliente', 'ativo', 'Cliente Autorizado'),
+    ('Kaio', '#12345', 'cliente', 'ativo', 'Cliente Autorizado')
 ON CONFLICT (username) DO UPDATE 
-SET password = '102587', role = 'admin', status = 'ativo';
+SET password = EXCLUDED.password, role = EXCLUDED.role, status = EXCLUDED.status;
 
--- Remove contas de demonstração e admin legadas (o único dono é Kaynã)
+-- Remove contas de demonstração e admin legadas
 DELETE FROM public.clientes WHERE username = 'admin' OR username = 'cliente1';
 
 -- =====================================================================
@@ -172,4 +175,3 @@ CREATE POLICY "Permitir leitura anonima de episodios" ON public.episodes FOR SEL
 CREATE POLICY "Permitir leitura anonima de fontes" ON public.episode_sources FOR SELECT TO anon, authenticated USING (true);
 CREATE POLICY "Permitir acesso completo a favoritos" ON public.user_favorites FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir acesso completo a progresso" ON public.user_watch_progress FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-
