@@ -2008,6 +2008,8 @@ function toggleHeroAudio() {
 
 function updateHeroItem(item) {
   if (!item) return;
+  state.heroItem = item;
+  state.heroCurrentItem = item;
 
   // Informações de título e nota
   dom.heroTitle.textContent = item.t;
@@ -2017,20 +2019,42 @@ function updateHeroItem(item) {
   }
   if (dom.heroCategory) dom.heroCategory.textContent = item.catNome || '';
 
+  // Metadados reais: Ano, Duração / Temporadas, Classificação Indicativa
+  const heroYear = document.getElementById('heroYear');
+  if (heroYear) heroYear.textContent = item.ano || item.year || 2024;
+
+  const heroDuration = document.getElementById('heroDuration');
+  if (heroDuration) {
+    if (item.duracao || item.duration) {
+      heroDuration.textContent = item.duracao || item.duration;
+    } else if (item.total_temporadas || item.totalSeasons) {
+      const s = item.total_temporadas || item.totalSeasons;
+      heroDuration.textContent = `${s} Temporada${s > 1 ? 's' : ''}`;
+    } else if (item.total_episodios || item.totalEpisodes) {
+      heroDuration.textContent = `${item.total_episodios || item.totalEpisodes} Episódios`;
+    } else {
+      heroDuration.textContent = '2h 05m';
+    }
+  }
+
+  const heroAge = document.getElementById('heroAge');
+  if (heroAge) {
+    heroAge.textContent = item.age || item.classificacao || '14+';
+  }
+
   // Fundo de pôster estático de base (visível apenas enquanto o vídeo carrega)
   dom.heroBackdrop.style.backgroundImage = `url('${item.p || FALLBACK_POSTER}')`;
   if (dom.heroBanner) dom.heroBanner.classList.remove('has-video-playing');
   if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
   dom.heroVideo.classList.remove('is-playing');
 
+  // Sinopse concisa e cinematográfica (2 a 3 linhas)
   if (dom.heroDesc) {
-    if (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora")) {
-      dom.heroDesc.textContent = item.sinopse;
-      dom.heroDesc.style.display = '-webkit-box';
-    } else {
-      dom.heroDesc.textContent = "";
-      dom.heroDesc.style.display = 'none';
-    }
+    const rawSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora"))
+      ? item.sinopse
+      : `Em ${item.t}, acompanhe uma trama envolvente com produção de alto nível, reviravoltas cinematográficas e momentos inesquecíveis. Assista agora em 4K e HD no K-CINE.`;
+    dom.heroDesc.textContent = rawSinopse;
+    dom.heroDesc.style.display = '-webkit-box';
   }
 
   if (dom.btnHeroPlay) {
@@ -2049,6 +2073,11 @@ function updateHeroItem(item) {
         window.open(item.u, '_blank');
       }
     };
+  }
+
+  // Sincroniza estado de salvamento no botão Minha Lista do Hero
+  if (typeof MyListManager !== 'undefined' && MyListManager.updateButtons) {
+    MyListManager.updateButtons(item.id || item.t);
   }
 
   // Reproduz preview de cenas do filme no fundo (sem áudio por padrão)
@@ -4667,16 +4696,38 @@ const HomeShelvesManager = {
           <span class="shelf-subtitle">${escapeHtml(subtitle)}</span>
         </div>
         <div class="shelf-controls">
-          <button class="shelf-arrow shelf-arrow-left" aria-label="Rolar para esquerda">‹</button>
-          <button class="shelf-arrow shelf-arrow-right" aria-label="Rolar para direita">›</button>
+          <button class="shelf-nav-btn shelf-prev" aria-label="Anterior" title="Rolar para esquerda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="shelf-nav-btn shelf-next" aria-label="Próximo" title="Rolar para direita">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
         </div>
       </div>
-      <div class="shelf-track"></div>
+      <div class="shelf-track-wrapper">
+        <button class="shelf-side-arrow shelf-side-left" aria-label="Rolar para esquerda" title="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="shelf-track"></div>
+        <button class="shelf-side-arrow shelf-side-right" aria-label="Rolar para direita" title="Próximo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
     `;
 
     const track = section.querySelector('.shelf-track');
-    const btnLeft = section.querySelector('.shelf-arrow-left');
-    const btnRight = section.querySelector('.shelf-arrow-right');
+    const btnLeft = section.querySelector('.shelf-prev');
+    const btnRight = section.querySelector('.shelf-next');
+    const btnSideLeft = section.querySelector('.shelf-side-left');
+    const btnSideRight = section.querySelector('.shelf-side-right');
+
+    const scrollLeft = () => track.scrollBy({ left: -Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
+    const scrollRight = () => track.scrollBy({ left: Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
+
+    if (btnLeft) btnLeft.onclick = scrollLeft;
+    if (btnRight) btnRight.onclick = scrollRight;
+    if (btnSideLeft) btnSideLeft.onclick = scrollLeft;
+    if (btnSideRight) btnSideRight.onclick = scrollRight;
 
     items.forEach((it, idx) => {
       const card = createVideoCard(it, idx);
@@ -4691,7 +4742,6 @@ const HomeShelvesManager = {
 
       // Ao clicar no poster ou card, abre modal cinematográfico de detalhes
       card.onclick = (e) => {
-        // Se clicou no botão específico de play ou capítulos, segue a ação direta
         if (e.target.closest('.btn-play') || e.target.closest('.play-circle')) {
           if (it.is_anime) openAnimeModal(it);
           else if (it.isGroup) openSeriesModal(it);
@@ -4703,13 +4753,6 @@ const HomeShelvesManager = {
 
       track.appendChild(card);
     });
-
-    btnLeft.onclick = () => {
-      track.scrollBy({ left: -track.clientWidth * 0.75, behavior: 'smooth' });
-    };
-    btnRight.onclick = () => {
-      track.scrollBy({ left: track.clientWidth * 0.75, behavior: 'smooth' });
-    };
 
     dom.homeShelvesContainer.appendChild(section);
   }
