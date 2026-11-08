@@ -4938,5 +4938,556 @@
       "Aventura"
     ],
     "is_anime": true
+  },
+  {
+    "id": "ani_a_concierge_pok_mon",
+    "t": "A Concierge Pokémon",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySSivX1z5n7ALFF0082sbsCasK2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySSivX1z5n7ALFF0082sbsCasK2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_a_concierge_pok_mon&ep=1&s=1",
+    "sinopse": "A Concierge Pokémon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 8,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_akame_ga_kill",
+    "t": "Akame ga Kill",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hDzm2VXxdeK5kztUN3RWTkBsBZg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hDzm2VXxdeK5kztUN3RWTkBsBZg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_akame_ga_kill&ep=1&s=1",
+    "sinopse": "Akame ga Kill completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_baki_hanma",
+    "t": "Baki Hanma",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m6qcOPFIkqUOo87g6sP2371lolB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m6qcOPFIkqUOo87g6sP2371lolB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_baki_hanma&ep=1&s=1",
+    "sinopse": "Baki Hanma completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 52,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_castlevania",
+    "t": "Castlevania",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ubDtIBwdS9b29sBofAkqWz3PqkT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ubDtIBwdS9b29sBofAkqWz3PqkT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_castlevania&ep=1&s=1",
+    "sinopse": "Castlevania completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 36,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_cowboy_bebop",
+    "t": "Cowboy Bebop",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hbLDwYri1pyiEIMpICgftu7s8NE.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hbLDwYri1pyiEIMpICgftu7s8NE.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_cowboy_bebop&ep=1&s=1",
+    "sinopse": "Cowboy Bebop completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 8,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon",
+    "t": "Digimon",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon&ep=1&s=1",
+    "sinopse": "Digimon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 253,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_adventure",
+    "t": "Digimon Adventure",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vYoiupxiXVJBT8Bz0hCBwi1FLdL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vYoiupxiXVJBT8Bz0hCBwi1FLdL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_adventure&ep=1&s=1",
+    "sinopse": "Digimon Adventure completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 54,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_adventure_02",
+    "t": "Digimon Adventure 02",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_adventure_02&ep=1&s=1",
+    "sinopse": "Digimon Adventure 02 completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 50,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_savers",
+    "t": "Digimon Savers",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mghmdyXQWJKETQEXx7er0PwVj5k.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mghmdyXQWJKETQEXx7er0PwVj5k.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_savers&ep=1&s=1",
+    "sinopse": "Digimon Savers completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 48,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_tamers",
+    "t": "Digimon Tamers",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxv1aOcl5crXKaWN0dsUeqoSpfP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pxv1aOcl5crXKaWN0dsUeqoSpfP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_tamers&ep=1&s=1",
+    "sinopse": "Digimon Tamers completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 51,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_digimon_xros_wars",
+    "t": "Digimon Xros Wars",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v2y0eYhTepOG5gD2qfl4T5CycnH.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/v2y0eYhTepOG5gD2qfl4T5CycnH.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_digimon_xros_wars&ep=1&s=1",
+    "sinopse": "Digimon Xros Wars completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 53,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_fairy_tail",
+    "t": "Fairy Tail",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iuRJ2QRRNMIu2VdEIuLIaJvt1PZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iuRJ2QRRNMIu2VdEIuLIaJvt1PZ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_fairy_tail&ep=1&s=1",
+    "sinopse": "Fairy Tail completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 72,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_inuyasha",
+    "t": "InuYasha",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aAkJXM5gbqFwRrtv58mAd2DE4xb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aAkJXM5gbqFwRrtv58mAd2DE4xb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_inuyasha&ep=1&s=1",
+    "sinopse": "InuYasha completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 6,
+    "total_episodios": 167,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_kengan_ashura",
+    "t": "Kengan Ashura",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q1Nm4it71GroM8cQ41nIJmH8M1D.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q1Nm4it71GroM8cQ41nIJmH8M1D.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_kengan_ashura&ep=1&s=1",
+    "sinopse": "Kengan Ashura completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 52,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_noragami",
+    "t": "Noragami",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3DmaXur5cxXXZmpuIl4O0oeGolp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3DmaXur5cxXXZmpuIl4O0oeGolp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_noragami&ep=1&s=1",
+    "sinopse": "Noragami completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 29,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_one_punch_man",
+    "t": "One Punch Man",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/a8BknzvFVK5EZ83rKg1a83iwaj0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/a8BknzvFVK5EZ83rKg1a83iwaj0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_one_punch_man&ep=1&s=1",
+    "sinopse": "One Punch Man completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 36,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_os_cavaleiros_do_zod_aco_saint_seiya",
+    "t": "Os Cavaleiros do Zodíaco (Saint Seiya)",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j39p6zfHETY2O8nakbOHcwcMxay.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j39p6zfHETY2O8nakbOHcwcMxay.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_os_cavaleiros_do_zod_aco_saint_seiya&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco (Saint Seiya) completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 30,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_pluto",
+    "t": "PLUTO",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tDFSYOVUmDVkEBjfxZs59r2qSo4.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tDFSYOVUmDVkEBjfxZs59r2qSo4.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_pluto&ep=1&s=1",
+    "sinopse": "PLUTO completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 8,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_parasyte_the_grey",
+    "t": "Parasyte: The Grey",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uaYlFpBYbzi3trD32w2LHimiMzJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uaYlFpBYbzi3trD32w2LHimiMzJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_parasyte_the_grey&ep=1&s=1",
+    "sinopse": "Parasyte: The Grey completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 6,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_parasyte_the_maxim",
+    "t": "Parasyte: The Maxim",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dC1rIfKScgrHjmZYdTpUgWpZF4h.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dC1rIfKScgrHjmZYdTpUgWpZF4h.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_parasyte_the_maxim&ep=1&s=1",
+    "sinopse": "Parasyte: The Maxim completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_pok_mon",
+    "t": "Pokémon",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ck1nfqYxMkiGvBVztIuM6b7fHoC.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ck1nfqYxMkiGvBVztIuM6b7fHoC.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_pok_mon&ep=1&s=1",
+    "sinopse": "Pokémon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 22,
+    "total_episodios": 1081,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_pok_mon_horizontes_a_s_rie",
+    "t": "Pokémon Horizontes: A Série",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gvT5IBN2syZjlJdPppd6LfxIX2D.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gvT5IBN2syZjlJdPppd6LfxIX2D.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_pok_mon_horizontes_a_s_rie&ep=1&s=1",
+    "sinopse": "Pokémon Horizontes: A Série completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 101,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_record_of_ragnarok_shuumatsu_no_valkyrie",
+    "t": "Record of Ragnarok (Shuumatsu no Valkyrie)",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m28Ey0LYoeqzx7mdJ25NVUqRueB.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m28Ey0LYoeqzx7mdJ25NVUqRueB.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_record_of_ragnarok_shuumatsu_no_valkyrie&ep=1&s=1",
+    "sinopse": "Record of Ragnarok (Shuumatsu no Valkyrie) completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 42,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_sailor_moon",
+    "t": "Sailor Moon",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zc6RQu0ptwam2Ng1OJJrR62kGxU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zc6RQu0ptwam2Ng1OJJrR62kGxU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_sailor_moon&ep=1&s=1",
+    "sinopse": "Sailor Moon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 200,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_steins_gate",
+    "t": "Steins;Gate",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6iysgZr6Upm5RlAlVFo5f4D9euu.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6iysgZr6Upm5RlAlVFo5f4D9euu.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_steins_gate&ep=1&s=1",
+    "sinopse": "Steins;Gate completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_rising_of_the_shield_hero",
+    "t": "The Rising of the Shield Hero",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yX0d6aTjHrE5Sjp6gZ1dkPWCmIF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yX0d6aTjHrE5Sjp6gZ1dkPWCmIF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_rising_of_the_shield_hero&ep=1&s=1",
+    "sinopse": "The Rising of the Shield Hero completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 62,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_seven_deadly_sins_os_quatro_cavaleiros_do_apocalipse",
+    "t": "The Seven Deadly Sins: Os Quatro Cavaleiros do Apocalipse",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_seven_deadly_sins_os_quatro_cavaleiros_do_apocalipse&ep=1&s=1",
+    "sinopse": "The Seven Deadly Sins: Os Quatro Cavaleiros do Apocalipse completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 4,
+    "total_episodios": 96,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_yu_yu_hakusho",
+    "t": "Yu Yu Hakusho",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Aq5af62w7eQlqjK6vgpEbFA8Z2b.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Aq5af62w7eQlqjK6vgpEbFA8Z2b.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_yu_yu_hakusho&ep=1&s=1",
+    "sinopse": "Yu Yu Hakusho completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 112,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_yu_gi_oh",
+    "t": "Yu-Gi-Oh!",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_yu_gi_oh&ep=1&s=1",
+    "sinopse": "Yu-Gi-Oh! completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 5,
+    "total_episodios": 236,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
   }
 ]
