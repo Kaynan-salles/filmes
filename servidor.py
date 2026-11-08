@@ -105,7 +105,8 @@ ALLOWED_PROXY_DOMAINS = [
     "playercdn.net",
     "blogspot.com",
     "tech-cdn.top",
-    "workers.dev"
+    "workers.dev",
+    "zjo.lat"
 ]
 
 def is_safe_proxy_url(url: str):
