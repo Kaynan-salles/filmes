@@ -102,12 +102,25 @@ module.exports = function handler(req, res) {
 
     const matchedAnimeKeys = new Set();
 
+    const seenTitles = new Set();
+    const seenPosters = new Set();
+
     // Primeiro os animes oficiais
     for (const item of index) {
       if (item.is_anime) {
         if (terms.every(t => item.s.includes(t))) {
+          const normKey = (item.t || '').toLowerCase().replace(/\[.*?\]|\(.*?\)/g, '').replace(/[^a-z0-9]/g, '');
+          if (normKey && seenTitles.has(normKey)) continue;
+          if (normKey) seenTitles.add(normKey);
+
+          const posterUrl = item.p || '';
+          if (posterUrl.includes('image.tmdb.org')) {
+            const pFile = posterUrl.split('/').pop();
+            if (pFile && seenPosters.has(pFile)) continue;
+            if (pFile) seenPosters.add(pFile);
+          }
+
           results.push(item);
-          const normKey = (item.t || '').toLowerCase().replace(/[^a-z0-9]/g, '');
           if (normKey) matchedAnimeKeys.add(normKey);
           if (results.length >= limit) break;
         }
@@ -123,7 +136,7 @@ module.exports = function handler(req, res) {
       return rawTitle.trim();
     }
 
-    // Depois filmes e séries (filtrando duplicatas que já existem no catálogo oficial de animes)
+    // Depois filmes e séries (filtrando duplicatas que já existem no catálogo oficial de animes ou posters repetidos)
     if (results.length < limit) {
       for (const item of index) {
         if (!item.is_anime) {
@@ -135,6 +148,18 @@ module.exports = function handler(req, res) {
             if (isDup) {
               continue; // Evita duplicar anime oficial
             }
+
+            const normKey = (item.t || '').toLowerCase().replace(/\[.*?\]|\(.*?\)|4k|uhd|hd|dublado|legendado/g, '').replace(/[^a-z0-9]/g, '');
+            if (normKey && seenTitles.has(normKey)) continue;
+            if (normKey) seenTitles.add(normKey);
+
+            const posterUrl = item.p || '';
+            if (posterUrl.includes('image.tmdb.org')) {
+              const pFile = posterUrl.split('/').pop();
+              if (pFile && seenPosters.has(pFile)) continue;
+              if (pFile) seenPosters.add(pFile);
+            }
+
             results.push(item);
             if (results.length >= limit) break;
           }

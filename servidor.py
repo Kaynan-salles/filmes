@@ -320,6 +320,9 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                         return m2.group(1).rstrip(' .-_').strip()
                     return title_str.strip()
 
+                seen_titles = set()
+                seen_posters = set()
+
                 for item in search_index:
                     title_lower = item["s"]
                     if all(t in title_lower for t in terms):
@@ -334,8 +337,20 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                             continue
 
                         # Evita duplicar animes oficiais com versões secundárias/incompletas de listas IPTV
-                        if s_norm in anime_titles_normalized:
+                        if s_norm in anime_titles_normalized or any((len(k) >= 6 and (k in s_norm or s_norm in k)) for k in anime_titles_normalized):
                             continue
+
+                        norm_t = re.sub(r'\[.*?\]|\(.*?\)|4k|uhd|hd|dublado|legendado|lançamento|lancamento', '', s_norm)
+                        if norm_t in seen_titles:
+                            continue
+                        seen_titles.add(norm_t)
+
+                        p_url = item.get("p", "")
+                        if p_url and "image.tmdb.org" in p_url:
+                            p_file = p_url.split("/")[-1]
+                            if p_file in seen_posters:
+                                continue
+                            seen_posters.add(p_file)
 
                         results.append({
                             "t": item["t"],

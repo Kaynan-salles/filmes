@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=44">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=44">
-  <link rel="alternate icon" href="favicon.ico?v=44">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=44">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=44">
-  <link rel="manifest" href="manifest.json?v=44">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=45">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=45">
+  <link rel="alternate icon" href="favicon.ico?v=45">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=45">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=45">
+  <link rel="manifest" href="manifest.json?v=45">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=44">
+  <link rel="stylesheet" href="style.css?v=45">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -172,15 +172,17 @@
     </div>
   </header>
 
-  <!-- Banner Hero em Destaque -->
+  <!-- Banner Hero em Destaque com Cenas Dinâmicas em Vídeo de Fundo -->
   <section class="hero-section" id="heroBanner">
     <div class="hero-backdrop" id="heroBackdrop"></div>
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="metadata"></video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-meta">
         <span class="hero-badge" id="heroBadge">🔥 LANÇAMENTO EM ALTA</span>
+        <span class="hero-rating-badge" id="heroRatingBadge"><span class="star-icon">★</span> 9.6</span>
       </div>
-      <h1 class="hero-title" id="heroTitle">A Casa da Armadilha</h1>
+      <h1 class="hero-title" id="heroTitle">Carregando Destaque...</h1>
       <p class="hero-desc" id="heroDesc" style="display: none;"></p>
       <div class="hero-buttons">
         <button class="btn-primary" id="btnHeroPlay">
@@ -191,6 +193,19 @@
         </button>
       </div>
     </div>
+
+    <!-- Controles de Navegação e Áudio do Hero -->
+    <button class="hero-nav-btn hero-prev" id="btnHeroPrev" title="Filme Anterior" aria-label="Filme Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="hero-nav-btn hero-next" id="btnHeroNext" title="Próximo Filme" aria-label="Próximo Filme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <button class="hero-sound-toggle" id="btnHeroSound" title="Ativar/Desativar Áudio">
+      <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+      <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+      <span id="heroSoundLabel">Mudo</span>
+    </button>
   </section>
 
   <!-- Seção Continuar Assistindo (Histórico Ativo) -->
@@ -789,8 +804,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=44"></script>
-  <script src="auth.js?v=44"></script>
-  <script src="app.js?v=44"></script>
+  <script src="supabase-config.js?v=45"></script>
+  <script src="auth.js?v=45"></script>
+  <script src="app.js?v=45"></script>
 </body>
 </html>

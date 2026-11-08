@@ -1,19 +1,19 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v44';
+const CACHE_NAME = 'kcine-shell-v45';
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.html?v=44',
-  '/style.css?v=44',
-  '/app.js?v=44',
-  '/icons/kcine-favicon.png?v=44',
-  '/icons/kcine-app-128.png?v=44',
-  '/icons/kcine-app-180.png?v=44',
-  '/icons/kcine-app-192.png?v=44',
-  '/icons/kcine-app-512.png?v=44',
-  '/apple-touch-icon.png?v=44',
-  '/apple-touch-icon-precomposed.png?v=44',
-  '/manifest.json?v=44',
-  '/manifest.webmanifest?v=44'
+  '/index.html?v=45',
+  '/style.css?v=45',
+  '/app.js?v=45',
+  '/icons/kcine-favicon.png?v=45',
+  '/icons/kcine-app-128.png?v=45',
+  '/icons/kcine-app-180.png?v=45',
+  '/icons/kcine-app-192.png?v=45',
+  '/icons/kcine-app-512.png?v=45',
+  '/apple-touch-icon.png?v=45',
+  '/apple-touch-icon-precomposed.png?v=45',
+  '/manifest.json?v=45',
+  '/manifest.webmanifest?v=45'
 ];
 
 self.addEventListener('install', (e) => {
@@ -41,6 +41,11 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
+  // Apenas intercepta requisições locais de mesma origem (shell estático da aplicação)
+  // Deixa CDNs externas de imagens (TMDB, Unsplash) e streams de vídeo rodarem nativamente no navegador
+  if (!e.request.url.startsWith(self.location.origin)) {
+    return;
+  }
   // Let network handle dynamic API/data streams directly to avoid caching stale streams
   if (e.request.url.includes('/api/') || e.request.url.includes('/data/') || e.request.url.includes('worker')) {
     return;

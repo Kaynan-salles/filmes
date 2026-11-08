@@ -64,12 +64,18 @@ const dom = {
   // Hero Banner
   heroBanner: document.getElementById('heroBanner'),
   heroBackdrop: document.getElementById('heroBackdrop'),
+  heroVideo: document.getElementById('heroVideo'),
+  heroRatingBadge: document.getElementById('heroRatingBadge'),
   heroTitle: document.getElementById('heroTitle'),
   heroCategory: document.getElementById('heroCategory'),
   heroDesc: document.getElementById('heroDesc'),
   btnHeroPlay: document.getElementById('btnHeroPlay'),
   btnHeroCopy: document.getElementById('btnHeroCopy'),
   btnHeroVlc: document.getElementById('btnHeroVlc'),
+  btnHeroPrev: document.getElementById('btnHeroPrev'),
+  btnHeroNext: document.getElementById('btnHeroNext'),
+  btnHeroSound: document.getElementById('btnHeroSound'),
+  heroSoundLabel: document.getElementById('heroSoundLabel'),
 
   // Filtros e Catálogo
   categoriesChips: document.getElementById('categoriesChips'),
@@ -1687,26 +1693,114 @@ function buildCategoryChips() {
   });
 }
 
+let heroHls = null;
+let heroCycleTimer = null;
+let isHeroMuted = true;
+
 function prepareHeroBanner() {
   if (!state.manifesto || !state.manifesto.categorias.length) return;
   const lancamentos = state.manifesto.categorias.find(c => c.id.includes('lancamentos')) || state.manifesto.categorias[0];
-  if (lancamentos && lancamentos.destaques) {
-    state.heroItems = lancamentos.destaques.filter(i => i.p && i.p.includes('http'));
+  if (lancamentos && lancamentos.destaques && lancamentos.destaques.length > 0) {
+    state.heroItems = lancamentos.destaques.filter(i => i.p && i.p.includes('http') && i.u);
   }
 
-  if (state.heroItems.length > 0) {
-    updateHeroItem(state.heroItems[0]);
-    setInterval(() => {
-      state.heroIndex = (state.heroIndex + 1) % state.heroItems.length;
-      updateHeroItem(state.heroItems[state.heroIndex]);
-    }, 12000);
+  // Controles de navegação manual do Hero
+  if (dom.btnHeroPrev) {
+    dom.btnHeroPrev.onclick = (e) => {
+      e.stopPropagation();
+      changeHeroSlide(-1);
+    };
   }
+  if (dom.btnHeroNext) {
+    dom.btnHeroNext.onclick = (e) => {
+      e.stopPropagation();
+      changeHeroSlide(1);
+    };
+  }
+
+  // Alternador de áudio do trailer
+  if (dom.btnHeroSound) {
+    dom.btnHeroSound.onclick = (e) => {
+      e.stopPropagation();
+      toggleHeroAudio();
+    };
+  }
+
+  // Pausa vídeo de fundo quando o hero sai do campo de visão (economiza banda e processamento)
+  if ('IntersectionObserver' in window && dom.heroBanner && dom.heroVideo) {
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          if (!dom.heroVideo.paused) dom.heroVideo.pause();
+        } else {
+          if (dom.heroVideo.paused && dom.heroVideo.classList.contains('is-playing')) {
+            dom.heroVideo.play().catch(() => {});
+          }
+        }
+      });
+    }, { threshold: 0.2 });
+    heroObserver.observe(dom.heroBanner);
+  }
+
+  // Garante uma boa rotação com lançamentos em alta
+  if (!state.heroItems || state.heroItems.length < 8) {
+    fetch('data/01_lancamentos.json')
+      .then(r => r.json())
+      .then(items => {
+        if (Array.isArray(items) && items.length > 0) {
+          state.heroItems = items.filter(it => it.u).slice(0, 15);
+        }
+        startHeroCycle();
+      })
+      .catch(() => startHeroCycle());
+  } else {
+    startHeroCycle();
+  }
+}
+
+function startHeroCycle() {
+  if (!state.heroItems || state.heroItems.length === 0) return;
+  state.heroIndex = 0;
+  updateHeroItem(state.heroItems[0]);
+
+  if (heroCycleTimer) clearInterval(heroCycleTimer);
+  heroCycleTimer = setInterval(() => {
+    // Não avança se um player estiver aberto na tela
+    if (dom.playerModal && dom.playerModal.classList.contains('active')) return;
+    if (dom.seriesModal && dom.seriesModal.classList.contains('active')) return;
+    changeHeroSlide(1);
+  }, 14000);
+}
+
+function changeHeroSlide(direction) {
+  if (!state.heroItems || state.heroItems.length === 0) return;
+  state.heroIndex = (state.heroIndex + direction + state.heroItems.length) % state.heroItems.length;
+  updateHeroItem(state.heroItems[state.heroIndex]);
+}
+
+function toggleHeroAudio() {
+  if (!dom.heroVideo) return;
+  isHeroMuted = !isHeroMuted;
+  dom.heroVideo.muted = isHeroMuted;
+  const iconMuted = dom.btnHeroSound.querySelector('.icon-muted');
+  const iconUnmuted = dom.btnHeroSound.querySelector('.icon-unmuted');
+  if (iconMuted) iconMuted.style.display = isHeroMuted ? 'inline-block' : 'none';
+  if (iconUnmuted) iconUnmuted.style.display = isHeroMuted ? 'none' : 'inline-block';
+  if (dom.heroSoundLabel) dom.heroSoundLabel.textContent = isHeroMuted ? 'Mudo' : 'Com Som';
 }
 
 function updateHeroItem(item) {
   if (!item) return;
+
+  // Informações de título e nota
   dom.heroTitle.textContent = item.t;
-  if (dom.heroCategory) dom.heroCategory.textContent = "";
+  const rating = getMediaRating(item);
+  if (dom.heroRatingBadge) {
+    dom.heroRatingBadge.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)}`;
+  }
+  if (dom.heroCategory) dom.heroCategory.textContent = item.catNome || '';
+
+  // Fundo de pôster estático de base
   dom.heroBackdrop.style.backgroundImage = `url('${item.p || FALLBACK_POSTER}')`;
 
   if (dom.heroDesc) {
@@ -1720,7 +1814,7 @@ function updateHeroItem(item) {
   }
 
   if (dom.btnHeroPlay) {
-    dom.btnHeroPlay.onclick = () => openPlayer(item.t, item.catNome || 'Destaques', item.u);
+    dom.btnHeroPlay.onclick = () => openPlayer(item.t, item.catNome || 'Destaques', item.u, item);
   }
   if (dom.btnHeroCopy) {
     dom.btnHeroCopy.onclick = () => {
@@ -1735,6 +1829,74 @@ function updateHeroItem(item) {
         window.open(item.u, '_blank');
       }
     };
+  }
+
+  // Reproduz preview de cenas do filme no fundo (sem áudio por padrão)
+  playHeroBackgroundVideo(item);
+}
+
+function playHeroBackgroundVideo(item) {
+  if (!dom.heroVideo) return;
+  const rawUrl = item.u;
+  if (!rawUrl) {
+    dom.heroVideo.classList.remove('is-playing');
+    return;
+  }
+
+  // Transição suave de fade out
+  dom.heroVideo.classList.remove('is-playing');
+
+  if (heroHls) {
+    try { heroHls.destroy(); } catch (e) {}
+    heroHls = null;
+  }
+
+  const streamUrl = getPlayableUrl(rawUrl);
+  const isHls = streamUrl.includes('.m3u8');
+
+  dom.heroVideo.muted = isHeroMuted;
+  dom.heroVideo.playsInline = true;
+  dom.heroVideo.setAttribute('playsinline', '');
+  dom.heroVideo.setAttribute('muted', '');
+  dom.heroVideo.loop = true;
+
+  // Ao carregar metadados, pula telas pretas iniciais e vai direto para a ação do filme
+  dom.heroVideo.onloadedmetadata = () => {
+    try {
+      if (dom.heroVideo.duration && dom.heroVideo.duration > 180) {
+        dom.heroVideo.currentTime = Math.min(85, dom.heroVideo.duration * 0.12);
+      } else if (dom.heroVideo.duration && dom.heroVideo.duration > 30) {
+        dom.heroVideo.currentTime = 20;
+      }
+    } catch (e) {}
+  };
+
+  dom.heroVideo.onplaying = () => {
+    dom.heroVideo.classList.add('is-playing');
+  };
+
+  dom.heroVideo.onerror = () => {
+    // Se a stream não puder ser pré-carregada, o pôster fica nítido como fundo
+    dom.heroVideo.classList.remove('is-playing');
+  };
+
+  if (isHls && window.Hls && Hls.isSupported()) {
+    heroHls = new Hls({
+      enableWorker: true,
+      lowLatencyMode: false,
+      startLevel: -1
+    });
+    heroHls.loadSource(streamUrl);
+    heroHls.attachMedia(dom.heroVideo);
+    heroHls.on(Hls.Events.MANIFEST_PARSED, () => {
+      dom.heroVideo.play().catch(() => {});
+    });
+    heroHls.on(Hls.Events.ERROR, () => {
+      dom.heroVideo.classList.remove('is-playing');
+    });
+  } else {
+    dom.heroVideo.src = streamUrl;
+    dom.heroVideo.play().catch(() => {});
   }
 }
 
@@ -1963,13 +2125,31 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
       return;
     }
 
-    // Injeta exatamente os 24 cards da página ativa no DOM (memória constante)
+    // Injeta exatamente os cards da página ativa no DOM com deduplicação rigorosa
     const fragment = document.createDocumentFragment();
+    const seenPageKeys = new Set();
+    const seenPagePosters = new Set();
+
     animesList.forEach((anime, idx) => {
+      const rawTitle = anime.canonical_title || anime.t || anime.title || '';
+      const normKey = rawTitle.toLowerCase()
+        .replace(/\[.*?\]|\(.*?\)|4k|uhd|fhd|hd|dublado|legendado|lançamento|lancamento|o\s*filme|the\s*movie/g, '')
+        .replace(/[^a-z0-9]/g, '');
+      if (normKey && normKey.length >= 3) {
+        if (seenPageKeys.has(normKey)) return;
+        seenPageKeys.add(normKey);
+      }
+      const posterUrl = anime.poster || anime.p || '';
+      if (posterUrl && posterUrl.includes('image.tmdb.org')) {
+        const posterFile = posterUrl.split('/').pop();
+        if (posterFile && seenPagePosters.has(posterFile)) return;
+        seenPagePosters.add(posterFile);
+      }
+
       const cardItem = {
         id: anime.id,
-        t: anime.canonical_title || anime.t || anime.title,
-        p: anime.poster || anime.p,
+        t: rawTitle,
+        p: posterUrl,
         catNome: '🌸 Animes',
         is_anime: true,
         total_episodios: anime.total_episodios || anime.total_episodes,
@@ -2112,7 +2292,25 @@ function refreshCatalogDisplay() {
   const isAnimesMode = (state.activeType === 'animes' || state.activeCategoryId === 'animes');
 
   if (isAnimesMode) {
-    state.currentItems = [...state.rawItems];
+    const seenAnimeKeys = new Set();
+    const seenPosters = new Set();
+    state.currentItems = state.rawItems.filter(it => {
+      const rawTitle = it.canonical_title || it.t || '';
+      const normKey = rawTitle.toLowerCase()
+        .replace(/\[.*?\]|\(.*?\)|4k|uhd|fhd|hd|dublado|legendado|lançamento|lancamento|o\s*filme|the\s*movie/g, '')
+        .replace(/[^a-z0-9]/g, '');
+      if (normKey && normKey.length >= 3) {
+        if (seenAnimeKeys.has(normKey)) return false;
+        seenAnimeKeys.add(normKey);
+      }
+      const posterUrl = it.p || it.poster || '';
+      if (posterUrl && posterUrl.includes('image.tmdb.org')) {
+        const posterFile = posterUrl.split('/').pop();
+        if (posterFile && seenPosters.has(posterFile)) return false;
+        seenPosters.add(posterFile);
+      }
+      return true;
+    });
   } else if (state.seriesViewMode === 'grouped') {
     const { groups, nonSeries } = groupItemsBySeries(state.rawItems);
     state.currentItems = [...groups, ...nonSeries];
@@ -2697,7 +2895,28 @@ async function handleSearch(query) {
 }
 
 function displaySearchResults(results, query) {
-  state.rawItems = results;
+  // Deduplicação estrita de resultados de busca global
+  const seenSearchKeys = new Set();
+  const seenPosters = new Set();
+  const dedupedResults = (results || []).filter(it => {
+    const rawTitle = it.canonical_title || it.t || '';
+    const normKey = rawTitle.toLowerCase()
+      .replace(/\[.*?\]|\(.*?\)|4k|uhd|fhd|hd|dublado|legendado|lançamento|lancamento/g, '')
+      .replace(/[^a-z0-9]/g, '');
+    if (normKey && normKey.length >= 3) {
+      if (seenSearchKeys.has(normKey)) return false;
+      seenSearchKeys.add(normKey);
+    }
+    const posterUrl = it.p || it.poster || '';
+    if (posterUrl && posterUrl.includes('image.tmdb.org')) {
+      const posterFile = posterUrl.split('/').pop();
+      if (posterFile && seenPosters.has(posterFile)) return false;
+      seenPosters.add(posterFile);
+    }
+    return true;
+  });
+
+  state.rawItems = dedupedResults;
   state.displayedCount = 0;
   dom.cardsGrid.innerHTML = '';
 
@@ -2720,6 +2939,11 @@ function displaySearchResults(results, query) {
 // PLAYER DE VÍDEO & NAVEGAÇÃO DE SÉRIES
 // =====================================================================
 function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 0) {
+  // Pausa o vídeo de fundo do Hero para não competir com o player
+  if (dom.heroVideo) {
+    try { dom.heroVideo.pause(); } catch(e) {}
+  }
+
   // Se for um anime oficial ou rota de resolução de anime, delega para o modal de episódios oficial
   if (url && (url.includes('/api/animes/resolve') || (itemObj && itemObj.is_anime))) {
     const animeObj = itemObj || {
@@ -3207,6 +3431,10 @@ function closePlayerModal() {
   stopVideoPlayback();
   if (dom.playerModal) {
     closeModal(dom.playerModal);
+  }
+  // Retoma o vídeo de fundo do Hero se estiver visível
+  if (dom.heroVideo && dom.heroVideo.classList.contains('is-playing')) {
+    try { dom.heroVideo.play().catch(() => {}); } catch(e) {}
   }
   // Garantia absoluta de desbloqueio da rolagem da página
   const anyActive = document.querySelector('.modal-overlay.active');
