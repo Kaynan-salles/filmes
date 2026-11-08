@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=52">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=52">
-  <link rel="alternate icon" href="favicon.ico?v=52">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=52">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=52">
-  <link rel="manifest" href="manifest.json?v=52">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=53">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=53">
+  <link rel="alternate icon" href="favicon.ico?v=53">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=53">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=53">
+  <link rel="manifest" href="manifest.json?v=53">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=52">
+  <link rel="stylesheet" href="style.css?v=53">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -622,70 +622,68 @@
   </div>
 
 
-  <!-- Modal Completo de Detalhes Cinematográfico (Filmes, Séries e Animes) -->
-  <div class="modal-overlay" id="contentDetailsModal">
-    <div class="details-modal-container">
+  <!-- Modal Completo de Detalhes Cinematográfico Compacto e Profissional -->
+  <div class="modal-overlay details-modal-overlay" id="contentDetailsModal">
+    <div class="details-modal-container" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
       <div class="details-hero">
         <div class="details-hero-backdrop" id="detailsHeroBackdrop"></div>
         <div class="details-hero-overlay"></div>
-        <button class="btn-close-details" id="btnCloseDetailsModal" aria-label="Fechar Detalhes">&times;</button>
-        <div class="details-hero-content">
-          <div class="details-badges-row" id="detailsBadgesRow">
-            <span class="badge" id="detailsCategoryBadge">FILME HD</span>
-            <span class="rating-badge-gold" id="detailsRatingBadge">★ 9.4</span>
-            <span class="quality-badge" id="detailsQualityBadge">4K UHD</span>
-          </div>
-          <h2 class="details-title" id="detailsTitle">Nome do Conteúdo</h2>
-          <div class="details-metadata-row">
-            <span class="meta-item" id="detailsYear">2024</span>
-            <span class="meta-dot">•</span>
-            <span class="meta-item" id="detailsDurationOrSeasons">2h 15m</span>
-            <span class="meta-dot">•</span>
-            <span class="meta-item badge-age" id="detailsAgeRating">14+</span>
-          </div>
-          <p class="details-synopsis" id="detailsSynopsis">Sinopse do conteúdo...</p>
-          <div class="details-actions-row">
-            <button class="btn-primary btn-details-play" id="btnDetailsPlay">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-              <span>Assistir Agora</span>
-            </button>
-            <button class="btn-details-mylist" id="btnDetailsMyList">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-              <span>Minha Lista</span>
-            </button>
-            <button class="btn-icon-round admin-only" id="btnDetailsCopyLink" title="Copiar Link de Vídeo">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
+        <button class="btn-close-details" id="btnCloseDetailsModal" aria-label="Fechar Detalhes" title="Fechar (Esc)">&times;</button>
       </div>
 
-      <div class="details-body">
-        <!-- Se for Série ou Anime: Seção de Temporadas e Episódios -->
-        <div class="details-episodes-section" id="detailsEpisodesSection" style="display: none;">
-          <div class="details-section-header">
-            <h3>Episódios</h3>
-            <div class="season-select-wrapper" id="detailsSeasonSelectWrap">
-              <select id="detailsSeasonSelect" class="filter-select"></select>
-            </div>
-          </div>
-          <div class="details-episodes-grid" id="detailsEpisodesGrid"></div>
+      <div class="details-content-box">
+        <div class="details-badges-row" id="detailsBadgesRow">
+          <span class="badge-tag badge-category" id="detailsCategoryBadge">FILME</span>
+          <span class="badge-tag badge-rating" id="detailsRatingBadge"><span class="star-icon">★</span> 9.4 (TMDb)</span>
+          <span class="badge-tag badge-quality" id="detailsQualityBadge">4K UHD</span>
         </div>
 
-        <!-- Se for Filme: Seção de Títulos Semelhantes -->
-        <div class="details-similar-section" id="detailsSimilarSection" style="display: none;">
-          <div class="details-section-header">
-            <h3>Títulos Semelhantes Recomendados</h3>
-          </div>
-          <div class="details-similar-grid" id="detailsSimilarGrid"></div>
+        <h2 class="details-title" id="detailsTitle">Nome do Conteúdo</h2>
+
+        <div class="details-metadata-row">
+          <span class="meta-item" id="detailsYear">2024</span>
+          <span class="meta-dot">•</span>
+          <span class="meta-item" id="detailsDurationOrSeasons">2h 15m</span>
+          <span class="meta-dot">•</span>
+          <span class="meta-item badge-age" id="detailsAgeRating">14+</span>
+          <span class="meta-dot" id="detailsGenreDot" style="display: none;">•</span>
+          <div class="details-genres-wrap" id="detailsGenresWrap"></div>
+        </div>
+
+        <p class="details-synopsis" id="detailsSynopsis">Sinopse do conteúdo...</p>
+
+        <div class="details-actions-row">
+          <button class="btn-primary btn-details-play" id="btnDetailsPlay" title="Assistir Agora">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Assistir Agora</span>
+          </button>
+          <button class="btn-secondary" id="btnDetailsEpisodes" style="display: none;" title="Ver todos os episódios">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>Ver Episódios</span>
+          </button>
+          <button class="btn-secondary btn-details-mylist" id="btnDetailsMyList" title="Adicionar à Minha Lista">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Minha Lista</span>
+          </button>
+          <button class="btn-secondary admin-only" id="btnDetailsCopyLink" title="Copiar link de reprodução direta (Admin)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>Copiar Link</span>
+          </button>
         </div>
       </div>
     </div>
@@ -1004,8 +1002,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=52"></script>
-  <script src="auth.js?v=52"></script>
-  <script src="app.js?v=52"></script>
+  <script src="supabase-config.js?v=53"></script>
+  <script src="auth.js?v=53"></script>
+  <script src="app.js?v=53"></script>
 </body>
 </html>

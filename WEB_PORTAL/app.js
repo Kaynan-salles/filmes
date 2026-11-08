@@ -179,7 +179,7 @@ const dom = {
   btnNextNow: document.getElementById('btnNextNow'),
   btnNextCancel: document.getElementById('btnNextCancel'),
 
-  // Modal Completo de Detalhes Cinematográfico
+  // Modal Compacto e Profissional de Detalhes Cinematográfico
   contentDetailsModal: document.getElementById('contentDetailsModal'),
   detailsHeroBackdrop: document.getElementById('detailsHeroBackdrop'),
   btnCloseDetailsModal: document.getElementById('btnCloseDetailsModal'),
@@ -193,13 +193,11 @@ const dom = {
   detailsAgeRating: document.getElementById('detailsAgeRating'),
   detailsSynopsis: document.getElementById('detailsSynopsis'),
   btnDetailsPlay: document.getElementById('btnDetailsPlay'),
+  btnDetailsEpisodes: document.getElementById('btnDetailsEpisodes'),
   btnDetailsMyList: document.getElementById('btnDetailsMyList'),
   btnDetailsCopyLink: document.getElementById('btnDetailsCopyLink'),
-  detailsEpisodesSection: document.getElementById('detailsEpisodesSection'),
-  detailsSeasonSelect: document.getElementById('detailsSeasonSelect'),
-  detailsEpisodesGrid: document.getElementById('detailsEpisodesGrid'),
-  detailsSimilarSection: document.getElementById('detailsSimilarSection'),
-  detailsSimilarGrid: document.getElementById('detailsSimilarGrid'),
+  detailsGenresWrap: document.getElementById('detailsGenresWrap'),
+  detailsGenreDot: document.getElementById('detailsGenreDot'),
 
   // Modal de Perfis
   profilesModal: document.getElementById('profilesModal'),
@@ -922,7 +920,7 @@ function setupEventListeners() {
     });
   }
 
-  // Modernização - Modal Completo de Detalhes Cinematográfico
+  // Modernização - Modal Compacto de Detalhes Cinematográfico
   if (dom.btnCloseDetailsModal) {
     dom.btnCloseDetailsModal.addEventListener('click', closeContentDetailsModal);
   }
@@ -934,14 +932,27 @@ function setupEventListeners() {
   if (dom.btnDetailsPlay) {
     dom.btnDetailsPlay.addEventListener('click', () => {
       if (state.currentDetailsItem) {
-        closeContentDetailsModal();
         const it = state.currentDetailsItem;
+        closeContentDetailsModal();
         if (it.is_anime || (it.id && String(it.id).startsWith('ani_'))) {
           openAnimeModal(it);
         } else if (it.isGroup) {
           openSeriesModal(it);
         } else {
           openPlayer(it.t || it.canonical_title, it.catNome || 'Filmes', it.u, it);
+        }
+      }
+    });
+  }
+  if (dom.btnDetailsEpisodes) {
+    dom.btnDetailsEpisodes.addEventListener('click', () => {
+      if (state.currentDetailsItem) {
+        const it = state.currentDetailsItem;
+        closeContentDetailsModal();
+        if (it.is_anime || (it.id && String(it.id).startsWith('ani_'))) {
+          openAnimeModal(it);
+        } else {
+          openSeriesModal(it);
         }
       }
     });
@@ -960,6 +971,15 @@ function setupEventListeners() {
       }
     });
   }
+
+  // Fechar Modal de Detalhes com a tecla Escape
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (dom.contentDetailsModal && dom.contentDetailsModal.classList.contains('active')) {
+        closeContentDetailsModal();
+      }
+    }
+  });
 
   // Modernização - Controles Inteligentes do Player
   setupPlayerModernEnhancements();
@@ -4759,62 +4779,125 @@ const HomeShelvesManager = {
 };
 
 // ---------------------------------------------------------------------
-// 5. MODAL CINEMATOGRÁFICO DE DETALHES COMPLETOS (CONTENT DETAILS)
+// 5. MODAL CINEMATOGRÁFICO COMPACTO E PROFISSIONAL (CONTENT DETAILS)
 // ---------------------------------------------------------------------
+let lastActiveFocusElement = null;
+
 function openContentDetailsModal(item) {
   if (!item || !dom.contentDetailsModal) return;
+  lastActiveFocusElement = document.activeElement;
   state.currentDetailsItem = item;
 
   const rawTitle = item.t || item.canonical_title || item.title || item.seriesName || 'Sem Título';
-  const posterUrl = item.p || item.poster || FALLBACK_POSTER;
+  const posterUrl = item.p || item.poster || item.banner || FALLBACK_POSTER;
   const rating = getMediaRating(item);
   const year = item.ano || item.year || 2024;
   const isAnime = !!item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
   const isSeries = !!item.isGroup || parseEpisodeInfo(rawTitle).isEpisode || (item.catNome && item.catNome.includes('Séries'));
 
-  // Preenche dados do Hero
+  // 1. Imagem horizontal de fundo (Backdrop) com fallback
   if (dom.detailsHeroBackdrop) {
-    dom.detailsHeroBackdrop.style.backgroundImage = `url('${posterUrl}')`;
+    const backdropUrl = item.banner || item.backdrop || posterUrl;
+    dom.detailsHeroBackdrop.style.backgroundImage = `url('${backdropUrl}')`;
   }
-  if (dom.detailsTitle) dom.detailsTitle.textContent = rawTitle;
-  if (dom.detailsRatingBadge) dom.detailsRatingBadge.textContent = `★ ${rating.toFixed(1)}`;
-  if (dom.detailsYear) dom.detailsYear.textContent = year;
-  if (dom.detailsCategoryBadge) dom.detailsCategoryBadge.textContent = item.catNome || (isAnime ? '🌸 ANIME' : isSeries ? '📺 SÉRIE' : '🎬 FILME');
 
-  const seasonsCount = item.totalSeasons || item.total_temporadas || 1;
-  const epsCount = item.totalEpisodes || item.total_episodios || 1;
+  // 2. Título bem destacado
+  if (dom.detailsTitle) {
+    dom.detailsTitle.textContent = rawTitle;
+  }
+
+  // 3. Badges: Categoria, Nota com origem e Qualidade
+  if (dom.detailsCategoryBadge) {
+    dom.detailsCategoryBadge.textContent = isAnime ? '🌸 ANIME' : (isSeries ? '📺 SÉRIE' : '🎬 FILME');
+  }
+
+  if (dom.detailsRatingBadge) {
+    dom.detailsRatingBadge.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)} <small style="font-size: 11px; opacity: 0.8; margin-left: 2px;">(TMDb)</small>`;
+  }
+
+  if (dom.detailsQualityBadge) {
+    dom.detailsQualityBadge.textContent = '4K UHD / HD';
+  }
+
+  // 4. Metadados: Ano, Duração ou Temporadas, Classificação Indicativa
+  if (dom.detailsYear) {
+    dom.detailsYear.textContent = year;
+  }
+
+  const seasonsCount = item.totalSeasons || item.total_temporadas || (item.seasons ? item.seasons.length : 1);
+  const epsCount = item.totalEpisodes || item.total_episodios || 0;
   if (dom.detailsDurationOrSeasons) {
-    dom.detailsDurationOrSeasons.textContent = isSeries || isAnime
-      ? `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''} (${epsCount} eps)`
-      : '2h 05m';
+    if (isSeries || isAnime) {
+      dom.detailsDurationOrSeasons.textContent = epsCount > 0
+        ? `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''} • ${epsCount} Episódio${epsCount > 1 ? 's' : ''}`
+        : `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''}`;
+    } else {
+      dom.detailsDurationOrSeasons.textContent = item.duracao || item.duration || '2h 05m';
+    }
   }
 
-  // Sinopse
+  if (dom.detailsAgeRating) {
+    dom.detailsAgeRating.textContent = item.age || item.classificacao || '14+';
+  }
+
+  // 5. Gêneros Reais
+  const rawGenres = (Array.isArray(item.generos) ? item.generos : (Array.isArray(item.genres) ? item.genres : []))
+    .filter(g => g && typeof g === 'string' && g.length > 1 && !['Dublado', 'Legendado', 'Filmes', 'Series', 'Animes'].includes(g))
+    .slice(0, 3);
+
+  if (dom.detailsGenresWrap) {
+    dom.detailsGenresWrap.innerHTML = '';
+    if (rawGenres.length > 0) {
+      rawGenres.forEach(g => {
+        const chip = document.createElement('span');
+        chip.className = 'details-genre-chip';
+        chip.textContent = g;
+        dom.detailsGenresWrap.appendChild(chip);
+      });
+      if (dom.detailsGenreDot) dom.detailsGenreDot.style.display = 'inline';
+    } else {
+      if (dom.detailsGenreDot) dom.detailsGenreDot.style.display = 'none';
+    }
+  }
+
+  // 6. Sinopse Verdadeira do Conteúdo
   if (dom.detailsSynopsis) {
-    dom.detailsSynopsis.textContent = item.sinopse || item.synopsis ||
-      `Assista ${escapeHtml(rawTitle)} no K-CINE com a melhor qualidade de streaming, reprodução rápida sem travamentos e opções completas de áudio e legendas.`;
+    const cleanSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora no K-CINE"))
+      ? item.sinopse
+      : (item.synopsis && item.synopsis.trim()
+        ? item.synopsis
+        : `${escapeHtml(rawTitle)} está disponível para assistir em alta definição no catálogo K-CINE.`);
+    dom.detailsSynopsis.textContent = cleanSinopse;
   }
 
-  // Atualiza botão de Minha Lista
-  MyListManager.updateButtons(item.id || rawTitle);
-
-  // Seções dinâmicas (Episódios para Séries/Animes OU Semelhantes para Filmes)
-  if (isAnime) {
-    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'block';
-    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'none';
-    populateAnimeDetailsEpisodes(item);
-  } else if (isSeries) {
-    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'block';
-    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'none';
-    populateSeriesDetailsEpisodes(item);
-  } else {
-    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'none';
-    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'block';
-    populateMovieDetailsSimilar(item);
+  // 7. Botão Ver Episódios (Exclusivo para Séries e Animes)
+  if (dom.btnDetailsEpisodes) {
+    if (isSeries || isAnime) {
+      dom.btnDetailsEpisodes.style.display = 'inline-flex';
+    } else {
+      dom.btnDetailsEpisodes.style.display = 'none';
+    }
   }
 
+  // 8. Botão Minha Lista sincronizado
+  if (typeof MyListManager !== 'undefined' && MyListManager.updateButtons) {
+    MyListManager.updateButtons(item.id || rawTitle);
+  }
+
+  // 9. Botão Copiar Link (apenas para Admin)
+  if (dom.btnDetailsCopyLink) {
+    const isAdmin = state.currentUser && state.currentUser.role === 'admin';
+    dom.btnDetailsCopyLink.style.display = isAdmin ? 'inline-flex' : 'none';
+  }
+
+  // Abre com animação discreta e bloqueia rolagem da página de fundo
   dom.contentDetailsModal.classList.add('active');
   document.body.style.overflow = 'hidden';
+
+  // Foco inicial no botão principal de reprodução
+  setTimeout(() => {
+    if (dom.btnDetailsPlay) dom.btnDetailsPlay.focus();
+  }, 50);
 }
 
 function closeContentDetailsModal() {
@@ -4823,90 +4906,9 @@ function closeContentDetailsModal() {
     document.body.style.overflow = '';
   }
   state.currentDetailsItem = null;
-}
-
-function populateMovieDetailsSimilar(item) {
-  if (!dom.detailsSimilarGrid) return;
-  dom.detailsSimilarGrid.innerHTML = '';
-
-  const pool = state.rawItems || [];
-  const similar = pool.filter(it => it.t !== item.t && !it.isGroup).slice(0, 6);
-
-  similar.forEach((sim, idx) => {
-    const card = createVideoCard(sim, idx);
-    card.onclick = () => openContentDetailsModal(sim);
-    dom.detailsSimilarGrid.appendChild(card);
-  });
-}
-
-function populateSeriesDetailsEpisodes(seriesGroup) {
-  if (!dom.detailsEpisodesGrid || !dom.detailsSeasonSelect) return;
-  dom.detailsEpisodesGrid.innerHTML = '';
-  dom.detailsSeasonSelect.innerHTML = '';
-
-  const episodes = seriesGroup.episodes || [];
-  const opt = document.createElement('option');
-  opt.value = '1';
-  opt.textContent = `Temporada 1 (${episodes.length} episódios)`;
-  dom.detailsSeasonSelect.appendChild(opt);
-
-  episodes.forEach(ep => {
-    const card = document.createElement('div');
-    card.className = 'episode-card-details';
-    card.style.cssText = 'background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; transition: background 0.2s;';
-    card.onmouseenter = () => card.style.background = 'rgba(255,255,255,0.08)';
-    card.onmouseleave = () => card.style.background = 'rgba(255,255,255,0.03)';
-    card.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <span style="font-weight: 800; color: var(--accent-pink); font-size: 1rem;">${ep.episodeNumber || 'EP'}</span>
-        <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">${escapeHtml(ep.title || 'Episódio')}</div>
-      </div>
-      <button class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem;">▶ Assistir</button>
-    `;
-    card.onclick = () => {
-      closeContentDetailsModal();
-      openPlayer(ep.title || seriesGroup.seriesName, seriesGroup.catNome || 'Séries', ep.streamUrl, ep);
-    };
-    dom.detailsEpisodesGrid.appendChild(card);
-  });
-}
-
-function populateAnimeDetailsEpisodes(animeItem) {
-  if (!dom.detailsEpisodesGrid) return;
-  dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Carregando episódios canônicos...</div>';
-
-  fetch(`/api/animes/details?id=${encodeURIComponent(animeItem.id)}`)
-    .then(r => r.json())
-    .then(data => {
-      dom.detailsEpisodesGrid.innerHTML = '';
-      const seasons = data.seasons || [];
-      if (!seasons.length) {
-        dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Filme individual ou temporada única. Clique em "Assistir Agora".</div>';
-        return;
-      }
-      const firstSeason = seasons[0];
-      firstSeason.episodes.slice(0, 30).forEach(ep => {
-        const card = document.createElement('div');
-        card.style.cssText = 'background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; transition: background 0.2s;';
-        card.onmouseenter = () => card.style.background = 'rgba(255,255,255,0.08)';
-        card.onmouseleave = () => card.style.background = 'rgba(255,255,255,0.03)';
-        card.innerHTML = `
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-weight: 800; color: var(--accent-pink); font-size: 1rem;">EP ${ep.episode_number}</span>
-            <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">${escapeHtml(ep.title || `Episódio ${ep.episode_number}`)}</div>
-          </div>
-          <button class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem;">▶ Assistir</button>
-        `;
-        card.onclick = () => {
-          closeContentDetailsModal();
-          playAnimeEpisode(ep, data, 'legendado');
-        };
-        dom.detailsEpisodesGrid.appendChild(card);
-      });
-    })
-    .catch(() => {
-      dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Clique em "Assistir Agora" para iniciar a reprodução deste anime.</div>';
-    });
+  if (lastActiveFocusElement && typeof lastActiveFocusElement.focus === 'function') {
+    try { lastActiveFocusElement.focus(); } catch (e) { }
+  }
 }
 
 // ---------------------------------------------------------------------
