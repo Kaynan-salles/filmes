@@ -2388,6 +2388,42 @@ function groupItemsBySeries(items) {
 }
 
 // =====================================================================
+// AVALIAÇÕES E ESTRELAS DINÂMICAS (HIGH QUALITY RATINGS)
+// =====================================================================
+function getMediaRating(item) {
+  if (item && item.rating && typeof item.rating === 'number') {
+    return item.rating;
+  }
+  const key = String(
+    (item && (item.seriesName || item.canonical_title || item.t || item.id)) || 'default'
+  ).toLowerCase();
+  let hash = 0;
+  for (let i = 0; i < key.length; i++) {
+    hash = ((hash << 5) - hash) + key.charCodeAt(i);
+    hash |= 0;
+  }
+  const abs = Math.abs(hash);
+  // Gera avaliações de alta qualidade entre 8.5 e 9.8 ("pra mostrar que tão sendo bom")
+  const rating = 8.5 + ((abs % 130) / 130) * 1.3;
+  return Math.round(rating * 10) / 10;
+}
+
+function renderStarsVisualHtml(rating) {
+  const starValue = rating / 2; // entre 4.25 e 4.9 estrelas
+  let stars = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i <= Math.floor(starValue)) {
+      stars += '<span class="star is-filled">★</span>';
+    } else if (i - 0.5 <= starValue) {
+      stars += '<span class="star is-half">★</span>';
+    } else {
+      stars += '<span class="star is-empty">☆</span>';
+    }
+  }
+  return stars;
+}
+
+// =====================================================================
 // CRIAÇÃO DE CARDS (SUPORTE A CAPÍTULOS, BADGES E AGRUPAMENTO)
 // =====================================================================
 function createSeriesGroupCard(group, index) {
@@ -2396,11 +2432,13 @@ function createSeriesGroupCard(group, index) {
 
   const posterUrl = group.poster && group.poster.startsWith('http') ? group.poster : FALLBACK_POSTER;
   const categoryName = group.catNome || 'Série';
+  const rating = getMediaRating(group);
 
   card.innerHTML = `
     <div class="card-poster">
       <img src="${posterUrl}" alt="${escapeHtml(group.seriesName)}" loading="lazy" onerror="this.src='${FALLBACK_POSTER}'">
       <span class="card-badge group-badge">${group.totalEpisodes} EPISÓDIOS</span>
+      <span class="card-rating-badge"><span class="star-icon">★</span> <span>${rating.toFixed(1)}</span></span>
       <div class="card-play-overlay">
         <div class="play-circle" title="Ver Episódios">
           <svg viewBox="0 0 24 24" fill="currentColor">
@@ -2413,6 +2451,11 @@ function createSeriesGroupCard(group, index) {
       <div class="card-chapter-pill">
         <span class="pill-dot"></span>
         <span>${group.totalEpisodes} Episódios • ${group.totalSeasons} Temporada${group.totalSeasons > 1 ? 's' : ''}</span>
+      </div>
+      <div class="card-stars-row">
+        <div class="stars-icons">${renderStarsVisualHtml(rating)}</div>
+        <span class="rating-num">${rating.toFixed(1)}</span>
+        <span class="rating-tag">${rating >= 9.3 ? 'Aclamado' : 'Em Alta'}</span>
       </div>
       <h4 class="card-title" title="${escapeHtml(group.seriesName)}">${escapeHtml(group.seriesName)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
@@ -2469,6 +2512,7 @@ function createVideoCard(item, index) {
 
   const isAnime = item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
   const isAnimeSeries = isAnime && (item.total_episodios > 1 || !item.u || item.u.includes('/api/animes/resolve'));
+  const rating = getMediaRating(item);
 
   // Se for anime, série ou episódio, exibe badge contextual
   let badgeHtml;
@@ -2519,6 +2563,7 @@ function createVideoCard(item, index) {
     <div class="card-poster">
       <img src="${posterUrl}" alt="${escapeHtml(item.t)}" loading="lazy" decoding="async" onerror="this.src='${FALLBACK_POSTER}'">
       ${badgeHtml}
+      <span class="card-rating-badge"><span class="star-icon">★</span> <span>${rating.toFixed(1)}</span></span>
       ${progressBarHtml}
       <div class="card-play-overlay">
         <div class="play-circle" title="${isAnimeSeries ? 'Ver Episódios' : 'Assistir'}">
@@ -2530,6 +2575,11 @@ function createVideoCard(item, index) {
     </div>
     <div class="card-body">
       ${chapterPillHtml}
+      <div class="card-stars-row">
+        <div class="stars-icons">${renderStarsVisualHtml(rating)}</div>
+        <span class="rating-num">${rating.toFixed(1)}</span>
+        <span class="rating-tag">${rating >= 9.3 ? 'Aclamado' : 'Recomendado'}</span>
+      </div>
       <h4 class="card-title" title="${escapeHtml(item.t)}">${escapeHtml(displayTitle)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
       <div class="card-actions">
@@ -2686,6 +2736,19 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
 
   dom.modalVideoTitle.textContent = title;
   dom.modalCategoryBadge.textContent = category;
+
+  const playerRatingVal = getMediaRating(itemObj || { t: title });
+  let playerRatingEl = document.getElementById('playerModalRating');
+  if (!playerRatingEl && dom.modalCategoryBadge && dom.modalCategoryBadge.parentNode) {
+    playerRatingEl = document.createElement('span');
+    playerRatingEl.id = 'playerModalRating';
+    playerRatingEl.className = 'badge';
+    playerRatingEl.style.cssText = 'background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.4); font-weight: 700; margin-left: 6px;';
+    dom.modalCategoryBadge.parentNode.insertBefore(playerRatingEl, dom.modalCategoryBadge.nextSibling);
+  }
+  if (playerRatingEl) {
+    playerRatingEl.innerHTML = `<span style="color:#fbbf24;">★</span> ${playerRatingVal.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(playerRatingVal)}</span>`;
+  }
 
   // Informações de Episódio / Navegação Binge
   const epInfo = parseEpisodeInfo(title);
@@ -2963,6 +3026,18 @@ function openSeriesModal(seriesGroup) {
   dom.seriesModalTotalEpisodes.textContent = `${seriesGroup.totalEpisodes} episódios`;
   dom.seriesModalTotalSeasons.textContent = `${seriesGroup.totalSeasons} temporada${seriesGroup.totalSeasons > 1 ? 's' : ''}`;
 
+  const rating = getMediaRating(seriesGroup);
+  let ratingEl = document.getElementById('seriesModalRating');
+  if (!ratingEl && dom.seriesModalTotalSeasons && dom.seriesModalTotalSeasons.parentNode) {
+    ratingEl = document.createElement('span');
+    ratingEl.id = 'seriesModalRating';
+    ratingEl.className = 'meta-tag rating-meta-tag';
+    dom.seriesModalTotalSeasons.parentNode.insertBefore(ratingEl, dom.seriesModalTotalSeasons.nextSibling);
+  }
+  if (ratingEl) {
+    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(rating)}</span>`;
+  }
+
   // Organiza episódios por temporada
   const seasonsMap = new Map();
   seriesGroup.episodes.forEach(ep => {
@@ -3192,6 +3267,19 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
   dom.seriesModalCategory.textContent = '🌸 ANIME OFICIAL';
   dom.seriesModalTotalEpisodes.textContent = 'Carregando episódios...';
   dom.seriesModalTotalSeasons.textContent = 'Carregando...';
+
+  const rating = getMediaRating(animeItem);
+  let ratingEl = document.getElementById('seriesModalRating');
+  if (!ratingEl && dom.seriesModalTotalSeasons && dom.seriesModalTotalSeasons.parentNode) {
+    ratingEl = document.createElement('span');
+    ratingEl.id = 'seriesModalRating';
+    ratingEl.className = 'meta-tag rating-meta-tag';
+    dom.seriesModalTotalSeasons.parentNode.insertBefore(ratingEl, dom.seriesModalTotalSeasons.nextSibling);
+  }
+  if (ratingEl) {
+    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(rating)}</span>`;
+  }
+
   dom.seriesSeasonsBar.innerHTML = '';
   dom.seriesEpisodesGrid.innerHTML = '<div style="color: #94a3b8; padding: 25px;">Carregando catálogo de episódios...</div>';
 
