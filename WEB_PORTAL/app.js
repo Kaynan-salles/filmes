@@ -1800,8 +1800,11 @@ function updateHeroItem(item) {
   }
   if (dom.heroCategory) dom.heroCategory.textContent = item.catNome || '';
 
-  // Fundo de pôster estático de base
+  // Fundo de pôster estático de base (visível apenas enquanto o vídeo carrega)
   dom.heroBackdrop.style.backgroundImage = `url('${item.p || FALLBACK_POSTER}')`;
+  if (dom.heroBanner) dom.heroBanner.classList.remove('has-video-playing');
+  if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
+  dom.heroVideo.classList.remove('is-playing');
 
   if (dom.heroDesc) {
     if (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora")) {
@@ -1838,13 +1841,20 @@ function updateHeroItem(item) {
 function playHeroBackgroundVideo(item) {
   if (!dom.heroVideo) return;
   const rawUrl = item.u;
-  if (!rawUrl) {
+
+  const resetHeroVideo = () => {
     dom.heroVideo.classList.remove('is-playing');
+    if (dom.heroBanner) dom.heroBanner.classList.remove('has-video-playing');
+    if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
+  };
+
+  if (!rawUrl) {
+    resetHeroVideo();
     return;
   }
 
   // Transição suave de fade out
-  dom.heroVideo.classList.remove('is-playing');
+  resetHeroVideo();
 
   if (heroHls) {
     try { heroHls.destroy(); } catch (e) {}
@@ -1910,11 +1920,14 @@ function playHeroBackgroundVideo(item) {
       return;
     }
     dom.heroVideo.classList.add('is-playing');
+    // Esconde completamente o papel de parede estático com a capa para não vazar nem sobrepor ao vídeo
+    if (dom.heroBanner) dom.heroBanner.classList.add('has-video-playing');
+    if (dom.heroBackdrop) dom.heroBackdrop.classList.add('is-hidden');
   };
 
   dom.heroVideo.onerror = () => {
-    // Se a stream não puder ser pré-carregada, o pôster fica nítido como fundo
-    dom.heroVideo.classList.remove('is-playing');
+    // Se a stream falhar, o pôster fica visível como fundo estático
+    resetHeroVideo();
   };
 
   if (isHls && window.Hls && Hls.isSupported()) {
@@ -1930,7 +1943,7 @@ function playHeroBackgroundVideo(item) {
       dom.heroVideo.play().catch(() => {});
     });
     heroHls.on(Hls.Events.ERROR, () => {
-      dom.heroVideo.classList.remove('is-playing');
+      resetHeroVideo();
     });
   } else {
     dom.heroVideo.src = streamUrl;
