@@ -2,8 +2,10 @@ import json
 import re
 import os
 import sqlite3
+import unicodedata
 
 def slugify(text):
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
     text = text.lower()
     text = re.sub(r'[^a-z0-9]+', '_', text).strip('_')
     return text
@@ -66,12 +68,17 @@ def main():
         ('WEB_PORTAL/data/25_outras_produtoras.json', 'Outras Produtoras')
     ]
 
-    # Load current animes and details
-    current_animes = json.load(open('WEB_PORTAL/data/animes.json', encoding='utf-8'))
-    current_details = json.load(open('WEB_PORTAL/data/animes_details.json', encoding='utf-8'))
+    # Load initial 260 Crunchyroll/Funimation animes
+    all_animes = json.load(open('WEB_PORTAL/data/animes.json', encoding='utf-8'))
+    # Keep only the original 260
+    base_animes = all_animes[:260]
+    all_details = json.load(open('WEB_PORTAL/data/animes_details.json', encoding='utf-8'))
+    
+    # Keep only original 260 details
+    base_details = {a['id']: all_details[a['id']] for a in base_animes if a['id'] in all_details}
 
-    current_titles_clean = {re.sub(r'[^a-zA-Z0-9]', '', a['t'].lower()): a['id'] for a in current_animes}
-    print(f"Current catalog has {len(current_animes)} series and {sum(a.get('total_episodios', 0) for a in current_animes)} episodes.")
+    current_titles_clean = {re.sub(r'[^a-zA-Z0-9]', '', a['t'].lower()): a['id'] for a in base_animes}
+    print(f"Base catalog: {len(base_animes)} series and {sum(a.get('total_episodios', 0) for a in base_animes)} episodes.")
 
     discovered_series = {}
 
@@ -89,12 +96,10 @@ def main():
                 if any(fp in t_low for fp in false_positives):
                     continue
 
-                # Check anime keyword
                 matched = any(kw in t_low for kw in anime_keywords)
                 if not matched:
                     continue
 
-                # Clean base series name
                 base = re.sub(r'[\(\[\{].*?[\)\]\}]', '', t)
                 base = re.sub(r'\s*(?:S\d+|TEMP(?:ORADA)?\s*\d+|T\d+)\s*(?:E\d+|EP\s*\d+|CAP\s*\d+)?.*$', '', base, flags=re.IGNORECASE)
                 base = re.sub(r'[\s\.\-_:]+$', '', base).strip()
@@ -166,8 +171,6 @@ def main():
         except Exception as e:
             print(f"Error processing {fpath}: {e}")
 
-    print(f"Adding {len(discovered_series)} new anime series!")
-
     # Connect to SQLite DB
     db_path = 'WEB_PORTAL/data/animes_catalog.db'
     conn = sqlite3.connect(db_path)
@@ -179,7 +182,6 @@ def main():
     for canonical, items in sorted(discovered_series.items()):
         anime_id = f"ani_{slugify(canonical)}"
         
-        # Pick best poster and banner
         poster = ""
         banner = ""
         for it in items:
@@ -192,7 +194,6 @@ def main():
             poster = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg"
             banner = poster
 
-        # Group episodes by (season, episode) to deduplicate
         ep_map = {}
         for it in items:
             t = it.get('t', '')
@@ -201,7 +202,6 @@ def main():
                 continue
             s_num, ep_num = parse_season_episode(t)
             
-            # Detect audio
             audio = "dublado"
             if "leg" in t.lower() or "sub" in t.lower():
                 audio = "legendado"
@@ -220,7 +220,6 @@ def main():
         if not ep_map:
             continue
 
-        # Sort seasons and episodes
         sorted_keys = sorted(ep_map.keys())
         seasons_dict = {}
         for (s_num, ep_num) in sorted_keys:
@@ -297,7 +296,7 @@ def main():
         }
 
         new_animes_list.append(anime_summary)
-        current_details[anime_id] = anime_detail
+        base_details[anime_id] = anime_detail
 
         # Insert into SQLite
         try:
@@ -324,8 +323,7 @@ def main():
     conn.commit()
     conn.close()
 
-    # Combine summary catalog
-    updated_animes = current_animes + new_animes_list
+    updated_animes = base_animes + new_animes_list
     print(f"Updated catalog: {len(updated_animes)} animes (+{len(new_animes_list)} new series, +{total_added_eps} new episodes).")
     print(f"Total episodes in catalog now: {sum(a.get('total_episodios', 0) for a in updated_animes)}.")
 
@@ -334,7 +332,7 @@ def main():
         json.dump(updated_animes, f, ensure_ascii=False, indent=2)
 
     with open('WEB_PORTAL/data/animes_details.json', 'w', encoding='utf-8') as f:
-        json.dump(current_details, f, ensure_ascii=False, indent=2)
+        json.dump(base_details, f, ensure_ascii=False, indent=2)
 
     # Save api/data files for Vercel
     os.makedirs('api/data', exist_ok=True)
@@ -342,7 +340,7 @@ def main():
         json.dump(updated_animes, f, ensure_ascii=False, indent=2)
 
     with open('api/data/animes_details.json', 'w', encoding='utf-8') as f:
-        json.dump(current_details, f, ensure_ascii=False, indent=2)
+        json.dump(base_details, f, ensure_ascii=False, indent=2)
 
     print("Files saved successfully to both WEB_PORTAL/data/ and api/data/!")
 

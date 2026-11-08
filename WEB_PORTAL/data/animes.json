@@ -4940,12 +4940,12 @@
     "is_anime": true
   },
   {
-    "id": "ani_a_concierge_pok_mon",
+    "id": "ani_a_concierge_pokemon",
     "t": "A Concierge Pokémon",
     "catNome": "🌸 ANIMES | Catálogo Oficial",
     "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySSivX1z5n7ALFF0082sbsCasK2.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ySSivX1z5n7ALFF0082sbsCasK2.jpg",
-    "u": "/api/animes/resolve?anime_id=ani_a_concierge_pok_mon&ep=1&s=1",
+    "u": "/api/animes/resolve?anime_id=ani_a_concierge_pokemon&ep=1&s=1",
     "sinopse": "A Concierge Pokémon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
     "ano": 2024,
     "temporadas": 1,
@@ -5244,12 +5244,12 @@
     "is_anime": true
   },
   {
-    "id": "ani_os_cavaleiros_do_zod_aco_saint_seiya",
+    "id": "ani_os_cavaleiros_do_zodiaco_saint_seiya",
     "t": "Os Cavaleiros do Zodíaco (Saint Seiya)",
     "catNome": "🌸 ANIMES | Catálogo Oficial",
     "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j39p6zfHETY2O8nakbOHcwcMxay.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/j39p6zfHETY2O8nakbOHcwcMxay.jpg",
-    "u": "/api/animes/resolve?anime_id=ani_os_cavaleiros_do_zod_aco_saint_seiya&ep=1&s=1",
+    "u": "/api/animes/resolve?anime_id=ani_os_cavaleiros_do_zodiaco_saint_seiya&ep=1&s=1",
     "sinopse": "Os Cavaleiros do Zodíaco (Saint Seiya) completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
     "ano": 2024,
     "temporadas": 3,
@@ -5320,12 +5320,12 @@
     "is_anime": true
   },
   {
-    "id": "ani_pok_mon",
+    "id": "ani_pokemon",
     "t": "Pokémon",
     "catNome": "🌸 ANIMES | Catálogo Oficial",
     "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ck1nfqYxMkiGvBVztIuM6b7fHoC.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ck1nfqYxMkiGvBVztIuM6b7fHoC.jpg",
-    "u": "/api/animes/resolve?anime_id=ani_pok_mon&ep=1&s=1",
+    "u": "/api/animes/resolve?anime_id=ani_pokemon&ep=1&s=1",
     "sinopse": "Pokémon completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
     "ano": 2024,
     "temporadas": 22,
@@ -5339,12 +5339,12 @@
     "is_anime": true
   },
   {
-    "id": "ani_pok_mon_horizontes_a_s_rie",
+    "id": "ani_pokemon_horizontes_a_serie",
     "t": "Pokémon Horizontes: A Série",
     "catNome": "🌸 ANIMES | Catálogo Oficial",
     "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gvT5IBN2syZjlJdPppd6LfxIX2D.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gvT5IBN2syZjlJdPppd6LfxIX2D.jpg",
-    "u": "/api/animes/resolve?anime_id=ani_pok_mon_horizontes_a_s_rie&ep=1&s=1",
+    "u": "/api/animes/resolve?anime_id=ani_pokemon_horizontes_a_serie&ep=1&s=1",
     "sinopse": "Pokémon Horizontes: A Série completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
     "ano": 2024,
     "temporadas": 3,
