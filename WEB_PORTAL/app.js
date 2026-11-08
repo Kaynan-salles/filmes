@@ -1860,18 +1860,55 @@ function playHeroBackgroundVideo(item) {
   dom.heroVideo.setAttribute('muted', '');
   dom.heroVideo.loop = true;
 
-  // Ao carregar metadados, pula telas pretas iniciais e vai direto para a ação do filme
-  dom.heroVideo.onloadedmetadata = () => {
+  let hasSeekedToMiddle = false;
+
+  const seekToMiddle = () => {
+    if (hasSeekedToMiddle) return;
     try {
-      if (dom.heroVideo.duration && dom.heroVideo.duration > 180) {
-        dom.heroVideo.currentTime = Math.min(85, dom.heroVideo.duration * 0.12);
-      } else if (dom.heroVideo.duration && dom.heroVideo.duration > 30) {
-        dom.heroVideo.currentTime = 20;
+      const dur = dom.heroVideo.duration;
+      if (dur && isFinite(dur) && dur > 60) {
+        hasSeekedToMiddle = true;
+        // Pega exatamente o meio do filme (45% a 50%) para exibir cenas reais da história, evitando abertura e créditos
+        const targetTime = Math.floor(dur * 0.45);
+        dom.heroVideo.currentTime = targetTime;
+      } else if (dur && isFinite(dur) && dur > 20) {
+        hasSeekedToMiddle = true;
+        dom.heroVideo.currentTime = Math.floor(dur * 0.4);
+      }
+    } catch (e) {}
+  };
+
+  // Ao carregar metadados ou duração, salta direto para o meio do filme
+  dom.heroVideo.onloadedmetadata = () => {
+    seekToMiddle();
+  };
+
+  dom.heroVideo.ondurationchange = () => {
+    seekToMiddle();
+  };
+
+  dom.heroVideo.oncanplay = () => {
+    seekToMiddle();
+  };
+
+  // Se o vídeo em loop atingir o fim, reinicia no meio do filme em vez da abertura
+  dom.heroVideo.onended = () => {
+    try {
+      const dur = dom.heroVideo.duration;
+      if (dur && isFinite(dur) && dur > 60) {
+        dom.heroVideo.currentTime = Math.floor(dur * 0.45);
+        dom.heroVideo.play().catch(() => {});
       }
     } catch (e) {}
   };
 
   dom.heroVideo.onplaying = () => {
+    // Só ativa o fade-in do vídeo de fundo após ter pulado a abertura e chegado ao meio do filme
+    const dur = dom.heroVideo.duration;
+    if (dur && isFinite(dur) && dur > 60 && dom.heroVideo.currentTime < 30) {
+      seekToMiddle();
+      return;
+    }
     dom.heroVideo.classList.add('is-playing');
   };
 
@@ -1889,6 +1926,7 @@ function playHeroBackgroundVideo(item) {
     heroHls.loadSource(streamUrl);
     heroHls.attachMedia(dom.heroVideo);
     heroHls.on(Hls.Events.MANIFEST_PARSED, () => {
+      seekToMiddle();
       dom.heroVideo.play().catch(() => {});
     });
     heroHls.on(Hls.Events.ERROR, () => {
