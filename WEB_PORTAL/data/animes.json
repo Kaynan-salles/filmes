@@ -5489,5 +5489,3328 @@
       "Aventura"
     ],
     "is_anime": true
+  },
+  {
+    "id": "ani_movie_chainsaw_man_o_filme_arco_da_reze",
+    "t": "Chainsaw Man – O Filme Arco da Reze",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_chainsaw_man_o_filme_arco_da_reze&ep=1&s=1",
+    "sinopse": "Chainsaw Man – O Filme Arco da Reze - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_a_vigilante_do_amanha_ghost_in_the_shell",
+    "t": "A Vigilante do Amanhã Ghost in the Shell",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rDVB5QXh4RoYPMUCelxJEtprgy6.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rDVB5QXh4RoYPMUCelxJEtprgy6.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_a_vigilante_do_amanha_ghost_in_the_shell&ep=1&s=1",
+    "sinopse": "A Vigilante do Amanhã Ghost in the Shell - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_demon_slayer_mugen_train_o_filme",
+    "t": "Demon Slayer - Mugen Train O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_demon_slayer_mugen_train_o_filme&ep=1&s=1",
+    "sinopse": "Demon Slayer - Mugen Train O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_fullmetal_alchemist_a_alquimia_final",
+    "t": "Fullmetal Alchemist A Alquimia Final",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uMzOYHGiHEfknowTlg3o72gSvHy.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uMzOYHGiHEfknowTlg3o72gSvHy.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_fullmetal_alchemist_a_alquimia_final&ep=1&s=1",
+    "sinopse": "Fullmetal Alchemist A Alquimia Final - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_fullmetal_alchemist_a_vinganca_de_scar",
+    "t": "Fullmetal Alchemist A Vingança de Scar",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qsgF3IyWmNOnYqNtweaqySWpYTz.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qsgF3IyWmNOnYqNtweaqySWpYTz.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_fullmetal_alchemist_a_vinganca_de_scar&ep=1&s=1",
+    "sinopse": "Fullmetal Alchemist A Vingança de Scar - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_mewtwo_contra_ataca_evolucao",
+    "t": "Pokémon Mewtwo Contra-Ataca! Evolução",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_mewtwo_contra_ataca_evolucao&ep=1&s=1",
+    "sinopse": "Pokémon Mewtwo Contra-Ataca! Evolução - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_a_viagem_de_chihiro",
+    "t": "A Viagem de Chihiro",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_a_viagem_de_chihiro&ep=1&s=1",
+    "sinopse": "A Viagem de Chihiro - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_akira",
+    "t": "Akira",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_akira&ep=1&s=1",
+    "sinopse": "Akira - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 1988,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_attack_on_titan_o_ultimo_ataque",
+    "t": "Attack on Titan O Último Ataque",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rSeFqgr6RibIxonuTHUeaj44shq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rSeFqgr6RibIxonuTHUeaj44shq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_attack_on_titan_o_ultimo_ataque&ep=1&s=1",
+    "sinopse": "Attack on Titan O Último Ataque - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_black_clover_a_espada_do_rei_mago",
+    "t": "Black Clover A Espada do Rei Mago",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KK0FJGdZI7jMhfwyJTg1LGR2z8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KK0FJGdZI7jMhfwyJTg1LGR2z8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_black_clover_a_espada_do_rei_mago&ep=1&s=1",
+    "sinopse": "Black Clover A Espada do Rei Mago - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_bleach_the_movie_fade_to_black",
+    "t": "Bleach the Movie Fade to Black",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/14VhFcofaLd1tKJ6831jf8i3mLO.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/14VhFcofaLd1tKJ6831jf8i3mLO.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_bleach_the_movie_fade_to_black&ep=1&s=1",
+    "sinopse": "Bleach the Movie Fade to Black - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_bleach_the_movie_memories_of_nobody",
+    "t": "Bleach the Movie Memories of Nobody",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zRD0KfrIEyIneKUfumgsPl9fjo0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zRD0KfrIEyIneKUfumgsPl9fjo0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_bleach_the_movie_memories_of_nobody&ep=1&s=1",
+    "sinopse": "Bleach the Movie Memories of Nobody - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_bleach_the_movie_hell_verse",
+    "t": "Bleach the Movie Hell Verse",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AiLSarzGTF2r5XEIvn1lLtlOahq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AiLSarzGTF2r5XEIvn1lLtlOahq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_bleach_the_movie_hell_verse&ep=1&s=1",
+    "sinopse": "Bleach the Movie Hell Verse - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_bleach_the_movie_the_diamond_dust_rebellion",
+    "t": "Bleach the Movie The Diamond Dust Rebellion",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0RPLurVbRI1iJZLXSAo4u1ZgdZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0RPLurVbRI1iJZLXSAo4u1ZgdZ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_bleach_the_movie_the_diamond_dust_rebellion&ep=1&s=1",
+    "sinopse": "Bleach the Movie The Diamond Dust Rebellion - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_boruto_naruto_o_filme",
+    "t": "Boruto Naruto O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dDQKCkJk19ewY6a4PbzMNNcztAi.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dDQKCkJk19ewY6a4PbzMNNcztAi.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_boruto_naruto_o_filme&ep=1&s=1",
+    "sinopse": "Boruto Naruto O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_cavaleiros_do_zodiaco_o_filme_prologo_do_ceu",
+    "t": "Cavaleiros do Zodiaco O Filme Prologo do Ceu",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_cavaleiros_do_zodiaco_o_filme_prologo_do_ceu&ep=1&s=1",
+    "sinopse": "Cavaleiros do Zodiaco O Filme Prologo do Ceu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_digimon_adventure_02_o_inicio",
+    "t": "Digimon Adventure 02 O Início",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kI1NNv0bwXPddlKCHQnT1PxH3dD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kI1NNv0bwXPddlKCHQnT1PxH3dD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_digimon_adventure_02_o_inicio&ep=1&s=1",
+    "sinopse": "Digimon Adventure 02 O Início - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_super_broly",
+    "t": "Dragon Ball Super Broly",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tuay76gZt7kOIb806hTzIktsQDT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tuay76gZt7kOIb806hTzIktsQDT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_super_broly&ep=1&s=1",
+    "sinopse": "Dragon Ball Super Broly - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_a_caminho_do_poder",
+    "t": "Dragon Ball A Caminho do Poder",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oJ9vh64p6DQDi00XDvHsp4tJSyx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oJ9vh64p6DQDi00XDvHsp4tJSyx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_a_caminho_do_poder&ep=1&s=1",
+    "sinopse": "Dragon Ball A Caminho do Poder - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_super_super_hero",
+    "t": "Dragon Ball Super SUPER HERO",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/FiqBRypTDyHzqcxdbpPb3ddFep.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/FiqBRypTDyHzqcxdbpPb3ddFep.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_super_super_hero&ep=1&s=1",
+    "sinopse": "Dragon Ball Super SUPER HERO - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_a_lenda_de_shenlong",
+    "t": "Dragon Ball A Lenda de Shenlong",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9CxRXbiutg7vn2rNTPFN3wGVyRe.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9CxRXbiutg7vn2rNTPFN3wGVyRe.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_a_lenda_de_shenlong&ep=1&s=1",
+    "sinopse": "Dragon Ball A Lenda de Shenlong - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_a_batalha_nos_dois_mundos",
+    "t": "Dragon Ball Z A Batalha Nos Dois Mundos",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yufW8vCgxW2o3egUfY7ivN5rC9B.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yufW8vCgxW2o3egUfY7ivN5rC9B.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_a_batalha_nos_dois_mundos&ep=1&s=1",
+    "sinopse": "Dragon Ball Z A Batalha Nos Dois Mundos - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_a_batalha_dos_deuses",
+    "t": "Dragon Ball Z A Batalha dos Deuses",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sF8ZL7ALPQWqvlg0FPE2fgdXOkR.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sF8ZL7ALPQWqvlg0FPE2fgdXOkR.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_a_batalha_dos_deuses&ep=1&s=1",
+    "sinopse": "Dragon Ball Z A Batalha dos Deuses - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_a_arvore_do_poder",
+    "t": "Dragon Ball Z A Árvore do Poder",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sIdT0MMmpDoiviPw0YSLajj5cHP.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sIdT0MMmpDoiviPw0YSLajj5cHP.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_a_arvore_do_poder&ep=1&s=1",
+    "sinopse": "Dragon Ball Z A Árvore do Poder - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_ataque_do_dragao",
+    "t": "Dragon Ball Z O Ataque do Dragão",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HKCZmoTK3gwYJAFBTvJETaaDFt.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HKCZmoTK3gwYJAFBTvJETaaDFt.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_ataque_do_dragao&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Ataque do Dragão - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_devolva_me_gohan",
+    "t": "Dragon Ball Z Devolva-me Gohan!!",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bgSKtVLW8RPSQc4ovtXLrpReCAT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bgSKtVLW8RPSQc4ovtXLrpReCAT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_devolva_me_gohan&ep=1&s=1",
+    "sinopse": "Dragon Ball Z Devolva-me Gohan!! - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_poder_invencivel",
+    "t": "Dragon Ball Z O Poder Invencível",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qwgp3aihvSPONoQh0gqWU4LrPDb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qwgp3aihvSPONoQh0gqWU4LrPDb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_poder_invencivel&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Poder Invencível - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_homem_mais_forte_do_mundo",
+    "t": "Dragon Ball Z O Homem Mais Forte do Mundo",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQyOTWpSQOyzLpHEOCpQwFFF0dJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQyOTWpSQOyzLpHEOCpQwFFF0dJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_homem_mais_forte_do_mundo&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Homem Mais Forte do Mundo - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_renascimento_de_freeza",
+    "t": "Dragon Ball Z O Renascimento de Freeza",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oth0VBziwe25mDzkJ6XzwmUCCDC.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oth0VBziwe25mDzkJ6XzwmUCCDC.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_renascimento_de_freeza&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Renascimento de Freeza - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_retorno_do_guerreiro_lendario",
+    "t": "Dragon Ball Z O Retorno do Guerreiro Lendário",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aVlkvo8FvttSFPuJ7y9QO0jCYMG.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aVlkvo8FvttSFPuJ7y9QO0jCYMG.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_retorno_do_guerreiro_lendario&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Retorno do Guerreiro Lendário - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_retorno_de_cooler",
+    "t": "Dragon Ball Z O Retorno de Cooler",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lvlHl1IFBdBfnLA4sgyjdqeyIEU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lvlHl1IFBdBfnLA4sgyjdqeyIEU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_retorno_de_cooler&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Retorno de Cooler - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_o_retorno_dos_androides",
+    "t": "Dragon Ball Z O Retorno dos Androides",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k6O0cgVpYbYeiw0kwjY8h93sUuL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/k6O0cgVpYbYeiw0kwjY8h93sUuL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_o_retorno_dos_androides&ep=1&s=1",
+    "sinopse": "Dragon Ball Z O Retorno dos Androides - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_uma_nova_fusao",
+    "t": "Dragon Ball Z Uma Nova Fusão",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fwTazcLR8ApguyLHGDWkSPKmnB0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fwTazcLR8ApguyLHGDWkSPKmnB0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_uma_nova_fusao&ep=1&s=1",
+    "sinopse": "Dragon Ball Z Uma Nova Fusão - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_uma_vinganca_para_freeza",
+    "t": "Dragon Ball Z Uma Vingança Para Freeza",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tSPplgwerlYhDWV362A1oec9Hg2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tSPplgwerlYhDWV362A1oec9Hg2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_uma_vinganca_para_freeza&ep=1&s=1",
+    "sinopse": "Dragon Ball Z Uma Vingança Para Freeza - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_evangelion_3_0_1_01_a_esperanca",
+    "t": "Evangelion 3.0+1.01 A Esperança",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_evangelion_3_0_1_01_a_esperanca&ep=1&s=1",
+    "sinopse": "Evangelion 3.0+1.01 A Esperança - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_evangelion_death_true_2",
+    "t": "Evangelion Death (True)²",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m9kucLjJLzcdCCiIFnkaqK0DpGj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m9kucLjJLzcdCCiIFnkaqK0DpGj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_evangelion_death_true_2&ep=1&s=1",
+    "sinopse": "Evangelion Death (True)² - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_ghost_in_the_shell_o_homem_risonho",
+    "t": "Ghost in the Shell O Homem Risonho",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nVW26Pqor830fAXqJ3sD7eE8el1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nVW26Pqor830fAXqJ3sD7eE8el1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_ghost_in_the_shell_o_homem_risonho&ep=1&s=1",
+    "sinopse": "Ghost in the Shell O Homem Risonho - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_herois_pokemon_latios_latias",
+    "t": "Heróis Pokémon Latios & Latias",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vGH8Z20nC7KagAHagdfk9g8iAq5.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vGH8Z20nC7KagAHagdfk9g8iAq5.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_herois_pokemon_latios_latias&ep=1&s=1",
+    "sinopse": "Heróis Pokémon Latios & Latias - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_jujutsu_kaisen_0_o_filme",
+    "t": "Jujutsu Kaisen 0 O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2ndvx03fmREMxEgaZ1vWt756TOQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2ndvx03fmREMxEgaZ1vWt756TOQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_jujutsu_kaisen_0_o_filme&ep=1&s=1",
+    "sinopse": "Jujutsu Kaisen 0 O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_meu_amigo_totoro",
+    "t": "Meu Amigo Totoro",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23KKTxDg6rxZVc66bloQQdPSr29.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23KKTxDg6rxZVc66bloQQdPSr29.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_meu_amigo_totoro&ep=1&s=1",
+    "sinopse": "Meu Amigo Totoro - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_my_hero_academia_2_herois_o_filme",
+    "t": "My Hero Academia 2 Heróis - O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dovXbq6JUJ6rRwetoj7SHZxbzaQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dovXbq6JUJ6rRwetoj7SHZxbzaQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_my_hero_academia_2_herois_o_filme&ep=1&s=1",
+    "sinopse": "My Hero Academia 2 Heróis - O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_my_hero_academia_agora_e_a_sua_vez",
+    "t": "My Hero Academia Agora é a Sua Vez",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lA1ph3BIWgQq0asDYxAxFLtxzx1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lA1ph3BIWgQq0asDYxAxFLtxzx1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_my_hero_academia_agora_e_a_sua_vez&ep=1&s=1",
+    "sinopse": "My Hero Academia Agora é a Sua Vez - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_nanatsu_no_taizai_furia_de_edimburgo_parte_1",
+    "t": "Nanatsu no Taizai Fúria de Edimburgo – Parte 1",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ItKNuIxKfLJkz1n7kf6yOARUbK.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ItKNuIxKfLJkz1n7kf6yOARUbK.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_nanatsu_no_taizai_furia_de_edimburgo_parte_1&ep=1&s=1",
+    "sinopse": "Nanatsu no Taizai Fúria de Edimburgo – Parte 1 - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_castelo_animado",
+    "t": "O Castelo Animado",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_castelo_animado&ep=1&s=1",
+    "sinopse": "O Castelo Animado - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_menino_e_a_garca",
+    "t": "O Menino e a Garça",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_menino_e_a_garca&ep=1&s=1",
+    "sinopse": "O Menino e a Garça - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_servico_de_entregas_da_kiki",
+    "t": "O Serviço de Entregas da Kiki",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eM4mDoXpOTwqMldmCy76cftok9m.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eM4mDoXpOTwqMldmCy76cftok9m.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_servico_de_entregas_da_kiki&ep=1&s=1",
+    "sinopse": "O Serviço de Entregas da Kiki - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_gold_o_filme",
+    "t": "One Piece Gold O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pHuiZmj4aaThV8akzsA5zMcTtox.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pHuiZmj4aaThV8akzsA5zMcTtox.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_gold_o_filme&ep=1&s=1",
+    "sinopse": "One Piece Gold O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_red",
+    "t": "One Piece Red",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uBU3snGYZADnKB65b4Nn194viHV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uBU3snGYZADnKB65b4Nn194viHV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_red&ep=1&s=1",
+    "sinopse": "One Piece Red - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_stampede",
+    "t": "One Piece Stampede",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQLJiY9XfiO3IN1x0l0E51XSwgV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQLJiY9XfiO3IN1x0l0E51XSwgV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_stampede&ep=1&s=1",
+    "sinopse": "One Piece Stampede - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_a_grande_batalha_dos_deuses",
+    "t": "Os Cavaleiros do Zodíaco A Grande Batalha dos Deuses",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1RsREkIc1t0oJLbYlz0tE8uZTbG.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1RsREkIc1t0oJLbYlz0tE8uZTbG.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_a_grande_batalha_dos_deuses&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco A Grande Batalha dos Deuses - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_o_prologo_do_ceu",
+    "t": "Os Cavaleiros do Zodíaco O Prólogo do Céu",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_o_prologo_do_ceu&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco O Prólogo do Céu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_a_lenda_do_santuario",
+    "t": "Os Cavaleiros do Zodíaco A Lenda do Santuário",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ozSUEsKgMNOdL4em13Xd7uKf9TW.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ozSUEsKgMNOdL4em13Xd7uKf9TW.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_a_lenda_do_santuario&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco A Lenda do Santuário - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_a_lenda_dos_defensores_de_atena",
+    "t": "Os Cavaleiros do Zodíaco A Lenda dos Defensores de Atena",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/724kXHDFaSJw1WdYX2qi5XkYMLb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/724kXHDFaSJw1WdYX2qi5XkYMLb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_a_lenda_dos_defensores_de_atena&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco A Lenda dos Defensores de Atena - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_o_santo_guerreiro",
+    "t": "Os Cavaleiros do Zodíaco O Santo Guerreiro",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nziTxFxx0l2hO7ZddZo903kVVU0.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nziTxFxx0l2hO7ZddZo903kVVU0.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_o_santo_guerreiro&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco O Santo Guerreiro - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_os_guerreiros_do_armageddon",
+    "t": "Os Cavaleiros do Zodíaco Os Guerreiros do Armageddon",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cXCWqtb7oRtkQfpxjdPS4G2c3RR.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cXCWqtb7oRtkQfpxjdPS4G2c3RR.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_os_guerreiros_do_armageddon&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco Os Guerreiros do Armageddon - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_3_o_feitico_dos_unown",
+    "t": "Pokémon 3 O Feitiço dos Unown",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vqUWAVNetRIIQC6I0UDnubz8Qw3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vqUWAVNetRIIQC6I0UDnubz8Qw3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_3_o_feitico_dos_unown&ep=1&s=1",
+    "sinopse": "Pokémon 3 O Feitiço dos Unown - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme",
+    "t": "Pokémon O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/WcMzZqAEeKdKCpbTnXdPdI0gDo.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/WcMzZqAEeKdKCpbTnXdPdI0gDo.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme&ep=1&s=1",
+    "sinopse": "Pokémon O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_6_jirachi_realizador_de_desejos",
+    "t": "Pokémon 6 Jirachi - Realizador de Desejos",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fIULywQnT4pAJxAhJFNo9yaYRBq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fIULywQnT4pAJxAhJFNo9yaYRBq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_6_jirachi_realizador_de_desejos&ep=1&s=1",
+    "sinopse": "Pokémon 6 Jirachi - Realizador de Desejos - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_7_alma_gemea",
+    "t": "Pokémon 7 Alma Gêmea",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/plDxcsCB5muct8j88GCgC2FII7T.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/plDxcsCB5muct8j88GCgC2FII7T.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_7_alma_gemea&ep=1&s=1",
+    "sinopse": "Pokémon 7 Alma Gêmea - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_arceus_e_a_joia_da_vida",
+    "t": "Pokémon Arceus e a Jóia da Vida",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_arceus_e_a_joia_da_vida&ep=1&s=1",
+    "sinopse": "Pokémon Arceus e a Jóia da Vida - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_as_cronicas_de_arceus",
+    "t": "Pokémon As Crônicas de Arceus",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_as_cronicas_de_arceus&ep=1&s=1",
+    "sinopse": "Pokémon As Crônicas de Arceus - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_lucario_e_o_misterio_de_mew",
+    "t": "Pokémon Lucario e o Mistério de Mew",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRwdr4emOEGRJht4H7eFDLcrAom.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRwdr4emOEGRJht4H7eFDLcrAom.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_lucario_e_o_misterio_de_mew&ep=1&s=1",
+    "sinopse": "Pokémon Lucario e o Mistério de Mew - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_giratina_e_o_cavaleiro_do_ceu",
+    "t": "Pokémon Giratina e o Cavaleiro do Céu",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tWb8LkgBcobNi6azuACIFDNJzmU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tWb8LkgBcobNi6azuACIFDNJzmU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_giratina_e_o_cavaleiro_do_ceu&ep=1&s=1",
+    "sinopse": "Pokémon Giratina e o Cavaleiro do Céu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_2000_o_poder_de_um",
+    "t": "Pokémon o Filme 2000 O Poder de Um",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3Msy3zidda5OYpqy6Dp1Fm5AtbJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3Msy3zidda5OYpqy6Dp1Fm5AtbJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_2000_o_poder_de_um&ep=1&s=1",
+    "sinopse": "Pokémon o Filme 2000 O Poder de Um - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2000,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_branco_victini_e_zekrom",
+    "t": "Pokémon o Filme Branco - Victini e Zekrom",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/anQCYFSCR3fxi6L1lNlkQcLdUJI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/anQCYFSCR3fxi6L1lNlkQcLdUJI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_branco_victini_e_zekrom&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Branco - Victini e Zekrom - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_diancie_e_o_casulo_da_destruicao",
+    "t": "Pokémon o Filme Diancie e o Casulo da Destruição",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rcfpaFgj8Ahm4cemEQhY8Nvf6ir.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rcfpaFgj8Ahm4cemEQhY8Nvf6ir.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_diancie_e_o_casulo_da_destruicao&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Diancie e o Casulo da Destruição - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_eu_escolho_voce",
+    "t": "Pokémon o Filme Eu Escolho Você!",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Aip9h0zIzKHTdSxoZHdOWweQTrI.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Aip9h0zIzKHTdSxoZHdOWweQTrI.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_eu_escolho_voce&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Eu Escolho Você! - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_genesect_e_a_lenda_revelada",
+    "t": "Pokémon o Filme Genesect e a Lenda Revelada",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/twhBtwnnLHV5bbgAPilKYHFMzli.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/twhBtwnnLHV5bbgAPilKYHFMzli.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_genesect_e_a_lenda_revelada&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Genesect e a Lenda Revelada - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_hoopa_e_o_duelo_lendario",
+    "t": "Pokémon o Filme Hoopa e o Duelo Lendário",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pGcRH4Kgfl9BsLPgezCUQcK17IU.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pGcRH4Kgfl9BsLPgezCUQcK17IU.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_hoopa_e_o_duelo_lendario&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Hoopa e o Duelo Lendário - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_mewtwo_contra_ataca",
+    "t": "Pokémon o Filme Mewtwo Contra-Ataca",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_mewtwo_contra_ataca&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Mewtwo Contra-Ataca - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_kyurem_contra_a_espada_da_justica",
+    "t": "Pokémon o Filme Kyurem contra a Espada da Justiça",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gtk5xlSO59CYc6Ul82ZGlSExRWp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gtk5xlSO59CYc6Ul82ZGlSExRWp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_kyurem_contra_a_espada_da_justica&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Kyurem contra a Espada da Justiça - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_o_poder_de_todos",
+    "t": "Pokémon o Filme O Poder de Todos",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5JDpggW74NfM36e3vXV0aN5b7ZD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5JDpggW74NfM36e3vXV0aN5b7ZD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_o_poder_de_todos&ep=1&s=1",
+    "sinopse": "Pokémon o Filme O Poder de Todos - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_volcanion_e_a_maravilha_mecanica",
+    "t": "Pokémon O Filme Volcanion e a Maravilha Mecânica",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yzfGkn1nfx4EvYP5axS2jKJmkHK.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yzfGkn1nfx4EvYP5axS2jKJmkHK.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_volcanion_e_a_maravilha_mecanica&ep=1&s=1",
+    "sinopse": "Pokémon O Filme Volcanion e a Maravilha Mecânica - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_filme_preto_victini_e_reshiram",
+    "t": "Pokémon o Filme Preto - Victini e Reshiram",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/74GV0SdGJTsXdC8Q56VFJOu6TDJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/74GV0SdGJTsXdC8Q56VFJOu6TDJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_filme_preto_victini_e_reshiram&ep=1&s=1",
+    "sinopse": "Pokémon o Filme Preto - Victini e Reshiram - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_o_pesadelo_de_darkrai",
+    "t": "Pokémon O Pesadelo de Darkrai",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A1Js7nkmCP8lWuyDYY0zFqeskqd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/A1Js7nkmCP8lWuyDYY0zFqeskqd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_o_pesadelo_de_darkrai&ep=1&s=1",
+    "sinopse": "Pokémon O Pesadelo de Darkrai - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_zoroark_mestre_das_ilusoes",
+    "t": "Pokémon Zoroark - Mestre das Ilusões",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zGKwjx1hl7I9ef5RlKrGQh5fL1w.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zGKwjx1hl7I9ef5RlKrGQh5fL1w.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_zoroark_mestre_das_ilusoes&ep=1&s=1",
+    "sinopse": "Pokémon Zoroark - Mestre das Ilusões - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_ponyo_uma_amizade_que_veio_do_mar",
+    "t": "Ponyo - Uma Amizade que Veio do Mar",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_ponyo_uma_amizade_que_veio_do_mar&ep=1&s=1",
+    "sinopse": "Ponyo - Uma Amizade que Veio do Mar - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_1",
+    "t": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 1)",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_1&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 1) - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_2",
+    "t": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 2)",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_2&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 2) - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_eternal_o_filme",
+    "t": "Pretty Guardian Sailor Moon Eternal O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_eternal_o_filme&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Eternal O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_eternal_o_filme_parte_2",
+    "t": "Pretty Guardian Sailor Moon Eternal O Filme - Parte 2",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_eternal_o_filme_parte_2&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Eternal O Filme - Parte 2 - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_spy_x_family_codigo_branco",
+    "t": "SPY x FAMILY CÓDIGO Branco",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thGaW3UXecNJAEdB6rs8sC45JWv.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thGaW3UXecNJAEdB6rs8sC45JWv.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_spy_x_family_codigo_branco&ep=1&s=1",
+    "sinopse": "SPY x FAMILY CÓDIGO Branco - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_suzume",
+    "t": "Suzume",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_suzume&ep=1&s=1",
+    "sinopse": "Suzume - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_sword_art_online_progressive_scherzo_do_crepusculo_sombrio",
+    "t": "Sword Art Online Progressive Scherzo do Crepúsculo Sombrio",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tPCpAZmw1wUMxkVWvOgFmaZq4zp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tPCpAZmw1wUMxkVWvOgFmaZq4zp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_sword_art_online_progressive_scherzo_do_crepusculo_sombrio&ep=1&s=1",
+    "sinopse": "Sword Art Online Progressive Scherzo do Crepúsculo Sombrio - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_that_time_i_get_reincarnated_as_a_slime_o_filme",
+    "t": "That Time I Get Reincarnated as a Slime O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dZTg8Z2DuVx7SgEKD1nHYZBQMm6.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dZTg8Z2DuVx7SgEKD1nHYZBQMm6.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_that_time_i_get_reincarnated_as_a_slime_o_filme&ep=1&s=1",
+    "sinopse": "That Time I Get Reincarnated as a Slime O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_the_first_slam_dunk",
+    "t": "THE FIRST SLAM DUNK",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cEpFGDPSdHEXUkkgrAZdhQyC7ZK.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cEpFGDPSdHEXUkkgrAZdhQyC7ZK.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_the_first_slam_dunk&ep=1&s=1",
+    "sinopse": "THE FIRST SLAM DUNK - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_the_last_naruto_o_filme",
+    "t": "The Last Naruto O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sKn9V7hvkxJqFWBhNLHStbpHUIN.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sKn9V7hvkxJqFWBhNLHStbpHUIN.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_the_last_naruto_o_filme&ep=1&s=1",
+    "sinopse": "The Last Naruto O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_the_seven_deadly_sins_furia_de_edimburgo_parte_2",
+    "t": "The Seven Deadly Sins Fúria de Edimburgo – Parte 2",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgtDBMqh9na55V3sP6PgAr4WgKd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgtDBMqh9na55V3sP6PgAr4WgKd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_the_seven_deadly_sins_furia_de_edimburgo_parte_2&ep=1&s=1",
+    "sinopse": "The Seven Deadly Sins Fúria de Edimburgo – Parte 2 - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_meu_nome_e_chihiro",
+    "t": "Meu Nome é Chihiro",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hkvq6vqz6j1gSojBYkpTjSauFZD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hkvq6vqz6j1gSojBYkpTjSauFZD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_meu_nome_e_chihiro&ep=1&s=1",
+    "sinopse": "Meu Nome é Chihiro - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_bleach",
+    "t": "Bleach",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ml5eX1mitt8YuMjl8oAstzuzUw9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ml5eX1mitt8YuMjl8oAstzuzUw9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_bleach&ep=1&s=1",
+    "sinopse": "Bleach - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco",
+    "t": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_detetive_pikachu",
+    "t": "Pokémon Detetive Pikachu",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_detetive_pikachu&ep=1&s=1",
+    "sinopse": "Pokémon Detetive Pikachu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_princesa_mononoke",
+    "t": "Princesa Mononoke",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7EadOwHmyQgOnlghRiWBygNtnjl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7EadOwHmyQgOnlghRiWBygNtnjl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_princesa_mononoke&ep=1&s=1",
+    "sinopse": "Princesa Mononoke - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_digimon_adventure_02_revenge_of_diaboromon",
+    "t": "Digimon Adventure 02 Revenge of Diaboromon",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xE2FzwcFOEh1EPb13oZE0UU0znx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xE2FzwcFOEh1EPb13oZE0UU0znx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_digimon_adventure_02_revenge_of_diaboromon&ep=1&s=1",
+    "sinopse": "Digimon Adventure 02 Revenge of Diaboromon - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_digimon_adventure_o_filme",
+    "t": "Digimon Adventure O Filme",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/axtzfOR7Z2swI6XtjERDsYQapzV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/axtzfOR7Z2swI6XtjERDsYQapzV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_digimon_adventure_o_filme&ep=1&s=1",
+    "sinopse": "Digimon Adventure O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_3d2y",
+    "t": "One Piece 3D2Y",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8nYx5d5svGibvuPQfV4GVy8IhmS.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8nYx5d5svGibvuPQfV4GVy8IhmS.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_3d2y&ep=1&s=1",
+    "sinopse": "One Piece 3D2Y - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_chainsaw_man_o_filme_arco_da_reze_4k",
+    "t": "Chainsaw Man – O Filme Arco da Reze 4K",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_chainsaw_man_o_filme_arco_da_reze_4k&ep=1&s=1",
+    "sinopse": "Chainsaw Man – O Filme Arco da Reze 4K - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_menino_e_a_garca_4k",
+    "t": "O Menino e a Garça 4K",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_menino_e_a_garca_4k&ep=1&s=1",
+    "sinopse": "O Menino e a Garça 4K - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_4k_hybrid",
+    "t": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo 4K [Hybrid]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_4k_hybrid&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo 4K [Hybrid] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_4k_hdr",
+    "t": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo 4K [HDR]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_4k_hdr&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo 4K [HDR] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_detective_pikachu_4k",
+    "t": "Pokemon Detective Pikachu 4K",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_detective_pikachu_4k&ep=1&s=1",
+    "sinopse": "Pokemon Detective Pikachu 4K - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_detetive_pikachu_4k_hdr",
+    "t": "Pokémon Detetive Pikachu 4K [HDR]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_detetive_pikachu_4k_hdr&ep=1&s=1",
+    "sinopse": "Pokémon Detetive Pikachu 4K [HDR] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_suzume_4k_hdr",
+    "t": "Suzume 4K [HDR]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_suzume_4k_hdr&ep=1&s=1",
+    "sinopse": "Suzume 4K [HDR] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_a_viagem_de_chihiro_l",
+    "t": "A Viagem de Chihiro [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_a_viagem_de_chihiro_l&ep=1&s=1",
+    "sinopse": "A Viagem de Chihiro [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_attack_on_titan_o_ultimo_ataque_l",
+    "t": "Attack on Titan O ÚLTIMO ATAQUE [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rSeFqgr6RibIxonuTHUeaj44shq.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rSeFqgr6RibIxonuTHUeaj44shq.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_attack_on_titan_o_ultimo_ataque_l&ep=1&s=1",
+    "sinopse": "Attack on Titan O ÚLTIMO ATAQUE [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_black_clover_a_espada_do_rei_mago_l",
+    "t": "Black Clover A Espada do Rei Mago [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KK0FJGdZI7jMhfwyJTg1LGR2z8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5KK0FJGdZI7jMhfwyJTg1LGR2z8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_black_clover_a_espada_do_rei_mago_l&ep=1&s=1",
+    "sinopse": "Black Clover A Espada do Rei Mago [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_call_me_by_your_name_l",
+    "t": "Call Me by Your Name [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qnf5Onsk236CdE5Lff93IX69gHf.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qnf5Onsk236CdE5Lff93IX69gHf.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_call_me_by_your_name_l&ep=1&s=1",
+    "sinopse": "Call Me by Your Name [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_chainsaw_man_o_filme_arco_da_reze_l",
+    "t": "Chainsaw Man – O Filme Arco da Reze [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_chainsaw_man_o_filme_arco_da_reze_l&ep=1&s=1",
+    "sinopse": "Chainsaw Man – O Filme Arco da Reze [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_digimon_adventure_02_revenge_of_diaboromon_l",
+    "t": "Digimon Adventure 02 Revenge of Diaboromon [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xE2FzwcFOEh1EPb13oZE0UU0znx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xE2FzwcFOEh1EPb13oZE0UU0znx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_digimon_adventure_02_revenge_of_diaboromon_l&ep=1&s=1",
+    "sinopse": "Digimon Adventure 02 Revenge of Diaboromon [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_digimon_adventure_o_filme_l",
+    "t": "Digimon Adventure O Filme [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/axtzfOR7Z2swI6XtjERDsYQapzV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/axtzfOR7Z2swI6XtjERDsYQapzV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_digimon_adventure_o_filme_l&ep=1&s=1",
+    "sinopse": "Digimon Adventure O Filme [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_super_broly_legendado",
+    "t": "Dragon Ball Super Broly Legendado",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/tuay76gZt7kOIb806hTzIktsQDT.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/tuay76gZt7kOIb806hTzIktsQDT.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_super_broly_legendado&ep=1&s=1",
+    "sinopse": "Dragon Ball Super Broly Legendado - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_z_a_batalha_dos_deuses_l",
+    "t": "Dragon Ball Z A Batalha dos Deuses [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sF8ZL7ALPQWqvlg0FPE2fgdXOkR.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sF8ZL7ALPQWqvlg0FPE2fgdXOkR.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_z_a_batalha_dos_deuses_l&ep=1&s=1",
+    "sinopse": "Dragon Ball Z A Batalha dos Deuses [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_dragon_ball_super_super_hero_l",
+    "t": "Dragon Ball Super Super Hero [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/FiqBRypTDyHzqcxdbpPb3ddFep.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/FiqBRypTDyHzqcxdbpPb3ddFep.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_dragon_ball_super_super_hero_l&ep=1&s=1",
+    "sinopse": "Dragon Ball Super Super Hero [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_evangelion_3_0_1_01_a_esperanca_l",
+    "t": "Evangelion 3.0+1.01 A Esperança [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_evangelion_3_0_1_01_a_esperanca_l&ep=1&s=1",
+    "sinopse": "Evangelion 3.0+1.01 A Esperança [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_evangelion_death_true_2_l",
+    "t": "Evangelion Death (True)² [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m9kucLjJLzcdCCiIFnkaqK0DpGj.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m9kucLjJLzcdCCiIFnkaqK0DpGj.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_evangelion_death_true_2_l&ep=1&s=1",
+    "sinopse": "Evangelion Death (True)² [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_fullmetal_alchemist_a_vinganca_de_scar_l",
+    "t": "Fullmetal Alchemist A Vingança de Scar [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qsgF3IyWmNOnYqNtweaqySWpYTz.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qsgF3IyWmNOnYqNtweaqySWpYTz.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_fullmetal_alchemist_a_vinganca_de_scar_l&ep=1&s=1",
+    "sinopse": "Fullmetal Alchemist A Vingança de Scar [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_fullmetal_alchemist_a_alquimia_final_l",
+    "t": "Fullmetal Alchemist A Alquimia Final [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uMzOYHGiHEfknowTlg3o72gSvHy.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uMzOYHGiHEfknowTlg3o72gSvHy.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_fullmetal_alchemist_a_alquimia_final_l&ep=1&s=1",
+    "sinopse": "Fullmetal Alchemist A Alquimia Final [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_jujutsu_kaisen_0_o_filme_l",
+    "t": "Jujutsu Kaisen 0 O Filme [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2ndvx03fmREMxEgaZ1vWt756TOQ.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2ndvx03fmREMxEgaZ1vWt756TOQ.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_jujutsu_kaisen_0_o_filme_l&ep=1&s=1",
+    "sinopse": "Jujutsu Kaisen 0 O Filme [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_kimetsu_no_yaiba_mugen_ressha_hen_l",
+    "t": "Kimetsu No Yaiba Mugen Ressha Hen [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_kimetsu_no_yaiba_mugen_ressha_hen_l&ep=1&s=1",
+    "sinopse": "Kimetsu No Yaiba Mugen Ressha Hen [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_meu_amigo_totoro_l",
+    "t": "Meu Amigo Totoro [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23KKTxDg6rxZVc66bloQQdPSr29.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23KKTxDg6rxZVc66bloQQdPSr29.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_meu_amigo_totoro_l&ep=1&s=1",
+    "sinopse": "Meu Amigo Totoro [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_meu_nome_e_chihiro_l",
+    "t": "Meu Nome é Chihiro [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hkvq6vqz6j1gSojBYkpTjSauFZD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hkvq6vqz6j1gSojBYkpTjSauFZD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_meu_nome_e_chihiro_l&ep=1&s=1",
+    "sinopse": "Meu Nome é Chihiro [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_my_hero_academia_agora_e_a_sua_vez_l",
+    "t": "My Hero Academia Agora é a Sua Vez [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lA1ph3BIWgQq0asDYxAxFLtxzx1.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lA1ph3BIWgQq0asDYxAxFLtxzx1.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_my_hero_academia_agora_e_a_sua_vez_l&ep=1&s=1",
+    "sinopse": "My Hero Academia Agora é a Sua Vez [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_menino_e_a_garca_l",
+    "t": "O Menino e a Garça [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_menino_e_a_garca_l&ep=1&s=1",
+    "sinopse": "O Menino e a Garça [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_o_servico_de_entregas_da_kiki_l",
+    "t": "O Serviço de Entregas da Kiki [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eM4mDoXpOTwqMldmCy76cftok9m.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eM4mDoXpOTwqMldmCy76cftok9m.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_o_servico_de_entregas_da_kiki_l&ep=1&s=1",
+    "sinopse": "O Serviço de Entregas da Kiki [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_red_l",
+    "t": "One Piece Red [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uBU3snGYZADnKB65b4Nn194viHV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uBU3snGYZADnKB65b4Nn194viHV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_red_l&ep=1&s=1",
+    "sinopse": "One Piece Red [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_gold_o_filme_l",
+    "t": "One Piece Gold O Filme [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pHuiZmj4aaThV8akzsA5zMcTtox.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pHuiZmj4aaThV8akzsA5zMcTtox.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_gold_o_filme_l&ep=1&s=1",
+    "sinopse": "One Piece Gold O Filme [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_stampede_l",
+    "t": "One Piece Stampede [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQLJiY9XfiO3IN1x0l0E51XSwgV.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQLJiY9XfiO3IN1x0l0E51XSwgV.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_stampede_l&ep=1&s=1",
+    "sinopse": "One Piece Stampede [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_l",
+    "t": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1qos0X6EIi4KT9RmJiVGZB9Kw6l.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_os_cavaleiros_do_zodiaco_saint_seiya_o_comeco_l&ep=1&s=1",
+    "sinopse": "Os Cavaleiros do Zodíaco - Saint Seiya O Começo [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_detective_pikachu_legendado",
+    "t": "Pokemon Detective Pikachu Legendado",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_detective_pikachu_legendado&ep=1&s=1",
+    "sinopse": "Pokemon Detective Pikachu Legendado - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_as_cronicas_de_arceus_l",
+    "t": "Pokémon As Crônicas de Arceus [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w500/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_as_cronicas_de_arceus_l&ep=1&s=1",
+    "sinopse": "Pokémon As Crônicas de Arceus [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_ponyo_uma_amizade_que_veio_do_mar_l",
+    "t": "Ponyo - Uma Amizade que Veio do Mar [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_ponyo_uma_amizade_que_veio_do_mar_l&ep=1&s=1",
+    "sinopse": "Ponyo - Uma Amizade que Veio do Mar [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_2_l",
+    "t": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 2) [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_2_l&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 2) [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_1_l",
+    "t": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 1) [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4iikFsNwO1N8c89H0Wk2Ezqwe4t.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pretty_guardian_sailor_moon_cosmos_o_filme_parte_1_l&ep=1&s=1",
+    "sinopse": "Pretty Guardian Sailor Moon Cosmos O Filme (Parte 1) [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_princesa_mononoke_l",
+    "t": "Princesa Mononoke [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7EadOwHmyQgOnlghRiWBygNtnjl.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7EadOwHmyQgOnlghRiWBygNtnjl.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_princesa_mononoke_l&ep=1&s=1",
+    "sinopse": "Princesa Mononoke [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_spy_x_family_codigo_branco_l",
+    "t": "SPY x FAMILY CÓDIGO Branco [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thGaW3UXecNJAEdB6rs8sC45JWv.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thGaW3UXecNJAEdB6rs8sC45JWv.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_spy_x_family_codigo_branco_l&ep=1&s=1",
+    "sinopse": "SPY x FAMILY CÓDIGO Branco [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_suzume_l",
+    "t": "Suzume [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/QcS3MhdUiOEUOjY451FOFInZXF.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_suzume_l&ep=1&s=1",
+    "sinopse": "Suzume [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_sword_art_online_progressive_scherzo_do_crepusculo_sombrio_l",
+    "t": "Sword Art Online Progressive Scherzo do Crepúsculo Sombrio [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tPCpAZmw1wUMxkVWvOgFmaZq4zp.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tPCpAZmw1wUMxkVWvOgFmaZq4zp.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_sword_art_online_progressive_scherzo_do_crepusculo_sombrio_l&ep=1&s=1",
+    "sinopse": "Sword Art Online Progressive Scherzo do Crepúsculo Sombrio [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_terminator_dark_fate_l",
+    "t": "Terminator Dark Fate [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HsG5V6ZpKYgfwbFqXEYONbqtTt.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3HsG5V6ZpKYgfwbFqXEYONbqtTt.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_terminator_dark_fate_l&ep=1&s=1",
+    "sinopse": "Terminator Dark Fate [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_that_time_i_get_reincarnated_as_a_slime_o_filme_l",
+    "t": "That Time I Get Reincarnated as a Slime O Filme [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ofLGHOHFEOr3bS8dYFbaWgnZESa.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ofLGHOHFEOr3bS8dYFbaWgnZESa.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_that_time_i_get_reincarnated_as_a_slime_o_filme_l&ep=1&s=1",
+    "sinopse": "That Time I Get Reincarnated as a Slime O Filme [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_the_first_slam_dunk_l",
+    "t": "THE FIRST SLAM DUNK [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cEpFGDPSdHEXUkkgrAZdhQyC7ZK.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cEpFGDPSdHEXUkkgrAZdhQyC7ZK.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_the_first_slam_dunk_l&ep=1&s=1",
+    "sinopse": "THE FIRST SLAM DUNK [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_the_seven_deadly_sins_furia_de_edimburgo_parte_2_l",
+    "t": "The Seven Deadly Sins Fúria de Edimburgo – Parte 2 [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgtDBMqh9na55V3sP6PgAr4WgKd.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgtDBMqh9na55V3sP6PgAr4WgKd.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_the_seven_deadly_sins_furia_de_edimburgo_parte_2_l&ep=1&s=1",
+    "sinopse": "The Seven Deadly Sins Fúria de Edimburgo – Parte 2 [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_your_name_engraved_herein_l",
+    "t": "Your Name Engraved Herein [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13nn4RmQbHBxeSIjl2Ixeagu2rk.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13nn4RmQbHBxeSIjl2Ixeagu2rk.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_your_name_engraved_herein_l&ep=1&s=1",
+    "sinopse": "Your Name Engraved Herein [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_yu_gi_oh_o_filme_piramide_de_luz",
+    "t": "Yu-Gi-Oh! O Filme Pirâmide de Luz",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zrOts4zqd0B8i1Gt6IasYtTMQZb.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zrOts4zqd0B8i1Gt6IasYtTMQZb.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_yu_gi_oh_o_filme_piramide_de_luz&ep=1&s=1",
+    "sinopse": "Yu-Gi-Oh! O Filme Pirâmide de Luz - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_chainsaw_man_o_filme_arco_da_reze_lancamento",
+    "t": "Chainsaw Man – O Filme Arco da Reze [Lançamento]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tj1XhCQ2Rw2sT2o7lIdqPIYvjsx.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_chainsaw_man_o_filme_arco_da_reze_lancamento&ep=1&s=1",
+    "sinopse": "Chainsaw Man – O Filme Arco da Reze [Lançamento] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_pokemon_detective_pikachu",
+    "t": "Pokemon Detective Pikachu",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/p72utWsmz5ZAmvVQPUhovq0jFK3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_pokemon_detective_pikachu&ep=1&s=1",
+    "sinopse": "Pokemon Detective Pikachu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_film_red",
+    "t": "One Piece Film Red",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_film_red&ep=1&s=1",
+    "sinopse": "One Piece Film Red - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_film_red_l",
+    "t": "One Piece Film Red [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_film_red_l&ep=1&s=1",
+    "sinopse": "One Piece Film Red [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_jujutsu_kaisen_hidden_inventory_premature_death_the_movie_l",
+    "t": "JUJUTSU KAISEN Hidden Inventory Premature Death - The Movie [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tEYdXbQa7v7hchC2ZYkBbyKeCfL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tEYdXbQa7v7hchC2ZYkBbyKeCfL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_jujutsu_kaisen_hidden_inventory_premature_death_the_movie_l&ep=1&s=1",
+    "sinopse": "JUJUTSU KAISEN Hidden Inventory Premature Death - The Movie [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_fio_do_destino_thread_of_fate_l",
+    "t": "Fio do Destino Thread of Fate [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "http://cdn38246.radiogaucha.net:80/images/rLZPUN2BfUPkR9TW4RVXFtsJ_hoU-6-v-UmcQeBndjxdXID7jhhZlZDqfl_5qqD7tjX6FyfNk2jpT5ZZ5rDagWR5fRVbkrKP1XCZpLzvT2b4sOeSMKWgidsMLy9xOEt3.jpg",
+    "banner": "http://cdn38246.radiogaucha.net:80/images/rLZPUN2BfUPkR9TW4RVXFtsJ_hoU-6-v-UmcQeBndjxdXID7jhhZlZDqfl_5qqD7tjX6FyfNk2jpT5ZZ5rDagWR5fRVbkrKP1XCZpLzvT2b4sOeSMKWgidsMLy9xOEt3.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_fio_do_destino_thread_of_fate_l&ep=1&s=1",
+    "sinopse": "Fio do Destino Thread of Fate [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_a_voz_do_silencio",
+    "t": "A Voz do Silêncio",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_a_voz_do_silencio&ep=1&s=1",
+    "sinopse": "A Voz do Silêncio - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_a_voz_do_silencio_l",
+    "t": "A Voz do Silêncio [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_a_voz_do_silencio_l&ep=1&s=1",
+    "sinopse": "A Voz do Silêncio [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_one_piece_heroines_l",
+    "t": "ONE PIECE HEROINES [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hbRXvcckbdKMhCea1JalPnSQQge.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hbRXvcckbdKMhCea1JalPnSQQge.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_one_piece_heroines_l&ep=1&s=1",
+    "sinopse": "ONE PIECE HEROINES [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito",
+    "t": "Demon Slayer Kimetsu no Yaiba Castelo Infinito",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito&ep=1&s=1",
+    "sinopse": "Demon Slayer Kimetsu no Yaiba Castelo Infinito - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito_l",
+    "t": "Demon Slayer Kimetsu no Yaiba Castelo Infinito [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito_l&ep=1&s=1",
+    "sinopse": "Demon Slayer Kimetsu no Yaiba Castelo Infinito [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito_lancamento",
+    "t": "Demon Slayer Kimetsu no Yaiba Castelo Infinito [Lançamento]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/41XdjOXGQoH0HTDNqEfwKGvGgwm.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_demon_slayer_kimetsu_no_yaiba_castelo_infinito_lancamento&ep=1&s=1",
+    "sinopse": "Demon Slayer Kimetsu no Yaiba Castelo Infinito [Lançamento] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste",
+    "t": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste&ep=1&s=1",
+    "sinopse": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste_l",
+    "t": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste_l&ep=1&s=1",
+    "sinopse": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste_lancamento",
+    "t": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste [Lançamento]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/13SyU6DvAwgI5MZdYJPTjhk6N50.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_that_time_i_got_reincarnated_as_a_slime_o_filme_lagrimas_do_mar_azul_celeste_lancamento&ep=1&s=1",
+    "sinopse": "That Time I Got Reincarnated as a Slime o Filme Lágrimas do mar azul-celeste [Lançamento] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_akira_l",
+    "t": "Akira [L]",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_akira_l&ep=1&s=1",
+    "sinopse": "Akira [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_movie_ghost_in_the_shell_sac_2045_guerra_sustentavel",
+    "t": "Ghost in the Shell SAC_2045 – Guerra Sustentável",
+    "catNome": "🌸 ANIMES | Filmes de Anime",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mZgikgvgQfzSIop2oQvwuLlHRP2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mZgikgvgQfzSIop2oQvwuLlHRP2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_movie_ghost_in_the_shell_sac_2045_guerra_sustentavel&ep=1&s=1",
+    "sinopse": "Ghost in the Shell SAC_2045 – Guerra Sustentável - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 1,
+    "generos": [
+      "Anime",
+      "Filme",
+      "Animação"
+    ],
+    "is_anime": true,
+    "is_movie": true
+  },
+  {
+    "id": "ani_baki_dou_o_samurai_invencivel",
+    "t": "BAKI DOU O Samurai Invencivel",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gIuCoLJSD09qx16FUn2OckjL6CA.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/gIuCoLJSD09qx16FUn2OckjL6CA.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_baki_dou_o_samurai_invencivel&ep=1&s=1",
+    "sinopse": "BAKI DOU O Samurai Invencivel completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_captain_tsubasa",
+    "t": "Captain Tsubasa",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5ebcN4fDDk9QdGTvVrD7TIa18za.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5ebcN4fDDk9QdGTvVrD7TIa18za.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_captain_tsubasa&ep=1&s=1",
+    "sinopse": "Captain Tsubasa completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 91,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_cyberpunk_mercenarios",
+    "t": "Cyberpunk Mercenários",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nWvAY8yHE873adMws83XqBPf7W2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nWvAY8yHE873adMws83XqBPf7W2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_cyberpunk_mercenarios&ep=1&s=1",
+    "sinopse": "Cyberpunk Mercenários completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 10,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dragon_ball_z_kai",
+    "t": "Dragon Ball Z Kai",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uAZmpZY9oCRgJ06f342sagwdjYL.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uAZmpZY9oCRgJ06f342sagwdjYL.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dragon_ball_z_kai&ep=1&s=1",
+    "sinopse": "Dragon Ball Z Kai completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 3,
+    "total_episodios": 98,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_ranma1_2",
+    "t": "Ranma1 2",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2xhhNHGVeNzUSqHU8etqTsu30Fg.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2xhhNHGVeNzUSqHU8etqTsu30Fg.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_ranma1_2&ep=1&s=1",
+    "sinopse": "Ranma1 2 completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 2,
+    "total_episodios": 24,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_super_campeoes",
+    "t": "Super Campeoes",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lmlLOWx7lDZTSJ9iMVZmyRb3Y1h.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lmlLOWx7lDZTSJ9iMVZmyRb3Y1h.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_super_campeoes&ep=1&s=1",
+    "sinopse": "Super Campeoes completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 46,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_super_campeoes_road_to",
+    "t": "Super Campeoes Road To",
+    "catNome": "🌸 ANIMES | Catálogo Oficial",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2MAz5ZYSHme3AI4m0XaaB7m3d9L.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2MAz5ZYSHme3AI4m0XaaB7m3d9L.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_super_campeoes_road_to&ep=1&s=1",
+    "sinopse": "Super Campeoes Road To completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 52,
+    "generos": [
+      "Anime",
+      "Animação",
+      "Ação",
+      "Aventura"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_dandadan",
+    "t": "Dandadan",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6k2wO5M4K0lC63b2zG3d3M9e3t9.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6k2wO5M4K0lC63b2zG3d3M9e3t9.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_dandadan&ep=1&s=1",
+    "sinopse": "Dandadan - Anime completo em alta definição HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2024,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Lançamento",
+      "Ação",
+      "Sobrenatural"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_frieren_e_a_jornada_para_o_alem",
+    "t": "Frieren: E a Jornada Para o Além",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_frieren_e_a_jornada_para_o_alem&ep=1&s=1",
+    "sinopse": "Frieren: E a Jornada Para o Além - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2023,
+    "temporadas": 1,
+    "total_episodios": 28,
+    "generos": [
+      "Anime",
+      "Fantasia",
+      "Aventura",
+      "Drama"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_hell_s_paradise_jigokuraku",
+    "t": "Hell's Paradise (Jigokuraku)",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5d4YfK7jH8k9l0m1n2o3p4q5r6.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5d4YfK7jH8k9l0m1n2o3p4q5r6.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_hell_s_paradise_jigokuraku&ep=1&s=1",
+    "sinopse": "Hell's Paradise (Jigokuraku) - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2023,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Ação",
+      "Sobrenatural",
+      "Fantasia"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_zom_100_bucket_list_of_the_dead",
+    "t": "Zom 100: Bucket List of the Dead",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9fH8j3k4m5n6o7p8q9r0s1t2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9fH8j3k4m5n6o7p8q9r0s1t2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_zom_100_bucket_list_of_the_dead&ep=1&s=1",
+    "sinopse": "Zom 100: Bucket List of the Dead - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2023,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Comédia",
+      "Ação",
+      "Zumbis"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_bocchi_the_rock",
+    "t": "Bocchi the Rock!",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5j6k7l8m9n0o1p2q3r4s5t6.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5j6k7l8m9n0o1p2q3r4s5t6.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_bocchi_the_rock&ep=1&s=1",
+    "sinopse": "Bocchi the Rock! - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2022,
+    "temporadas": 1,
+    "total_episodios": 12,
+    "generos": [
+      "Anime",
+      "Música",
+      "Comédia"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_horimiya",
+    "t": "Horimiya",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7l8m9n0o1p2q3r4s5t6u7v8.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7l8m9n0o1p2q3r4s5t6u7v8.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_horimiya&ep=1&s=1",
+    "sinopse": "Horimiya - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2021,
+    "temporadas": 1,
+    "total_episodios": 13,
+    "generos": [
+      "Anime",
+      "Romance",
+      "Comédia"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_spy_x_family",
+    "t": "Spy x Family",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1p2q3r4s5t6u7v8w9x0y1z2.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1p2q3r4s5t6u7v8w9x0y1z2.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_spy_x_family&ep=1&s=1",
+    "sinopse": "Spy x Family - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2022,
+    "temporadas": 1,
+    "total_episodios": 25,
+    "generos": [
+      "Anime",
+      "Comédia",
+      "Ação",
+      "Espionagem"
+    ],
+    "is_anime": true
+  },
+  {
+    "id": "ani_the_eminence_in_shadow",
+    "t": "The Eminence in Shadow",
+    "catNome": "🌸 ANIMES | Lançamentos & Destaques",
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3f4g5h6j7k8l9m0n1o2p3q4.jpg",
+    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3f4g5h6j7k8l9m0n1o2p3q4.jpg",
+    "u": "/api/animes/resolve?anime_id=ani_the_eminence_in_shadow&ep=1&s=1",
+    "sinopse": "The Eminence in Shadow - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
+    "ano": 2022,
+    "temporadas": 1,
+    "total_episodios": 20,
+    "generos": [
+      "Anime",
+      "Ação",
+      "Fantasia",
+      "Comédia"
+    ],
+    "is_anime": true
   }
 ]
