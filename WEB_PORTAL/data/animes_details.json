@@ -55114,7 +55114,7 @@
     "id": "ani_series_yugiohgx",
     "canonical_title": "Yu Gi Oh GX",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bEyovwWgUNML5ycWec1WhTU67yr.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/veMmM3STfZo0IsexmtDZW9zB1RF.jpg",
     "year": 2024,
     "genres": [
@@ -58910,7 +58910,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bEyovwWgUNML5ycWec1WhTU67yr.jpg"
   },
   "ani_series_blackclover": {
     "id": "ani_series_blackclover",
@@ -62523,7 +62524,7 @@
     "id": "ani_series_bokunoheroacademia",
     "canonical_title": "Boku no Hero Academia",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3INu3n1sUa9K3O5OTPrqvJOetbd.jpg",
     "year": 2024,
     "genres": [
@@ -66144,7 +66145,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg"
   },
   "ani_series_hunterxhunter": {
     "id": "ani_series_hunterxhunter",
@@ -69431,7 +69433,7 @@
     "id": "ani_series_dragonballclassico",
     "canonical_title": "Dragon Ball Classico",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ea8VZOfwr7wE2851brvk6g2rLlF.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dLlnzbDCblBXcJqFLXyvN43NIwp.jpg",
     "year": 2024,
     "genres": [
@@ -72660,7 +72662,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ea8VZOfwr7wE2851brvk6g2rLlF.jpg"
   },
   "ani_series_eyeshield21": {
     "id": "ani_series_eyeshield21",
@@ -130322,672 +130325,6 @@
       }
     ]
   },
-  "ani_series_friereneajornadaparaoalem": {
-    "id": "ani_series_friereneajornadaparaoalem",
-    "canonical_title": "Frieren e a Jornada para o Alem",
-    "synopsis": "Frieren: E a Jornada Para o Além - Anime oficial de sucesso internacional com transmissão de alta qualidade HLS direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-    "year": 2023,
-    "genres": [
-      "Anime",
-      "Fantasia",
-      "Aventura",
-      "Drama"
-    ],
-    "total_episodes": 28,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e1",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e1_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e1",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-1",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/01.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e2",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e2_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e2",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-2",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/02.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e3",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e3_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e3",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-3",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/03.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e4",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e4_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e4",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-4",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/04.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e5",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e5_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e5",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-5",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/05.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e6",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e6_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e6",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-6",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/06.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e7",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e7_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e7",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-7",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/07.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e8",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e8_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e8",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-8",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/08.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e9",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e9_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e9",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-9",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/09.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e10",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e10_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e10",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-10",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/10.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e11",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e11_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e11",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-11",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/11.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e12",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e12_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e12",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-12",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/12.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e13",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 13,
-            "episode_type": "regular",
-            "title": "Episódio 13",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e13_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e13",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-13",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/13.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e14",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 14,
-            "episode_type": "regular",
-            "title": "Episódio 14",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e14_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e14",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-14",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/14.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e15",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 15,
-            "episode_type": "regular",
-            "title": "Episódio 15",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e15_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e15",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-15",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/15.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e16",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 16,
-            "episode_type": "regular",
-            "title": "Episódio 16",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e16_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e16",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-16",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/16.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e17",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 17,
-            "episode_type": "regular",
-            "title": "Episódio 17",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e17_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e17",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-17",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/17.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e18",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 18,
-            "episode_type": "regular",
-            "title": "Episódio 18",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e18_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e18",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-18",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/18.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e19",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 19,
-            "episode_type": "regular",
-            "title": "Episódio 19",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e19_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e19",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-19",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/19.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e20",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 20,
-            "episode_type": "regular",
-            "title": "Episódio 20",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e20_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e20",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-20",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/20.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e21",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 21,
-            "episode_type": "regular",
-            "title": "Episódio 21",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e21_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e21",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-21",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/21.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e22",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 22,
-            "episode_type": "regular",
-            "title": "Episódio 22",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e22_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e22",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-22",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/22.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e23",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 23,
-            "episode_type": "regular",
-            "title": "Episódio 23",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e23_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e23",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-23",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/23.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e24",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 24,
-            "episode_type": "regular",
-            "title": "Episódio 24",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e24_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e24",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-24",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/24.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e25",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 25,
-            "episode_type": "regular",
-            "title": "Episódio 25",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e25_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e25",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-25",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/25.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e26",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 26,
-            "episode_type": "regular",
-            "title": "Episódio 26",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e26_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e26",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-26",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/26.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e27",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 27,
-            "episode_type": "regular",
-            "title": "Episódio 27",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e27_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e27",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-27",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/27.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e28",
-            "anime_id": "ani_series_friereneajornadaparaoalm",
-            "season_number": 1,
-            "episode_number": 28,
-            "episode_type": "regular",
-            "title": "Episódio 28",
-            "thumbnail": "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_frieren_e_a_jornada_para_o_alem_s1_e28_hls",
-                "episode_id": "ep_ani_frieren_e_a_jornada_para_o_alem_s1_e28",
-                "provider": "animesdigital",
-                "provider_anime_id": "ani_series_friereneajornadaparaoalm",
-                "provider_ep_id": "sousou-no-frieren-28",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "https://cdn-sv01.maximaimg.online/stream/s/sousou-no-frieren/28.mp4/index.m3u8",
-                "quality": "1080p FHD",
-                "is_dynamic": 0
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_series_shurato": {
     "id": "ani_series_shurato",
     "canonical_title": "Shurato",
@@ -140602,7 +139939,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_agoraexploroamasmorra": {
     "id": "ani_series_agoraexploroamasmorra",
@@ -151857,7 +151196,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_henkyoudeslowlifesurukotonishimashita": {
     "id": "ani_series_henkyoudeslowlifesurukotonishimashita",
@@ -157217,532 +156558,6 @@
       }
     ]
   },
-  "ani_series_kakkounoiinazuke": {
-    "id": "ani_series_kakkounoiinazuke",
-    "canonical_title": "Kakkou no Iinazuke",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 24,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e1",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e1",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38500.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e2",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e2",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38501.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e3",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e3",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38503.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e4",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e4",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38504.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e5",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e5",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e5",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38505.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e6",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e6",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e6",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38506.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e7",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e7",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e7",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38508.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e8",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e8",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e8",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38509.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e9",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e9",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e9",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38510.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e10",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e10",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e10",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38511.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e11",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e11",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e11",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38513.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e12",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e12",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e12",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38514.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e13",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 13,
-            "episode_type": "regular",
-            "title": "Episódio 13",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e13",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e13",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38515.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e14",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 14,
-            "episode_type": "regular",
-            "title": "Episódio 14",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e14",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e14",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38516.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e15",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 15,
-            "episode_type": "regular",
-            "title": "Episódio 15",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e15",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e15",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38518.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e16",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 16,
-            "episode_type": "regular",
-            "title": "Episódio 16",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e16",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e16",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38519.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e17",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 17,
-            "episode_type": "regular",
-            "title": "Episódio 17",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e17",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e17",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38520.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e18",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 18,
-            "episode_type": "regular",
-            "title": "Episódio 18",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e18",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e18",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38521.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e19",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 19,
-            "episode_type": "regular",
-            "title": "Episódio 19",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e19",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e19",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38523.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e20",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 20,
-            "episode_type": "regular",
-            "title": "Episódio 20",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e20",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e20",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38524.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e21",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 21,
-            "episode_type": "regular",
-            "title": "Episódio 21",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e21",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e21",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38525.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e22",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 22,
-            "episode_type": "regular",
-            "title": "Episódio 22",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e22",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e22",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38526.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e23",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 23,
-            "episode_type": "regular",
-            "title": "Episódio 23",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e23",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e23",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38528.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_kakkou_no_iinazuke_s1_e24",
-            "anime_id": "ani_series_kakkounoiinazuke",
-            "season_number": 1,
-            "episode_number": 24,
-            "episode_type": "regular",
-            "title": "Episódio 24",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rK5ZZ9BdA3xcaNmnJIvf4FBA8xT.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_kakkou_no_iinazuke_s1_e24",
-                "episode_id": "ep_ani_kakkou_no_iinazuke_s1_e24",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38529.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_kakkounoiinazuke"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_series_masamunekunnorevenge": {
     "id": "ani_series_masamunekunnorevenge",
     "canonical_title": "Masamune-kun no Revenge",
@@ -159334,7 +158149,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_nagatorosan": {
     "id": "ani_series_nagatorosan",
@@ -174356,7 +173173,7 @@
     "id": "ani_series_onepieceasrie",
     "canonical_title": "ONE PIECE A Série",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aesLt9fsKSA6KCgGxA60VVxjtLk.jpg",
     "year": 2024,
     "genres": [
@@ -174713,7 +173530,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg"
   },
   "ani_series_anoivadoantigomagoomeninodooesteeocavaleirodatempestadeazul": {
     "id": "ani_series_anoivadoantigomagoomeninodooesteeocavaleirodatempestadeazul",
@@ -177489,7 +176307,7 @@
     "id": "ani_series_horimiyapiece",
     "canonical_title": "Horimiya Piece",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/original/iSOKGl5KIeOCAtigUDCfFZe2cOi.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zRbkCnOYmz6dogqEaAN3COSovll.jpg",
     "banner": "https://image.tmdb.org/t/p/original/iSOKGl5KIeOCAtigUDCfFZe2cOi.jpg",
     "year": 2024,
     "genres": [
@@ -177778,302 +176596,8 @@
           }
         ]
       }
-    ]
-  },
-  "ani_series_jigokuraku": {
-    "id": "ani_series_jigokuraku",
-    "canonical_title": "Jigokuraku",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-    "banner": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
     ],
-    "total_episodes": 13,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_jigokuraku_s1_e1",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e1",
-                "episode_id": "ep_ani_jigokuraku_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38451.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e2",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e2",
-                "episode_id": "ep_ani_jigokuraku_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38452.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e3",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e3",
-                "episode_id": "ep_ani_jigokuraku_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38453.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e4",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e4",
-                "episode_id": "ep_ani_jigokuraku_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38455.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e5",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e5",
-                "episode_id": "ep_ani_jigokuraku_s1_e5",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38456.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e6",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e6",
-                "episode_id": "ep_ani_jigokuraku_s1_e6",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38457.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e7",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e7",
-                "episode_id": "ep_ani_jigokuraku_s1_e7",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38459.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e8",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e8",
-                "episode_id": "ep_ani_jigokuraku_s1_e8",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38460.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e9",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e9",
-                "episode_id": "ep_ani_jigokuraku_s1_e9",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38461.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e10",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e10",
-                "episode_id": "ep_ani_jigokuraku_s1_e10",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38462.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e11",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e11",
-                "episode_id": "ep_ani_jigokuraku_s1_e11",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38464.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e12",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e12",
-                "episode_id": "ep_ani_jigokuraku_s1_e12",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38465.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_jigokuraku_s1_e13",
-            "anime_id": "ani_series_jigokuraku",
-            "season_number": 1,
-            "episode_number": 13,
-            "episode_type": "regular",
-            "title": "Episódio 13",
-            "thumbnail": "https://image.tmdb.org/t/p/original/1FX1Jzz9L8LPaAIYfBk2HU4m6ej.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_jigokuraku_s1_e13",
-                "episode_id": "ep_ani_jigokuraku_s1_e13",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38466.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_jigokuraku"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zRbkCnOYmz6dogqEaAN3COSovll.jpg"
   },
   "ani_series_levele": {
     "id": "ani_series_levele",
@@ -186475,7 +184999,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_comoraelianafoipararnamansododuque": {
     "id": "ani_series_comoraelianafoipararnamansododuque",
@@ -187023,7 +185549,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_demonlord": {
     "id": "ani_series_demonlord",
@@ -187292,280 +185820,6 @@
                 "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/36920.mp4",
                 "quality": "1080p FHD",
                 "provider_anime_id": "ani_series_demonlord"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "ani_series_eizoukenniwatewodasuna": {
-    "id": "ani_series_eizoukenniwatewodasuna",
-    "canonical_title": "Eizouken ni wa Te wo Dasu na",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 12,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e1",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e1",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37624.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e2",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e2",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37625.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e3",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e3",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37626.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e4",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e4",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37627.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e5",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e5",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e5",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37629.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e6",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e6",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e6",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37630.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e7",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e7",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e7",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37631.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e8",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e8",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e8",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37633.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e9",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e9",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e9",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37634.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e10",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e10",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e10",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37635.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e11",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e11",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e11",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37636.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e12",
-            "anime_id": "ani_series_eizoukenniwatewodasuna",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6sZdzYquPK3DNdyKqTia9uappIM.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e12",
-                "episode_id": "ep_ani_eizouken_ni_wa_te_wo_dasu_na_s1_e12",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/37638.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_eizoukenniwatewodasuna"
               }
             ]
           }
@@ -188667,7 +186921,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_koibitomiman": {
     "id": "ani_series_koibitomiman",
@@ -196615,280 +194871,6 @@
       }
     ]
   },
-  "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito": {
-    "id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-    "canonical_title": "Tensei Kizoku no Isekai Boukenroku Jichou wo Shiranai Kamigami no Shito",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 12,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e1",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e1",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41765.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e2",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e2",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41767.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e3",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e3",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41768.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e4",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e4",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41769.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e5",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e5",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e5",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41770.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e6",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e6",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e6",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41772.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e7",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e7",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e7",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41773.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e8",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e8",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e8",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41774.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e9",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e9",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e9",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41775.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e10",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e10",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e10",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41777.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e11",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e11",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e11",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41778.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e12",
-            "anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zPuT9PlTQ8gympp72OzjBM80pgp.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e12",
-                "episode_id": "ep_ani_tensei_kizoku_no_isekai_boukenroku_jichou_wo_s_s1_e12",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/41779.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_tenseikizokunoisekaiboukenrokujichouwoshiranaikamigaminoshito"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_series_thebrillianthealersnewlifeintheshadows": {
     "id": "ani_series_thebrillianthealersnewlifeintheshadows",
     "canonical_title": "The Brilliant Healers New Life in the Shadows",
@@ -199074,280 +197056,6 @@
                 "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42356.mp4",
                 "quality": "1080p FHD",
                 "provider_anime_id": "ani_series_umavizinhadeoutromundo"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "ani_series_watashinoyuriwaoshigotodesu": {
-    "id": "ani_series_watashinoyuriwaoshigotodesu",
-    "canonical_title": "Watashi no Yuri wa Oshigoto desu",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 12,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e1",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e1",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42452.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e2",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e2",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42453.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e3",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e3",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42454.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e4",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e4",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42456.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e5",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e5",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e5",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42457.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e6",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e6",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e6",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42458.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e7",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e7",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e7",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42459.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e8",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e8",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e8",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42461.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e9",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e9",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e9",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42462.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e10",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e10",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e10",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42463.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e11",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e11",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e11",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42464.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e12",
-            "anime_id": "ani_series_watashinoyuriwaoshigotodesu",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Ac96k19TTO7KBdn3JigaagJHjvQ.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e12",
-                "episode_id": "ep_ani_watashi_no_yuri_wa_oshigoto_desu_s1_e12",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/42466.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_watashinoyuriwaoshigotodesu"
               }
             ]
           }
@@ -203465,280 +201173,6 @@
       }
     ]
   },
-  "ani_series_sonobisquedollwakoiwosuru": {
-    "id": "ani_series_sonobisquedollwakoiwosuru",
-    "canonical_title": "Sono Bisque Doll wa Koi wo Suru",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 12,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e1",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e1",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e1",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93354.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e2",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e2",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e2",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93355.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e3",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e3",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e3",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93357.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e4",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e4",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e4",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93358.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e5",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 5,
-            "episode_type": "regular",
-            "title": "Episódio 5",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e5",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e5",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93359.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e6",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 6,
-            "episode_type": "regular",
-            "title": "Episódio 6",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e6",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e6",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93360.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e7",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 7,
-            "episode_type": "regular",
-            "title": "Episódio 7",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e7",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e7",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93361.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e8",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 8,
-            "episode_type": "regular",
-            "title": "Episódio 8",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e8",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e8",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93363.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e9",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 9,
-            "episode_type": "regular",
-            "title": "Episódio 9",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e9",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e9",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93364.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e10",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 10,
-            "episode_type": "regular",
-            "title": "Episódio 10",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e10",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e10",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93365.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e11",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 11,
-            "episode_type": "regular",
-            "title": "Episódio 11",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e11",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e11",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93366.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e12",
-            "anime_id": "ani_series_sonobisquedollwakoiwosuru",
-            "season_number": 1,
-            "episode_number": 12,
-            "episode_type": "regular",
-            "title": "Episódio 12",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yDry50KhVrNJyS0Cjzv6auNJ0cx.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e12",
-                "episode_id": "ep_ani_sono_bisque_doll_wa_koi_wo_suru_s1_e12",
-                "provider": "funimation",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/93368.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_sonobisquedollwakoiwosuru"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_series_tensaioujinoakajikokkasaiseijutsu": {
     "id": "ani_series_tensaioujinoakajikokkasaiseijutsu",
     "canonical_title": "Tensai Ouji no Akaji Kokka Saisei Jutsu",
@@ -204544,7 +201978,7 @@
     "id": "ani_series_ajourneythroughanotherworldraisingkidswhileadventuring",
     "canonical_title": "A Journey Through Another World Raising Kids While Adventuring",
     "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mIKfKo2uDk3itzAPYIcSeYr4KtF.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1uAbyIVfe1LQQnLCX0dlAiUx1yP.jpg",
     "year": 2024,
     "genres": [
@@ -204791,7 +202225,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mIKfKo2uDk3itzAPYIcSeYr4KtF.jpg"
   },
   "ani_series_ningenfushinadventurerswhodontbelieveinhumanitywillsavetheworld": {
     "id": "ani_series_ningenfushinadventurerswhodontbelieveinhumanitywillsavetheworld",
@@ -208486,112 +205921,6 @@
       }
     ]
   },
-  "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife": {
-    "id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife",
-    "canonical_title": "Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life",
-    "synopsis": "Anime oficial com transmissão de alta qualidade e episódios completos.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Animação",
-      "Ação",
-      "Aventura"
-    ],
-    "total_episodes": 4,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e1",
-            "anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Episódio 1",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e1",
-                "episode_id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e1",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38814.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e2",
-            "anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife",
-            "season_number": 1,
-            "episode_number": 2,
-            "episode_type": "regular",
-            "title": "Episódio 2",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e2",
-                "episode_id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e2",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38815.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e3",
-            "anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife",
-            "season_number": 1,
-            "episode_number": 3,
-            "episode_type": "regular",
-            "title": "Episódio 3",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e3",
-                "episode_id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e3",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38816.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife"
-              }
-            ]
-          },
-          {
-            "id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e4",
-            "anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife",
-            "season_number": 1,
-            "episode_number": 4,
-            "episode_type": "regular",
-            "title": "Episódio 4",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uU8JO4PsbgpuZmbkUMPjdpxEjBO.jpg",
-            "sources": [
-              {
-                "id": "src_ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e4",
-                "episode_id": "ep_ani_lv2_kara_cheat_datta_motoyuusha_kouho_no_matta_s1_e4",
-                "provider": "crunchyroll",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/series/ke-vin-0928392083/PZjF6XATTZ/38818.mp4",
-                "quality": "1080p FHD",
-                "provider_anime_id": "ani_series_lv2karacheatdattamotoyuushakouhonomattariisekailife"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_series_marriagetoxin": {
     "id": "ani_series_marriagetoxin",
     "canonical_title": "MARRIAGETOXIN",
@@ -208782,7 +206111,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_sakugan": {
     "id": "ani_series_sakugan",
@@ -219073,7 +216404,7 @@
     "id": "ani_series_digimonadventure02",
     "canonical_title": "Digimon Adventure 02",
     "synopsis": "Digimon Adventure 02 completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/abMymAYr5R1yVeNl9NZs3x27RoY.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AlPYAJYkSfvVYAXK1a3gZqpWwda.jpg",
     "year": 2024,
     "genres": [
@@ -220239,7 +217570,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/abMymAYr5R1yVeNl9NZs3x27RoY.jpg"
   },
   "ani_series_digimonsavers": {
     "id": "ani_series_digimonsavers",
@@ -268867,7 +266199,7 @@
     "id": "ani_series_thesevendeadlysinsosquatrocavaleirosdoapocalipse",
     "canonical_title": "The Seven Deadly Sins: Os Quatro Cavaleiros do Apocalipse",
     "synopsis": "The Seven Deadly Sins: Os Quatro Cavaleiros do Apocalipse completo e organizado com episódios em alta definição 1080p direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6SWVJvCIC9B16u6wASZ8FEaNssz.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aY7Q2MX5O60njeYV4DB0WrYj9ym.jpg",
     "year": 2024,
     "genres": [
@@ -271106,7 +268438,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6SWVJvCIC9B16u6wASZ8FEaNssz.jpg"
   },
   "ani_series_yuyuhakusho": {
     "id": "ani_series_yuyuhakusho",
@@ -279180,7 +276513,7 @@
     "id": "ani_movie_chainsawmanofilmearcodareze",
     "canonical_title": "Chainsaw Man – O Filme Arco da Reze",
     "synopsis": "Chainsaw Man – O Filme Arco da Reze - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/original/npdB6eFzizki0WaZ1OvKcJrWe97.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dh0dLVLDLqUKhtytCFjkf3EHeJI.jpg",
     "banner": "https://image.tmdb.org/t/p/original/npdB6eFzizki0WaZ1OvKcJrWe97.jpg",
     "year": 2024,
     "genres": [
@@ -279230,7 +276563,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dh0dLVLDLqUKhtytCFjkf3EHeJI.jpg"
   },
   "ani_movie_avigilantedoamanhghostintheshell": {
     "id": "ani_movie_avigilantedoamanhghostintheshell",
@@ -279318,7 +276652,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_movie_fullmetalalchemistaalquimiafinal": {
     "id": "ani_movie_fullmetalalchemistaalquimiafinal",
@@ -279436,7 +276772,7 @@
     "id": "ani_movie_pokmonmewtwocontraatacaevoluo",
     "canonical_title": "Pokémon Mewtwo Contra-Ataca! Evolução",
     "synopsis": "Pokémon Mewtwo Contra-Ataca! Evolução - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtlyO2oIMcCx2DbOM52XO2rAcgn.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/54TouWa5dWkxPtuzoqVEbgUWBVT.jpg",
     "year": 2024,
     "genres": [
@@ -279474,7 +276810,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtlyO2oIMcCx2DbOM52XO2rAcgn.jpg"
   },
   "ani_movie_aviagemdechihiro": {
     "id": "ani_movie_aviagemdechihiro",
@@ -280996,7 +278333,7 @@
     "id": "ani_movie_jujutsukaisen0ofilme",
     "canonical_title": "Jujutsu Kaisen 0 O Filme",
     "synopsis": "Jujutsu Kaisen 0 O Filme - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23oJaeBh0FDk2mQ2P240PU9Xxfh.jpg",
     "banner": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
     "year": 2024,
     "genres": [
@@ -281046,7 +278383,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/23oJaeBh0FDk2mQ2P240PU9Xxfh.jpg"
   },
   "ani_movie_meuamigototoro": {
     "id": "ani_movie_meuamigototoro",
@@ -281616,50 +278954,6 @@
       }
     ]
   },
-  "ani_movie_oscavaleirosdozodacooprlogodocu": {
-    "id": "ani_movie_oscavaleirosdozodacooprlogodocu",
-    "canonical_title": "Os Cavaleiros do Zodíaco O Prólogo do Céu",
-    "synopsis": "Os Cavaleiros do Zodíaco O Prólogo do Céu - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Filme",
-      "Animação"
-    ],
-    "total_episodes": 1,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_movie_os_cavaleiros_do_zodiaco_o_prologo_do_ceu_e1",
-            "anime_id": "ani_movie_oscavaleirosdozodacooprlogodocu",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Filme Completo",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRJKrlFqW9nBh6UTkEexLXGazrH.jpg",
-            "sources": [
-              {
-                "id": "src_ani_movie_os_cavaleiros_do_zodiaco_o_prologo_do_ceu_iptv",
-                "episode_id": "ep_ani_movie_os_cavaleiros_do_zodiaco_o_prologo_do_ceu_e1",
-                "provider": "iptv",
-                "provider_anime_id": "ani_movie_oscavaleirosdozodacooprlogodocu",
-                "provider_ep_id": "filme",
-                "audio_type": "dublado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/10612.mp4",
-                "quality": "1080p",
-                "is_dynamic": 0
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_movie_oscavaleirosdozodacoalendadosanturio": {
     "id": "ani_movie_oscavaleirosdozodacoalendadosanturio",
     "canonical_title": "Os Cavaleiros do Zodíaco A Lenda do Santuário",
@@ -282016,7 +279310,7 @@
     "id": "ani_movie_pokmonarceuseajiadavida",
     "canonical_title": "Pokémon Arceus e a Jóia da Vida",
     "synopsis": "Pokémon Arceus e a Jóia da Vida - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u5dybbTyhgJ3Trof4QZvfN5UoOP.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pzqwhVEaBDKPbfici20mTXMQY5D.jpg",
     "year": 2024,
     "genres": [
@@ -282054,7 +279348,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/u5dybbTyhgJ3Trof4QZvfN5UoOP.jpg"
   },
   "ani_movie_pokmonascrnicasdearceus": {
     "id": "ani_movie_pokmonascrnicasdearceus",
@@ -282932,7 +280227,7 @@
     "id": "ani_movie_prettyguardiansailormooneternalofilmeparte2",
     "canonical_title": "Pretty Guardian Sailor Moon Eternal O Filme - Parte 2",
     "synopsis": "Pretty Guardian Sailor Moon Eternal O Filme - Parte 2 - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fy51VW2GYTfvGJfBLkCNobE3HeL.jpg",
     "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hh1ys3QG8LjD3LhdAk2eIJmlUDd.jpg",
     "year": 2024,
     "genres": [
@@ -282970,13 +280265,14 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fy51VW2GYTfvGJfBLkCNobE3HeL.jpg"
   },
   "ani_movie_spyxfamilycdigobranco": {
     "id": "ani_movie_spyxfamilycdigobranco",
     "canonical_title": "SPY x FAMILY CÓDIGO Branco",
     "synopsis": "SPY x FAMILY CÓDIGO Branco - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/original/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tKihJpAof64rjw0A8uvKohUVjra.jpg",
     "banner": "https://image.tmdb.org/t/p/original/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg",
     "year": 2024,
     "genres": [
@@ -283026,7 +280322,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tKihJpAof64rjw0A8uvKohUVjra.jpg"
   },
   "ani_movie_suzume": {
     "id": "ani_movie_suzume",
@@ -283720,50 +281017,6 @@
       }
     ]
   },
-  "ani_movie_kimetsunoyaibamugenresshahen": {
-    "id": "ani_movie_kimetsunoyaibamugenresshahen",
-    "canonical_title": "Kimetsu No Yaiba Mugen Ressha Hen",
-    "synopsis": "Kimetsu No Yaiba Mugen Ressha Hen [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
-    "banner": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
-    "year": 2024,
-    "genres": [
-      "Anime",
-      "Filme",
-      "Animação"
-    ],
-    "total_episodes": 1,
-    "seasons": [
-      {
-        "season_number": 1,
-        "episodes": [
-          {
-            "id": "ep_ani_movie_kimetsu_no_yaiba_mugen_ressha_hen_l_e1",
-            "anime_id": "ani_movie_kimetsunoyaibamugenresshahen",
-            "season_number": 1,
-            "episode_number": 1,
-            "episode_type": "regular",
-            "title": "Filme Completo",
-            "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q9Vmd2FmDoiPWsBymwweDkwM4md.jpg",
-            "sources": [
-              {
-                "id": "src_ani_movie_kimetsu_no_yaiba_mugen_ressha_hen_l_iptv",
-                "episode_id": "ep_ani_movie_kimetsu_no_yaiba_mugen_ressha_hen_l_e1",
-                "provider": "iptv",
-                "provider_anime_id": "ani_movie_kimetsunoyaibamugenresshahen",
-                "provider_ep_id": "filme",
-                "audio_type": "legendado",
-                "player_type": "direct",
-                "stream_url": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/76391.mp4",
-                "quality": "1080p",
-                "is_dynamic": 0
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "ani_movie_yugiohofilmepirmidedeluz": {
     "id": "ani_movie_yugiohofilmepirmidedeluz",
     "canonical_title": "Yu-Gi-Oh! O Filme Pirâmide de Luz",
@@ -283868,7 +281121,7 @@
     "id": "ani_movie_jujutsukaisenhiddeninventoryprematuredeaththemovie",
     "canonical_title": "JUJUTSU KAISEN Hidden Inventory Premature Death - The Movie",
     "synopsis": "JUJUTSU KAISEN Hidden Inventory Premature Death - The Movie [L] - Filme oficial de anime com transmissão de alta qualidade em 1080p Full HD direto do servidor oficial, sem propagandas.",
-    "poster": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/mZdOm4rcp9allOWmyLGV65XY0DG.jpg",
     "banner": "https://image.tmdb.org/t/p/original/mGPwEkHxyErWoX7Z1sk2YuOKtQ8.jpg",
     "year": 2024,
     "genres": [
@@ -283906,7 +281159,8 @@
           }
         ]
       }
-    ]
+    ],
+    "p": "https://image.tmdb.org/t/p/original/mZdOm4rcp9allOWmyLGV65XY0DG.jpg"
   },
   "ani_movie_avozdosilncio": {
     "id": "ani_movie_avozdosilncio",
@@ -293258,7 +290512,9 @@
           }
         ]
       }
-    ]
+    ],
+    "episodios": [],
+    "total_episodios": 0
   },
   "ani_series_zom100bucketlistofthedead": {
     "id": "ani_series_zom100bucketlistofthedead",

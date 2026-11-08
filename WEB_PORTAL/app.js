@@ -15,7 +15,7 @@ const state = {
   heroItems: [],
   currentUser: null,
   // Estado de Séries & Capítulos
-  seriesViewMode: 'all', // 'all' (todos os capítulos) | 'grouped' (agrupado por série)
+  seriesViewMode: 'grouped', // 'grouped' (agrupado por série - padrão sem duplicação de capas) | 'all' (todos os capítulos)
   groupedSeriesList: [],
   activeSeriesContext: null, // { seriesName, episodes: [], currentIndex: 0 }
   activeSeriesGroup: null,
@@ -1791,6 +1791,22 @@ async function selectCategory(catId, catName) {
     return;
   }
 
+  const isSeriesCat = (state.activeType === 'series') ||
+    (catId && (
+      catId.includes('series') || catId.includes('novelas') || catId.includes('doramas') ||
+      catId.includes('netflix') || catId.includes('prime') || catId.includes('max') ||
+      catId.includes('disney') || catId.includes('crunchyroll') || catId.includes('turcas') ||
+      catId.includes('globoplay') || catId.includes('paramount') || catId.includes('apple') ||
+      catId.includes('star') || catId.includes('sbt') || catId.includes('discovery') ||
+      catId.includes('directv') || catId.includes('funimation')
+    ));
+
+  if (isSeriesCat) {
+    state.seriesViewMode = 'grouped';
+    if (dom.btnViewAll) dom.btnViewAll.classList.toggle('active', false);
+    if (dom.btnViewGrouped) dom.btnViewGrouped.classList.toggle('active', true);
+  }
+
   try {
     const resp = await fetch(`data/${catId}.json`);
     if (!resp.ok) throw new Error('Falha ao carregar categoria');
@@ -2101,7 +2117,19 @@ function refreshCatalogDisplay() {
     const { groups, nonSeries } = groupItemsBySeries(state.rawItems);
     state.currentItems = [...groups, ...nonSeries];
   } else {
-    state.currentItems = [...state.rawItems];
+    // Deduplicação defensiva de filmes (evita cards duplicados no grid de variantes 4K/[L]/[Lançamento])
+    const seenMovieKeys = new Set();
+    state.currentItems = state.rawItems.filter(it => {
+      const rawTitle = it.canonical_title || it.t || '';
+      const normKey = rawTitle.toLowerCase()
+        .replace(/\[.*?\]|\(.*?\)|4k|uhd|fhd|hd|dublado|legendado|lançamento|lancamento|parte\s*\d+/g, '')
+        .replace(/[^a-z0-9]/g, '');
+      if (normKey && normKey.length >= 3) {
+        if (seenMovieKeys.has(normKey)) return false;
+        seenMovieKeys.add(normKey);
+      }
+      return true;
+    });
   }
 
   if (dom.sortSelect && dom.sortSelect.value !== 'padrao') {

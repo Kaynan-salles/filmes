@@ -1,12 +1,1 @@
-[
-  {
-    "t": "Heróis do Amanhecer",
-    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/17BlmWEnUKoYq4tiNRh0T9EpcC0.jpg",
-    "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36933.mp4"
-  },
-  {
-    "t": "Perigo Iminente",
-    "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zkCljVHb1SdhuPTMftSFegju6q.jpg",
-    "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37136.mp4"
-  }
-]
+[{"t": "Heróis do Amanhecer", "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/17BlmWEnUKoYq4tiNRh0T9EpcC0.jpg", "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/36933.mp4"}, {"t": "Perigo Iminente", "p": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zkCljVHb1SdhuPTMftSFegju6q.jpg", "u": "http://dbonline.tech-cdn.top:80/movie/ke-vin-0928392083/PZjF6XATTZ/37136.mp4"}]
