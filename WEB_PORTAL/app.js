@@ -1769,13 +1769,21 @@ function startHeroCycle() {
     if (dom.playerModal && dom.playerModal.classList.contains('active')) return;
     if (dom.seriesModal && dom.seriesModal.classList.contains('active')) return;
     changeHeroSlide(1);
-  }, 14000);
+  }, 60000); // 1 minuto completo para cada filme/série em destaque
 }
 
 function changeHeroSlide(direction) {
   if (!state.heroItems || state.heroItems.length === 0) return;
   state.heroIndex = (state.heroIndex + direction + state.heroItems.length) % state.heroItems.length;
   updateHeroItem(state.heroItems[state.heroIndex]);
+
+  // Reinicia o ciclo de 1 minuto para que o filme atual tenha o tempo integral
+  if (heroCycleTimer) clearInterval(heroCycleTimer);
+  heroCycleTimer = setInterval(() => {
+    if (dom.playerModal && dom.playerModal.classList.contains('active')) return;
+    if (dom.seriesModal && dom.seriesModal.classList.contains('active')) return;
+    changeHeroSlide(1);
+  }, 60000);
 }
 
 function toggleHeroAudio() {
