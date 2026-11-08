@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=50">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=50">
-  <link rel="alternate icon" href="favicon.ico?v=50">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=50">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=50">
-  <link rel="manifest" href="manifest.json?v=50">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=51">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=51">
+  <link rel="alternate icon" href="favicon.ico?v=51">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=51">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=51">
+  <link rel="manifest" href="manifest.json?v=51">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=50">
+  <link rel="stylesheet" href="style.css?v=51">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -127,14 +127,15 @@
 
       <!-- Filtros Rápidos de Tipo -->
       <nav class="type-nav">
-        <button class="type-btn active" data-type="todos" id="btnTypeTodos">Todos</button>
+        <button class="type-btn active" data-type="todos" id="btnTypeTodos">Início</button>
         <button class="type-btn" data-type="filmes" id="btnTypeFilmes">🎬 Filmes</button>
         <button class="type-btn" data-type="series" id="btnTypeSeries">📺 Séries</button>
         <button class="type-btn" data-type="animes" id="btnTypeAnimes">🌸 Animes</button>
+        <button class="type-btn" data-type="minha-lista" id="btnTypeMinhaLista">➕ Minha Lista</button>
         <button class="type-btn" data-type="historico" id="btnTypeHistorico">🕒 Histórico</button>
       </nav>
 
-      <!-- Barra de Busca -->
+      <!-- Barra de Busca Inteligente com Sugestões Instantâneas -->
       <div class="search-box">
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"></circle>
@@ -142,22 +143,69 @@
         </svg>
         <input type="text" id="searchInput" placeholder="Buscar filmes, séries, animes..." autocomplete="off">
         <button id="clearSearchBtn" class="clear-btn" style="display: none;">&times;</button>
+        <!-- Dropdown de Sugestões Instantâneas -->
+        <div class="search-suggestions-dropdown" id="searchSuggestionsDropdown" style="display: none;"></div>
       </div>
 
       <!-- Área de Usuário / Acesso -->
       <div class="user-header-controls">
-        <div class="user-profile-menu" id="userProfileBtn" title="Painel da Conta">
-          <div class="user-avatar" id="navUserAvatar">
-            <span id="navUserInitial">K</span>
-            <span class="status-dot"></span>
+        <!-- Notificações e Novidades -->
+        <div class="notifications-wrapper" id="notificationsWrapper">
+          <button class="btn-icon-header" id="btnNotifications" title="Notificações e Novidades">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-badge" id="notificationBadge" style="display: none;">0</span>
+          </button>
+          <div class="notifications-dropdown" id="notificationsDropdown" style="display: none;">
+            <div class="notifications-header">
+              <h4>🔔 Novidades no K-CINE</h4>
+              <button class="btn-mark-read" id="btnMarkAllRead">Marcar como lidas</button>
+            </div>
+            <div class="notifications-list" id="notificationsList">
+              <!-- Injetado dinamicamente -->
+            </div>
           </div>
-          <div class="user-info">
-            <span class="user-name" id="navUserName">Kaynã</span>
-            <span class="user-role" id="navUserRole">ADMIN</span>
+        </div>
+
+        <div class="user-profile-wrapper" style="position: relative;">
+          <div class="user-profile-menu" id="userProfileBtn" title="Menu da Conta">
+            <div class="user-avatar" id="navUserAvatar">
+              <span id="navUserInitial">K</span>
+              <span class="status-dot"></span>
+            </div>
+            <div class="user-info">
+              <span class="user-name" id="navUserName">Kaynã</span>
+              <span class="user-role" id="navUserRole">ADMIN</span>
+            </div>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </div>
-          <svg class="chevron-icon admin-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
+
+          <!-- Dropdown Menu de Perfil -->
+          <div class="profile-dropdown-menu" id="profileDropdownMenu" style="display: none;">
+            <div class="profile-dropdown-header">
+              <div class="profile-dropdown-user" id="profileDropdownUsername">Kaynã</div>
+              <div class="profile-dropdown-role" id="profileDropdownRole">Conta Ativa</div>
+            </div>
+            <div class="profile-dropdown-list">
+              <button class="profile-dropdown-item" id="btnSwitchProfile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Trocar Perfil</span>
+              </button>
+              <button class="profile-dropdown-item admin-only" id="btnAdminPanelFromMenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Painel Administrativo</span>
+              </button>
+              <div class="profile-dropdown-divider"></div>
+              <button class="profile-dropdown-item text-red" id="btnLogoutDropdown">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <span>Sair da Conta</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         <button class="btn-logout-header" id="btnLogoutHeader" title="Sair do Portal">
@@ -189,7 +237,22 @@
           <svg viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg>
-          Assistir
+          <span>Assistir</span>
+        </button>
+        <button class="btn-secondary" id="btnHeroMyList" title="Adicionar à Minha Lista">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Minha Lista</span>
+        </button>
+        <button class="btn-secondary" id="btnHeroMoreInfo" title="Mais Informações">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Mais Informações</span>
         </button>
       </div>
     </div>
@@ -227,6 +290,11 @@
       <!-- Cards de progresso injetados via app.js -->
     </div>
   </section>
+
+  <!-- Vitrine Cinematográfica em Fileiras Horizontais (Estilo Netflix / Disney+) -->
+  <div class="home-shelves-container" id="homeShelvesContainer" style="display: none;">
+    <!-- Injetado dinamicamente via app.js -->
+  </div>
 
   <!-- Seletor de Categorias / Barra de Filtros Organizada -->
   <section class="categories-section">
@@ -337,6 +405,29 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </button>
     </div>
+    <!-- Barra de Navegação Inferior Mobile (PWA & Mobile-First) -->
+    <nav class="mobile-bottom-nav" id="mobileBottomNav">
+      <button class="bottom-nav-item active" data-type="todos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Início</span>
+      </button>
+      <button class="bottom-nav-item" data-type="filmes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+        <span>Filmes</span>
+      </button>
+      <button class="bottom-nav-item" data-type="series">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        <span>Séries</span>
+      </button>
+      <button class="bottom-nav-item" data-type="animes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+        <span>Animes</span>
+      </button>
+      <button class="bottom-nav-item" data-type="minha-lista">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <span>Minha Lista</span>
+      </button>
+    </nav>
   </main>
   </div><!-- Fim do #portalMainApp -->
 
@@ -419,6 +510,27 @@
           <div class="player-error-actions" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
             <button class="btn-error-retry" id="btnPlayerRetry" style="background: linear-gradient(135deg, var(--accent-pink), var(--accent-primary)); color: #fff; border: none; border-radius: 6px; padding: 0.55rem 1.25rem; font-weight: 700; cursor: pointer; font-size: 0.85rem;">Tentar Novamente</button>
             <button class="btn-error-close" id="btnPlayerClose" style="background: rgba(255,255,255,0.08); color: #cbd5e1; border: 1px solid var(--border-color); border-radius: 6px; padding: 0.55rem 1.25rem; font-weight: 600; cursor: pointer; font-size: 0.85rem;">Voltar ao Catálogo</button>
+          </div>
+        </div>
+
+        <!-- Botão Pular Abertura (Skip Intro) estilo Netflix -->
+        <button class="btn-skip-intro" id="btnSkipIntro" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 4 15 12 5 20 5 4"></polygon>
+            <line x1="19" y1="5" x2="19" y2="19"></line>
+          </svg>
+          <span>Pular Abertura</span>
+        </button>
+
+        <!-- Card de Próximo Episódio Automático com Contagem Regressiva -->
+        <div class="next-ep-countdown-card" id="nextEpCountdownCard" style="display: none;">
+          <div class="next-ep-card-content">
+            <span class="next-ep-label">Próximo Episódio em <strong id="nextEpSeconds">10</strong>s</span>
+            <h5 class="next-ep-title" id="nextEpTitle">Título do Episódio</h5>
+          </div>
+          <div class="next-ep-card-actions">
+            <button class="btn-next-now" id="btnNextNow">▶ Assistir Agora</button>
+            <button class="btn-next-cancel" id="btnNextCancel" title="Cancelar">✕</button>
           </div>
         </div>
       </div>
@@ -504,6 +616,89 @@
     </div>
   </div>
 
+
+  <!-- Modal Completo de Detalhes Cinematográfico (Filmes, Séries e Animes) -->
+  <div class="modal-overlay" id="contentDetailsModal">
+    <div class="details-modal-container">
+      <div class="details-hero">
+        <div class="details-hero-backdrop" id="detailsHeroBackdrop"></div>
+        <div class="details-hero-overlay"></div>
+        <button class="btn-close-details" id="btnCloseDetailsModal" aria-label="Fechar Detalhes">&times;</button>
+        <div class="details-hero-content">
+          <div class="details-badges-row" id="detailsBadgesRow">
+            <span class="badge" id="detailsCategoryBadge">FILME HD</span>
+            <span class="rating-badge-gold" id="detailsRatingBadge">★ 9.4</span>
+            <span class="quality-badge" id="detailsQualityBadge">4K UHD</span>
+          </div>
+          <h2 class="details-title" id="detailsTitle">Nome do Conteúdo</h2>
+          <div class="details-metadata-row">
+            <span class="meta-item" id="detailsYear">2024</span>
+            <span class="meta-dot">•</span>
+            <span class="meta-item" id="detailsDurationOrSeasons">2h 15m</span>
+            <span class="meta-dot">•</span>
+            <span class="meta-item badge-age" id="detailsAgeRating">14+</span>
+          </div>
+          <p class="details-synopsis" id="detailsSynopsis">Sinopse do conteúdo...</p>
+          <div class="details-actions-row">
+            <button class="btn-primary btn-details-play" id="btnDetailsPlay">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Assistir Agora</span>
+            </button>
+            <button class="btn-details-mylist" id="btnDetailsMyList">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              <span>Minha Lista</span>
+            </button>
+            <button class="btn-icon-round admin-only" id="btnDetailsCopyLink" title="Copiar Link de Vídeo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-body">
+        <!-- Se for Série ou Anime: Seção de Temporadas e Episódios -->
+        <div class="details-episodes-section" id="detailsEpisodesSection" style="display: none;">
+          <div class="details-section-header">
+            <h3>Episódios</h3>
+            <div class="season-select-wrapper" id="detailsSeasonSelectWrap">
+              <select id="detailsSeasonSelect" class="filter-select"></select>
+            </div>
+          </div>
+          <div class="details-episodes-grid" id="detailsEpisodesGrid"></div>
+        </div>
+
+        <!-- Se for Filme: Seção de Títulos Semelhantes -->
+        <div class="details-similar-section" id="detailsSimilarSection" style="display: none;">
+          <div class="details-section-header">
+            <h3>Títulos Semelhantes Recomendados</h3>
+          </div>
+          <div class="details-similar-grid" id="detailsSimilarGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Troca e Gestão de Perfis de Usuário -->
+  <div class="modal-overlay" id="profilesModal">
+    <div class="profiles-modal-container">
+      <div class="profiles-modal-header">
+        <h2>Quem está assistindo?</h2>
+        <p>Escolha um perfil para ver seus favoritos, histórico e recomendações personalizadas</p>
+      </div>
+      <div class="profiles-grid" id="profilesGrid"></div>
+      <div class="profiles-modal-footer">
+        <button class="btn-text-close" id="btnCloseProfilesModal">Fechar</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Painel Admin Kaynã -->
   <div class="modal-overlay" id="adminModal">
@@ -804,8 +999,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=50"></script>
-  <script src="auth.js?v=50"></script>
-  <script src="app.js?v=50"></script>
+  <script src="supabase-config.js?v=51"></script>
+  <script src="auth.js?v=51"></script>
+  <script src="app.js?v=51"></script>
 </body>
 </html>

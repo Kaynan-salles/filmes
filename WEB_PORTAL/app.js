@@ -36,7 +36,11 @@ const state = {
     abortController: null,
     requestId: 0,
     isLoading: false
-  }
+  },
+  // Modernização K-CINE (Perfis, Minha Lista, Detalhes e Player)
+  activeProfileId: 'p_kayna',
+  currentDetailsItem: null,
+  nextEpCountdownTimer: null
 };
 
 // Elementos DOM
@@ -61,6 +65,20 @@ const dom = {
   navUserRole: document.getElementById('navUserRole'),
   btnLogoutHeader: document.getElementById('btnLogoutHeader'),
 
+  // Modernização - Dropdown de Notificações e Menu de Perfis
+  notificationsWrapper: document.getElementById('notificationsWrapper'),
+  btnNotifications: document.getElementById('btnNotifications'),
+  notificationBadge: document.getElementById('notificationBadge'),
+  notificationsDropdown: document.getElementById('notificationsDropdown'),
+  notificationsList: document.getElementById('notificationsList'),
+  btnMarkAllRead: document.getElementById('btnMarkAllRead'),
+  profileDropdownMenu: document.getElementById('profileDropdownMenu'),
+  profileDropdownUsername: document.getElementById('profileDropdownUsername'),
+  profileDropdownRole: document.getElementById('profileDropdownRole'),
+  btnSwitchProfile: document.getElementById('btnSwitchProfile'),
+  btnAdminPanelFromMenu: document.getElementById('btnAdminPanelFromMenu'),
+  btnLogoutDropdown: document.getElementById('btnLogoutDropdown'),
+
   // Hero Banner
   heroBanner: document.getElementById('heroBanner'),
   heroBackdrop: document.getElementById('heroBackdrop'),
@@ -76,6 +94,8 @@ const dom = {
   btnHeroNext: document.getElementById('btnHeroNext'),
   btnHeroSound: document.getElementById('btnHeroSound'),
   heroSoundLabel: document.getElementById('heroSoundLabel'),
+  btnHeroMyList: document.getElementById('btnHeroMyList'),
+  btnHeroMoreInfo: document.getElementById('btnHeroMoreInfo'),
 
   // Filtros e Catálogo
   categoriesChips: document.getElementById('categoriesChips'),
@@ -101,7 +121,11 @@ const dom = {
   btnTypeFilmes: document.getElementById('btnTypeFilmes'),
   btnTypeSeries: document.getElementById('btnTypeSeries'),
   btnTypeAnimes: document.getElementById('btnTypeAnimes'),
+  btnTypeMinhaLista: document.getElementById('btnTypeMinhaLista'),
   btnTypeHistorico: document.getElementById('btnTypeHistorico'),
+  searchSuggestionsDropdown: document.getElementById('searchSuggestionsDropdown'),
+  homeShelvesContainer: document.getElementById('homeShelvesContainer'),
+  mobileBottomNav: document.getElementById('mobileBottomNav'),
 
   // Seção Continuar Assistindo
   continueWatchingSection: document.getElementById('continueWatchingSection'),
@@ -146,6 +170,41 @@ const dom = {
   playerErrorDesc: document.getElementById('playerErrorDesc'),
   btnPlayerRetry: document.getElementById('btnPlayerRetry'),
   btnPlayerClose: document.getElementById('btnPlayerClose'),
+
+  // Controles Modernos do Player
+  btnSkipIntro: document.getElementById('btnSkipIntro'),
+  nextEpCountdownCard: document.getElementById('nextEpCountdownCard'),
+  nextEpSeconds: document.getElementById('nextEpSeconds'),
+  nextEpTitle: document.getElementById('nextEpTitle'),
+  btnNextNow: document.getElementById('btnNextNow'),
+  btnNextCancel: document.getElementById('btnNextCancel'),
+
+  // Modal Completo de Detalhes Cinematográfico
+  contentDetailsModal: document.getElementById('contentDetailsModal'),
+  detailsHeroBackdrop: document.getElementById('detailsHeroBackdrop'),
+  btnCloseDetailsModal: document.getElementById('btnCloseDetailsModal'),
+  detailsBadgesRow: document.getElementById('detailsBadgesRow'),
+  detailsCategoryBadge: document.getElementById('detailsCategoryBadge'),
+  detailsRatingBadge: document.getElementById('detailsRatingBadge'),
+  detailsQualityBadge: document.getElementById('detailsQualityBadge'),
+  detailsTitle: document.getElementById('detailsTitle'),
+  detailsYear: document.getElementById('detailsYear'),
+  detailsDurationOrSeasons: document.getElementById('detailsDurationOrSeasons'),
+  detailsAgeRating: document.getElementById('detailsAgeRating'),
+  detailsSynopsis: document.getElementById('detailsSynopsis'),
+  btnDetailsPlay: document.getElementById('btnDetailsPlay'),
+  btnDetailsMyList: document.getElementById('btnDetailsMyList'),
+  btnDetailsCopyLink: document.getElementById('btnDetailsCopyLink'),
+  detailsEpisodesSection: document.getElementById('detailsEpisodesSection'),
+  detailsSeasonSelect: document.getElementById('detailsSeasonSelect'),
+  detailsEpisodesGrid: document.getElementById('detailsEpisodesGrid'),
+  detailsSimilarSection: document.getElementById('detailsSimilarSection'),
+  detailsSimilarGrid: document.getElementById('detailsSimilarGrid'),
+
+  // Modal de Perfis
+  profilesModal: document.getElementById('profilesModal'),
+  profilesGrid: document.getElementById('profilesGrid'),
+  btnCloseProfilesModal: document.getElementById('btnCloseProfilesModal'),
 
   // Modal de Detalhes da Série (Temporadas e Episódios)
   seriesModal: document.getElementById('seriesModal'),
@@ -498,10 +557,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 1. Verificar Sessão de Autenticação do Usuário
   const isAuthenticated = await checkAuthSession();
 
-  // 2. Carregar Manifesto de Filmes e Séries APENAS se autenticado
+  // 2. Inicializar Módulos Modernos do K-CINE se autenticado
   if (isAuthenticated) {
+    ProfilesManager.init();
+    NotificationsManager.init();
     await loadManifesto();
     renderContinueWatching();
+    if (state.activeType === 'todos') {
+      HomeShelvesManager.render();
+    }
   }
 });
 
@@ -769,12 +833,139 @@ function setupEventListeners() {
     dom.btnLogoutHeader.addEventListener('click', handleLogout);
   }
 
-  // Filtros de Tipo (Todos / Filmes / Séries / Animes / Histórico)
+  // Filtros de Tipo (Todos / Filmes / Séries / Animes / Minha Lista / Histórico)
   dom.btnTypeTodos?.addEventListener('click', () => switchType('todos'));
   dom.btnTypeFilmes?.addEventListener('click', () => switchType('filmes'));
   dom.btnTypeSeries?.addEventListener('click', () => switchType('series'));
   dom.btnTypeAnimes?.addEventListener('click', () => switchType('animes'));
+  dom.btnTypeMinhaLista?.addEventListener('click', () => switchType('minha-lista'));
   dom.btnTypeHistorico?.addEventListener('click', () => switchType('historico'));
+
+  // Barra de Navegação Inferior Mobile (PWA & Mobile-First)
+  document.querySelectorAll('.bottom-nav-item').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const type = btn.getAttribute('data-type');
+      if (type) switchType(type);
+    });
+  });
+
+  // Modernização - Dropdown de Notificações
+  if (dom.btnNotifications) {
+    dom.btnNotifications.addEventListener('click', (e) => {
+      e.stopPropagation();
+      NotificationsManager.toggleDropdown();
+    });
+  }
+  if (dom.btnMarkAllRead) {
+    dom.btnMarkAllRead.addEventListener('click', (e) => {
+      e.stopPropagation();
+      NotificationsManager.markAllAsRead();
+    });
+  }
+
+  // Modernização - Dropdown de Perfis e Troca de Perfil
+  if (dom.userProfileBtn) {
+    dom.userProfileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (dom.profileDropdownMenu) {
+        const isShown = dom.profileDropdownMenu.style.display === 'block';
+        dom.profileDropdownMenu.style.display = isShown ? 'none' : 'block';
+      }
+    });
+  }
+  if (dom.btnSwitchProfile) {
+    dom.btnSwitchProfile.addEventListener('click', () => {
+      if (dom.profileDropdownMenu) dom.profileDropdownMenu.style.display = 'none';
+      ProfilesManager.openModal();
+    });
+  }
+  if (dom.btnAdminPanelFromMenu) {
+    dom.btnAdminPanelFromMenu.addEventListener('click', () => {
+      if (dom.profileDropdownMenu) dom.profileDropdownMenu.style.display = 'none';
+      if (typeof openAdminModal === 'function') openAdminModal();
+    });
+  }
+  if (dom.btnLogoutDropdown) {
+    dom.btnLogoutDropdown.addEventListener('click', handleLogout);
+  }
+  if (dom.btnCloseProfilesModal) {
+    dom.btnCloseProfilesModal.addEventListener('click', () => ProfilesManager.closeModal());
+  }
+
+  // Fechar dropdowns ao clicar fora
+  document.addEventListener('click', (e) => {
+    if (dom.profileDropdownMenu && !dom.profileDropdownMenu.contains(e.target) && !dom.userProfileBtn?.contains(e.target)) {
+      dom.profileDropdownMenu.style.display = 'none';
+    }
+    if (dom.notificationsDropdown && !dom.notificationsDropdown.contains(e.target) && !dom.btnNotifications?.contains(e.target)) {
+      dom.notificationsDropdown.style.display = 'none';
+    }
+    if (dom.searchSuggestionsDropdown && !dom.searchSuggestionsDropdown.contains(e.target) && e.target !== dom.searchInput) {
+      dom.searchSuggestionsDropdown.style.display = 'none';
+    }
+  });
+
+  // Modernização - Botões do Hero Banner (Minha Lista & Mais Informações)
+  if (dom.btnHeroMyList) {
+    dom.btnHeroMyList.addEventListener('click', () => {
+      if (state.heroItem) {
+        MyListManager.toggle(state.heroItem);
+      }
+    });
+  }
+  if (dom.btnHeroMoreInfo) {
+    dom.btnHeroMoreInfo.addEventListener('click', () => {
+      if (state.heroItem) {
+        openContentDetailsModal(state.heroItem);
+      }
+    });
+  }
+
+  // Modernização - Modal Completo de Detalhes Cinematográfico
+  if (dom.btnCloseDetailsModal) {
+    dom.btnCloseDetailsModal.addEventListener('click', closeContentDetailsModal);
+  }
+  if (dom.contentDetailsModal) {
+    dom.contentDetailsModal.addEventListener('click', (e) => {
+      if (e.target === dom.contentDetailsModal) closeContentDetailsModal();
+    });
+  }
+  if (dom.btnDetailsPlay) {
+    dom.btnDetailsPlay.addEventListener('click', () => {
+      if (state.currentDetailsItem) {
+        closeContentDetailsModal();
+        const it = state.currentDetailsItem;
+        if (it.is_anime || (it.id && String(it.id).startsWith('ani_'))) {
+          openAnimeModal(it);
+        } else if (it.isGroup) {
+          openSeriesModal(it);
+        } else {
+          openPlayer(it.t || it.canonical_title, it.catNome || 'Filmes', it.u, it);
+        }
+      }
+    });
+  }
+  if (dom.btnDetailsMyList) {
+    dom.btnDetailsMyList.addEventListener('click', () => {
+      if (state.currentDetailsItem) {
+        MyListManager.toggle(state.currentDetailsItem);
+      }
+    });
+  }
+  if (dom.btnDetailsCopyLink) {
+    dom.btnDetailsCopyLink.addEventListener('click', () => {
+      if (state.currentDetailsItem && state.currentDetailsItem.u) {
+        copyToClipboard(state.currentDetailsItem.u);
+      }
+    });
+  }
+
+  // Modernização - Controles Inteligentes do Player
+  setupPlayerModernEnhancements();
+
+  // Modernização - Sugestões Instantâneas na Busca
+  setupLiveSearchSuggestions();
 
   // Botão Limpar Histórico na Home
   dom.btnClearContinueHistory?.addEventListener('click', () => WatchHistory.clearAll());
@@ -1595,13 +1786,31 @@ async function loadManifesto() {
 
 function switchType(type) {
   state.activeType = type;
-  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries, dom.btnTypeAnimes, dom.btnTypeHistorico].filter(Boolean).forEach(b => b.classList.remove('active'));
-  if (type === 'todos') dom.btnTypeTodos?.classList.add('active');
+  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries, dom.btnTypeAnimes, dom.btnTypeMinhaLista, dom.btnTypeHistorico].filter(Boolean).forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.bottom-nav-item').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-type') === type);
+  });
+
+  if (type === 'todos') {
+    dom.btnTypeTodos?.classList.add('active');
+    if (dom.homeShelvesContainer) {
+      dom.homeShelvesContainer.style.display = 'block';
+      HomeShelvesManager.render();
+    }
+  } else {
+    if (dom.homeShelvesContainer) dom.homeShelvesContainer.style.display = 'none';
+  }
+
   if (type === 'filmes') dom.btnTypeFilmes?.classList.add('active');
   if (type === 'series') dom.btnTypeSeries?.classList.add('active');
   if (type === 'animes') {
     dom.btnTypeAnimes?.classList.add('active');
     selectCategory('animes', '🌸 Animes');
+    return;
+  }
+  if (type === 'minha-lista') {
+    dom.btnTypeMinhaLista?.classList.add('active');
+    MyListManager.renderView();
     return;
   }
   if (type === 'historico') {
@@ -1983,7 +2192,29 @@ function loadDestaques() {
     }
   });
 
-  state.rawItems = pool;
+  // Deduplicação rigorosa de posters e títulos nos destaques
+  const seenPoolPosters = new Set();
+  const seenPoolKeys = new Set();
+  const dedupedPool = [];
+  pool.forEach(it => {
+    const rawTitle = it.canonical_title || it.t || '';
+    const normKey = rawTitle.toLowerCase()
+      .replace(/\[.*?\]|\(.*?\)|4k|uhd|fhd|hd|dublado|legendado|lançamento|lancamento|parte\s*\d+/g, '')
+      .replace(/[^a-z0-9]/g, '');
+    if (normKey && normKey.length >= 3) {
+      if (seenPoolKeys.has(normKey)) return;
+      seenPoolKeys.add(normKey);
+    }
+    const posterUrl = it.p || it.poster || '';
+    if (posterUrl && posterUrl.startsWith('http')) {
+      const posterFile = posterUrl.split('/').pop().split('?')[0];
+      if (posterFile && seenPoolPosters.has(posterFile)) return;
+      seenPoolPosters.add(posterFile);
+    }
+    dedupedPool.push(it);
+  });
+
+  state.rawItems = dedupedPool;
   if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
   refreshCatalogDisplay();
 }
@@ -2372,10 +2603,20 @@ function refreshCatalogDisplay() {
     });
   } else if (state.seriesViewMode === 'grouped') {
     const { groups, nonSeries } = groupItemsBySeries(state.rawItems);
-    state.currentItems = [...groups, ...nonSeries];
+    const seenSeriesPosters = new Set();
+    state.currentItems = [...groups, ...nonSeries].filter(it => {
+      const posterUrl = it.poster || it.p || '';
+      if (posterUrl && posterUrl.startsWith('http')) {
+        const posterFile = posterUrl.split('/').pop().split('?')[0];
+        if (posterFile && seenSeriesPosters.has(posterFile)) return false;
+        seenSeriesPosters.add(posterFile);
+      }
+      return true;
+    });
   } else {
-    // Deduplicação defensiva de filmes (evita cards duplicados no grid de variantes 4K/[L]/[Lançamento])
+    // Deduplicação defensiva de filmes e animes (evita cards repetidos por poster ou versão 4K/[L]/[Lançamento])
     const seenMovieKeys = new Set();
+    const seenMoviePosters = new Set();
     state.currentItems = state.rawItems.filter(it => {
       const rawTitle = it.canonical_title || it.t || '';
       const normKey = rawTitle.toLowerCase()
@@ -2384,6 +2625,12 @@ function refreshCatalogDisplay() {
       if (normKey && normKey.length >= 3) {
         if (seenMovieKeys.has(normKey)) return false;
         seenMovieKeys.add(normKey);
+      }
+      const posterUrl = it.p || it.poster || '';
+      if (posterUrl && posterUrl.startsWith('http')) {
+        const posterFile = posterUrl.split('/').pop().split('?')[0];
+        if (posterFile && seenMoviePosters.has(posterFile)) return false;
+        seenMoviePosters.add(posterFile);
       }
       return true;
     });
@@ -4058,5 +4305,745 @@ function updateFavoriteButtons(animeId) {
       btn.classList.toggle('active', isFav);
       btn.title = isFav ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos';
     }
+  });
+}
+
+
+// =====================================================================
+// K-CINE MODERNIZATION ENGINE - ETAPAS 1 A 20 (FASES A A G)
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// 1. GESTÃO DE PERFIS DE USUÁRIO (PROFILES SYSTEM)
+// ---------------------------------------------------------------------
+const ProfilesManager = {
+  DEFAULT_PROFILES: [
+    { id: 'p_kayna', name: 'Kaynã', avatar: 'K', color: 'linear-gradient(135deg, #6366f1, #ec4899)', role: 'ADMIN' },
+    { id: 'p_familia', name: 'Família', avatar: 'F', color: 'linear-gradient(135deg, #ec4899, #f43f5e)', role: 'Padrão' },
+    { id: 'p_kids', name: 'Kids', avatar: 'K', color: 'linear-gradient(135deg, #06b6d4, #10b981)', role: 'Infantil' }
+  ],
+
+  getProfiles() {
+    try {
+      const stored = localStorage.getItem('kcine_profiles');
+      if (stored) return JSON.parse(stored);
+    } catch (e) {}
+    return this.DEFAULT_PROFILES;
+  },
+
+  getActiveProfile() {
+    const list = this.getProfiles();
+    const activeId = localStorage.getItem('kcine_active_profile_id') || state.activeProfileId || 'p_kayna';
+    return list.find(p => p.id === activeId) || list[0];
+  },
+
+  setActiveProfile(profileId) {
+    const list = this.getProfiles();
+    const profile = list.find(p => p.id === profileId);
+    if (!profile) return;
+
+    localStorage.setItem('kcine_active_profile_id', profile.id);
+    state.activeProfileId = profile.id;
+
+    // Atualiza cabeçalho
+    if (dom.navUserInitial) dom.navUserInitial.textContent = profile.avatar;
+    if (dom.navUserName) dom.navUserName.textContent = profile.name;
+    if (dom.profileDropdownUsername) dom.profileDropdownUsername.textContent = profile.name;
+    if (dom.profileDropdownRole) dom.profileDropdownRole.textContent = `Perfil: ${profile.role}`;
+
+    // Atualiza visual do avatar
+    if (dom.navUserAvatar) {
+      dom.navUserAvatar.style.background = profile.color;
+    }
+
+    this.closeModal();
+    showToast(`Perfil alterado para: ${profile.name}`);
+
+    // Re-renderiza views com base no perfil ativo
+    renderContinueWatching();
+    if (state.activeType === 'todos') {
+      HomeShelvesManager.render();
+    } else if (state.activeType === 'minha-lista') {
+      MyListManager.renderView();
+    }
+  },
+
+  openModal() {
+    if (!dom.profilesModal || !dom.profilesGrid) return;
+    this.renderGrid();
+    dom.profilesModal.classList.add('active');
+  },
+
+  closeModal() {
+    if (dom.profilesModal) dom.profilesModal.classList.remove('active');
+  },
+
+  renderGrid() {
+    if (!dom.profilesGrid) return;
+    dom.profilesGrid.innerHTML = '';
+    const profiles = this.getProfiles();
+    const active = this.getActiveProfile();
+
+    profiles.forEach(p => {
+      const card = document.createElement('div');
+      card.className = `profile-card ${p.id === active.id ? 'active' : ''}`;
+      card.innerHTML = `
+        <div class="profile-avatar-circle" style="background: ${p.color};">
+          <span>${escapeHtml(p.avatar)}</span>
+        </div>
+        <span class="profile-name">${escapeHtml(p.name)}</span>
+      `;
+      card.onclick = () => this.setActiveProfile(p.id);
+      dom.profilesGrid.appendChild(card);
+    });
+  },
+
+  init() {
+    const active = this.getActiveProfile();
+    this.setActiveProfile(active.id);
+  }
+};
+
+// ---------------------------------------------------------------------
+// 2. MINHA LISTA E FAVORITOS (LIBRARY SYSTEM)
+// ---------------------------------------------------------------------
+const MyListManager = {
+  getKey() {
+    const p = ProfilesManager.getActiveProfile();
+    return `kcine_mylist_${p.id}`;
+  },
+
+  getAll() {
+    try {
+      const raw = localStorage.getItem(this.getKey());
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      return [];
+    }
+  },
+
+  has(id) {
+    if (!id) return false;
+    const list = this.getAll();
+    return list.some(it => String(it.id) === String(id));
+  },
+
+  toggle(item) {
+    if (!item) return;
+    const itemId = item.id || (item.t ? `k_${item.t.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}` : null);
+    if (!itemId) return;
+
+    let list = this.getAll();
+    const exists = list.some(it => String(it.id) === String(itemId));
+
+    if (exists) {
+      list = list.filter(it => String(it.id) !== String(itemId));
+      localStorage.setItem(this.getKey(), JSON.stringify(list));
+      showToast('Removido da Minha Lista');
+    } else {
+      const entry = {
+        id: itemId,
+        t: item.t || item.canonical_title || item.title,
+        p: item.p || item.poster,
+        catNome: item.catNome || item.category || 'Favoritos',
+        u: item.u || '',
+        ano: item.ano || item.year || 2024,
+        is_anime: !!item.is_anime,
+        isGroup: !!item.isGroup,
+        totalEpisodes: item.totalEpisodes || item.total_episodios || 1,
+        totalSeasons: item.totalSeasons || item.total_temporadas || 1,
+        addedAt: Date.now()
+      };
+      list.unshift(entry);
+      localStorage.setItem(this.getKey(), JSON.stringify(list));
+      showToast('Adicionado à Minha Lista!');
+    }
+
+    this.updateButtons(itemId);
+    if (state.activeType === 'minha-lista') {
+      this.renderView();
+    }
+    if (state.activeType === 'todos') {
+      HomeShelvesManager.render();
+    }
+  },
+
+  updateButtons(itemId) {
+    const isSaved = this.has(itemId);
+    if (dom.btnHeroMyList) {
+      dom.btnHeroMyList.classList.toggle('active', isSaved);
+      dom.btnHeroMyList.innerHTML = isSaved
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Na Minha Lista</span>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> <span>Minha Lista</span>';
+    }
+    if (dom.btnDetailsMyList) {
+      dom.btnDetailsMyList.classList.toggle('active', isSaved);
+      dom.btnDetailsMyList.innerHTML = isSaved
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Salvo</span>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> <span>Minha Lista</span>';
+    }
+  },
+
+  renderView() {
+    if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
+    if (dom.loadMoreContainer) dom.loadMoreContainer.style.display = 'none';
+    if (dom.homeShelvesContainer) dom.homeShelvesContainer.style.display = 'none';
+
+    const items = this.getAll();
+    dom.cardsGrid.innerHTML = '';
+
+    dom.currentViewTitle.textContent = "Minha Lista";
+    dom.activeCategoryTitle.textContent = `Títulos Salvos (${items.length})`;
+
+    if (!items.length) {
+      dom.cardsGrid.innerHTML = `
+        <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">➕</div>
+          <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem;">Sua lista está vazia</h3>
+          <p style="color: var(--text-muted); max-width: 26rem; margin: 0 auto 1.5rem; font-size: 0.95rem;">
+            Explore filmes, séries e animes no catálogo e clique em "Minha Lista" para salvá-los aqui e assistir depois.
+          </p>
+          <button class="btn-primary" onclick="switchType('todos')" style="display: inline-flex; align-items: center; gap: 0.5rem; margin: 0 auto;">
+            <span>Explorar Catálogo</span>
+          </button>
+        </div>
+      `;
+      dom.itemsFoundText.textContent = '0 títulos na Minha Lista';
+      return;
+    }
+
+    dom.itemsFoundText.textContent = `${items.length} título(s) salvos no perfil ativo`;
+
+    const fragment = document.createDocumentFragment();
+    items.forEach((it, idx) => {
+      const card = createVideoCard(it, idx);
+      fragment.appendChild(card);
+    });
+    dom.cardsGrid.appendChild(fragment);
+  }
+};
+
+// ---------------------------------------------------------------------
+// 3. CENTRAL DE NOTIFICAÇÕES (NOTIFICATIONS CENTER)
+// ---------------------------------------------------------------------
+const NotificationsManager = {
+  ITEMS: [
+    { id: 'notif_demon_slayer', icon: '🔥', title: 'Demon Slayer: Castelo Infinito', desc: 'O filme épico já está disponível em alta definição e sem cortes.', time: 'Hoje', isPink: true },
+    { id: 'notif_4k_catalog', icon: '🎬', title: 'Masterização 4K Ultra HD', desc: 'Mais de 400 filmes atualizados com resolução máxima e som surround.', time: 'Ontem', isPink: false },
+    { id: 'notif_animes_sync', icon: '🌸', title: 'Novos Episódios de Animes', desc: 'Temporadas sincronizadas de Dandadan, Re:Zero e Slime.', time: '2 dias atrás', isPink: true },
+    { id: 'notif_series_maratona', icon: '📺', title: 'Séries para Maratonar', desc: 'Episódios agora agrupados automaticamente por temporadas completas.', time: '3 dias atrás', isPink: false }
+  ],
+
+  getReadIds() {
+    try {
+      return JSON.parse(localStorage.getItem('kcine_read_notifications') || '[]');
+    } catch (e) {
+      return [];
+    }
+  },
+
+  toggleDropdown() {
+    if (!dom.notificationsDropdown) return;
+    const isShown = dom.notificationsDropdown.style.display === 'block';
+    dom.notificationsDropdown.style.display = isShown ? 'none' : 'block';
+    if (!isShown) this.renderList();
+  },
+
+  markAllAsRead() {
+    const allIds = this.ITEMS.map(it => it.id);
+    localStorage.setItem('kcine_read_notifications', JSON.stringify(allIds));
+    this.updateBadge();
+    this.renderList();
+    showToast('Todas as notificações foram marcadas como lidas.');
+  },
+
+  updateBadge() {
+    if (!dom.notificationBadge) return;
+    const read = this.getReadIds();
+    const unreadCount = this.ITEMS.filter(it => !read.includes(it.id)).length;
+    if (unreadCount > 0) {
+      dom.notificationBadge.textContent = unreadCount;
+      dom.notificationBadge.style.display = 'flex';
+    } else {
+      dom.notificationBadge.style.display = 'none';
+    }
+  },
+
+  renderList() {
+    if (!dom.notificationsList) return;
+    dom.notificationsList.innerHTML = '';
+    const read = this.getReadIds();
+
+    this.ITEMS.forEach(it => {
+      const isUnread = !read.includes(it.id);
+      const itemEl = document.createElement('div');
+      itemEl.className = `notification-item ${isUnread ? 'unread' : ''}`;
+      itemEl.innerHTML = `
+        <div class="notification-icon ${it.isPink ? 'pink' : ''}">
+          <span>${it.icon}</span>
+        </div>
+        <div class="notification-content">
+          <div class="notification-title">${escapeHtml(it.title)}</div>
+          <div class="notification-desc">${escapeHtml(it.desc)}</div>
+          <div class="notification-time">${escapeHtml(it.time)}</div>
+        </div>
+      `;
+      itemEl.onclick = () => {
+        if (!read.includes(it.id)) {
+          read.push(it.id);
+          localStorage.setItem('kcine_read_notifications', JSON.stringify(read));
+          this.updateBadge();
+          itemEl.classList.remove('unread');
+        }
+      };
+      dom.notificationsList.appendChild(itemEl);
+    });
+  },
+
+  init() {
+    this.updateBadge();
+  }
+};
+
+// ---------------------------------------------------------------------
+// 4. VITRINE HORIZONTAL DA HOME (HOME SHELVES ESTILO NETFLIX / DISNEY+)
+// ---------------------------------------------------------------------
+const HomeShelvesManager = {
+  render() {
+    if (!dom.homeShelvesContainer) return;
+    if (state.activeType !== 'todos') {
+      dom.homeShelvesContainer.style.display = 'none';
+      return;
+    }
+
+    dom.homeShelvesContainer.style.display = 'block';
+    dom.homeShelvesContainer.innerHTML = '';
+
+    // Coleta itens para as prateleiras temáticas
+    const destaquesPool = state.rawItems || [];
+    if (!destaquesPool.length) return;
+
+    // 1. Shelf: 🔥 Em Alta no K-CINE (Top 10 ranqueados)
+    const emAltaItems = destaquesPool.slice(0, 10);
+    if (emAltaItems.length) {
+      this.createShelf('🔥 Em Alta no K-CINE', 'Os mais assistidos da plataforma hoje', emAltaItems, true);
+    }
+
+    // 2. Shelf: 🎬 Filmes Populares
+    const filmesItems = destaquesPool.filter(it => !it.is_anime && !it.isGroup && !parseEpisodeInfo(it.t).isEpisode).slice(0, 15);
+    if (filmesItems.length) {
+      this.createShelf('🎬 Filmes Populares', 'Grandes sucessos do cinema em 4K e HD', filmesItems);
+    }
+
+    // 3. Shelf: 📺 Séries para Maratonar
+    const seriesItems = destaquesPool.filter(it => it.isGroup || (it.catNome && it.catNome.includes('Séries')) || parseEpisodeInfo(it.t).isEpisode).slice(0, 15);
+    if (seriesItems.length) {
+      this.createShelf('📺 Séries Populares', 'Temporadas completas prontas para maratonar', seriesItems);
+    }
+
+    // 4. Shelf: 🌸 Animes em Destaque
+    const animesItems = destaquesPool.filter(it => it.is_anime || (it.id && String(it.id).startsWith('ani_')) || (it.catNome && it.catNome.includes('ANIMES'))).slice(0, 15);
+    if (animesItems.length) {
+      this.createShelf('🌸 Animes em Destaque', 'Episódios canônicos, filmes e novas temporadas', animesItems);
+    }
+
+    // 5. Shelf: ➕ Minha Lista
+    const myListItems = MyListManager.getAll().slice(0, 15);
+    if (myListItems.length) {
+      this.createShelf('➕ Minha Lista', 'Títulos que você salvou para assistir depois', myListItems);
+    }
+  },
+
+  createShelf(title, subtitle, items, isRanked = false) {
+    if (!items || !items.length) return;
+
+    const section = document.createElement('section');
+    section.className = 'shelf-section';
+
+    section.innerHTML = `
+      <div class="shelf-header">
+        <div class="shelf-title-wrap">
+          <h3 class="shelf-title">${escapeHtml(title)}</h3>
+          <span class="shelf-subtitle">${escapeHtml(subtitle)}</span>
+        </div>
+        <div class="shelf-controls">
+          <button class="shelf-arrow shelf-arrow-left" aria-label="Rolar para esquerda">‹</button>
+          <button class="shelf-arrow shelf-arrow-right" aria-label="Rolar para direita">›</button>
+        </div>
+      </div>
+      <div class="shelf-track"></div>
+    `;
+
+    const track = section.querySelector('.shelf-track');
+    const btnLeft = section.querySelector('.shelf-arrow-left');
+    const btnRight = section.querySelector('.shelf-arrow-right');
+
+    items.forEach((it, idx) => {
+      const card = createVideoCard(it, idx);
+      card.classList.add('shelf-card');
+
+      if (isRanked) {
+        const rankBadge = document.createElement('div');
+        rankBadge.className = 'shelf-rank-badge';
+        rankBadge.textContent = `#${idx + 1}`;
+        card.querySelector('.card-poster')?.appendChild(rankBadge);
+      }
+
+      // Ao clicar no poster ou card, abre modal cinematográfico de detalhes
+      card.onclick = (e) => {
+        // Se clicou no botão específico de play ou capítulos, segue a ação direta
+        if (e.target.closest('.btn-play') || e.target.closest('.play-circle')) {
+          if (it.is_anime) openAnimeModal(it);
+          else if (it.isGroup) openSeriesModal(it);
+          else openPlayer(it.t, it.catNome || 'Filme', it.u, it);
+        } else {
+          openContentDetailsModal(it);
+        }
+      };
+
+      track.appendChild(card);
+    });
+
+    btnLeft.onclick = () => {
+      track.scrollBy({ left: -track.clientWidth * 0.75, behavior: 'smooth' });
+    };
+    btnRight.onclick = () => {
+      track.scrollBy({ left: track.clientWidth * 0.75, behavior: 'smooth' });
+    };
+
+    dom.homeShelvesContainer.appendChild(section);
+  }
+};
+
+// ---------------------------------------------------------------------
+// 5. MODAL CINEMATOGRÁFICO DE DETALHES COMPLETOS (CONTENT DETAILS)
+// ---------------------------------------------------------------------
+function openContentDetailsModal(item) {
+  if (!item || !dom.contentDetailsModal) return;
+  state.currentDetailsItem = item;
+
+  const rawTitle = item.t || item.canonical_title || item.title || item.seriesName || 'Sem Título';
+  const posterUrl = item.p || item.poster || FALLBACK_POSTER;
+  const rating = getMediaRating(item);
+  const year = item.ano || item.year || 2024;
+  const isAnime = !!item.is_anime || (item.id && String(item.id).startsWith('ani_')) || (item.catNome && item.catNome.includes('ANIMES'));
+  const isSeries = !!item.isGroup || parseEpisodeInfo(rawTitle).isEpisode || (item.catNome && item.catNome.includes('Séries'));
+
+  // Preenche dados do Hero
+  if (dom.detailsHeroBackdrop) {
+    dom.detailsHeroBackdrop.style.backgroundImage = `url('${posterUrl}')`;
+  }
+  if (dom.detailsTitle) dom.detailsTitle.textContent = rawTitle;
+  if (dom.detailsRatingBadge) dom.detailsRatingBadge.textContent = `★ ${rating.toFixed(1)}`;
+  if (dom.detailsYear) dom.detailsYear.textContent = year;
+  if (dom.detailsCategoryBadge) dom.detailsCategoryBadge.textContent = item.catNome || (isAnime ? '🌸 ANIME' : isSeries ? '📺 SÉRIE' : '🎬 FILME');
+
+  const seasonsCount = item.totalSeasons || item.total_temporadas || 1;
+  const epsCount = item.totalEpisodes || item.total_episodios || 1;
+  if (dom.detailsDurationOrSeasons) {
+    dom.detailsDurationOrSeasons.textContent = isSeries || isAnime
+      ? `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''} (${epsCount} eps)`
+      : '2h 05m';
+  }
+
+  // Sinopse
+  if (dom.detailsSynopsis) {
+    dom.detailsSynopsis.textContent = item.sinopse || item.synopsis ||
+      `Assista ${escapeHtml(rawTitle)} no K-CINE com a melhor qualidade de streaming, reprodução rápida sem travamentos e opções completas de áudio e legendas.`;
+  }
+
+  // Atualiza botão de Minha Lista
+  MyListManager.updateButtons(item.id || rawTitle);
+
+  // Seções dinâmicas (Episódios para Séries/Animes OU Semelhantes para Filmes)
+  if (isAnime) {
+    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'block';
+    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'none';
+    populateAnimeDetailsEpisodes(item);
+  } else if (isSeries) {
+    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'block';
+    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'none';
+    populateSeriesDetailsEpisodes(item);
+  } else {
+    if (dom.detailsEpisodesSection) dom.detailsEpisodesSection.style.display = 'none';
+    if (dom.detailsSimilarSection) dom.detailsSimilarSection.style.display = 'block';
+    populateMovieDetailsSimilar(item);
+  }
+
+  dom.contentDetailsModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeContentDetailsModal() {
+  if (dom.contentDetailsModal) {
+    dom.contentDetailsModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  state.currentDetailsItem = null;
+}
+
+function populateMovieDetailsSimilar(item) {
+  if (!dom.detailsSimilarGrid) return;
+  dom.detailsSimilarGrid.innerHTML = '';
+
+  const pool = state.rawItems || [];
+  const similar = pool.filter(it => it.t !== item.t && !it.isGroup).slice(0, 6);
+
+  similar.forEach((sim, idx) => {
+    const card = createVideoCard(sim, idx);
+    card.onclick = () => openContentDetailsModal(sim);
+    dom.detailsSimilarGrid.appendChild(card);
+  });
+}
+
+function populateSeriesDetailsEpisodes(seriesGroup) {
+  if (!dom.detailsEpisodesGrid || !dom.detailsSeasonSelect) return;
+  dom.detailsEpisodesGrid.innerHTML = '';
+  dom.detailsSeasonSelect.innerHTML = '';
+
+  const episodes = seriesGroup.episodes || [];
+  const opt = document.createElement('option');
+  opt.value = '1';
+  opt.textContent = `Temporada 1 (${episodes.length} episódios)`;
+  dom.detailsSeasonSelect.appendChild(opt);
+
+  episodes.forEach(ep => {
+    const card = document.createElement('div');
+    card.className = 'episode-card-details';
+    card.style.cssText = 'background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; transition: background 0.2s;';
+    card.onmouseenter = () => card.style.background = 'rgba(255,255,255,0.08)';
+    card.onmouseleave = () => card.style.background = 'rgba(255,255,255,0.03)';
+    card.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="font-weight: 800; color: var(--accent-pink); font-size: 1rem;">${ep.episodeNumber || 'EP'}</span>
+        <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">${escapeHtml(ep.title || 'Episódio')}</div>
+      </div>
+      <button class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem;">▶ Assistir</button>
+    `;
+    card.onclick = () => {
+      closeContentDetailsModal();
+      openPlayer(ep.title || seriesGroup.seriesName, seriesGroup.catNome || 'Séries', ep.streamUrl, ep);
+    };
+    dom.detailsEpisodesGrid.appendChild(card);
+  });
+}
+
+function populateAnimeDetailsEpisodes(animeItem) {
+  if (!dom.detailsEpisodesGrid) return;
+  dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Carregando episódios canônicos...</div>';
+
+  fetch(`/api/animes/details?id=${encodeURIComponent(animeItem.id)}`)
+    .then(r => r.json())
+    .then(data => {
+      dom.detailsEpisodesGrid.innerHTML = '';
+      const seasons = data.seasons || [];
+      if (!seasons.length) {
+        dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Filme individual ou temporada única. Clique em "Assistir Agora".</div>';
+        return;
+      }
+      const firstSeason = seasons[0];
+      firstSeason.episodes.slice(0, 30).forEach(ep => {
+        const card = document.createElement('div');
+        card.style.cssText = 'background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; transition: background 0.2s;';
+        card.onmouseenter = () => card.style.background = 'rgba(255,255,255,0.08)';
+        card.onmouseleave = () => card.style.background = 'rgba(255,255,255,0.03)';
+        card.innerHTML = `
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-weight: 800; color: var(--accent-pink); font-size: 1rem;">EP ${ep.episode_number}</span>
+            <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">${escapeHtml(ep.title || `Episódio ${ep.episode_number}`)}</div>
+          </div>
+          <button class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem;">▶ Assistir</button>
+        `;
+        card.onclick = () => {
+          closeContentDetailsModal();
+          playAnimeEpisode(ep, data, 'legendado');
+        };
+        dom.detailsEpisodesGrid.appendChild(card);
+      });
+    })
+    .catch(() => {
+      dom.detailsEpisodesGrid.innerHTML = '<div style="color: var(--text-muted); padding: 20px;">Clique em "Assistir Agora" para iniciar a reprodução deste anime.</div>';
+    });
+}
+
+// ---------------------------------------------------------------------
+// 6. ATALHOS DE TECLADO E CONTROLES INTELIGENTES DO PLAYER
+// ---------------------------------------------------------------------
+function setupPlayerModernEnhancements() {
+  // 1. Atalhos de Teclado Globais quando Player está aberto
+  document.addEventListener('keydown', (e) => {
+    if (!dom.playerModal || !dom.playerModal.classList.contains('active')) return;
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) return;
+
+    const video = dom.htmlVideoPlayer;
+    if (!video) return;
+
+    switch (e.code) {
+      case 'Space':
+      case 'KeyK':
+        e.preventDefault();
+        video.paused ? video.play() : video.pause();
+        break;
+      case 'ArrowLeft':
+        e.preventDefault();
+        video.currentTime = Math.max(0, video.currentTime - 10);
+        showPlayerFeedback('-10s');
+        break;
+      case 'ArrowRight':
+        e.preventDefault();
+        video.currentTime = Math.min(video.duration || Infinity, video.currentTime + 10);
+        showPlayerFeedback('+10s');
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        video.volume = Math.min(1, video.volume + 0.1);
+        showPlayerFeedback(`Volume: ${Math.round(video.volume * 100)}%`);
+        break;
+      case 'ArrowDown':
+        e.preventDefault();
+        video.volume = Math.max(0, video.volume - 0.1);
+        showPlayerFeedback(`Volume: ${Math.round(video.volume * 100)}%`);
+        break;
+      case 'KeyM':
+        e.preventDefault();
+        video.muted = !video.muted;
+        showPlayerFeedback(video.muted ? 'Mudo' : 'Com Som');
+        break;
+      case 'KeyF':
+        e.preventDefault();
+        if (document.fullscreenElement) document.exitFullscreen();
+        else dom.playerModal.requestFullscreen?.();
+        break;
+      case 'KeyN':
+        e.preventDefault();
+        if (dom.btnNextEp && !dom.btnNextEp.disabled) dom.btnNextEp.click();
+        break;
+      case 'Escape':
+        closePlayer();
+        break;
+    }
+  });
+
+  // 2. Botão Pular Abertura (Skip Intro)
+  if (dom.btnSkipIntro && dom.htmlVideoPlayer) {
+    dom.btnSkipIntro.addEventListener('click', () => {
+      dom.htmlVideoPlayer.currentTime = 90;
+      dom.btnSkipIntro.style.display = 'none';
+      showToast('Abertura pulada');
+    });
+
+    dom.htmlVideoPlayer.addEventListener('timeupdate', () => {
+      const cur = dom.htmlVideoPlayer.currentTime;
+      const isEp = state.currentPlayingItem && (state.currentPlayingItem.is_anime || state.currentPlayingItem.isGroup || parseEpisodeInfo(state.currentPlayingItem.t || '').isEpisode);
+
+      if (isEp && cur >= 5 && cur <= 90) {
+        dom.btnSkipIntro.style.display = 'inline-flex';
+      } else {
+        dom.btnSkipIntro.style.display = 'none';
+      }
+
+      // 3. Card de Próximo Episódio com Contagem Regressiva (Últimos 20s)
+      const dur = dom.htmlVideoPlayer.duration;
+      if (dur && (dur - cur <= 20) && dom.btnNextEp && !dom.btnNextEp.disabled) {
+        if (dom.nextEpCountdownCard && dom.nextEpCountdownCard.style.display !== 'flex') {
+          dom.nextEpCountdownCard.style.display = 'flex';
+          const remaining = Math.max(1, Math.round(dur - cur));
+          if (dom.nextEpSeconds) dom.nextEpSeconds.textContent = remaining;
+        }
+      } else {
+        if (dom.nextEpCountdownCard && dom.nextEpCountdownCard.style.display === 'flex') {
+          dom.nextEpCountdownCard.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  if (dom.btnNextNow) {
+    dom.btnNextNow.addEventListener('click', () => {
+      if (dom.nextEpCountdownCard) dom.nextEpCountdownCard.style.display = 'none';
+      if (dom.btnNextEp) dom.btnNextEp.click();
+    });
+  }
+
+  if (dom.btnNextCancel) {
+    dom.btnNextCancel.addEventListener('click', () => {
+      if (dom.nextEpCountdownCard) dom.nextEpCountdownCard.style.display = 'none';
+    });
+  }
+}
+
+function showPlayerFeedback(text) {
+  let toast = document.getElementById('playerQuickToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'playerQuickToast';
+    toast.style.cssText = 'position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.75); color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 700; z-index: 50; pointer-events: none; transition: opacity 0.2s; backdrop-filter: blur(8px);';
+    dom.playerModal?.querySelector('.video-wrapper')?.appendChild(toast);
+  }
+  toast.textContent = text;
+  toast.style.opacity = '1';
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => { toast.style.opacity = '0'; }, 1000);
+}
+
+// ---------------------------------------------------------------------
+// 7. SUGESTÕES INSTANTÂNEAS DE BUSCA (LIVE SEARCH DROPDOWN)
+// ---------------------------------------------------------------------
+function setupLiveSearchSuggestions() {
+  if (!dom.searchInput || !dom.searchSuggestionsDropdown) return;
+
+  let debounceTimer;
+  dom.searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim();
+    clearTimeout(debounceTimer);
+
+    if (query.length < 2) {
+      dom.searchSuggestionsDropdown.style.display = 'none';
+      return;
+    }
+
+    debounceTimer = setTimeout(() => {
+      fetch(`/api/search?q=${encodeURIComponent(query)}&limit=6`)
+        .then(r => r.json())
+        .then(data => {
+          const results = data.results || data || [];
+          if (!results.length) {
+            dom.searchSuggestionsDropdown.style.display = 'none';
+            return;
+          }
+
+          dom.searchSuggestionsDropdown.innerHTML = '';
+          results.slice(0, 6).forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'suggestion-item';
+            row.style.cssText = 'display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; transition: background 0.2s;';
+            row.onmouseenter = () => row.style.background = 'rgba(255,255,255,0.06)';
+            row.onmouseleave = () => row.style.background = 'transparent';
+
+            const pUrl = item.p || FALLBACK_POSTER;
+            row.innerHTML = `
+              <img src="${pUrl}" alt="${escapeHtml(item.t)}" style="width: 32px; height: 46px; border-radius: 4px; object-fit: cover;">
+              <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 600; color: #fff; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHtml(item.t)}</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">${escapeHtml(item.catNome || 'Catálogo')}</div>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 700; color: #facc15;">★ 9.4</span>
+            `;
+
+            row.onclick = () => {
+              dom.searchSuggestionsDropdown.style.display = 'none';
+              dom.searchInput.value = item.t;
+              openContentDetailsModal(item);
+            };
+
+            dom.searchSuggestionsDropdown.appendChild(row);
+          });
+
+          dom.searchSuggestionsDropdown.style.display = 'block';
+        })
+        .catch(() => {
+          dom.searchSuggestionsDropdown.style.display = 'none';
+        });
+    }, 250);
   });
 }
