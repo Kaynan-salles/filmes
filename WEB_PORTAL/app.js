@@ -2648,12 +2648,7 @@ function createSeriesGroupCard(group, index) {
     <div class="card-body">
       <div class="card-chapter-pill">
         <span class="pill-dot"></span>
-        <span>${group.totalEpisodes} Episódios • ${group.totalSeasons} Temporada${group.totalSeasons > 1 ? 's' : ''}</span>
-      </div>
-      <div class="card-stars-row">
-        <div class="stars-icons">${renderStarsVisualHtml(rating)}</div>
-        <span class="rating-num">${rating.toFixed(1)}</span>
-        <span class="rating-tag">${rating >= 9.3 ? 'Aclamado' : 'Em Alta'}</span>
+        <span>${group.totalSeasons} Temporada${group.totalSeasons > 1 ? 's' : ''}</span>
       </div>
       <h4 class="card-title" title="${escapeHtml(group.seriesName)}">${escapeHtml(group.seriesName)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
@@ -2773,11 +2768,6 @@ function createVideoCard(item, index) {
     </div>
     <div class="card-body">
       ${chapterPillHtml}
-      <div class="card-stars-row">
-        <div class="stars-icons">${renderStarsVisualHtml(rating)}</div>
-        <span class="rating-num">${rating.toFixed(1)}</span>
-        <span class="rating-tag">${rating >= 9.3 ? 'Aclamado' : 'Recomendado'}</span>
-      </div>
       <h4 class="card-title" title="${escapeHtml(item.t)}">${escapeHtml(displayTitle)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
       <div class="card-actions">
