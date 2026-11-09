@@ -3543,15 +3543,15 @@ body.role-cliente #userProfileBtn:hover {
   }
 
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, 155px) !important;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)) !important;
     gap: 14px !important; /* 12 a 16px */
-    justify-content: start !important;
+    width: 100% !important;
   }
 
   .video-card {
-    width: 155px !important;
-    max-width: 155px !important;
-    min-width: 155px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   .card-body {
@@ -3619,17 +3619,17 @@ body.role-cliente #userProfileBtn:hover {
     margin: 1.5rem auto 4.5rem;
   }
 
-  /* Grade em Telas Grandes: Padronizada exatamente no mesmo tamanho dos carrosséis (155px) */
+  /* Grade em Telas Grandes: Auto-fill proporcional entre 145px e 165px, preenchendo a tela perfeitamente de ponta a ponta sem espaços sobrando */
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, 155px) !important;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)) !important;
     gap: 14px !important;
-    justify-content: start !important;
+    width: 100% !important;
   }
 
   .video-card {
-    width: 155px !important;
-    max-width: 155px !important;
-    min-width: 155px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   .card-body {
