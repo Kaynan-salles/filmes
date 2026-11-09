@@ -3163,78 +3163,125 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 /* =====================================================================
-   HERO BANNER - MOBILE (< 768px): Exibe foto do filme sem cortes no topo
+   HERO BANNER - MOBILE (< 768px): Campo de demonstração compacto e sem cortes
    ===================================================================== */
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 480px;
-    height: auto;
-    padding: 1.25rem 1rem 1.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    height: 380px !important;
+    min-height: 350px !important;
+    max-height: 420px !important;
+    padding: 1rem 1rem 1.25rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
 
+  /* Na versão mobile, a própria foto de fundo cobre o banner com nitidez e alinhada ao topo */
+  .hero-backdrop {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    filter: brightness(0.72) contrast(1.06) !important;
+    transform: none !important;
+  }
+
+  /* Oculta a camada flutuante duplicada no mobile para não criar espaço preto vazio */
   .hero-backdrop-showcase {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    right: auto;
-    bottom: auto;
-    transform: translateX(-50%);
-    width: 210px;
-    max-width: 65%;
-    height: 250px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: 1;
-    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.95));
-    border-radius: 10px;
-    -webkit-mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+    display: none !important;
+  }
+
+  /* Vídeo de demonstração limpo e sem cortes */
+  .hero-video {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Botão de Som / Mudo no canto superior direito para NUNCA sobrepor os botões de ação */
+  .hero-sound-toggle {
+    position: absolute !important;
+    top: 0.75rem !important;
+    right: 0.75rem !important;
+    bottom: auto !important;
+    left: auto !important;
+    z-index: 25 !important;
+    padding: 0.35rem 0.65rem !important;
+    font-size: 0.72rem !important;
+    background: rgba(10, 12, 18, 0.82) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    border-radius: 9999px !important;
+  }
+
+  /* Oculta setas laterais no mobile */
+  .hero-nav-btn {
+    display: none !important;
   }
 
   .hero-content {
-    position: relative;
-    z-index: 5;
-    margin-top: 210px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    position: relative !important;
+    z-index: 5 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding-bottom: 0.25rem !important;
   }
 
   .hero-meta {
-    justify-content: center;
-    gap: 0.4rem;
-    margin-bottom: 0.5rem;
+    justify-content: center !important;
+    gap: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .hero-badge {
+    font-size: 0.6875rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+
+  .hero-rating-badge {
+    font-size: 0.72rem !important;
+    padding: 0.18rem 0.45rem !important;
   }
 
   .hero-title {
-    font-size: clamp(1.35rem, 5.5vw, 1.85rem) !important;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-    text-align: center;
+    font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.4rem !important;
+    text-align: center !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
   }
 
   .hero-desc {
     font-size: 0.8125rem !important;
-    -webkit-line-clamp: 2;
-    margin-bottom: 0.85rem;
-    max-width: 90%;
-    text-align: center;
+    -webkit-line-clamp: 2 !important;
+    margin-bottom: 0.65rem !important;
+    max-width: 90% !important;
+    text-align: center !important;
+    line-height: 1.35 !important;
   }
 
   .hero-buttons {
-    justify-content: center;
-    width: 100%;
-    gap: 0.5rem;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 0.55rem !important;
+    flex-wrap: wrap !important;
+    margin-top: 0.35rem !important;
   }
 
   .hero-buttons .btn-primary,
@@ -3243,11 +3290,23 @@ body.role-cliente #userProfileBtn:hover {
     min-height: 38px !important;
     max-height: 38px !important;
     font-size: 0.8125rem !important;
-    padding: 0 0.85rem !important;
+    padding: 0 0.95rem !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
   }
 
   .hero-overlay {
-    background: linear-gradient(to top, #0a0b0e 45%, rgba(10, 11, 14, 0.72) 75%, rgba(10, 11, 14, 0.25) 100%);
+    background: linear-gradient(to top, #0a0b0e 18%, rgba(10, 11, 14, 0.6) 60%, rgba(10, 11, 14, 0.2) 100%) !important;
+  }
+
+  /* Toast posicionado acima da barra inferior de navegação para não cobri-la */
+  .toast {
+    bottom: calc(4.25rem + env(safe-area-inset-bottom, 8px)) !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    font-size: 0.8125rem !important;
+    padding: 0.65rem 1rem !important;
+    z-index: 2500 !important;
   }
 }
 
