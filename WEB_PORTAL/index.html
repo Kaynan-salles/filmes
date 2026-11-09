@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=63">
+  <link rel="stylesheet" href="style.css?v=64">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -157,10 +157,13 @@
             </svg>
             <span class="notification-badge" id="notificationBadge" style="display: none;">0</span>
           </button>
-          <div class="notifications-dropdown" id="notificationsDropdown" style="display: none;">
+          <div class="notifications-dropdown" id="notificationsDropdown" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="notifTitle">
             <div class="notifications-header">
-              <h4>🔔 Novidades no K-CINE</h4>
-              <button class="btn-mark-read" id="btnMarkAllRead">Marcar como lidas</button>
+              <h4 id="notifTitle">🔔 Novidades no K-CINE</h4>
+              <div class="notifications-header-actions">
+                <button class="btn-mark-read" id="btnMarkAllRead" title="Marcar todas como lidas">Marcar lidas</button>
+                <button class="btn-close-notif" id="btnCloseNotifications" aria-label="Fechar Notificações" title="Fechar (Esc)">&times;</button>
+              </div>
             </div>
             <div class="notifications-list" id="notificationsList">
               <!-- Injetado dinamicamente -->
@@ -994,8 +997,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=63"></script>
-  <script src="auth.js?v=63"></script>
-  <script src="app.js?v=63"></script>
+  <script src="supabase-config.js?v=64"></script>
+  <script src="auth.js?v=64"></script>
+  <script src="app.js?v=64"></script>
 </body>
 </html>

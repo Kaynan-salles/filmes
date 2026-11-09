@@ -73,6 +73,7 @@ const dom = {
   notificationsDropdown: document.getElementById('notificationsDropdown'),
   notificationsList: document.getElementById('notificationsList'),
   btnMarkAllRead: document.getElementById('btnMarkAllRead'),
+  btnCloseNotifications: document.getElementById('btnCloseNotifications'),
   profileDropdownMenu: document.getElementById('profileDropdownMenu'),
   profileDropdownUsername: document.getElementById('profileDropdownUsername'),
   profileDropdownRole: document.getElementById('profileDropdownRole'),
@@ -863,6 +864,12 @@ function setupEventListeners() {
       NotificationsManager.markAllAsRead();
     });
   }
+  if (dom.btnCloseNotifications) {
+    dom.btnCloseNotifications.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (dom.notificationsDropdown) dom.notificationsDropdown.style.display = 'none';
+    });
+  }
 
   // Modernização - Dropdown de Perfis e Troca de Perfil
   if (dom.userProfileBtn) {
@@ -903,6 +910,15 @@ function setupEventListeners() {
     }
     if (dom.searchSuggestionsDropdown && !dom.searchSuggestionsDropdown.contains(e.target) && e.target !== dom.searchInput) {
       dom.searchSuggestionsDropdown.style.display = 'none';
+    }
+  });
+
+  // Fechar notificações com tecla Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (dom.notificationsDropdown && dom.notificationsDropdown.style.display === 'block') {
+        dom.notificationsDropdown.style.display = 'none';
+      }
     }
   });
 
@@ -4795,10 +4811,10 @@ const HomeShelvesManager = {
     const destaquesPool = state.rawItems || [];
     if (!destaquesPool.length) return;
 
-    // 1. Shelf: 🔥 Em Alta no K-CINE (Top 24 títulos ranqueados, preenchendo toda a largura da tela)
+    // 1. Shelf: 🔥 Em Alta no K-CINE (Top 24 títulos da plataforma)
     const emAltaItems = destaquesPool.slice(0, 24);
     if (emAltaItems.length) {
-      this.createShelf('🔥 Em Alta no K-CINE', 'Os mais assistidos da plataforma hoje', emAltaItems, true);
+      this.createShelf('🔥 Em Alta no K-CINE', 'Os mais assistidos da plataforma hoje', emAltaItems);
     }
 
     // 2. Shelf: 🎬 Filmes Populares (24 títulos)
@@ -4841,7 +4857,7 @@ const HomeShelvesManager = {
     }
   },
 
-  createShelf(title, subtitle, items, isRanked = false) {
+  createShelf(title, subtitle, items) {
     if (!items || !items.length) return;
 
     const section = document.createElement('section');
@@ -4911,13 +4927,6 @@ const HomeShelvesManager = {
     items.forEach((it, idx) => {
       const card = createVideoCard(it, idx);
       card.classList.add('shelf-card');
-
-      if (isRanked) {
-        const rankBadge = document.createElement('div');
-        rankBadge.className = 'shelf-rank-badge';
-        rankBadge.textContent = `#${idx + 1}`;
-        card.querySelector('.card-poster')?.appendChild(rankBadge);
-      }
 
       // Ao clicar no poster ou card, abre modal cinematográfico de detalhes
       card.onclick = (e) => {

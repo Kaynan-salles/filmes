@@ -3352,6 +3352,76 @@ body.role-cliente #userProfileBtn:hover {
     padding: 0.65rem 1rem !important;
     z-index: 2500 !important;
   }
+
+  /* Central de Notificações - Módulo Único e Proporcional para Mobile */
+  .notifications-dropdown {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    width: min(92vw, 380px) !important;
+    max-width: 380px !important;
+    max-height: 80vh !important;
+    background: rgba(14, 17, 24, 0.98) !important;
+    backdrop-filter: blur(28px) !important;
+    -webkit-backdrop-filter: blur(28px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 0 100vmax rgba(0, 0, 0, 0.72) !important;
+    z-index: 2500 !important;
+    overflow: hidden !important;
+    animation: modalScaleIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .notifications-header {
+    padding: 0.9rem 1.15rem !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+  }
+
+  .notifications-header h4 {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+  }
+
+  .notifications-list {
+    max-height: calc(80vh - 65px) !important;
+    padding: 0.25rem 0 !important;
+  }
+
+  .notification-item {
+    padding: 0.9rem 1.15rem !important;
+    gap: 0.85rem !important;
+  }
+
+  .notification-title {
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+  }
+
+  .notification-desc {
+    font-size: 0.78rem !important;
+    line-height: 1.4 !important;
+    color: #cbd5e1 !important;
+  }
+
+  .notification-time {
+    font-size: 0.7rem !important;
+    margin-top: 0.2rem !important;
+  }
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /* =====================================================================
@@ -5109,6 +5179,12 @@ body.role-cliente #userProfileBtn:hover {
   margin: 0;
 }
 
+.notifications-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
 .btn-mark-read {
   background: transparent;
   border: none;
@@ -5117,6 +5193,33 @@ body.role-cliente #userProfileBtn:hover {
   font-weight: 600;
   cursor: pointer;
   padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.btn-mark-read:hover {
+  opacity: 0.85;
+}
+
+.btn-close-notif {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.btn-close-notif:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.08);
 }
 
 .notifications-list {
@@ -5526,16 +5629,7 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 .shelf-rank-badge {
-  position: absolute;
-  bottom: 8px;
-  left: 10px;
-  font-family: var(--font-display);
-  font-size: 1.85rem;
-  font-weight: 900;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px var(--accent-pink);
-  z-index: 5;
-  line-height: 1;
+  display: none !important;
 }
 
 /* Responsividade dos Cards em Tablets e Celulares */
