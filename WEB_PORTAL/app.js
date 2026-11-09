@@ -4672,32 +4672,47 @@ const HomeShelvesManager = {
     const destaquesPool = state.rawItems || [];
     if (!destaquesPool.length) return;
 
-    // 1. Shelf: 🔥 Em Alta no K-CINE (Top 10 ranqueados)
-    const emAltaItems = destaquesPool.slice(0, 10);
+    // 1. Shelf: 🔥 Em Alta no K-CINE (Top 24 títulos ranqueados, preenchendo toda a largura da tela)
+    const emAltaItems = destaquesPool.slice(0, 24);
     if (emAltaItems.length) {
       this.createShelf('🔥 Em Alta no K-CINE', 'Os mais assistidos da plataforma hoje', emAltaItems, true);
     }
 
-    // 2. Shelf: 🎬 Filmes Populares
-    const filmesItems = destaquesPool.filter(it => !it.is_anime && !it.isGroup && !parseEpisodeInfo(it.t).isEpisode).slice(0, 15);
+    // 2. Shelf: 🎬 Filmes Populares (24 títulos)
+    const filmesItems = destaquesPool.filter(it => !it.is_anime && !it.isGroup && !parseEpisodeInfo(it.t).isEpisode).slice(0, 24);
     if (filmesItems.length) {
       this.createShelf('🎬 Filmes Populares', 'Grandes sucessos do cinema em 4K e HD', filmesItems);
     }
 
-    // 3. Shelf: 📺 Séries para Maratonar
-    const seriesItems = destaquesPool.filter(it => it.isGroup || (it.catNome && it.catNome.includes('Séries')) || parseEpisodeInfo(it.t).isEpisode).slice(0, 15);
+    // 3. Shelf: 📺 Séries para Maratonar (24 títulos)
+    const seriesItems = destaquesPool.filter(it => it.isGroup || (it.catNome && it.catNome.includes('Séries')) || parseEpisodeInfo(it.t).isEpisode).slice(0, 24);
     if (seriesItems.length) {
       this.createShelf('📺 Séries Populares', 'Temporadas completas prontas para maratonar', seriesItems);
     }
 
-    // 4. Shelf: 🌸 Animes em Destaque
-    const animesItems = destaquesPool.filter(it => it.is_anime || (it.id && String(it.id).startsWith('ani_')) || (it.catNome && it.catNome.includes('ANIMES'))).slice(0, 15);
+    // 4. Shelf: 🌸 Animes em Destaque (24 títulos)
+    let animesItems = destaquesPool.filter(it => it.is_anime || (it.id && String(it.id).startsWith('ani_')) || (it.catNome && it.catNome.includes('ANIMES')));
+    if (animesItems.length < 24 && state.staticAnimesList && state.staticAnimesList.length) {
+      const extraAnimes = state.staticAnimesList.map(a => ({
+        id: a.id,
+        t: a.canonical_title || a.t,
+        p: a.poster || a.p,
+        catNome: '🌸 ANIMES | Catálogo Oficial',
+        u: a.u || `/api/animes/resolve?anime_id=${a.id}&ep=1&s=1`,
+        is_anime: true,
+        total_episodios: a.total_episodios || 1,
+        sinopse: a.sinopse || ''
+      }));
+      animesItems = [...animesItems, ...extraAnimes].slice(0, 24);
+    } else {
+      animesItems = animesItems.slice(0, 24);
+    }
     if (animesItems.length) {
       this.createShelf('🌸 Animes em Destaque', 'Episódios canônicos, filmes e novas temporadas', animesItems);
     }
 
     // 5. Shelf: ➕ Minha Lista
-    const myListItems = MyListManager.getAll().slice(0, 15);
+    const myListItems = MyListManager.getAll().slice(0, 24);
     if (myListItems.length) {
       this.createShelf('➕ Minha Lista', 'Títulos que você salvou para assistir depois', myListItems);
     }
@@ -4741,13 +4756,34 @@ const HomeShelvesManager = {
     const btnSideLeft = section.querySelector('.shelf-side-left');
     const btnSideRight = section.querySelector('.shelf-side-right');
 
-    const scrollLeft = () => track.scrollBy({ left: -Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
-    const scrollRight = () => track.scrollBy({ left: Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
+    const updateArrows = () => {
+      const hasOverflow = track.scrollWidth > track.clientWidth + 10;
+      const canScrollLeft = track.scrollLeft > 15;
+      const canScrollRight = track.scrollLeft < (track.scrollWidth - track.clientWidth - 15);
+
+      if (btnSideLeft) btnSideLeft.style.display = (hasOverflow && canScrollLeft) ? 'flex' : 'none';
+      if (btnSideRight) btnSideRight.style.display = (hasOverflow && canScrollRight) ? 'flex' : 'none';
+      if (btnLeft) btnLeft.style.opacity = canScrollLeft ? '1' : '0.35';
+      if (btnRight) btnRight.style.opacity = (hasOverflow && canScrollRight) ? '1' : '0.35';
+    };
+
+    const scrollLeft = () => {
+      track.scrollBy({ left: -Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
+      setTimeout(updateArrows, 350);
+    };
+    const scrollRight = () => {
+      track.scrollBy({ left: Math.max(320, track.clientWidth * 0.75), behavior: 'smooth' });
+      setTimeout(updateArrows, 350);
+    };
 
     if (btnLeft) btnLeft.onclick = scrollLeft;
     if (btnRight) btnRight.onclick = scrollRight;
     if (btnSideLeft) btnSideLeft.onclick = scrollLeft;
     if (btnSideRight) btnSideRight.onclick = scrollRight;
+
+    track.addEventListener('scroll', updateArrows, { passive: true });
+    window.addEventListener('resize', updateArrows, { passive: true });
+    setTimeout(updateArrows, 200);
 
     items.forEach((it, idx) => {
       const card = createVideoCard(it, idx);

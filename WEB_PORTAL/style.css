@@ -5245,7 +5245,16 @@ body.role-cliente #userProfileBtn:hover {
   line-height: 1;
 }
 
-/* Responsividade dos Cards em Tablets e Celulares */
+/* Responsividade dos Cards em Telas Grandes, Tablets e Celulares */
+@media (min-width: 1600px) {
+  .shelf-card {
+    flex: 0 0 165px !important;
+    width: 165px !important;
+    min-width: 165px !important;
+    max-width: 165px !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .shelf-card {
     flex: 0 0 135px !important;
