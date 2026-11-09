@@ -3543,8 +3543,8 @@ body.role-cliente #userProfileBtn:hover {
   }
 
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)) !important;
-    gap: 14px !important; /* 12 a 16px */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 16px !important;
     width: 100% !important;
   }
 
@@ -3619,10 +3619,10 @@ body.role-cliente #userProfileBtn:hover {
     margin: 1.5rem auto 4.5rem;
   }
 
-  /* Grade em Telas Grandes: Auto-fill proporcional entre 145px e 165px, preenchendo a tela perfeitamente de ponta a ponta sem espaços sobrando */
+  /* Grade em Telas Grandes: Auto-fill proporcional entre 200px e 220px, preenchendo a tela perfeitamente de ponta a ponta sem espaços sobrando */
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)) !important;
-    gap: 14px !important;
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)) !important;
+    gap: 16px !important;
     width: 100% !important;
   }
 
@@ -5196,12 +5196,12 @@ body.role-cliente #userProfileBtn:hover {
 
 .shelf-track {
   display: flex;
-  gap: 14px; /* Espaçamento entre 12px e 16px */
+  gap: 16px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding: 0.35rem 0.5rem 0.85rem;
+  padding: 0.5rem 0.5rem 1rem;
   touch-action: pan-x;
 }
 
@@ -5209,15 +5209,15 @@ body.role-cliente #userProfileBtn:hover {
   display: none;
 }
 
-/* Proporção 2:3 e Largura dos Cards (145px a 175px no Desktop) */
+/* Proporção 2:3 e Largura Generosa dos Cards no Desktop (cerca de 215px, mostrando 6 a 8 títulos sem poluição visual) */
 .shelf-card {
-  flex: 0 0 155px !important;
-  width: 155px !important;
-  min-width: 155px !important;
-  max-width: 155px !important;
+  flex: 0 0 215px !important;
+  width: 215px !important;
+  min-width: 215px !important;
+  max-width: 215px !important;
   cursor: pointer;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -5226,7 +5226,7 @@ body.role-cliente #userProfileBtn:hover {
   position: relative !important;
   width: 100% !important;
   aspect-ratio: 2 / 3 !important;
-  border-radius: 8px 8px 0 0 !important;
+  border-radius: 10px 10px 0 0 !important;
   overflow: hidden !important;
   background: #11141c;
 }
@@ -5239,19 +5239,19 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 .shelf-card:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.85);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.9);
 }
 
 .shelf-rank-badge {
   position: absolute;
-  bottom: 6px;
-  left: 8px;
+  bottom: 8px;
+  left: 10px;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.85rem;
   font-weight: 900;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 14px var(--accent-pink);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px var(--accent-pink);
   z-index: 5;
   line-height: 1;
 }
@@ -5259,19 +5259,19 @@ body.role-cliente #userProfileBtn:hover {
 /* Responsividade dos Cards em Tablets e Celulares */
 @media (max-width: 1024px) {
   .shelf-card {
-    flex: 0 0 135px !important;
-    width: 135px !important;
-    min-width: 135px !important;
-    max-width: 135px !important;
+    flex: 0 0 170px !important;
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
   }
 }
 
 @media (max-width: 640px) {
   .shelf-card {
-    flex: 0 0 120px !important;
-    width: 120px !important;
-    min-width: 120px !important;
-    max-width: 120px !important;
+    flex: 0 0 135px !important;
+    width: 135px !important;
+    min-width: 135px !important;
+    max-width: 135px !important;
   }
   .shelf-title {
     font-size: 1.15rem;
