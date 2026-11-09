@@ -4320,13 +4320,15 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 .btn-action-icon.active {
-  background: rgba(234, 179, 8, 0.2);
-  border-color: rgba(234, 179, 8, 0.6);
-  color: #eab308;
+  background: rgba(234, 179, 8, 0.25) !important;
+  border-color: rgba(234, 179, 8, 0.8) !important;
+  color: #fbbf24 !important;
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.4) !important;
 }
 
 .btn-action-icon.active svg {
-  fill: #eab308;
+  fill: #fbbf24 !important;
+  stroke: #fbbf24 !important;
 }
 
 .audio-switch-group {

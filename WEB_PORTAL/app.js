@@ -19,6 +19,7 @@ const state = {
   groupedSeriesList: [],
   activeSeriesContext: null, // { seriesName, episodes: [], currentIndex: 0 }
   activeSeriesGroup: null,
+  activePlayerItem: null, // Conteúdo ativo reproduzido no player (filme, série ou anime)
   // Estado de Animes
   activeAnimeAudio: 'legendado', // 'legendado' | 'dublado'
   activeAnimeContext: null,
@@ -1023,38 +1024,67 @@ function setupEventListeners() {
   dom.btnModalAudioLeg?.addEventListener('click', () => handleAudioSwitch('legendado'));
   dom.btnModalAudioDub?.addEventListener('click', () => handleAudioSwitch('dublado'));
 
-  // Botões de Favoritos
+  // Botões de Favoritos (Player Modal e Modal de Séries/Animes)
   const handleFavoriteToggle = async () => {
-    const ctx = state.activeAnimeContext;
-    if (!ctx || !ctx.details) return;
-    const animeId = ctx.details.id;
-    const username = state.currentUser ? state.currentUser.username : 'Kaynã';
+    let currentItem = state.activePlayerItem;
 
+    if (!currentItem && state.activeAnimeContext && state.activeAnimeContext.details) {
+      const details = state.activeAnimeContext.details;
+      currentItem = {
+        id: details.id,
+        t: details.canonical_title,
+        p: details.poster,
+        catNome: '🌸 Animes',
+        is_anime: true
+      };
+    } else if (!currentItem && state.activeSeriesContext) {
+      currentItem = state.activeSeriesContext;
+    } else if (!currentItem && state.heroItem) {
+      currentItem = state.heroItem;
+    }
+
+    if (!currentItem) {
+      const modalTitle = dom.modalVideoTitle ? dom.modalVideoTitle.textContent.trim() : '';
+      if (modalTitle) {
+        currentItem = {
+          t: modalTitle,
+          catNome: dom.modalCategoryBadge ? dom.modalCategoryBadge.textContent.trim() : 'Destaques'
+        };
+      }
+    }
+
+    if (!currentItem) return;
+
+    // Alternar favorito via MyListManager (persiste por perfil e atualiza telas)
+    const isNowFav = typeof MyListManager !== 'undefined' ? MyListManager.toggle(currentItem) : false;
+
+    // Efeito tátil de pulso no botão da estrela
+    if (dom.btnPlayerFavorite) {
+      dom.btnPlayerFavorite.classList.toggle('active', isNowFav);
+      dom.btnPlayerFavorite.style.transform = 'scale(1.28)';
+      setTimeout(() => {
+        if (dom.btnPlayerFavorite) dom.btnPlayerFavorite.style.transform = '';
+      }, 180);
+    }
+    if (dom.btnSeriesModalFavorite) {
+      dom.btnSeriesModalFavorite.classList.toggle('active', isNowFav);
+    }
+
+    // Sincronização assíncrona opcional com API de favoritos no backend
     try {
-      const resp = await fetch('/api/animes/favorites', {
+      const username = state.currentUser ? state.currentUser.username : 'Kaynã';
+      const cId = (typeof MyListManager !== 'undefined' ? MyListManager.getItemId(currentItem) : (currentItem.id || currentItem.t));
+      fetch('/api/animes/favorites', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           user_id: username,
-          content_id: animeId,
-          title: ctx.details.canonical_title,
-          poster: ctx.details.poster
+          content_id: cId,
+          title: currentItem.t || currentItem.canonical_title,
+          poster: currentItem.p || currentItem.poster || ''
         })
-      });
-      const data = await resp.json();
-      if (data.success) {
-        if (data.is_favorite) {
-          state.userFavorites.add(animeId);
-          showToast(`"${ctx.details.canonical_title}" adicionado aos favoritos! ⭐`);
-        } else {
-          state.userFavorites.delete(animeId);
-          showToast(`Removido dos favoritos.`);
-        }
-        updateFavoriteButtons(animeId);
-      }
-    } catch (e) {
-      console.error('Erro ao alternar favorito:', e);
-    }
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   dom.btnPlayerFavorite?.addEventListener('click', handleFavoriteToggle);
@@ -3358,10 +3388,24 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
     state.activeSeriesContext = null;
   }
 
-  // Rastreamento de histórico (WatchHistory)
+  // Rastreamento de histórico (WatchHistory) e contexto do Player
   const contentId = (itemObj && itemObj.id) ? itemObj.id : (url || title);
   const poster = (itemObj && itemObj.p) ? itemObj.p : '';
   const isAnime = (itemObj && itemObj.is_anime) || (category && category.includes('Anime'));
+
+  state.activePlayerItem = {
+    id: contentId,
+    t: title,
+    catNome: category,
+    u: url,
+    p: poster,
+    is_anime: isAnime,
+    ...itemObj
+  };
+
+  if (typeof MyListManager !== 'undefined') {
+    MyListManager.updateButtons(state.activePlayerItem);
+  }
 
   WatchHistory.startTracking({
     content_id: contentId,
@@ -3797,6 +3841,7 @@ function showPlayerError(message, retryCallback = null) {
 }
 
 function closePlayerModal() {
+  state.activePlayerItem = null;
   stopVideoPlayback();
   if (dom.playerModal) {
     closeModal(dom.playerModal);
@@ -3886,7 +3931,7 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
     [dom.btnModalAudioDub, dom.btnAudioDub].forEach(b => b?.classList.toggle('active', state.activeAnimeAudio === 'dublado'));
   }
 
-  updateFavoriteButtons(animeId);
+  updateFavoriteButtons(animeItem);
   openModal(dom.seriesModal);
 
   try {
@@ -4100,14 +4145,16 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
   dom.modalEpisodeBadge.textContent = `T0${ep.season_number || 1} • EP ${epNumLabel}`;
   dom.modalEpisodeBadge.style.display = 'inline-block';
 
-  // Controles de áudio e fonte no header do player
-  if (dom.playerAnimeControls) {
-    dom.playerAnimeControls.style.display = 'inline-flex';
-    [dom.btnAudioLeg].forEach(b => b?.classList.toggle('active', preferredAudio === 'legendado'));
-    [dom.btnAudioDub].forEach(b => b?.classList.toggle('active', preferredAudio === 'dublado'));
-  }
-
-  updateFavoriteButtons(animeId);
+  state.activePlayerItem = {
+    id: animeId,
+    t: details.canonical_title,
+    p: details.poster || '',
+    catNome: '🌸 Animes',
+    is_anime: true,
+    details: details,
+    currentEpisode: ep
+  };
+  updateFavoriteButtons(state.activePlayerItem);
   openModal(dom.playerModal);
   dom.playerLoading.classList.add('active');
 
@@ -4371,14 +4418,18 @@ function setupAnimePlayerStrip(currentEp, details) {
   });
 }
 
-function updateFavoriteButtons(animeId) {
-  const isFav = state.userFavorites.has(animeId);
-  [dom.btnPlayerFavorite, dom.btnSeriesModalFavorite].forEach(btn => {
-    if (btn) {
-      btn.classList.toggle('active', isFav);
-      btn.title = isFav ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos';
-    }
-  });
+function updateFavoriteButtons(itemOrId) {
+  if (typeof MyListManager !== 'undefined' && MyListManager.updateButtons) {
+    MyListManager.updateButtons(itemOrId);
+  } else {
+    const isFav = state.userFavorites.has(itemOrId);
+    [dom.btnPlayerFavorite, dom.btnSeriesModalFavorite].forEach(btn => {
+      if (btn) {
+        btn.classList.toggle('active', isFav);
+        btn.title = isFav ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos';
+      }
+    });
+  }
 }
 
 
@@ -4482,7 +4533,9 @@ const ProfilesManager = {
 // ---------------------------------------------------------------------
 const MyListManager = {
   getKey() {
-    const p = ProfilesManager.getActiveProfile();
+    const p = (typeof ProfilesManager !== 'undefined' && ProfilesManager.getActiveProfile)
+      ? ProfilesManager.getActiveProfile()
+      : { id: 'p_kayna' };
     return `kcine_mylist_${p.id}`;
   },
 
@@ -4495,31 +4548,59 @@ const MyListManager = {
     }
   },
 
-  has(id) {
-    if (!id) return false;
+  getItemId(item) {
+    if (!item) return null;
+    if (typeof item === 'string') {
+      return item.startsWith('k_') ? item : `k_${item.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}`;
+    }
+    if (item.id) return String(item.id);
+    const rawTitle = item.t || item.canonical_title || item.title || '';
+    return rawTitle ? `k_${rawTitle.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}` : null;
+  },
+
+  has(itemOrId) {
+    if (!itemOrId) return false;
     const list = this.getAll();
-    return list.some(it => String(it.id) === String(id));
+    const targetKey = this.getItemId(itemOrId);
+    const targetTitle = typeof itemOrId === 'object'
+      ? (itemOrId.t || itemOrId.canonical_title || itemOrId.title || '').trim().toLowerCase()
+      : (typeof itemOrId === 'string' ? itemOrId.trim().toLowerCase() : '');
+
+    return list.some(it => {
+      const itId = String(it.id || '');
+      const itTitle = String(it.t || '').trim().toLowerCase();
+      if (targetKey && (itId === targetKey || itId === String(itemOrId))) return true;
+      if (targetTitle && (itTitle === targetTitle || itTitle === targetKey)) return true;
+      return false;
+    });
   },
 
   toggle(item) {
-    if (!item) return;
-    const itemId = item.id || (item.t ? `k_${item.t.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}` : null);
-    if (!itemId) return;
+    if (!item) return false;
+    const rawTitle = item.t || item.canonical_title || item.title || '';
+    const itemId = this.getItemId(item);
+    if (!itemId && !rawTitle) return false;
 
     let list = this.getAll();
-    const exists = list.some(it => String(it.id) === String(itemId));
+    const alreadySaved = this.has(item);
 
-    if (exists) {
-      list = list.filter(it => String(it.id) !== String(itemId));
+    if (alreadySaved) {
+      list = list.filter(it => {
+        const itId = String(it.id || '');
+        const itTitle = String(it.t || '').trim().toLowerCase();
+        if (itemId && itId === itemId) return false;
+        if (rawTitle && itTitle === rawTitle.trim().toLowerCase()) return false;
+        return true;
+      });
       localStorage.setItem(this.getKey(), JSON.stringify(list));
-      showToast('Removido da Minha Lista');
+      showToast('Removido dos Favoritos');
     } else {
       const entry = {
         id: itemId,
-        t: item.t || item.canonical_title || item.title,
-        p: item.p || item.poster,
+        t: rawTitle,
+        p: item.p || item.poster || '',
         catNome: item.catNome || item.category || 'Favoritos',
-        u: item.u || '',
+        u: item.u || item.stream_url || '',
         ano: item.ano || item.year || 2024,
         is_anime: !!item.is_anime,
         isGroup: !!item.isGroup,
@@ -4529,20 +4610,21 @@ const MyListManager = {
       };
       list.unshift(entry);
       localStorage.setItem(this.getKey(), JSON.stringify(list));
-      showToast('Adicionado à Minha Lista!');
+      showToast(`"${rawTitle}" adicionado aos favoritos! ⭐`);
     }
 
-    this.updateButtons(itemId);
+    this.updateButtons(item);
     if (state.activeType === 'minha-lista') {
       this.renderView();
     }
-    if (state.activeType === 'todos') {
+    if (state.activeType === 'todos' && typeof HomeShelvesManager !== 'undefined') {
       HomeShelvesManager.render();
     }
+    return !alreadySaved;
   },
 
-  updateButtons(itemId) {
-    const isSaved = this.has(itemId);
+  updateButtons(itemOrId) {
+    const isSaved = this.has(itemOrId);
     if (dom.btnHeroMyList) {
       dom.btnHeroMyList.classList.toggle('active', isSaved);
       dom.btnHeroMyList.innerHTML = isSaved
@@ -4555,6 +4637,13 @@ const MyListManager = {
         ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Salvo</span>'
         : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> <span>Minha Lista</span>';
     }
+    [dom.btnPlayerFavorite, dom.btnSeriesModalFavorite].forEach(btn => {
+      if (btn) {
+        btn.classList.toggle('active', isSaved);
+        btn.title = isSaved ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos';
+        btn.setAttribute('aria-pressed', isSaved ? 'true' : 'false');
+      }
+    });
   },
 
   renderView() {
