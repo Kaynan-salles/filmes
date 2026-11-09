@@ -1076,9 +1076,9 @@ img, video, iframe, canvas, svg {
   font-weight: 700;
 }
 
-.catalog-filters {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
+.catalog-filters,
+#itemsFoundText {
+  display: none !important;
 }
 
 /* Cards Grid - Mobile First: 2 Colunas lado a lado */

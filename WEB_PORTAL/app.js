@@ -516,11 +516,11 @@ function loadHistoryView() {
         <p style="color: #64748b; font-size: 0.95rem;">Assista animes, filmes ou séries para acompanhar o progresso de onde parou!</p>
       </div>
     `;
-    dom.itemsFoundText.textContent = '0 títulos no histórico';
+    if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
     return;
   }
 
-  dom.itemsFoundText.textContent = `${history.length} título(s) no seu histórico de reprodução`;
+  if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
 
   const fragment = document.createDocumentFragment();
   history.forEach((item, idx) => {
@@ -2047,13 +2047,12 @@ function updateHeroItem(item) {
   if (heroDuration) {
     if (item.duracao || item.duration) {
       heroDuration.textContent = item.duracao || item.duration;
-    } else if (item.total_temporadas || item.totalSeasons) {
-      const s = item.total_temporadas || item.totalSeasons;
-      heroDuration.textContent = `${s} Temporada${s > 1 ? 's' : ''}`;
-    } else if (item.total_episodios || item.totalEpisodes) {
-      heroDuration.textContent = `${item.total_episodios || item.totalEpisodes} Episódios`;
+    } else if (item.isGroup || (item.catNome && item.catNome.includes('Séries'))) {
+      heroDuration.textContent = 'Série';
+    } else if (item.is_anime || (item.id && String(item.id).startsWith('ani_'))) {
+      heroDuration.textContent = 'Anime';
     } else {
-      heroDuration.textContent = '2h 05m';
+      heroDuration.textContent = 'HD / 4K';
     }
   }
 
@@ -2458,7 +2457,7 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
 
     if (!animesList.length) {
       dom.cardsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #94a3b8;">Nenhum anime encontrado no catálogo.</div>';
-      dom.itemsFoundText.textContent = '0 animes encontrados';
+      if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
       if (dom.catalogPaginationContainer) dom.catalogPaginationContainer.style.display = 'none';
       state.animePagination.isLoading = false;
       return;
@@ -2502,8 +2501,7 @@ async function loadAnimesPage(page = 1, search = '', genre = '', sort = 'latest'
     });
     dom.cardsGrid.appendChild(fragment);
 
-    const totalCount = data.total_count || data.total_items || animesList.length;
-    dom.itemsFoundText.textContent = `${totalCount} animes no catálogo (Página ${state.animePagination.page} de ${state.animePagination.totalPages} • ${animesList.length} cards no DOM)`;
+    if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
 
     // Renderiza a barra de navegação de páginas sem acumular cards no DOM
     renderCatalogPagination(state.animePagination.page, state.animePagination.totalPages);
@@ -2693,14 +2691,8 @@ function refreshCatalogDisplay() {
   dom.cardsGrid.innerHTML = '';
   renderNextBatch();
 
-  if (isAnimesMode) {
-    const totalEps = state.rawItems.reduce((acc, it) => acc + (it.total_episodios || it.episodes_count || 0), 0);
-    dom.itemsFoundText.textContent = `${state.rawItems.length} animes disponíveis (${totalEps.toLocaleString()} episódios no catálogo)`;
-  } else if (state.seriesViewMode === 'grouped') {
-    const groupCount = state.currentItems.filter(it => it.isGroup).length;
-    dom.itemsFoundText.textContent = `${groupCount} séries agrupadas (${state.rawItems.length.toLocaleString()} episódios no total)`;
-  } else {
-    dom.itemsFoundText.textContent = `${state.currentItems.length.toLocaleString()} títulos disponíveis`;
+  if (dom.itemsFoundText) {
+    dom.itemsFoundText.textContent = '';
   }
 }
 
@@ -2990,7 +2982,7 @@ function createSeriesGroupCard(group, index) {
   card.innerHTML = `
     <div class="card-poster">
       <img src="${posterUrl}" alt="${escapeHtml(group.seriesName)}" loading="lazy" onerror="this.src='${FALLBACK_POSTER}'">
-      <span class="card-badge group-badge">${group.totalEpisodes} EPISÓDIOS</span>
+      <span class="card-badge group-badge">SÉRIE</span>
       <span class="card-rating-badge"><span class="star-icon">★</span> <span>${rating.toFixed(1)}</span></span>
       <div class="card-play-overlay">
         <div class="play-circle" title="Ver Episódios">
@@ -3001,14 +2993,10 @@ function createSeriesGroupCard(group, index) {
       </div>
     </div>
     <div class="card-body">
-      <div class="card-chapter-pill">
-        <span class="pill-dot"></span>
-        <span>${group.totalSeasons} Temporada${group.totalSeasons > 1 ? 's' : ''}</span>
-      </div>
       <h4 class="card-title" title="${escapeHtml(group.seriesName)}">${escapeHtml(group.seriesName)}</h4>
       <span class="card-category">${escapeHtml(categoryName)}</span>
       <div class="card-actions">
-        <button class="btn-card-action btn-view-series" title="Explorar todos os episódios">
+        <button class="btn-card-action btn-view-series" title="Explorar episódios">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="8" y1="6" x2="21" y2="6"></line>
             <line x1="8" y1="12" x2="21" y2="12"></line>
@@ -3062,21 +3050,17 @@ function createVideoCard(item, index) {
   const isAnimeSeries = isAnime && (item.total_episodios > 1 || !item.u || item.u.includes('/api/animes/resolve'));
   const rating = getMediaRating(item);
 
-  // Se for anime, série ou episódio, exibe badge contextual
+  // Sem contadores ou quantidades nos selos
   let badgeHtml;
   if (isAnime) {
     badgeHtml = `<span class="card-badge anime-badge">🌸 ANIME</span>`;
-  } else if (epInfo.isEpisode) {
-    badgeHtml = `<span class="card-badge series-badge">${epInfo.badge}</span>`;
+  } else if (epInfo.isEpisode || (item.catNome && item.catNome.includes('Séries'))) {
+    badgeHtml = `<span class="card-badge series-badge">SÉRIE</span>`;
   } else {
     badgeHtml = `<span class="card-badge">HD / 4K</span>`;
   }
 
-  const chapterPillHtml = isAnime
-    ? `<div class="card-chapter-pill"><span class="pill-dot"></span><span>${item.total_episodios ? item.total_episodios + ' Episódios' : 'Temporada Completa'}</span></div>`
-    : (epInfo.isEpisode
-      ? `<div class="card-chapter-pill"><span class="pill-dot"></span><span>${escapeHtml(epInfo.seasonLabel || epInfo.label)}</span></div>`
-      : '');
+  const chapterPillHtml = '';
 
   const displayTitle = epInfo.isEpisode ? epInfo.seriesName : item.t;
   const savedWatch = item.historyItem || (item.id ? WatchHistory.get(item.id) : null);
@@ -3272,12 +3256,12 @@ function displaySearchResults(results, query) {
         <p style="color: #64748b;">Tente buscar por termos mais simples como "Matrix", "Vingadores", "Stranger" ou "Batman".</p>
       </div>
     `;
-    dom.itemsFoundText.textContent = `0 títulos encontrados`;
+    if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
     return;
   }
 
   refreshCatalogDisplay();
-  dom.itemsFoundText.textContent = `${results.length.toLocaleString()} títulos encontrados`;
+  if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
 }
 
 // =====================================================================
@@ -3592,8 +3576,8 @@ function openSeriesModal(seriesGroup) {
   dom.seriesModalPoster.onerror = () => { dom.seriesModalPoster.src = FALLBACK_POSTER; };
   dom.seriesModalTitle.textContent = seriesGroup.seriesName;
   dom.seriesModalCategory.textContent = seriesGroup.catNome || 'SÉRIE';
-  dom.seriesModalTotalEpisodes.textContent = `${seriesGroup.totalEpisodes} episódios`;
-  dom.seriesModalTotalSeasons.textContent = `${seriesGroup.totalSeasons} temporada${seriesGroup.totalSeasons > 1 ? 's' : ''}`;
+  dom.seriesModalTotalEpisodes.textContent = 'Episódios';
+  dom.seriesModalTotalSeasons.textContent = 'Série';
 
   const rating = getMediaRating(seriesGroup);
   let ratingEl = document.getElementById('seriesModalRating');
@@ -3838,8 +3822,8 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
   dom.seriesModalPoster.src = animeItem.p || FALLBACK_POSTER;
   dom.seriesModalTitle.textContent = animeItem.t;
   dom.seriesModalCategory.textContent = '🌸 ANIME OFICIAL';
-  dom.seriesModalTotalEpisodes.textContent = 'Carregando episódios...';
-  dom.seriesModalTotalSeasons.textContent = 'Carregando...';
+  dom.seriesModalTotalEpisodes.textContent = 'Episódios';
+  dom.seriesModalTotalSeasons.textContent = 'Anime';
 
   const rating = getMediaRating(animeItem);
   let ratingEl = document.getElementById('seriesModalRating');
@@ -3909,8 +3893,8 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
     dom.seriesModalTitle.textContent = details.canonical_title;
     const totEps = details.total_episodes || (details.seasons ? details.seasons.reduce((acc, s) => acc + (s.episodes ? s.episodes.length : 0), 0) : 0);
     const totSeas = details.total_seasons || (details.seasons ? details.seasons.length : 1);
-    dom.seriesModalTotalEpisodes.textContent = `${totEps} episódios`;
-    dom.seriesModalTotalSeasons.textContent = `${totSeas} temporada${totSeas > 1 ? 's' : ''}`;
+    dom.seriesModalTotalEpisodes.textContent = 'Episódios';
+    dom.seriesModalTotalSeasons.textContent = 'Anime';
 
     renderAnimeSeasons(details);
 
@@ -4542,7 +4526,7 @@ const MyListManager = {
     dom.cardsGrid.innerHTML = '';
 
     dom.currentViewTitle.textContent = "Minha Lista";
-    dom.activeCategoryTitle.textContent = `Títulos Salvos (${items.length})`;
+    dom.activeCategoryTitle.textContent = "Títulos Salvos";
 
     if (!items.length) {
       dom.cardsGrid.innerHTML = `
@@ -4557,11 +4541,11 @@ const MyListManager = {
           </button>
         </div>
       `;
-      dom.itemsFoundText.textContent = '0 títulos na Minha Lista';
+      if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
       return;
     }
 
-    dom.itemsFoundText.textContent = `${items.length} título(s) salvos no perfil ativo`;
+    if (dom.itemsFoundText) dom.itemsFoundText.textContent = '';
 
     const fragment = document.createDocumentFragment();
     items.forEach((it, idx) => {
@@ -4860,15 +4844,13 @@ function openContentDetailsModal(item) {
     dom.detailsYear.textContent = year;
   }
 
-  const seasonsCount = item.totalSeasons || item.total_temporadas || (item.seasons ? item.seasons.length : 1);
-  const epsCount = item.totalEpisodes || item.total_episodios || 0;
   if (dom.detailsDurationOrSeasons) {
-    if (isSeries || isAnime) {
-      dom.detailsDurationOrSeasons.textContent = epsCount > 0
-        ? `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''} • ${epsCount} Episódio${epsCount > 1 ? 's' : ''}`
-        : `${seasonsCount} Temporada${seasonsCount > 1 ? 's' : ''}`;
+    if (isSeries) {
+      dom.detailsDurationOrSeasons.textContent = 'Série';
+    } else if (isAnime) {
+      dom.detailsDurationOrSeasons.textContent = 'Anime';
     } else {
-      dom.detailsDurationOrSeasons.textContent = item.duracao || item.duration || '2h 05m';
+      dom.detailsDurationOrSeasons.textContent = item.duracao || item.duration || 'HD / 4K';
     }
   }
 
