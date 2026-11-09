@@ -867,7 +867,7 @@ function setupEventListeners() {
   if (dom.btnCloseNotifications) {
     dom.btnCloseNotifications.addEventListener('click', (e) => {
       e.stopPropagation();
-      if (dom.notificationsDropdown) dom.notificationsDropdown.style.display = 'none';
+      NotificationsManager.close();
     });
   }
 
@@ -905,8 +905,8 @@ function setupEventListeners() {
     if (dom.profileDropdownMenu && !dom.profileDropdownMenu.contains(e.target) && !dom.userProfileBtn?.contains(e.target)) {
       dom.profileDropdownMenu.style.display = 'none';
     }
-    if (dom.notificationsDropdown && !dom.notificationsDropdown.contains(e.target) && !dom.btnNotifications?.contains(e.target)) {
-      dom.notificationsDropdown.style.display = 'none';
+    if (dom.notificationsDropdown && dom.notificationsDropdown.style.display !== 'none' && !dom.notificationsDropdown.contains(e.target) && !dom.btnNotifications?.contains(e.target)) {
+      NotificationsManager.close();
     }
     if (dom.searchSuggestionsDropdown && !dom.searchSuggestionsDropdown.contains(e.target) && e.target !== dom.searchInput) {
       dom.searchSuggestionsDropdown.style.display = 'none';
@@ -916,9 +916,16 @@ function setupEventListeners() {
   // Fechar notificações com tecla Esc
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      if (dom.notificationsDropdown && dom.notificationsDropdown.style.display === 'block') {
-        dom.notificationsDropdown.style.display = 'none';
+      NotificationsManager.close();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 767 && dom.notificationsDropdown && dom.notificationsDropdown.parentElement === document.body) {
+      if (dom.notificationsWrapper) {
+        dom.notificationsWrapper.appendChild(dom.notificationsDropdown);
       }
+      NotificationsManager.close();
     }
   });
 
@@ -4507,7 +4514,6 @@ const ProfilesManager = {
     }
 
     this.closeModal();
-    showToast(`Perfil alterado para: ${profile.name}`);
 
     // Re-renderiza views com base no perfil ativo
     renderContinueWatching();
@@ -4732,9 +4738,34 @@ const NotificationsManager = {
 
   toggleDropdown() {
     if (!dom.notificationsDropdown) return;
-    const isShown = dom.notificationsDropdown.style.display === 'block';
-    dom.notificationsDropdown.style.display = isShown ? 'none' : 'block';
-    if (!isShown) this.renderList();
+    const isShown = dom.notificationsDropdown.style.display === 'flex' || dom.notificationsDropdown.style.display === 'block';
+
+    if (isShown) {
+      this.close();
+      return;
+    }
+
+    const isMobile = window.innerWidth <= 767;
+    if (isMobile) {
+      if (dom.notificationsDropdown.parentElement !== document.body) {
+        document.body.appendChild(dom.notificationsDropdown);
+      }
+      dom.notificationsDropdown.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    } else {
+      if (dom.notificationsWrapper && dom.notificationsDropdown.parentElement !== dom.notificationsWrapper) {
+        dom.notificationsWrapper.appendChild(dom.notificationsDropdown);
+      }
+      dom.notificationsDropdown.style.display = 'block';
+    }
+
+    this.renderList();
+  },
+
+  close() {
+    if (!dom.notificationsDropdown) return;
+    dom.notificationsDropdown.style.display = 'none';
+    document.body.style.overflow = '';
   },
 
   markAllAsRead() {

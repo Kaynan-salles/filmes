@@ -3372,31 +3372,62 @@ body.role-cliente #userProfileBtn:hover {
     width: min(92vw, 380px) !important;
     max-width: 380px !important;
     max-height: 80vh !important;
-    background: rgba(14, 17, 24, 0.98) !important;
-    backdrop-filter: blur(28px) !important;
-    -webkit-backdrop-filter: blur(28px) !important;
+    background: #0f131c !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
     border-radius: 18px !important;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 0 100vmax rgba(0, 0, 0, 0.72) !important;
-    z-index: 2500 !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 0 100vmax rgba(0, 0, 0, 0.75) !important;
+    z-index: 99999 !important;
     overflow: hidden !important;
-    animation: modalScaleIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: none;
+    flex-direction: column !important;
+    animation: notifMobileModalIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
   }
 
   .notifications-header {
-    padding: 0.9rem 1.15rem !important;
-    background: rgba(255, 255, 255, 0.03) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.95rem 1.15rem !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    flex-shrink: 0 !important;
   }
 
   .notifications-header h4 {
     font-size: 0.95rem !important;
     font-weight: 700 !important;
     color: #fff !important;
+    margin: 0 !important;
+  }
+
+  .notifications-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .btn-close-notif {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    border-radius: 50% !important;
+    font-size: 1.1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    line-height: 1 !important;
   }
 
   .notifications-list {
     max-height: calc(80vh - 65px) !important;
     padding: 0.25rem 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
 
   .notification-item {
@@ -3421,7 +3452,7 @@ body.role-cliente #userProfileBtn:hover {
   }
 }
 
-@keyframes modalScaleIn {
+@keyframes notifMobileModalIn {
   from {
     opacity: 0;
     transform: translate(-50%, -46%) scale(0.95);
