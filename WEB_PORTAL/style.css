@@ -445,20 +445,43 @@ img, video, iframe, canvas, svg {
 
 .hero-backdrop {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: -25px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
   background-size: cover;
-  background-position: center 25%;
-  filter: brightness(0.72) contrast(1.08);
-  transform: scale(1.02);
+  background-position: center center;
+  filter: blur(45px) brightness(0.28) saturate(1.4);
+  transform: scale(1.1);
   transition: opacity 0.5s ease;
   z-index: 0;
   opacity: 1;
 }
 
+/* Camada nítida de exibição da foto/pôster em proporção natural sem cortes de rostos */
+.hero-backdrop-showcase {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 5%;
+  width: 500px;
+  max-width: 46%;
+  height: calc(100% - 30px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 42%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 42%);
+  filter: drop-shadow(0 14px 35px rgba(0, 0, 0, 0.9));
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
 .hero-backdrop.is-hidden,
-.hero-section.has-video-playing .hero-backdrop {
+.hero-backdrop-showcase.is-hidden,
+.hero-section.has-video-playing .hero-backdrop,
+.hero-section.has-video-playing .hero-backdrop-showcase {
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
@@ -1130,6 +1153,7 @@ img, video, iframe, canvas, svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top; /* Garante que cabeças e títulos no topo dos pôsteres nunca sejam cortados */
   transition: transform 0.4s ease;
 }
 
@@ -3139,6 +3163,95 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 /* =====================================================================
+   HERO BANNER - MOBILE (< 768px): Exibe foto do filme sem cortes no topo
+   ===================================================================== */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 480px;
+    height: auto;
+    padding: 1.25rem 1rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-backdrop-showcase {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+    width: 210px;
+    max-width: 65%;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 1;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.95));
+    border-radius: 10px;
+    -webkit-mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 5;
+    margin-top: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-meta {
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .hero-desc {
+    font-size: 0.8125rem !important;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0.85rem;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    height: 38px !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+    font-size: 0.8125rem !important;
+    padding: 0 0.85rem !important;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(to top, #0a0b0e 45%, rgba(10, 11, 14, 0.72) 75%, rgba(10, 11, 14, 0.25) 100%);
+  }
+}
+
+/* =====================================================================
    4. BREAKPOINT: TABLETS (@media (min-width: 768px))
    ===================================================================== */
 @media (min-width: 768px) {
@@ -3262,9 +3375,38 @@ body.role-cliente #userProfileBtn:hover {
     align-items: flex-end;
   }
 
+  .hero-backdrop-showcase {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 4%;
+    width: 340px;
+    max-width: 42%;
+    height: calc(100% - 30px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 45%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 45%);
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.88));
+  }
+
+  .hero-content {
+    max-width: 56%;
+    text-align: left;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .hero-meta {
+    justify-content: flex-start;
+  }
+
   .hero-buttons {
     width: auto;
     flex-direction: row;
+    justify-content: flex-start;
   }
 
   /* Stats Bar: 4 colunas em tablets ou 2 expandidas */
@@ -3498,6 +3640,38 @@ body.role-cliente #userProfileBtn:hover {
     max-height: 500px;
     padding: 2.5rem 3.5rem 2.25rem;
     align-items: flex-end;
+  }
+
+  .hero-backdrop-showcase {
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    right: 5%;
+    width: 480px;
+    max-width: 45%;
+    height: calc(100% - 36px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 42%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 15%, black 42%);
+    filter: drop-shadow(0 14px 35px rgba(0, 0, 0, 0.9));
+  }
+
+  .hero-content {
+    max-width: 52%;
+    text-align: left;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .hero-meta {
+    justify-content: flex-start;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
   }
 
   .hero-overlay {
@@ -5235,6 +5409,7 @@ body.role-cliente #userProfileBtn:hover {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+  object-position: center top !important; /* Protege rostos e cabeças de cortes */
   display: block !important;
 }
 
@@ -5342,7 +5517,7 @@ body.role-cliente #userProfileBtn:hover {
   position: absolute !important;
   inset: 0 !important;
   background-size: cover !important;
-  background-position: center 25% !important;
+  background-position: center top !important; /* Top-aligned para manter rostos e cabeças visíveis */
   filter: brightness(0.7) contrast(1.05) !important;
   transform: scale(1.02);
 }

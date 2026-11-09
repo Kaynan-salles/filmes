@@ -83,6 +83,7 @@ const dom = {
   // Hero Banner
   heroBanner: document.getElementById('heroBanner'),
   heroBackdrop: document.getElementById('heroBackdrop'),
+  heroBackdropShowcase: document.getElementById('heroBackdropShowcase'),
   heroVideo: document.getElementById('heroVideo'),
   heroRatingBadge: document.getElementById('heroRatingBadge'),
   heroTitle: document.getElementById('heroTitle'),
@@ -2127,9 +2128,16 @@ function updateHeroItem(item) {
   }
 
   // Fundo de pôster estático de base (visível apenas enquanto o vídeo carrega)
-  dom.heroBackdrop.style.backgroundImage = `url('${item.p || FALLBACK_POSTER}')`;
+  const posterUrl = item.p || FALLBACK_POSTER;
+  if (dom.heroBackdrop) {
+    dom.heroBackdrop.style.backgroundImage = `url('${posterUrl}')`;
+    dom.heroBackdrop.classList.remove('is-hidden');
+  }
+  if (dom.heroBackdropShowcase) {
+    dom.heroBackdropShowcase.style.backgroundImage = `url('${posterUrl}')`;
+    dom.heroBackdropShowcase.classList.remove('is-hidden');
+  }
   if (dom.heroBanner) dom.heroBanner.classList.remove('has-video-playing');
-  if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
   dom.heroVideo.classList.remove('is-playing');
 
   // Sinopse concisa: somente se for real e válida, sem textos genéricos inventados
@@ -2181,6 +2189,7 @@ function playHeroBackgroundVideo(item) {
     dom.heroVideo.classList.remove('is-playing');
     if (dom.heroBanner) dom.heroBanner.classList.remove('has-video-playing');
     if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
+    if (dom.heroBackdropShowcase) dom.heroBackdropShowcase.classList.remove('is-hidden');
   };
 
   if (!rawUrl) {
@@ -2258,6 +2267,7 @@ function playHeroBackgroundVideo(item) {
     // Esconde completamente o papel de parede estático com a capa para não vazar nem sobrepor ao vídeo
     if (dom.heroBanner) dom.heroBanner.classList.add('has-video-playing');
     if (dom.heroBackdrop) dom.heroBackdrop.classList.add('is-hidden');
+    if (dom.heroBackdropShowcase) dom.heroBackdropShowcase.classList.add('is-hidden');
   };
 
   dom.heroVideo.onerror = () => {
