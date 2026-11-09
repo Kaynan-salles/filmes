@@ -2039,26 +2039,61 @@ function updateHeroItem(item) {
   }
   if (dom.heroCategory) dom.heroCategory.textContent = item.catNome || '';
 
-  // Metadados reais: Ano, Duração / Temporadas, Classificação Indicativa
+  // Metadados reais: Ano, Duração / Temporadas, Classificação Indicativa (sem invenções genéricas)
   const heroYear = document.getElementById('heroYear');
-  if (heroYear) heroYear.textContent = item.ano || item.year || 2024;
-
+  const heroDotYear = document.getElementById('heroDotYear');
   const heroDuration = document.getElementById('heroDuration');
-  if (heroDuration) {
-    if (item.duracao || item.duration) {
-      heroDuration.textContent = item.duracao || item.duration;
-    } else if (item.isGroup || (item.catNome && item.catNome.includes('Séries'))) {
-      heroDuration.textContent = 'Série';
-    } else if (item.is_anime || (item.id && String(item.id).startsWith('ani_'))) {
-      heroDuration.textContent = 'Anime';
+  const heroDotDuration = document.getElementById('heroDotDuration');
+  const heroAge = document.getElementById('heroAge');
+
+  const hasYear = !!(item.ano || item.year);
+  if (heroYear) {
+    if (hasYear) {
+      heroYear.textContent = item.ano || item.year;
+      heroYear.style.display = 'inline-flex';
     } else {
-      heroDuration.textContent = 'HD / 4K';
+      heroYear.textContent = '';
+      heroYear.style.display = 'none';
     }
   }
 
-  const heroAge = document.getElementById('heroAge');
+  let durationText = '';
+  if (item.duracao || item.duration) {
+    durationText = item.duracao || item.duration;
+  } else if (item.temporadas) {
+    durationText = `${item.temporadas} Temporada${item.temporadas > 1 ? 's' : ''}`;
+  } else if (item.isGroup || (item.catNome && item.catNome.includes('Séries'))) {
+    durationText = 'Série';
+  } else if (item.is_anime || (item.id && String(item.id).startsWith('ani_'))) {
+    durationText = 'Anime';
+  }
+
+  if (heroDuration) {
+    if (durationText) {
+      heroDuration.textContent = durationText;
+      heroDuration.style.display = 'inline-flex';
+    } else {
+      heroDuration.textContent = '';
+      heroDuration.style.display = 'none';
+    }
+  }
+
+  const hasAge = !!(item.age || item.classificacao);
   if (heroAge) {
-    heroAge.textContent = item.age || item.classificacao || '14+';
+    if (hasAge) {
+      heroAge.textContent = item.age || item.classificacao;
+      heroAge.style.display = 'inline-flex';
+    } else {
+      heroAge.textContent = '';
+      heroAge.style.display = 'none';
+    }
+  }
+
+  if (heroDotYear) {
+    heroDotYear.style.display = (hasYear && (durationText || hasAge)) ? 'inline' : 'none';
+  }
+  if (heroDotDuration) {
+    heroDotDuration.style.display = (durationText && hasAge) ? 'inline' : 'none';
   }
 
   // Fundo de pôster estático de base (visível apenas enquanto o vídeo carrega)
@@ -2067,13 +2102,18 @@ function updateHeroItem(item) {
   if (dom.heroBackdrop) dom.heroBackdrop.classList.remove('is-hidden');
   dom.heroVideo.classList.remove('is-playing');
 
-  // Sinopse concisa e cinematográfica (2 a 3 linhas)
+  // Sinopse concisa: somente se for real e válida, sem textos genéricos inventados
   if (dom.heroDesc) {
-    const rawSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora"))
-      ? item.sinopse
-      : `Em ${item.t}, acompanhe uma trama envolvente com produção de alto nível, reviravoltas cinematográficas e momentos inesquecíveis. Assista agora em 4K e HD no K-CINE.`;
-    dom.heroDesc.textContent = rawSinopse;
-    dom.heroDesc.style.display = '-webkit-box';
+    const rawSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora") && !item.sinopse.includes("trama envolvente"))
+      ? item.sinopse.trim()
+      : (item.synopsis && item.synopsis.trim() && !item.synopsis.includes("trama envolvente") ? item.synopsis.trim() : '');
+    if (rawSinopse) {
+      dom.heroDesc.textContent = rawSinopse;
+      dom.heroDesc.style.display = '-webkit-box';
+    } else {
+      dom.heroDesc.textContent = '';
+      dom.heroDesc.style.display = 'none';
+    }
   }
 
   if (dom.btnHeroPlay) {
@@ -4845,17 +4885,33 @@ function openContentDetailsModal(item) {
   }
 
   if (dom.detailsDurationOrSeasons) {
+    let durText = '';
     if (isSeries) {
-      dom.detailsDurationOrSeasons.textContent = 'Série';
+      durText = item.temporadas ? `${item.temporadas} Temporada${item.temporadas > 1 ? 's' : ''}` : 'Série';
     } else if (isAnime) {
-      dom.detailsDurationOrSeasons.textContent = 'Anime';
+      durText = item.temporadas ? `${item.temporadas} Temporada${item.temporadas > 1 ? 's' : ''}` : 'Anime';
+    } else if (item.duracao || item.duration) {
+      durText = item.duracao || item.duration;
+    }
+    if (durText) {
+      dom.detailsDurationOrSeasons.textContent = durText;
+      dom.detailsDurationOrSeasons.style.display = 'inline';
+      if (dom.detailsDurationDot) dom.detailsDurationDot.style.display = 'inline';
     } else {
-      dom.detailsDurationOrSeasons.textContent = item.duracao || item.duration || 'HD / 4K';
+      dom.detailsDurationOrSeasons.textContent = '';
+      dom.detailsDurationOrSeasons.style.display = 'none';
+      if (dom.detailsDurationDot) dom.detailsDurationDot.style.display = 'none';
     }
   }
 
   if (dom.detailsAgeRating) {
-    dom.detailsAgeRating.textContent = item.age || item.classificacao || '14+';
+    if (item.age || item.classificacao) {
+      dom.detailsAgeRating.textContent = item.age || item.classificacao;
+      dom.detailsAgeRating.style.display = 'inline-block';
+    } else {
+      dom.detailsAgeRating.textContent = '';
+      dom.detailsAgeRating.style.display = 'none';
+    }
   }
 
   // 5. Gêneros Reais
@@ -4878,14 +4934,20 @@ function openContentDetailsModal(item) {
     }
   }
 
-  // 6. Sinopse Verdadeira do Conteúdo
+  // 6. Sinopse Verdadeira do Conteúdo (sem marketing genérico inventado)
   if (dom.detailsSynopsis) {
-    const cleanSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora no K-CINE"))
-      ? item.sinopse
-      : (item.synopsis && item.synopsis.trim()
-        ? item.synopsis
-        : `${escapeHtml(rawTitle)} está disponível para assistir em alta definição no catálogo K-CINE.`);
-    dom.detailsSynopsis.textContent = cleanSinopse;
+    const cleanSinopse = (item.sinopse && item.sinopse.trim() && !item.sinopse.includes("Assista agora no K-CINE") && !item.sinopse.includes("trama envolvente"))
+      ? item.sinopse.trim()
+      : (item.synopsis && item.synopsis.trim() && !item.synopsis.includes("trama envolvente")
+        ? item.synopsis.trim()
+        : '');
+    if (cleanSinopse) {
+      dom.detailsSynopsis.textContent = cleanSinopse;
+      dom.detailsSynopsis.style.display = 'block';
+    } else {
+      dom.detailsSynopsis.textContent = '';
+      dom.detailsSynopsis.style.display = 'none';
+    }
   }
 
   // 7. Botão Ver Episódios (Exclusivo para Séries e Animes)

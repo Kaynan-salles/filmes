@@ -177,12 +177,7 @@ img, video, iframe, canvas, svg {
 }
 
 .brand-badge {
-  font-size: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--accent-cyan);
-  text-transform: uppercase;
-  white-space: nowrap;
+  display: none !important;
 }
 
 /* Área de Usuário / Acesso no Header */
@@ -3548,8 +3543,15 @@ body.role-cliente #userProfileBtn:hover {
   }
 
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-    gap: 14px; /* 12 a 16px */
+    grid-template-columns: repeat(auto-fill, 155px) !important;
+    gap: 14px !important; /* 12 a 16px */
+    justify-content: start !important;
+  }
+
+  .video-card {
+    width: 155px !important;
+    max-width: 155px !important;
+    min-width: 155px !important;
   }
 
   .card-body {
@@ -3617,10 +3619,17 @@ body.role-cliente #userProfileBtn:hover {
     margin: 1.5rem auto 4.5rem;
   }
 
-  /* Grade em Telas Grandes: Auto-fill proporcional para preencher a tela perfeitamente sem sobrar espaço */
+  /* Grade em Telas Grandes: Padronizada exatamente no mesmo tamanho dos carrosséis (155px) */
   .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
-    gap: 1.125rem;
+    grid-template-columns: repeat(auto-fill, 155px) !important;
+    gap: 14px !important;
+    justify-content: start !important;
+  }
+
+  .video-card {
+    width: 155px !important;
+    max-width: 155px !important;
+    min-width: 155px !important;
   }
 
   .card-body {
@@ -5245,16 +5254,7 @@ body.role-cliente #userProfileBtn:hover {
   line-height: 1;
 }
 
-/* Responsividade dos Cards em Telas Grandes, Tablets e Celulares */
-@media (min-width: 1600px) {
-  .shelf-card {
-    flex: 0 0 165px !important;
-    width: 165px !important;
-    min-width: 165px !important;
-    max-width: 165px !important;
-  }
-}
-
+/* Responsividade dos Cards em Tablets e Celulares */
 @media (max-width: 1024px) {
   .shelf-card {
     flex: 0 0 135px !important;

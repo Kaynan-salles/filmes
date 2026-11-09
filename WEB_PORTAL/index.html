@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>K-CINE</title>
   <meta name="description" content="K-CINE - Portal Oficial de Filmes, Séries e Animes em Alta Definição.">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=56">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=56">
-  <link rel="alternate icon" href="favicon.ico?v=56">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=56">
-  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=56">
-  <link rel="manifest" href="manifest.json?v=56">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/kcine-favicon.png?v=57">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kcine-app-192.png?v=57">
+  <link rel="alternate icon" href="favicon.ico?v=57">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/kcine-app-180.png?v=57">
+  <link rel="apple-touch-icon-precomposed" href="icons/kcine-app-180.png?v=57">
+  <link rel="manifest" href="manifest.json?v=57">
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=56">
+  <link rel="stylesheet" href="style.css?v=57">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -121,7 +121,6 @@
         </div>
         <div class="brand-text">
           <span class="brand-title">K-CINE</span>
-          <span class="brand-badge">CANAL HD & 4K</span>
         </div>
       </div>
 
@@ -228,12 +227,12 @@
     <div class="hero-content">
       <div class="hero-meta">
         <span class="hero-badge" id="heroBadge">🔥 LANÇAMENTO EM ALTA</span>
-        <span class="hero-rating-badge" id="heroRatingBadge"><span class="star-icon">★</span> 9.6</span>
-        <span class="hero-meta-item" id="heroYear">2024</span>
-        <span class="hero-meta-dot">•</span>
-        <span class="hero-meta-item" id="heroDuration">2h 15m</span>
-        <span class="hero-meta-dot">•</span>
-        <span class="hero-meta-badge-age" id="heroAge">14+</span>
+        <span class="hero-rating-badge" id="heroRatingBadge"><span class="star-icon">★</span> 9.0</span>
+        <span class="hero-meta-item" id="heroYear" style="display: none;"></span>
+        <span class="hero-meta-dot" id="heroDotYear" style="display: none;">•</span>
+        <span class="hero-meta-item" id="heroDuration" style="display: none;"></span>
+        <span class="hero-meta-dot" id="heroDotDuration" style="display: none;">•</span>
+        <span class="hero-meta-badge-age" id="heroAge" style="display: none;"></span>
       </div>
       <h1 class="hero-title" id="heroTitle">Carregando Destaque...</h1>
       <p class="hero-desc" id="heroDesc" style="display: none;"></p>
@@ -994,8 +993,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=56"></script>
-  <script src="auth.js?v=56"></script>
-  <script src="app.js?v=56"></script>
+  <script src="supabase-config.js?v=57"></script>
+  <script src="auth.js?v=57"></script>
+  <script src="app.js?v=57"></script>
 </body>
 </html>
