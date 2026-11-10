@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=69">
+  <link rel="stylesheet" href="style.css?v=70">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -435,57 +435,59 @@
   <div class="modal-overlay" id="playerModal">
     <div class="player-container">
       <div class="player-header">
-        <div class="player-title-info">
-          <div class="player-badges-row">
-            <span class="badge" id="modalCategoryBadge">CATEGORIA</span>
-            <span class="badge badge-episode" id="modalEpisodeBadge" style="display: none;">T01 • EP 01</span>
+        <div class="player-header-top-row">
+          <div class="player-title-info">
+            <div class="player-badges-row">
+              <span class="badge" id="modalCategoryBadge">CATEGORIA</span>
+              <span class="badge badge-episode" id="modalEpisodeBadge" style="display: none;">T01 • EP 01</span>
+            </div>
+            <h3 id="modalVideoTitle">Título do Vídeo</h3>
           </div>
-          <h3 id="modalVideoTitle">Título do Vídeo</h3>
+          <div class="player-header-main-actions">
+            <button class="btn-action-icon" id="btnPlayerFavorite" title="Adicionar aos Favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </button>
+            <button class="btn-close" id="btnClosePlayer">&times;</button>
+          </div>
         </div>
-        <div class="player-header-actions">
-          <!-- Seletor de Áudio, Fonte e Qualidade para Animes -->
-          <div class="player-anime-controls" id="playerAnimeControls" style="display: none; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <div class="audio-switch-group">
-              <button class="btn-audio-toggle active" id="btnAudioLeg" data-audio="legendado">Legendado</button>
-              <button class="btn-audio-toggle" id="btnAudioDub" data-audio="dublado">Dublado</button>
-            </div>
-            <!-- Seletor de Fonte / Provedor -->
-            <div class="player-select-wrap" id="playerProviderWrap" style="display: inline-flex; align-items: center;">
-              <select class="player-control-select" id="playerProviderSelect" title="Selecionar Servidor / Fonte">
-                <option value="animesdigital">🌸 AnimesDigital</option>
-                <option value="animesonlinecc">🎬 AnimesOnlineCC</option>
-              </select>
-            </div>
-            <!-- Seletor de Qualidade / Resolução -->
-            <div class="player-select-wrap" id="playerQualityWrap" style="display: inline-flex; align-items: center;">
-              <select class="player-control-select" id="playerQualitySelect" title="Selecionar Resolução de Vídeo">
-                <option value="720p HD">720p HD (Verificado)</option>
-                <option value="360p SD">360p SD</option>
-              </select>
-            </div>
-          </div>
 
-          <button class="btn-action-icon" id="btnPlayerFavorite" title="Adicionar aos Favoritos">
+        <!-- Seletor de Áudio, Fonte e Qualidade para Animes -->
+        <div class="player-anime-controls" id="playerAnimeControls" style="display: none; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <div class="audio-switch-group">
+            <button class="btn-audio-toggle active" id="btnAudioLeg" data-audio="legendado">Legendado</button>
+            <button class="btn-audio-toggle" id="btnAudioDub" data-audio="dublado">Dublado</button>
+          </div>
+          <!-- Seletor de Fonte / Provedor -->
+          <div class="player-select-wrap" id="playerProviderWrap" style="display: inline-flex; align-items: center;">
+            <select class="player-control-select" id="playerProviderSelect" title="Selecionar Servidor / Fonte">
+              <option value="animesdigital">🌸 AnimesDigital</option>
+              <option value="animesonlinecc">🎬 AnimesOnlineCC</option>
+            </select>
+          </div>
+          <!-- Seletor de Qualidade / Resolução -->
+          <div class="player-select-wrap" id="playerQualityWrap" style="display: inline-flex; align-items: center;">
+            <select class="player-control-select" id="playerQualitySelect" title="Selecionar Resolução de Vídeo">
+              <option value="720p HD">720p HD (Verificado)</option>
+              <option value="360p SD">360p SD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="player-episode-nav" id="playerEpisodeNav" style="display: none;">
+          <button class="btn-ep-nav" id="btnPrevEp" title="Episódio Anterior">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Anterior</span>
+          </button>
+          <button class="btn-ep-nav" id="btnNextEp" title="Próximo Episódio">
+            <span>Próximo</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </button>
-
-          <div class="player-episode-nav" id="playerEpisodeNav" style="display: none;">
-            <button class="btn-ep-nav" id="btnPrevEp" title="Episódio Anterior">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
-              <span>Anterior</span>
-            </button>
-            <button class="btn-ep-nav" id="btnNextEp" title="Próximo Episódio">
-              <span>Próximo</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
-          </div>
-          <button class="btn-close" id="btnClosePlayer">&times;</button>
         </div>
       </div>
 
@@ -997,8 +999,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=69"></script>
-  <script src="auth.js?v=69"></script>
-  <script src="app.js?v=69"></script>
+  <script src="supabase-config.js?v=70"></script>
+  <script src="auth.js?v=70"></script>
+  <script src="app.js?v=70"></script>
 </body>
 </html>

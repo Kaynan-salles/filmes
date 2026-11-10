@@ -3412,12 +3412,11 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
   if (!playerRatingEl && dom.modalCategoryBadge && dom.modalCategoryBadge.parentNode) {
     playerRatingEl = document.createElement('span');
     playerRatingEl.id = 'playerModalRating';
-    playerRatingEl.className = 'badge';
-    playerRatingEl.style.cssText = 'background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.4); font-weight: 700; margin-left: 6px;';
+    playerRatingEl.className = 'badge badge-rating';
     dom.modalCategoryBadge.parentNode.insertBefore(playerRatingEl, dom.modalCategoryBadge.nextSibling);
   }
   if (playerRatingEl) {
-    playerRatingEl.innerHTML = `<span style="color:#fbbf24;">★</span> ${playerRatingVal.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(playerRatingVal)}</span>`;
+    playerRatingEl.innerHTML = `<span style="color:#fbbf24; margin-right: 3px;">★</span>${playerRatingVal.toFixed(1)}`;
   }
 
   // Informações de Episódio / Navegação Binge

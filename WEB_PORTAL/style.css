@@ -1537,46 +1537,92 @@ body.modal-open {
 
 .player-header {
   display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.875rem 1.15rem;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-card);
+}
+
+.player-header-top-row {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.875rem 1rem;
-  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  gap: 0.75rem;
 }
 
 .player-title-info {
   display: flex;
   flex-direction: column;
-  gap: 0.125rem;
+  gap: 0.25rem;
   flex: 1;
-  padding-right: 0.75rem;
+  min-width: 0;
 }
 
 .badge {
-  font-size: 0.65rem;
+  font-size: 0.6875rem;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 9999px;
+  padding: 0.15rem 0.55rem;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.badge-rating, #playerModalRating {
+  color: #fbbf24 !important;
+  background: rgba(251, 191, 36, 0.12) !important;
+  border: 1px solid rgba(251, 191, 36, 0.3) !important;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  padding: 0.15rem 0.55rem !important;
 }
 
 .player-title-info h3 {
   font-family: var(--font-display);
-  font-size: clamp(1rem, 1.5vw + 0.6rem, 1.25rem);
+  font-size: clamp(0.95rem, 1.2vw + 0.6rem, 1.18rem);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-header-main-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .btn-close {
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-size: 1.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #cbd5e1;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  font-size: 1.25rem;
   cursor: pointer;
   line-height: 1;
-  transition: color 0.2s;
-  padding: 0.25rem;
+  transition: all 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-close:hover {
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
@@ -3631,6 +3677,155 @@ body.role-cliente #userProfileBtn:hover {
     font-size: 0.7rem !important;
     margin-top: 0.2rem !important;
   }
+
+  /* Player Modal 100% Proporcional e Sem Desproporções no Mobile */
+  .player-container {
+    width: min(95vw, 480px) !important;
+    max-width: 95vw !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #0d1017 !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  .player-header {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0.75rem 0.95rem !important;
+    gap: 0.55rem !important;
+    background: #0f131c !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .player-header-top-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+
+  .player-title-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+    padding-right: 0.25rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+  }
+
+  .player-badges-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .badge {
+    font-size: 0.68rem !important;
+    font-weight: 700 !important;
+    padding: 0.15rem 0.5rem !important;
+    border-radius: 9999px !important;
+    line-height: 1.2 !important;
+  }
+
+  #modalCategoryBadge {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.12) !important;
+    border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  }
+
+  #playerModalRating {
+    color: #fbbf24 !important;
+    background: rgba(251, 191, 36, 0.12) !important;
+    border: 1px solid rgba(251, 191, 36, 0.28) !important;
+  }
+
+  .badge-episode {
+    color: #f472b6 !important;
+    background: rgba(236, 72, 153, 0.14) !important;
+    border: 1px solid rgba(236, 72, 153, 0.3) !important;
+  }
+
+  .player-title-info h3 {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .player-header-main-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.45rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .btn-action-icon {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .btn-action-icon svg {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .btn-close {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    color: #cbd5e1 !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+
+  .player-episode-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.65rem !important;
+    width: 100% !important;
+    padding-top: 0.45rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  }
+
+  .btn-ep-nav {
+    flex: 1 !important;
+    max-width: 150px !important;
+    height: 34px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.35rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.76rem !important;
+    font-weight: 600 !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    color: #fff !important;
+    padding: 0 0.85rem !important;
+  }
 }
 
 @keyframes notifMobileModalIn {
@@ -3897,7 +4092,23 @@ body.role-cliente #userProfileBtn:hover {
   }
 
   .player-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem 1.5rem;
+  }
+
+  .player-header-top-row {
+    flex: 1;
+    width: auto;
+  }
+
+  .player-episode-nav {
+    width: auto;
+    padding-top: 0;
+    border-top: none;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
   }
 
   .player-footer {
@@ -4332,45 +4543,46 @@ body.role-cliente #userProfileBtn:hover {
 .player-badges-row {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
 .badge.badge-episode {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-primary));
-  color: #fff;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  font-weight: 800;
-  font-size: 0.65rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.player-header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  background: rgba(236, 72, 153, 0.14) !important;
+  border: 1px solid rgba(236, 72, 153, 0.32) !important;
+  color: #f472b6 !important;
+  border-radius: 9999px !important;
+  padding: 0.15rem 0.55rem !important;
+  font-weight: 700 !important;
+  font-size: 0.6875rem !important;
+  text-shadow: none !important;
 }
 
 .player-episode-nav {
   display: flex;
   align-items: center;
-  gap: 0.375rem;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .btn-ep-nav {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  justify-content: center;
+  gap: 0.4rem;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  font-size: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.35rem 0.65rem;
-  border-radius: var(--radius-sm);
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.2s ease;
+  min-height: 34px;
 }
 
 .btn-ep-nav svg {
@@ -4379,13 +4591,13 @@ body.role-cliente #userProfileBtn:hover {
 }
 
 .btn-ep-nav:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: var(--accent-primary);
+  background: rgba(236, 72, 153, 0.18);
+  border-color: rgba(236, 72, 153, 0.4);
   color: #fff;
 }
 
 .btn-ep-nav:disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
