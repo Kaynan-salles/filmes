@@ -1845,15 +1845,28 @@ body.modal-open {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Oculta controles e caixas pesadas da versão desktop abaixo do vídeo */
+/* Oculta controles e caixas pesadas da versão desktop e botões desnecessários no modo novelinhas (mobile puro) */
 #playerModal .player-container.is-vertical #modalEpisodeBadge,
 .player-container.is-vertical #modalEpisodeBadge,
+#playerModal.is-novelinha #modalEpisodeBadge,
+#playerModal .player-container.is-vertical #modalQualityBadge,
+.player-container.is-vertical #modalQualityBadge,
+#playerModal.is-novelinha #modalQualityBadge,
+#playerModal .player-container.is-vertical #btnPlayerAspect,
+.player-container.is-vertical #btnPlayerAspect,
+#playerModal.is-novelinha #btnPlayerAspect,
+#playerModal .player-container.is-vertical #btnPlayerFullscreen,
+.player-container.is-vertical #btnPlayerFullscreen,
+#playerModal.is-novelinha #btnPlayerFullscreen,
 #playerModal .player-container.is-vertical .player-episode-nav,
 .player-container.is-vertical .player-episode-nav,
+#playerModal.is-novelinha .player-episode-nav,
 #playerModal .player-container.is-vertical .player-anime-controls,
 .player-container.is-vertical .player-anime-controls,
+#playerModal.is-novelinha .player-anime-controls,
 #playerModal .player-container.is-vertical .player-footer,
 .player-container.is-vertical .player-footer,
+#playerModal.is-novelinha .player-footer,
 #playerModal .player-container.is-vertical .strip-header-title,
 .player-container.is-vertical .strip-header-title {
   display: none !important;
@@ -7337,15 +7350,28 @@ body.role-cliente #userProfileBtn:hover {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Oculta controles e caixas pesadas da versão desktop abaixo do vídeo */
+/* Oculta controles e caixas pesadas da versão desktop e botões desnecessários no modo novelinhas (mobile puro) */
 #playerModal .player-container.is-vertical #modalEpisodeBadge,
 .player-container.is-vertical #modalEpisodeBadge,
+#playerModal.is-novelinha #modalEpisodeBadge,
+#playerModal .player-container.is-vertical #modalQualityBadge,
+.player-container.is-vertical #modalQualityBadge,
+#playerModal.is-novelinha #modalQualityBadge,
+#playerModal .player-container.is-vertical #btnPlayerAspect,
+.player-container.is-vertical #btnPlayerAspect,
+#playerModal.is-novelinha #btnPlayerAspect,
+#playerModal .player-container.is-vertical #btnPlayerFullscreen,
+.player-container.is-vertical #btnPlayerFullscreen,
+#playerModal.is-novelinha #btnPlayerFullscreen,
 #playerModal .player-container.is-vertical .player-episode-nav,
 .player-container.is-vertical .player-episode-nav,
+#playerModal.is-novelinha .player-episode-nav,
 #playerModal .player-container.is-vertical .player-anime-controls,
 .player-container.is-vertical .player-anime-controls,
+#playerModal.is-novelinha .player-anime-controls,
 #playerModal .player-container.is-vertical .player-footer,
 .player-container.is-vertical .player-footer,
+#playerModal.is-novelinha .player-footer,
 #playerModal .player-container.is-vertical .strip-header-title,
 .player-container.is-vertical .strip-header-title {
   display: none !important;
@@ -7495,10 +7521,13 @@ video:-webkit-full-screen,
    TELA LIMPA & ENQUADRAMENTO MOBILE PERFEITO (NOVELINHAS / FULLSCREEN)
    ===================================================================== */
 
-/* Oculta footer em qualquer modo de tela cheia ou novelinhas */
+/* Oculta footer, badges de qualidade e botões de enquadramento em qualquer modo de novelinhas ou tela cheia */
 #playerModal.is-novelinha .player-footer,
 #playerModal.is-novelinha .player-episode-nav,
 #playerModal.is-novelinha #modalEpisodeBadge,
+#playerModal.is-novelinha #modalQualityBadge,
+#playerModal.is-novelinha #btnPlayerAspect,
+#playerModal.is-novelinha #btnPlayerFullscreen,
 #playerModal:fullscreen .player-footer,
 #playerModal:-webkit-full-screen .player-footer,
 #playerModal.is-fullscreen .player-footer {

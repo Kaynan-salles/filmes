@@ -3434,21 +3434,24 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
 
   const svgAspectMob = document.getElementById('svgAspectMobile');
   const svgAspectCin = document.getElementById('svgAspectCinema');
+  const playerFooterEl = dom.playerModal?.querySelector('.player-footer');
   if (isNovelinha) {
     dom.playerContainer?.classList.add('is-vertical');
     dom.videoWrapper?.classList.add('is-vertical');
     dom.playerModal?.classList.add('is-novelinha');
     if (dom.playerEpisodeNav) dom.playerEpisodeNav.style.display = 'none';
     if (dom.modalEpisodeBadge) dom.modalEpisodeBadge.style.display = 'none';
-    if (svgAspectMob && svgAspectCin) {
-      svgAspectMob.style.display = 'none';
-      svgAspectCin.style.display = 'block';
-    }
-    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Cinema (16:9)';
+    if (dom.modalQualityBadge) dom.modalQualityBadge.style.display = 'none';
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.style.display = 'none';
+    if (dom.btnPlayerFullscreen) dom.btnPlayerFullscreen.style.display = 'none';
+    if (playerFooterEl) playerFooterEl.style.display = 'none';
   } else {
     dom.playerContainer?.classList.remove('is-vertical');
     dom.videoWrapper?.classList.remove('is-vertical');
     dom.playerModal?.classList.remove('is-novelinha');
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.style.display = 'inline-flex';
+    if (dom.btnPlayerFullscreen) dom.btnPlayerFullscreen.style.display = 'inline-flex';
+    if (playerFooterEl) playerFooterEl.style.display = '';
     if (svgAspectMob && svgAspectCin) {
       svgAspectMob.style.display = 'block';
       svgAspectCin.style.display = 'none';
@@ -3665,11 +3668,11 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
           state.hlsPlayer.loadLevel = maxLevel;
           const lvl = state.hlsPlayer.levels[maxLevel];
           const qText = lvl?.height ? `${lvl.height}p FHD` : '1080p FHD';
-          if (dom.modalQualityBadge) {
+          if (dom.modalQualityBadge && !isNovelinha) {
             dom.modalQualityBadge.style.display = 'inline-flex';
             dom.modalQualityBadge.textContent = `✨ ${qText}`;
           }
-        } else if (dom.modalQualityBadge) {
+        } else if (dom.modalQualityBadge && !isNovelinha) {
           dom.modalQualityBadge.style.display = 'inline-flex';
           dom.modalQualityBadge.textContent = '✨ 1080p FHD';
         }
@@ -3687,7 +3690,7 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = playableUrl;
       video.onloadedmetadata = handleVideoMetadata;
-      if (dom.modalQualityBadge) {
+      if (dom.modalQualityBadge && !isNovelinha) {
         dom.modalQualityBadge.style.display = 'inline-flex';
         dom.modalQualityBadge.textContent = '✨ 1080p FHD';
       }
@@ -3701,7 +3704,7 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
   } else {
     video.src = playableUrl;
     video.onloadedmetadata = handleVideoMetadata;
-    if (dom.modalQualityBadge) {
+    if (dom.modalQualityBadge && !isNovelinha) {
       dom.modalQualityBadge.style.display = 'inline-flex';
       dom.modalQualityBadge.textContent = '✨ 1080p FHD';
     }
@@ -4050,6 +4053,10 @@ function closePlayerModal() {
   dom.playerContainer?.classList.remove('is-vertical');
   dom.videoWrapper?.classList.remove('is-vertical');
   dom.playerModal?.classList.remove('is-novelinha');
+  if (dom.btnPlayerAspect) dom.btnPlayerAspect.style.display = 'inline-flex';
+  if (dom.btnPlayerFullscreen) dom.btnPlayerFullscreen.style.display = 'inline-flex';
+  const pFooter = dom.playerModal?.querySelector('.player-footer');
+  if (pFooter) pFooter.style.display = '';
   if (dom.modalQualityBadge) dom.modalQualityBadge.style.display = 'none';
   if (playerControlsTimer) {
     clearTimeout(playerControlsTimer);
