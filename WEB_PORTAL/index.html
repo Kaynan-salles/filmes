@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=66">
+  <link rel="stylesheet" href="style.css?v=67">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -906,9 +906,9 @@
                 <h4>🌸 Sincronização em Segundo Plano (Animes)</h4>
                 <p>Processamento contínuo em lotes encadeados com rate-limiting, deduplicação e checkpoint persistente</p>
               </div>
-              <div class="sync-actions" style="display: flex; gap: 8px;">
-                <button type="button" class="btn-primary" id="btnResumeSync" style="padding: 7px 14px; font-size: 0.85rem; cursor: pointer;">▶ Retomar / Iniciar Lotes</button>
-                <button type="button" class="btn-secondary" id="btnPauseSync" style="padding: 7px 14px; font-size: 0.85rem; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.4); cursor: pointer;">⏸ Pausar Sincronização</button>
+              <div class="sync-actions">
+                <button type="button" class="btn-primary" id="btnResumeSync">▶ Retomar / Iniciar Lotes</button>
+                <button type="button" class="btn-secondary" id="btnPauseSync">⏸ Pausar Sincronização</button>
               </div>
             </div>
 
@@ -949,9 +949,9 @@
                 <h4>🛡️ Quarentena de Links Inválidos</h4>
                 <p>Estes títulos foram automaticamente ocultados do catálogo para que os clientes nunca vejam telas pretas ou erros de vídeo.</p>
               </div>
-              <div style="display: flex; gap: 8px;">
-                <input type="text" id="filterQuarantineInput" placeholder="Filtrar por título..." style="padding: 7px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #fff; font-size: 0.85rem;">
-                <button type="button" class="btn-primary" id="btnReloadQuarantine" style="padding: 7px 14px; font-size: 0.85rem; cursor: pointer;">🔄 Atualizar</button>
+              <div class="quarantine-filter-wrap">
+                <input type="text" id="filterQuarantineInput" placeholder="Filtrar por título...">
+                <button type="button" class="btn-primary" id="btnReloadQuarantine">🔄 Atualizar</button>
               </div>
             </div>
 
@@ -973,8 +973,8 @@
               </div>
             </div>
 
-            <div style="margin-top: 15px; max-height: 450px; overflow-y: auto; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;">
-              <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+            <div class="quarantine-table-wrap">
+              <table class="quarantine-table">
                 <thead>
                   <tr style="background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
                     <th style="padding: 10px 14px;">Título</th>
@@ -997,8 +997,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=66"></script>
-  <script src="auth.js?v=66"></script>
-  <script src="app.js?v=66"></script>
+  <script src="supabase-config.js?v=67"></script>
+  <script src="auth.js?v=67"></script>
+  <script src="app.js?v=67"></script>
 </body>
 </html>

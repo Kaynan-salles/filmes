@@ -2856,6 +2856,94 @@ body.modal-open {
   color: #fff;
 }
 
+/* Formulário de Criação de Clientes e Caixas do Admin */
+.create-client-form input,
+.create-client-form select,
+.create-client-form textarea,
+.admin-section-box input,
+.admin-section-box select {
+  width: 100% !important;
+  background: #0d1017 !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0.65rem 0.85rem !important;
+  font-size: 0.85rem !important;
+  color: #fff !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  transition: var(--transition) !important;
+}
+
+.create-client-form input::placeholder,
+.admin-section-box input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.create-client-form input:focus,
+.admin-section-box input:focus {
+  border-color: var(--accent-primary) !important;
+  background: #11151f !important;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.25) !important;
+}
+
+.create-client-form label {
+  display: block !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: var(--text-muted) !important;
+  margin-bottom: 0.35rem !important;
+}
+
+/* Sincronização de Animes - Ações Proporcionais */
+.sync-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sync-actions button {
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Quarentena de Links Inválidos */
+.quarantine-filter-wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.quarantine-filter-wrap input {
+  padding: 7px 12px !important;
+  font-size: 0.85rem !important;
+}
+
+.quarantine-filter-wrap button {
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.quarantine-table-wrap {
+  margin-top: 15px;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.quarantine-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
 /* Lista / Linhas de Clientes */
 .clients-list-container {
   display: flex;
@@ -3147,19 +3235,29 @@ body.role-admin #streamUrlDisplay {
   pointer-events: auto !important;
 }
 
-body.role-cliente,
-body:not(.role-admin) {
+/* =====================================================================
+   BLOQUEIO TOTAL DE CÓPIA, SELEÇÃO DE TEXTO E ARRASTE NO SISTEMA INTEIRO
+   ===================================================================== */
+*, *::before, *::after {
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-body.role-cliente img,
-body:not(.role-admin) img {
-  -webkit-user-drag: none;
-  user-drag: none;
-  pointer-events: none;
+input, textarea, select, [contenteditable="true"] {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default !important;
+}
+
+img, a, svg {
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
 }
 
 .client-only {
@@ -5620,11 +5718,14 @@ body.role-cliente #userProfileBtn:hover {
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: 0.5rem 0.5rem 1rem;
-  touch-action: pan-x;
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: auto;
 }
 
 .shelf-track::-webkit-scrollbar {
@@ -5642,6 +5743,10 @@ body.role-cliente #userProfileBtn:hover {
   border-radius: 10px;
   overflow: hidden;
   box-sizing: border-box;
+  contain: layout style;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .shelf-card .card-poster {
@@ -5687,6 +5792,11 @@ body.role-cliente #userProfileBtn:hover {
     min-width: 135px !important;
     max-width: 135px !important;
   }
+  .shelf-track {
+    gap: 12px !important;
+    padding: 0.35rem 0.5rem 0.75rem !important;
+    touch-action: pan-x pan-y !important;
+  }
   .shelf-title {
     font-size: 1.15rem;
   }
@@ -5695,6 +5805,51 @@ body.role-cliente #userProfileBtn:hover {
   }
   .shelf-side-arrow {
     display: none; /* Em telas touch o arraste suave nativo funciona direto */
+  }
+
+  /* Painel do Administrador - Totalmente Proporcional no Celular */
+  .admin-panel-container {
+    width: 96% !important;
+    max-width: 96vw !important;
+    max-height: 92vh !important;
+    border-radius: 16px !important;
+  }
+  .admin-header {
+    padding: 0.85rem 1rem !important;
+  }
+  .admin-body {
+    padding: 0.85rem 0.95rem !important;
+  }
+  .admin-tabs {
+    gap: 0.35rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
+    scrollbar-width: none !important;
+  }
+  .admin-tabs::-webkit-scrollbar {
+    display: none !important;
+  }
+  .admin-tab-btn {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.75rem !important;
+    flex-shrink: 0 !important;
+  }
+  .admin-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+  }
+  .admin-stat-box {
+    padding: 0.75rem !important;
+  }
+  .client-stats-bar {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.35rem !important;
+  }
+  .client-stat-card {
+    padding: 0.5rem 0.4rem !important;
+  }
+  .client-stat-val {
+    font-size: 1.15rem !important;
   }
 }
 

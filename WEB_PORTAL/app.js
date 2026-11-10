@@ -733,26 +733,30 @@ function applyUserRole(user) {
 
   // Previne cópia, clique direito e inspeção para clientes
   if (isClient) {
-    document.addEventListener('contextmenu', blockClientAction);
-    document.addEventListener('copy', blockClientAction);
-    document.addEventListener('cut', blockClientAction);
-    document.addEventListener('dragstart', blockClientAction);
     document.addEventListener('keydown', handleSecurityKeys);
   } else {
-    document.removeEventListener('contextmenu', blockClientAction);
-    document.removeEventListener('copy', blockClientAction);
-    document.removeEventListener('cut', blockClientAction);
-    document.removeEventListener('dragstart', blockClientAction);
     document.removeEventListener('keydown', handleSecurityKeys);
   }
 }
 
-function blockClientAction(e) {
-  if (!state.currentUser || state.currentUser.role === 'cliente') {
+// Bloqueio Global contra Cópia, Seleção Indesejada e Arraste no Sistema Inteiro
+function isInputTarget(e) {
+  const tag = (e.target && e.target.tagName) ? e.target.tagName.toUpperCase() : '';
+  return tag === 'INPUT' || tag === 'TEXTAREA' || e.target?.isContentEditable;
+}
+
+function blockSystemCopyAction(e) {
+  if (!isInputTarget(e)) {
     e.preventDefault();
     return false;
   }
 }
+
+document.addEventListener('selectstart', blockSystemCopyAction);
+document.addEventListener('copy', blockSystemCopyAction);
+document.addEventListener('cut', blockSystemCopyAction);
+document.addEventListener('dragstart', blockSystemCopyAction);
+document.addEventListener('contextmenu', blockSystemCopyAction);
 
 function handleSecurityKeys(e) {
   if (!state.currentUser || state.currentUser.role === 'cliente') {
@@ -3084,7 +3088,7 @@ function createSeriesGroupCard(group, index) {
 
   card.innerHTML = `
     <div class="card-poster">
-      <img src="${posterUrl}" alt="${escapeHtml(group.seriesName)}" loading="lazy" onerror="this.src='${FALLBACK_POSTER}'">
+      <img src="${posterUrl}" alt="${escapeHtml(group.seriesName)}" loading="lazy" decoding="async" onerror="this.src='${FALLBACK_POSTER}'">
       <span class="card-badge group-badge">SÉRIE</span>
       <span class="card-rating-badge"><span class="star-icon">★</span> <span>${rating.toFixed(1)}</span></span>
       <div class="card-play-overlay">
@@ -4951,7 +4955,16 @@ const HomeShelvesManager = {
     if (btnSideLeft) btnSideLeft.onclick = scrollLeft;
     if (btnSideRight) btnSideRight.onclick = scrollRight;
 
-    track.addEventListener('scroll', updateArrows, { passive: true });
+    let ticking = false;
+    track.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateArrows();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
     window.addEventListener('resize', updateArrows, { passive: true });
     setTimeout(updateArrows, 200);
 
