@@ -1558,38 +1558,22 @@ body.modal-open {
   gap: 0.75rem;
 }
 
-.player-title-info {
+.player-badges-row {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
   flex: 1;
   min-width: 0;
 }
 
-.badge {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.28);
-  border-radius: 9999px;
-  padding: 0.15rem 0.55rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1.2;
+.player-title-row {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2px;
 }
 
-.badge-rating, #playerModalRating {
-  color: #fbbf24 !important;
-  background: rgba(251, 191, 36, 0.12) !important;
-  border: 1px solid rgba(251, 191, 36, 0.3) !important;
-  font-weight: 700 !important;
-  border-radius: 9999px !important;
-  padding: 0.15rem 0.55rem !important;
-}
-
+.player-title-row h3,
 .player-title-info h3 {
   font-family: var(--font-display);
   font-size: clamp(0.95rem, 1.2vw + 0.6rem, 1.18rem);
@@ -1600,6 +1584,14 @@ body.modal-open {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.player-title-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 0;
 }
 
 .player-header-main-actions {
@@ -1654,16 +1646,301 @@ body.modal-open {
   background: #000;
 }
 
-/* Modo Adaptativo para Vídeos Verticais (Novelinhas / 9:16 Shorts) */
+/* =====================================================================
+   MODALIDADE MOBILE PROPORCIONAL (NOVELINHAS / SHORTS 9:16)
+   ESTÉTICA MOBILE 100% PURA COM OVERLAYS FLUTUANTES ESTILO TIKTOK/REELS
+   ===================================================================== */
+
+/* 1. O Frame Mobile (Celular 9:16) */
+#playerModal .player-container.is-vertical,
 .player-container.is-vertical {
-  max-width: 32rem; /* Centralizado como tela de celular premium */
-  transition: max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative !important;
+  aspect-ratio: 9 / 16 !important;
+  height: min(88vh, 780px) !important;
+  height: min(88dvh, 780px) !important;
+  width: calc(min(88vh, 780px) * 9 / 16) !important;
+  width: calc(min(88dvh, 780px) * 9 / 16) !important;
+  max-width: 95vw !important;
+  max-height: 90vh !important;
+  margin: auto !important;
+  border-radius: 24px !important;
+  background: #000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.25s ease !important;
 }
 
+/* 2. O Vídeo Ocupa 100% da Tela do Celular */
+#playerModal .player-container.is-vertical .video-wrapper,
 .player-container.is-vertical .video-wrapper {
-  aspect-ratio: 9 / 16;
-  max-height: 72vh;
-  max-height: 72dvh;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  aspect-ratio: 9 / 16 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#playerModal .player-container.is-vertical .video-wrapper video,
+.player-container.is-vertical .video-wrapper video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #000 !important;
+  display: block !important;
+}
+
+/* 3. Cabeçalho Mobile Flutuante (Overlay Superior em Gradiente Suave) */
+#playerModal .player-container.is-vertical .player-header,
+.player-container.is-vertical .player-header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 20 !important;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%) !important;
+  border: none !important;
+  padding: 0.85rem 0.95rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 0.35rem !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+#playerModal .player-container.is-vertical .player-header * {
+  pointer-events: auto !important;
+}
+
+#playerModal .player-container.is-vertical .player-header-top-row,
+.player-container.is-vertical .player-header-top-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.4rem !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  flex: none !important;
+}
+
+#playerModal .player-container.is-vertical .player-badges-row,
+.player-container.is-vertical .player-badges-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  flex-wrap: nowrap !important;
+}
+
+#playerModal .player-container.is-vertical .badge,
+.player-container.is-vertical .badge {
+  font-size: 0.65rem !important;
+  padding: 0.15rem 0.5rem !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  border-radius: 9999px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+#playerModal .player-container.is-vertical .badge-quality-hd,
+.player-container.is-vertical .badge-quality-hd {
+  background: rgba(99, 102, 241, 0.35) !important;
+  border: 1px solid rgba(129, 140, 248, 0.5) !important;
+  color: #a5b4fc !important;
+}
+
+#playerModal .player-container.is-vertical .player-header-main-actions,
+.player-container.is-vertical .player-header-main-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
+}
+
+#playerModal .player-container.is-vertical .btn-action-icon,
+#playerModal .player-container.is-vertical .btn-close,
+.player-container.is-vertical .btn-action-icon,
+.player-container.is-vertical .btn-close {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.15s ease, background 0.15s ease !important;
+}
+
+#playerModal .player-container.is-vertical .btn-action-icon:hover,
+#playerModal .player-container.is-vertical .btn-close:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transform: scale(1.08) !important;
+}
+
+#playerModal .player-container.is-vertical .btn-action-icon svg,
+.player-container.is-vertical .btn-action-icon svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+#playerModal .player-container.is-vertical .btn-close,
+.player-container.is-vertical .btn-close {
+  font-size: 1.25rem !important;
+  line-height: 1 !important;
+}
+
+#playerModal .player-container.is-vertical .player-title-row,
+.player-container.is-vertical .player-title-row {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  margin-top: 0.15rem !important;
+  box-sizing: border-box !important;
+}
+
+#playerModal .player-container.is-vertical .player-title-row h3,
+.player-container.is-vertical .player-title-row h3 {
+  font-size: 0.96rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  width: 100% !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Oculta controles e caixas pesadas da versão desktop abaixo do vídeo */
+#playerModal .player-container.is-vertical #modalEpisodeBadge,
+.player-container.is-vertical #modalEpisodeBadge,
+#playerModal .player-container.is-vertical .player-episode-nav,
+.player-container.is-vertical .player-episode-nav,
+#playerModal .player-container.is-vertical .player-anime-controls,
+.player-container.is-vertical .player-anime-controls,
+#playerModal .player-container.is-vertical .player-footer,
+.player-container.is-vertical .player-footer,
+#playerModal .player-container.is-vertical .strip-header-title,
+.player-container.is-vertical .strip-header-title {
+  display: none !important;
+}
+
+/* 4. Barra de Capítulos Flutuante (Overlay Inferior Glassmorphism Estilo Shorts/TikTok) */
+#playerModal .player-container.is-vertical .player-series-strip-container,
+.player-container.is-vertical .player-series-strip-container {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 20 !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.55) 65%, transparent 100%) !important;
+  border: none !important;
+  padding: 2.2rem 0.85rem 0.85rem !important;
+  gap: 0.35rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-container * {
+  pointer-events: auto !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-header,
+.player-container.is-vertical .player-series-strip-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+  margin-bottom: 0.15rem !important;
+}
+
+#playerModal .player-container.is-vertical .strip-ep-count,
+.player-container.is-vertical .strip-ep-count {
+  font-size: 0.68rem !important;
+  white-space: nowrap !important;
+  color: #e2e8f0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 9999px !important;
+  padding: 0.15rem 0.55rem !important;
+  font-weight: 600 !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-scroll,
+.player-container.is-vertical .player-series-strip-scroll {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  box-sizing: border-box !important;
+  padding-bottom: 0.2rem !important;
+  scrollbar-width: none !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+#playerModal .player-container.is-vertical .btn-strip-ep,
+.player-container.is-vertical .btn-strip-ep {
+  font-size: 0.72rem !important;
+  padding: 0.3rem 0.68rem !important;
+  flex-shrink: 0 !important;
+  border-radius: 9999px !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+  transition: all 0.18s ease !important;
+}
+
+#playerModal .player-container.is-vertical .btn-strip-ep.active,
+.player-container.is-vertical .btn-strip-ep.active {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6) !important;
+  border-color: #f472b6 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 12px rgba(236, 72, 153, 0.55) !important;
 }
 
 /* Suporte de Tela Cheia Completo (Modal & Elemento) */
@@ -4168,19 +4445,19 @@ body.role-cliente #userProfileBtn:hover {
     padding: 1.5rem;
   }
 
-  .player-header {
+  .player-container:not(.is-vertical) .player-header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1.5rem;
   }
 
-  .player-header-top-row {
+  .player-container:not(.is-vertical) .player-header-top-row {
     flex: 1;
     width: auto;
   }
 
-  .player-episode-nav {
+  .player-container:not(.is-vertical) .player-episode-nav {
     width: auto;
     padding-top: 0;
     border-top: none;
@@ -6875,3 +7152,406 @@ body.role-cliente #userProfileBtn:hover {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* =====================================================================
+   MODALIDADE MOBILE PROPORCIONAL (NOVELINHAS / SHORTS 9:16)
+   REGRAS DE SOBREPOSIÇÃO FINAL (ALTA PRIORIDADE - ESTÉTICA MOBILE PURA)
+   ===================================================================== */
+#playerModal .player-container.is-vertical,
+.player-container.is-vertical {
+  position: relative !important;
+  aspect-ratio: 9 / 16 !important;
+  height: min(88vh, 780px) !important;
+  height: min(88dvh, 780px) !important;
+  width: calc(min(88vh, 780px) * 9 / 16) !important;
+  width: calc(min(88dvh, 780px) * 9 / 16) !important;
+  max-width: 95vw !important;
+  max-height: 90vh !important;
+  margin: auto !important;
+  border-radius: 24px !important;
+  background: #000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#playerModal .player-container.is-vertical .video-wrapper,
+.player-container.is-vertical .video-wrapper {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  aspect-ratio: 9 / 16 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+#playerModal .player-container.is-vertical .video-wrapper video,
+.player-container.is-vertical .video-wrapper video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #000 !important;
+  display: block !important;
+}
+
+#playerModal .player-container.is-vertical .player-header,
+.player-container.is-vertical .player-header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 20 !important;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%) !important;
+  border: none !important;
+  padding: 0.85rem 0.95rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 0.35rem !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+#playerModal .player-container.is-vertical .player-header * {
+  pointer-events: auto !important;
+}
+
+#playerModal .player-container.is-vertical .player-header-top-row,
+.player-container.is-vertical .player-header-top-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.4rem !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  flex: none !important;
+}
+
+#playerModal .player-container.is-vertical .player-badges-row,
+.player-container.is-vertical .player-badges-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  flex-wrap: nowrap !important;
+}
+
+#playerModal .player-container.is-vertical .badge,
+.player-container.is-vertical .badge {
+  font-size: 0.65rem !important;
+  padding: 0.15rem 0.5rem !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  border-radius: 9999px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+#playerModal .player-container.is-vertical .badge-quality-hd,
+.player-container.is-vertical .badge-quality-hd {
+  background: rgba(99, 102, 241, 0.35) !important;
+  border: 1px solid rgba(129, 140, 248, 0.5) !important;
+  color: #a5b4fc !important;
+}
+
+#playerModal .player-container.is-vertical .player-header-main-actions,
+.player-container.is-vertical .player-header-main-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
+}
+
+#playerModal .player-container.is-vertical .btn-action-icon,
+#playerModal .player-container.is-vertical .btn-close,
+.player-container.is-vertical .btn-action-icon,
+.player-container.is-vertical .btn-close {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+#playerModal .player-container.is-vertical .btn-action-icon svg,
+.player-container.is-vertical .btn-action-icon svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+#playerModal .player-container.is-vertical .btn-close,
+.player-container.is-vertical .btn-close {
+  font-size: 1.25rem !important;
+  line-height: 1 !important;
+}
+
+#playerModal .player-container.is-vertical .player-title-row,
+.player-container.is-vertical .player-title-row {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  margin-top: 0.15rem !important;
+  box-sizing: border-box !important;
+}
+
+#playerModal .player-container.is-vertical .player-title-row h3,
+.player-container.is-vertical .player-title-row h3 {
+  font-size: 0.96rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  width: 100% !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Oculta controles e caixas pesadas da versão desktop abaixo do vídeo */
+#playerModal .player-container.is-vertical #modalEpisodeBadge,
+.player-container.is-vertical #modalEpisodeBadge,
+#playerModal .player-container.is-vertical .player-episode-nav,
+.player-container.is-vertical .player-episode-nav,
+#playerModal .player-container.is-vertical .player-anime-controls,
+.player-container.is-vertical .player-anime-controls,
+#playerModal .player-container.is-vertical .player-footer,
+.player-container.is-vertical .player-footer,
+#playerModal .player-container.is-vertical .strip-header-title,
+.player-container.is-vertical .strip-header-title {
+  display: none !important;
+}
+
+/* Barra de Capítulos Flutuante (Overlay Inferior Glassmorphism Estilo Shorts/TikTok) */
+#playerModal .player-container.is-vertical .player-series-strip-container,
+.player-container.is-vertical .player-series-strip-container {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 20 !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.55) 65%, transparent 100%) !important;
+  border: none !important;
+  padding: 2.2rem 0.85rem 0.85rem !important;
+  gap: 0.35rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-container * {
+  pointer-events: auto !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-header,
+.player-container.is-vertical .player-series-strip-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+  margin-bottom: 0.15rem !important;
+}
+
+#playerModal .player-container.is-vertical .strip-ep-count,
+.player-container.is-vertical .strip-ep-count {
+  font-size: 0.68rem !important;
+  white-space: nowrap !important;
+  color: #e2e8f0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 9999px !important;
+  padding: 0.15rem 0.55rem !important;
+  font-weight: 600 !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-scroll,
+.player-container.is-vertical .player-series-strip-scroll {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  box-sizing: border-box !important;
+  padding-bottom: 0.2rem !important;
+  scrollbar-width: none !important;
+}
+
+#playerModal .player-container.is-vertical .player-series-strip-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+#playerModal .player-container.is-vertical .btn-strip-ep,
+.player-container.is-vertical .btn-strip-ep {
+  font-size: 0.72rem !important;
+  padding: 0.3rem 0.68rem !important;
+  flex-shrink: 0 !important;
+  border-radius: 9999px !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+  transition: all 0.18s ease !important;
+}
+
+#playerModal .player-container.is-vertical .btn-strip-ep.active,
+.player-container.is-vertical .btn-strip-ep.active {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6) !important;
+  border-color: #f472b6 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 12px rgba(236, 72, 153, 0.55) !important;
+}
+
+/* TELA CHEIA MOBILE PROPORCIONAL (NO PC E NO MOBILE) */
+#playerModal:fullscreen,
+#playerModal:-webkit-full-screen,
+#playerModal.is-fullscreen {
+  background: #000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  inset: 0 !important;
+  z-index: 99999 !important;
+}
+
+#playerModal:fullscreen .player-container.is-vertical,
+#playerModal:-webkit-full-screen .player-container.is-vertical,
+#playerModal.is-fullscreen .player-container.is-vertical {
+  height: 100vh !important;
+  height: 100dvh !important;
+  width: calc(100vh * 9 / 16) !important;
+  width: calc(100dvh * 9 / 16) !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  aspect-ratio: 9 / 16 !important;
+  margin: auto !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.95) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+#playerModal:fullscreen .player-container.is-vertical .video-wrapper,
+#playerModal:-webkit-full-screen .player-container.is-vertical .video-wrapper,
+#playerModal.is-fullscreen .player-container.is-vertical .video-wrapper {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  aspect-ratio: 9 / 16 !important;
+}
+
+video:fullscreen,
+video:-webkit-full-screen,
+#playerModal:fullscreen video,
+#playerModal:-webkit-full-screen video,
+#playerModal.is-fullscreen video,
+#playerModal .player-container.is-vertical video {
+  object-fit: contain !important;
+  background: #000 !important;
+}
+
+/* =====================================================================
+   TELA LIMPA & ENQUADRAMENTO MOBILE PERFEITO (NOVELINHAS / FULLSCREEN)
+   ===================================================================== */
+
+/* Oculta footer em qualquer modo de tela cheia */
+#playerModal:fullscreen .player-footer,
+#playerModal:-webkit-full-screen .player-footer,
+#playerModal.is-fullscreen .player-footer {
+  display: none !important;
+}
+
+/* Transições suaves para os controles superiores e inferiores */
+#playerModal .player-header,
+#playerModal .player-series-strip-container {
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Estado TELA LIMPA (controls-hidden): oculta cabeçalho superior e barra inferior */
+#playerModal.controls-hidden {
+  cursor: none !important;
+}
+
+#playerModal.controls-hidden .player-header {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(-24px) !important;
+  transition: opacity 0.4s ease, transform 0.4s ease !important;
+}
+
+#playerModal.controls-hidden .player-series-strip-container {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(24px) !important;
+  transition: opacity 0.4s ease, transform 0.4s ease !important;
+}
+
+#playerModal.controls-hidden .player-header *,
+#playerModal.controls-hidden .player-series-strip-container *,
+#playerModal.controls-hidden .btn-skip-intro,
+#playerModal.controls-hidden .next-ep-countdown-card {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ajuste proporcional para smartphones em modo retrato */
+@media (max-width: 768px) {
+  #playerModal .player-container.is-vertical,
+  #playerModal:fullscreen .player-container.is-vertical,
+  #playerModal:-webkit-full-screen .player-container.is-vertical,
+  #playerModal.is-fullscreen .player-container.is-vertical,
+  .player-container.is-vertical {
+    width: 100vw !important;
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    max-height: 100dvh !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+}
+

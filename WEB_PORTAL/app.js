@@ -3519,6 +3519,9 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
   }
 
   openModal(dom.playerModal);
+  if (typeof showPlayerControls === 'function') {
+    showPlayerControls(true);
+  }
 
   const video = dom.htmlVideoPlayer;
   dom.playerLoading.classList.add('active');
@@ -3577,12 +3580,26 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
   }
 
   // Modo de Exibição Adaptativo para Novelinhas (Vídeos Verticais 9:16)
+  const svgAspectMob = document.getElementById('svgAspectMobile');
+  const svgAspectCin = document.getElementById('svgAspectCinema');
   if (isNovelinha) {
     dom.playerContainer?.classList.add('is-vertical');
     dom.videoWrapper?.classList.add('is-vertical');
+    if (dom.playerEpisodeNav) dom.playerEpisodeNav.style.display = 'none';
+    if (dom.modalEpisodeBadge) dom.modalEpisodeBadge.style.display = 'none';
+    if (svgAspectMob && svgAspectCin) {
+      svgAspectMob.style.display = 'none';
+      svgAspectCin.style.display = 'block';
+    }
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Cinema (16:9)';
   } else {
     dom.playerContainer?.classList.remove('is-vertical');
     dom.videoWrapper?.classList.remove('is-vertical');
+    if (svgAspectMob && svgAspectCin) {
+      svgAspectMob.style.display = 'block';
+      svgAspectCin.style.display = 'none';
+    }
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Vertical (9:16)';
   }
 
   // Previne menu de contexto e clique direito no player para clientes
@@ -3613,6 +3630,13 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
     if (video.videoHeight && video.videoWidth && video.videoHeight > video.videoWidth) {
       dom.playerContainer?.classList.add('is-vertical');
       dom.videoWrapper?.classList.add('is-vertical');
+      const mob = document.getElementById('svgAspectMobile');
+      const cin = document.getElementById('svgAspectCinema');
+      if (mob && cin) {
+        mob.style.display = 'none';
+        cin.style.display = 'block';
+      }
+      if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Cinema (16:9)';
     }
     applyResumeTime();
   };
@@ -3767,9 +3791,10 @@ function setupPlayerSeriesNavigation(epInfo, currentUrl, category) {
     currentIndex: activeIdx
   };
 
-  // Atualiza botões Anterior / Próximo
+  // Atualiza botões Anterior / Próximo (ocultos no modo vertical pois a barra de capítulos cumpre essa função)
+  const isVerticalMode = dom.playerContainer?.classList.contains('is-vertical');
   if (dom.playerEpisodeNav) {
-    dom.playerEpisodeNav.style.display = 'inline-flex';
+    dom.playerEpisodeNav.style.display = isVerticalMode ? 'none' : 'inline-flex';
     if (dom.btnPrevEp) dom.btnPrevEp.disabled = activeIdx <= 0;
     if (dom.btnNextEp) dom.btnNextEp.disabled = activeIdx >= seriesEpisodes.length - 1;
   }
@@ -4022,6 +4047,11 @@ function closePlayerModal() {
   dom.playerContainer?.classList.remove('is-vertical');
   dom.videoWrapper?.classList.remove('is-vertical');
   if (dom.modalQualityBadge) dom.modalQualityBadge.style.display = 'none';
+  if (playerControlsTimer) {
+    clearTimeout(playerControlsTimer);
+    playerControlsTimer = null;
+  }
+  dom.playerModal?.classList.remove('controls-hidden');
   stopVideoPlayback();
   if (dom.playerModal) {
     closeModal(dom.playerModal);
@@ -4336,6 +4366,9 @@ async function playAnimeEpisode(ep, details, preferredAudio = 'legendado', prefe
   };
   updateFavoriteButtons(state.activePlayerItem);
   openModal(dom.playerModal);
+  if (typeof showPlayerControls === 'function') {
+    showPlayerControls(true);
+  }
   dom.playerLoading.classList.add('active');
 
   // Limpa players anteriores
@@ -5287,8 +5320,53 @@ function closeContentDetailsModal() {
 }
 
 // ---------------------------------------------------------------------
-// 6. ATALHOS DE TECLADO E CONTROLES INTELIGENTES DO PLAYER
+// 6. ATALHOS DE TECLADO E CONTROLES INTELIGENTES DO PLAYER (TELA LIMPA)
 // ---------------------------------------------------------------------
+let playerControlsTimer = null;
+let lastControlsToggleTime = 0;
+
+function showPlayerControls(autoHide = true) {
+  if (!dom.playerModal) return;
+  dom.playerModal.classList.remove('controls-hidden');
+
+  if (playerControlsTimer) {
+    clearTimeout(playerControlsTimer);
+    playerControlsTimer = null;
+  }
+
+  const video = dom.htmlVideoPlayer;
+  // Só agenda auto-hide se o vídeo estiver reproduzindo e não pausado
+  if (autoHide && video && !video.paused && !video.ended) {
+    playerControlsTimer = setTimeout(() => {
+      hidePlayerControls();
+    }, 2500);
+  }
+}
+
+function hidePlayerControls() {
+  if (!dom.playerModal || !dom.playerModal.classList.contains('active')) return;
+  const video = dom.htmlVideoPlayer;
+  // Não oculta se o vídeo estiver pausado ou carregando
+  if (video && video.paused) return;
+  if (dom.playerLoading && dom.playerLoading.classList.contains('active')) return;
+  if (dom.playerErrorOverlay && dom.playerErrorOverlay.style.display !== 'none') return;
+
+  dom.playerModal.classList.add('controls-hidden');
+  if (playerControlsTimer) {
+    clearTimeout(playerControlsTimer);
+    playerControlsTimer = null;
+  }
+}
+
+function togglePlayerControls() {
+  if (!dom.playerModal) return;
+  if (dom.playerModal.classList.contains('controls-hidden')) {
+    showPlayerControls(true);
+  } else {
+    hidePlayerControls();
+  }
+}
+
 function setupPlayerModernEnhancements() {
   // 1. Atalhos de Teclado Globais quando Player está aberto
   document.addEventListener('keydown', (e) => {
@@ -5331,20 +5409,115 @@ function setupPlayerModernEnhancements() {
         break;
       case 'KeyF':
         e.preventDefault();
-        if (document.fullscreenElement) document.exitFullscreen();
-        else dom.playerModal.requestFullscreen?.();
+        toggleFullscreen();
         break;
       case 'KeyN':
         e.preventDefault();
         if (dom.btnNextEp && !dom.btnNextEp.disabled) dom.btnNextEp.click();
         break;
       case 'Escape':
-        closePlayer();
+        closePlayerModal();
         break;
     }
   });
 
-  // 2. Botão Pular Abertura (Skip Intro)
+  // 2. Controle Mestre de Tela Cheia e Enquadramento Adaptativo
+  const toggleFullscreen = () => {
+    const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    if (!isFs) {
+      const container = dom.playerModal || dom.htmlVideoPlayer;
+      if (container.requestFullscreen) {
+        container.requestFullscreen().catch(() => dom.htmlVideoPlayer?.requestFullscreen?.());
+      } else if (container.webkitRequestFullscreen) {
+        container.webkitRequestFullscreen();
+      } else if (dom.htmlVideoPlayer?.webkitEnterFullscreen) {
+        dom.htmlVideoPlayer.webkitEnterFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+  };
+
+  dom.btnPlayerFullscreen?.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleFullscreen();
+  });
+
+  // Duplo clique no player para entrar/sair de tela cheia
+  dom.htmlVideoPlayer?.addEventListener('dblclick', (e) => {
+    e.preventDefault();
+    toggleFullscreen();
+  });
+
+  // Alternador de Enquadramento (Vertical 9:16 vs Cinema 16:9)
+  dom.btnPlayerAspect?.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isVert = dom.playerContainer?.classList.toggle('is-vertical');
+    dom.videoWrapper?.classList.toggle('is-vertical', isVert);
+    const mob = document.getElementById('svgAspectMobile');
+    const cin = document.getElementById('svgAspectCinema');
+    if (mob && cin) {
+      mob.style.display = isVert ? 'none' : 'block';
+      cin.style.display = isVert ? 'block' : 'none';
+    }
+    if (dom.btnPlayerAspect) {
+      dom.btnPlayerAspect.title = isVert ? 'Alternar para Modo Cinema (16:9)' : 'Alternar para Modo Vertical (9:16)';
+    }
+    showPlayerFeedback(isVert ? '📱 Modo Vertical (9:16)' : '📺 Modo Cinema (16:9)');
+  });
+
+  // Sincronização dinâmica de ícones de tela cheia
+  const updateFsIcons = () => {
+    const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    const svgExp = document.getElementById('svgFsExpand');
+    const svgComp = document.getElementById('svgFsCompress');
+    if (svgExp && svgComp) {
+      svgExp.style.display = isFs ? 'none' : 'block';
+      svgComp.style.display = isFs ? 'block' : 'none';
+    }
+    dom.playerModal?.classList.toggle('is-fullscreen', isFs);
+    showPlayerControls(true);
+  };
+  document.addEventListener('fullscreenchange', updateFsIcons);
+  document.addEventListener('webkitfullscreenchange', updateFsIcons);
+
+  // 3. Sistema "Tela Limpa" - Auto-Hide Inteligente & Toque para Exibir/Ocultar
+  dom.videoWrapper?.addEventListener('click', (e) => {
+    // Se clicou em botões de controle, skips, ou seleção de episódios, não interfere
+    if (e.target.closest('button, select, input, a, .player-series-strip-container, .player-header, .btn-skip-intro, .next-ep-countdown-card')) {
+      return;
+    }
+
+    const now = Date.now();
+    if (now - lastControlsToggleTime < 250) return;
+    lastControlsToggleTime = now;
+
+    if (dom.playerModal?.classList.contains('controls-hidden')) {
+      showPlayerControls(true);
+    } else {
+      hidePlayerControls();
+    }
+  });
+
+  // Movimentação de mouse e interações de toque revelam os controles
+  dom.playerModal?.addEventListener('mousemove', () => showPlayerControls(true));
+  dom.playerSeriesStrip?.addEventListener('pointerdown', () => showPlayerControls(true));
+  dom.playerStripScroll?.addEventListener('scroll', () => showPlayerControls(true));
+  dom.playerModal?.querySelector('.player-header')?.addEventListener('pointerdown', () => showPlayerControls(true));
+
+  // Eventos de vídeo sincronizam a visibilidade
+  dom.htmlVideoPlayer?.addEventListener('play', () => {
+    showPlayerControls(true);
+  });
+  dom.htmlVideoPlayer?.addEventListener('pause', () => {
+    showPlayerControls(false); // Mantém controles visíveis quando pausado
+  });
+  dom.htmlVideoPlayer?.addEventListener('ended', () => {
+    showPlayerControls(false);
+  });
+
+  // 4. Botão Pular Abertura (Skip Intro)
   if (dom.btnSkipIntro && dom.htmlVideoPlayer) {
     dom.btnSkipIntro.addEventListener('click', () => {
       dom.htmlVideoPlayer.currentTime = 90;
@@ -5362,7 +5535,7 @@ function setupPlayerModernEnhancements() {
         dom.btnSkipIntro.style.display = 'none';
       }
 
-      // 3. Card de Próximo Episódio com Contagem Regressiva (Últimos 20s)
+      // Card de Próximo Episódio com Contagem Regressiva (Últimos 20s)
       const dur = dom.htmlVideoPlayer.duration;
       if (dur && (dur - cur <= 20) && dom.btnNextEp && !dom.btnNextEp.disabled) {
         if (dom.nextEpCountdownCard && dom.nextEpCountdownCard.style.display !== 'flex') {
