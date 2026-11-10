@@ -1784,22 +1784,24 @@ body.modal-open {
 #playerModal .player-container.is-vertical .btn-close,
 .player-container.is-vertical .btn-action-icon,
 .player-container.is-vertical .btn-close {
-  width: 32px !important;
-  height: 32px !important;
-  min-width: 32px !important;
-  min-height: 32px !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
   padding: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   color: #fff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
   transition: transform 0.15s ease, background 0.15s ease !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
 }
 
 #playerModal .player-container.is-vertical .btn-action-icon:hover,
@@ -7296,21 +7298,24 @@ body.role-cliente #userProfileBtn:hover {
 #playerModal .player-container.is-vertical .btn-close,
 .player-container.is-vertical .btn-action-icon,
 .player-container.is-vertical .btn-close {
-  width: 32px !important;
-  height: 32px !important;
-  min-width: 32px !important;
-  min-height: 32px !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
   padding: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   color: #fff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+  transition: transform 0.15s ease, background 0.15s ease !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
 }
 
 #playerModal .player-container.is-vertical .btn-action-icon svg,

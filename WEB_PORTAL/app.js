@@ -5350,7 +5350,7 @@ function showPlayerControls(autoHide = true) {
   if (autoHide && video && !video.paused && !video.ended) {
     playerControlsTimer = setTimeout(() => {
       hidePlayerControls();
-    }, 2500);
+    }, 3500);
   }
 }
 
@@ -5494,14 +5494,14 @@ function setupPlayerModernEnhancements() {
   document.addEventListener('webkitfullscreenchange', updateFsIcons);
 
   // 3. Sistema "Tela Limpa" - Auto-Hide Inteligente & Toque para Exibir/Ocultar
-  dom.videoWrapper?.addEventListener('click', (e) => {
+  const handlePlayerScreenTap = (e) => {
     // Se clicou em botões de controle, skips, ou seleção de episódios, não interfere
     if (e.target.closest('button, select, input, a, .player-series-strip-container, .player-header, .btn-skip-intro, .next-ep-countdown-card')) {
       return;
     }
 
     const now = Date.now();
-    if (now - lastControlsToggleTime < 250) return;
+    if (now - lastControlsToggleTime < 280) return;
     lastControlsToggleTime = now;
 
     if (dom.playerModal?.classList.contains('controls-hidden')) {
@@ -5509,7 +5509,12 @@ function setupPlayerModernEnhancements() {
     } else {
       hidePlayerControls();
     }
-  });
+  };
+
+  dom.videoWrapper?.addEventListener('click', handlePlayerScreenTap);
+  dom.htmlVideoPlayer?.addEventListener('click', handlePlayerScreenTap);
+  dom.videoWrapper?.addEventListener('touchend', handlePlayerScreenTap, { passive: true });
+  dom.htmlVideoPlayer?.addEventListener('touchend', handlePlayerScreenTap, { passive: true });
 
   // Movimentação de mouse e interações de toque revelam os controles
   dom.playerModal?.addEventListener('mousemove', () => showPlayerControls(true));

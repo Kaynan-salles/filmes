@@ -1,19 +1,19 @@
 // Service Worker for K-Cine PWA installability and static shell caching
-const CACHE_NAME = 'kcine-shell-v80';
+const CACHE_NAME = 'kcine-shell-v81';
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.html?v=80',
-  '/style.css?v=80',
-  '/app.js?v=80',
-  '/icons/kcine-favicon.png?v=80',
-  '/icons/kcine-app-128.png?v=80',
-  '/icons/kcine-app-180.png?v=80',
-  '/icons/kcine-app-192.png?v=80',
-  '/icons/kcine-app-512.png?v=80',
-  '/apple-touch-icon.png?v=80',
-  '/apple-touch-icon-precomposed.png?v=80',
-  '/manifest.json?v=80',
-  '/manifest.webmanifest?v=80'
+  '/index.html?v=81',
+  '/style.css?v=81',
+  '/app.js?v=81',
+  '/icons/kcine-favicon.png?v=81',
+  '/icons/kcine-app-128.png?v=81',
+  '/icons/kcine-app-180.png?v=81',
+  '/icons/kcine-app-192.png?v=81',
+  '/icons/kcine-app-512.png?v=81',
+  '/apple-touch-icon.png?v=81',
+  '/apple-touch-icon-precomposed.png?v=81',
+  '/manifest.json?v=81',
+  '/manifest.webmanifest?v=81'
 ];
 
 self.addEventListener('install', (e) => {
