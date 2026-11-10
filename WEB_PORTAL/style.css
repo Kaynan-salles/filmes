@@ -3537,6 +3537,7 @@ body.role-cliente #userProfileBtn:hover {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
+    gap: 0.85rem !important;
     padding: 0.95rem 1.15rem !important;
     background: rgba(255, 255, 255, 0.04) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -3548,29 +3549,59 @@ body.role-cliente #userProfileBtn:hover {
     font-weight: 700 !important;
     color: #fff !important;
     margin: 0 !important;
+    white-space: nowrap !important;
+    flex: 1 !important;
   }
 
   .notifications-header-actions {
     display: flex !important;
     align-items: center !important;
-    gap: 0.75rem !important;
+    gap: 0.65rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .btn-mark-read {
+    background: rgba(236, 72, 153, 0.12) !important;
+    border: 1px solid rgba(236, 72, 153, 0.3) !important;
+    color: #f472b6 !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    padding: 0.28rem 0.65rem !important;
+    border-radius: 9999px !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .btn-mark-read:active {
+    transform: scale(0.96) !important;
+    background: rgba(236, 72, 153, 0.25) !important;
   }
 
   .btn-close-notif {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    color: #fff !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #cbd5e1 !important;
     width: 28px !important;
     height: 28px !important;
     min-width: 28px !important;
     border-radius: 50% !important;
-    font-size: 1.1rem !important;
+    font-size: 1.15rem !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     cursor: pointer !important;
     padding: 0 !important;
     line-height: 1 !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .btn-close-notif:active {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
   }
 
   .notifications-list {
@@ -5356,6 +5387,7 @@ body.role-cliente #userProfileBtn:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--border-color);
   background: rgba(255, 255, 255, 0.02);
@@ -5366,27 +5398,33 @@ body.role-cliente #userProfileBtn:hover {
   font-weight: 700;
   color: #fff;
   margin: 0;
+  white-space: nowrap;
+  flex: 1;
 }
 
 .notifications-header-actions {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+  flex-shrink: 0;
 }
 
 .btn-mark-read {
-  background: transparent;
-  border: none;
-  color: var(--accent-pink);
-  font-size: 0.75rem;
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.25);
+  color: #f472b6;
+  font-size: 0.72rem;
   font-weight: 600;
+  padding: 0.22rem 0.6rem;
+  border-radius: 9999px;
   cursor: pointer;
-  padding: 0;
-  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  transition: all 0.2s ease;
 }
 
 .btn-mark-read:hover {
-  opacity: 0.85;
+  background: rgba(236, 72, 153, 0.22);
+  color: #fff;
 }
 
 .btn-close-notif {
