@@ -3427,6 +3427,35 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
     return;
   }
 
+  // Identificação e Modo Adaptativo Imediato para Novelinhas (Vídeos Verticais 9:16)
+  const isNovelinha = (url && (url.includes('dramatip.net') || url.includes('/api/novelinhas/resolve'))) ||
+                      (itemObj && (itemObj.bookId || itemObj.source === 'novelinhas' || (itemObj.catNome && itemObj.catNome.toLowerCase().includes('novelinha')))) ||
+                      (category && category.toLowerCase().includes('novelinha'));
+
+  const svgAspectMob = document.getElementById('svgAspectMobile');
+  const svgAspectCin = document.getElementById('svgAspectCinema');
+  if (isNovelinha) {
+    dom.playerContainer?.classList.add('is-vertical');
+    dom.videoWrapper?.classList.add('is-vertical');
+    dom.playerModal?.classList.add('is-novelinha');
+    if (dom.playerEpisodeNav) dom.playerEpisodeNav.style.display = 'none';
+    if (dom.modalEpisodeBadge) dom.modalEpisodeBadge.style.display = 'none';
+    if (svgAspectMob && svgAspectCin) {
+      svgAspectMob.style.display = 'none';
+      svgAspectCin.style.display = 'block';
+    }
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Cinema (16:9)';
+  } else {
+    dom.playerContainer?.classList.remove('is-vertical');
+    dom.videoWrapper?.classList.remove('is-vertical');
+    dom.playerModal?.classList.remove('is-novelinha');
+    if (svgAspectMob && svgAspectCin) {
+      svgAspectMob.style.display = 'block';
+      svgAspectCin.style.display = 'none';
+    }
+    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Vertical (9:16)';
+  }
+
   dom.modalVideoTitle.textContent = title;
   dom.modalCategoryBadge.textContent = category;
 
@@ -3534,9 +3563,6 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
 
   // Resolução dinâmica de transmissão para Novelinhas (DramaTip)
   let directStreamUrl = url;
-  const isNovelinha = (url && (url.includes('dramatip.net') || url.includes('/api/novelinhas/resolve'))) ||
-                      (itemObj && (itemObj.bookId || itemObj.source === 'novelinhas' || (itemObj.catNome && itemObj.catNome.toLowerCase().includes('novelinha'))));
-
   let isNovelinhaHls = false;
   if (isNovelinha && (!directStreamUrl || !directStreamUrl.match(/\.(m3u8|mp4)(\?|$)/i))) {
     try {
@@ -3577,29 +3603,6 @@ async function openPlayer(title, category, url, itemObj = null, customResumeSeco
       });
       return;
     }
-  }
-
-  // Modo de Exibição Adaptativo para Novelinhas (Vídeos Verticais 9:16)
-  const svgAspectMob = document.getElementById('svgAspectMobile');
-  const svgAspectCin = document.getElementById('svgAspectCinema');
-  if (isNovelinha) {
-    dom.playerContainer?.classList.add('is-vertical');
-    dom.videoWrapper?.classList.add('is-vertical');
-    if (dom.playerEpisodeNav) dom.playerEpisodeNav.style.display = 'none';
-    if (dom.modalEpisodeBadge) dom.modalEpisodeBadge.style.display = 'none';
-    if (svgAspectMob && svgAspectCin) {
-      svgAspectMob.style.display = 'none';
-      svgAspectCin.style.display = 'block';
-    }
-    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Cinema (16:9)';
-  } else {
-    dom.playerContainer?.classList.remove('is-vertical');
-    dom.videoWrapper?.classList.remove('is-vertical');
-    if (svgAspectMob && svgAspectCin) {
-      svgAspectMob.style.display = 'block';
-      svgAspectCin.style.display = 'none';
-    }
-    if (dom.btnPlayerAspect) dom.btnPlayerAspect.title = 'Alternar para Modo Vertical (9:16)';
   }
 
   // Previne menu de contexto e clique direito no player para clientes
@@ -4046,6 +4049,7 @@ function closePlayerModal() {
   }
   dom.playerContainer?.classList.remove('is-vertical');
   dom.videoWrapper?.classList.remove('is-vertical');
+  dom.playerModal?.classList.remove('is-novelinha');
   if (dom.modalQualityBadge) dom.modalQualityBadge.style.display = 'none';
   if (playerControlsTimer) {
     clearTimeout(playerControlsTimer);

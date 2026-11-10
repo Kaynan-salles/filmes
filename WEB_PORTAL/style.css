@@ -7495,7 +7495,10 @@ video:-webkit-full-screen,
    TELA LIMPA & ENQUADRAMENTO MOBILE PERFEITO (NOVELINHAS / FULLSCREEN)
    ===================================================================== */
 
-/* Oculta footer em qualquer modo de tela cheia */
+/* Oculta footer em qualquer modo de tela cheia ou novelinhas */
+#playerModal.is-novelinha .player-footer,
+#playerModal.is-novelinha .player-episode-nav,
+#playerModal.is-novelinha #modalEpisodeBadge,
 #playerModal:fullscreen .player-footer,
 #playerModal:-webkit-full-screen .player-footer,
 #playerModal.is-fullscreen .player-footer {
@@ -7535,8 +7538,16 @@ video:-webkit-full-screen,
   pointer-events: none !important;
 }
 
-/* Ajuste proporcional para smartphones em modo retrato */
+/* Ajuste proporcional para smartphones em modo retrato e tela cheia mobile */
 @media (max-width: 768px) {
+  #playerModal.is-novelinha,
+  #playerModal:has(.is-vertical),
+  #playerModal.is-fullscreen {
+    padding: 0 !important;
+    background: #000 !important;
+  }
+
+  #playerModal.is-novelinha .player-container,
   #playerModal .player-container.is-vertical,
   #playerModal:fullscreen .player-container.is-vertical,
   #playerModal:-webkit-full-screen .player-container.is-vertical,
@@ -7552,6 +7563,7 @@ video:-webkit-full-screen,
     border-radius: 0 !important;
     margin: 0 !important;
     border: none !important;
+    box-shadow: none !important;
   }
 }
 
