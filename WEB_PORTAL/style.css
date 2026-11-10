@@ -136,6 +136,12 @@ img, video, iframe, canvas, svg {
   text-decoration: none;
   cursor: pointer;
   min-width: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .brand-logo svg {
@@ -1631,13 +1637,81 @@ body.modal-open {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: aspect-ratio 0.3s ease, max-height 0.3s ease;
 }
 
 .video-wrapper video {
   width: 100%;
   height: 100%;
+  object-fit: contain !important;
+  object-position: center center !important;
   outline: none;
   display: block;
+  background: #000;
+}
+
+/* Modo Adaptativo para Vídeos Verticais (Novelinhas / 9:16 Shorts) */
+.player-container.is-vertical {
+  max-width: 32rem; /* Centralizado como tela de celular premium */
+  transition: max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.player-container.is-vertical .video-wrapper {
+  aspect-ratio: 9 / 16;
+  max-height: 72vh;
+  max-height: 72dvh;
+}
+
+/* Suporte de Tela Cheia Completo (Modal & Elemento) */
+#playerModal:fullscreen,
+#playerModal:-webkit-full-screen,
+#playerModal.is-fullscreen {
+  background: #000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  padding: 0 !important;
+  inset: 0 !important;
+  z-index: 99999 !important;
+}
+
+#playerModal:fullscreen .player-container,
+#playerModal:-webkit-full-screen .player-container,
+#playerModal.is-fullscreen .player-container {
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: #000 !important;
+}
+
+#playerModal:fullscreen .video-wrapper,
+#playerModal:-webkit-full-screen .video-wrapper,
+#playerModal.is-fullscreen .video-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  aspect-ratio: auto !important;
+  background: #000 !important;
+}
+
+#playerModal:fullscreen .video-wrapper video,
+#playerModal:-webkit-full-screen .video-wrapper video,
+#playerModal.is-fullscreen .video-wrapper video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
 }
 
 .player-loading {
@@ -2907,6 +2981,9 @@ body.modal-open {
 }
 
 /* Formulário de Criação de Clientes e Caixas do Admin */
+#adminModal input,
+#adminModal select,
+#adminModal textarea,
 .create-client-form input,
 .create-client-form select,
 .create-client-form textarea,
@@ -6078,6 +6155,8 @@ body.role-cliente #userProfileBtn:hover {
   touch-action: pan-x pan-y;
   overscroll-behavior-x: contain;
   overscroll-behavior-y: auto;
+  will-change: scroll-position;
+  transform: translateZ(0);
 }
 
 .shelf-track::-webkit-scrollbar {
@@ -6170,21 +6249,30 @@ body.role-cliente #userProfileBtn:hover {
     padding: 0.85rem 1rem !important;
   }
   .admin-body {
-    padding: 0.85rem 0.95rem !important;
+    padding: 0.85rem 0.95rem 2rem !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   .admin-tabs {
-    gap: 0.35rem !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.4rem !important;
     padding-bottom: 0.5rem !important;
     margin-bottom: 1rem !important;
     scrollbar-width: none !important;
+    scroll-snap-type: x mandatory !important;
   }
   .admin-tabs::-webkit-scrollbar {
     display: none !important;
   }
   .admin-tab-btn {
-    padding: 0.4rem 0.75rem !important;
+    padding: 0.45rem 0.8rem !important;
     font-size: 0.75rem !important;
     flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    scroll-snap-align: start !important;
   }
   .admin-stats-grid {
     grid-template-columns: 1fr 1fr !important;
@@ -6202,6 +6290,71 @@ body.role-cliente #userProfileBtn:hover {
   }
   .client-stat-val {
     font-size: 1.15rem !important;
+  }
+
+  /* Ajuste crucial: Sincronização em Segundo Plano (Animes) no Mobile */
+  .section-box-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.65rem !important;
+  }
+  .sync-actions {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .sync-actions button {
+    width: 100% !important;
+    padding: 0.6rem 0.4rem !important;
+    font-size: 0.75rem !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ajuste crucial: Quarentena de Links Inválidos no Mobile */
+  .quarantine-filter-wrap {
+    width: 100% !important;
+    display: flex !important;
+    gap: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .quarantine-filter-wrap input {
+    flex: 1 !important;
+    min-width: 0 !important;
+    font-size: 0.82rem !important;
+  }
+  .quarantine-filter-wrap button {
+    flex-shrink: 0 !important;
+    padding: 0.55rem 0.85rem !important;
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+  }
+  .quarantine-table-wrap {
+    max-height: 280px !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-top: 0.75rem !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+  .quarantine-table {
+    min-width: 500px !important;
+    font-size: 0.78rem !important;
+  }
+  .quarantine-table th,
+  .quarantine-table td {
+    padding: 0.6rem 0.75rem !important;
+    white-space: normal !important;
+    word-break: break-word !important;
   }
 }
 

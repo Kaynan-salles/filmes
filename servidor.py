@@ -10,6 +10,18 @@ import sys
 import webbrowser
 import socket
 import ipaddress
+import base64
+import time
+
+try:
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    _HAS_CRYPTOGRAPHY = True
+    DRAMATIP_KEY = base64.b64decode("QC6Ir2trghxRAyyyWZEOEFR4GgLhnfQ4A19I3QBlQkc=")
+    _dramatip_aesgcm = AESGCM(DRAMATIP_KEY)
+except Exception as _e:
+    _HAS_CRYPTOGRAPHY = False
+    _dramatip_aesgcm = None
+    print(f"Aviso: cryptography não disponível ({_e}).")
 
 from animes_engine.sync_service import (
     resolve_episode_stream,
@@ -106,7 +118,32 @@ ALLOWED_PROXY_DOMAINS = [
     "blogspot.com",
     "tech-cdn.top",
     "workers.dev",
-    "zjo.lat"
+    "zjo.lat",
+    # Provedores de Novelinhas (DramaTip & parceiros)
+    "goodbos.online",
+    "goodshort.com",
+    "goodreels.com",
+    "petadrama.com",
+    "crazymaplestudios.com",
+    "mydramawave.com",
+    "shorttv.live",
+    "dramaboxdb.com",
+    "netshort.com",
+    "allstarcluster.com",
+    "shortdizilab.com",
+    "idrama.video",
+    "my-muse.ai",
+    "stardust-tv.com",
+    "narto-drama.com",
+    "cdreader.com",
+    "toonshort.com",
+    "sixthshort.com",
+    "joyreels.com",
+    "tiktokcdn.com",
+    "dramatip.net",
+    "webnovel.com",
+    "aliyuncs.com",
+    "vividshort.com"
 ]
 
 def is_safe_proxy_url(url: str):
@@ -155,6 +192,81 @@ class SafeRedirectHandler(urllib.request.HTTPRedirectHandler):
         if not safe:
             raise urllib.error.HTTPError(newurl, 403, f"Redirecionamento bloqueado por segurança: {reason}", headers, fp)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+# =====================================================================
+# NOVELINHAS (DRAMATIP) RESOLVER EM TEMPO REAL COM DECRIPTOGRAFIA AES-GCM
+# =====================================================================
+DRAMATIP_CACHE = {}      # (book_id, ep) -> (stream_url, expire_timestamp, stream_type, source)
+DRAMATIP_SLUG_MAP = {}   # slug -> book_id
+
+def get_dramatip_slug_map():
+    global DRAMATIP_SLUG_MAP
+    if not DRAMATIP_SLUG_MAP:
+        cat_file = os.path.join(WEB_DIR, "data", "catalogo_dramatip.json")
+        if os.path.exists(cat_file):
+            try:
+                with open(cat_file, "r", encoding="utf-8") as f:
+                    cat_data = json.load(f)
+                    for item in cat_data:
+                        if item.get("slug") and item.get("bookId"):
+                            DRAMATIP_SLUG_MAP[item["slug"]] = str(item["bookId"])
+            except Exception as e:
+                print(f"Erro ao carregar catalogo_dramatip.json: {e}")
+    return DRAMATIP_SLUG_MAP
+
+def resolve_novelinha_stream(book_id, ep_num):
+    """
+    Resolve e decodifica o stream direto do DramaTip para qualquer capítulo.
+    Retorna dict com success, url, type (hls/mp4), source.
+    """
+    global DRAMATIP_CACHE
+    book_id_str = str(book_id).strip()
+    cache_key = f"{book_id_str}:{ep_num}"
+    now = time.time()
+    if cache_key in DRAMATIP_CACHE:
+        url, exp, stype, src = DRAMATIP_CACHE[cache_key]
+        if now < exp:
+            return {"success": True, "url": url, "type": stype, "source": src, "cached": True}
+
+    if not _dramatip_aesgcm:
+        return {"success": False, "error": "Módulo de decriptografia AES-GCM indisponível"}
+
+    api_url = f"https://dramatip.net/api/episode-source/{book_id_str}/{ep_num}?lang=pt"
+    req = urllib.request.Request(
+        api_url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://dramatip.net/",
+            "Accept": "application/json"
+        }
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            descriptor = data.get("descriptor", {})
+            source = descriptor.get("source", "Unknown")
+            chain = descriptor.get("chain", [])
+            if not chain or "enc" not in chain[0]:
+                return {"success": False, "error": "Nenhum descritor de stream criptografado encontrado"}
+            enc = chain[0]["enc"]
+            raw = base64.b64decode(enc)
+            iv = raw[:12]
+            ciphertext = raw[12:]
+            stream_url = _dramatip_aesgcm.decrypt(iv, ciphertext, None).decode("utf-8")
+            # Configuração para buscar sempre a mais alta qualidade disponível (1080p Full HD)
+            if "q=720p" in stream_url:
+                stream_url = stream_url.replace("q=720p", "q=1080p")
+            elif "_720p.m3u8" in stream_url:
+                stream_url = stream_url.replace("_720p.m3u8", "_1080p.m3u8")
+            elif "/720p/" in stream_url:
+                stream_url = stream_url.replace("/720p/", "/1080p/")
+
+            stype = "hls" if (".m3u8" in stream_url or "/hls/" in stream_url or chain[0].get("type") in ("hls", "goodshort")) else "mp4"
+            # Cache em memória por 2 horas (7200 segundos)
+            DRAMATIP_CACHE[cache_key] = (stream_url, now + 7200, stype, source)
+            return {"success": True, "url": stream_url, "type": stype, "source": source, "quality": "1080p Full HD"}
+    except Exception as e:
+        return {"success": False, "error": f"Erro na requisição DramaTip: {str(e)}"}
 
 class KCineHandler(http.server.SimpleHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
@@ -402,6 +514,43 @@ class KCineHandler(http.server.SimpleHTTPRequestHandler):
                 return
 
             res = resolve_episode_stream(ep_id, preferred_audio=audio, preferred_provider=provider, preferred_quality=quality)
+            self.send_json(res, 200 if res.get("success") else 502)
+            return
+
+        # Endpoint de Novelinhas (DramaTip): resolução e decriptografia de streams
+        if path == "/api/novelinhas/resolve":
+            query_params = urllib.parse.parse_qs(parsed.query)
+            book_id = query_params.get("book_id", [""])[0].strip()
+            ep = query_params.get("ep", query_params.get("serial", ["1"]))[0].strip()
+            slug = query_params.get("slug", [""])[0].strip()
+            target_url = query_params.get("url", [""])[0].strip()
+            redirect_mode = query_params.get("redirect", ["0"])[0].strip() == "1"
+
+            if not ep.isdigit():
+                ep = "1"
+
+            if not book_id:
+                if target_url:
+                    m = re.search(r'/series/([^/]+)/episode-(\d+)', target_url)
+                    if m:
+                        slug = m.group(1)
+                        ep = m.group(2)
+                if slug:
+                    s_map = get_dramatip_slug_map()
+                    book_id = s_map.get(slug, "")
+
+            if not book_id:
+                self.send_json({"success": False, "error": "Parâmetro book_id ou slug/url obrigatório"}, 400)
+                return
+
+            res = resolve_novelinha_stream(book_id, int(ep))
+            if redirect_mode and res.get("success") and res.get("url"):
+                self.send_response(302)
+                self.send_header("Location", res["url"])
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                return
+
             self.send_json(res, 200 if res.get("success") else 502)
             return
 

@@ -126,6 +126,7 @@ const dom = {
   btnTypeAnimes: document.getElementById('btnTypeAnimes'),
   btnTypeMinhaLista: document.getElementById('btnTypeMinhaLista'),
   btnTypeHistorico: document.getElementById('btnTypeHistorico'),
+  btnTypeNovelinhas: document.getElementById('btnTypeNovelinhas'),
   searchSuggestionsDropdown: document.getElementById('searchSuggestionsDropdown'),
   homeShelvesContainer: document.getElementById('homeShelvesContainer'),
   mobileBottomNav: document.getElementById('mobileBottomNav'),
@@ -167,6 +168,11 @@ const dom = {
   btnCopyModalUrl: document.getElementById('btnCopyModalUrl'),
   btnModalOpenVlc: document.getElementById('btnModalOpenVlc'),
   btnClosePlayer: document.getElementById('btnClosePlayer'),
+  btnPlayerFullscreen: document.getElementById('btnPlayerFullscreen'),
+  btnPlayerAspect: document.getElementById('btnPlayerAspect'),
+  modalQualityBadge: document.getElementById('modalQualityBadge'),
+  playerContainer: document.querySelector('#playerModal .player-container'),
+  videoWrapper: document.querySelector('#playerModal .video-wrapper'),
   btnModalDismiss: document.getElementById('btnModalDismiss'),
   playerLoading: document.getElementById('playerLoading'),
   playerErrorOverlay: document.getElementById('playerErrorOverlay'),
@@ -838,6 +844,14 @@ function setupEventListeners() {
     dom.btnLogoutHeader.addEventListener('click', handleLogout);
   }
 
+  // Clique na Marca / Logo para voltar ao Início (sem seleção de texto)
+  const brandEl = document.querySelector('.brand');
+  if (brandEl) {
+    brandEl.addEventListener('click', () => switchType('todos'));
+    brandEl.addEventListener('mousedown', (e) => e.preventDefault());
+    brandEl.addEventListener('selectstart', (e) => e.preventDefault());
+  }
+
   // Filtros de Tipo (Todos / Filmes / Séries / Animes / Minha Lista / Histórico)
   dom.btnTypeTodos?.addEventListener('click', () => switchType('todos'));
   dom.btnTypeFilmes?.addEventListener('click', () => switchType('filmes'));
@@ -845,6 +859,7 @@ function setupEventListeners() {
   dom.btnTypeAnimes?.addEventListener('click', () => switchType('animes'));
   dom.btnTypeMinhaLista?.addEventListener('click', () => switchType('minha-lista'));
   dom.btnTypeHistorico?.addEventListener('click', () => switchType('historico'));
+  dom.btnTypeNovelinhas?.addEventListener('click', () => switchType('novelinhas'));
 
   // Barra de Navegação Inferior Mobile (PWA & Mobile-First)
   document.querySelectorAll('.bottom-nav-item').forEach(btn => {
@@ -1262,6 +1277,7 @@ function setupEventListeners() {
       document.querySelectorAll('.admin-tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
       e.currentTarget.classList.add('active');
+      try { e.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); } catch(err) {}
       const targetContent = document.getElementById(`tab-${tabId}`);
       if (targetContent) targetContent.classList.add('active');
 
@@ -1864,7 +1880,7 @@ async function loadManifesto() {
 
 function switchType(type) {
   state.activeType = type;
-  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries, dom.btnTypeAnimes, dom.btnTypeMinhaLista, dom.btnTypeHistorico].filter(Boolean).forEach(b => b.classList.remove('active'));
+  [dom.btnTypeTodos, dom.btnTypeFilmes, dom.btnTypeSeries, dom.btnTypeAnimes, dom.btnTypeMinhaLista, dom.btnTypeHistorico, dom.btnTypeNovelinhas].filter(Boolean).forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.bottom-nav-item').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-type') === type);
   });
@@ -1894,6 +1910,11 @@ function switchType(type) {
   if (type === 'historico') {
     dom.btnTypeHistorico?.classList.add('active');
     loadHistoryView();
+    return;
+  }
+  if (type === 'novelinhas') {
+    dom.btnTypeNovelinhas?.classList.add('active');
+    selectCategory('novelinhas', '📱 Novelinhas');
     return;
   }
 
@@ -1948,6 +1969,7 @@ function buildCategoryChips() {
   dom.categoriesChips.appendChild(chipDestaques);
 
   const popularKeywords = [
+    { key: 'novelinhas', label: '📱 Novelinhas' },
     { key: 'animes', label: '🌸 Animes' },
     { key: '01_lancamentos', label: '🔥 Lançamentos' },
     { key: '02_4k_uhd', label: '💎 4K Ultra HD' },
@@ -2408,9 +2430,10 @@ async function selectCategory(catId, catName) {
     return;
   }
 
-  const isSeriesCat = (state.activeType === 'series') ||
+  const isSeriesCat = (state.activeType === 'series') || (state.activeType === 'novelinhas') ||
     (catId && (
       catId.includes('series') || catId.includes('novelas') || catId.includes('doramas') ||
+      catId.includes('novelinhas') || catId.includes('dramas_curtos') ||
       catId.includes('netflix') || catId.includes('prime') || catId.includes('max') ||
       catId.includes('disney') || catId.includes('crunchyroll') || catId.includes('turcas') ||
       catId.includes('globoplay') || catId.includes('paramount') || catId.includes('apple') ||
@@ -3384,7 +3407,7 @@ function displaySearchResults(results, query) {
 // =====================================================================
 // PLAYER DE VÍDEO & NAVEGAÇÃO DE SÉRIES
 // =====================================================================
-function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 0) {
+async function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 0) {
   // Pausa o vídeo de fundo do Hero para não competir com o player
   if (dom.heroVideo) {
     try { dom.heroVideo.pause(); } catch(e) {}
@@ -3500,6 +3523,68 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
   const video = dom.htmlVideoPlayer;
   dom.playerLoading.classList.add('active');
 
+  // Limpa qualquer overlay residual de players de terceiros
+  const dtOverlay = document.getElementById('dramatipPlayerOverlay');
+  if (dtOverlay) dtOverlay.remove();
+  video.style.display = 'block';
+  if (dom.iframeVideoPlayer) dom.iframeVideoPlayer.style.display = 'none';
+
+  // Resolução dinâmica de transmissão para Novelinhas (DramaTip)
+  let directStreamUrl = url;
+  const isNovelinha = (url && (url.includes('dramatip.net') || url.includes('/api/novelinhas/resolve'))) ||
+                      (itemObj && (itemObj.bookId || itemObj.source === 'novelinhas' || (itemObj.catNome && itemObj.catNome.toLowerCase().includes('novelinha'))));
+
+  let isNovelinhaHls = false;
+  if (isNovelinha && (!directStreamUrl || !directStreamUrl.match(/\.(m3u8|mp4)(\?|$)/i))) {
+    try {
+      let resolveApi = '';
+      if (directStreamUrl && directStreamUrl.startsWith('/api/novelinhas/resolve')) {
+        resolveApi = directStreamUrl;
+      } else {
+        const bookId = (itemObj && itemObj.bookId) || '';
+        const epNum = (itemObj && itemObj.episodeNumber) || (epInfo && epInfo.episode) || 1;
+        if (bookId) {
+          resolveApi = `/api/novelinhas/resolve?book_id=${encodeURIComponent(bookId)}&ep=${epNum}`;
+        } else {
+          resolveApi = `/api/novelinhas/resolve?url=${encodeURIComponent(directStreamUrl)}`;
+        }
+      }
+
+      const res = await fetch(resolveApi);
+      if (res.ok) {
+        const resData = await res.json();
+        if (resData && resData.success && resData.url) {
+          directStreamUrl = resData.url;
+          isNovelinhaHls = (resData.type === 'hls');
+          if (isAdmin && dom.streamUrlDisplay) {
+            dom.streamUrlDisplay.value = directStreamUrl;
+            dom.streamUrlDisplay.setAttribute('value', directStreamUrl);
+          }
+        } else {
+          throw new Error((resData && resData.error) || 'Falha ao decodificar transmissão da novelinha');
+        }
+      } else {
+        throw new Error(`Servidor de resolução retornou erro HTTP ${res.status}`);
+      }
+    } catch (resolveErr) {
+      console.error('Erro ao resolver transmissão de novelinha:', resolveErr);
+      dom.playerLoading.classList.remove('active');
+      showPlayerError(`Não foi possível carregar a transmissão desta novelinha (${resolveErr.message}). Tentar novamente?`, () => {
+        openPlayer(title, category, url, itemObj, customResumeSeconds);
+      });
+      return;
+    }
+  }
+
+  // Modo de Exibição Adaptativo para Novelinhas (Vídeos Verticais 9:16)
+  if (isNovelinha) {
+    dom.playerContainer?.classList.add('is-vertical');
+    dom.videoWrapper?.classList.add('is-vertical');
+  } else {
+    dom.playerContainer?.classList.remove('is-vertical');
+    dom.videoWrapper?.classList.remove('is-vertical');
+  }
+
   // Previne menu de contexto e clique direito no player para clientes
   if (!isAdmin) {
     video.oncontextmenu = (e) => { e.preventDefault(); return false; };
@@ -3510,7 +3595,7 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
     state.hlsPlayer = null;
   }
 
-  const playableUrl = getPlayableUrl(url);
+  const playableUrl = getPlayableUrl(directStreamUrl);
 
   const applyResumeTime = () => {
     if (resumePos > 10) {
@@ -3523,17 +3608,45 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
     }
   };
 
-  if (url.includes('.m3u8')) {
+  const handleVideoMetadata = () => {
+    // Detecção dinâmica de proporção caso o vídeo seja nativamente vertical
+    if (video.videoHeight && video.videoWidth && video.videoHeight > video.videoWidth) {
+      dom.playerContainer?.classList.add('is-vertical');
+      dom.videoWrapper?.classList.add('is-vertical');
+    }
+    applyResumeTime();
+  };
+
+  const isHls = playableUrl.includes('.m3u8') || playableUrl.includes('/hls/') || isNovelinhaHls;
+
+  if (isHls) {
     if (Hls.isSupported()) {
       state.hlsPlayer = new Hls({
         debug: false,
-        enableWorker: true
+        enableWorker: true,
+        capLevelToPlayerSize: false, // JAMAIS reduz a qualidade baseado no tamanho da tela
+        autoStartLoad: true
       });
       state.hlsPlayer.loadSource(playableUrl);
       state.hlsPlayer.attachMedia(video);
       state.hlsPlayer.on(Hls.Events.MANIFEST_PARSED, () => {
         dom.playerLoading.classList.remove('active');
-        applyResumeTime();
+        // Trava SEMPRE no nível mais alto de qualidade disponível (1080p Full HD)
+        if (state.hlsPlayer.levels && state.hlsPlayer.levels.length > 0) {
+          const maxLevel = state.hlsPlayer.levels.length - 1;
+          state.hlsPlayer.currentLevel = maxLevel;
+          state.hlsPlayer.loadLevel = maxLevel;
+          const lvl = state.hlsPlayer.levels[maxLevel];
+          const qText = lvl?.height ? `${lvl.height}p FHD` : '1080p FHD';
+          if (dom.modalQualityBadge) {
+            dom.modalQualityBadge.style.display = 'inline-flex';
+            dom.modalQualityBadge.textContent = `✨ ${qText}`;
+          }
+        } else if (dom.modalQualityBadge) {
+          dom.modalQualityBadge.style.display = 'inline-flex';
+          dom.modalQualityBadge.textContent = '✨ 1080p FHD';
+        }
+        handleVideoMetadata();
         video.play().catch(() => console.log('Autoplay com som restrito pelo navegador'));
       });
       state.hlsPlayer.on(Hls.Events.ERROR, (event, errData) => {
@@ -3546,7 +3659,11 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = playableUrl;
-      video.onloadedmetadata = applyResumeTime;
+      video.onloadedmetadata = handleVideoMetadata;
+      if (dom.modalQualityBadge) {
+        dom.modalQualityBadge.style.display = 'inline-flex';
+        dom.modalQualityBadge.textContent = '✨ 1080p FHD';
+      }
       video.onerror = () => {
         showPlayerError('Não foi possível carregar a transmissão deste vídeo. O arquivo pode estar temporariamente fora do ar.', () => {
           openPlayer(title, category, url, itemObj, customResumeSeconds);
@@ -3556,7 +3673,11 @@ function openPlayer(title, category, url, itemObj = null, customResumeSeconds = 
     }
   } else {
     video.src = playableUrl;
-    video.onloadedmetadata = applyResumeTime;
+    video.onloadedmetadata = handleVideoMetadata;
+    if (dom.modalQualityBadge) {
+      dom.modalQualityBadge.style.display = 'inline-flex';
+      dom.modalQualityBadge.textContent = '✨ 1080p FHD';
+    }
     video.onerror = () => {
       showPlayerError('Não foi possível carregar a transmissão deste vídeo. O arquivo pode estar temporariamente fora do ar.', () => {
         openPlayer(title, category, url, itemObj, customResumeSeconds);
@@ -3705,10 +3826,10 @@ function openSeriesModal(seriesGroup) {
   dom.seriesModalPoster.src = seriesGroup.poster || FALLBACK_POSTER;
   dom.seriesModalPoster.onerror = () => { dom.seriesModalPoster.src = FALLBACK_POSTER; };
   dom.seriesModalTitle.textContent = seriesGroup.seriesName;
-  dom.seriesModalCategory.textContent = '📺 SÉRIE';
+  dom.seriesModalCategory.textContent = seriesGroup.catNome || '📺 SÉRIE';
   const totalEpCount = seriesGroup.episodes ? seriesGroup.episodes.length : 0;
   dom.seriesModalTotalEpisodes.textContent = `${totalEpCount} eps`;
-  dom.seriesModalTotalSeasons.textContent = 'Série';
+  dom.seriesModalTotalSeasons.textContent = (seriesGroup.catNome && seriesGroup.catNome.toLowerCase().includes('novelinha')) ? 'Novelinha' : 'Série';
 
   const rating = getMediaRating(seriesGroup);
   let ratingEl = document.getElementById('seriesModalRating');
@@ -3739,7 +3860,8 @@ function openSeriesModal(seriesGroup) {
     const tab = document.createElement('button');
     tab.type = 'button';
     tab.className = `season-tab-btn ${sNum === activeSeason ? 'active' : ''}`;
-    tab.textContent = `Temporada ${sNum} (${seasonsMap.get(sNum).length})`;
+    const isNovelinha = (seriesGroup.catNome && seriesGroup.catNome.toLowerCase().includes('novelinha')) || (state.activeType === 'novelinhas');
+    tab.textContent = isNovelinha ? `Capítulos (${seasonsMap.get(sNum).length})` : `Temporada ${sNum} (${seasonsMap.get(sNum).length})`;
     tab.onclick = () => {
       document.querySelectorAll('.season-tab-btn').forEach(b => b.classList.remove('active'));
       tab.classList.add('active');
@@ -3889,6 +4011,17 @@ function showPlayerError(message, retryCallback = null) {
 
 function closePlayerModal() {
   state.activePlayerItem = null;
+  const dtOverlay = document.getElementById('dramatipPlayerOverlay');
+  if (dtOverlay) dtOverlay.style.display = 'none';
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
+    try {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    } catch(e) {}
+  }
+  dom.playerContainer?.classList.remove('is-vertical');
+  dom.videoWrapper?.classList.remove('is-vertical');
+  if (dom.modalQualityBadge) dom.modalQualityBadge.style.display = 'none';
   stopVideoPlayback();
   if (dom.playerModal) {
     closeModal(dom.playerModal);

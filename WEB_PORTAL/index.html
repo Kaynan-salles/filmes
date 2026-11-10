@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=71">
+  <link rel="stylesheet" href="style.css?v=74">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -132,6 +132,7 @@
         <button class="type-btn" data-type="animes" id="btnTypeAnimes">🌸 Animes</button>
         <button class="type-btn" data-type="minha-lista" id="btnTypeMinhaLista">➕ Minha Lista</button>
         <button class="type-btn" data-type="historico" id="btnTypeHistorico">🕒 Histórico</button>
+        <button class="type-btn" data-type="novelinhas" id="btnTypeNovelinhas">📱 Novelinhas</button>
       </nav>
 
       <!-- Barra de Busca Inteligente com Sugestões Instantâneas -->
@@ -427,6 +428,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
         <span>Minha Lista</span>
       </button>
+      <button class="bottom-nav-item" data-type="novelinhas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        <span>Novelinhas</span>
+      </button>
     </nav>
   </main>
   </div><!-- Fim do #portalMainApp -->
@@ -440,10 +445,25 @@
             <div class="player-badges-row">
               <span class="badge" id="modalCategoryBadge">CATEGORIA</span>
               <span class="badge badge-episode" id="modalEpisodeBadge" style="display: none;">T01 • EP 01</span>
+              <span class="badge badge-quality-hd" id="modalQualityBadge" style="display: none; align-items: center; gap: 4px; background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.4); font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px;">✨ 1080p FHD</span>
             </div>
             <h3 id="modalVideoTitle">Título do Vídeo</h3>
           </div>
           <div class="player-header-main-actions">
+            <button class="btn-action-icon" id="btnPlayerAspect" title="Alternar Formato (Vertical 9:16 / Cinema 16:9)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px;">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </button>
+            <button class="btn-action-icon" id="btnPlayerFullscreen" title="Tela Cheia (Atalho: F ou duplo clique)">
+              <svg id="svgFsExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px;">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+              </svg>
+              <svg id="svgFsCompress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px; display: none;">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+              </svg>
+            </button>
             <button class="btn-action-icon" id="btnPlayerFavorite" title="Adicionar aos Favoritos">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -1002,8 +1022,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=71"></script>
-  <script src="auth.js?v=71"></script>
-  <script src="app.js?v=71"></script>
+  <script src="supabase-config.js?v=74"></script>
+  <script src="auth.js?v=74"></script>
+  <script src="app.js?v=74"></script>
 </body>
 </html>
