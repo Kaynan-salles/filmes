@@ -453,9 +453,9 @@ img, video, iframe, canvas, svg {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 140px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(10, 11, 14, 0.4) 30%, rgba(10, 11, 14, 0.9) 70%, #0a0b0e 100%);
+  bottom: -2px;
+  height: 160px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(10, 11, 14, 0.4) 25%, rgba(10, 11, 14, 0.9) 60%, #0a0b0e 85%, #0a0b0e 100%);
   z-index: 3;
   pointer-events: none;
 }
@@ -518,6 +518,10 @@ img, video, iframe, canvas, svg {
   pointer-events: none;
   transform: scale(1.02);
   background: #0a0b0e;
+  border: none !important;
+  outline: none !important;
+  margin: 0 !important;
+  box-shadow: none !important;
   -webkit-mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 96%);
   mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 96%);
 }
@@ -3286,10 +3290,10 @@ body.role-cliente #userProfileBtn:hover {
    ===================================================================== */
 @media (max-width: 767px) {
   .hero-section {
-    height: 380px !important;
-    min-height: 350px !important;
-    max-height: 420px !important;
-    padding: 1rem 1rem 1.25rem !important;
+    height: 345px !important;
+    min-height: 320px !important;
+    max-height: 375px !important;
+    padding: 1rem 1rem 1.15rem !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-end !important;
@@ -3310,9 +3314,9 @@ body.role-cliente #userProfileBtn:hover {
     position: absolute !important;
     left: 0 !important;
     right: 0 !important;
-    bottom: 0 !important;
-    height: 140px !important;
-    background: linear-gradient(to bottom, transparent 0%, rgba(10, 11, 14, 0.45) 25%, rgba(10, 11, 14, 0.9) 65%, #0a0b0e 100%) !important;
+    bottom: -2px !important;
+    height: 160px !important;
+    background: linear-gradient(to bottom, transparent 0%, rgba(10, 11, 14, 0.45) 20%, rgba(10, 11, 14, 0.9) 55%, #0a0b0e 80%, #0a0b0e 100%) !important;
     z-index: 3 !important;
     pointer-events: none !important;
   }
@@ -3343,6 +3347,10 @@ body.role-cliente #userProfileBtn:hover {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
+    border: none !important;
+    outline: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
     -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 95%) !important;
     mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 95%) !important;
   }
@@ -3379,74 +3387,118 @@ body.role-cliente #userProfileBtn:hover {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    padding-bottom: 0.25rem !important;
+    padding-bottom: 0 !important;
   }
 
   .hero-meta {
+    display: flex !important;
     justify-content: center !important;
-    gap: 0.4rem !important;
-    margin-bottom: 0.4rem !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.45rem !important;
     font-size: 0.75rem !important;
   }
 
   .hero-badge {
     font-size: 0.6875rem !important;
-    padding: 0.2rem 0.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em !important;
+    padding: 0.22rem 0.6rem !important;
+    border-radius: 9999px !important;
+    background: rgba(236, 72, 153, 0.16) !important;
+    border: 1px solid rgba(236, 72, 153, 0.35) !important;
+    color: #f472b6 !important;
+    box-shadow: none !important;
   }
 
   .hero-rating-badge {
     font-size: 0.72rem !important;
-    padding: 0.18rem 0.45rem !important;
+    font-weight: 700 !important;
+    padding: 0.2rem 0.55rem !important;
+    border-radius: 9999px !important;
+    background: rgba(251, 191, 36, 0.12) !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+    color: #fbbf24 !important;
+    box-shadow: none !important;
   }
 
   .hero-title {
-    font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
-    line-height: 1.15 !important;
-    margin-bottom: 0.4rem !important;
+    font-family: var(--font-display) !important;
+    font-size: clamp(1.4rem, 6vw, 1.85rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.75rem !important;
     text-align: center !important;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
+    color: #fff !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95) !important;
   }
 
   .hero-desc {
-    font-size: 0.8125rem !important;
-    -webkit-line-clamp: 2 !important;
-    margin-bottom: 0.65rem !important;
-    max-width: 90% !important;
-    text-align: center !important;
-    line-height: 1.35 !important;
+    display: none !important; /* Na visualização mobile compacta, mantém o banner limpo e sem poluição de texto */
   }
 
   .hero-buttons {
+    display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    gap: 0.55rem !important;
+    gap: 0.75rem !important;
     flex-wrap: wrap !important;
-    margin-top: 0.35rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.25rem !important;
   }
 
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    height: 38px !important;
-    min-height: 38px !important;
-    max-height: 38px !important;
-    font-size: 0.8125rem !important;
-    padding: 0 0.95rem !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    padding: 0 1.25rem !important;
+    border-radius: 9999px !important;
     white-space: nowrap !important;
     flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.45rem !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .hero-buttons .btn-secondary {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    color: #fff !important;
+    backdrop-filter: blur(8px) !important;
   }
 
   .hero-overlay {
-    background: linear-gradient(to top, #0a0b0e 0%, #0a0b0e 16%, rgba(10, 11, 14, 0.65) 55%, rgba(10, 11, 14, 0.15) 100%) !important;
+    background: linear-gradient(to top, #0a0b0e 0%, #0a0b0e 18%, rgba(10, 11, 14, 0.65) 55%, rgba(10, 11, 14, 0.15) 100%) !important;
   }
 
-  /* Vitrine se funde perfeitamente com o degradê da base do banner sem costuras ou linhas */
+  /* Espaçamento elegante, limpo e arejado entre o banner hero e a primeira fileira */
   .home-shelves-container {
-    margin-top: -30px !important;
+    margin-top: 1.25rem !important;
     position: relative !important;
     z-index: 10 !important;
     border: none !important;
     border-top: none !important;
+  }
+
+  .shelf-header {
+    padding: 0 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .shelf-title {
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Em telas touch o usuário desliza com o dedo: esconde os botões redondos de seta no cabeçalho */
+  .shelf-controls {
+    display: none !important;
   }
 
   /* Toast posicionado acima da barra inferior de navegação para não cobri-la */

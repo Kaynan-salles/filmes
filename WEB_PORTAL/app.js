@@ -2095,6 +2095,16 @@ function updateHeroItem(item) {
   if (dom.heroRatingBadge) {
     dom.heroRatingBadge.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)}`;
   }
+  const heroBadge = document.getElementById('heroBadge');
+  if (heroBadge) {
+    if (item.is_anime || (item.id && String(item.id).startsWith('ani_'))) {
+      heroBadge.textContent = '🌸 ANIME';
+    } else if (item.isGroup || (item.catNome && item.catNome.includes('Série'))) {
+      heroBadge.textContent = '📺 SÉRIE';
+    } else {
+      heroBadge.textContent = '🎬 EM ALTA';
+    }
+  }
   if (dom.heroCategory) dom.heroCategory.textContent = item.catNome || '';
 
   // Metadados reais: Ano, Duração / Temporadas, Classificação Indicativa (sem invenções genéricas)
