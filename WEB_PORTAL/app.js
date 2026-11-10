@@ -3705,8 +3705,9 @@ function openSeriesModal(seriesGroup) {
   dom.seriesModalPoster.src = seriesGroup.poster || FALLBACK_POSTER;
   dom.seriesModalPoster.onerror = () => { dom.seriesModalPoster.src = FALLBACK_POSTER; };
   dom.seriesModalTitle.textContent = seriesGroup.seriesName;
-  dom.seriesModalCategory.textContent = seriesGroup.catNome || 'SÉRIE';
-  dom.seriesModalTotalEpisodes.textContent = 'Episódios';
+  dom.seriesModalCategory.textContent = '📺 SÉRIE';
+  const totalEpCount = seriesGroup.episodes ? seriesGroup.episodes.length : 0;
+  dom.seriesModalTotalEpisodes.textContent = `${totalEpCount} eps`;
   dom.seriesModalTotalSeasons.textContent = 'Série';
 
   const rating = getMediaRating(seriesGroup);
@@ -3718,7 +3719,7 @@ function openSeriesModal(seriesGroup) {
     dom.seriesModalTotalSeasons.parentNode.insertBefore(ratingEl, dom.seriesModalTotalSeasons.nextSibling);
   }
   if (ratingEl) {
-    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(rating)}</span>`;
+    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)}`;
   }
 
   // Organiza episódios por temporada
@@ -3952,7 +3953,7 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
   const animeId = animeItem.id || animeItem.t;
   dom.seriesModalPoster.src = animeItem.p || FALLBACK_POSTER;
   dom.seriesModalTitle.textContent = animeItem.t;
-  dom.seriesModalCategory.textContent = '🌸 ANIME OFICIAL';
+  dom.seriesModalCategory.textContent = '🌸 ANIME';
   dom.seriesModalTotalEpisodes.textContent = 'Episódios';
   dom.seriesModalTotalSeasons.textContent = 'Anime';
 
@@ -3965,7 +3966,7 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
     dom.seriesModalTotalSeasons.parentNode.insertBefore(ratingEl, dom.seriesModalTotalSeasons.nextSibling);
   }
   if (ratingEl) {
-    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)} <span style="font-size:0.75rem; color:#f59e0b; margin-left:2px;">${renderStarsVisualHtml(rating)}</span>`;
+    ratingEl.innerHTML = `<span class="star-icon">★</span> ${rating.toFixed(1)}`;
   }
 
   dom.seriesSeasonsBar.innerHTML = '';
@@ -4024,8 +4025,8 @@ async function openAnimeModal(animeItem, targetSeason = null, targetEpisode = nu
     dom.seriesModalTitle.textContent = details.canonical_title;
     const totEps = details.total_episodes || (details.seasons ? details.seasons.reduce((acc, s) => acc + (s.episodes ? s.episodes.length : 0), 0) : 0);
     const totSeas = details.total_seasons || (details.seasons ? details.seasons.length : 1);
-    dom.seriesModalTotalEpisodes.textContent = 'Episódios';
-    dom.seriesModalTotalSeasons.textContent = 'Anime';
+    dom.seriesModalTotalEpisodes.textContent = `${totEps} eps`;
+    dom.seriesModalTotalSeasons.textContent = `${totSeas} temp${totSeas > 1 ? 's' : ''}`;
 
     renderAnimeSeasons(details);
 

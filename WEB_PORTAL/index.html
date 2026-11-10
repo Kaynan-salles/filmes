@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=70">
+  <link rel="stylesheet" href="style.css?v=71">
   <!-- Supabase JS Client para banco de dados e autenticacao na nuvem -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Hls.js para suporte a streaming HLS -->
@@ -577,31 +577,34 @@
   <div class="modal-overlay" id="seriesModal">
     <div class="series-modal-container">
       <div class="series-modal-header">
+        <div class="series-modal-top-bar">
+          <span class="badge" id="seriesModalCategory">🌸 ANIME</span>
+          <div class="series-modal-top-actions">
+            <button class="btn-action-icon" id="btnSeriesModalFavorite" title="Adicionar aos Favoritos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </button>
+            <button class="btn-close" id="btnCloseSeriesModal" aria-label="Fechar">&times;</button>
+          </div>
+        </div>
+
         <div class="series-modal-hero">
           <div class="series-modal-poster">
             <img id="seriesModalPoster" src="" alt="Poster da Série">
           </div>
           <div class="series-modal-info">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-              <span class="badge" id="seriesModalCategory">SÉRIE COMPLETA</span>
-              <button class="btn-action-icon" id="btnSeriesModalFavorite" title="Favoritar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                </svg>
-              </button>
-            </div>
             <h3 id="seriesModalTitle">Nome da Série</h3>
             <div class="series-modal-meta">
-              <span class="meta-tag" id="seriesModalTotalEpisodes">0 episódios</span>
-              <span class="meta-tag" id="seriesModalTotalSeasons">0 temporadas</span>
-              <div class="audio-switch-group" id="modalAudioSwitchGroup" style="display: none; margin-left: auto;">
-                <button class="btn-audio-toggle active" id="btnModalAudioLeg" data-audio="legendado">Legendado</button>
-                <button class="btn-audio-toggle" id="btnModalAudioDub" data-audio="dublado">Dublado</button>
-              </div>
+              <span class="meta-tag" id="seriesModalTotalEpisodes">0 eps</span>
+              <span class="meta-tag" id="seriesModalTotalSeasons">0 temp</span>
+            </div>
+            <div class="audio-switch-group" id="modalAudioSwitchGroup" style="display: none;">
+              <button class="btn-audio-toggle active" id="btnModalAudioLeg" data-audio="legendado">Legendado</button>
+              <button class="btn-audio-toggle" id="btnModalAudioDub" data-audio="dublado">Dublado</button>
             </div>
           </div>
         </div>
-        <button class="btn-close" id="btnCloseSeriesModal">&times;</button>
       </div>
 
       <div class="series-modal-body">
@@ -999,8 +1002,8 @@
   <!-- Toast de Notificação -->
   <div class="toast" id="toastNotification">Link copiado com sucesso!</div>
 
-  <script src="supabase-config.js?v=70"></script>
-  <script src="auth.js?v=70"></script>
-  <script src="app.js?v=70"></script>
+  <script src="supabase-config.js?v=71"></script>
+  <script src="auth.js?v=71"></script>
+  <script src="app.js?v=71"></script>
 </body>
 </html>
